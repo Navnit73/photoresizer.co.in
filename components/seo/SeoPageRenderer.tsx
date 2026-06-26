@@ -144,7 +144,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                     </div>
 
                     {/* Headline */}
-                    <h1 className="hero-fade-in hero-fade-in-delay-1 text-4xl sm:text-5xl lg:text-[3.5rem] font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white mb-5">
+                    <h1 className="hero-fade-in hero-fade-in-delay-1 text-4xl sm:text-5xl lg:text-[3.0rem] font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white mb-5">
                       {page.h1}
                     </h1>
 
