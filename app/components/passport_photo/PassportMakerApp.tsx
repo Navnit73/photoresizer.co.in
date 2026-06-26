@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PassportCropper from './PassportCropper';
 import { Upload, Download, RefreshCw, CheckCircle2, Image as ImageIcon } from 'lucide-react';
 
@@ -17,10 +17,35 @@ export default function PassportMakerApp() {
       const url = URL.createObjectURL(file);
       setImageSrc(url);
       setResultImage(null);
+      
+      const event = new CustomEvent("editor-file-loaded", { detail: { loaded: true } });
+      window.dispatchEvent(event);
+      
       // Reset input value to allow selecting the same file again
       e.target.value = '';
     }
   };
+
+  useEffect(() => {
+    const handleHeroDrop = (e: Event) => {
+      const customEvent = e as CustomEvent<{ files: File[] }>;
+      if (customEvent.detail?.files?.length > 0) {
+        const file = customEvent.detail.files[0];
+        if (file.type.startsWith('image/')) {
+          const url = URL.createObjectURL(file);
+          setImageSrc(url);
+          setResultImage(null);
+          
+          const event = new CustomEvent("editor-file-loaded", { detail: { loaded: true } });
+          window.dispatchEvent(event);
+        }
+      }
+    };
+    window.addEventListener("hero-file-drop", handleHeroDrop);
+    return () => {
+      window.removeEventListener("hero-file-drop", handleHeroDrop);
+    };
+  }, []);
 
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
@@ -41,6 +66,9 @@ export default function PassportMakerApp() {
         const url = URL.createObjectURL(file);
         setImageSrc(url);
         setResultImage(null);
+        
+        const event = new CustomEvent("editor-file-loaded", { detail: { loaded: true } });
+        window.dispatchEvent(event);
       }
     }
   };
@@ -57,6 +85,8 @@ export default function PassportMakerApp() {
 
   const handleCancel = () => {
     setImageSrc(null);
+    const event = new CustomEvent("editor-file-loaded", { detail: { loaded: false } });
+    window.dispatchEvent(event);
   };
 
   return (
