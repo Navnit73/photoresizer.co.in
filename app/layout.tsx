@@ -9,7 +9,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in'),
-  title: "Free Online Photo Resizer, Image Compressor & Background Remover | PhotoResizerAI",
+  title: "Free Online Photo Resizer, Image Compressor & Background Remover | PhotoResizer.co.in",
   description: "Resize images, compress photos, remove backgrounds, create passport photos and edit pictures online for free. No uploads required.",
   alternates: {
     canonical: '/',
@@ -69,19 +69,19 @@ export default function RootLayout({
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "x6yjypjsyk");
+            })(window, document, "clarity", "script", "uu67di7l76");
           `}
         </Script>
 
         {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-1Z9MBM58SZ" strategy="afterInteractive" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-Y3N6YXK7VE" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-1Z9MBM58SZ');
+            gtag('config', 'G-Y3N6YXK7VE');
           `}
         </Script>
         

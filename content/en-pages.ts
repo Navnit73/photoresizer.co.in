@@ -1658,34 +1658,138 @@ export const enPages: SeoPage[] = [
     metaTitle: "Passport Size Photo Maker Free 2026 — Online, No Signup",
     metaDescription:
       "Make passport size photos free online in 2026. Correct dimensions, white background, print-ready output. Browser-based — no server upload, works on mobile and desktop.",
-    h1: "Passport Size Photo Maker Online 2026 multiple countries",
+    h1: "Free Passport Size Photo Maker Online (2026) — Any Country, Instant Download",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Create a passport size photo online in seconds — correct crop, white background, the right KB size. 100% free.",
+      "Create passport size photos online in seconds — correct crop, white background, right file size. 100% free. No signup. No watermark.",
     sections: [
       {
         heading: "What Is a Passport Size Photo?",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    A "passport size" photo refers to a standardised small portrait photograph used for identity documents, visa applications, government exam forms, job applications, and institutional ID cards. The most commonly required passport size in India and many South Asian countries is <strong>35×45 mm</strong> (approximately 413×531 pixels at 300 DPI). Our free maker applies the correct crop, background, and resolution for any country or use case — right in your browser.
+    A <strong>passport size photo</strong> is a standardised small portrait photograph required for identity documents, visa applications, government exam forms, job applications, and institutional ID cards. Every country defines its own exact dimensions, background colour, and resolution — our free online tool applies all of these automatically, right inside your browser. No file is ever uploaded to a server.
+  </p>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    The most widely required passport photo size in India and across South Asia is <strong>35 × 45 mm</strong> — roughly 413 × 531 pixels at 300 DPI — with a plain white background. For US passports, the required size is a 2 × 2 inch (51 × 51 mm) square. Our maker supports all major country formats in a single click.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Passport Size Photo Dimensions by Country (2026)",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    Use the table below to confirm the correct size before you download. Our tool presets all of these — just select your country from the dropdown.
   </p>
   <div class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
     <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80">
-      <h3 class="text-base font-bold text-slate-900 dark:text-white">Common Passport Size Photo Dimensions in 2026</h3>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white">Standard Passport Photo Sizes — Quick Reference</h3>
     </div>
     <div class="overflow-x-auto p-6">
       <table class="w-full text-sm">
-        <thead><tr class="border-b border-slate-200 dark:border-slate-700"><th class="text-left py-2 pr-4 font-semibold">Country / Use</th><th class="text-left py-2 pr-4 font-semibold">Size (mm)</th><th class="text-left py-2 pr-4 font-semibold">Pixels @ 300 DPI</th><th class="text-left py-2 font-semibold">Background</th></tr></thead>
+        <thead>
+          <tr class="border-b border-slate-200 dark:border-slate-700">
+            <th class="text-left py-2 pr-4 font-semibold">Country / Document</th>
+            <th class="text-left py-2 pr-4 font-semibold">Size (mm)</th>
+            <th class="text-left py-2 pr-4 font-semibold">Pixels @ 300 DPI</th>
+            <th class="text-left py-2 font-semibold">Background</th>
+          </tr>
+        </thead>
         <tbody class="divide-y divide-slate-100 dark:divide-slate-700/50">
-          <tr><td class="py-2 pr-4 font-medium">India Passport / Visa</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">35 × 45</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">413 × 531</td><td class="py-2 text-slate-600 dark:text-slate-400">White</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">USA Passport</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">51 × 51</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">600 × 600</td><td class="py-2 text-slate-600 dark:text-slate-400">White/off-white</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">UK Passport</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">35 × 45</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">413 × 531</td><td class="py-2 text-slate-600 dark:text-slate-400">Light grey/cream</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">Schengen Visa</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">35 × 45</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">413 × 531</td><td class="py-2 text-slate-600 dark:text-slate-400">White</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">Canada Passport</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">50 × 70</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">590 × 826</td><td class="py-2 text-slate-600 dark:text-slate-400">White</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">India — Passport / Visa</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">35 × 45</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">413 × 531</td><td class="py-2 text-slate-600 dark:text-slate-400">White</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">USA — Passport / Green Card</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">51 × 51</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">600 × 600</td><td class="py-2 text-slate-600 dark:text-slate-400">White / off-white</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">UK — Passport</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">35 × 45</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">413 × 531</td><td class="py-2 text-slate-600 dark:text-slate-400">Light grey / cream</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Schengen Visa (EU)</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">35 × 45</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">413 × 531</td><td class="py-2 text-slate-600 dark:text-slate-400">White</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Canada — Passport</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">50 × 70</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">590 × 826</td><td class="py-2 text-slate-600 dark:text-slate-400">White</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Australia — Passport</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">35 × 45</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">413 × 531</td><td class="py-2 text-slate-600 dark:text-slate-400">White / light grey</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">India — Govt Exam / NID</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">25 × 35</td><td class="py-2 pr-4 text-slate-600 dark:text-slate-400">295 × 413</td><td class="py-2 text-slate-600 dark:text-slate-400">White</td></tr>
         </tbody>
       </table>
+    </div>
+  </div>
+  <p class="text-sm text-slate-500 dark:text-slate-400">
+    ℹ️ Always cross-check with the official application instructions for your specific document — requirements can change without notice.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Make a Passport Size Photo Online — Step by Step",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    Creating a passport photo takes under two minutes. Follow these six steps:
+  </p>
+  <ol class="space-y-3 text-slate-700 dark:text-slate-300 list-none pl-0">
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">1</span>
+      <div><strong>Upload your photo</strong> — tap "Upload Photo" or drag and drop any JPEG, PNG, or HEIC image taken on your phone or camera. No account or login is needed.</div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">2</span>
+      <div><strong>Select your country or document type</strong> — choose from the preset list (India Passport, US Passport, Schengen Visa, etc.) or enter custom dimensions in mm or pixels.</div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">3</span>
+      <div><strong>Crop and position your face</strong> — use the crop handles so your face fills 70–80% of the frame. Eyes should be level with the upper third of the image.</div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">4</span>
+      <div><strong>Clean up the background</strong> — toggle "White Background" to automatically brighten and neutralise imperfect backgrounds. For a full AI background removal, use our dedicated background remover first.</div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">5</span>
+      <div><strong>Preview and adjust</strong> — review the live preview at 100% zoom. Adjust brightness or contrast if needed to meet the "clear and natural skin tone" requirement.</div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">6</span>
+      <div><strong>Download your photo</strong> — choose a single image or the ready-to-print 4×6 inch sheet (4 photos arranged for home or shop printing). Both are watermark-free.</div>
+    </li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Tips for Taking the Perfect Passport Photo at Home",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    A good source photo makes cropping and background removal much easier. Follow these tips before you upload:
+  </p>
+  <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+    <li class="flex gap-2 items-start"><span class="text-blue-500 font-bold mt-0.5">✓</span><span><strong>Use a plain white or light-coloured wall</strong> as your backdrop. Avoid patterned wallpaper, doors, or outdoor backgrounds.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-blue-500 font-bold mt-0.5">✓</span><span><strong>Shoot in natural daylight</strong> — face a window but don't let sunlight fall directly on your face. Avoid harsh shadows or flash.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-blue-500 font-bold mt-0.5">✓</span><span><strong>Look directly at the camera</strong> with a neutral expression and mouth closed. Both eyes must be open and clearly visible.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-blue-500 font-bold mt-0.5">✓</span><span><strong>Remove glasses</strong> — most countries now prohibit tinted or clear glasses in passport photos.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-blue-500 font-bold mt-0.5">✓</span><span><strong>Keep hair away from your face</strong> — the full face, forehead, and chin must be visible.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-blue-500 font-bold mt-0.5">✓</span><span><strong>Use portrait mode or a standard camera</strong> — avoid ultra-wide lenses that distort facial proportions.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-blue-500 font-bold mt-0.5">✓</span><span><strong>Wear everyday clothing</strong> in a colour that contrasts with the white background. Avoid white or very light tops.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why Use Our Passport Photo Maker?",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    Compared to going to a photo studio or paying for app subscriptions, our tool is faster, cheaper, and just as accurate:
+  </p>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+      <div class="font-semibold text-slate-900 dark:text-white mb-1">🆓 Completely Free</div>
+      <div class="text-sm text-slate-600 dark:text-slate-400">No payment, no subscription, no hidden upsells. Download unlimited photos at no cost.</div>
+    </div>
+    <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+      <div class="font-semibold text-slate-900 dark:text-white mb-1">🔒 Private & Secure</div>
+      <div class="text-sm text-slate-600 dark:text-slate-400">All processing happens locally in your browser. Your photo never leaves your device.</div>
+    </div>
+    <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+      <div class="font-semibold text-slate-900 dark:text-white mb-1">📐 Pixel-Perfect Dimensions</div>
+      <div class="text-sm text-slate-600 dark:text-slate-400">Presets for 50+ countries. Output at exactly the required pixel size and DPI — no guessing.</div>
+    </div>
+    <div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+      <div class="font-semibold text-slate-900 dark:text-white mb-1">🖨️ Print-Ready Output</div>
+      <div class="text-sm text-slate-600 dark:text-slate-400">Download a 4-up layout on a standard 4×6 inch sheet — ready to print at home or any shop.</div>
     </div>
   </div>
 </div>`,
@@ -1693,34 +1797,47 @@ export const enPages: SeoPage[] = [
     ],
     faq: [
       {
-        question: "What size is a passport size photo in India?",
+        question: "What is the passport size photo size in India?",
         answer:
-          "In India, a passport size photo is 35mm wide and 45mm tall. At 300 DPI, this equals approximately 413×531 pixels. The background must be plain white, and the face should occupy 70–80% of the frame.",
+          "In India, a passport size photo must be 35 mm wide × 45 mm tall. At 300 DPI, this equals 413 × 531 pixels. The background must be plain white, the face should be clearly visible, and the head (top of hair to chin) should occupy 70–80% of the frame height. These specifications apply to Indian passport, visa, and most government exam applications.",
       },
       {
-        question: "Can I use my phone camera to take a passport size photo?",
+        question: "Is this passport photo maker really free?",
         answer:
-          "Yes. Sit against a plain white wall in good natural lighting, face the camera directly, and take the photo. Upload it here for cropping and resizing to exact specifications.",
+          "Yes — 100% free with no watermark, no signup, and no usage limits. You can create and download as many passport photos as you need at no cost.",
       },
       {
-        question: "Can I print the photo at home?",
+        question: "Can I use my smartphone camera to take the photo?",
         answer:
-          "Yes. Download the 4-up print sheet and print on 4×6 inch glossy photo paper. You can also send the file to an online photo printing service or a local print shop.",
+          "Absolutely. A modern smartphone camera produces more than enough resolution. Stand against a plain white or light wall in good natural lighting, look straight at the camera with a neutral expression, and take the shot in portrait orientation. Then upload it here for precise cropping and resizing.",
       },
       {
-        question: "Is the photo accepted for government exams?",
+        question: "How do I print the passport photo at home?",
         answer:
-          "Our maker produces photos meeting the stated dimension requirements for Indian government exam portals. Always verify with the specific exam notification for the exact pixel and KB requirements.",
+          "Download the 4-up print sheet (four passport photos arranged on a single page) and print it on 4×6 inch glossy photo paper using any inkjet or laser printer. You can also email the file to an online printing service or take it to a local print shop.",
       },
       {
-        question: "Does the tool remove the background?",
+        question:
+          "Will the photo be accepted for Indian government exams like UPSC, SSC, or bank PO?",
         answer:
-          "The tool includes a background clean-up option to lighten and whiten imperfect backgrounds. For complete AI background removal, use our dedicated background remover tool and then crop to passport size.",
+          "Our maker outputs photos that meet the stated dimension requirements published by major Indian government exam portals (413×531 px, white background, JPEG format). Always verify the exact pixel count and maximum file size in KB from the specific exam notification, as individual portals occasionally specify stricter limits.",
       },
       {
-        question: "Is it free with no watermark?",
+        question:
+          "Does this tool remove or change the background automatically?",
         answer:
-          "Yes — 100% free, no watermark added, no account needed, unlimited photos.",
+          "Yes. The built-in background clean-up feature lightens and whitens imperfect backgrounds to meet the white background requirement for most countries. If your background is heavily patterned or coloured, use our dedicated AI Background Remover tool first, then return here to crop to passport size.",
+      },
+      {
+        question: "Is my photo uploaded to any server?",
+        answer:
+          "No. All processing — cropping, resizing, background cleanup — runs entirely in your browser using client-side JavaScript. Your photo is never sent to any server, which means complete privacy and instant results even on a slow connection.",
+      },
+      {
+        question:
+          "Can I create passport photos for countries other than India?",
+        answer:
+          "Yes. The tool includes presets for over 50 countries, including the USA (2×2 inch), UK (35×45 mm), Canada (50×70 mm), Australia (35×45 mm), and all Schengen visa countries. Simply select the destination country from the dropdown before downloading.",
       },
     ],
   },
@@ -1976,15 +2093,17 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
-  
+
   {
     slug: "ctet-photo-resizer",
     metaTitle: "CTET Photo Resizer 2027 — Resize Image Online Free, No Upload",
-    metaDescription: "Resize your CTET 2027 exam photo online free. Instantly set dimensions, file size & background as per CBSE CTET guidelines. No upload, private, works on mobile.",
+    metaDescription:
+      "Resize your CTET 2027 exam photo online free. Instantly set dimensions, file size & background as per CBSE CTET guidelines. No upload, private, works on mobile.",
     h1: "CTET Photo Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize photo for CTET 2027 exactly as per CBSE requirements. Instant browser-based resizer — private, free, no watermark.",
+    subtitle:
+      "Resize photo for CTET 2027 exactly as per CBSE requirements. Instant browser-based resizer — private, free, no watermark.",
     sections: [
       {
         heading: "What Are the CTET 2027 Photo Requirements?",
@@ -2039,34 +2158,41 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What is the CTET 2027 photo size requirement?",
-        answer: "CBSE requires CTET 2027 photo to be minimum 200x200 pixels, file size between 10-200 KB, in JPG/JPEG format with white or light background.",
+        answer:
+          "CBSE requires CTET 2027 photo to be minimum 200x200 pixels, file size between 10-200 KB, in JPG/JPEG format with white or light background.",
       },
       {
         question: "Can I resize an existing photo for CTET 2027?",
-        answer: "Yes, you can resize any existing passport-size photo to meet CTET 2027 specifications using this tool, provided the original photo meets basic quality standards.",
+        answer:
+          "Yes, you can resize any existing passport-size photo to meet CTET 2027 specifications using this tool, provided the original photo meets basic quality standards.",
       },
       {
         question: "Is my CTET photo data safe?",
-        answer: "Absolutely. The tool processes your photo entirely in your browser. No photo is ever uploaded to any server or stored anywhere.",
+        answer:
+          "Absolutely. The tool processes your photo entirely in your browser. No photo is ever uploaded to any server or stored anywhere.",
       },
       {
         question: "What if my CTET photo is too large in file size?",
-        answer: "Use the file size compression slider to reduce your photo to under 200 KB while keeping it above 10 KB minimum. The tool shows real-time file size.",
+        answer:
+          "Use the file size compression slider to reduce your photo to under 200 KB while keeping it above 10 KB minimum. The tool shows real-time file size.",
       },
       {
         question: "Does CTET require a specific background color?",
-        answer: "CTET requires a white or light-colored background. This tool can help adjust brightness and contrast to make your photo compliant.",
+        answer:
+          "CTET requires a white or light-colored background. This tool can help adjust brightness and contrast to make your photo compliant.",
       },
     ],
   },
   {
     slug: "voter-id-photo-size-reducer",
     metaTitle: "Voter ID Photo Size Reducer 2027 — Compress Photo Online Free",
-    metaDescription: "Reduce voter ID photo size online for 2027 elections. Compress image to under 50 KB, adjust dimensions as per ECI guidelines. Free, private, browser-based.",
+    metaDescription:
+      "Reduce voter ID photo size online for 2027 elections. Compress image to under 50 KB, adjust dimensions as per ECI guidelines. Free, private, browser-based.",
     h1: "Voter ID Photo Size Reducer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Reduce voter ID photo size as per ECI 2027 guidelines. Compress to exact KB requirements instantly — no upload, 100% private.",
+    subtitle:
+      "Reduce voter ID photo size as per ECI 2027 guidelines. Compress to exact KB requirements instantly — no upload, 100% private.",
     sections: [
       {
         heading: "What Are the Voter ID Photo Size Requirements for 2027?",
@@ -2121,34 +2247,41 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What is the maximum voter ID photo file size for 2027?",
-        answer: "ECI typically requires voter ID photos to be under 50 KB. Some states may allow up to 100 KB, but 50 KB is the recommended maximum for smooth upload.",
+        answer:
+          "ECI typically requires voter ID photos to be under 50 KB. Some states may allow up to 100 KB, but 50 KB is the recommended maximum for smooth upload.",
       },
       {
         question: "Can I reduce an existing photo for voter ID?",
-        answer: "Yes, you can reduce the size of any existing JPEG/PNG photo to meet voter ID requirements. The tool handles compression and resizing automatically.",
+        answer:
+          "Yes, you can reduce the size of any existing JPEG/PNG photo to meet voter ID requirements. The tool handles compression and resizing automatically.",
       },
       {
         question: "Is my photo safe during compression?",
-        answer: "Yes, the tool works entirely in your browser. Your photo never leaves your device, ensuring complete privacy and security.",
+        answer:
+          "Yes, the tool works entirely in your browser. Your photo never leaves your device, ensuring complete privacy and security.",
       },
       {
         question: "What dimensions should my voter ID photo be?",
-        answer: "The recommended dimensions are 200 x 230 pixels. This ensures your photo displays correctly on the ECI portal and printed voter ID card.",
+        answer:
+          "The recommended dimensions are 200 x 230 pixels. This ensures your photo displays correctly on the ECI portal and printed voter ID card.",
       },
       {
         question: "Does the tool work on mobile phones?",
-        answer: "Yes, the voter ID photo size reducer is fully responsive and works seamlessly on Android, iOS, and all modern mobile browsers.",
+        answer:
+          "Yes, the voter ID photo size reducer is fully responsive and works seamlessly on Android, iOS, and all modern mobile browsers.",
       },
     ],
   },
   {
     slug: "rrb-alp-photo-resizer",
     metaTitle: "RRB ALP Photo Resizer 2027 — Resize Image Online Free",
-    metaDescription: "Resize RRB ALP 2027 exam photo online free. Set dimensions & file size as per RRB guidelines. No upload, private, instant download.",
+    metaDescription:
+      "Resize RRB ALP 2027 exam photo online free. Set dimensions & file size as per RRB guidelines. No upload, private, instant download.",
     h1: "RRB ALP Photo Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize photo for RRB ALP 2027 exactly as per Railway Recruitment Board specifications. Browser-based, free, no upload.",
+    subtitle:
+      "Resize photo for RRB ALP 2027 exactly as per Railway Recruitment Board specifications. Browser-based, free, no upload.",
     sections: [
       {
         heading: "What Are the RRB ALP 2027 Photo Requirements?",
@@ -2203,37 +2336,46 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What are the RRB ALP 2027 photo specifications?",
-        answer: "RRB ALP 2027 requires 200x230 pixel photo, 30-70 KB file size, JPG format with white background and clear face visibility.",
+        answer:
+          "RRB ALP 2027 requires 200x230 pixel photo, 30-70 KB file size, JPG format with white background and clear face visibility.",
       },
       {
         question: "Can I use a mobile photo for RRB ALP?",
-        answer: "Yes, you can take a photo with your mobile phone and then resize it using this tool to meet RRB ALP specifications.",
+        answer:
+          "Yes, you can take a photo with your mobile phone and then resize it using this tool to meet RRB ALP specifications.",
       },
       {
         question: "Is my RRB ALP photo data secure?",
-        answer: "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+        answer:
+          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
       },
       {
         question: "What if my photo is older than 30 days?",
-        answer: "RRB ALP requires a recent photo not older than 30 days. You should take a fresh photo before resizing and applying.",
+        answer:
+          "RRB ALP requires a recent photo not older than 30 days. You should take a fresh photo before resizing and applying.",
       },
       {
         question: "Does RRB ALP require a signature as well?",
-        answer: "Yes, RRB ALP also requires a signature in specified dimensions. We have separate tools for signature resizing as well.",
+        answer:
+          "Yes, RRB ALP also requires a signature in specified dimensions. We have separate tools for signature resizing as well.",
       },
     ],
   },
   {
     slug: "resize-photo-driving-license-sarathi",
-    metaTitle: "Resize Photo for Driving License Sarathi 2027 — Free Online Tool",
-    metaDescription: "Resize driving license photo for Sarathi 2027 portal. Set dimensions & file size as per RTO requirements. Free, private, no upload needed.",
+    metaTitle:
+      "Resize Photo for Driving License Sarathi 2027 — Free Online Tool",
+    metaDescription:
+      "Resize driving license photo for Sarathi 2027 portal. Set dimensions & file size as per RTO requirements. Free, private, no upload needed.",
     h1: "Resize Photo for Driving License Sarathi 2027 — Free Online",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize photo for driving license application on Sarathi portal 2027. Exact RTO specifications — instant, private, no watermark.",
+    subtitle:
+      "Resize photo for driving license application on Sarathi portal 2027. Exact RTO specifications — instant, private, no watermark.",
     sections: [
       {
-        heading: "What Are the Driving License Photo Requirements on Sarathi Portal?",
+        heading:
+          "What Are the Driving License Photo Requirements on Sarathi Portal?",
         content: `
 <div class="space-y-8 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -2284,35 +2426,43 @@ export const enPages: SeoPage[] = [
     ],
     faq: [
       {
-        question: "What are the driving license photo size requirements for Sarathi portal?",
-        answer: "Sarathi portal requires 200x230 pixel photo with max 50 KB file size, JPG format with white or light background.",
+        question:
+          "What are the driving license photo size requirements for Sarathi portal?",
+        answer:
+          "Sarathi portal requires 200x230 pixel photo with max 50 KB file size, JPG format with white or light background.",
       },
       {
         question: "Can I use a selfie for driving license photo?",
-        answer: "Yes, but ensure it's a clear front-facing photo with white background, neutral expression, and proper lighting.",
+        answer:
+          "Yes, but ensure it's a clear front-facing photo with white background, neutral expression, and proper lighting.",
       },
       {
         question: "Is my photo data safe when resizing?",
-        answer: "Yes, the tool works entirely in your browser. No photo upload to any server, complete privacy maintained.",
+        answer:
+          "Yes, the tool works entirely in your browser. No photo upload to any server, complete privacy maintained.",
       },
       {
         question: "What if my photo file is too large?",
-        answer: "Use the compression slider to reduce file size. The tool shows real-time file size so you can stay under 50 KB.",
+        answer:
+          "Use the compression slider to reduce file size. The tool shows real-time file size so you can stay under 50 KB.",
       },
       {
         question: "Does this work for both learner and permanent license?",
-        answer: "Yes, the same photo specifications apply for both learner's license and permanent driving license on Sarathi portal.",
+        answer:
+          "Yes, the same photo specifications apply for both learner's license and permanent driving license on Sarathi portal.",
       },
     ],
   },
   {
     slug: "afcat-photo-resizer",
     metaTitle: "AFCAT Photo Resizer 2027 — Resize Image Online Free",
-    metaDescription: "Resize AFCAT 2027 exam photo online free. Set dimensions & file size as per IAF requirements. No upload, private, instant download.",
+    metaDescription:
+      "Resize AFCAT 2027 exam photo online free. Set dimensions & file size as per IAF requirements. No upload, private, instant download.",
     h1: "AFCAT Photo Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize photo for AFCAT 2027 as per Indian Air Force specifications. Instant browser-based tool — free, private, no upload.",
+    subtitle:
+      "Resize photo for AFCAT 2027 as per Indian Air Force specifications. Instant browser-based tool — free, private, no upload.",
     sections: [
       {
         heading: "What Are the AFCAT 2027 Photo Requirements?",
@@ -2367,34 +2517,41 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What are the AFCAT 2027 photo specifications?",
-        answer: "AFCAT 2027 requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear face view.",
+        answer:
+          "AFCAT 2027 requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear face view.",
       },
       {
         question: "Can I wear glasses in my AFCAT photo?",
-        answer: "It's recommended to remove glasses for the photo unless medically required, as clear facial features are important for identification.",
+        answer:
+          "It's recommended to remove glasses for the photo unless medically required, as clear facial features are important for identification.",
       },
       {
         question: "Is my AFCAT photo data secure?",
-        answer: "Yes, the tool processes your image entirely in your browser. No photo upload to any server ensures complete privacy.",
+        answer:
+          "Yes, the tool processes your image entirely in your browser. No photo upload to any server ensures complete privacy.",
       },
       {
         question: "What if my photo is from an older application?",
-        answer: "AFCAT requires a recent photo. You should take a fresh photo not older than 30 days for the application.",
+        answer:
+          "AFCAT requires a recent photo. You should take a fresh photo not older than 30 days for the application.",
       },
       {
         question: "Does AFCAT require a signature too?",
-        answer: "Yes, AFCAT also requires a signature upload. You can use our signature resizer tool for that requirement.",
+        answer:
+          "Yes, AFCAT also requires a signature upload. You can use our signature resizer tool for that requirement.",
       },
     ],
   },
   {
     slug: "ssc-photo-resizer-2027",
     metaTitle: "SSC Photo Resizer 2027 — Resize Image Online Free",
-    metaDescription: "Resize SSC 2027 exam photo online free. Set dimensions & file size as per Staff Selection Commission guidelines. No upload, private.",
+    metaDescription:
+      "Resize SSC 2027 exam photo online free. Set dimensions & file size as per Staff Selection Commission guidelines. No upload, private.",
     h1: "SSC Photo Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize photo for SSC exams 2027 as per SSC guidelines. Instant browser-based tool — free, private, no watermark.",
+    subtitle:
+      "Resize photo for SSC exams 2027 as per SSC guidelines. Instant browser-based tool — free, private, no watermark.",
     sections: [
       {
         heading: "What Are the SSC 2027 Photo Requirements?",
@@ -2449,34 +2606,41 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What are the SSC 2027 photo specifications?",
-        answer: "SSC requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear facial features.",
+        answer:
+          "SSC requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear facial features.",
       },
       {
         question: "Can I use a mobile photo for SSC application?",
-        answer: "Yes, you can take a photo with your mobile and resize it using this tool to meet SSC specifications.",
+        answer:
+          "Yes, you can take a photo with your mobile and resize it using this tool to meet SSC specifications.",
       },
       {
         question: "Is my SSC photo data secure?",
-        answer: "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+        answer:
+          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
       },
       {
         question: "What if my photo is already resized?",
-        answer: "You can still use the tool to verify and adjust the dimensions and file size to exactly match SSC requirements.",
+        answer:
+          "You can still use the tool to verify and adjust the dimensions and file size to exactly match SSC requirements.",
       },
       {
         question: "Does SSC require a signature as well?",
-        answer: "Yes, SSC applications also require a signature in specified dimensions. We have a separate signature resizer tool available.",
+        answer:
+          "Yes, SSC applications also require a signature in specified dimensions. We have a separate signature resizer tool available.",
       },
     ],
   },
   {
     slug: "csir-net-signature-resizer",
     metaTitle: "CSIR NET Signature Resizer 2027 — Resize Signature Online Free",
-    metaDescription: "Resize CSIR NET 2027 signature online free. Set dimensions & file size as per CSIR guidelines. No upload, private, instant download.",
+    metaDescription:
+      "Resize CSIR NET 2027 signature online free. Set dimensions & file size as per CSIR guidelines. No upload, private, instant download.",
     h1: "CSIR NET Signature Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize signature for CSIR NET 2027 exactly as per CSIR specifications. Browser-based, free, no upload needed.",
+    subtitle:
+      "Resize signature for CSIR NET 2027 exactly as per CSIR specifications. Browser-based, free, no upload needed.",
     sections: [
       {
         heading: "What Are the CSIR NET 2027 Signature Requirements?",
@@ -2531,34 +2695,41 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What are the CSIR NET 2027 signature specifications?",
-        answer: "CSIR NET requires 200x50 pixel signature, max 30 KB file size, JPG/PNG format in black or blue ink on white paper.",
+        answer:
+          "CSIR NET requires 200x50 pixel signature, max 30 KB file size, JPG/PNG format in black or blue ink on white paper.",
       },
       {
         question: "Can I use a digital signature for CSIR NET?",
-        answer: "No, CSIR NET requires a handwritten signature that is scanned and uploaded. Digital signatures are not accepted.",
+        answer:
+          "No, CSIR NET requires a handwritten signature that is scanned and uploaded. Digital signatures are not accepted.",
       },
       {
         question: "Is my signature data secure?",
-        answer: "Yes, the tool works entirely in your browser. Your signature never leaves your device, ensuring complete privacy.",
+        answer:
+          "Yes, the tool works entirely in your browser. Your signature never leaves your device, ensuring complete privacy.",
       },
       {
         question: "What if my signature file is too large?",
-        answer: "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
+        answer:
+          "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
       },
       {
         question: "Does CSIR NET require a photo too?",
-        answer: "Yes, CSIR NET also requires a photo in specified dimensions. Use our photo resizer tool for that requirement.",
+        answer:
+          "Yes, CSIR NET also requires a photo in specified dimensions. Use our photo resizer tool for that requirement.",
       },
     ],
   },
   {
     slug: "army-agniveer-photo-resizer",
     metaTitle: "Army Agniveer Photo Resizer 2027 — Resize Image Online Free",
-    metaDescription: "Resize Army Agniveer 2027 photo online free. Set dimensions & file size as per Indian Army requirements. No upload, private.",
+    metaDescription:
+      "Resize Army Agniveer 2027 photo online free. Set dimensions & file size as per Indian Army requirements. No upload, private.",
     h1: "Army Agniveer Photo Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize photo for Army Agniveer 2027 as per Indian Army specifications. Instant tool — free, private, no upload.",
+    subtitle:
+      "Resize photo for Army Agniveer 2027 as per Indian Army specifications. Instant tool — free, private, no upload.",
     sections: [
       {
         heading: "What Are the Army Agniveer 2027 Photo Requirements?",
@@ -2613,37 +2784,45 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What are the Army Agniveer 2027 photo specifications?",
-        answer: "Army Agniveer requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear face view.",
+        answer:
+          "Army Agniveer requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear face view.",
       },
       {
         question: "Can I wear uniform in my Agniveer photo?",
-        answer: "No, you should wear civilian clothes for the photo. Wearing uniform or cap is not allowed for the photograph.",
+        answer:
+          "No, you should wear civilian clothes for the photo. Wearing uniform or cap is not allowed for the photograph.",
       },
       {
         question: "Is my photo data secure?",
-        answer: "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+        answer:
+          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
       },
       {
         question: "What if my photo is from an older application?",
-        answer: "You should take a fresh photo for Army Agniveer 2027 application as it requires a recent photograph.",
+        answer:
+          "You should take a fresh photo for Army Agniveer 2027 application as it requires a recent photograph.",
       },
       {
         question: "Does Army Agniveer require a signature?",
-        answer: "Yes, the application also requires a signature. Use our signature resizer tool for that requirement.",
+        answer:
+          "Yes, the application also requires a signature. Use our signature resizer tool for that requirement.",
       },
     ],
   },
   {
     slug: "ibps-handwritten-declaration-resizer",
     metaTitle: "IBPS Handwritten Declaration Resizer 2027 — Resize Online Free",
-    metaDescription: "Resize IBPS handwritten declaration 2027 online free. Set dimensions & file size as per IBPS guidelines. No upload, private.",
+    metaDescription:
+      "Resize IBPS handwritten declaration 2027 online free. Set dimensions & file size as per IBPS guidelines. No upload, private.",
     h1: "IBPS Handwritten Declaration Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize handwritten declaration for IBPS 2027 as per IBPS specifications. Instant browser-based tool — free, private.",
+    subtitle:
+      "Resize handwritten declaration for IBPS 2027 as per IBPS specifications. Instant browser-based tool — free, private.",
     sections: [
       {
-        heading: "What Are the IBPS Handwritten Declaration Requirements for 2027?",
+        heading:
+          "What Are the IBPS Handwritten Declaration Requirements for 2027?",
         content: `
 <div class="space-y-8 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -2695,37 +2874,45 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What is the IBPS handwritten declaration text?",
-        answer: "The text is: 'I, [Candidate Name], hereby declare that all the information submitted by me in the application form is correct, true, and valid. I will present the supporting documents as and when required.'",
+        answer:
+          "The text is: 'I, [Candidate Name], hereby declare that all the information submitted by me in the application form is correct, true, and valid. I will present the supporting documents as and when required.'",
       },
       {
         question: "What are the IBPS declaration specifications?",
-        answer: "IBPS requires 200x50 pixel handwritten declaration, max 30 KB file size, JPG format in English or Hindi.",
+        answer:
+          "IBPS requires 200x50 pixel handwritten declaration, max 30 KB file size, JPG format in English or Hindi.",
       },
       {
         question: "Is my declaration data secure?",
-        answer: "Yes, the tool works entirely in your browser. Your declaration never leaves your device, ensuring complete privacy.",
+        answer:
+          "Yes, the tool works entirely in your browser. Your declaration never leaves your device, ensuring complete privacy.",
       },
       {
         question: "Can I type the declaration instead of handwriting?",
-        answer: "No, IBPS specifically requires a handwritten declaration. Typed declarations will be rejected during verification.",
+        answer:
+          "No, IBPS specifically requires a handwritten declaration. Typed declarations will be rejected during verification.",
       },
       {
         question: "What if my declaration file is too large?",
-        answer: "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
+        answer:
+          "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
       },
     ],
   },
   {
     slug: "resize-left-thumb-impression-ibps",
     metaTitle: "Resize Left Thumb Impression IBPS 2027 — Online Free Tool",
-    metaDescription: "Resize left thumb impression for IBPS 2027 online free. Set dimensions & file size as per IBPS guidelines. No upload, private.",
+    metaDescription:
+      "Resize left thumb impression for IBPS 2027 online free. Set dimensions & file size as per IBPS guidelines. No upload, private.",
     h1: "Resize Left Thumb Impression IBPS 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize left thumb impression for IBPS 2027 as per IBPS specifications. Instant tool — free, private, no upload.",
+    subtitle:
+      "Resize left thumb impression for IBPS 2027 as per IBPS specifications. Instant tool — free, private, no upload.",
     sections: [
       {
-        heading: "What Are the IBPS Left Thumb Impression Requirements for 2027?",
+        heading:
+          "What Are the IBPS Left Thumb Impression Requirements for 2027?",
         content: `
 <div class="space-y-8 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -2777,34 +2964,41 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "Which thumb impression is required for IBPS?",
-        answer: "IBPS requires the left thumb impression only. Make sure you use the left thumb for the impression.",
+        answer:
+          "IBPS requires the left thumb impression only. Make sure you use the left thumb for the impression.",
       },
       {
         question: "What are the IBPS left thumb impression specifications?",
-        answer: "IBPS requires 200x200 pixel left thumb impression, max 30 KB file size, JPG format with black or blue ink on white paper.",
+        answer:
+          "IBPS requires 200x200 pixel left thumb impression, max 30 KB file size, JPG format with black or blue ink on white paper.",
       },
       {
         question: "Is my thumb impression data secure?",
-        answer: "Yes, the tool works entirely in your browser. Your thumb impression never leaves your device, ensuring complete privacy.",
+        answer:
+          "Yes, the tool works entirely in your browser. Your thumb impression never leaves your device, ensuring complete privacy.",
       },
       {
         question: "Can I use color ink for thumb impression?",
-        answer: "Use black or blue ink pad only. Color inks may not be accepted by the IBPS system.",
+        answer:
+          "Use black or blue ink pad only. Color inks may not be accepted by the IBPS system.",
       },
       {
         question: "What if my thumb impression file is too large?",
-        answer: "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
+        answer:
+          "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
       },
     ],
   },
   {
     slug: "uksssc-photo-resizer",
     metaTitle: "UKSSSC Photo Resizer 2027 — Resize Image Online Free",
-    metaDescription: "Resize UKSSSC 2027 exam photo online free. Set dimensions & file size as per Uttarakhand Subordinate Service Selection Commission guidelines. No upload.",
+    metaDescription:
+      "Resize UKSSSC 2027 exam photo online free. Set dimensions & file size as per Uttarakhand Subordinate Service Selection Commission guidelines. No upload.",
     h1: "UKSSSC Photo Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize photo for UKSSSC 2027 as per UKSSSC specifications. Instant browser-based tool — free, private, no upload.",
+    subtitle:
+      "Resize photo for UKSSSC 2027 as per UKSSSC specifications. Instant browser-based tool — free, private, no upload.",
     sections: [
       {
         heading: "What Are the UKSSSC 2027 Photo Requirements?",
@@ -2859,34 +3053,41 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What are the UKSSSC 2027 photo specifications?",
-        answer: "UKSSSC requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear facial features.",
+        answer:
+          "UKSSSC requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear facial features.",
       },
       {
         question: "Can I use a mobile photo for UKSSSC application?",
-        answer: "Yes, you can take a photo with your mobile and resize it using this tool to meet UKSSSC specifications.",
+        answer:
+          "Yes, you can take a photo with your mobile and resize it using this tool to meet UKSSSC specifications.",
       },
       {
         question: "Is my photo data secure?",
-        answer: "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+        answer:
+          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
       },
       {
         question: "What if my photo is already resized?",
-        answer: "You can still use the tool to verify and adjust the dimensions and file size to exactly match UKSSSC requirements.",
+        answer:
+          "You can still use the tool to verify and adjust the dimensions and file size to exactly match UKSSSC requirements.",
       },
       {
         question: "Does UKSSSC require a signature as well?",
-        answer: "Yes, UKSSSC applications also require a signature in specified dimensions. Use our signature resizer tool for that.",
+        answer:
+          "Yes, UKSSSC applications also require a signature in specified dimensions. Use our signature resizer tool for that.",
       },
     ],
   },
   {
     slug: "karnataka-police-photo-resizer",
     metaTitle: "Karnataka Police Photo Resizer 2027 — Resize Image Online Free",
-    metaDescription: "Resize Karnataka Police 2027 recruitment photo online free. Set dimensions & file size as per KSP guidelines. No upload, private.",
+    metaDescription:
+      "Resize Karnataka Police 2027 recruitment photo online free. Set dimensions & file size as per KSP guidelines. No upload, private.",
     h1: "Karnataka Police Photo Resizer 2027 — Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Resize photo for Karnataka Police 2027 as per KSP specifications. Instant tool — free, private, no upload.",
+    subtitle:
+      "Resize photo for Karnataka Police 2027 as per KSP specifications. Instant tool — free, private, no upload.",
     sections: [
       {
         heading: "What Are the Karnataka Police 2027 Photo Requirements?",
@@ -2941,25 +3142,29 @@ export const enPages: SeoPage[] = [
     faq: [
       {
         question: "What are the Karnataka Police 2027 photo specifications?",
-        answer: "Karnataka Police requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white/light background and clear face view.",
+        answer:
+          "Karnataka Police requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white/light background and clear face view.",
       },
       {
         question: "Can I wear uniform in my KSP photo?",
-        answer: "No, you should wear civilian clothes for the photo. Wearing uniform or cap is not allowed for the photograph.",
+        answer:
+          "No, you should wear civilian clothes for the photo. Wearing uniform or cap is not allowed for the photograph.",
       },
       {
         question: "Is my photo data secure?",
-        answer: "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+        answer:
+          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
       },
       {
         question: "What if my photo is from an older application?",
-        answer: "You should take a fresh photo for Karnataka Police recruitment as it requires a recent photograph.",
+        answer:
+          "You should take a fresh photo for Karnataka Police recruitment as it requires a recent photograph.",
       },
       {
         question: "Does KSP require a signature?",
-        answer: "Yes, the application also requires a signature. Use our signature resizer tool for that requirement.",
+        answer:
+          "Yes, the application also requires a signature. Use our signature resizer tool for that requirement.",
       },
     ],
-  }
-
+  },
 ];

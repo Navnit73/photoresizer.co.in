@@ -22,9 +22,18 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
               <h3 className="text-xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
                 photoresizer
               </h3>
-              <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed max-w-sm">
+              <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
                 Your ultimate suite of free, private, and secure online image editing tools. Process your photos locally in your browser without any data leaving your device.
               </p>
+              
+              <div className="text-sm text-slate-600 dark:text-slate-400">
+                <p className="font-bold text-slate-900 dark:text-white mb-2">Contact Developer</p>
+                <p className="mb-1">Navnit Rai</p>
+                <p className="mb-1">
+                  <a href="mailto:navnitrai5389@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">navnitrai5389@gmail.com</a>
+                </p>
+                <p>+91 7355087072</p>
+              </div>
             </div>
             
             {/* Quick Links */}
@@ -50,12 +59,20 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div className="text-slate-500 dark:text-slate-500 text-sm">
-              &copy; {new Date().getFullYear()} photoresizer. All rights reserved.
+          <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div className="flex flex-col gap-3 text-slate-500 dark:text-slate-400 text-sm">
+              <div className="flex flex-wrap items-center gap-3 md:gap-4 font-semibold text-slate-700 dark:text-slate-300">
+                <span>100% Private</span>
+                <span className="hidden md:inline">•</span>
+                <span>Fast Processing</span>
+                <span className="hidden md:inline">•</span>
+                <span>Offline Capable</span>
+              </div>
+              <p>&copy; 2026 Photo Resizer.</p>
+            
             </div>
-            <div className="flex gap-4 text-sm text-slate-400 dark:text-slate-500">
-              <span>Made with ❤️ for Creators</span>
+            <div className="flex text-sm text-slate-500 dark:text-slate-400 font-medium">
+              <span>Designed & Developed with ❤️ by Navnit Rai</span>
             </div>
           </div>
         </div>

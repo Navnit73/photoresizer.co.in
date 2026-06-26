@@ -138,7 +138,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                   {/* ── LEFT COLUMN: Marketing Copy ── */}
-                  <div className="max-w-xl">
+                  <div className="max-w-xl order-2 lg:order-1">
                     <div className="hero-fade-in hero-fade-in-delay-1 mb-4">
                       <Breadcrumb page={page} lang={lang} />
                     </div>
@@ -194,7 +194,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                   </div>
 
                   {/* ── RIGHT COLUMN: Upload Zone ── */}
-                  <div className="hero-fade-in hero-fade-in-delay-3 flex justify-center lg:justify-end">
+                  <div className="hero-fade-in hero-fade-in-delay-3 flex justify-center lg:justify-end order-1 lg:order-2">
                     <div className="w-full max-w-md">
                       {/* Upload Card */}
                       <div
