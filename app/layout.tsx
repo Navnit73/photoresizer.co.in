@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ClientErrorSuppressor } from "./components/ClientErrorSuppressor";
-import ModelPreloader from "./components/ModelPreloader";
 import { LangUpdater } from "./components/LangUpdater";
 import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema";
 import "./globals.css";
@@ -98,7 +97,6 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <LangUpdater />
           <ClientErrorSuppressor />
-          <ModelPreloader />
           {children}
         </ThemeProvider>
       </body>

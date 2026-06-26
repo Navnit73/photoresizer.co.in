@@ -5,7 +5,6 @@ import Cropper from 'react-easy-crop';
 import { ArrowLeft, ArrowRight, Check, Image as ImageIcon, Info, Loader2, Wand2, ZoomIn, ZoomOut, Eraser } from 'lucide-react';
 import { useTranslation } from '@/app/hooks/useTranslation';
 import imageCompression from 'browser-image-compression';
-import { removeBackground, Config } from '@imgly/background-removal';
 
 interface PassportCropperProps {
   imageSrc: string;
@@ -58,7 +57,8 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
 
     setIsRemovingBg(true);
     try {
-      const config: Config = {
+      const { removeBackground } = await import('@imgly/background-removal');
+      const config: import('@imgly/background-removal').Config = {
         publicPath: 'https://staticimgly.com/@imgly/background-removal-data/1.7.0/dist/',
         model: 'isnet_fp16',
         proxyToWorker: false,

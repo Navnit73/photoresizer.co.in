@@ -7,7 +7,6 @@ import 'react-image-crop/dist/ReactCrop.css';
 import { useEditor, AspectRatio } from './EditorContext';
 import { useTranslation } from '@/app/hooks/useTranslation';
 import { UploadCloud, Crop as CropIcon, Scissors, Check, X, Type, ZoomIn, ZoomOut } from 'lucide-react';
-import { removeBackground } from '@imgly/background-removal';
 
 const ASPECT_RATIOS: { label: AspectRatio; value: number | undefined }[] = [
   { label: 'free', value: undefined },
@@ -89,6 +88,7 @@ export default function OriginalWorkspace() {
     if (!imageUrl || isBgRemoving) return;
     setIsBgRemoving(true);
     try {
+      const { removeBackground } = await import('@imgly/background-removal');
       const config: import('@imgly/background-removal').Config = {
         publicPath: 'https://staticimgly.com/@imgly/background-removal-data/1.7.0/dist/',
         model: 'isnet_fp16',

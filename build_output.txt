@@ -1,0 +1,56 @@
+
+> image-editor@0.1.0 build
+> next build && npx tsx scripts/update-html-lang.ts
+
+▲ Next.js 16.2.9 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.6s
+  Running TypeScript ...
+  Finished TypeScript in 1831ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/96) ...
+  Generating static pages using 9 workers (24/96) 
+  Generating static pages using 9 workers (48/96) 
+  Generating static pages using 9 workers (72/96) 
+✓ Generating static pages using 9 workers (96/96) in 681ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ● /[...slug]
+│ ├ /photo-resizer
+│ ├ /passport-photo-maker
+│ ├ /how-to-use
+│ └ [+31 more paths]
+├ ○ /canvas-photo-collage-maker
+├ ○ /de
+├ ● /de/[...slug]
+│ ├ /de/foto-verkleinern
+│ ├ /de/bild-verkleinern
+│ ├ /de/bildgroesse-aendern
+│ └ [+36 more paths]
+├ ○ /de/tools
+├ ○ /es
+├ ● /es/[...slug]
+│ ├ /es/redimensionar-foto
+│ ├ /es/creador-foto-pasaporte
+│ ├ /es/como-usar
+│ └ [+3 more paths]
+├ ○ /fr
+├ ● /fr/[...slug]
+│ ├ /fr/redimensionner-photo
+│ ├ /fr/createur-photo-identite
+│ ├ /fr/comment-utiliser
+│ └ [+3 more paths]
+├ ○ /icon.svg
+├ ○ /passport-test
+└ ○ /tools
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+Updating lang attributes in generated HTML...
+Successfully updated lang attributes.
