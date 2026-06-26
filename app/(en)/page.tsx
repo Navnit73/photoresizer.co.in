@@ -15,12 +15,20 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+const EditorFallback = () => (
+  <div className="w-full min-h-[600px] flex flex-col items-center justify-center bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
+    <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-4"></div>
+    <p className="text-slate-500 dark:text-slate-400 font-semibold">Loading Editor Workspace...</p>
+  </div>
+);
+
 const PhotoEditor = dynamic(() => import("../components/editor/PhotoEditor"), {
   ssr: false,
+  loading: () => <EditorFallback />,
 });
 const BgRemoverApp = dynamic(
   () => import("../components/bg_removal/BgRemoverApp"),
-  { ssr: false },
+  { ssr: false, loading: () => <EditorFallback /> },
 );
 
 const homeFaqSchema = {

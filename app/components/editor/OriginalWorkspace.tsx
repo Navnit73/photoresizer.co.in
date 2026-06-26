@@ -61,6 +61,7 @@ export default function OriginalWorkspace() {
           setCropState(undefined);
           setCompletedCrop(undefined);
         };
+        img.decoding = "async";
         img.src = url;
       }
     },
@@ -92,7 +93,7 @@ export default function OriginalWorkspace() {
       const config: import('@imgly/background-removal').Config = {
         publicPath: 'https://staticimgly.com/@imgly/background-removal-data/1.7.0/dist/',
         model: 'isnet_fp16',
-        proxyToWorker: false,
+        proxyToWorker: true,
       };
       const blob = await removeBackground(imageUrl, config);
       const url = URL.createObjectURL(blob);
@@ -103,6 +104,7 @@ export default function OriginalWorkspace() {
         setBgProgress(100);
         setTimeout(() => setIsBgRemoving(false), 400);
       };
+      img.decoding = "async";
       img.src = url;
     } catch (error) {
       console.error('Error removing background:', error);

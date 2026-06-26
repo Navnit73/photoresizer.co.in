@@ -71,6 +71,7 @@ export default function LivePreview() {
             <img
               src={livePreview.url}
               alt={t.livePreview}
+              decoding="async"
               className="max-w-full max-h-full object-contain"
             />
             {/* Subtle processing overlay — keeps showing last frame while updating */}
