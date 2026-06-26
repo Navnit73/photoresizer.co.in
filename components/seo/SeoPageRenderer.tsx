@@ -201,8 +201,8 @@ export function SeoPageRenderer({ page, lang }: Props) {
                         {...getRootProps()}
                         className={`hero-upload-zone relative cursor-pointer rounded-2xl border-2 border-dashed p-8 sm:p-10 transition-all duration-300 backdrop-blur-md ${
                           isDragActive
-                            ? "border-blue-500 bg-blue-50/80 dark:bg-blue-500/10 scale-[1.02]"
-                            : "border-slate-300/60 dark:border-slate-600/40 bg-white/60 dark:bg-white/[0.03] hover:border-blue-400/60 dark:hover:border-blue-500/40 hover:bg-white/80 dark:hover:bg-white/[0.05]"
+                            ? "border-pink-600 bg-blue-50/80 dark:bg-blue-500/10 scale-[1.02]"
+                            : "border-pink-600 dark:border-pink-600/60 bg-white/60 dark:bg-white/[0.03] hover:border-pink-500 hover:bg-white/80 dark:hover:bg-white/[0.05]"
                         }`}
                       >
                         <input {...getInputProps()} />

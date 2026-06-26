@@ -165,7 +165,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
 
   return (
     <div className="w-full max-w-6xl mx-auto flex flex-col gap-6 p-4">
-      {/* Inject custom CSS for the blue guide bars directly inside the crop box */}
+      {/* Inject custom CSS for the guide bars directly inside the crop box */}
       <style dangerouslySetInnerHTML={{__html: `
         .passport-crop-area::before {
           content: '';
@@ -173,10 +173,10 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
           top: 8%;
           left: 5%;
           right: 5%;
-          height: 3px;
-          background-color: #84cc16; /* lime-500 */
-          box-shadow: 0 0 4px rgba(0,0,0,0.4);
+          height: 1px;
+          background-color: #10b981; /* emerald-500 */
           pointer-events: none;
+          z-index: 50;
         }
         .passport-crop-area::after {
           content: '';
@@ -184,29 +184,29 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
           top: 83%;
           left: 5%;
           right: 5%;
-          height: 3px;
-          background-color: #84cc16; /* lime-500 */
-          box-shadow: 0 0 4px rgba(0,0,0,0.4);
+          height: 1px;
+          background-color: #10b981; /* emerald-500 */
           pointer-events: none;
+          z-index: 50;
         }
       `}} />
 
       {/* Header */}
-      <div className="flex flex-col gap-1">
-        <h2 className="text-3xl font-black text-slate-800 dark:text-slate-100 tracking-tight">
+      <div className="flex flex-col gap-1 items-start text-left border-b border-slate-200 dark:border-slate-800 pb-4">
+        <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
           Format Passport Photo
         </h2>
-        <p className="text-slate-500 font-medium">
+        <p className="text-slate-500 dark:text-slate-400 text-sm">
           3.5 x 4.5 cm • 826x1062 pixels • Max 500KB
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
         
         {/* Left Column: Cropper Workspace */}
         <div className="flex flex-col gap-4">
           <div 
-            className="relative w-full h-[55vh] lg:h-[65vh] rounded-3xl overflow-hidden border-2 border-slate-200 dark:border-slate-700 shadow-inner flex items-center justify-center transition-colors duration-500"
+            className="relative w-full h-[60vh] lg:h-[70vh] rounded-sm overflow-hidden border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 flex items-center justify-center transition-colors"
             style={{ 
               backgroundColor: (useBgRemoved && bgColor !== 'transparent') ? bgColor : undefined 
             }}
@@ -214,7 +214,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
             {/* Checkerboard fallback if no bg color */}
             {(!useBgRemoved || bgColor === 'transparent') && (
               <div 
-                className="absolute inset-0 z-0 opacity-[0.05] pointer-events-none"
+                className="absolute inset-0 z-0 opacity-10 dark:opacity-20 pointer-events-none"
                 style={{
                   backgroundImage: 'linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(-45deg, #000 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #000 75%), linear-gradient(-45deg, transparent 75%, #000 75%)',
                   backgroundSize: '20px 20px',
@@ -233,21 +233,21 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
               onZoomChange={setZoom}
               classes={{
                 containerClassName: 'bg-transparent z-10',
-                cropAreaClassName: 'passport-crop-area border-2 border-lime-500/50 shadow-[0_0_0_9999em_rgba(0,0,0,0.5)] dark:shadow-[0_0_0_9999em_rgba(0,0,0,0.8)]',
+                cropAreaClassName: 'passport-crop-area border border-emerald-500 shadow-[0_0_0_9999em_rgba(0,0,0,0.7)] dark:shadow-[0_0_0_9999em_rgba(0,0,0,0.85)] rounded-none overflow-visible',
               }}
             />
 
             {/* Center Point Crosshair */}
-            <div className="absolute pointer-events-none z-20 w-4 h-4 flex items-center justify-center opacity-75">
-              <div className="absolute w-[1px] h-full bg-lime-400 drop-shadow-[0_0_1px_rgba(0,0,0,0.8)]" />
-              <div className="absolute h-[1px] w-full bg-lime-400 drop-shadow-[0_0_1px_rgba(0,0,0,0.8)]" />
+            <div className="absolute pointer-events-none z-20 w-4 h-4 flex items-center justify-center opacity-50 mix-blend-difference">
+              <div className="absolute w-[1px] h-full bg-white" />
+              <div className="absolute h-[1px] w-full bg-white" />
             </div>
             
             {/* Processing Overlay */}
             {isRemovingBg && (
-              <div className="absolute inset-0 z-30 bg-slate-900/60 backdrop-blur-sm flex flex-col items-center justify-center text-white">
-                <Loader2 className="w-10 h-10 animate-spin text-lime-500 mb-3" />
-                <span className="font-bold tracking-wide">Removing Background...</span>
+              <div className="absolute inset-0 z-30 bg-slate-900/80 flex flex-col items-center justify-center text-white">
+                <Loader2 className="w-8 h-8 animate-spin text-emerald-500 mb-3" />
+                <span className="text-sm font-semibold tracking-wide">Removing Background...</span>
               </div>
             )}
           </div>
@@ -257,31 +257,31 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
         <div className="flex flex-col gap-6">
           
           {/* Instructions Box */}
-          <div className="bg-lime-50 dark:bg-lime-900/20 border border-lime-200 dark:border-lime-800/50 rounded-2xl p-5 flex flex-col gap-2">
-            <div className="flex items-center gap-2 text-lime-700 dark:text-lime-400 font-bold">
-              <Info size={18} />
+          <div className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-sm p-4 flex flex-col gap-2">
+            <div className="flex items-center gap-2 text-slate-800 dark:text-slate-200 font-semibold text-sm">
+              <Info size={16} />
               <h4>Alignment Guide</h4>
             </div>
-            <p className="text-lime-800/80 dark:text-lime-300/80 text-sm leading-relaxed">
-              Drag the photo and use the zoom slider below to fit the chin and the top of the head perfectly within the <span className="font-bold">green horizontal bars</span>.
+            <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">
+              Drag the photo and use the zoom slider to fit the chin and the top of the head within the <span className="font-semibold text-emerald-600 dark:text-emerald-400">green bars</span>.
             </p>
           </div>
 
-          <div className="flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl p-6 shadow-sm flex flex-col gap-8">
+          <div className="flex-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-sm p-6 flex flex-col gap-6">
             
             {/* Step 1: Zoom */}
-            <section className="flex flex-col gap-4">
+            <section className="flex flex-col gap-3">
               <div className="flex items-center justify-between">
-                <h3 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
-                  <span className="bg-slate-100 dark:bg-slate-700 w-6 h-6 rounded-full flex items-center justify-center text-xs text-slate-500 dark:text-slate-400">1</span>
+                <h3 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2 text-sm">
+                  <span className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 w-5 h-5 rounded-sm flex items-center justify-center text-[10px] font-bold">1</span>
                   Adjust Size
                 </h3>
-                <span className="text-xs font-bold text-lime-600 dark:text-lime-500">
+                <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
                   {Math.round(zoom * 100)}%
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <ZoomOut size={16} className="text-slate-400" />
+                <ZoomOut size={16} className="text-slate-500" />
                 <input
                   type="range"
                   value={zoom}
@@ -290,62 +290,62 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
                   step={0.05}
                   aria-label="Zoom"
                   onChange={(e) => setZoom(Number(e.target.value))}
-                  className="flex-1 accent-lime-600 hover:accent-lime-500 cursor-grab active:cursor-grabbing"
+                  className="flex-1 h-1 bg-slate-200 dark:bg-slate-700 rounded-none appearance-none cursor-grab active:cursor-grabbing accent-slate-900 dark:accent-slate-100"
                 />
-                <ZoomIn size={16} className="text-slate-400" />
+                <ZoomIn size={16} className="text-slate-500" />
               </div>
             </section>
 
-            <div className="h-px bg-slate-100 dark:bg-slate-700/50 w-full" />
+            <div className="h-px bg-slate-200 dark:bg-slate-800 w-full" />
 
             {/* Step 2: Background */}
-            <section className="flex flex-col gap-4">
-              <h3 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
-                <span className="bg-slate-100 dark:bg-slate-700 w-6 h-6 rounded-full flex items-center justify-center text-xs text-slate-500 dark:text-slate-400">2</span>
+            <section className="flex flex-col gap-3">
+              <h3 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2 text-sm">
+                <span className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 w-5 h-5 rounded-sm flex items-center justify-center text-[10px] font-bold">2</span>
                 {t.passportBg}
               </h3>
 
               <button
                 onClick={handleToggleBgRemoval}
                 disabled={isRemovingBg}
-                className={`relative overflow-hidden w-full py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 font-bold transition-all duration-200 active:scale-[0.98] ${
+                className={`w-full py-2.5 px-4 rounded-sm flex items-center justify-center gap-2 text-sm font-semibold transition-colors ${
                   useBgRemoved 
-                    ? 'bg-lime-500 hover:bg-lime-600 text-white shadow-[0_4px_14px_rgba(132,204,22,0.3)]' 
-                    : 'bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200'
+                    ? 'bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-100 dark:hover:bg-slate-200 dark:text-slate-900' 
+                    : 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700'
                 }`}
               >
                 {useBgRemoved ? (
                   <>
-                    <Check size={18} />
+                    <Check size={16} />
                     <span>{t.bgRemoved}</span>
                   </>
                 ) : (
                   <>
-                    <Eraser size={18} />
+                    <Eraser size={16} />
                     <span>{t.removeBg}</span>
                   </>
                 )}
               </button>
 
               {/* Color Picker (Only visible when BG is removed) */}
-              <div className={`transition-all duration-300 overflow-hidden flex flex-col gap-3 ${useBgRemoved ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
-                <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{t.selectColor}</span>
+              <div className={`transition-all overflow-hidden flex flex-col gap-2 ${useBgRemoved ? 'max-h-48 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Select Color</span>
                 <div className="grid grid-cols-3 gap-2">
                   {BG_COLORS.map((c) => (
                     <button
                       key={c.value}
                       onClick={() => setBgColor(c.value)}
-                      className={`flex flex-col items-center gap-2 py-3 rounded-xl border-2 transition-all ${
+                      className={`flex flex-col items-center gap-1 py-2 rounded-sm border transition-colors ${
                         bgColor === c.value 
-                          ? 'border-lime-500 bg-lime-50 dark:bg-lime-900/20' 
-                          : 'border-slate-100 dark:border-slate-700 hover:border-slate-300'
+                          ? 'border-slate-900 bg-slate-50 dark:border-slate-100 dark:bg-slate-800' 
+                          : 'border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800'
                       }`}
                     >
                       <div 
-                        className="w-6 h-6 rounded-full shadow-inner border border-black/10 dark:border-white/10"
+                        className={`w-6 h-6 rounded-sm border border-slate-300 dark:border-slate-600 ${bgColor === c.value ? 'ring-2 ring-slate-900/10 dark:ring-slate-100/10 ring-offset-1' : ''}`}
                         style={{ backgroundColor: c.value }}
                       />
-                      <span className={`text-[10px] font-bold ${bgColor === c.value ? 'text-lime-700 dark:text-lime-400' : 'text-slate-500'}`}>
+                      <span className={`text-[10px] font-semibold ${bgColor === c.value ? 'text-slate-900 dark:text-slate-100' : 'text-slate-500 dark:text-slate-400'}`}>
                         {c.label}
                       </span>
                     </button>
@@ -360,17 +360,17 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
             <button
               onClick={onCancel}
               disabled={isProcessing || isRemovingBg}
-              className="flex-1 flex justify-center items-center gap-2 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 font-bold rounded-2xl transition-all disabled:opacity-50"
+              className="flex-1 flex justify-center items-center py-3 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-semibold rounded-sm transition-colors disabled:opacity-50"
             >
               Cancel
             </button>
             <button
               onClick={handleNext}
               disabled={!completedCrop || isProcessing || isRemovingBg}
-              className="flex-[2] flex justify-center items-center gap-2 py-4 bg-slate-900 dark:bg-white hover:bg-slate-800 dark:hover:bg-slate-100 text-white dark:text-slate-900 font-black rounded-2xl shadow-xl shadow-slate-900/10 dark:shadow-white/10 transition-all active:scale-95 disabled:opacity-50 disabled:active:scale-100"
+              className="flex-[2] flex justify-center items-center gap-2 py-3 bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 text-white dark:text-slate-900 text-sm font-semibold rounded-sm transition-colors disabled:opacity-50"
             >
               {isProcessing ? 'Saving...' : 'Export Photo'}
-              {!isProcessing && <ArrowRight size={18} />}
+              {!isProcessing && <ArrowRight size={16} />}
             </button>
           </div>
 
