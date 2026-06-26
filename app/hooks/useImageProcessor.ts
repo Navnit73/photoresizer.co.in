@@ -22,7 +22,7 @@ export function useImageProcessor() {
     if (debounceTimer.current) clearTimeout(debounceTimer.current);
 
     // No debounce on first load — process immediately
-    const delay = isFirstLoad.current ? 0 : 80;
+    const delay = isFirstLoad.current ? 0 : 16;
     isFirstLoad.current = false;
 
     debounceTimer.current = setTimeout(() => {

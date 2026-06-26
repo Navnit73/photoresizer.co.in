@@ -19,7 +19,7 @@ const ASPECT_RATIOS: { label: AspectRatio; value: number | undefined }[] = [
 
 export default function OriginalWorkspace() {
   const {
-    imageFile, imageUrl, setImageFile, setCrop, aspectRatio, setAspectRatio,
+    imageFile, imageUrl, setImageFile, updateBaseImage, setCrop, aspectRatio, setAspectRatio,
     isBgRemoving, setIsBgRemoving, setWidth, setHeight,
     textOverlays, updateTextOverlay, selectedTextId, setSelectedTextId,
   } = useEditor();
@@ -111,18 +111,39 @@ export default function OriginalWorkspace() {
     }
   };
 
-  const handleCropComplete = () => {
+  const handleCropComplete = async () => {
     if (completedCrop && imageRef.current) {
       const scaleX = imageRef.current.naturalWidth / imageRef.current.width;
       const scaleY = imageRef.current.naturalHeight / imageRef.current.height;
-      setCrop({
-        x: completedCrop.x * scaleX,
-        y: completedCrop.y * scaleY,
-        width: completedCrop.width * scaleX,
-        height: completedCrop.height * scaleY,
-      });
-      setWidth(Math.round(completedCrop.width * scaleX));
-      setHeight(Math.round(completedCrop.height * scaleY));
+      
+      const cropX = completedCrop.x * scaleX;
+      const cropY = completedCrop.y * scaleY;
+      const cropW = completedCrop.width * scaleX;
+      const cropH = completedCrop.height * scaleY;
+
+      const canvas = document.createElement('canvas');
+      canvas.width = cropW;
+      canvas.height = cropH;
+      const ctx = canvas.getContext('2d');
+      
+      if (ctx) {
+        ctx.drawImage(
+          imageRef.current,
+          cropX, cropY, cropW, cropH,
+          0, 0, cropW, cropH
+        );
+        
+        await new Promise<void>((resolve) => {
+          canvas.toBlob((blob) => {
+            if (blob) {
+              const newUrl = URL.createObjectURL(blob);
+              const newFile = new File([blob], 'cropped.png', { type: 'image/png' });
+              updateBaseImage(newFile, newUrl, Math.round(cropW), Math.round(cropH));
+            }
+            resolve();
+          }, 'image/png', 1);
+        });
+      }
     }
     setIsCropping(false);
   };

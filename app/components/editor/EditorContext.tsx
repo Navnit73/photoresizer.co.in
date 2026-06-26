@@ -56,6 +56,7 @@ interface EditorState {
 
 interface EditorContextType extends EditorState {
   setImageFile: (file: File | null, url: string | null, width: number, height: number) => void;
+  updateBaseImage: (file: File, url: string, width: number, height: number) => void;
   setWidth: (width: number) => void;
   setHeight: (height: number) => void;
   setFormat: (format: ImageFormat) => void;
@@ -182,6 +183,26 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
     window.dispatchEvent(new CustomEvent('editor-file-loaded', { detail: { loaded: !!file } }));
   };
 
+  const updateBaseImage = (file: File, url: string, width: number, height: number) => {
+    setState((prev) => {
+      const newState = {
+        ...prev,
+        imageFile: file,
+        imageUrl: url,
+        width,
+        height,
+        originalWidth: width,
+        originalHeight: height,
+        crop: null,
+      };
+      isUndoRedo.current = true;
+      setPast((p) => [...p, prev]);
+      setFuture([]);
+      prevStateRef.current = newState;
+      return newState;
+    });
+  };
+
   const setWidth = (width: number) => setState((prev) => ({ ...prev, width }));
   const setHeight = (height: number) => setState((prev) => ({ ...prev, height }));
   const setFormat = (format: ImageFormat) => setState((prev) => ({ ...prev, format }));
@@ -249,6 +270,7 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
         textOverlays: state.textOverlays || [],
         fileName: state.fileName || 'edited-image',
         setImageFile,
+        updateBaseImage,
         setWidth,
         setHeight,
         setFormat,
