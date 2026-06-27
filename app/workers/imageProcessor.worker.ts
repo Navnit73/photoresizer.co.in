@@ -87,3 +87,5 @@ self.onmessage = async (e) => {
     self.postMessage({ success: false, error: error instanceof Error ? error.message : String(error) });
   }
 };
+
+export {};

@@ -1,4 +1,5 @@
 import { SeoPage } from "../lib/types/seo";
+import { programmaticPages } from "./programmatic-pages";
 
 export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
@@ -3167,4 +3168,5 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
+  ...programmaticPages,
 ];
