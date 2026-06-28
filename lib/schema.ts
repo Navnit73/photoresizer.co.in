@@ -61,7 +61,7 @@ export function generateOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'PhotoResizerAI',
+    name: 'photoresizer.co.in',
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
     sameAs: []
@@ -72,7 +72,7 @@ export function generateWebSiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'PhotoResizerAI',
+    name: 'photoresizer.co.in',
     url: baseUrl,
     potentialAction: {
       '@type': 'SearchAction',

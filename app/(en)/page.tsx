@@ -526,38 +526,8 @@ export default function Home() {
             EDITOR — shown after upload or for bg_remover tab
         ══════════════════════════════════════════ */}
         <div className={`${!showHero ? "block" : "hidden"} p-4 md:p-8`}>
-          {/* Header area when editor is active */}
-          <header className="mb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <h1 className="text-xl font-bold tracking-tight text-text-main">
-                PhotoResizerAI
-              </h1>
-            </div>
-
-            {/* Tab Switcher */}
-            <div className="flex p-1 bg-bg-card rounded-xl border border-border-subtle shadow-sm w-full md:w-auto self-start">
-              <button
-                onClick={() => setActiveTab("editor")}
-                className={`flex-1 md:w-36 py-2 px-4 text-sm font-semibold rounded-lg transition-all ${
-                  activeTab === "editor"
-                    ? "bg-accent-main text-white shadow-md"
-                    : "text-text-muted hover:text-text-main hover:bg-bg-input"
-                }`}
-              >
-                Photo Editor
-              </button>
-              <Link
-                href="/remove-background"
-                className={`flex-1 text-center md:w-44 py-2 px-4 text-sm font-semibold rounded-lg transition-all ${
-                  activeTab === "bg_remover"
-                    ? "bg-blue-600 dark:bg-blue-500 text-white shadow-md"
-                    : "text-text-muted hover:text-text-main hover:bg-bg-input block"
-                }`}
-              >
-                Bulk BG Remover
-              </Link>
-            </div>
-          </header>
+      
+        
 
           <div
             className={

@@ -4,6 +4,7 @@ import { enPages } from '../content/en-pages';
 import { dePages } from '../content/de-pages';
 import { frPages } from '../content/fr-pages';
 import { esPages } from '../content/es-pages';
+import { programmaticPages } from '../content/programmatic-pages';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
 
@@ -31,6 +32,11 @@ async function main() {
   const enUrls = [
     { url: `${baseUrl}/`, changeFrequency: 'weekly', priority: 1 },
     ...enPages.map((p) => ({
+      url: `${baseUrl}/${p.slug}`,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    })),
+    ...programmaticPages.map((p) => ({
       url: `${baseUrl}/${p.slug}`,
       changeFrequency: 'weekly',
       priority: 0.8,

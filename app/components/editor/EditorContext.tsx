@@ -98,7 +98,7 @@ const defaultState: EditorState = {
   isBgRemoving: false,
   textOverlays: [],
   selectedTextId: null,
-  fileName: 'edited-image',
+  fileName: 'PhotoResizer',
 };
 
 const EditorContext = createContext<EditorContextType | undefined>(undefined);
@@ -154,7 +154,7 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const setImageFile = (file: File | null, url: string | null, width: number, height: number) => {
-    const baseName = file?.name?.replace(/\.[^/.]+$/, '') ?? 'edited-image';
+    const baseName = file?.name?.replace(/\.[^/.]+$/, '') ?? 'PhotoResizer';
     setState((prev) => {
       const newState = {
         ...prev,
@@ -268,7 +268,7 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
       value={{
         ...state,
         textOverlays: state.textOverlays || [],
-        fileName: state.fileName || 'edited-image',
+        fileName: state.fileName || 'PhotoResizer',
         setImageFile,
         updateBaseImage,
         setWidth,

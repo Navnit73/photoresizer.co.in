@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     icon: '/icon.svg',
   },
   openGraph: {
-    title: "Free Online Photo Resizer, Image Compressor & Background Remover | PhotoResizerAI",
+    title: "Free Online Photo Resizer, Image Compressor & Background Remover | photoresizer.co.in",
     description: "Resize images, compress photos, remove backgrounds, create passport photos and edit pictures online for free. No uploads required.",
     type: "website",
     url: '/',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Online Photo Resizer, Image Compressor & Background Remover | PhotoResizerAI",
+    title: "Free Online Photo Resizer, Image Compressor & Background Remover | photoresizer.co.in",
     description: "Professional, fast, and fully local photo editing right in your browser. Remove backgrounds, resize images, create passport photos, and more. No uploads, 100% private.",
     images: ['/icon.svg'],
   },

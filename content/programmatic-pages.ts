@@ -2,284 +2,6 @@ import { SeoPage } from "../lib/types/seo";
 
 export const programmaticPages: SeoPage[] = [
   {
-    slug: "ssc-photo-resizer",
-    metaTitle: "Ssc Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Ssc Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Photo Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Ssc Photo Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Ssc Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Preparing your photograph for Ssc Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
-  </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
-    </ul>
-  </div>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Ssc Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Ssc Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Ssc Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
-    slug: "upsc-photo-size",
-    metaTitle: "Upsc Photo Size — Resize & Compress",
-    metaDescription: "Free online tool for Upsc Photo Size. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Upsc Photo Size",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Upsc Photo Size. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Upsc Photo Size",
-        content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Upsc Photo Size Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Avoid application delays by ensuring your Upsc Photo Size photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Upsc Photo Size?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Upsc Photo Size notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Upsc Photo Size photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
-    slug: "reduce-photo-size-50kb",
-    metaTitle: "Reduce Photo Size 50kb — Resize & Compress",
-    metaDescription: "Free online tool for Reduce Photo Size 50kb. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Reduce Photo Size 50kb",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Reduce Photo Size 50kb. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Reduce Photo Size 50kb",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Preparing your photograph for Reduce Photo Size 50kb? Get the dimensions, aspect ratio, and KB size right on the first try.
-  </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
-    </ul>
-  </div>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Reduce Photo Size 50kb?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Reduce Photo Size 50kb notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Reduce Photo Size 50kb photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
-    slug: "signature-resize-ibps",
-    metaTitle: "Signature Resize Ibps — Exact Size & KB",
-    metaDescription: "Free online tool for Signature Resize Ibps. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Signature Resize Ibps",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Signature Resize Ibps. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Signature Resize Ibps",
-        content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Signature Resize Ibps</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Your Signature Resize Ibps signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What is the standard signature size for Signature Resize Ibps?",
-    "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
-  },
-  {
-    "question": "Is it safe to upload my signature?",
-    "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
-  },
-  {
-    "question": "Can I use blue ink for the Signature Resize Ibps signature?",
-    "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Signature Resize Ibps guidelines."
-  }
-]
-  },
-  {
-    slug: "jpeg-to-jpg",
-    metaTitle: "Jpeg To Jpg — Free Online Tool",
-    metaDescription: "Free online tool for Jpeg To Jpg. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Jpeg To Jpg",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Jpeg To Jpg. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Jpeg To Jpg",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Use our free online tool to Jpeg To Jpg. Fast, easy, and completely secure processing directly in your web browser.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "Is this tool completely free?",
-    "answer": "Absolutely. No signups, no subscriptions, no watermarks, and no hidden fees."
-  },
-  {
-    "question": "Do I need to install any software?",
-    "answer": "No, everything runs seamlessly right here in your modern web browser."
-  }
-]
-  },
-  {
-    slug: "compress-image",
-    metaTitle: "Compress Image — Free Online Tool",
-    metaDescription: "Free online tool for Compress Image. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Compress Image",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Compress Image. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Compress Image",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Use our free online tool to Compress Image. Fast, easy, and completely secure processing directly in your web browser.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "Is this tool completely free?",
-    "answer": "Absolutely. No signups, no subscriptions, no watermarks, and no hidden fees."
-  },
-  {
-    "question": "Do I need to install any software?",
-    "answer": "No, everything runs seamlessly right here in your modern web browser."
-  }
-]
-  },
-  {
-    slug: "jpg-to-png",
-    metaTitle: "Jpg To Png — Free Online Tool",
-    metaDescription: "Free online tool for Jpg To Png. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Jpg To Png",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Jpg To Png. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Jpg To Png",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Looking to Jpg To Png? You're in the right place. Our browser-based editor handles it all offline, keeping your files safe and private.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "Is this tool completely free?",
-    "answer": "Absolutely. No signups, no subscriptions, no watermarks, and no hidden fees."
-  },
-  {
-    "question": "Do I need to install any software?",
-    "answer": "No, everything runs seamlessly right here in your modern web browser."
-  }
-]
-  },
-  {
-    slug: "resize-photo-20kb",
-    metaTitle: "Resize Photo 20kb — Resize & Compress",
-    metaDescription: "Free online tool for Resize Photo 20kb. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Resize Photo 20kb",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Resize Photo 20kb. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Resize Photo 20kb",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Preparing your photograph for Resize Photo 20kb? Get the dimensions, aspect ratio, and KB size right on the first try.
-  </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
-    </ul>
-  </div>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Resize Photo 20kb?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Resize Photo 20kb notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Resize Photo 20kb photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
     slug: "passport-photo-editor",
     metaTitle: "Passport Photo Editor — Resize & Compress",
     metaDescription: "Free online tool for Passport Photo Editor. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -309,47 +31,6 @@ export const programmaticPages: SeoPage[] = [
   },
   {
     "question": "Can I change the background of my Passport Photo Editor photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
-    slug: "passport-size-photo-maker",
-    metaTitle: "Passport Size Photo Maker — Resize & Compress",
-    metaDescription: "Free online tool for Passport Size Photo Maker. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Passport Size Photo Maker",
-    showTool: "passport-maker",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Passport Size Photo Maker. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Passport Size Photo Maker",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Preparing your photograph for Passport Size Photo Maker? Get the dimensions, aspect ratio, and KB size right on the first try.
-  </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
-    </ul>
-  </div>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Passport Size Photo Maker?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Passport Size Photo Maker notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Passport Size Photo Maker photo?",
     "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
   }
 ]
@@ -664,76 +345,6 @@ export const programmaticPages: SeoPage[] = [
 ]
   },
   {
-    slug: "us-passport-photo-maker",
-    metaTitle: "Us Passport Photo Maker — Resize & Compress",
-    metaDescription: "Free online tool for Us Passport Photo Maker. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Us Passport Photo Maker",
-    showTool: "passport-maker",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Us Passport Photo Maker. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Us Passport Photo Maker",
-        content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Us Passport Photo Maker Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Avoid application delays by ensuring your Us Passport Photo Maker photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Us Passport Photo Maker?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Us Passport Photo Maker notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Us Passport Photo Maker photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
-    slug: "uk-passport-photo-maker",
-    metaTitle: "Uk Passport Photo Maker — Resize & Compress",
-    metaDescription: "Free online tool for Uk Passport Photo Maker. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Uk Passport Photo Maker",
-    showTool: "passport-maker",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Uk Passport Photo Maker. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Uk Passport Photo Maker",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    The Uk Passport Photo Maker application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
-  </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Uk Passport Photo Maker?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Uk Passport Photo Maker notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Uk Passport Photo Maker photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
     slug: "canada-passport-photo-maker",
     metaTitle: "Canada Passport Photo Maker — Resize & Compress",
     metaDescription: "Free online tool for Canada Passport Photo Maker. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -845,40 +456,6 @@ export const programmaticPages: SeoPage[] = [
 ]
   },
   {
-    slug: "india-passport-photo-maker",
-    metaTitle: "India Passport Photo Maker — Resize & Compress",
-    metaDescription: "Free online tool for India Passport Photo Maker. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "India Passport Photo Maker",
-    showTool: "passport-maker",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for India Passport Photo Maker. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About India Passport Photo Maker",
-        content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your India Passport Photo Maker Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Avoid application delays by ensuring your India Passport Photo Maker photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for India Passport Photo Maker?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official India Passport Photo Maker notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my India Passport Photo Maker photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
     slug: "nepal-passport-photo-maker",
     metaTitle: "Nepal Passport Photo Maker — Resize & Compress",
     metaDescription: "Free online tool for Nepal Passport Photo Maker. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -915,35 +492,6 @@ export const programmaticPages: SeoPage[] = [
 ]
   },
   {
-    slug: "remove-background",
-    metaTitle: "Remove Background — Free Online Tool",
-    metaDescription: "Free online tool for Remove Background. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Remove Background",
-    showTool: "bg-remover",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Remove Background. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Remove Background",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Need to Remove Background? Upload your image and watch the background disappear seamlessly. No server upload means your images remain completely private.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "Is the background removal really free?",
-    "answer": "Yes, 100% free with no hidden limits. You can process as many images as you need without a premium subscription."
-  },
-  {
-    "question": "How does the AI work?",
-    "answer": "We use a lightweight, privacy-focused machine learning model that runs directly in your browser to detect the subject and accurately remove the background."
-  }
-]
-  },
-  {
     slug: "bg-removal",
     metaTitle: "Bg Removal — Free Online Tool",
     metaDescription: "Free online tool for Bg Removal. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -957,35 +505,6 @@ export const programmaticPages: SeoPage[] = [
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
     Need to Bg Removal? Upload your image and watch the background disappear seamlessly. No server upload means your images remain completely private.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "Is the background removal really free?",
-    "answer": "Yes, 100% free with no hidden limits. You can process as many images as you need without a premium subscription."
-  },
-  {
-    "question": "How does the AI work?",
-    "answer": "We use a lightweight, privacy-focused machine learning model that runs directly in your browser to detect the subject and accurately remove the background."
-  }
-]
-  },
-  {
-    slug: "free-background-remover",
-    metaTitle: "Free Background Remover — Free Online Tool",
-    metaDescription: "Free online tool for Free Background Remover. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Free Background Remover",
-    showTool: "bg-remover",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Free Background Remover. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Free Background Remover",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Need to Free Background Remover? Upload your image and watch the background disappear seamlessly. No server upload means your images remain completely private.
   </p>
 </div>`,
       }
@@ -5080,42 +4599,6 @@ export const programmaticPages: SeoPage[] = [
 ]
   },
   {
-    slug: "rrb-alp-photo-resizer",
-    metaTitle: "Rrb Alp Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Rrb Alp Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Rrb Alp Photo Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Rrb Alp Photo Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Rrb Alp Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    The Rrb Alp Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
-  </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Rrb Alp Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Rrb Alp Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Rrb Alp Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
     slug: "rrb-alp-signature-resizer",
     metaTitle: "Rrb Alp Signature Resizer — Exact Size & KB",
     metaDescription: "Free online tool for Rrb Alp Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -5600,40 +5083,6 @@ export const programmaticPages: SeoPage[] = [
 ]
   },
   {
-    slug: "afcat-photo-resizer",
-    metaTitle: "Afcat Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Afcat Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Afcat Photo Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Afcat Photo Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Afcat Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Afcat Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Avoid application delays by ensuring your Afcat Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Afcat Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Afcat Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Afcat Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
     slug: "afcat-signature-resizer",
     metaTitle: "Afcat Signature Resizer — Exact Size & KB",
     metaDescription: "Free online tool for Afcat Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -5890,47 +5339,6 @@ export const programmaticPages: SeoPage[] = [
   {
     "question": "Can I use blue ink for the Icg Yantrik Signature Resizer signature?",
     "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Icg Yantrik Signature Resizer guidelines."
-  }
-]
-  },
-  {
-    slug: "army-agniveer-photo-resizer",
-    metaTitle: "Army Agniveer Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Army Agniveer Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Army Agniveer Photo Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Army Agniveer Photo Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Army Agniveer Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Preparing your photograph for Army Agniveer Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
-  </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
-    </ul>
-  </div>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Army Agniveer Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Army Agniveer Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Army Agniveer Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
   }
 ]
   },
@@ -6523,81 +5931,6 @@ export const programmaticPages: SeoPage[] = [
   },
   {
     "question": "Can I change the background of my Csir Net Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
-    slug: "csir-net-signature-resizer",
-    metaTitle: "Csir Net Signature Resizer — Exact Size & KB",
-    metaDescription: "Free online tool for Csir Net Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Csir Net Signature Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Csir Net Signature Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Csir Net Signature Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Need to resize your signature for Csir Net Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
-  </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
-    </ul>
-  </div>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What is the standard signature size for Csir Net Signature Resizer?",
-    "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
-  },
-  {
-    "question": "Is it safe to upload my signature?",
-    "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
-  },
-  {
-    "question": "Can I use blue ink for the Csir Net Signature Resizer signature?",
-    "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Csir Net Signature Resizer guidelines."
-  }
-]
-  },
-  {
-    slug: "ctet-photo-resizer",
-    metaTitle: "Ctet Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Ctet Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ctet Photo Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Ctet Photo Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Ctet Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Ctet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Avoid application delays by ensuring your Ctet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Ctet Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Ctet Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Ctet Photo Resizer photo?",
     "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
   }
 ]
@@ -12099,40 +11432,6 @@ export const programmaticPages: SeoPage[] = [
 ]
   },
   {
-    slug: "uksssc-photo-resizer",
-    metaTitle: "Uksssc Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Uksssc Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Uksssc Photo Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Uksssc Photo Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Uksssc Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Uksssc Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Avoid application delays by ensuring your Uksssc Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Uksssc Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Uksssc Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Uksssc Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
     slug: "uksssc-signature-resizer",
     metaTitle: "Uksssc Signature Resizer — Exact Size & KB",
     metaDescription: "Free online tool for Uksssc Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -12912,42 +12211,6 @@ export const programmaticPages: SeoPage[] = [
   {
     "question": "Can I use blue ink for the Jharkhand Police Signature Resizer signature?",
     "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Jharkhand Police Signature Resizer guidelines."
-  }
-]
-  },
-  {
-    slug: "karnataka-police-photo-resizer",
-    metaTitle: "Karnataka Police Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Karnataka Police Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Karnataka Police Photo Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Karnataka Police Photo Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Karnataka Police Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    The Karnataka Police Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
-  </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
-  </p>
-</div>`,
-      }
-    ],
-    faq: [
-  {
-    "question": "What are the photo dimensions for Karnataka Police Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Karnataka Police Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Karnataka Police Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
   }
 ]
   },

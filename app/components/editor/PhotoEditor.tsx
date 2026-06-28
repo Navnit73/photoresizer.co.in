@@ -5,7 +5,7 @@ import { EditorProvider, useEditor } from './EditorContext';
 import EditorHeader from './EditorHeader';
 import SettingsSidebar from './SettingsSidebar';
 import OriginalWorkspace from './OriginalWorkspace';
-import LivePreview from './LivePreview';
+import DownloadPanel from './DownloadPanel';
 
 function EditorContent() {
   const { imageFile } = useEditor();
@@ -37,17 +37,14 @@ function EditorContent() {
         </div>
 
         {/* Center/Right Column: Canvas & Preview split */}
-        <div className="flex-none lg:flex-1 flex flex-col xl:flex-row gap-2 sm:gap-3 xl:gap-4 overflow-visible lg:overflow-hidden order-1 lg:order-2">
+        <div className="flex-none lg:flex-1 flex flex-col gap-2 sm:gap-3 xl:gap-4 overflow-visible lg:overflow-hidden order-1 lg:order-2">
            
            {/* Canvas */}
-           <div className="w-full lg:flex-1 min-h-[55vh] sm:min-h-[400px] lg:min-h-0 lg:h-full flex flex-col overflow-hidden relative">
+           <div className="w-full lg:flex-1 min-h-[60vh] sm:min-h-[500px] lg:min-h-0 lg:h-full flex flex-col overflow-hidden relative">
              <OriginalWorkspace />
            </div>
 
-           {/* Preview - beside Canvas on XL, below Canvas on LG */}
-           <div className="w-full xl:w-[380px] 2xl:w-[450px] flex-shrink-0 flex flex-col min-h-[400px] lg:min-h-0 lg:h-[350px] xl:h-full overflow-hidden">
-             <LivePreview />
-           </div>
+           <DownloadPanel />
            
         </div>
 

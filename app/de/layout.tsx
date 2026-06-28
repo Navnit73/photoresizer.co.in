@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import DeSiteHeader from './DeSiteHeader';
 
 export const metadata: Metadata = {
-  title: "Bilder Online Kostenlos Verkleinern, Hintergründe Entfernen & Fotos Bearbeiten | PhotoResizerAI",
+  title: "Bilder Online Kostenlos Verkleinern, Hintergründe Entfernen & Fotos Bearbeiten | photoresizer.co.in",
   description: "Bilder verkleinern, Fotos komprimieren, Hintergründe entfernen, Passfotos erstellen und Bilder online kostenlos bearbeiten. Keine Uploads erforderlich.",
   alternates: {
     canonical: '/de',

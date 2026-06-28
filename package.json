@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "npx tsx scripts/generate-sitemaps.ts",
     "dev": "next dev",
     "build": "next build && npx tsx scripts/update-html-lang.ts",
     "start": "next start",

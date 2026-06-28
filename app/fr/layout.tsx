@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Redimensionner, Compresser, Détourer et Modifier des Photos en Ligne Gratuitement | PhotoResizerAI",
+  title: "Redimensionner, Compresser, Détourer et Modifier des Photos en Ligne Gratuitement | photoresizer.co.in",
   description: "Redimensionnez des images, compressez des photos, supprimez les arrière-plans, créez des photos de passeport et modifiez des images en ligne gratuitement.",
   alternates: {
     canonical: '/fr',
