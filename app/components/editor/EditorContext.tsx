@@ -154,6 +154,15 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const setImageFile = (file: File | null, url: string | null, width: number, height: number) => {
+    const allStates = [...past, state, ...future];
+    const urlsToRevoke = new Set<string>();
+    allStates.forEach(s => {
+      if (s.imageUrl && s.imageUrl.startsWith('blob:') && s.imageUrl !== url) {
+        urlsToRevoke.add(s.imageUrl);
+      }
+    });
+    urlsToRevoke.forEach(u => URL.revokeObjectURL(u));
+
     const baseName = file?.name?.replace(/\.[^/.]+$/, '') ?? 'PhotoResizer';
     setState((prev) => {
       const newState = {
@@ -255,6 +264,15 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const reset = () => {
+    const allStates = [...past, state, ...future];
+    const urlsToRevoke = new Set<string>();
+    allStates.forEach(s => {
+      if (s.imageUrl && s.imageUrl.startsWith('blob:')) {
+        urlsToRevoke.add(s.imageUrl);
+      }
+    });
+    urlsToRevoke.forEach(url => URL.revokeObjectURL(url));
+
     isUndoRedo.current = true;
     setPast([]);
     setFuture([]);

@@ -19,6 +19,15 @@ export function useImageProcessor() {
 
   const debounceTimer = useRef<NodeJS.Timeout | null>(null);
   const isFirstLoad = useRef(true);
+  const activeUrlRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (activeUrlRef.current) {
+        URL.revokeObjectURL(activeUrlRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (!imageFile || !imageUrl) {
@@ -30,7 +39,7 @@ export function useImageProcessor() {
     if (debounceTimer.current) clearTimeout(debounceTimer.current);
 
     // No debounce on first load — process immediately
-    const delay = isFirstLoad.current ? 0 : 16;
+    const delay = isFirstLoad.current ? 0 : 500;
     isFirstLoad.current = false;
 
     debounceTimer.current = setTimeout(() => {
@@ -52,6 +61,12 @@ export function useImageProcessor() {
       if (data.success) {
         const { blob, width: outWidth, height: outHeight } = data;
         const url = URL.createObjectURL(blob);
+        
+        if (activeUrlRef.current) {
+          URL.revokeObjectURL(activeUrlRef.current);
+        }
+        activeUrlRef.current = url;
+
         const sizeKb = parseFloat((blob.size / 1024).toFixed(1));
         setLivePreview({ url, sizeKb, width: outWidth, height: outHeight });
       } else {

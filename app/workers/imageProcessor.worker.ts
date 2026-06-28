@@ -1,7 +1,15 @@
 let cachedImageUrl: string | null = null;
 let cachedImageBitmap: ImageBitmap | null = null;
+let cachedCanvas: OffscreenCanvas | null = null;
+let cachedCtx: OffscreenCanvasRenderingContext2D | null = null;
+let cleanupTimer: any = null;
 
 self.onmessage = async (e) => {
+  if (cleanupTimer) {
+    clearTimeout(cleanupTimer);
+    cleanupTimer = null;
+  }
+
   const {
     imageUrl, width, height, format, quality,
     backgroundColor, rotation, crop, textOverlays
@@ -12,6 +20,9 @@ self.onmessage = async (e) => {
     if (cachedImageUrl === imageUrl && cachedImageBitmap) {
       img = cachedImageBitmap;
     } else {
+      if (cachedImageBitmap) {
+        cachedImageBitmap.close();
+      }
       const response = await fetch(imageUrl);
       const blob = await response.blob();
       img = await createImageBitmap(blob);
@@ -26,8 +37,14 @@ self.onmessage = async (e) => {
     const canvasWidth = isRotated90 ? finalHeight : finalWidth;
     const canvasHeight = isRotated90 ? finalWidth : finalHeight;
 
-    const canvas = new OffscreenCanvas(canvasWidth, canvasHeight);
-    const ctx = canvas.getContext('2d');
+    if (!cachedCanvas) {
+      cachedCanvas = new OffscreenCanvas(canvasWidth, canvasHeight);
+      cachedCtx = cachedCanvas.getContext('2d');
+    } else {
+      cachedCanvas.width = canvasWidth;
+      cachedCanvas.height = canvasHeight;
+    }
+    const ctx = cachedCtx;
     if (!ctx) throw new Error('OffscreenCanvas context unavailable');
 
     // Background
@@ -80,8 +97,16 @@ self.onmessage = async (e) => {
       ctx.restore();
     }
 
-    const outBlob = await canvas.convertToBlob({ type: format, quality: quality / 100 });
+    const outBlob = await cachedCanvas!.convertToBlob({ type: format, quality: quality / 100 });
     self.postMessage({ success: true, blob: outBlob, width: canvasWidth, height: canvasHeight });
+
+    // Free pixel buffer memory if inactive for 3 seconds
+    cleanupTimer = setTimeout(() => {
+      if (cachedCanvas) {
+        cachedCanvas.width = 1;
+        cachedCanvas.height = 1;
+      }
+    }, 3000);
   } catch (error) {
     console.error('Worker error:', error);
     self.postMessage({ success: false, error: error instanceof Error ? error.message : String(error) });

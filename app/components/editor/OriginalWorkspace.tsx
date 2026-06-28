@@ -4,6 +4,7 @@ import React, { useCallback, useState, useRef, useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import ReactCrop, { Crop, PixelCrop } from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
+import imageCompression from "browser-image-compression";
 import { useEditor, AspectRatio } from "./EditorContext";
 import { useTranslation } from "@/app/hooks/useTranslation";
 import {
@@ -85,27 +86,57 @@ export default function OriginalWorkspace() {
         setUploadProgress(0);
         
         const startTime = Date.now();
-        const duration = 5000;
+        const minDuration = 5000;
         
+        let isCompressionDone = false;
+        let compressedFileResult: File | null = null;
+        let compressionError: any = null;
+
+        // Start real compression in the background
+        imageCompression(file, {
+          maxSizeMB: 5,
+          maxWidthOrHeight: 4096,
+          useWebWorker: true,
+        }).then(res => {
+          isCompressionDone = true;
+          compressedFileResult = res;
+        }).catch(err => {
+          isCompressionDone = true;
+          compressionError = err;
+        });
+
+        // Run the 5-second progress bar
         const timer = setInterval(() => {
           const elapsed = Date.now() - startTime;
-          const progress = Math.min((elapsed / duration) * 100, 100);
-          setUploadProgress(progress);
+          // Hold at 99% max if it takes longer than 5 seconds
+          const timeProgress = Math.min((elapsed / minDuration) * 100, 99);
           
-          if (elapsed >= duration) {
+          if (elapsed >= minDuration && isCompressionDone) {
             clearInterval(timer);
-            const url = URL.createObjectURL(file);
+            setUploadProgress(100);
+            
+            const finalFile = compressedFileResult || file;
+            if (compressionError) {
+              console.error("Compression error:", compressionError);
+            }
+
+            const url = URL.createObjectURL(finalFile);
             const img = new Image();
             img.onload = () => {
-              setImageFile(file, url, img.width, img.height);
+              setImageFile(finalFile, url, img.width, img.height);
               setIsCropping(false);
               setCropState(undefined);
               setCompletedCrop(undefined);
               setIsUploading(false);
               setUploadProgress(0);
             };
+            img.onerror = () => {
+               setIsUploading(false);
+            };
             img.decoding = "async";
             img.src = url;
+          } else {
+            setUploadProgress(timeProgress);
           }
         }, 50);
       }

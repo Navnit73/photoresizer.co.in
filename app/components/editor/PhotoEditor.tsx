@@ -21,10 +21,10 @@ function EditorContent() {
   }
 
   return (
-    <div className="w-full flex flex-col bg-bg-root rounded-none sm:rounded-2xl overflow-hidden border-0 sm:border border-border-subtle min-h-[100dvh] sm:min-h-[600px] sm:h-[calc(100vh-64px)] sm:max-h-[900px] transition-colors duration-200">
+    <div className="w-full flex flex-col bg-bg-root rounded-md  overflow-hidden border-0  min-h-[100dvh] sm:min-h-[600px] sm:h-[calc(100vh-64px)] sm:max-h-[900px] ">
       
       {/* Integrated Header */}
-      <div className="flex-shrink-0 z-10 border-b border-border-subtle bg-bg-card/80 backdrop-blur-md sticky top-0 sm:relative">
+      <div className="flex-shrink-0 z-10  border-border-subtle  sticky top-0 sm:relative">
         <EditorHeader />
       </div>
 
