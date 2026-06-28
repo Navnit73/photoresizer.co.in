@@ -24,6 +24,13 @@ export default function PosterPrintTool() {
     }
   };
 
+  // Memory cleanup for imageSrc
+  useEffect(() => {
+    return () => {
+      if (imageSrc) URL.revokeObjectURL(imageSrc);
+    };
+  }, [imageSrc]);
+
   const handleDownloadPDF = () => {
     alert("In a full implementation, this would generate and download a multi-page PDF using jsPDF or similar.");
   };

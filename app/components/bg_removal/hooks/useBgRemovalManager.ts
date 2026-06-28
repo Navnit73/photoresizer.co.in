@@ -267,6 +267,17 @@ export function useBgRemovalManager() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [jobs]);
 
+  // ─── Unmount Cleanup ────────────────────────────────────────────────────────
+
+  useEffect(() => {
+    return () => {
+      jobsRef.current.forEach(job => {
+        if (job.originalUrl) URL.revokeObjectURL(job.originalUrl);
+        if (job.resultUrl) URL.revokeObjectURL(job.resultUrl);
+      });
+    };
+  }, []);
+
   // ─── Return ─────────────────────────────────────────────────────────────────
 
   return {

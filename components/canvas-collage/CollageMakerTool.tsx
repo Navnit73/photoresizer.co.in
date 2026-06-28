@@ -647,11 +647,15 @@ export default function CollageMakerTool() {
   }, [background, borderColor, borderWidth, radius, slots, layers]);
 
   // Revoke any remaining blob: URLs when the component unmounts, to avoid leaking memory.
+  const slotsRef = useRef(slots);
+  useEffect(() => {
+    slotsRef.current = slots;
+  }, [slots]);
+
   useEffect(() => {
     return () => {
-      slots.forEach((s) => revokeIfBlobUrl(s.src));
+      slotsRef.current.forEach((s) => revokeIfBlobUrl(s.src));
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const hasAnyImage = slots.some((s) => s.src);

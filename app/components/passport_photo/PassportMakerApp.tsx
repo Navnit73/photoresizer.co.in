@@ -26,6 +26,19 @@ export default function PassportMakerApp() {
     }
   };
 
+  // Memory cleanup for imageSrc and resultImage
+  useEffect(() => {
+    return () => {
+      if (imageSrc) URL.revokeObjectURL(imageSrc);
+    };
+  }, [imageSrc]);
+
+  useEffect(() => {
+    return () => {
+      if (resultImage) URL.revokeObjectURL(resultImage);
+    };
+  }, [resultImage]);
+
   useEffect(() => {
     const handleHeroDrop = (e: Event) => {
       const customEvent = e as CustomEvent<{ files: File[] }>;
@@ -74,10 +87,6 @@ export default function PassportMakerApp() {
   };
 
   const handleComplete = (file: File) => {
-    // Revoke old blob url to avoid memory leaks
-    if (resultImage) {
-      URL.revokeObjectURL(resultImage);
-    }
     const url = URL.createObjectURL(file);
     setResultImage(url);
     setImageSrc(null); // Return to uploader state, showing result below
