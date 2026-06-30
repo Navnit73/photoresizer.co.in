@@ -2184,23 +2184,23 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
-  {
-    slug: "voter-id-photo-size-reducer",
-    metaTitle: "Voter ID Photo Size Reducer 2027 — Compress Photo Online Free",
-    metaDescription:
-      "Reduce voter ID photo size online for 2027 elections. Compress image to under 50 KB, adjust dimensions as per ECI guidelines. Free, private, browser-based.",
-    h1: "Voter ID Photo Size Reducer 2027 — Free Online Tool",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle:
-      "Reduce voter ID photo size as per ECI 2027 guidelines. Compress to exact KB requirements instantly — no upload, 100% private.",
-    sections: [
-      {
-        heading: "What Are the Voter ID Photo Size Requirements for 2027?",
-        content: `
+ {
+  slug: "voter-id-photo-size-reducer",
+  metaTitle: "Voter ID Photo Size Reducer 2027 — Compress Photo Online Free",
+  metaDescription:
+    "Reduce your voter ID photo size online in 2027. Compress to under 50 KB, resize to ECI specifications, and download instantly. 100% free, private, and browser-based.",
+  h1: "Voter ID Photo Size Reducer 2027 — Free Online Tool",
+  showTool: "photo-editor",
+  structuredDataOverrides: { webPageType: "WebApplication" },
+  subtitle:
+    "Compress your voter ID photo to meet 2027 ECI guidelines in seconds. No uploads, no sign-up — everything happens privately in your browser.",
+  sections: [
+    {
+      heading: "What Are the Voter ID Photo Size Requirements for 2027?",
+      content: `
 <div class="space-y-8 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    For Voter ID applications and updates in 2027, the Election Commission of India (ECI) has specific photo requirements. The photograph must be a recent passport-size color photo with a plain white background. The maximum file size should be under 50 KB, with dimensions typically around 200 x 230 pixels. The photo should clearly show your face from front with a neutral expression. The voter ID photo size reducer helps you compress your image to meet these exact requirements while maintaining acceptable quality. All processing occurs in your browser, ensuring your personal photo remains private and secure without any server upload.
+    Every voter ID application or correction request submitted through the Election Commission of India's NVSP and Voter Helpline platforms requires a photo that meets strict technical specifications. Your photograph must be a recent, color, passport-style image with a plain white or light-colored background. The file size should stay under 50 KB, and the recommended dimensions are 200 x 230 pixels in JPEG format. Your face should be clearly visible, front-facing, with a neutral expression and no shadows, sunglasses, or caps. Photos that exceed the size limit or use the wrong dimensions are among the most common reasons voter ID applications get rejected or delayed. This tool compresses and resizes your photo to match these exact requirements, and because everything runs locally on your device, your photo is never uploaded to a server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
     <div class="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-100 dark:border-blue-800">
@@ -2208,71 +2208,94 @@ export const enPages: SeoPage[] = [
         <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
       </div>
       <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Max File Size: 50 KB</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">Compress your voter ID photo to under 50 KB while maintaining clear visibility of your face.</p>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Compress your photo below 50 KB without losing facial clarity, so the portal accepts it on the first try.</p>
     </div>
     <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-2xl border border-emerald-100 dark:border-emerald-800">
       <div class="w-11 h-11 bg-emerald-600 rounded-xl flex items-center justify-center mb-4">
         <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
       </div>
-      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Dimensions: 200x230 Pixels</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">Recommended dimensions for voter ID photo that work perfectly with ECI portal upload requirements.</p>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Dimensions: 200 x 230 Pixels</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Resize automatically to the exact pixel ratio the ECI portal expects, with no manual cropping needed.</p>
     </div>
     <div class="p-6 bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 rounded-2xl border border-violet-100 dark:border-violet-800">
       <div class="w-11 h-11 bg-violet-600 rounded-xl flex items-center justify-center mb-4">
         <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
       </div>
       <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Plain White Background</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">White or light background required for ECI compliance. Tool helps adjust background lighting.</p>
-    </div>
-  </div>
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4">How to Reduce Voter ID Photo Size in 3 Easy Steps</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
-        <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Upload Photo</h4><p class="text-sm text-slate-600 dark:text-slate-400">Select your passport-size photo from device or take a new photo with camera.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
-        <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Set Voter ID Specs</h4><p class="text-sm text-slate-600 dark:text-slate-400">Choose 200x230 pixels, set max file size to 50 KB, adjust quality slider.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
-        <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Download & Upload</h4><p class="text-sm text-slate-600 dark:text-slate-400">Download reduced photo and upload to voter ID application or correction portal.</p></div>
-      </div>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Brighten or adjust the background tone so it meets the plain-background rule before you submit.</p>
     </div>
   </div>
 </div>`,
-      },
-    ],
-    faq: [
-      {
-        question: "What is the maximum voter ID photo file size for 2027?",
-        answer:
-          "ECI typically requires voter ID photos to be under 50 KB. Some states may allow up to 100 KB, but 50 KB is the recommended maximum for smooth upload.",
-      },
-      {
-        question: "Can I reduce an existing photo for voter ID?",
-        answer:
-          "Yes, you can reduce the size of any existing JPEG/PNG photo to meet voter ID requirements. The tool handles compression and resizing automatically.",
-      },
-      {
-        question: "Is my photo safe during compression?",
-        answer:
-          "Yes, the tool works entirely in your browser. Your photo never leaves your device, ensuring complete privacy and security.",
-      },
-      {
-        question: "What dimensions should my voter ID photo be?",
-        answer:
-          "The recommended dimensions are 200 x 230 pixels. This ensures your photo displays correctly on the ECI portal and printed voter ID card.",
-      },
-      {
-        question: "Does the tool work on mobile phones?",
-        answer:
-          "Yes, the voter ID photo size reducer is fully responsive and works seamlessly on Android, iOS, and all modern mobile browsers.",
-      },
-    ],
-  },
+    },
+    {
+      heading: "How to Reduce Your Voter ID Photo Size in 3 Steps",
+      content: `
+<div class="space-y-6 not-prose">
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    You do not need any design experience to prepare a compliant voter ID photo. Follow these three steps, and the tool handles the resizing, compression, and quality balancing for you.
+  </p>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+      <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+      <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Upload Your Photo</h4><p class="text-sm text-slate-600 dark:text-slate-400">Choose an existing passport-style photo from your device, or capture a new one directly with your camera.</p></div>
+    </div>
+    <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+      <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+      <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Apply Voter ID Settings</h4><p class="text-sm text-slate-600 dark:text-slate-400">Select the 200 x 230 pixel preset, set the file size limit to 50 KB, and fine-tune quality with the slider.</p></div>
+    </div>
+    <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+      <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+      <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Download and Submit</h4><p class="text-sm text-slate-600 dark:text-slate-400">Download the compressed photo, then upload it directly to the voter registration or correction form.</p></div>
+    </div>
+  </div>
+</div>`,
+    },
+    {
+      heading: "Why Use an Online Voter ID Photo Size Reducer Instead of Other Apps",
+      content: `
+<div class="space-y-5 not-prose">
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    Many people try to resize their voter ID photo using WhatsApp compression, screenshot tricks, or third-party mobile apps that demand storage permissions and account sign-ups. These methods often distort the aspect ratio, blur facial features, or strip image quality below acceptable levels. This tool avoids all of that by processing your image directly in your browser using client-side compression, so nothing is ever sent to a remote server.
+  </p>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    You get precise control over output size and dimensions, instant before-and-after previews, and no installation or registration. The result is a clean, ECI-compliant photo that uploads correctly the first time, saving you from repeated rejections during the application or correction process.
+  </p>
+</div>`,
+    },
+  ],
+  faq: [
+    {
+      question: "What is the maximum voter ID photo file size for 2027?",
+      answer:
+        "The ECI requires voter ID photos to stay under 50 KB for smooth upload on the NVSP and Voter Helpline portals. Keeping the file well below this limit reduces the chance of upload errors.",
+    },
+    {
+      question: "Can I reduce the size of an existing photo for my voter ID application?",
+      answer:
+        "Yes. You can compress any existing JPEG or PNG photo to meet voter ID requirements. The tool automatically resizes and compresses it to fit the 200 x 230 pixel and 50 KB limits.",
+    },
+    {
+      question: "Is my photo safe during compression?",
+      answer:
+        "Yes. The tool runs entirely in your browser, so your photo never leaves your device or gets uploaded to any server, keeping your personal data completely private.",
+    },
+    {
+      question: "What dimensions should my voter ID photo be?",
+      answer:
+        "The recommended dimensions are 200 x 230 pixels. This size ensures your photo appears correctly on the ECI portal and prints clearly on the physical voter ID card.",
+    },
+    {
+      question: "Does the tool work on mobile phones?",
+      answer:
+        "Yes. The voter ID photo size reducer is fully responsive and works smoothly on Android, iOS, and all modern mobile browsers without needing an app download.",
+    },
+    {
+      question: "Will compressing my photo reduce its quality too much for approval?",
+      answer:
+        "No. The tool balances file size and visual clarity using smart compression, so your face remains clearly visible and recognizable even after reducing the file to under 50 KB.",
+    },
+  ],
+},
   {
     slug: "rrb-alp-photo-resizer",
     metaTitle: "RRB ALP Photo Resizer 2027 — Resize Image Online Free",
@@ -3079,6 +3102,118 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
+  {
+  slug: "rrb-technician-exam-photo-resizer",
+  metaTitle: "RRB Technician Photo Resizer 2027 — Resize Photo & Signature Online",
+  metaDescription:
+    "Resize your RRB Technician exam photo and signature online for 2027. Compress to RRB's exact KB and pixel requirements instantly. Free, secure, browser-based tool.",
+  h1: "RRB Technician Exam Photo Resizer 2027 — Free Online Tool",
+  showTool: "photo-editor",
+  structuredDataOverrides: { webPageType: "WebApplication" },
+  subtitle:
+    "Resize your RRB Technician photo and signature to match the official 2027 application format. No uploads, no installation — everything processes privately in your browser.",
+  sections: [
+    {
+      heading: "What Are the RRB Technician Photo and Signature Requirements for 2027?",
+      content: `
+<div class="space-y-8 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    The Railway Recruitment Board (RRB) sets strict photo and signature specifications for the Technician exam application form, and even a small mismatch can block your submission. Your photograph must be a recent, color, passport-style image with a plain light background, sized between 20 KB and 50 KB, with dimensions typically around 200 x 230 pixels in JPEG format. Your signature must be scanned separately, signed in black or dark blue ink on white paper, and sized between 10 KB and 20 KB. RRB application portals usually reject files that fall outside these limits, which forces candidates to start the form again. This tool resizes both your photo and signature to the exact RRB specifications in one place, and because all processing happens locally on your device, your personal documents never leave your browser.
+  </p>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-100 dark:border-blue-800">
+      <div class="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Photo Size: 20–50 KB</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Compress your photo into the RRB-approved range without losing facial clarity or detail.</p>
+    </div>
+    <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-2xl border border-emerald-100 dark:border-emerald-800">
+      <div class="w-11 h-11 bg-emerald-600 rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Dimensions: 200 x 230 Pixels</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Resize to the exact pixel ratio RRB application portals expect, without manual cropping.</p>
+    </div>
+    <div class="p-6 bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 rounded-2xl border border-violet-100 dark:border-violet-800">
+      <div class="w-11 h-11 bg-violet-600 rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Signature: 10–20 KB</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Resize your scanned signature separately to meet RRB's smaller file size requirement.</p>
+    </div>
+  </div>
+</div>`,
+    },
+    {
+      heading: "How to Resize Your RRB Technician Photo in 3 Steps",
+      content: `
+<div class="space-y-6 not-prose">
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    You do not need design software or technical skills to prepare RRB-compliant images. Follow these three steps, and the tool handles resizing, compression, and format conversion automatically.
+  </p>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+      <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+      <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Upload Photo or Signature</h4><p class="text-sm text-slate-600 dark:text-slate-400">Select your passport-style photo or scanned signature from your device.</p></div>
+    </div>
+    <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+      <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+      <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Apply RRB Settings</h4><p class="text-sm text-slate-600 dark:text-slate-400">Choose the RRB Technician preset for photo (200 x 230 px, 20–50 KB) or signature (10–20 KB), and adjust the quality slider if needed.</p></div>
+    </div>
+    <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+      <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+      <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Download and Upload</h4><p class="text-sm text-slate-600 dark:text-slate-400">Download the resized file and upload it directly to the RRB application form.</p></div>
+    </div>
+  </div>
+</div>`,
+    },
+    {
+      heading: "Why Candidates Prefer This Tool Over Other Photo Resizers",
+      content: `
+<div class="space-y-5 not-prose">
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    Many candidates try resizing their RRB photo using basic mobile gallery editors or generic compression apps that do not match the exact pixel and KB combination RRB demands. These tools often distort the image, blur facial features, or leave the file too large for upload, which leads to repeated form rejections close to the deadline.
+  </p>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    This resizer is built specifically around RRB Technician specifications. It runs entirely in your browser using client-side processing, so your photo and signature never get uploaded to a server. You get instant before-and-after previews, precise control over output size, and a result that meets the RRB format on the first attempt, saving you time during the high-traffic application window.
+  </p>
+</div>`,
+    },
+  ],
+  faq: [
+    {
+      question: "What is the required photo size for the RRB Technician application?",
+      answer:
+        "RRB Technician applications generally require a photo between 20 KB and 50 KB, with dimensions around 200 x 230 pixels. Always check the latest official notification before submitting.",
+    },
+    {
+      question: "What is the required signature size for RRB Technician forms?",
+      answer:
+        "The scanned signature should typically be between 10 KB and 20 KB, signed in black or dark blue ink on plain white paper before scanning.",
+    },
+    {
+      question: "Can I resize both my photo and signature using this tool?",
+      answer:
+        "Yes. The tool supports separate presets for photo and signature, so you can resize each file to its correct RRB-specified dimensions and file size.",
+    },
+    {
+      question: "Is my photo or signature uploaded to a server during resizing?",
+      answer:
+        "No. The tool processes everything directly in your browser, so your files stay on your device and are never sent anywhere, keeping your data private.",
+    },
+    {
+      question: "Does the tool work on mobile phones for last-minute applications?",
+      answer:
+        "Yes. The RRB Technician photo resizer works smoothly on Android, iOS, and desktop browsers, so you can complete your resizing even close to the application deadline.",
+    },
+    {
+      question: "Will compressing my photo affect its approval chances?",
+      answer:
+        "No. The tool uses smart compression to balance file size and clarity, keeping your face clearly visible while meeting the exact KB limit RRB requires.",
+    },
+  ],
+},
   {
     slug: "karnataka-police-photo-resizer",
     metaTitle: "Karnataka Police Photo Resizer 2027 — Resize Image Online Free",
