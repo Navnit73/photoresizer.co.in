@@ -11,7 +11,8 @@ export const dePages: SeoPage[] = [
   // ─────────────────────────────────────────────────────
   {
     slug: "foto-verkleinern",
-    metaTitle: "Foto verkleinern – Bilder online verkleinern ohne Qualitätsverlust",
+    metaTitle:
+      "Foto verkleinern – Bilder online verkleinern ohne Qualitätsverlust",
     metaDescription:
       "Foto verkleinern leicht gemacht: Unser Online-Tool verkleinert Fotos auf Wunschgröße, komprimiert JPEG/PNG und behält dabei die Bildqualität. Kostenlos, ohne Anmeldung.",
     h1: "Foto verkleinern",
@@ -327,7 +328,8 @@ export const dePages: SeoPage[] = [
           "Vollkommen. Es gibt keine versteckten Kosten, kein Wasserzeichen und keine Pflicht zur Registrierung. Du kannst unbegrenzt viele Bilder verkleinern und herunterladen.",
       },
       {
-        question: "Wie unterscheidet sich das Verkleinern von der Komprimierung?",
+        question:
+          "Wie unterscheidet sich das Verkleinern von der Komprimierung?",
         answer:
           "Verkleinern reduziert die Pixelmaße (Breite × Höhe). Komprimieren behält die Abmessungen, verringert aber die Datenmenge durch effizientere Bildkodierung. Unser Tool bietet beide Methoden – du kannst sie einzeln oder kombiniert anwenden.",
       },
@@ -441,12 +443,14 @@ export const dePages: SeoPage[] = [
     ],
     faq: [
       {
-        question: "Kann ich die Bildgröße für ein bestimmtes soziales Netzwerk voreinstellen?",
+        question:
+          "Kann ich die Bildgröße für ein bestimmtes soziales Netzwerk voreinstellen?",
         answer:
           "Ja, wir bieten vordefinierte Presets für Instagram, Facebook, Twitter, LinkedIn, YouTube und viele andere Plattformen. So musst du die Maße nicht manuell recherchieren.",
       },
       {
-        question: "Was passiert, wenn mein Bild nicht die gewünschten Proportionen hat?",
+        question:
+          "Was passiert, wenn mein Bild nicht die gewünschten Proportionen hat?",
         answer:
           "Das Tool zeigt dir eine Live-Vorschau mit einem passenden Beschnittvorschlag. Du kannst den Ausschnitt frei verschieben und das Ergebnis vor dem Download prüfen.",
       },
@@ -456,7 +460,8 @@ export const dePages: SeoPage[] = [
           "Gib die Maße in Zentimetern oder Millimetern ein und stelle den DPI-Wert auf 300. Das Tool berechnet automatisch die benötigte Pixelanzahl für scharfen Druck.",
       },
       {
-        question: "Ändert das Tool die Dateigröße, wenn ich nur die Pixelmaße anpasse?",
+        question:
+          "Ändert das Tool die Dateigröße, wenn ich nur die Pixelmaße anpasse?",
         answer:
           "Ja, die Dateigröße sinkt mit der Pixelanzahl. Über den Qualitätsregler kannst du die Kompression zusätzlich anpassen, um noch mehr Speicherplatz zu sparen.",
       },
@@ -580,7 +585,8 @@ export const dePages: SeoPage[] = [
           "Wir haben Vorlagen für Instagram Post/Story/Reels, Facebook Cover/Post, YouTube Thumbnail/Banner, LinkedIn Profilbild/Header, Twitter Header, Pinterest und viele mehr.",
       },
       {
-        question: "Wird mein Foto nach der Größenänderung automatisch gespeichert?",
+        question:
+          "Wird mein Foto nach der Größenänderung automatisch gespeichert?",
         answer:
           "Nein, du musst das Bild manuell herunterladen. So hast du die volle Kontrolle und kannst vor dem Speichern noch weitere Anpassungen vornehmen.",
       },
@@ -595,7 +601,8 @@ export const dePages: SeoPage[] = [
           "Nein, alles läuft direkt im Browser. Kein Download, keine Installation – funktioniert auf Windows, Mac, Linux, iOS und Android.",
       },
       {
-        question: "Was ist der Unterschied zwischen zuschneiden und Größe ändern?",
+        question:
+          "Was ist der Unterschied zwischen zuschneiden und Größe ändern?",
         answer:
           "Beim Zuschneiden entfernst du Teile des Bildes, um eine bestimmte Form zu erhalten. Beim Größe ändern skalierst du das gesamte Bild auf neue Abmessungen. Unser Tool unterstützt beide Methoden und auch die Kombination aus beiden.",
       },
@@ -747,8 +754,63 @@ export const dePages: SeoPage[] = [
         heading: "Bildgröße reduzieren für Festplatte & Cloud",
         content: `<div class="space-y-12 not-prose">
   <div class="prose prose-slate dark:prose-invert max-w-none">
-    <p>Wenn deine Fotobibliothek aus allen Nähten platzt, hilft <strong>Bildgröße reduzieren</strong> auf zwei Wegen: Du verkleinerst entweder die Auflösung auf ein für Bildschirme ausreichendes Maß, oder du wendest eine verlustbehaftete Kompression an. Unser Tool erledigt beides parallel und zeigt vor dem Speichern die voraussichtliche Einsparung an.</p>
+    <p>Volle Fotobibliothek, überfüllter Cloud-Speicher oder eine E-Mail, die partout nicht senden will – meistens steckt dieselbe Ursache dahinter: zu große Bilddateien. <strong>Bildgröße reduzieren</strong> bedeutet dabei zweierlei: Du kannst die <strong>Pixelmaße</strong> verkleinern (also Breite und Höhe in Pixeln) oder die <strong>Dateigröße in Megabyte</strong> senken, ohne die Abmessungen anzutasten. Unser Tool kombiniert beide Methoden in einem Schritt und zeigt dir schon vor dem Speichern, wie viel Platz du sparst.</p>
   </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Pixelmaße oder Dateigröße – was ist der Unterschied?</h3>
+    <p>Die <strong>Pixelmaße</strong> bestimmen, wie groß ein Bild auf dem Bildschirm dargestellt wird. Ein Foto mit 6000 × 4000 Pixeln aus einer modernen Kamera ist für die meisten Websites, Social-Media-Posts oder E-Mail-Anhänge unnötig groß – schon 1920 × 1280 Pixel reichen für gestochen scharfe Darstellung auf Full-HD-Bildschirmen völlig aus.</p>
+    <p>Die <strong>Dateigröße</strong> hängt dagegen von der Kompression ab. Zwei Bilder mit identischen Pixelmaßen können sich in der Dateigröße um das Zehnfache unterscheiden, je nachdem wie stark sie komprimiert wurden. Genau hier setzt eine verlustbehaftete Kompression an: Sie entfernt Bildinformationen, die das menschliche Auge kaum wahrnimmt, und reduziert dadurch die Datei spürbar – oft um 60 bis 80 Prozent, ohne dass ein sichtbarer Qualitätsverlust entsteht.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Warum sich eine kleinere Bildgröße lohnt</h3>
+    <ul>
+      <li><strong>Mehr freier Speicherplatz</strong> auf Smartphone, Laptop oder in der Cloud – besonders wichtig, wenn dein Speicherplan an seine Grenzen stößt.</li>
+      <li><strong>Schnellere Ladezeiten</strong> auf Websites und Online-Shops, was sich direkt auf Nutzererfahrung und Suchmaschinen-Ranking auswirkt.</li>
+      <li><strong>Reibungsloser E-Mail-Versand</strong>, da viele Anbieter Anhänge auf 10 oder 25 MB begrenzen.</li>
+      <li><strong>Bessere Kompatibilität</strong> mit Upload-Formularen, die häufig eine maximale Dateigröße vorschreiben.</li>
+      <li><strong>Geringerer Datenverbrauch</strong> beim Teilen von Bildern über mobile Netze.</li>
+    </ul>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>So reduzierst du die Bildgröße in drei Schritten</h3>
+    <ol>
+      <li><strong>Bild hochladen:</strong> Ziehe eine einzelne Datei oder mehrere Bilder gleichzeitig in das Tool.</li>
+      <li><strong>Einstellungen wählen:</strong> Lege fest, ob nur die Pixelmaße verkleinert, nur komprimiert oder beides kombiniert werden soll. Eine Live-Vorschau zeigt dir die geschätzte Einsparung in Prozent.</li>
+      <li><strong>Ergebnis herunterladen:</strong> Speichere das reduzierte Bild direkt auf deinem Gerät – einzeln oder als ZIP-Archiv bei mehreren Dateien.</li>
+    </ol>
+    <p>Der gesamte Vorgang läuft direkt im Browser ab. Es entstehen keine Wartezeiten durch Uploads auf fremde Server, und deine Bilder verlassen dein Gerät nicht unnötig.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Empfohlene Zielgrößen je nach Verwendungszweck</h3>
+    <p>Nicht jede Nutzung braucht dieselbe Auflösung. Diese Richtwerte helfen bei der Orientierung:</p>
+    <ul>
+      <li><strong>Website-Header oder Blogbilder:</strong> 1600–1920 Pixel Breite reichen für die meisten Bildschirme.</li>
+      <li><strong>Social-Media-Posts:</strong> 1080 Pixel Breite genügt für Instagram, Facebook und Co.</li>
+      <li><strong>E-Mail-Anhänge:</strong> Eine Dateigröße unter 2 MB pro Bild sorgt für zuverlässigen Versand.</li>
+      <li><strong>Produktfotos für Online-Shops:</strong> 1200–1500 Pixel Breite bei starker Kompression liefert ein gutes Verhältnis aus Schärfe und Ladezeit.</li>
+      <li><strong>Archivierung:</strong> Nur die Kompression erhöhen, Pixelmaße unverändert lassen, um Details für spätere Bearbeitung zu bewahren.</li>
+    </ul>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Das richtige Format wählen</h3>
+    <p><strong>JPEG</strong> eignet sich am besten für Fotos mit vielen Farbverläufen, da die Kompression hier besonders effizient arbeitet. <strong>PNG</strong> ist die richtige Wahl, wenn dein Bild Transparenz benötigt oder scharfe Kanten wie bei Logos und Grafiken enthält – allerdings bei größerer Dateigröße. <strong>WebP</strong> vereint beide Vorteile: kleinere Dateien als JPEG bei gleichzeitig erhaltener Transparenz, und wird mittlerweile von allen gängigen Browsern unterstützt.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Typische Fehler beim Reduzieren vermeiden</h3>
+    <ul>
+      <li><strong>Mehrfaches Komprimieren:</strong> Wird ein bereits komprimiertes JPEG erneut stark komprimiert, entstehen sichtbare Artefakte. Reduziere möglichst immer vom Original aus.</li>
+      <li><strong>Zu aggressive Kompression:</strong> Weniger ist manchmal mehr – prüfe die Vorschau, bevor du herunterlädst.</li>
+      <li><strong>Falsches Seitenverhältnis:</strong> Achte darauf, dass beim Verkleinern der Pixelmaße das Original-Seitenverhältnis erhalten bleibt, damit das Bild nicht verzerrt wirkt.</li>
+      <li><strong>Original überschreiben:</strong> Speichere die reduzierte Version immer unter einem neuen Dateinamen oder in einem separaten Ordner.</li>
+    </ul>
+  </div>
+
   <div class="p-5 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded-r-2xl shadow-sm">
     <p class="text-red-800 dark:text-red-200"><strong>Hinweis:</strong> Erstelle vor einer Massenreduktion unbedingt eine Sicherungskopie. Einmal überschriebene Originale lassen sich nicht wiederherstellen.</p>
   </div>
@@ -801,7 +863,64 @@ export const dePages: SeoPage[] = [
         heading: "Foto Resizer – Der universelle Größenwandler",
         content: `<div class="space-y-12 not-prose">
   <div class="prose prose-slate dark:prose-invert max-w-none">
-    <p>Ein <strong>Foto Resizer</strong> ist mehr als nur ein Verkleinerer. Unser Tool beherrscht das gleichzeitige Skalieren und Beschneiden, das Konvertieren zwischen Formaten und das Anpassen der Auflösung. Du kannst ein 4K‑Foto in ein druckfertiges 10x15‑cm‑Bild verwandeln oder ein rechteckiges Bild quadratisch zuschneiden, ohne den Hauptinhalt zu verlieren.</p>
+    <p>Ein <strong>Foto Resizer</strong> ist mehr als nur ein Verkleinerer. Unser Tool beherrscht das gleichzeitige Skalieren und Beschneiden, das Konvertieren zwischen Formaten und das Anpassen der Auflösung. Du kannst ein 4K-Foto in ein druckfertiges 10 × 15 cm-Bild verwandeln oder ein rechteckiges Bild quadratisch zuschneiden, ohne den Hauptinhalt zu verlieren.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Was macht einen Foto Resizer wirklich universell?</h3>
+    <p>Die meisten einfachen Tools können nur eine Sache: Bilder verkleinern. Ein echter Resizer geht weiter und deckt drei Kernaufgaben in einem Werkzeug ab:</p>
+    <ul>
+      <li><strong>Skalieren:</strong> Du legst neue Pixelmaße fest, entweder frei oder anhand vordefinierter Vorlagen für Druck, Web und Social Media.</li>
+      <li><strong>Zuschneiden:</strong> Du wählst ein Seitenverhältnis – quadratisch, 16:9, 4:3 oder frei wählbar – und behältst dabei den wichtigsten Bildausschnitt im Blick.</li>
+      <li><strong>Konvertieren:</strong> Du wechselst zwischen JPEG, PNG und WebP, je nachdem wofür das Bild anschließend genutzt wird.</li>
+    </ul>
+    <p>Diese drei Funktionen lassen sich beliebig kombinieren. So entsteht aus einem einzigen Foto in wenigen Klicks eine passgenaue Version für genau den Zweck, den du gerade brauchst.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Vom 4K-Foto zum druckfertigen Format</h3>
+    <p>Kameras und Smartphones liefern heute Fotos mit enormer Auflösung – oft 4000 Pixel Breite oder mehr. Für einen Druck im Format 10 × 15 cm reichen jedoch etwa 1200 × 1800 Pixel bei 300 dpi völlig aus. Lädst du das unbearbeitete Originalbild direkt bei einem Fotolabor hoch, wird es meist automatisch herunterskaliert – oft ohne dass du das Ergebnis vorher siehst.</p>
+    <p>Mit unserem Resizer bestimmst du die Zielgröße selbst, siehst die Vorschau vor dem Download und stellst sicher, dass wichtige Bildelemente nicht abgeschnitten werden. Das gilt genauso für andere Druckformate wie 13 × 18 cm, 20 × 30 cm oder klassische Passfotos.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Zuschneiden ohne den Hauptinhalt zu verlieren</h3>
+    <p>Ein quadratisches Profilbild aus einem Querformat-Foto zu erstellen, klingt einfach – bringt aber ein Risiko mit sich: Wichtige Bildteile können am Rand verschwinden. Unser Tool zeigt dir den Bildausschnitt live an, bevor du ihn bestätigst. Du verschiebst den Zuschneiderahmen frei über das Bild und siehst sofort, was im finalen Ergebnis sichtbar bleibt.</p>
+    <p>Das funktioniert für alle gängigen Seitenverhältnisse:</p>
+    <ul>
+      <li><strong>1:1 (quadratisch):</strong> ideal für Profilbilder und Instagram-Posts.</li>
+      <li><strong>16:9:</strong> passend für Youtube-Thumbnails und Präsentationen.</li>
+      <li><strong>4:3:</strong> das klassische Format für Druck und ältere Bildschirme.</li>
+      <li><strong>Frei wählbar:</strong> für individuelle Anforderungen, etwa Banner oder Cover-Bilder.</li>
+    </ul>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Format konvertieren in einem Schritt</h3>
+    <p>Nicht jede Plattform akzeptiert jedes Bildformat gleich gut. Ein PNG mit Transparenz eignet sich hervorragend für Logos, ist aber für Fotos meist unnötig groß. JPEG punktet bei Fotos durch effiziente Kompression, unterstützt jedoch keine Transparenz. WebP kombiniert die Vorteile beider Formate und wird von modernen Browsern durchgehend unterstützt.</p>
+    <p>Beim Konvertieren behältst du die volle Kontrolle über die Kompressionsstärke, sodass du selbst entscheidest, wie du Bildqualität und Dateigröße gegeneinander abwägst.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Typische Anwendungsfälle</h3>
+    <ul>
+      <li><strong>Bewerbungsfotos:</strong> Passgenaue Passbild-Maße mit korrektem Seitenverhältnis erstellen.</li>
+      <li><strong>Online-Shop-Produktbilder:</strong> Einheitliche Größe und Format für alle Artikelbilder sicherstellen.</li>
+      <li><strong>Social-Media-Content:</strong> Fotos für jede Plattform im passenden Format zuschneiden.</li>
+      <li><strong>Druckvorlagen:</strong> Fotos für Fotobücher, Poster oder Grußkarten in exakter Zielgröße vorbereiten.</li>
+      <li><strong>Website-Assets:</strong> Header-Bilder, Thumbnails und Galerien in optimierter Auflösung ausgeben.</li>
+    </ul>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>So gehst du vor</h3>
+    <ol>
+      <li><strong>Bild hochladen:</strong> Ziehe eine Datei in das Tool oder wähle sie über den Dateibrowser aus.</li>
+      <li><strong>Zielformat festlegen:</strong> Wähle eine Vorlage oder gib eigene Pixelmaße und ein Seitenverhältnis ein.</li>
+      <li><strong>Ausschnitt anpassen:</strong> Verschiebe den Zuschneiderahmen, bis der gewünschte Bildbereich sichtbar ist.</li>
+      <li><strong>Format wählen und herunterladen:</strong> Entscheide dich für JPEG, PNG oder WebP und speichere das fertige Bild.</li>
+    </ol>
+    <p>Alle Schritte laufen direkt im Browser ab – ohne Umweg über fremde Server und ohne Wartezeit durch Uploads.</p>
   </div>
 </div>`,
       },
@@ -849,7 +968,56 @@ export const dePages: SeoPage[] = [
         heading: "Bild Resizer für alle Gelegenheiten",
         content: `<div class="space-y-12 not-prose">
   <div class="prose prose-slate dark:prose-invert max-w-none">
-    <p>Ob du den <strong>Bild Resizer</strong> für eine Bewerbung, ein Foren‑Avatar oder eine Produktabbildung brauchst – die Bedienung ist identisch: Bild einfügen, neue Maße wählen, speichern. Besonders hilfreich ist die Möglichkeit, die Ausgabegröße in Prozent anzugeben, wenn das Ausgangsformat unbekannt ist.</p>
+    <p>Ob du den <strong>Bild Resizer</strong> für eine Bewerbung, ein Foren-Avatar oder eine Produktabbildung brauchst – die Bedienung ist identisch: Bild einfügen, neue Maße wählen, speichern. Besonders hilfreich ist die Möglichkeit, die Ausgabegröße in Prozent anzugeben, wenn das Ausgangsformat unbekannt ist.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Zwei Wege zur richtigen Größe: Pixel oder Prozent</h3>
+    <p>Manchmal kennst du die exakten Zielmaße – etwa "600 × 800 Pixel" für ein Bewerbungsfoto. Dann gibst du diese Werte einfach direkt ein. Häufig weißt du aber nur, dass ein Bild "kleiner" werden soll, ohne genaue Vorgabe zu kennen. Genau für diesen Fall gibt es die <strong>prozentuale Skalierung</strong>: Du wählst zum Beispiel 50 Prozent, und das Tool berechnet automatisch die neuen Pixelmaße auf Basis des Originals – unabhängig davon, ob das Ausgangsbild 2000 oder 8000 Pixel breit ist.</p>
+    <p>Diese Methode eignet sich besonders gut, wenn du mehrere Bilder unterschiedlicher Größe gleichzeitig bearbeitest und trotzdem ein einheitliches Verkleinerungsverhältnis beibehalten willst.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Bewerbungsfotos: Exakte Vorgaben zuverlässig einhalten</h3>
+    <p>Bewerbungsportale und Formulare verlangen oft strikte Vorgaben – eine maximale Dateigröße von 500 KB, ein bestimmtes Seitenverhältnis oder eine feste Pixelbreite. Verstößt dein Foto gegen eine dieser Regeln, verweigert das Formular häufig den Upload, ganz ohne hilfreiche Fehlermeldung.</p>
+    <p>Mit dem Bild Resizer gibst du die geforderten Maße direkt ein und kontrollierst zusätzlich die Dateigröße über die Kompression. So stellst du sicher, dass dein Foto sowohl die Maßvorgaben als auch das Größenlimit einhält, bevor du es hochlädst.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Foren-Avatare und Community-Profile</h3>
+    <p>Viele Foren und Communities begrenzen Avatare auf kleine Maße wie 150 × 150 oder 200 × 200 Pixel und oft auch auf wenige Kilobyte Dateigröße. Ein direkt von der Kamera stammendes Foto sprengt diese Grenzen meist um ein Vielfaches.</p>
+    <p>Der Bild Resizer verkleinert dein Foto passgenau auf die geforderten Maße und komprimiert es gleichzeitig so weit, dass es unter dem Größenlimit bleibt – ohne dass Gesicht oder Motiv unscharf oder verpixelt wirken.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Produktbilder für Online-Shops und Marktplätze</h3>
+    <p>Plattformen wie Amazon, eBay oder Etsy geben klare Regeln für Produktbilder vor: eine Mindestbreite für die Zoom-Funktion, ein einheitliches Seitenverhältnis für die Galerie-Ansicht und meist eine maximale Dateigröße pro Bild. Uneinheitliche Bildgrößen wirken zudem unprofessionell und stören den visuellen Gesamteindruck deines Shops.</p>
+    <p>Mit der prozentualen Skalierung passt du eine ganze Serie von Produktfotos im gleichen Verhältnis an, selbst wenn sie ursprünglich mit unterschiedlichen Kameras oder Smartphones aufgenommen wurden. Das Ergebnis: ein einheitlicher, professioneller Auftritt über alle Artikel hinweg.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Weitere Alltagssituationen</h3>
+    <ul>
+      <li><strong>Messenger und Chat-Apps:</strong> Viele Dienste komprimieren große Bilder automatisch und mindern dabei die Qualität. Verkleinerst du das Bild vorher selbst, behältst du die Kontrolle über das Ergebnis.</li>
+      <li><strong>Präsentationsfolien:</strong> Zu große Bilddateien blähen PowerPoint- oder Keynote-Dateien unnötig auf und verlangsamen das Laden. Kleinere Bildmaße halten die Präsentation schlank.</li>
+      <li><strong>Cloud-Backups:</strong> Wer Speicherplatz in der Cloud spart, reduziert oft ganze Fotoalben auf eine sinnvolle Zielgröße, statt jedes Bild in voller Kameraauflösung zu archivieren.</li>
+      <li><strong>Website-Uploads mit CMS-Beschränkungen:</strong> Viele Content-Management-Systeme setzen Obergrenzen für Bildgrößen. Der Resizer hilft, diese Grenzen zuverlässig einzuhalten.</li>
+    </ul>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>So funktioniert die prozentuale Skalierung Schritt für Schritt</h3>
+    <ol>
+      <li><strong>Bild einfügen:</strong> Ziehe die Datei in das Tool oder wähle sie über den Dateibrowser aus.</li>
+      <li><strong>Skalierungsmethode wählen:</strong> Entscheide dich zwischen exakten Pixelmaßen oder einer prozentualen Verkleinerung.</li>
+      <li><strong>Prozentwert festlegen:</strong> Bei der prozentualen Methode gibst du einen Wert zwischen 1 und 100 Prozent ein – das Tool berechnet die neuen Maße automatisch.</li>
+      <li><strong>Ergebnis prüfen und speichern:</strong> Eine Vorschau zeigt dir die neuen Pixelmaße und die geschätzte Dateigröße, bevor du herunterlädst.</li>
+    </ol>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Warum sich ein flexibler Ansatz lohnt</h3>
+    <p>Kein anderes Tool passt gleichzeitig zu Bewerbungsfotos, Foren-Avataren und Produktbildern – die Anforderungen unterscheiden sich zu stark. Genau deshalb kombiniert der Bild Resizer feste Pixelmaße für exakte Vorgaben mit prozentualer Skalierung für flexible Anwendungsfälle. So findest du für jede Gelegenheit die passende Lösung, ohne zwischen mehreren Tools wechseln zu müssen.</p>
   </div>
 </div>`,
       },
@@ -900,6 +1068,60 @@ export const dePages: SeoPage[] = [
   <div class="prose prose-slate dark:prose-invert max-w-none">
     <p>Du möchtest ein <strong>Bild online verkleinern</strong>, ohne erst ein Programm herunterladen zu müssen? Genau dafür wurde unser Tool gebaut. Die gesamte Verarbeitung findet in deinem Browser statt – deine Bilder verlassen niemals deinen Rechner. Das schont nicht nur deine Privatsphäre, sondern macht die Bearbeitung auch rasend schnell, weil keine Upload-Wartezeiten entstehen.</p>
   </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Warum Browser-basierte Bearbeitung schneller ist</h3>
+    <p>Klassische Online-Tools funktionieren meist nach demselben Prinzip: Du lädst dein Bild auf einen fremden Server hoch, wartest, bis die Verarbeitung dort abgeschlossen ist, und lädst das Ergebnis anschließend wieder herunter. Bei großen Fotos oder langsamer Internetverbindung kostet allein der Upload wertvolle Zeit – und das doppelt, denn das bearbeitete Bild muss anschließend erneut übertragen werden.</p>
+    <p>Unser Tool verzichtet auf diesen Umweg komplett. Die Berechnung läuft direkt in deinem Browser über moderne Web-Technologien ab. Das bedeutet: Sobald du ein Bild einfügst, siehst du das Ergebnis nahezu augenblicklich, unabhängig davon, wie schnell oder langsam deine Internetverbindung gerade ist.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Deine Bilder bleiben privat</h3>
+    <p>Gerade bei persönlichen Fotos – Ausweisdokumenten, Familienbildern oder internen Firmenunterlagen – ist es beruhigend zu wissen, dass die Datei niemals einen fremden Server erreicht. Da die gesamte Verarbeitung lokal in deinem Browser stattfindet, gibt es schlicht keinen Übertragungsweg, über den sensible Bilddaten abgegriffen werden könnten. Du behältst die volle Kontrolle, vom ersten Klick bis zum fertigen Download.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Kein Programm, keine Installation, keine Wartezeit</h3>
+    <p>Herkömmliche Bildbearbeitungsprogramme verlangen häufig eine Installation, Systemressourcen und manchmal sogar ein kostenpflichtiges Abo. Für die einfache Aufgabe, ein Bild zu verkleinern, ist das oft unverhältnismäßig aufwendig. Unser Tool läuft direkt im Browser – auf Windows, macOS, Linux, Chromebook oder sogar auf dem Tablet. Du brauchst weder Adminrechte noch freien Speicherplatz für eine Softwareinstallation.</p>
+    <p>Das macht es besonders praktisch, wenn du unterwegs oder an einem fremden Rechner schnell ein Bild anpassen musst, etwa im Internetcafé, auf der Arbeit oder bei Freunden.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>So verkleinerst du ein Bild in unter einer Minute</h3>
+    <ol>
+      <li><strong>Bild einfügen:</strong> Ziehe die Datei per Drag-and-drop in das Tool oder wähle sie über den Dateibrowser aus.</li>
+      <li><strong>Zielgröße festlegen:</strong> Wähle eine Vorlage, gib eigene Pixelmaße ein oder nutze die prozentuale Skalierung.</li>
+      <li><strong>Vorschau prüfen:</strong> Das Ergebnis erscheint sofort, ohne Wartezeit durch Server-Uploads.</li>
+      <li><strong>Herunterladen:</strong> Speichere das fertige Bild direkt auf deinem Gerät.</li>
+    </ol>
+    <p>Bei mehreren Bildern läuft der Ablauf identisch – du fügst einfach mehrere Dateien gleichzeitig ein und bearbeitest sie im Batch, ohne jede Datei einzeln durchklicken zu müssen.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Für welche Situationen sich die Online-Lösung besonders eignet</h3>
+    <ul>
+      <li><strong>Schnelle Einzelbearbeitung:</strong> Ein Bild für eine E-Mail oder einen Chat schnell verkleinern, ohne ein Programm zu öffnen.</li>
+      <li><strong>Unterwegs arbeiten:</strong> Auf fremden Rechnern oder Tablets ohne Adminrechte trotzdem Bilder bearbeiten können.</li>
+      <li><strong>Sensible Inhalte:</strong> Dokumente oder private Fotos verkleinern, ohne sie auf einen fremden Server zu übertragen.</li>
+      <li><strong>Gelegentliche Nutzung:</strong> Für alle, die nur ab und zu ein Bild anpassen müssen, lohnt sich keine Software-Installation.</li>
+      <li><strong>Plattformübergreifende Nutzung:</strong> Funktioniert identisch auf jedem Betriebssystem mit modernem Browser.</li>
+    </ul>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Grenzen der Browser-Verarbeitung</h3>
+    <p>Bei sehr großen Bildern oder einer großen Anzahl gleichzeitig hochgeladener Dateien kann die Verarbeitungsgeschwindigkeit von der Rechenleistung deines Geräts abhängen, da die Berechnung lokal stattfindet. In der Praxis bewegt sich das jedoch meist im Bereich weniger Sekunden – deutlich schneller als bei den meisten server-basierten Alternativen, bei denen Upload und Download zusätzliche Zeit kosten.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Der Unterschied zu klassischen Online-Tools auf einen Blick</h3>
+    <ul>
+      <li><strong>Keine Upload-Wartezeit:</strong> Verarbeitung startet sofort nach dem Einfügen.</li>
+      <li><strong>Keine Serverübertragung:</strong> Bilder bleiben auf deinem Gerät.</li>
+      <li><strong>Keine Registrierung nötig:</strong> Sofort loslegen, ohne Konto anzulegen.</li>
+      <li><strong>Keine versteckten Limits:</strong> Keine künstlich begrenzte Anzahl kostenloser Nutzungen pro Tag.</li>
+    </ul>
+  </div>
 </div>`,
       },
     ],
@@ -946,6 +1168,56 @@ export const dePages: SeoPage[] = [
         content: `<div class="space-y-12 not-prose">
   <div class="prose prose-slate dark:prose-invert max-w-none">
     <p>Ein <strong>Foto online verkleinern</strong> zu können, erspart dir das Jonglieren mit verschiedenen Programmen. Gerade unterwegs, wenn du schnell ein Bild für WhatsApp oder Instagram brauchst, ist eine browserbasierte Lösung Gold wert. Unsere Seite funktioniert auf iOS und Android genauso reibungslos wie am Desktop.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Eine Lösung für alle Geräte</h3>
+    <p>Die meisten Menschen wechseln heute ständig zwischen Smartphone, Tablet und Laptop. Ein Foto wird auf dem Handy aufgenommen, soll aber vielleicht am Computer weiterverarbeitet oder umgekehrt unterwegs schnell angepasst werden. Klassische Apps sind fast immer an ein bestimmtes Betriebssystem gebunden: Eine iOS-App funktioniert nicht auf Android, eine Windows-Software nicht auf dem iPhone.</p>
+    <p>Ein Online-Tool umgeht dieses Problem vollständig. Da es im Browser läuft, ist es auf iPhone, Android-Smartphone, iPad, Windows-PC, Mac oder Chromebook gleichermaßen nutzbar. Du musst dir nicht merken, welche App auf welchem Gerät installiert ist – die Adresse im Browser reicht, und die Bedienung bleibt überall identisch.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Perfekt vorbereitet für WhatsApp, Instagram & Co.</h3>
+    <p>Social-Media- und Messenger-Apps komprimieren hochgeladene Bilder häufig automatisch – und das Ergebnis sieht nicht immer optimal aus. Wer ein Foto vorher selbst auf die passende Größe bringt, behält die Kontrolle über die Bildqualität:</p>
+    <ul>
+      <li><strong>WhatsApp:</strong> Bilder unter 5 MB werden ohne starke Zusatzkompression versendet, was die Qualität im Chatverlauf spürbar verbessert.</li>
+      <li><strong>Instagram:</strong> Ein quadratisches Format mit 1080 × 1080 Pixeln sorgt für scharfe Darstellung im Feed, ohne dass die App zusätzlich zuschneidet.</li>
+      <li><strong>Facebook:</strong> Eine Breite von 1200 Pixeln reicht für die meisten Beitragsansichten völlig aus.</li>
+      <li><strong>Story-Formate:</strong> Ein Seitenverhältnis von 9:16 verhindert schwarze Balken oder unerwünschtes Beschneiden.</li>
+    </ul>
+    <p>Mit dem passenden Zuschnitt und der richtigen Größe vermeidest du, dass Plattformen dein Bild eigenmächtig zurechtstutzen oder unnötig stark komprimieren.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Kein App-Store, kein Speicherplatz-Problem</h3>
+    <p>Native Apps belegen Speicherplatz auf dem Smartphone – bei ohnehin knappem Speicher ein echtes Ärgernis. Zudem verlangen viele Apps Zugriffsrechte auf die gesamte Fotobibliothek, auch wenn du eigentlich nur ein einzelnes Bild bearbeiten möchtest.</p>
+    <p>Ein browserbasiertes Tool benötigt keine Installation und damit auch keinen dauerhaften Speicherplatz. Du öffnest die Seite, bearbeitest dein Bild und schließt den Tab wieder – ganz ohne Rückstände auf deinem Gerät.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Bedienung auf dem Smartphone: So funktioniert's</h3>
+    <ol>
+      <li><strong>Foto auswählen:</strong> Tippe auf die Upload-Fläche und wähle ein Bild direkt aus deiner Galerie oder mache ein neues Foto.</li>
+      <li><strong>Zielplattform wählen:</strong> Nutze eine Vorlage für WhatsApp, Instagram oder eine andere Plattform, oder gib eigene Maße ein.</li>
+      <li><strong>Ausschnitt anpassen:</strong> Verschiebe den Zuschneiderahmen mit dem Finger, bis der gewünschte Bildbereich sichtbar ist.</li>
+      <li><strong>Speichern:</strong> Lade das fertige Bild direkt in deine Galerie herunter oder teile es sofort weiter.</li>
+    </ol>
+    <p>Die Touch-Bedienung ist eigens für kleinere Bildschirme optimiert, sodass sich Schieberegler und Zuschneidewerkzeuge auch mit dem Finger präzise steuern lassen.</p>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Warum sich der Verzicht auf eine App lohnt</h3>
+    <ul>
+      <li><strong>Keine Updates nötig:</strong> Das Tool ist immer auf dem aktuellen Stand, ohne dass du manuell etwas aktualisieren musst.</li>
+      <li><strong>Keine Werbeeinblendungen zwischen den Schritten:</strong> Viele kostenlose Apps unterbrechen den Workflow mit Werbung – im Browser entfällt das.</li>
+      <li><strong>Sofort einsatzbereit:</strong> Kein Download, kein App-Store-Konto, keine Wartezeit bei der Installation.</li>
+      <li><strong>Geräteübergreifend konsistent:</strong> Die gleiche Bedienung, egal ob du gerade am Handy oder am Rechner sitzt.</li>
+    </ul>
+  </div>
+
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <h3>Für wen sich diese Lösung besonders eignet</h3>
+    <p>Ob Student, der schnell ein Profilbild für ein Uni-Portal anpassen muss, Kleinunternehmer, der Produktfotos für den Feierabend-Verkauf vorbereitet, oder jemand, der einfach nur ein Erinnerungsfoto in der Familiengruppe teilen möchte – ein Online-Tool nimmt jedem die Entscheidung ab, welche App er dafür installieren müsste. Es steht einfach bereit, auf jedem Gerät, zu jeder Zeit.</p>
   </div>
 </div>`,
       },

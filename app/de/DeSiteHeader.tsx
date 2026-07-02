@@ -38,8 +38,8 @@ export default function DeSiteHeader() {
               <button className="text-sm font-medium text-slate-600 hover:text-lime-600 dark:text-slate-300 dark:hover:text-lime-400 transition-colors flex items-center gap-1">
                 Werkzeuge
               </button>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
-                <div className="p-4 grid grid-cols-2 gap-2 max-h-[70vh] overflow-y-auto">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[500px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+                <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700 p-4 grid grid-cols-2 gap-2 max-h-[70vh] overflow-y-auto">
                   <Link href="/de/foto-verkleinern" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold text-lime-600 dark:text-lime-400 bg-lime-50 dark:bg-lime-900/20 hover:bg-lime-100 dark:hover:bg-lime-900/40 transition-colors">
                     <RefreshCw size={14} /> Foto Verkleinern
                   </Link>
