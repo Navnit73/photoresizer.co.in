@@ -1076,6 +1076,29 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+          {/* ── International Passport Tools ── */}
+          <div className="pt-8 border-t border-slate-200 dark:border-slate-800 pb-12">
+            <h3 className="text-lg font-bold mb-4 text-slate-800 dark:text-slate-200">
+              International Passport & Visa Photo Tools
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {[
+                ["https://www.pixpassport.com", "PixPassport AI Photo Maker"],
+                ["https://www.pixpassport.com/germany-passport-photo-editor", "Germany Passport Photo Editor"],
+                ["https://www.pixpassport.com/china-visa-photo-editor", "China Visa Photo Editor"],
+                ["https://www.pixpassport.com/de/biometrisches-passbild", "Biometrisches Passbild (Germany)"],
+              ].map(([href, label]) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="text-sm px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors"
+                >
+                  {label}
+                </a>
+              ))}
+            </div>
+          </div>
         </section>
       </main>
     </div>
