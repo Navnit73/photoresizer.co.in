@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Cropper from 'react-easy-crop';
-import { ArrowLeft, ArrowRight, Check, Image as ImageIcon, Info, Loader2, Wand2, ZoomIn, ZoomOut, Eraser } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUp, ArrowDown, Check, Image as ImageIcon, Info, Loader2, Wand2, ZoomIn, ZoomOut, Eraser } from 'lucide-react';
 import { useTranslation } from '@/app/hooks/useTranslation';
 import imageCompression from 'browser-image-compression';
 
@@ -189,6 +189,19 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
           pointer-events: none;
           z-index: 50;
         }
+        /* Grid lines for perfectly centering the image */
+        .passport-crop-area {
+          background-image: 
+            /* Vertical rule of thirds */
+            linear-gradient(to right, transparent calc(33.33% - 0.5px), rgba(255,255,255,0.4) calc(33.33% - 0.5px), rgba(255,255,255,0.4) calc(33.33% + 0.5px), transparent calc(33.33% + 0.5px)),
+            linear-gradient(to right, transparent calc(66.66% - 0.5px), rgba(255,255,255,0.4) calc(66.66% - 0.5px), rgba(255,255,255,0.4) calc(66.66% + 0.5px), transparent calc(66.66% + 0.5px)),
+            /* Horizontal rule of thirds */
+            linear-gradient(to bottom, transparent calc(33.33% - 0.5px), rgba(255,255,255,0.4) calc(33.33% - 0.5px), rgba(255,255,255,0.4) calc(33.33% + 0.5px), transparent calc(33.33% + 0.5px)),
+            linear-gradient(to bottom, transparent calc(66.66% - 0.5px), rgba(255,255,255,0.4) calc(66.66% - 0.5px), rgba(255,255,255,0.4) calc(66.66% + 0.5px), transparent calc(66.66% + 0.5px)),
+            /* Center crosshairs (vertical and horizontal) */
+            linear-gradient(to right, transparent calc(50% - 0.5px), rgba(18, 236, 164, 0.6) calc(50% - 0.5px), rgba(16, 185, 129, 0.6) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+            linear-gradient(to bottom, transparent calc(50% - 0.5px), rgba(7, 80, 57, 0.6) calc(50% - 0.5px), rgba(16, 185, 129, 0.6) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+        }
       `}} />
 
       {/* Header */}
@@ -269,19 +282,21 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
 
           <div className="flex-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-sm p-6 flex flex-col gap-6">
             
-            {/* Step 1: Zoom */}
+            {/* Step 1: Zoom & Position */}
             <section className="flex flex-col gap-3">
               <div className="flex items-center justify-between">
                 <h3 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2 text-sm">
                   <span className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 w-5 h-5 rounded-sm flex items-center justify-center text-[10px] font-bold">1</span>
-                  Adjust Size
+                  Adjust Size & Position
                 </h3>
                 <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
                   {Math.round(zoom * 100)}%
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <ZoomOut size={16} className="text-slate-500" />
+                <button onClick={() => setZoom(z => Math.max(z - 0.05, 1))} className="p-1 text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" aria-label="Zoom Out">
+                  <ZoomOut size={16} />
+                </button>
                 <input
                   type="range"
                   value={zoom}
@@ -292,7 +307,28 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
                   onChange={(e) => setZoom(Number(e.target.value))}
                   className="flex-1 h-1 bg-slate-200 dark:bg-slate-700 rounded-none appearance-none cursor-grab active:cursor-grabbing accent-slate-900 dark:accent-slate-100"
                 />
-                <ZoomIn size={16} className="text-slate-500" />
+                <button onClick={() => setZoom(z => Math.min(z + 0.05, 3))} className="p-1 text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" aria-label="Zoom In">
+                  <ZoomIn size={16} />
+                </button>
+              </div>
+
+              <div className="flex justify-center mt-2">
+                <div className="grid grid-cols-3 gap-1">
+                  <div />
+                  <button onClick={() => setCrop(c => ({...c, y: c.y - 10}))} aria-label="Move Up" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-sm flex justify-center items-center transition-colors">
+                    <ArrowUp size={16} />
+                  </button>
+                  <div />
+                  <button onClick={() => setCrop(c => ({...c, x: c.x - 10}))} aria-label="Move Left" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-sm flex justify-center items-center transition-colors">
+                    <ArrowLeft size={16} />
+                  </button>
+                  <button onClick={() => setCrop(c => ({...c, y: c.y + 10}))} aria-label="Move Down" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-sm flex justify-center items-center transition-colors">
+                    <ArrowDown size={16} />
+                  </button>
+                  <button onClick={() => setCrop(c => ({...c, x: c.x + 10}))} aria-label="Move Right" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-sm flex justify-center items-center transition-colors">
+                    <ArrowRight size={16} />
+                  </button>
+                </div>
               </div>
             </section>
 
