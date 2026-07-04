@@ -4711,7 +4711,7 @@ export const programmaticPages: SeoPage[] = [
   }
 ]
   },
-  {
+{
     slug: "rrb-je-photo-resizer",
     metaTitle: "Rrb Je Photo Resizer — Resize & Compress",
     metaDescription: "Free online tool for Rrb Je Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -4730,22 +4730,79 @@ export const programmaticPages: SeoPage[] = [
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
-      }
+      },
+      {
+        heading: "RRB Junior Engineer (JE) Recruitment 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    The Railway Recruitment Board (Ministry of Railways) has released a short notice under CEN-05/2026, announcing recruitment for 4,098 Junior Engineer (JE) posts. The board will open applications in July 2026 and will accept them until August 2026. Candidates must fall between 18 and 33 years of age as on 01 July 2026. Before applicants upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
+  </p>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Application Start Date: Available soon</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Last Date to Apply Online: Available soon</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Last Date for Fee Payment: Available soon</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: To be notified</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: Issued before the exam</li>
+    </ul>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee (Tentative)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General / OBC / EWS: ₹500</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC / ST / EBC: ₹250</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> All-category female candidates: ₹250</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">RRB will refund ₹400 to General/OBC candidates and ₹250 to other candidates after they appear for the Stage I exam. Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 January 2026, Tentative)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Minimum age: 18 years</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 33 years</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">RRB also grants age relaxation for the JE position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates holding an Engineering Diploma or Degree, or the specific qualifications required for JE (IT) and Chemical & Metallurgical Assistant posts, qualify for this recruitment. RRB advises every candidate to read the official notification fully before applying.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the August 2026 deadline through the official RRB website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
+    <p class="text-slate-700 dark:text-slate-300">RRB selects candidates through four stages: CBT 1, CBT 2, document verification, and a medical examination.</p>
+  </div>
+</div>`,
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Rrb Je Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Rrb Je Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Rrb Je Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
+      {
+        "question": "What are the photo dimensions for Rrb Je Photo Resizer?",
+        "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Rrb Je Photo Resizer notification before uploading."
+      },
+      {
+        "question": "Does this tool reduce file size in KB?",
+        "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
+      },
+      {
+        "question": "Can I change the background of my Rrb Je Photo Resizer photo?",
+        "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
+      },
+      {
+        "question": "When does the RRB JE 2026 application open and close?",
+        "answer": "RRB will open the application window in July 2026 and will close it in August 2026. RRB has not yet released the exact dates, so candidates should keep checking the official website."
+      }
+    ]
   },
   {
     slug: "rrb-je-signature-resizer",
@@ -11615,6 +11672,104 @@ export const programmaticPages: SeoPage[] = [
 ]
   },
   {
+    slug: "rssb-cet-graduate-level-photo-resizer",
+    metaTitle: "RSSB CET Graduate Level Photo Resizer — Resize & Compress",
+    metaDescription: "Free online tool for RSSB CET Graduate Level Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
+    h1: "RSSB CET Graduate Level Photo Resizer",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle: "Quickly and securely process your files for RSSB CET Graduate Level Photo Resizer. 100% free, 100% private.",
+    sections: [
+      {
+        heading: "About RSSB CET Graduate Level Photo Resizer",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Preparing your photograph for RSSB CET Graduate Level Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
+  </p>
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+    </ul>
+  </div>
+</div>`,
+      },
+      {
+        heading: "RSSB CET Graduate Level Online Form 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    The Rajasthan Staff Selection Board (RSSB-Jaipur) has released Advertisement No. 09/2026, announcing the Common Eligibility Test (Graduate Level) Examination 2026. The board opened applications on 04 July 2026 and will accept them until 02 August 2026. Candidates must fall between 18 and 40 years of age as on 01 January 2027. Before applicants upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
+  </p>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Start: 04 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Last Date: 02 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Fee Payment Last Date: 02 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: 01–03 December 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: Issued before the exam</li>
+    </ul>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General, OBC (Other State): ₹600</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> OBC (Non-Creamy Layer) / MBC Rajasthan: ₹400</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC, ST, PH: ₹400</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 January 2027)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Minimum age: 18 years</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 40 years</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">Rajasthan RSSB also grants age relaxation under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates must hold a bachelor's degree in any stream from a recognized university in India. RSSB advises candidates to read the official notification carefully for subject-wise eligibility and other detailed requirements.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 02 August 2026 deadline through the official Rajasthan RSSB website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
+    <p class="text-slate-700 dark:text-slate-300">RSSB selects candidates through a two-stage written examination: Paper-I and Paper-II.</p>
+  </div>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        "question": "What are the photo dimensions for RSSB CET Graduate Level Photo Resizer?",
+        "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official RSSB CET notification before uploading."
+      },
+      {
+        "question": "Does this tool reduce file size in KB?",
+        "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
+      },
+      {
+        "question": "Can I change the background of my RSSB CET Graduate Level photo?",
+        "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
+      },
+      {
+        "question": "When does the RSSB CET Graduate Level 2026 application open and close?",
+        "answer": "RSSB opened the application window on 04 July 2026, and it closes on 02 August 2026. Candidates must also complete their fee payment by 02 August 2026."
+      }
+    ]
+  },
+{
     slug: "bihar-police-photo-resizer",
     metaTitle: "Bihar Police Photo Resizer — Resize & Compress",
     metaDescription: "Free online tool for Bihar Police Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -11638,22 +11793,101 @@ export const programmaticPages: SeoPage[] = [
     </ul>
   </div>
 </div>`,
-      }
+      },
+      {
+        heading: "BPSSC Bihar Police Sub Inspector (SI) Recruitment 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    The Bihar Police Subordinate Services Commission (BPSSC) has released Advertisement No. 09/2026, announcing a fresh recruitment drive for Sub Inspector (SI) posts. The commission has opened 150 vacancies and will accept applications from 09 July 2026 through 09 August 2026. Candidates must fall between 20 and 42 years of age, depending on category and post, calculated as on 01 August 2025. Before applicants upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
+  </p>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Start: 09 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Last Date: 09 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Fee Payment Last Date: 09 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: To be notified</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: Issued before the exam</li>
+    </ul>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
+    <p class="text-slate-700 dark:text-slate-300">BPSSC charges all candidates a fee of ₹100, payable online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 August 2025)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Minimum age: 20 years</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 37 years (UR Male)</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 40 years (UR Female, BC/EBC Male & Female)</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 42 years (SC/ST Male & Female)</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">BPSSC also grants additional age relaxation under its standard rules, so candidates should verify their exact entitlement in the official notification.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Vacancy Breakdown (150 Posts)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General: 60</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC: 24</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> ST: 2</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> EBC: 27</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> BC: 18</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> BC Female: 4</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> EWS: 15</li>
+    </ul>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates must hold a bachelor's degree in any discipline from a recognized university. BPSSC will not accept candidates awaiting final-year or final-semester results unless they can produce proof of graduation at the time of document verification.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Physical Standards</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Height: 165 cm (General/OBC Male), 160 cm (Other Male), 155 cm (Female, all categories)</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Chest: 81–86 cm (General/OBC Male), 79–84 cm (Other Male); not applicable for females</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Running: 1.6 km in 6 min 30 sec (Male), 1 km in 6 min (Female)</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> High Jump: 4 feet (Male), 3 feet (Female)</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Long Jump: 12 feet (Male), 9 feet (Female)</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Shot Put: 16 lb through 16 feet (Male), 12 lb through 10 feet (Female)</li>
+    </ul>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 09 August 2026 deadline through the official BPSSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form, since BPSSC will not entertain corrections after submission.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
+    <p class="text-slate-700 dark:text-slate-300">BPSSC selects candidates through five stages: a preliminary written examination, a mains written examination, a Physical Efficiency Test (PET) combined with a Physical Standard Test (PST), document verification, and a final medical examination.</p>
+  </div>
+</div>`,
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Bihar Police Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Bihar Police Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Bihar Police Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
+      {
+        "question": "What are the photo dimensions for Bihar Police Photo Resizer?",
+        "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Bihar Police Photo Resizer notification before uploading."
+      },
+      {
+        "question": "Does this tool reduce file size in KB?",
+        "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
+      },
+      {
+        "question": "Can I change the background of my Bihar Police Photo Resizer photo?",
+        "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
+      },
+      {
+        "question": "When does the BPSSC Bihar Police SI 2026 application open and close?",
+        "answer": "BPSSC opens the application window on 09 July 2026 and closes it on 09 August 2026. Candidates must also complete their fee payment by 09 August 2026."
+      }
+    ]
   },
   {
     slug: "bihar-police-signature-resizer",
