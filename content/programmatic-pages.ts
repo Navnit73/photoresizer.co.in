@@ -16289,258 +16289,501 @@ export const programmaticPages: SeoPage[] = [
   }
 ]
   },
-  {
+{
     slug: "kcet-photo-resizer",
-    metaTitle: "Kcet Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Kcet Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Kcet Photo Resizer",
+    metaTitle: "KCET Photo Resizer 2026 — Resize to Exact KB & Size Free",
+    metaDescription: "Resize your KCET photo to the exact KEA-prescribed format in seconds. Free, private, browser-based tool — no uploads, no signup, no watermark.",
+    h1: "KCET Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Kcet Photo Resizer. 100% free, 100% private.",
+    subtitle: "Get your KCET photograph portal-ready in one step. Nothing you upload ever leaves your browser.",
     sections: [
       {
-        heading: "About Kcet Photo Resizer",
+        heading: "Why Your KCET Photo Gets Rejected",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    The Kcet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
+    The Karnataka Examinations Authority (KEA) checks every photo uploaded to the KCET application portal against strict byte-level rules. A file that is even a few kilobytes too large, saved in the wrong format, or missing a plain background gets flagged during verification. Fixing this manually in a general photo editor usually takes several tries. This tool does it in one pass.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
+
+  <div class="overflow-x-auto mt-6">
+    <table class="w-full text-left border-collapse">
+      <thead>
+        <tr class="border-b border-slate-300 dark:border-slate-700">
+          <th class="py-3 pr-4 text-slate-900 dark:text-slate-100 font-semibold">Requirement</th>
+          <th class="py-3 text-slate-900 dark:text-slate-100 font-semibold">KCET Photo Specification</th>
+        </tr>
+      </thead>
+      <tbody class="text-lg text-slate-600 dark:text-slate-400">
+        <tr class="border-b border-slate-200 dark:border-slate-800">
+          <td class="py-3 pr-4">Format</td>
+          <td class="py-3">JPG / JPEG only</td>
+        </tr>
+        <tr class="border-b border-slate-200 dark:border-slate-800">
+          <td class="py-3 pr-4">File size</td>
+          <td class="py-3">Under 50 KB (KEA notification)</td>
+        </tr>
+        <tr class="border-b border-slate-200 dark:border-slate-800">
+          <td class="py-3 pr-4">Style</td>
+          <td class="py-3">Recent passport-style photo, plain background</td>
+        </tr>
+        <tr>
+          <td class="py-3 pr-4">Source</td>
+          <td class="py-3">Do not reuse an old or scanned photo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm text-slate-500 dark:text-slate-500">Always cross-check against the current year's KCET information bulletin at cetonline.karnataka.gov.in, since KEA can revise limits each cycle.</p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Three Steps to a Compliant Photo</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+    <li>Upload a recent photo taken against a plain, light-colored wall.</li>
+    <li>Crop to the passport-style frame the tool suggests automatically.</li>
+    <li>Enter your target file size, and the compressor fits it under the KEA limit without visible quality loss.</li>
+  </ol>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Built for Accuracy, Not Guesswork</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Instead of dragging a quality slider and hoping the export lands under the limit, this tool targets an exact kilobyte figure and adjusts compression automatically. That removes the trial-and-error most candidates go through with generic photo editors, and it keeps the photo looking sharp rather than pixelated.
+  </p>
+
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Because the entire process runs inside your browser using your device's own processing power, your photo is never transmitted to a remote server. That matters for an identity document that will sit on a government portal for months during counselling and admission.
   </p>
 </div>`,
-      }
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Kcet Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Kcet Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Kcet Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
+      {
+        question: "What is the exact file size limit for a KCET photo?",
+        answer:
+          "KEA notifications have specified a maximum of 50 KB in JPG format for recent cycles, though a few sources cite a 5 KB to 40 KB range. Check the current year's information bulletin before you upload, since KEA can adjust this figure each session.",
+      },
+      {
+        question: "Can I use an old passport photo?",
+        answer:
+          "No. KEA requires a recent photograph, and reusing an old or scanned image can lead to rejection during document verification.",
+      },
+      {
+        question: "Does the tool guarantee my photo will be accepted?",
+        answer:
+          "The tool matches the format, dimensions, and file size KEA specifies, but final acceptance also depends on photo clarity and background, so review the preview carefully before uploading it to the portal.",
+      },
+      {
+        question: "Is my photo uploaded to any server while resizing?",
+        answer:
+          "No. All cropping and compression happen locally in your browser, so the photo never leaves your device.",
+      },
+    ],
   },
   {
     slug: "kcet-signature-resizer",
-    metaTitle: "Kcet Signature Resizer — Exact Size & KB",
-    metaDescription: "Free online tool for Kcet Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Kcet Signature Resizer",
+    metaTitle: "KCET Signature Resizer 2026 — Free, Private, Exact KB",
+    metaDescription: "Resize your KCET signature to the exact JPG size KEA requires. Free browser-based tool, no uploads, no signup, no watermark.",
+    h1: "KCET Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Kcet Signature Resizer. 100% free, 100% private.",
+    subtitle: "Turn a scanned signature into a clean, portal-ready file in seconds.",
     sections: [
       {
-        heading: "About Kcet Signature Resizer",
+        heading: "Getting Your Signature Right the First Time",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Kcet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Your Kcet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    A signature seems like the smallest part of the KCET application, but it trips up more candidates than expected. KEA asks for a scanned image in JPG format, under 50 KB, and clearly legible against a plain white background. A signature that's too dark, cropped unevenly, or oversized in file size will bounce back during upload.
+  </p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Do This</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+    <li>Sign clearly on plain white paper using black or blue ink.</li>
+    <li>Scan or photograph the signature in good, even lighting.</li>
+    <li>Crop tightly around the signature, leaving a small white margin.</li>
+    <li>Save the final file in JPG format, sized under 50 KB.</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Avoid This</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+    <li>Signing in all capital letters or block print, which some portals reject.</li>
+    <li>Uploading a photo of the entire sheet of paper instead of a tight crop.</li>
+    <li>Using a heavily compressed file that makes the signature blurry.</li>
+    <li>Submitting a PNG or screenshot instead of a proper JPG scan.</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">How the Tool Handles It</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Upload your scanned or photographed signature, and the tool automatically detects the edges, trims the excess white space, and compresses the file to sit within the KEA size limit. You can preview the exact byte size before downloading, so there's no guessing whether the file will pass the portal's validation check.
+  </p>
+
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Everything runs locally through your browser's own image-processing engine. Your signature, one of the more sensitive pieces of personal data in the application, is never sent to a server or stored anywhere outside your device.
   </p>
 </div>`,
-      }
+      },
     ],
     faq: [
-  {
-    "question": "What is the standard signature size for Kcet Signature Resizer?",
-    "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
-  },
-  {
-    "question": "Is it safe to upload my signature?",
-    "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
-  },
-  {
-    "question": "Can I use blue ink for the Kcet Signature Resizer signature?",
-    "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Kcet Signature Resizer guidelines."
-  }
-]
+      {
+        question: "What is the KCET signature size limit?",
+        answer:
+          "KEA notifications commonly specify JPG format under 50 KB, though some cycles list a 5 KB to 40 KB range. Confirm the exact figure in the current year's information bulletin before uploading.",
+      },
+      {
+        question: "Can I use blue ink for my signature?",
+        answer:
+          "Black or blue ink is generally accepted, but always check the current KCET notification, since some portals prefer black for scanner clarity.",
+      },
+      {
+        question: "Is it safe to process my signature online?",
+        answer:
+          "Yes. The tool works entirely inside your browser using HTML5 Canvas, so your signature image is never uploaded to a remote server.",
+      },
+      {
+        question: "What if my signature still looks blurry after resizing?",
+        answer:
+          "Blurriness usually comes from a low-quality scan rather than the resizing step. Re-scan your signature in better lighting and at a higher starting resolution before compressing it.",
+      },
+    ],
   },
   {
     slug: "karnataka-pgcet-photo-resizer",
-    metaTitle: "Karnataka Pgcet Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Karnataka Pgcet Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Karnataka Pgcet Photo Resizer",
+    metaTitle: "Karnataka PGCET Photo Resizer 2026 — Free, Exact KB & CM",
+    metaDescription: "Resize your Karnataka PGCET photo to the exact 3.5x4.5cm, 5-40KB JPG format KEA requires. Free, private, no server upload.",
+    h1: "Karnataka PGCET Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Karnataka Pgcet Photo Resizer. 100% free, 100% private.",
+    subtitle: "Match the Karnataka Examinations Authority's photo specification without touching a single slider yourself.",
     sections: [
       {
-        heading: "About Karnataka Pgcet Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Karnataka Pgcet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Avoid application delays by ensuring your Karnataka Pgcet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
+        heading: "The Spec Candidates Miss",
+        content: `<div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800 not-prose">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Karnataka PGCET Photo Checklist</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Format: JPG or JPEG only</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> File size: typically 5 KB to 40 KB</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Dimensions: 3.5 cm × 4.5 cm, passport style</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Background: plain, light-colored</li>
+    </ul>
+  </div>
+  <div class="space-y-6 not-prose mt-6">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    KEA's PGCET portal has rejected thousands of applications over the years for the same reason: a photo that looks fine on screen but fails a strict byte-size check the moment it's uploaded. Because the exam covers MBA, MCA, M.Tech, M.E., and M.Arch admissions, a rejected photo can delay an entire postgraduate application at a stage when correction windows are short.
+  </p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Why a General Editor Falls Short</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Most photo apps let you crop to a size or reduce quality, but rarely both at once with a specific KB target in mind. You end up exporting, checking the file size, and re-exporting several times. This tool asks for your target size once, then handles cropping and compression together so the output matches the PGCET requirement on the first try.
+  </p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Step-by-Step</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+    <li>Upload a recent, well-lit photo against a plain background.</li>
+    <li>Let the tool crop it to the 3.5 cm × 4.5 cm passport frame.</li>
+    <li>Set your target file size within the 5 KB to 40 KB range.</li>
+    <li>Download the finished JPG and upload it directly to the KEA portal.</li>
+  </ol>
+
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Since PGCET application windows for MBA, MCA, and engineering postgraduate courses can differ slightly in their specifications by cycle, it's worth double-checking the current information bulletin before your final submission. This tool exists to save you the manual editing work, not to replace that final check.
   </p>
 </div>`,
-      }
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Karnataka Pgcet Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Karnataka Pgcet Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Karnataka Pgcet Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
+      {
+        question: "What are the photo dimensions for Karnataka PGCET?",
+        answer:
+          "KEA typically specifies 3.5 cm × 4.5 cm in JPG or JPEG format, with a file size between 5 KB and 40 KB. Some cycles list a 50 KB maximum instead, so confirm against the live PGCET notification.",
+      },
+      {
+        question: "Can I reuse my KCET photo for PGCET?",
+        answer:
+          "You can reuse a recent, compliant photo, but always verify it still meets the current PGCET dimension and file-size requirements before uploading, since the two exams' notifications aren't always identical.",
+      },
+      {
+        question: "Does the tool work for MBA, MCA, and M.Tech PGCET applications?",
+        answer:
+          "Yes. The photo specification applies across PGCET streams, so the same resized file works for MBA, MCA, M.Tech, M.E., and M.Arch applications through KEA's portal.",
+      },
+      {
+        question: "Is my photo stored anywhere after I download it?",
+        answer:
+          "No. Processing happens locally in your browser, and nothing is retained on any server once you close the tab.",
+      },
+    ],
   },
   {
     slug: "karnataka-pgcet-signature-resizer",
-    metaTitle: "Karnataka Pgcet Signature Resizer — Exact Size & KB",
-    metaDescription: "Free online tool for Karnataka Pgcet Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Karnataka Pgcet Signature Resizer",
+    metaTitle: "Karnataka PGCET Signature Resizer 2026 — Exact CM & KB",
+    metaDescription: "Resize your Karnataka PGCET signature to the exact 3.5x1.5cm, 5-40KB JPG format KEA requires. Free and completely private.",
+    h1: "Karnataka PGCET Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Karnataka Pgcet Signature Resizer. 100% free, 100% private.",
+    subtitle: "A signature that matches KEA's exact format, prepared in your browser in under a minute.",
     sections: [
       {
-        heading: "About Karnataka Pgcet Signature Resizer",
+        heading: "Preparing Your Signature",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Official applications for Karnataka Pgcet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
+    Karnataka PGCET applications require a scanned signature alongside your photograph and left thumb impression. KEA's specification typically calls for a JPG file between 5 KB and 40 KB, cropped to roughly 3.5 cm × 1.5 cm. It sounds like a small detail, but the portal checks it just as strictly as the photograph.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Preparing the Original Signature</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Sign your name on plain white paper using a dark pen, ideally black. Keep it steady and legible rather than rushed, since this same signature style should match what you'll use on printed confirmation pages and at the exam center. Photograph or scan it in good, even lighting so no shadows fall across the ink.
+  </p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Resizing in Three Moves</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+    <li>Upload the photographed or scanned signature.</li>
+    <li>Crop tightly to the signature itself, removing excess white space around it.</li>
+    <li>Compress to your target KB, and download the finished JPG.</li>
+  </ol>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Why File Size Matters More Than It Seems</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    KEA's application system performs an automatic check on every uploaded file. A signature that's 1 KB over the limit gets silently rejected rather than flagged with a clear error, which is why many candidates assume their upload succeeded until they reach the final review screen. Targeting a size safely within the 5 KB to 40 KB range, rather than right at the edge, avoids that risk entirely.
+  </p>
+
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Because this tool runs entirely in your browser, your signature never travels to a server for processing. That keeps one of your most personally identifying pieces of data fully in your own hands throughout the process.
   </p>
 </div>`,
-      }
+      },
     ],
     faq: [
-  {
-    "question": "What is the standard signature size for Karnataka Pgcet Signature Resizer?",
-    "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
-  },
-  {
-    "question": "Is it safe to upload my signature?",
-    "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
-  },
-  {
-    "question": "Can I use blue ink for the Karnataka Pgcet Signature Resizer signature?",
-    "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Karnataka Pgcet Signature Resizer guidelines."
-  }
-]
+      {
+        question: "What is the standard signature size for Karnataka PGCET?",
+        answer:
+          "KEA notifications commonly specify JPG format, 5 KB to 40 KB in size, cropped to roughly 3.5 cm × 1.5 cm. Always check the current PGCET information bulletin, since limits can shift by cycle.",
+      },
+      {
+        question: "Should I sign in block letters or cursive?",
+        answer:
+          "Use your normal, legible signature rather than block capital letters, since some portals reject all-capital signatures as invalid.",
+      },
+      {
+        question: "Is it safe to upload my signature to this tool?",
+        answer:
+          "Yes. All cropping and compression happen locally in your browser, and your signature image is never sent to a remote server.",
+      },
+      {
+        question: "Can I use the same signature file for the left thumb impression?",
+        answer:
+          "No. KEA requires a separate scanned image of your left thumb impression, taken and formatted according to its own specification.",
+      },
+    ],
   },
   {
     slug: "keam-photo-resizer",
-    metaTitle: "Keam Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Keam Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Keam Photo Resizer",
+    metaTitle: "KEAM Photo Resizer 2026 — Exact 150x200px & KB Free",
+    metaDescription: "Resize your KEAM photo to the exact 150x200 pixel, 15-30KB CEE Kerala specification. Free, private, no server upload required.",
+    h1: "KEAM Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Keam Photo Resizer. 100% free, 100% private.",
+    subtitle: "Match CEE Kerala's pixel-exact photo format without opening a desktop editor.",
     sections: [
       {
-        heading: "About Keam Photo Resizer",
+        heading: "CEE Kerala's Photo Rules Are Unusually Specific",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    The Keam Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
+    Unlike many state entrance exams that only enforce a file size range, the Commissioner for Entrance Examinations (CEE) Kerala asks for an exact pixel dimension for KEAM: 150 pixels wide by 200 pixels tall. On top of that, the file must sit between 15 KB and 30 KB, and many cycles also require your name and the date the photo was taken printed at the bottom of the image itself.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
+
+  <div class="overflow-x-auto mt-6">
+    <table class="w-full text-left border-collapse">
+      <thead>
+        <tr class="border-b border-slate-300 dark:border-slate-700">
+          <th class="py-3 pr-4 text-slate-900 dark:text-slate-100 font-semibold">Field</th>
+          <th class="py-3 text-slate-900 dark:text-slate-100 font-semibold">KEAM Photo Requirement</th>
+        </tr>
+      </thead>
+      <tbody class="text-lg text-slate-600 dark:text-slate-400">
+        <tr class="border-b border-slate-200 dark:border-slate-800">
+          <td class="py-3 pr-4">Dimensions</td>
+          <td class="py-3">150 px width × 200 px height</td>
+        </tr>
+        <tr class="border-b border-slate-200 dark:border-slate-800">
+          <td class="py-3 pr-4">File size</td>
+          <td class="py-3">15 KB to 30 KB</td>
+        </tr>
+        <tr class="border-b border-slate-200 dark:border-slate-800">
+          <td class="py-3 pr-4">Format</td>
+          <td class="py-3">JPG / JPEG</td>
+        </tr>
+        <tr>
+          <td class="py-3 pr-4">Background</td>
+          <td class="py-3">Light-colored or white</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm text-slate-500 dark:text-slate-500">Confirm the name-and-date requirement in the current KEAM prospectus at cee.kerala.gov.in, as this detail has varied slightly between cycles.</p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">How This Tool Handles Pixel-Exact Sizing</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    A generic resizer that lets you type in "small," "medium," or a percentage won't land on exactly 150×200 pixels. This tool locks the output to that exact frame, then compresses within the 15 KB to 30 KB window, so you're not stuck calculating pixel ratios by hand.
   </p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Quick Steps</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+    <li>Upload a recent photo with a light or white background.</li>
+    <li>Crop to the fixed 150×200 pixel frame.</li>
+    <li>Compress to sit within 15 KB and 30 KB.</li>
+    <li>Download and upload directly to the KEAM application portal.</li>
+  </ol>
 </div>`,
-      }
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Keam Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Keam Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Keam Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
+      {
+        question: "What exact pixel size does KEAM require?",
+        answer:
+          "CEE Kerala specifies 150 pixels wide by 200 pixels tall for the KEAM photograph, in JPG format, sized between 15 KB and 30 KB.",
+      },
+      {
+        question: "Do I need to print my name and date on the photo?",
+        answer:
+          "Many KEAM cycles require the candidate's name and the date the photo was taken printed at the bottom of the image. Check the current year's prospectus, since this requirement is not universal across every cycle.",
+      },
+      {
+        question: "Can I take a selfie for my KEAM photo?",
+        answer:
+          "No. CEE Kerala's guidelines typically call for a properly taken passport-style photo rather than a selfie, so use a recent studio or formal photo as your source image.",
+      },
+      {
+        question: "Does the tool upload my photo anywhere?",
+        answer:
+          "No. All cropping and compression happen locally in your browser, and the photo stays on your device throughout.",
+      },
+    ],
   },
   {
     slug: "keam-signature-resizer",
-    metaTitle: "Keam Signature Resizer — Exact Size & KB",
-    metaDescription: "Free online tool for Keam Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Keam Signature Resizer",
+    metaTitle: "KEAM Signature Resizer 2026 — Exact 150x100px & KB",
+    metaDescription: "Resize your KEAM signature to CEE Kerala's exact 150x100 pixel, 10-30KB format. Free, browser-based, completely private.",
+    h1: "KEAM Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Keam Signature Resizer. 100% free, 100% private.",
+    subtitle: "Get a clean, pixel-perfect signature file ready for the KEAM application in moments.",
     sections: [
       {
-        heading: "About Keam Signature Resizer",
+        heading: "A Precise Format, Made Simple",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Official applications for Keam Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
+    KEAM's application, run through CEE Kerala, asks for the signature image at 150 pixels wide by 100 pixels tall, saved in JPG format and sized roughly between 10 KB and 30 KB. Like the photo requirement, this is a fixed pixel dimension rather than a loose size range, which trips up candidates who try to resize by percentage in a phone gallery app.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Before You Scan</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+    <li>Write your signature on plain white paper with black or blue ink.</li>
+    <li>Keep the paper flat and well-lit, avoiding shadows across the ink.</li>
+    <li>Sign at a natural size rather than unusually large or small.</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">What the Tool Does</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Upload your photographed or scanned signature, and the tool crops it tightly to the signature area before resizing to the exact 150×100 pixel frame KEAM expects. From there, it compresses to a file size inside the 10 KB to 30 KB range, giving you a clean download ready for the CEE Kerala portal.
+  </p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Common Rejection Reasons</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Most rejected KEAM signature uploads fail for one of three reasons: the file isn't in JPG format, the pixel dimensions don't match exactly, or the signature is too faint to read after compression. This tool addresses all three by fixing the format, locking the dimensions, and compressing only as much as needed to hit the size target without losing legibility.
+  </p>
+
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Since the whole process runs on your own device, your signature never passes through a remote server, keeping this sensitive piece of your identity fully private from upload to download.
   </p>
 </div>`,
-      }
+      },
     ],
     faq: [
-  {
-    "question": "What is the standard signature size for Keam Signature Resizer?",
-    "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
-  },
-  {
-    "question": "Is it safe to upload my signature?",
-    "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
-  },
-  {
-    "question": "Can I use blue ink for the Keam Signature Resizer signature?",
-    "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Keam Signature Resizer guidelines."
-  }
-]
+      {
+        question: "What pixel size does KEAM require for signatures?",
+        answer:
+          "CEE Kerala specifies 150 pixels wide by 100 pixels tall for the KEAM signature, in JPG format, typically sized between 10 KB and 30 KB.",
+      },
+      {
+        question: "Can I use a mobile photo of my signature instead of a scan?",
+        answer:
+          "Yes, as long as the lighting is even and the image is cropped tightly to the signature before resizing. A scanned image tends to give cleaner results than a phone photo.",
+      },
+      {
+        question: "Is it safe to process my signature through this tool?",
+        answer:
+          "Yes. All resizing and compression run locally in your browser, so your signature is never uploaded to a remote server.",
+      },
+      {
+        question: "What if my compressed signature looks too light or unclear?",
+        answer:
+          "Try re-scanning with darker ink or better lighting rather than compressing an already faint image, since compression reduces detail rather than adding contrast.",
+      },
+    ],
   },
   {
     slug: "kmat-kerala-photo-resizer",
-    metaTitle: "Kmat Kerala Photo Resizer — Resize & Compress",
-    metaDescription: "Free online tool for Kmat Kerala Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Kmat Kerala Photo Resizer",
+    metaTitle: "KMAT Kerala Photo Resizer 2026 — Free & Portal-Ready",
+    metaDescription: "Prepare your KMAT Kerala signature and photo files to CEE Kerala's exact specifications. Free, private, browser-based tool.",
+    h1: "KMAT Kerala Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle: "Quickly and securely process your files for Kmat Kerala Photo Resizer. 100% free, 100% private.",
+    subtitle: "Prepare your KMAT Kerala application images to the exact format CEE Kerala checks for.",
     sections: [
       {
-        heading: "About Kmat Kerala Photo Resizer",
+        heading: "What CEE Kerala Actually Checks",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Preparing your photograph for Kmat Kerala Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
+    The Kerala Management Aptitude Test, conducted by CEE Kerala for MBA admissions, follows an application flow similar to KEAM. Rather than uploading a pre-taken photograph in every case, many candidates capture a live photo directly through the application portal, while the signature is uploaded separately as a scanned image.
   </p>
+
   <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Signature Specification for KMAT Kerala</h3>
     <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Format: JPG / JPEG</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Dimensions: 150 px width × 100 px height</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> File size: roughly 4 KB to 100 KB</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Background: plain white paper, dark ink</li>
     </ul>
   </div>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Where This Tool Fits In</h3>
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Since the photograph is often captured live during registration, this tool is most useful for preparing your scanned signature, and for resizing a backup passport-style photo in case the portal asks for an uploaded image instead of a live capture during a particular application cycle. Upload either file, and the tool crops and compresses it to CEE Kerala's stated dimensions automatically.
+  </p>
+
+  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Getting the Signature Right</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+    <li>Sign on plain white paper with dark ink, and keep the sheet flat.</li>
+    <li>Scan or photograph it in even lighting, without shadows across the signature.</li>
+    <li>Upload it here, crop tightly, and compress to fit within the required KB range.</li>
+    <li>Download the finished JPG and keep it ready for the upload step in your application.</li>
+  </ol>
+
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    As with the other CEE Kerala exams, all processing happens locally in your browser. Nothing you upload here is stored or sent anywhere else, which matters for a signature that will remain tied to your academic record for years.
+  </p>
 </div>`,
-      }
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Kmat Kerala Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Kmat Kerala Photo Resizer notification before uploading."
-  },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Kmat Kerala Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
+      {
+        question: "Do I need to upload a photo for KMAT Kerala, or is it captured live?",
+        answer:
+          "Many KMAT Kerala application cycles capture the photograph live through the portal during registration, while the signature is uploaded separately as a scanned file. Check the current year's application guidelines to confirm which applies to you.",
+      },
+      {
+        question: "What is the signature size requirement for KMAT Kerala?",
+        answer:
+          "CEE Kerala's guidelines specify a JPG image at 150 pixels wide by 100 pixels tall, with a file size typically between 4 KB and 100 KB.",
+      },
+      {
+        question: "Can I use my KEAM signature file for KMAT Kerala?",
+        answer:
+          "The dimensions are similar across CEE Kerala exams, but always re-check the file size range for KMAT Kerala specifically before reusing a signature prepared for another exam.",
+      },
+      {
+        question: "Is this tool free to use for KMAT Kerala preparation?",
+        answer:
+          "Yes. There is no signup, no watermark, and no limit on how many times you can resize your files.",
+      },
+    ],
   },
   {
     slug: "kmat-kerala-signature-resizer",
