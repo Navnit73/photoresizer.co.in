@@ -6551,7 +6551,7 @@ export const programmaticPages: SeoPage[] = [
   }
 ]
   },
-  {
+ {
     slug: "neet-pg-photo-resizer",
     metaTitle: "Neet Pg Photo Resizer — Resize & Compress",
     metaDescription: "Free online tool for Neet Pg Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -6575,24 +6575,77 @@ export const programmaticPages: SeoPage[] = [
     </ul>
   </div>
 </div>`,
-      }
+      },
+      {
+        heading: "NEET PG Online Form 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    The National Board of Examinations in Medical Sciences (NBE) has released a notification announcing admissions for the National Eligibility cum Entrance Test (NEET PG) 2026. The board opened the application form on 01 July 2026 and will accept entries until 21 July 2026. Before candidates upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
+  </p>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Apply Online Start Date: 01 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Apply Online Last Date: 21 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Fee Payment Last Date: 21 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam City Details: 11 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: 30 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: Issued before the exam</li>
+    </ul>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General, OBC, EWS: ₹3,500</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC / ST / PH: ₹2,500</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit</h3>
+    <p class="text-slate-700 dark:text-slate-300">NBE determines the age limit for NEET PG 2026 as per its own rules. Candidates should visit the official NBE website to check the exact age criteria that apply to their category.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Course & Eligibility</h3>
+    <p class="text-slate-700 dark:text-slate-300">NEET PG serves as the National Eligibility cum Entrance Test for admission to MD, MS, and PG Diploma programs. Candidates who hold an MBBS degree from any recognized college or university qualify to appear for this test. NBE advises candidates to check the official notification for further details.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 21 July 2026 deadline through the official NEET website. They should read the official notification thoroughly and confirm their eligibility and educational qualifications before they submit the form, since NBE will not entertain corrections after submission.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
+    <p class="text-slate-700 dark:text-slate-300">NBE selects candidates purely on the basis of their performance in the entrance test.</p>
+  </div>
+</div>`,
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Neet Pg Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Neet Pg Photo Resizer notification before uploading."
+      {
+        "question": "What are the photo dimensions for Neet Pg Photo Resizer?",
+        "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Neet Pg Photo Resizer notification before uploading."
+      },
+      {
+        "question": "Does this tool reduce file size in KB?",
+        "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
+      },
+      {
+        "question": "Can I change the background of my Neet Pg Photo Resizer photo?",
+        "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
+      },
+      {
+        "question": "When does the NEET PG 2026 application open and close?",
+        "answer": "NBE opened the application window on 01 July 2026, and it closes on 21 July 2026. Candidates must also complete their exam fee payment by 21 July 2026."
+      }
+    ]
   },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Neet Pg Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
+ {
     slug: "neet-pg-signature-resizer",
     metaTitle: "Neet Pg Signature Resizer — Exact Size & KB",
     metaDescription: "Free online tool for Neet Pg Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -6611,22 +6664,75 @@ export const programmaticPages: SeoPage[] = [
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
-      }
+      },
+      {
+        heading: "NEET PG Online Form 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    The National Board of Examinations in Medical Sciences (NBE) has released a notification announcing admissions for the National Eligibility cum Entrance Test (NEET PG) 2026. The board opened the application form on 01 July 2026 and will accept entries until 21 July 2026. Before candidates upload their signature, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
+  </p>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Apply Online Start Date: 01 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Apply Online Last Date: 21 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exam Fee Payment Last Date: 21 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exam City Details: 11 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exam Date: 30 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Admit Card: Issued before the exam</li>
+    </ul>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> General, OBC, EWS: ₹3,500</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> SC / ST / PH: ₹2,500</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit</h3>
+    <p class="text-slate-700 dark:text-slate-300">NBE determines the age limit for NEET PG 2026 as per its own rules. Candidates should visit the official NBE website to check the exact age criteria that apply to their category.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Course & Eligibility</h3>
+    <p class="text-slate-700 dark:text-slate-300">NEET PG serves as the National Eligibility cum Entrance Test for admission to MD, MS, and PG Diploma programs. Candidates who hold an MBBS degree from any recognized college or university qualify to appear for this test. NBE advises candidates to check the official notification for further details.</p>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 21 July 2026 deadline through the official NEET website. They should read the official notification thoroughly and confirm their eligibility and educational qualifications before they submit the form, since NBE will not entertain corrections after submission.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
+    <p class="text-slate-700 dark:text-slate-300">NBE selects candidates purely on the basis of their performance in the entrance test.</p>
+  </div>
+</div>`,
+      },
     ],
     faq: [
-  {
-    "question": "What is the standard signature size for Neet Pg Signature Resizer?",
-    "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
-  },
-  {
-    "question": "Is it safe to upload my signature?",
-    "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
-  },
-  {
-    "question": "Can I use blue ink for the Neet Pg Signature Resizer signature?",
-    "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Neet Pg Signature Resizer guidelines."
-  }
-]
+      {
+        "question": "What is the standard signature size for Neet Pg Signature Resizer?",
+        "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
+      },
+      {
+        "question": "Is it safe to upload my signature?",
+        "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
+      },
+      {
+        "question": "Can I use blue ink for the Neet Pg Signature Resizer signature?",
+        "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Neet Pg Signature Resizer guidelines."
+      },
+      {
+        "question": "When does the NEET PG 2026 application open and close?",
+        "answer": "NBE opened the application window on 01 July 2026, and it closes on 21 July 2026. Candidates must also complete their exam fee payment by 21 July 2026."
+      }
+    ]
   },
   {
     slug: "neet-mds-photo-resizer",
@@ -9210,7 +9316,7 @@ export const programmaticPages: SeoPage[] = [
   }
 ]
   },
-  {
+ {
     slug: "mppsc-photo-resizer",
     metaTitle: "Mppsc Photo Resizer — Resize & Compress",
     metaDescription: "Free online tool for Mppsc Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -9229,24 +9335,96 @@ export const programmaticPages: SeoPage[] = [
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
-      }
+      },
+      {
+        heading: "MPPSC Assistant Town Planner Recruitment 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    The Madhya Pradesh Public Service Commission (MPPSC) has released Advertisement No. 02/2026, announcing recruitment for 39 Assistant Town Planner (ATP) posts. The commission will open applications on 01 July 2026 and will accept them until 31 July 2026. Candidates must fall between 21 and 40 years of age as on 01 January 2027. Before applicants upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
+  </p>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Start: 01 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Last Date: 31 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Fee Payment Last Date: 31 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Correction Window: 05 July – 02 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Late Fee (₹3,000): 01 – 07 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Late Fee (₹25,000): 08 – 26 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: 10 September 2026</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: 20 September 2026</li>
+    </ul>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General / Other State: ₹500</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> MP Reserved Category: ₹250</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Portal Charge: ₹40 extra</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Correction Charge: ₹50</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 January 2027)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Minimum age: 21 years</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 40 years</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">MPPSC also grants age relaxation for the Assistant Town Planner position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Vacancy Breakdown (39 Posts)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> UR: 10</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> OBC: 11</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> EWS: 4</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC: 6</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> ST: 8</li>
+    </ul>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates must hold either a 4-year Bachelor's Degree in Planning or a postgraduate degree in Town, Urban, Regional, Housing, Rural, Infrastructure, Transport, or Environment Planning, Landscape Architecture, or Urban Design, from any recognized university in India. Candidates must also have passed the AITP (Associate of the Institute of Town Planners, India) exam to qualify for this recruitment.</p>
+  </div>
+
+  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 31 July 2026 deadline through the official MPPSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form. MPPSC will open a correction window from 05 July to 02 August 2026 for candidates who need to fix errors after submission.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
+    <p class="text-slate-700 dark:text-slate-300">MPPSC selects candidates through four stages: a written examination, a personal interview, document verification, and a medical examination.</p>
+  </div>
+</div>`,
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Mppsc Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Mppsc Photo Resizer notification before uploading."
+      {
+        "question": "What are the photo dimensions for Mppsc Photo Resizer?",
+        "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Mppsc Photo Resizer notification before uploading."
+      },
+      {
+        "question": "Does this tool reduce file size in KB?",
+        "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
+      },
+      {
+        "question": "Can I change the background of my Mppsc Photo Resizer photo?",
+        "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
+      },
+      {
+        "question": "When does the MPPSC Assistant Town Planner 2026 application open and close?",
+        "answer": "MPPSC opens the application window on 01 July 2026 and closes it on 31 July 2026. Candidates must also complete their fee payment by 31 July 2026."
+      }
+    ]
   },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Mppsc Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
+ {
     slug: "mppsc-signature-resizer",
     metaTitle: "Mppsc Signature Resizer — Exact Size & KB",
     metaDescription: "Free online tool for Mppsc Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -9265,22 +9443,94 @@ export const programmaticPages: SeoPage[] = [
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
-      }
+      },
+      {
+        heading: "MPPSC Assistant Town Planner Recruitment 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    The Madhya Pradesh Public Service Commission (MPPSC) has released Advertisement No. 02/2026, announcing recruitment for 39 Assistant Town Planner (ATP) posts. The commission will open applications on 01 July 2026 and will accept them until 31 July 2026. Candidates must fall between 21 and 40 years of age as on 01 January 2027. Before applicants upload their signature, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
+  </p>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Start: 01 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Last Date: 31 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Fee Payment Last Date: 31 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Correction Window: 05 July – 02 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Late Fee (₹3,000): 01 – 07 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Late Fee (₹25,000): 08 – 26 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Admit Card: 10 September 2026</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exam Date: 20 September 2026</li>
+    </ul>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> General / Other State: ₹500</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> MP Reserved Category: ₹250</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Portal Charge: ₹40 extra</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Correction Charge: ₹50</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 January 2027)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Minimum age: 21 years</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maximum age: 40 years</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">MPPSC also grants age relaxation for the Assistant Town Planner position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Vacancy Breakdown (39 Posts)</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> UR: 10</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> OBC: 11</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> EWS: 4</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> SC: 6</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> ST: 8</li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates must hold either a 4-year Bachelor's Degree in Planning or a postgraduate degree in Town, Urban, Regional, Housing, Rural, Infrastructure, Transport, or Environment Planning, Landscape Architecture, or Urban Design, from any recognized university in India. Candidates must also have passed the AITP (Associate of the Institute of Town Planners, India) exam to qualify for this recruitment.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
+    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 31 July 2026 deadline through the official MPPSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form. MPPSC will open a correction window from 05 July to 02 August 2026 for candidates who need to fix errors after submission.</p>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
+    <p class="text-slate-700 dark:text-slate-300">MPPSC selects candidates through four stages: a written examination, a personal interview, document verification, and a medical examination.</p>
+  </div>
+</div>`,
+      },
     ],
     faq: [
-  {
-    "question": "What is the standard signature size for Mppsc Signature Resizer?",
-    "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
-  },
-  {
-    "question": "Is it safe to upload my signature?",
-    "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
-  },
-  {
-    "question": "Can I use blue ink for the Mppsc Signature Resizer signature?",
-    "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Mppsc Signature Resizer guidelines."
-  }
-]
+      {
+        "question": "What is the standard signature size for Mppsc Signature Resizer?",
+        "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
+      },
+      {
+        "question": "Is it safe to upload my signature?",
+        "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
+      },
+      {
+        "question": "Can I use blue ink for the Mppsc Signature Resizer signature?",
+        "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Mppsc Signature Resizer guidelines."
+      },
+      {
+        "question": "When does the MPPSC Assistant Town Planner 2026 application open and close?",
+        "answer": "MPPSC opens the application window on 01 July 2026 and closes it on 31 July 2026. Candidates must also complete their fee payment by 31 July 2026."
+      }
+    ]
   },
   {
     slug: "mpsc-maharashtra-photo-resizer",
@@ -13062,7 +13312,7 @@ export const programmaticPages: SeoPage[] = [
   }
 ]
   },
-  {
+{
     slug: "up-police-photo-resizer",
     metaTitle: "Up Police Photo Resizer — Resize & Compress",
     metaDescription: "Free online tool for Up Police Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -13081,24 +13331,68 @@ export const programmaticPages: SeoPage[] = [
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
-      }
+      },
+      {
+        heading: "UP Police 1,00,000 New Bharti 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Chief Minister Yogi Adityanath has announced that the Uttar Pradesh Police Recruitment and Promotion Board plans to fill nearly 1,00,000 new posts across the UP Police department this year. He made the announcement during a program that distributed appointment letters to 936 selected personnel in the Police Telecommunication wing. Candidates preparing for UP Police and other government job exams should keep an eye on this page and revisit it once the board issues the detailed notification.
+  </p>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Start Date: To be updated soon</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Last Date: To be updated soon</li>
+    </ul>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> General / EWS / OBC: To be updated soon</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> SC / ST: To be updated soon</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates will be able to pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit</h3>
+    <p class="text-slate-700 dark:text-slate-300">UP Police has not yet announced the minimum or maximum age for this recruitment. The board will provide age relaxation for the Constable position under its standard regulations once it releases the official notification.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Background</h3>
+    <p class="text-slate-700 dark:text-slate-300">The Chief Minister highlighted that the state government has recruited over 2.2 lakh police personnel over the past nine years, and it recently completed recruitment for 60,244 Constable posts for both men and women, followed by training at UP's own training centers and postings across the state. The government also completed recruitment for 41,000 Home Guard posts, holding the corresponding exams on 25, 26, and 27 April. Building on this momentum, the board now plans to recruit close to 1,00,000 personnel across civil police, other units, and the Home Guard, though it will release the detailed process, post-wise breakdown, and application dates in a separate notification soon.</p>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Total Posts</h3>
+    <p class="text-slate-700 dark:text-slate-300">1,00,000</p>
+  </div>
+</div>`,
+      },
     ],
     faq: [
-  {
-    "question": "What are the photo dimensions for Up Police Photo Resizer?",
-    "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Up Police Photo Resizer notification before uploading."
+      {
+        "question": "What are the photo dimensions for Up Police Photo Resizer?",
+        "answer": "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Up Police Photo Resizer notification before uploading."
+      },
+      {
+        "question": "Does this tool reduce file size in KB?",
+        "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
+      },
+      {
+        "question": "Can I change the background of my Up Police Photo Resizer photo?",
+        "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
+      },
+      {
+        "question": "When will UP Police release the notification for the 1,00,000 new bharti 2026?",
+        "answer": "UP Police has not yet released the detailed notification. The Chief Minister has announced the plan, and the board will publish exact dates, fees, and post-wise vacancy details soon."
+      }
+    ]
   },
-  {
-    "question": "Does this tool reduce file size in KB?",
-    "answer": "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly."
-  },
-  {
-    "question": "Can I change the background of my Up Police Photo Resizer photo?",
-    "answer": "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white."
-  }
-]
-  },
-  {
+ {
     slug: "up-police-signature-resizer",
     metaTitle: "Up Police Signature Resizer — Exact Size & KB",
     metaDescription: "Free online tool for Up Police Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
@@ -13122,22 +13416,66 @@ export const programmaticPages: SeoPage[] = [
     </ul>
   </div>
 </div>`,
-      }
+      },
+      {
+        heading: "UP Police 1,00,000 New Bharti 2026",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+    Chief Minister Yogi Adityanath has announced that the Uttar Pradesh Police Recruitment and Promotion Board plans to fill nearly 1,00,000 new posts across the UP Police department this year. He made the announcement during a program that distributed appointment letters to 936 selected personnel in the Police Telecommunication wing. Candidates preparing their application documents, including their signature, should keep an eye on this page and revisit it once the board issues the detailed notification.
+  </p>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Start Date: To be updated soon</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Last Date: To be updated soon</li>
+    </ul>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> General / EWS / OBC: To be updated soon</li>
+      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> SC / ST: To be updated soon</li>
+    </ul>
+    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates will be able to pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit</h3>
+    <p class="text-slate-700 dark:text-slate-300">UP Police has not yet announced the minimum or maximum age for this recruitment. The board will provide age relaxation for the Constable position under its standard regulations once it releases the official notification.</p>
+  </div>
+
+  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Background</h3>
+    <p class="text-slate-700 dark:text-slate-300">The Chief Minister highlighted that the state government has recruited over 2.2 lakh police personnel over the past nine years, and it recently completed recruitment for 60,244 Constable posts for both men and women, followed by training at UP's own training centers and postings across the state. The government also completed recruitment for 41,000 Home Guard posts, holding the corresponding exams on 25, 26, and 27 April. Building on this momentum, the board now plans to recruit close to 1,00,000 personnel across civil police, other units, and the Home Guard, though it will release the detailed process, post-wise breakdown, and application dates in a separate notification soon.</p>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
+    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Total Posts</h3>
+    <p class="text-slate-700 dark:text-slate-300">1,00,000</p>
+  </div>
+</div>`,
+      },
     ],
     faq: [
-  {
-    "question": "What is the standard signature size for Up Police Signature Resizer?",
-    "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
-  },
-  {
-    "question": "Is it safe to upload my signature?",
-    "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
-  },
-  {
-    "question": "Can I use blue ink for the Up Police Signature Resizer signature?",
-    "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Up Police Signature Resizer guidelines."
-  }
-]
+      {
+        "question": "What is the standard signature size for Up Police Signature Resizer?",
+        "answer": "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification."
+      },
+      {
+        "question": "Is it safe to upload my signature?",
+        "answer": "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server."
+      },
+      {
+        "question": "Can I use blue ink for the Up Police Signature Resizer signature?",
+        "answer": "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Up Police Signature Resizer guidelines."
+      },
+      {
+        "question": "When will UP Police release the notification for the 1,00,000 new bharti 2026?",
+        "answer": "UP Police has not yet released the detailed notification. The Chief Minister has announced the plan, and the board will publish exact dates, fees, and post-wise vacancy details soon."
+      }
+    ]
   },
   {
     slug: "uttarakhand-police-photo-resizer",
