@@ -352,7 +352,18 @@ export default function OriginalWorkspace() {
             </div>
 
             <button
-              onClick={() => setIsCropping(true)}
+              onClick={() => {
+                setIsCropping(true);
+                if (!cropState) {
+                  setCropState({
+                    unit: '%',
+                    x: 10,
+                    y: 10,
+                    width: 80,
+                    height: 80,
+                  });
+                }
+              }}
               className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-accent-muted text-accent-main hover:bg-accent-main/20 rounded-lg transition-colors"
             >
               <CropIcon size={12} />
