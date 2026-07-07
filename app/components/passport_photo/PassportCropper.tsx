@@ -12,10 +12,28 @@ interface PassportCropperProps {
   onCancel: () => void;
 }
 
-const ASPECT_RATIO = 35 / 45;
-const TARGET_WIDTH = 826;
-const TARGET_HEIGHT = 1062;
 const MAX_FILE_SIZE_MB = 0.5; // 500 KB
+
+export const PASSPORT_PRESETS = {
+  US: {
+    id: 'US',
+    label: 'US Passport / Visa',
+    width: 600,
+    height: 600,
+    aspectRatio: 1,
+    description: '2 x 2 inch (51x51 mm) • 600x600 px • Max 500KB'
+  },
+  EU: {
+    id: 'EU',
+    label: 'EU / Schengen',
+    width: 413,
+    height: 531,
+    aspectRatio: 35 / 45,
+    description: '3.5 x 4.5 cm (35x45 mm) • 413x531 px • Max 500KB'
+  }
+} as const;
+
+export type Region = keyof typeof PASSPORT_PRESETS;
 
 const BG_COLORS = [
   { label: 'White', value: '#ffffff' },
@@ -25,6 +43,9 @@ const BG_COLORS = [
 
 export default function PassportCropper({ imageSrc, onComplete, onCancel }: PassportCropperProps) {
   const { t } = useTranslation();
+  const [region, setRegion] = useState<Region>('US');
+  const activePreset = PASSPORT_PRESETS[region];
+
   // Cropper State
   const [crop, setCrop] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
@@ -83,6 +104,8 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
   async function getCroppedImg(
     src: string,
     pixelCrop: { x: number, y: number, width: number, height: number },
+    targetWidth: number,
+    targetHeight: number,
   ): Promise<File | null> {
     const image = new Image();
     image.src = src;
@@ -95,14 +118,14 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
       throw new Error('No 2d context');
     }
 
-    canvas.width = TARGET_WIDTH;
-    canvas.height = TARGET_HEIGHT;
+    canvas.width = targetWidth;
+    canvas.height = targetHeight;
     ctx.imageSmoothingQuality = 'high';
 
     // Fill background color if applying BG removal
     if (useBgRemoved && bgColor !== 'transparent') {
       ctx.fillStyle = bgColor;
-      ctx.fillRect(0, 0, TARGET_WIDTH, TARGET_HEIGHT);
+      ctx.fillRect(0, 0, targetWidth, targetHeight);
     }
 
     ctx.drawImage(
@@ -113,8 +136,8 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
       pixelCrop.height,
       0,
       0,
-      TARGET_WIDTH,
-      TARGET_HEIGHT,
+      targetWidth,
+      targetHeight,
     );
 
     return new Promise((resolve, reject) => {
@@ -149,7 +172,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
     setIsProcessing(true);
     try {
       const activeSrc = (useBgRemoved && bgRemovedSrc) ? bgRemovedSrc : imageSrc;
-      const file = await getCroppedImg(activeSrc, completedCrop);
+      const file = await getCroppedImg(activeSrc, completedCrop, activePreset.width, activePreset.height);
       if (file) {
         onComplete(file);
       }
@@ -204,14 +227,36 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
         }
       `}} />
 
-      {/* Header */}
-      <div className="flex flex-col gap-1 items-start text-left border-b border-slate-200 dark:border-slate-800 pb-4">
-        <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
-          Format Passport Photo
-        </h2>
-        <p className="text-slate-500 dark:text-slate-400 text-sm">
-          3.5 x 4.5 cm • 826x1062 pixels • Max 500KB
-        </p>
+      {/* Header & Region Selection */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div className="flex flex-col gap-1 items-start text-left">
+          <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
+            Format Passport Photo
+          </h2>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">
+            {activePreset.description}
+          </p>
+        </div>
+        
+        <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-sm border border-slate-200 dark:border-slate-700">
+          {(Object.keys(PASSPORT_PRESETS) as Region[]).map((r) => (
+            <button
+              key={r}
+              onClick={() => {
+                setRegion(r);
+                setZoom(1);
+                setCrop({ x: 0, y: 0 });
+              }}
+              className={`px-4 py-1.5 text-sm font-semibold rounded-sm transition-colors ${
+                region === r 
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 shadow-sm border border-slate-200 dark:border-slate-700' 
+                  : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 border border-transparent'
+              }`}
+            >
+              {PASSPORT_PRESETS[r].label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
@@ -240,7 +285,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
               image={activeImageSrc}
               crop={crop}
               zoom={zoom}
-              aspect={ASPECT_RATIO}
+              aspect={activePreset.aspectRatio}
               onCropChange={setCrop}
               onCropComplete={(_, croppedAreaPixels) => setCompletedCrop(croppedAreaPixels)}
               onZoomChange={setZoom}
