@@ -83,29 +83,13 @@ export default function HeroUploader() {
         >
           <section className="hero-gradient-bg relative overflow-hidden rounded-none md:rounded-3xl md:mx-4 md:mt-4">
             {/* Dot grid overlay */}
-            <div className="hero-dots absolute inset-0 pointer-events-none" />
-
-            {/* Floating decorative shapes */}
-            <div className="absolute top-20 left-[10%] w-16 h-16 rounded-2xl bg-blue-500/10 dark:bg-blue-400/5 hero-float-1 blur-sm pointer-events-none" />
-            <div className="absolute top-40 right-[15%] w-12 h-12 rounded-full bg-violet-500/10 dark:bg-violet-400/5 hero-float-2 blur-sm pointer-events-none" />
-            <div className="absolute bottom-32 left-[20%] w-10 h-10 rounded-xl bg-emerald-500/8 dark:bg-emerald-400/5 hero-float-3 blur-sm pointer-events-none" />
-            <div className="absolute top-12 right-[35%] w-8 h-8 rounded-full bg-pink-500/8 dark:bg-pink-400/5 hero-float-2 pointer-events-none" />
-            <div className="absolute bottom-20 right-[8%] w-14 h-14 rounded-2xl bg-amber-500/8 dark:bg-amber-400/5 hero-float-1 blur-sm pointer-events-none" />
+            <div className="hero-dots absolute inset-0 pointer-events-none opacity-20" />
 
             <div className="relative z-10 px-6 sm:px-8 lg:px-16 py-14 md:py-20 lg:py-24">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 {/* ── LEFT COLUMN: Marketing Copy ── */}
                 <div className="max-w-xl order-2 lg:order-1">
-                  {/* Badge */}
-                  <div className="hero-fade-in hero-fade-in-delay-1 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/60 dark:bg-white/5 border border-white/40 dark:border-white/10 backdrop-blur-sm mb-6 shadow-sm">
-                    <span className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                    </span>
-                    <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
-                      Trusted by 1M+ users worldwide
-                    </span>
-                  </div>
+                  {/* Badge Removed */}
 
                   {/* Headline */}
                   <h1 className="hero-fade-in hero-fade-in-delay-1 text-4xl sm:text-5xl lg:text-[3.5rem] font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white mb-5">
@@ -126,49 +110,9 @@ export default function HeroUploader() {
                     device.
                   </p>
 
-                  {/* Trust Badges */}
-                  <div className="hero-fade-in hero-fade-in-delay-3 grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-                    {TRUST_BADGES.map(({ icon: Icon, label, desc }) => (
-                      <div
-                        key={label}
-                        className="flex items-start gap-3 p-3.5 rounded-xl bg-white/50 dark:bg-white/[0.03] border border-white/60 dark:border-white/[0.06] backdrop-blur-sm hover:bg-white/70 dark:hover:bg-white/[0.06] transition-all duration-300 group"
-                      >
-                        <div className="w-9 h-9 rounded-lg bg-accent-muted flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                          <Icon
-                            size={16}
-                            className="text-accent-main"
-                          />
-                        </div>
-                        <div>
-                          <div className="text-sm font-bold text-slate-800 dark:text-white leading-tight">
-                            {label}
-                          </div>
-                          <div className="text-[11px] text-slate-500 dark:text-slate-500 leading-tight mt-0.5">
-                            {desc}
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  {/* Trust Badges Removed */}
 
-                  {/* Tool features row */}
-                  <div className="hero-fade-in hero-fade-in-delay-4 flex flex-wrap items-center gap-2">
-                    {TOOL_FEATURES.map(({ icon: Icon, label }) => (
-                      <span
-                        key={label}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100/80 dark:bg-slate-800/50 text-xs font-medium text-slate-600 dark:text-slate-400 border border-slate-200/50 dark:border-slate-700/50"
-                      >
-                        <Icon size={12} />
-                        {label}
-                      </span>
-                    ))}
-                    <Link
-                      href="/tools"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-                    >
-                      40+ more tools <ArrowRight size={12} />
-                    </Link>
-                  </div>
+                  {/* Tool features row Removed */}
                 </div>
 
                 {/* ── RIGHT COLUMN: Upload Zone ── */}
@@ -206,8 +150,7 @@ export default function HeroUploader() {
                     >
                       <input {...getInputProps()} aria-label="File Upload Input" />
 
-                      {/* Shimmer strip */}
-                      <div className="hero-shimmer absolute inset-0 rounded-2xl pointer-events-none" />
+                      {/* Shimmer strip removed */}
 
                       <div className="relative flex flex-col items-center text-center">
                         {/* Upload Icon */}
