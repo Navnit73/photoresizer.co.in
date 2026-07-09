@@ -197,7 +197,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
           left: 5%;
           right: 5%;
           height: 1px;
-          background-color: #10b981; /* emerald-500 */
+          background-color: var(--accent-main); /* emerald-500 */
           pointer-events: none;
           z-index: 50;
         }
@@ -208,7 +208,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
           left: 5%;
           right: 5%;
           height: 1px;
-          background-color: #10b981; /* emerald-500 */
+          background-color: var(--accent-main); /* emerald-500 */
           pointer-events: none;
           z-index: 50;
         }
@@ -274,7 +274,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
               <div 
                 className="absolute inset-0 z-0 opacity-10 dark:opacity-20 pointer-events-none"
                 style={{
-                  backgroundImage: 'linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(-45deg, #000 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #000 75%), linear-gradient(-45deg, transparent 75%, #000 75%)',
+                  backgroundImage: 'linear-gradient(45deg, var(--text-main) 25%, transparent 25%), linear-gradient(-45deg, var(--text-main) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--text-main) 75%), linear-gradient(-45deg, transparent 75%, var(--text-main) 75%)',
                   backgroundSize: '20px 20px',
                   backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px'
                 }}

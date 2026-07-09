@@ -43,7 +43,7 @@ export default function EditorHeader() {
 
             <button
               onClick={reset}
-              className="flex items-center gap-1.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-blue-500/10 transition-all px-3 py-2 rounded-xl border border-transparent hover:border-blue-200 dark:hover:border-blue-800"
+              className="flex items-center gap-1.5 text-xs font-semibold text-text-muted hover:text-accent-main hover:bg-accent-muted transition-all px-3 py-2 rounded-xl border border-transparent hover:border-border-subtle"
             >
               <RefreshCcw size={13} />
               <span className="hidden sm:inline">Reset</span>

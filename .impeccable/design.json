@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-09T05:15:00Z",
+  "title": "Design System: PhotoResizer.co.in",
+  "extensions": {
+    "colorMeta": {
+      "accent-main": { "role": "primary", "displayName": "Trust Blue", "canonical": "#2563eb", "tonalRamp": ["#eff6ff", "#dbeafe", "#bfdbfe", "#93c5fd", "#60a5fa", "#3b82f6", "#2563eb", "#1d4ed8"] },
+      "bg-root": { "role": "neutral", "displayName": "Background Root", "canonical": "#f8fafc", "tonalRamp": ["#ffffff", "#f8fafc", "#f1f5f9", "#e2e8f0", "#cbd5e1", "#94a3b8", "#64748b", "#475569"] }
+    },
+    "shadows": [
+      { "name": "subtle-lift", "value": "0 4px 12px rgba(0,0,0,0.05)", "purpose": "Applied to cards and preview panels." }
+    ],
+    "motion": [
+      { "name": "transition-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Standard transition for color and transform." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Used for the primary action (e.g., Upload, Download, Next).",
+      "html": "<button class=\"ds-btn-primary\">Proceed</button>",
+      "css": ".ds-btn-primary { background: #2563eb; color: #ffffff; padding: 12px 24px; border-radius: 0.75rem; font-family: var(--font-geist-sans), sans-serif; font-weight: 600; border: none; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary:hover { background-color: #1d4ed8; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Used for alternative or secondary actions.",
+      "html": "<button class=\"ds-btn-secondary\">Cancel</button>",
+      "css": ".ds-btn-secondary { background: rgba(37, 99, 235, 0.1); color: #2563eb; padding: 8px 16px; border-radius: 0.75rem; font-family: var(--font-geist-sans), sans-serif; font-weight: 600; border: none; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-secondary:hover { background-color: rgba(37, 99, 235, 0.2); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Invisible Editor",
+    "overview": "The design functions as a clean digital workspace that operates quietly in the background. It is built for speed and effortless completion of image editing tasks, treating utility and reliability as paramount. The interface stays out of the way so the user can focus entirely on the image and the final result.\n\nThis system rejects heavy drop shadows, excessive glassmorphism, or futuristic \"AI\" styling. It is a trusted, professional document-handling tool, not a playful or overly decorated app.",
+    "keyCharacteristics": [
+      "Fast: Users finish their task quickly without friction.",
+      "Clear: Anyone can understand the interface instantly.",
+      "Trustworthy: Professional styling suited for official document processing."
+    ],
+    "rules": [
+      { "name": "The Utility Palette Rule", "body": "Colors must never distract from the image being edited. Trust Blue highlights the next action; everything else should remain strictly neutral.", "section": "colors" },
+      { "name": "The Instant Comprehension Rule", "body": "Keep typography sizes generous for mobile legibility, maintaining a clear contrast between headings and instructional copy.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Use elevation sparingly. Keep the workspace flat, applying depth only to actionable areas like upload zones, pricing cards, and result states.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do maintain extreme simplicity so users understand what to do in 5 seconds.",
+      "Do make primary action buttons large, touch-friendly, and clearly visible.",
+      "Do use simple language aimed at non-technical users.",
+      "Do ensure strong color contrast (WCAG 2.1 AA) for all text against backgrounds."
+    ],
+    "donts": [
+      "Don't use overly complex professional editor interfaces with too many panels, sliders, and controls.",
+      "Don't use dark/heavy AI-looking designs or neon accents.",
+      "Don't clutter the UI with many competing buttons.",
+      "Don't use fake glossy gradients everywhere or heavy drop shadows.",
+      "Don't make the interface look like an old, cheap online converter website."
+    ]
+  }
+}

@@ -33,7 +33,7 @@ const FEATURES = [
     desc: "Passen Sie Breite, Höhe und Seitenverhältnis Ihrer Bilder präzise an – ideal für Webseiten, Blogs und soziale Netzwerke.",
     tag: "Beliebt",
     tagColor:
-      "bg-lime-100 dark:bg-lime-900/40 text-lime-700 dark:text-lime-400",
+      "bg-accent-muted dark:bg-accent-muted text-accent-hover dark:text-accent-main",
   },
   {
     icon: (
@@ -348,8 +348,8 @@ export default function GermanHomePage() {
       <div className="bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 pt-10 pb-6">
           <div className="flex items-center gap-2 mb-5">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-lime-50 dark:bg-lime-900/30 border border-lime-200 dark:border-lime-800 rounded-full text-xs font-semibold text-lime-700 dark:text-lime-400">
-              <span className="w-1.5 h-1.5 rounded-full bg-lime-500 animate-pulse" />
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-accent-muted border border-border-subtle rounded-full text-xs font-semibold text-accent-main">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-main animate-pulse" />
               100% kostenlos · Kein Upload · Keine Registrierung
             </span>
           </div>
@@ -358,7 +358,7 @@ export default function GermanHomePage() {
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
                 Professionelle{" "}
-                <span className="text-lime-600 dark:text-lime-500">
+                <span className="text-accent-main dark:text-accent-muted0">
                   Bildbearbeitung
                 </span>
                 <br />
@@ -395,7 +395,7 @@ export default function GermanHomePage() {
                   onClick={() => setActiveTab("editor")}
                   className={`flex-1 lg:w-52 py-3 px-5 text-sm font-bold rounded-xl transition-all flex items-center justify-center gap-2 ${
                     activeTab === "editor"
-                      ? "bg-lime-600 text-white shadow-lg shadow-lime-500/25"
+                      ? "bg-accent-main text-white shadow-lg shadow-accent-muted0/25"
                       : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700"
                   }`}
                 >
@@ -494,7 +494,7 @@ export default function GermanHomePage() {
         {/* ── Features Grid ── */}
         <section>
           <div className="text-center mb-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-lime-600 dark:text-lime-500 mb-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-accent-main dark:text-accent-muted0 mb-2">
               Alle Werkzeuge
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
@@ -509,10 +509,10 @@ export default function GermanHomePage() {
             {FEATURES.map((f) => (
               <div
                 key={f.title}
-                className="group relative bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 hover:border-lime-400 dark:hover:border-lime-600 hover:shadow-lg hover:shadow-lime-500/5 transition-all duration-300"
+                className="group relative bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 hover:border-accent-main dark:hover:border-accent-main hover:shadow-lg hover:shadow-accent-muted0/5 transition-all duration-300"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <div className="p-2.5 bg-slate-100 dark:bg-slate-700 rounded-xl text-slate-700 dark:text-slate-300 group-hover:bg-lime-50 dark:group-hover:bg-lime-900/30 group-hover:text-lime-700 dark:group-hover:text-lime-400 transition-colors">
+                  <div className="p-2.5 bg-slate-100 dark:bg-slate-700 rounded-xl text-text-main group-hover:bg-accent-muted group-hover:text-accent-main transition-colors">
                     {f.icon}
                   </div>
                   <span
@@ -535,7 +535,7 @@ export default function GermanHomePage() {
         {/* ── How it works ── */}
         <section>
           <div className="text-center mb-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-lime-600 dark:text-lime-500 mb-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-accent-main dark:text-accent-muted0 mb-2">
               So funktioniert's
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
@@ -553,7 +553,7 @@ export default function GermanHomePage() {
                 key={s.num}
                 className="relative bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 text-center"
               >
-                <div className="w-12 h-12 rounded-2xl bg-lime-600 text-white text-lg font-black flex items-center justify-center mx-auto mb-4 relative z-10">
+                <div className="w-12 h-12 rounded-2xl bg-accent-main text-white text-lg font-black flex items-center justify-center mx-auto mb-4 relative z-10">
                   {s.num}
                 </div>
                 <h3 className="font-bold text-slate-900 dark:text-white mb-2">
@@ -570,7 +570,7 @@ export default function GermanHomePage() {
         {/* ── Use Cases ── */}
         <section>
           <div className="text-center mb-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-lime-600 dark:text-lime-500 mb-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-accent-main dark:text-accent-muted0 mb-2">
               Anwendungsfälle
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
@@ -604,7 +604,7 @@ export default function GermanHomePage() {
         {/* ── Vergleichstabelle ── */}
         <section>
           <div className="text-center mb-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-lime-600 dark:text-lime-500 mb-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-accent-main dark:text-accent-muted0 mb-2">
               Vergleich
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
@@ -624,7 +624,7 @@ export default function GermanHomePage() {
                     Funktion
                   </th>
                   <th className="p-4 font-bold text-slate-900 dark:text-white text-center w-40">
-                    <span className="inline-block bg-lime-600 text-white px-3 py-1 rounded-lg text-xs">
+                    <span className="inline-block bg-accent-main text-white px-3 py-1 rounded-lg text-xs">
                       photoresizer
                     </span>
                   </th>
@@ -644,7 +644,7 @@ export default function GermanHomePage() {
                     </td>
                     <td className="p-4 text-center">
                       {row.ours ? (
-                        <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-lime-100 dark:bg-lime-900/40 text-lime-700 dark:text-lime-400">
+                        <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-accent-muted dark:bg-accent-muted text-accent-hover dark:text-accent-main">
                           <svg
                             className="w-4 h-4"
                             fill="none"
@@ -679,7 +679,7 @@ export default function GermanHomePage() {
                     </td>
                     <td className="p-4 text-center">
                       {row.desktop === true ? (
-                        <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-lime-100 dark:bg-lime-900/40 text-lime-700 dark:text-lime-400">
+                        <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-accent-muted dark:bg-accent-muted text-accent-hover dark:text-accent-main">
                           <svg
                             className="w-4 h-4"
                             fill="none"
@@ -713,7 +713,7 @@ export default function GermanHomePage() {
             className="absolute inset-0 opacity-5"
             style={{
               backgroundImage:
-                "radial-gradient(circle at 20% 50%, #84cc16 0%, transparent 50%), radial-gradient(circle at 80% 50%, #a855f7 0%, transparent 50%)",
+                "radial-gradient(circle at 20% 50%, var(--accent-muted) 0%, transparent 50%), radial-gradient(circle at 80% 50%, var(--accent-muted) 0%, transparent 50%)",
             }}
           />
           <div className="relative max-w-3xl">
@@ -759,7 +759,7 @@ export default function GermanHomePage() {
         {/* ── FAQ ── */}
         <section>
           <div className="text-center mb-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-lime-600 dark:text-lime-500 mb-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-accent-main dark:text-accent-muted0 mb-2">
               Häufige Fragen
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
@@ -855,7 +855,7 @@ export default function GermanHomePage() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 setActiveTab("editor");
               }}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-lime-600 rounded-2xl shadow-lg shadow-lime-500/30 hover:bg-lime-700 hover:-translate-y-0.5 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-accent-main rounded-2xl shadow-lg shadow-accent-muted0/30 hover:bg-accent-hover hover:-translate-y-0.5 transition-all duration-200"
             >
               <svg
                 className="w-5 h-5"
@@ -904,7 +904,7 @@ export default function GermanHomePage() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors"
+                className="text-sm px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-accent-main dark:hover:text-accent-main rounded-lg transition-colors"
               >
                 {label}
               </Link>
@@ -922,7 +922,7 @@ export default function GermanHomePage() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors"
+                className="text-sm px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-accent-main dark:hover:text-accent-main rounded-lg transition-colors"
               >
                 {label}
               </Link>

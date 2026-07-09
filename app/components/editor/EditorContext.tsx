@@ -239,7 +239,7 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
       opacity: 100,
       rotation: 0,
       align: 'center',
-      fontFamily: 'Arial',
+      fontFamily: 'var(--font-geist-sans), sans-serif',
     };
     setState((prev) => ({
       ...prev,

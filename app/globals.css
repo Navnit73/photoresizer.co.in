@@ -81,8 +81,8 @@ button:not(:disabled) {
 }
 
 @keyframes upload-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(79, 70, 229, 0.08), 0 0 60px rgba(79, 70, 229, 0.04); }
-  50% { box-shadow: 0 0 30px rgba(79, 70, 229, 0.15), 0 0 80px rgba(79, 70, 229, 0.08); }
+  0%, 100% { box-shadow: 0 0 20px var(--accent-muted), 0 0 60px var(--accent-muted); }
+  50% { box-shadow: 0 0 30px var(--accent-muted), 0 0 80px var(--accent-muted); }
 }
 
 .dark .hero-upload-zone {
@@ -90,8 +90,8 @@ button:not(:disabled) {
 }
 
 @keyframes upload-glow-dark {
-  0%, 100% { box-shadow: 0 0 20px rgba(129, 140, 248, 0.06), 0 0 60px rgba(129, 140, 248, 0.03); }
-  50% { box-shadow: 0 0 30px rgba(129, 140, 248, 0.12), 0 0 80px rgba(129, 140, 248, 0.06); }
+  0%, 100% { box-shadow: 0 0 20px var(--accent-muted), 0 0 60px var(--accent-muted); }
+  50% { box-shadow: 0 0 30px var(--accent-muted), 0 0 80px var(--accent-muted); }
 }
 
 @keyframes shimmer {
@@ -167,7 +167,7 @@ button:not(:disabled) {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(79, 70, 229, 0.06) 50%,
+    var(--accent-muted) 50%,
     transparent 100%
   );
   background-size: 200% 100%;
@@ -178,7 +178,7 @@ button:not(:disabled) {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(129, 140, 248, 0.05) 50%,
+    var(--accent-muted) 50%,
     transparent 100%
   );
   background-size: 200% 100%;
@@ -187,11 +187,11 @@ button:not(:disabled) {
 
 /* Grid dots overlay for hero */
 .hero-dots {
-  background-image: radial-gradient(circle, rgba(79, 70, 229, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--accent-muted) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
 .dark .hero-dots {
-  background-image: radial-gradient(circle, rgba(129, 140, 248, 0.06) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--accent-muted) 1px, transparent 1px);
   background-size: 24px 24px;
 }

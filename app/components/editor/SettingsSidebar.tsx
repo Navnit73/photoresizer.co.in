@@ -352,7 +352,7 @@ export default function SettingsSidebar() {
                     }`}
                     style={{
                       backgroundImage: color === 'transparent'
-                        ? 'linear-gradient(45deg, #d4d4d8 25%, transparent 25%), linear-gradient(-45deg, #d4d4d8 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #d4d4d8 75%), linear-gradient(-45deg, transparent 75%, #d4d4d8 75%)'
+                        ? 'linear-gradient(45deg, var(--border-subtle) 25%, transparent 25%), linear-gradient(-45deg, var(--border-subtle) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--border-subtle) 75%), linear-gradient(-45deg, transparent 75%, var(--border-subtle) 75%)'
                         : 'none',
                       backgroundSize: color === 'transparent' ? '8px 8px' : 'auto',
                       backgroundPosition: color === 'transparent' ? '0 0, 0 4px, 4px -4px, -4px 0' : 'auto',

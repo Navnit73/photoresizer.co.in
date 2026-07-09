@@ -773,7 +773,7 @@ export default function CollageMakerTool() {
                         type="button"
                         data-html2canvas-ignore="true"
                         onClick={(e) => { e.stopPropagation(); openSlotUpload(i); }}
-                        className="w-full h-full flex flex-col items-center justify-center text-slate-400 hover:text-blue-500 active:bg-accent-muted/50 hover:bg-accent-muted/50 dark:hover:bg-blue-900/10 transition-colors"
+                        className="w-full h-full flex flex-col items-center justify-center text-text-muted hover:text-accent-main active:bg-accent-muted/50 hover:bg-accent-muted/50 dark:hover:bg-accent-muted/50 transition-colors"
                       >
                         <svg className="w-8 h-8 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />

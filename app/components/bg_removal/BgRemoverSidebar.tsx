@@ -87,14 +87,14 @@ export default function BgRemoverSidebar() {
             {/* Custom color row */}
             <label className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-150 border cursor-pointer ${
               isCustomColor
-                ? 'bg-lime-100 dark:bg-lime-900/40 border-transparent'
+                ? 'bg-accent-muted border-transparent'
                 : 'border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 bg-slate-50 dark:bg-slate-900'
             }`}>
               <div className="relative w-5 h-5 flex-shrink-0">
-                <div className="w-5 h-5 rounded-md border border-black/10" style={{ backgroundColor: isCustomColor ? backgroundColor : '#84cc16' }} />
+                <div className="w-5 h-5 rounded-md border border-black/10" style={{ backgroundColor: isCustomColor ? backgroundColor : '#2563eb' }} />
                 <input
                   type="color"
-                  value={isCustomColor ? backgroundColor : '#84cc16'}
+                  value={isCustomColor ? backgroundColor : '#2563eb'}
                   onChange={e => setBackgroundColor(e.target.value)}
                   className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                 />
@@ -148,7 +148,7 @@ export default function BgRemoverSidebar() {
           {/* Reset */}
           <button
             onClick={clearAll}
-            className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-semibold text-sm hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-500 hover:border-red-200 dark:hover:border-red-800 transition-all duration-150 active:scale-[0.98]"
+            className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-text-muted font-semibold text-sm hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-red-500 hover:border-red-200 dark:hover:border-red-800 transition-all duration-150 active:scale-[0.98]"
           >
             <RotateCcw size={14} />
             {t.startOver}

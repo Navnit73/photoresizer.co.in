@@ -49,7 +49,7 @@ export default function BgRemoverHeader() {
           {totalJobs > 0 && !isProcessingQueue && (
             <button
               onClick={clearAll}
-              className="flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-red-500 transition-colors px-2.5 py-1.5 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20"
+              className="flex items-center gap-1.5 text-xs font-semibold text-text-muted hover:text-red-500 transition-colors px-2.5 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
             >
               <Trash2 size={13} />
               <span className="hidden sm:inline">Clear</span>

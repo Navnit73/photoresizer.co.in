@@ -572,7 +572,6 @@ export default function OriginalWorkspace() {
                     style={{
                       maxHeight: `${55 * zoom}vh`,
                       maxWidth: "100%",
-                      transition: "max-height 0.2s ease-out",
                     }}
                     className="w-auto object-contain"
                   />
@@ -586,7 +585,6 @@ export default function OriginalWorkspace() {
                     style={{
                       maxHeight: `${55 * zoom}vh`,
                       maxWidth: "100%",
-                      transition: "max-height 0.2s ease-out",
                     }}
                     className="w-auto object-contain shadow-2xl shadow-black/10 rounded-sm ring-1 ring-border-subtle"
                     draggable={false}

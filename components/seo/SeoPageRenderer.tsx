@@ -162,8 +162,8 @@ export function SeoPageRenderer({ page, lang }: Props) {
                           key={label}
                           className="flex items-start gap-3 p-3.5 rounded-xl bg-white/50 dark:bg-white/[0.03] border border-white/60 dark:border-white/[0.06] backdrop-blur-sm hover:bg-white/70 dark:hover:bg-white/[0.06] transition-all duration-300 group"
                         >
-                          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500/10 to-sky-500/10 dark:from-indigo-400/10 dark:to-violet-400/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                            <Icon size={16} className="text-blue-600 dark:text-blue-400" />
+                          <div className="w-9 h-9 rounded-lg bg-accent-muted flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <Icon size={16} className="text-accent-main" />
                           </div>
                           <div>
                             <div className="text-sm font-bold text-slate-800 dark:text-white leading-tight">{label}</div>

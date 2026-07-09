@@ -31,9 +31,9 @@ export default function GermanToolsPage() {
             <Link 
               key={page.slug} 
               href={`/de/${page.slug}`}
-              className="group flex flex-col p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 hover:border-lime-300 dark:hover:border-lime-700 transition-all duration-300"
+              className="group flex flex-col p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 hover:border-lime-300 dark:hover:border-accent-hover transition-all duration-300"
             >
-              <div className="w-12 h-12 bg-lime-50 dark:bg-lime-900/30 rounded-xl flex items-center justify-center text-lime-600 dark:text-lime-400 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 bg-accent-muted dark:bg-accent-muted rounded-xl flex items-center justify-center text-accent-main dark:text-accent-main mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Icon size={24} />
               </div>
               <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-tight">
@@ -42,7 +42,7 @@ export default function GermanToolsPage() {
               <p className="text-sm text-slate-600 dark:text-slate-400 flex-1 line-clamp-3">
                 {page.metaDescription}
               </p>
-              <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-lime-600 dark:text-lime-400 group-hover:gap-3 transition-all">
+              <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-accent-main dark:text-accent-main group-hover:gap-3 transition-all">
                 Werkzeug Nutzen <ArrowRight size={16} />
               </div>
             </Link>

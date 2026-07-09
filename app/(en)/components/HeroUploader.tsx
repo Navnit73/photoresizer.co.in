@@ -110,7 +110,7 @@ export default function HeroUploader() {
                   {/* Headline */}
                   <h1 className="hero-fade-in hero-fade-in-delay-1 text-4xl sm:text-5xl lg:text-[3.5rem] font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white mb-5">
                     Edit Photos{" "}
-                    <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-cyan-500 dark:from-indigo-400 dark:via-violet-400 dark:to-purple-400 bg-clip-text text-transparent">
+                    <span className="text-accent-main">
                       Instantly
                     </span>
                     <br />
@@ -133,10 +133,10 @@ export default function HeroUploader() {
                         key={label}
                         className="flex items-start gap-3 p-3.5 rounded-xl bg-white/50 dark:bg-white/[0.03] border border-white/60 dark:border-white/[0.06] backdrop-blur-sm hover:bg-white/70 dark:hover:bg-white/[0.06] transition-all duration-300 group"
                       >
-                        <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500/10 to-sky-500/10 dark:from-indigo-400/10 dark:to-violet-400/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                        <div className="w-9 h-9 rounded-lg bg-accent-muted flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                           <Icon
                             size={16}
-                            className="text-blue-600 dark:text-blue-400"
+                            className="text-accent-main"
                           />
                         </div>
                         <div>
