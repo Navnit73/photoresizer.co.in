@@ -1,8 +1,21 @@
 import type { NextConfig } from "next";
+import withBundleAnalyzer from '@next/bundle-analyzer';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  /* config options here */
+  // Optimize bundle size by modularizing heavy dependencies
+  modularizeImports: {
+    'lucide-react': {
+      transform: 'lucide-react/dist/esm/icons/{{kebabCase member}}',
+    },
+    'lodash': {
+      transform: 'lodash/{{member}}',
+    }
+  },
 };
 
-export default nextConfig;
+const withAnalyzer = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+export default withAnalyzer(nextConfig);

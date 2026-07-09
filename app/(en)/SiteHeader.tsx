@@ -24,7 +24,7 @@ export default function SiteHeader() {
             <Link href="/" className="flex items-center gap-2 group">
              
               <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white">
-                photoresizer<span className="text-lime-600 dark:text-lime-400">co.in</span>
+                photoresizer<span className="text-lime-600 dark:text-lime-400">.co.in</span>
               </span>
             </Link>
           </div>

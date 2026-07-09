@@ -44,7 +44,6 @@
 body {
   background-color: var(--bg-root);
   color: var(--text-main);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 *, ::before, ::after {

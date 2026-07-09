@@ -1766,6 +1766,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://photoresizer.co.in/rssb-cet-graduate-level-photo-resizer</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://photoresizer.co.in/bihar-police-photo-resizer</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4082,6 +4087,11 @@
   </url>
   <url>
     <loc>https://photoresizer.co.in/assam-police-signature-resizer</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://photoresizer.co.in/rssb-cet-graduate-level-photo-resizer</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

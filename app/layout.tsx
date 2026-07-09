@@ -1,10 +1,18 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Poppins } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ClientErrorSuppressor } from "./components/ClientErrorSuppressor";
 import { LangUpdater } from "./components/LangUpdater";
 import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema";
 import "./globals.css";
 import Script from "next/script";
+
+const poppins = Poppins({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], display: 'swap', variable: '--font-sans' });
+
+export const viewport: Viewport = {
+  themeColor: '#ffffff',
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in'),
@@ -21,7 +29,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/icon.svg',
+    icon: '/favicon.svg',
   },
   openGraph: {
     title: "Free Online Photo Resizer, Image Compressor & Background Remover | photoresizer.co.in",
@@ -30,9 +38,9 @@ export const metadata: Metadata = {
     url: '/',
     images: [
       {
-        url: '/icon.svg',
-        width: 800,
-        height: 600,
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
         alt: 'photoresizer',
       },
     ],
@@ -41,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Free Online Photo Resizer, Image Compressor & Background Remover | photoresizer.co.in",
     description: "Professional, fast, and fully local photo editing right in your browser. Remove backgrounds, resize images, create passport photos, and more. No uploads, 100% private.",
-    images: ['/icon.svg'],
+    images: ['/og-image.png'],
   },
 };
 
@@ -58,11 +66,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`font-sans h-full antialiased`}
+      className={`${poppins.variable} font-sans h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        <Script id="clarity-script" strategy="afterInteractive">
+        <Script id="clarity-script" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -72,17 +84,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-Y3N6YXK7VE" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-Y3N6YXK7VE');
-          `}
-        </Script>
+        <GoogleAnalytics gaId="G-Y3N6YXK7VE" />
         
         {/* Global Structured Data */}
         <script
