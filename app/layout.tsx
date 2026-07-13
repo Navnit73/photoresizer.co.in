@@ -4,6 +4,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ClientErrorSuppressor } from "./components/ClientErrorSuppressor";
 import { LangUpdater } from "./components/LangUpdater";
+import TopSupportersMarquee from "./components/TopSupportersMarquee";
 import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema";
 import "./globals.css";
 import Script from "next/script";
@@ -99,6 +100,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <LangUpdater />
           <ClientErrorSuppressor />
+          <TopSupportersMarquee />
           {children}
         </ThemeProvider>
       </body>
