@@ -42,6 +42,7 @@ export default function OriginalWorkspace() {
     updateTextOverlay,
     selectedTextId,
     setSelectedTextId,
+    backgroundColor,
   } = useEditor();
 
   const { t } = useTranslation();
@@ -581,6 +582,7 @@ export default function OriginalWorkspace() {
                     style={{
                       maxHeight: `${55 * zoom}vh`,
                       maxWidth: "100%",
+                      backgroundColor: backgroundColor === 'transparent' ? undefined : backgroundColor,
                     }}
                     className="w-auto object-contain"
                   />
@@ -594,6 +596,7 @@ export default function OriginalWorkspace() {
                     style={{
                       maxHeight: `${55 * zoom}vh`,
                       maxWidth: "100%",
+                      backgroundColor: backgroundColor === 'transparent' ? undefined : backgroundColor,
                     }}
                     className="w-auto object-contain shadow-2xl shadow-black/10 rounded-sm ring-1 ring-border-subtle"
                     draggable={false}
