@@ -6,16 +6,6 @@ import DeSiteHeader from './DeSiteHeader';
 export const metadata: Metadata = {
   title: "Bilder Online Kostenlos Verkleinern, Hintergründe Entfernen & Fotos Bearbeiten | photoresizer.co.in",
   description: "Bilder verkleinern, Fotos komprimieren, Hintergründe entfernen, Passfotos erstellen und Bilder online kostenlos bearbeiten. Keine Uploads erforderlich.",
-  alternates: {
-    canonical: '/de',
-    languages: {
-      en: '/',
-      de: '/de',
-      fr: '/fr',
-      es: '/es',
-      'x-default': '/',
-    },
-  },
 };
 
 export default function GermanLayout({ children }: { children: React.ReactNode }) {
@@ -72,26 +62,7 @@ export default function GermanLayout({ children }: { children: React.ReactNode }
             </div>
           </div>
 
-          {/* Alle DE Seiten */}
-          <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800">
-            <h4 className="text-slate-900 dark:text-white font-bold mb-4 uppercase tracking-wider text-xs text-center md:text-left">Alle Werkzeuge (A-Z)</h4>
-            <div className="flex flex-wrap justify-center md:justify-start gap-3">
-              <Link href="/de/bild" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Bild</Link>
-              <Link href="/de/bild-komprimieren" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Bild Komprimieren</Link>
-              <Link href="/de/bild-online-verkleinern" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Bild Online Verkleinern</Link>
-              <Link href="/de/bild-resizer" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Bild Resizer</Link>
-              <Link href="/de/bildgroesse-aendern" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Bildgröße Ändern</Link>
-              <Link href="/de/bildgroesse-reduzieren" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Bildgröße Reduzieren</Link>
-              <Link href="/de/foto" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Foto</Link>
-              <Link href="/de/foto-groesse-aendern" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Foto Größe Ändern</Link>
-              <Link href="/de/foto-online-verkleinern" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Foto Online Verkleinern</Link>
-              <Link href="/de/foto-resizer" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Foto Resizer</Link>
-              <Link href="/de/foto-verkleinern" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Foto Verkleinern</Link>
-              <Link href="/de/minimize-photo-size" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Minimize Photo Size</Link>
-              <Link href="/de/photo-cropper-online" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Photo Cropper Online</Link>
-              <Link href="/de/photo-image-resizer" className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-lime-600 dark:hover:text-lime-400 rounded-lg transition-colors">Photo Image Resizer</Link>
-            </div>
-          </div>
+          {/* Removed programmatic spin pages section */}
 
           <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div className="flex flex-col gap-3 text-slate-500 dark:text-slate-400 text-sm">

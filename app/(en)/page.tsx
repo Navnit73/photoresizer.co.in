@@ -1,6 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import HeroUploader from "./components/HeroUploader";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: '/',
+      de: '/de',
+      fr: '/fr',
+      es: '/es',
+      'x-default': '/',
+    },
+  },
+};
 
 const homeFaqSchema = {
   "@context": "https://schema.org",

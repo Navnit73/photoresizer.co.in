@@ -4,7 +4,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ClientErrorSuppressor } from "./components/ClientErrorSuppressor";
 import { LangUpdater } from "./components/LangUpdater";
-import TopSupportersMarquee from "./components/TopSupportersMarquee";
+
 import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema";
 import "./globals.css";
 import Script from "next/script";
@@ -19,16 +19,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in'),
   title: "Free Online Photo Resizer, Image Compressor & Background Remover | PhotoResizer.co.in",
   description: "Resize images, compress photos, remove backgrounds, create passport photos and edit pictures online for free. No uploads required.",
-  alternates: {
-    canonical: '/',
-    languages: {
-      en: '/',
-      de: '/de',
-      fr: '/fr',
-      es: '/es',
-      'x-default': '/',
-    },
-  },
   icons: {
     icon: '/favicon.svg',
   },
@@ -100,7 +90,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <LangUpdater />
           <ClientErrorSuppressor />
-          <TopSupportersMarquee />
+        
           {children}
         </ThemeProvider>
       </body>

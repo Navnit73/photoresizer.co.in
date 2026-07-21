@@ -7,12 +7,19 @@ import { esPages } from '../content/es-pages';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
 
-export function getHreflangMap(pageIndex: number): HreflangMap {
-  // Graceful fallback if a translation is missing
-  const enUrl = enPages[pageIndex] ? `${baseUrl}/${enPages[pageIndex].slug}` : baseUrl;
-  const deUrl = dePages[pageIndex] ? `${baseUrl}/de/${dePages[pageIndex].slug}` : `${baseUrl}/de`;
-  const frUrl = frPages[pageIndex] ? `${baseUrl}/fr/${frPages[pageIndex].slug}` : `${baseUrl}/fr`;
-  const esUrl = esPages[pageIndex] ? `${baseUrl}/es/${esPages[pageIndex].slug}` : `${baseUrl}/es`;
+export function getHreflangMap(page: SeoPage): HreflangMap {
+  const key = page.translationKey;
+  
+  // Find matching pages by translationKey. If no key or no match, fallback to home URL.
+  const enMatch = key ? enPages.find(p => p.translationKey === key) : null;
+  const deMatch = key ? dePages.find(p => p.translationKey === key) : null;
+  const frMatch = key ? frPages.find(p => p.translationKey === key) : null;
+  const esMatch = key ? esPages.find(p => p.translationKey === key) : null;
+
+  const enUrl = enMatch ? `${baseUrl}/${enMatch.slug}` : baseUrl;
+  const deUrl = deMatch ? `${baseUrl}/de/${deMatch.slug}` : `${baseUrl}/de`;
+  const frUrl = frMatch ? `${baseUrl}/fr/${frMatch.slug}` : `${baseUrl}/fr`;
+  const esUrl = esMatch ? `${baseUrl}/es/${esMatch.slug}` : `${baseUrl}/es`;
 
   return {
     'en': enUrl,
@@ -22,8 +29,8 @@ export function getHreflangMap(pageIndex: number): HreflangMap {
   };
 }
 
-export function generateSeoMetadata(page: SeoPage, lang: Language, pageIndex: number): Metadata {
-  const hreflangs = getHreflangMap(pageIndex);
+export function generateSeoMetadata(page: SeoPage, lang: Language): Metadata {
+  const hreflangs = getHreflangMap(page);
   const currentUrl = hreflangs[lang];
   
   const languages: Record<string, string> = {};

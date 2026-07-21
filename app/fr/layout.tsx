@@ -5,16 +5,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Redimensionner, Compresser, Détourer et Modifier des Photos en Ligne Gratuitement | photoresizer.co.in",
   description: "Redimensionnez des images, compressez des photos, supprimez les arrière-plans, créez des photos de passeport et modifiez des images en ligne gratuitement.",
-  alternates: {
-    canonical: '/fr',
-    languages: {
-      en: '/',
-      de: '/de',
-      fr: '/fr',
-      es: '/es',
-      'x-default': '/',
-    },
-  },
 };
 
 export default function FrenchLayout({ children }: { children: React.ReactNode }) {

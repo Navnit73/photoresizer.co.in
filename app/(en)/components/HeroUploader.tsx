@@ -26,10 +26,7 @@ const PhotoEditor = dynamic(() => import("../../components/editor/PhotoEditor"),
   ssr: false,
   loading: () => <EditorFallback />,
 });
-const BgRemoverApp = dynamic(
-  () => import("../../components/bg_removal/BgRemoverApp"),
-  { ssr: false, loading: () => <EditorFallback /> },
-);
+
 
 const TRUST_BADGES = [
   { icon: Shield, label: "100% Private", desc: "Nothing leaves your browser" },
@@ -44,7 +41,7 @@ const TOOL_FEATURES = [
 ];
 
 export default function HeroUploader() {
-  const [activeTab, setActiveTab] = useState<"editor" | "bg_remover">("editor");
+
   const [hasUploadedImage, setHasUploadedImage] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -70,7 +67,7 @@ export default function HeroUploader() {
     noClick: false,
   });
 
-  const showHero = !hasUploadedImage && activeTab === "editor";
+  const showHero = !hasUploadedImage;
 
   return (
     <>
@@ -121,12 +118,7 @@ export default function HeroUploader() {
                     {/* Tab Switcher */}
                     <div className="flex p-1 bg-white/40 dark:bg-white/[0.04] rounded-2xl border border-white/50 dark:border-white/[0.08] backdrop-blur-sm mb-5 shadow-sm">
                       <button
-                        onClick={() => setActiveTab("editor")}
-                        className={`flex-1 py-2.5 px-4 text-sm font-semibold rounded-xl transition-all duration-300 ${
-                          activeTab === "editor"
-                            ? "bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-md"
-                            : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300"
-                        }`}
+                        className="flex-1 py-2.5 px-4 text-sm font-semibold rounded-xl transition-all duration-300 bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-md"
                         aria-label="Photo Editor Tab"
                       >
                         ✨ Photo Editor
@@ -217,28 +209,15 @@ export default function HeroUploader() {
       )}
 
       {/* ══════════════════════════════════════════
-          EDITOR — shown after upload or for bg_remover tab
+          EDITOR — shown after upload
       ══════════════════════════════════════════ */}
-      <div className={`${!showHero ? "block" : "hidden"} p-4 md:p-8`}>
-        <div
-          className={
-            activeTab === "editor"
-              ? "block min-h-[600px] sm:min-h-[800px]"
-              : "hidden"
-          }
-        >
-          <PhotoEditor />
+      {!showHero && (
+        <div className="p-4 md:p-8">
+          <div className="block min-h-[600px] sm:min-h-[800px]">
+            <PhotoEditor />
+          </div>
         </div>
-        <div
-          className={
-            activeTab === "bg_remover"
-              ? "block min-h-[600px] sm:min-h-[800px]"
-              : "hidden"
-          }
-        >
-          <BgRemoverApp />
-        </div>
-      </div>
+      )}
     </>
   );
 }

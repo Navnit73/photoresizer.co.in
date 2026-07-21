@@ -5,16 +5,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Redimensionar, Comprimir, Eliminar Fondos y Editar Fotos Online Gratis | photoresizer.co.in",
   description: "Redimensiona imágenes, comprime fotos, elimina fondos, crea fotos para pasaporte y edita imágenes online gratis sin necesidad de subir archivos.",
-  alternates: {
-    canonical: '/es',
-    languages: {
-      en: '/',
-      de: '/de',
-      fr: '/fr',
-      es: '/es',
-      'x-default': '/',
-    },
-  },
 };
 
 export default function SpanishLayout({ children }: { children: React.ReactNode }) {

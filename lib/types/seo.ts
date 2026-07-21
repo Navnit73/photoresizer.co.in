@@ -18,6 +18,7 @@ export interface FAQItem {
 
 export interface SeoPage {
   slug: string;           // E.g., 'photo-resizer' or 'foto-groesse-aendern'
+  translationKey?: string; // Links equivalent pages across languages
   metaTitle: string;
   metaDescription: string;
   h1: string;

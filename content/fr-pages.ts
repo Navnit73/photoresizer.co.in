@@ -3,6 +3,7 @@ import { SeoPage } from '../lib/types/seo';
 export const frPages: SeoPage[] = [
   {
     slug: 'redimensionner-photo',
+      translationKey: 'photo-resizer',
     metaTitle: 'Redimensionner une photo en ligne gratuitement',
     metaDescription: 'Redimensionnez vos photos en ligne gratuitement. Rapide, sécurisé et sans perte de qualité.',
     h1: 'Redimensionner une photo en ligne',
@@ -22,6 +23,7 @@ export const frPages: SeoPage[] = [
   },
   {
     slug: 'createur-photo-identite',
+      translationKey: 'passport-photo-maker',
     metaTitle: 'Créateur de photo d\'identité | Créer des photos en ligne',
     metaDescription: 'Créez des photos d\'identité conformes en ligne en quelques secondes.',
     h1: 'Créateur de photo d\'identité',
@@ -41,6 +43,7 @@ export const frPages: SeoPage[] = [
   },
   {
     slug: 'comment-utiliser',
+      translationKey: 'how-to-use',
     metaTitle: 'Comment utiliser | photoresizer',
     metaDescription: 'Apprenez à utiliser nos outils d\'image en ligne gratuits.',
     h1: 'Comment utiliser',
@@ -68,6 +71,7 @@ export const frPages: SeoPage[] = [
   },
   {
     slug: 'contact',
+      translationKey: 'contact',
     metaTitle: 'Contactez-nous | photoresizer',
     metaDescription: 'Contactez notre équipe pour toute assistance ou demande de renseignements.',
     h1: 'Contactez-nous',
@@ -89,6 +93,7 @@ export const frPages: SeoPage[] = [
   },
   {
     slug: 'conditions',
+      translationKey: 'terms',
     metaTitle: 'Conditions générales | photoresizer',
     metaDescription: 'Lisez les conditions générales d\'utilisation de nos services.',
     h1: 'Conditions générales',
@@ -116,6 +121,7 @@ export const frPages: SeoPage[] = [
   },
   {
     slug: 'confidentialite',
+      translationKey: 'privacy',
     metaTitle: 'Politique de confidentialité | photoresizer',
     metaDescription: 'Notre politique de confidentialité détaillant la façon dont nous traitons vos données.',
     h1: 'Politique de confidentialité',

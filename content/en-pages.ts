@@ -7,6 +7,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "photo-resizer",
+      translationKey: 'photo-resizer',
     metaTitle: "Free Online Photo Resizer — Resize Images Instantly, No Upload",
     metaDescription:
       "Resize photos online free in seconds. Change dimensions, reduce file size, maintain quality. Browser-based — your images never leave your device. No signup required.",
@@ -172,6 +173,7 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "passport-photo-maker",
+      translationKey: 'passport-photo-maker',
     metaTitle: "Free Passport Photo Maker — Correct Size for Any Country",
     metaDescription:
       "Create passport photos online free. Auto-correct dimensions for US, UK, India, EU, China and 20+ countries. White background, JPEG output, instant download.",
@@ -294,6 +296,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "how-to-use",
+      translationKey: 'how-to-use',
     metaTitle: "How to Use — photoresizer Guide",
     metaDescription:
       "Step-by-step guide to using photoresizer. Learn to resize images, reduce file size, create passport photos, and more — all for free in your browser.",
@@ -405,6 +408,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "contact",
+      translationKey: 'contact',
     metaTitle: "Contact Us — photoresizer Support",
     metaDescription:
       "Get in touch with the photoresizer team. Report bugs, request features, or ask questions about our free online image tools.",
@@ -490,6 +494,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "terms",
+      translationKey: 'terms',
     metaTitle: "Terms & Conditions — photoresizer",
     metaDescription:
       "Terms and conditions for using photoresizer. Read our usage policy, limitations, and user responsibilities.",
@@ -572,6 +577,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "privacy",
+      translationKey: 'privacy',
     metaTitle: "Privacy Policy — photoresizer",
     metaDescription:
       "Privacy policy for photoresizer. All image processing is 100% local in your browser. We never upload, store, or share your photos.",
@@ -1222,6 +1228,7 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "compress-image",
+      translationKey: 'compress-image',
     metaTitle:
       "Compress Image Free Online 2027 — Reduce File Size Without Losing Quality",
     metaDescription:
@@ -1994,6 +2001,7 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "remove-background",
+      translationKey: 'remove-background',
     metaTitle:
       "Remove Background Free Online 2026 — Instant AI Background Remover",
     metaDescription:

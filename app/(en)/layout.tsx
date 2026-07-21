@@ -42,7 +42,7 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
               <ul className="space-y-3 text-sm text-slate-500 dark:text-slate-400">
                 <li><Link href="/photo-resizer" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Photo Resizer</Link></li>
                 <li><Link href="/passport-photo-maker" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Passport Photo Maker</Link></li>
-                <li><Link href="/image-resizer" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Image Resizer</Link></li>
+                <li><Link href="/compress-image" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Compress Image</Link></li>
                 <li><Link href="/tools" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors font-semibold">View All 40+ Tools &rarr;</Link></li>
               </ul>
             </div>

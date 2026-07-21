@@ -31,7 +31,7 @@ const pageIndex = enPages.findIndex(p => p.slug === 'canvas-photo-collage-maker'
 const pageData = enPages[pageIndex];
 
 export function generateMetadata(): Metadata {
-  return generateSeoMetadata(pageData, 'en', pageIndex);
+  return generateSeoMetadata(pageData, 'en');
 }
 
 export default function CanvasPhotoCollageMakerPage() {

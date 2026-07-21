@@ -1,208 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://photoresizer.co.in/de</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/foto-verkleinern</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bild-verkleinern</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bildgroesse-aendern</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/foto-groesse-aendern</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/photo-resizer"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/bild-komprimieren</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bildgroesse-reduzieren</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/foto-resizer</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bild-resizer</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bild-online-verkleinern</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/foto-online-verkleinern</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/minimize-photo-size</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/photo-cropper-online</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/photo-image-resizer</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/foto</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bild</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bearbeiten</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/zuschneiden</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/drehen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/compress-image"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/bild-komprimieren"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/compress-image"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/hintergrund-entfernen</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bildhintergrund-entfernen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/foto-hintergrund-entfernen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/hintergrund-transparent-machen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/bild-freistellen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/foto-freistellen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/hintergrund-loeschen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/objekt-freistellen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/passfoto</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/biometrisches-passfoto</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/passfoto-online</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/passfoto-generator</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/passfoto-app</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/foto-pass</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/passfoto-erstellen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/biometrisches-passbild-near-me</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photoresizer.co.in/de/foto-groesse-aendern</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/remove-background"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/hintergrund-entfernen"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/remove-background"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/passfoto-ersteller</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/passport-photo-maker"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/passfoto-ersteller"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/createur-photo-identite"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/creador-foto-pasaporte"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/passport-photo-maker"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/anleitung</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/how-to-use"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/anleitung"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/comment-utiliser"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/como-usar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/how-to-use"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/kontakt</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/contacto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/contact"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/agb</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/agb"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/conditions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/terminos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/terms"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/datenschutz</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/privacy"/>
   </url>
 </urlset>

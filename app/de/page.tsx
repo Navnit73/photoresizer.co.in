@@ -2,8 +2,11 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import PhotoEditor from "../components/editor/PhotoEditor";
-import BgRemoverApp from "../components/bg_removal/BgRemoverApp";
+import dynamic from "next/dynamic";
+
+const PhotoEditor = dynamic(() => import("../components/editor/PhotoEditor"), {
+  ssr: false,
+});
 
 const STATS = [
   { value: "100%", label: "Kostenlos", sub: "Keine versteckten Kosten" },
@@ -331,7 +334,6 @@ const INTERNAL_LINKS_TOOLS = [
 ];
 
 export default function GermanHomePage() {
-  const [activeTab, setActiveTab] = useState<"editor" | "bg_remover">("editor");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
@@ -392,12 +394,7 @@ export default function GermanHomePage() {
               </p>
               <div className="flex p-1.5 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm w-full lg:w-auto">
                 <button
-                  onClick={() => setActiveTab("editor")}
-                  className={`flex-1 lg:w-52 py-3 px-5 text-sm font-bold rounded-xl transition-all flex items-center justify-center gap-2 ${
-                    activeTab === "editor"
-                      ? "bg-accent-main text-white shadow-lg shadow-accent-muted0/25"
-                      : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700"
-                  }`}
+                  className="flex-1 lg:w-52 py-3 px-5 text-sm font-bold rounded-xl transition-all flex items-center justify-center gap-2 bg-accent-main text-white shadow-lg shadow-accent-muted0/25"
                 >
                   <svg
                     className="w-4 h-4"
@@ -416,11 +413,7 @@ export default function GermanHomePage() {
                 </button>
                 <Link
                   href="/de/hintergrund-entfernen"
-                  className={`flex-1 text-center lg:w-52 py-3 px-5 text-sm font-bold rounded-xl transition-all flex items-center justify-center gap-2 ${
-                    activeTab === "bg_remover"
-                      ? "bg-violet-600 text-white shadow-lg shadow-violet-500/25"
-                      : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700"
-                  }`}
+                  className="flex-1 text-center lg:w-52 py-3 px-5 text-sm font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700"
                 >
                   <svg
                     className="w-4 h-4"
@@ -445,11 +438,8 @@ export default function GermanHomePage() {
 
       {/* ── App Area ── */}
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-6">
-        <div className={activeTab === "editor" ? "block" : "hidden"}>
+        <div className="block">
           <PhotoEditor />
-        </div>
-        <div className={activeTab === "bg_remover" ? "block" : "hidden"}>
-          <BgRemoverApp />
         </div>
       </div>
 
@@ -853,7 +843,6 @@ export default function GermanHomePage() {
             <button
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
-                setActiveTab("editor");
               }}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-accent-main rounded-2xl shadow-lg shadow-accent-muted0/30 hover:bg-accent-hover hover:-translate-y-0.5 transition-all duration-200"
             >

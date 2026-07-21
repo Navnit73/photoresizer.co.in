@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     return {};
   }
 
-  return generateSeoMetadata(page, 'en', pageIndex);
+  return generateSeoMetadata(page, 'en');
 }
 
 export default function EnglishSeoPage({ params }: { params: Params }) {
