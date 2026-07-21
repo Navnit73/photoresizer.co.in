@@ -14,6 +14,7 @@ import { UploadCloud, Shield, Zap, Sparkles, Image, Layers, Type, ArrowRight } f
 import PhotoEditor from '../../app/components/editor/PhotoEditor';
 import PassportMakerApp from '../../app/components/passport_photo/PassportMakerApp';
 import BgRemoverApp from '../../app/components/bg_removal/BgRemoverApp';
+import { AdBanner } from '../AdBanner';
 
 import { enPages } from '../../content/en-pages';
 import { dePages } from '../../content/de-pages';
@@ -225,6 +226,11 @@ export function SeoPageRenderer({ page, lang }: Props) {
           </div>
         )}
 
+        {/* ── Mid AdBanner (Below Hero) ── */}
+        <div className="w-full my-8 px-4">
+          <AdBanner type="responsive" />
+        </div>
+
         {/* ══════════════════════════════════════════
             EDITOR — shown after upload
         ══════════════════════════════════════════ */}
@@ -281,6 +287,11 @@ export function SeoPageRenderer({ page, lang }: Props) {
           </div>
         </div>
 
+        {/* ── Mid AdBanner (Below Tool) ── */}
+        <div className="w-full my-8 px-4">
+          <AdBanner type="responsive" />
+        </div>
+
       </div>
 
       {/* Bottom SEO Content - Constrained Width */}
@@ -292,6 +303,11 @@ export function SeoPageRenderer({ page, lang }: Props) {
             ))}
           </div>
         )}
+
+        {/* ── Bottom AdBanner (Before FAQ) ── */}
+        <div className="w-full my-8">
+          <AdBanner type="responsive" />
+        </div>
 
         {/* FAQ */}
         <FAQ faq={page.faq || []} />

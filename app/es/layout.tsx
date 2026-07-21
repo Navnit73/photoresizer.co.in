@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { AdBanner } from '../../components/AdBanner';
 
 export const metadata: Metadata = {
   title: "Redimensionar, Comprimir, Eliminar Fondos y Editar Fotos Online Gratis | photoresizer.co.in",
@@ -15,9 +16,22 @@ export default function SpanishLayout({ children }: { children: React.ReactNode 
         Navegación (ES)
       </nav>
       
+      {/* Top Ad */}
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block w-full">
+        <AdBanner type="fixed" />
+      </div>
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden w-full">
+        <AdBanner type="responsive" />
+      </div>
+
       {/* Page Content */}
       <div className="min-h-screen">
         {children}
+      </div>
+
+      {/* Bottom Ad */}
+      <div className="max-w-[1400px] mx-auto px-4 mb-4 w-full">
+        <AdBanner type="responsive" />
       </div>
 
       {/* Spanish Specific Footer */}

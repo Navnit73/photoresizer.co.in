@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import { AdBanner } from "../../components/AdBanner";
 
 const PhotoEditor = dynamic(() => import("../components/editor/PhotoEditor"), {
   ssr: false,
@@ -522,6 +523,11 @@ export default function GermanHomePage() {
           </div>
         </section>
 
+        {/* ── Mid AdBanner ── */}
+        <div className="w-full my-8">
+          <AdBanner type="responsive" />
+        </div>
+
         {/* ── How it works ── */}
         <section>
           <div className="text-center mb-10">
@@ -745,6 +751,11 @@ export default function GermanHomePage() {
             </div>
           </div>
         </section>
+
+        {/* ── Bottom AdBanner ── */}
+        <div className="w-full my-8">
+          <AdBanner type="responsive" />
+        </div>
 
         {/* ── FAQ ── */}
         <section>

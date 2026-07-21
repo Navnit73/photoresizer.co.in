@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import HeroUploader from "./components/HeroUploader";
+import { AdBanner } from "../../components/AdBanner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -332,6 +333,11 @@ export default function Home() {
             </div>
           </div>
 
+          {/* ── Mid AdBanner ── */}
+          <div className="w-full my-8">
+            <AdBanner type="responsive" />
+          </div>
+
           {/* ── Features ── */}
           <div>
             <h2 className="text-2xl font-bold mb-2 text-slate-800 dark:text-slate-100">
@@ -655,6 +661,11 @@ export default function Home() {
               for a server response. Your edits are instant because the work
               happens on your own CPU and GPU.
             </p>
+          </div>
+
+          {/* ── Bottom AdBanner ── */}
+          <div className="w-full my-8">
+            <AdBanner type="responsive" />
           </div>
 
           {/* ── FAQ ── */}

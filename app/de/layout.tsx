@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import DeSiteHeader from './DeSiteHeader';
+import { AdBanner } from '../../components/AdBanner';
 
 export const metadata: Metadata = {
   title: "Bilder Online Kostenlos Verkleinern, Hintergründe Entfernen & Fotos Bearbeiten | photoresizer.co.in",
@@ -13,8 +14,21 @@ export default function GermanLayout({ children }: { children: React.ReactNode }
     <div className="de-layout flex flex-col min-h-screen">
       <DeSiteHeader />
       
+      {/* Top Ad */}
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block w-full">
+        <AdBanner type="fixed" />
+      </div>
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden w-full">
+        <AdBanner type="responsive" />
+      </div>
+
       <div className="flex-1">
         {children}
+      </div>
+
+      {/* Bottom Ad */}
+      <div className="max-w-[1400px] mx-auto px-4 mb-4 w-full">
+        <AdBanner type="responsive" />
       </div>
 
       <footer className="w-full bg-slate-50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 mt-auto">

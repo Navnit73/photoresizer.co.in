@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import SiteHeader from './SiteHeader';
+import { AdBanner } from '../../components/AdBanner';
 
 export default function EnglishLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -8,9 +9,22 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
       {/* English Specific Navigation */}
       <SiteHeader />
       
+      {/* Top Ad */}
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block">
+        <AdBanner type="fixed" />
+      </div>
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden">
+        <AdBanner type="responsive" />
+      </div>
+
       {/* Page Content */}
       <div className="min-h-screen">
         {children}
+      </div>
+
+      {/* Bottom Ad */}
+      <div className="max-w-[1400px] mx-auto px-4 mb-4">
+        <AdBanner type="responsive" />
       </div>
 
       {/* English Specific Premium Footer */}
