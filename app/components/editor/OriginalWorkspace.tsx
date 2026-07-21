@@ -145,6 +145,15 @@ export default function OriginalWorkspace() {
   );
 
   useEffect(() => {
+    // Check if there are any files dropped from HeroUploader before we mounted
+    const w = window as any;
+    if (w.__HERO_DROPPED_FILES__) {
+      onDrop(w.__HERO_DROPPED_FILES__);
+      delete w.__HERO_DROPPED_FILES__;
+    }
+  }, [onDrop]);
+
+  useEffect(() => {
     const handleHeroDrop = (e: Event) => {
       const customEvent = e as CustomEvent<{ files: File[] }>;
       if (customEvent.detail?.files) {

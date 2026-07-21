@@ -48,10 +48,13 @@ export default function HeroUploader() {
   const onDrop = useCallback((acceptedFiles: File[]) => {
     if (acceptedFiles?.length > 0) {
       setIsTransitioning(true);
+      // Save the files globally so PhotoEditor can pick them up when it mounts
+      (window as any).__HERO_DROPPED_FILES__ = acceptedFiles;
+      
       // Small delay for smooth transition
       setTimeout(() => {
         setHasUploadedImage(true);
-        // Dispatch a custom event so the PhotoEditor's OriginalWorkspace can pick up the file
+        // Also dispatch the event in case PhotoEditor is already mounted
         const event = new CustomEvent("hero-file-drop", {
           detail: { files: acceptedFiles },
         });
