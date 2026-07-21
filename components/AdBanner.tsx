@@ -25,8 +25,8 @@ export function AdBanner({
     if (containerRef.current) {
       observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          // Check if element is intersecting AND has an actual width (not display: none)
-          if (entry.isIntersecting && containerRef.current && containerRef.current.offsetWidth > 0) {
+          // Check if element is intersecting
+          if (entry.isIntersecting) {
             setShouldLoad(true);
             if (observer && containerRef.current) {
               observer.unobserve(containerRef.current);
@@ -51,9 +51,12 @@ export function AdBanner({
   useEffect(() => {
     if (shouldLoad && !isPushed.current) {
       try {
-        // @ts-ignore
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-        isPushed.current = true;
+        const insElement = containerRef.current?.querySelector('ins');
+        if (insElement && !insElement.getAttribute('data-adsbygoogle-status')) {
+          // @ts-ignore
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+          isPushed.current = true;
+        }
       } catch (error) {
         console.error('AdSense Error:', error);
       }
@@ -63,7 +66,7 @@ export function AdBanner({
   const slotId = dataAdSlot || (type === 'fixed' ? '9132763063' : '7146625600');
   
   return (
-    <div ref={containerRef} className="w-full flex justify-center py-4 overflow-hidden min-h-[90px]">
+    <div ref={containerRef} className="w-full block text-center py-4 min-h-[90px]">
       {shouldLoad && (
         <ins
           className="adsbygoogle"
