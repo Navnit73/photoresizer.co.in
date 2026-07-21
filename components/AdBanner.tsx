@@ -51,12 +51,9 @@ export function AdBanner({
   useEffect(() => {
     if (shouldLoad && !isPushed.current) {
       try {
-        const insElement = containerRef.current?.querySelector('ins');
-        if (insElement && !insElement.getAttribute('data-adsbygoogle-status')) {
-          // @ts-ignore
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-          isPushed.current = true;
-        }
+        // @ts-ignore
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        isPushed.current = true;
       } catch (error) {
         console.error('AdSense Error:', error);
       }
