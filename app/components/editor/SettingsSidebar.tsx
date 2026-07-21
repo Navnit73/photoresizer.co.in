@@ -209,17 +209,17 @@ export default function SettingsSidebar() {
   ] as const;
 
   return (
-    <aside className="w-full lg:w-72 xl:w-80 flex-shrink-0 flex flex-col bg-bg-card/80 backdrop-blur-md shadow-sm border border-border-subtle rounded-xl overflow-hidden transition-colors duration-300">
+    <aside className="w-full h-full flex-shrink-0 flex flex-col bg-transparent overflow-hidden transition-colors duration-300">
       {/* Tab bar */}
-      <div className="flex border-b border-border-subtle">
+      <div className="flex border-b border-neutral-200 dark:border-neutral-800">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveSection(tab.id)}
             className={`flex-1 flex items-center justify-center gap-1.5 py-3 text-xs font-semibold transition-colors border-b-2 ${
               activeSection === tab.id
-                ? 'border-accent-main text-accent-main bg-accent-muted'
-                : 'border-transparent text-text-muted hover:text-text-main hover:bg-bg-input'
+                ? 'border-neutral-900 dark:border-neutral-100 text-neutral-900 dark:text-neutral-100'
+                : 'border-transparent text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800'
             }`}
           >
             {tab.icon}
@@ -241,7 +241,7 @@ export default function SettingsSidebar() {
                     type="number" value={width}
                     onChange={(e) => setWidth(Number(e.target.value))}
                     disabled={disabled}
-                    className="w-full bg-bg-input border border-border-subtle rounded-lg px-3 py-2 text-sm text-text-main disabled:opacity-40 focus:outline-none focus:ring-2 focus:ring-accent-main transition-shadow"
+                    className="w-full bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-lg px-3 py-2 text-sm text-neutral-900 dark:text-neutral-100 disabled:opacity-40 focus:outline-none focus:ring-1 focus:ring-neutral-400 transition-shadow"
                   />
                 </div>
                 <div>
@@ -250,7 +250,7 @@ export default function SettingsSidebar() {
                     type="number" value={height}
                     onChange={(e) => setHeight(Number(e.target.value))}
                     disabled={disabled}
-                    className="w-full bg-bg-input border border-border-subtle rounded-lg px-3 py-2 text-sm text-text-main disabled:opacity-40 focus:outline-none focus:ring-2 focus:ring-accent-main transition-shadow"
+                    className="w-full bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-lg px-3 py-2 text-sm text-neutral-900 dark:text-neutral-100 disabled:opacity-40 focus:outline-none focus:ring-1 focus:ring-neutral-400 transition-shadow"
                   />
                 </div>
               </div>
@@ -260,7 +260,7 @@ export default function SettingsSidebar() {
                     key={pct}
                     onClick={() => handlePercentageClick(pct)}
                     disabled={disabled}
-                    className="py-2 text-xs font-semibold bg-bg-input hover:bg-border-subtle rounded-lg disabled:opacity-40 transition-colors text-text-main"
+                    className="py-2 text-xs font-semibold bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-lg disabled:opacity-40 transition-colors text-neutral-900 dark:text-neutral-100"
                   >
                     {pct}%
                   </button>
@@ -268,7 +268,7 @@ export default function SettingsSidebar() {
               </div>
             </div>
 
-            <hr className="border-border-subtle" />
+            <hr className="border-neutral-200 dark:border-neutral-800" />
 
             <div>
               <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-3 block">{t.rotate}</label>
@@ -276,20 +276,20 @@ export default function SettingsSidebar() {
                 <button
                   onClick={() => setRotation((rotation - 90 + 360) % 360)}
                   disabled={disabled}
-                  className="flex items-center justify-center gap-2 py-2.5 bg-bg-input hover:bg-border-subtle border border-border-subtle rounded-lg disabled:opacity-40 transition-colors text-xs font-medium text-text-main"
+                  className="flex items-center justify-center gap-2 py-2.5 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 border border-transparent rounded-lg disabled:opacity-40 transition-colors text-xs font-medium text-neutral-900 dark:text-neutral-100"
                 >
                   <RotateCcw size={14} /> −90°
                 </button>
                 <button
                   onClick={() => setRotation((rotation + 90) % 360)}
                   disabled={disabled}
-                  className="flex items-center justify-center gap-2 py-2.5 bg-bg-input hover:bg-border-subtle border border-border-subtle rounded-lg disabled:opacity-40 transition-colors text-xs font-medium text-text-main"
+                  className="flex items-center justify-center gap-2 py-2.5 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 border border-transparent rounded-lg disabled:opacity-40 transition-colors text-xs font-medium text-neutral-900 dark:text-neutral-100"
                 >
                   +90° <RotateCw size={14} />
                 </button>
               </div>
             </div>
-            <hr className="border-border-subtle my-5" />
+            <hr className="border-neutral-200 dark:border-neutral-800 my-5" />
             <div>
               <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-2 block">{t.outputFormat}</label>
               <div className="grid grid-cols-3 gap-1.5">
@@ -304,8 +304,8 @@ export default function SettingsSidebar() {
                     disabled={disabled}
                     className={`py-2.5 text-xs font-bold rounded-lg border-2 transition-colors disabled:opacity-40 ${
                       format === f.value
-                        ? 'border-accent-main bg-accent-muted text-accent-main'
-                        : 'border-border-subtle text-text-muted hover:border-accent-main/50 hover:text-text-main'
+                        ? 'border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900'
+                        : 'border-neutral-200 dark:border-neutral-800 text-neutral-500 hover:border-neutral-300 dark:hover:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100'
                     }`}
                   >
                     {f.label}
@@ -317,7 +317,7 @@ export default function SettingsSidebar() {
               )}
             </div>
 
-            <hr className="border-border-subtle" />
+            <hr className="border-neutral-200 dark:border-neutral-800" />
 
             <div>
               <div className="flex justify-between items-center mb-2">
@@ -328,7 +328,7 @@ export default function SettingsSidebar() {
                 type="range" min="1" max="100" value={quality}
                 onChange={(e) => setQuality(Number(e.target.value))}
                 disabled={disabled || format === 'image/png'}
-                className="w-full accent-accent-main disabled:opacity-40"
+                className="w-full accent-neutral-900 dark:accent-neutral-100 disabled:opacity-40"
               />
               <div className="flex justify-between text-[10px] text-text-muted mt-1">
                 <span>{t.smallerFile}</span>
@@ -336,7 +336,7 @@ export default function SettingsSidebar() {
               </div>
             </div>
 
-            <hr className="border-border-subtle" />
+            <hr className="border-neutral-200 dark:border-neutral-800" />
 
             <div>
               <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-3 block">{t.bgColor}</label>
@@ -348,7 +348,7 @@ export default function SettingsSidebar() {
                     disabled={disabled}
                     title={color === 'transparent' ? 'Transparent' : color}
                     className={`w-8 h-8 rounded-full border-2 disabled:opacity-40 transition-all ${
-                      backgroundColor === color ? 'border-accent-main scale-110 shadow-md' : 'border-border-subtle hover:scale-105'
+                      backgroundColor === color ? 'border-neutral-900 dark:border-neutral-100 scale-110 shadow-sm' : 'border-neutral-200 dark:border-neutral-800 hover:scale-105'
                     }`}
                     style={{
                       backgroundImage: color === 'transparent'
@@ -378,7 +378,7 @@ export default function SettingsSidebar() {
               <>
                 <button
                   onClick={addTextOverlay}
-                  className="w-full flex items-center justify-center gap-2 py-2.5 bg-accent-main hover:bg-accent-hover text-white rounded-xl text-sm font-semibold transition-all shadow-sm shadow-accent-main/20 active:scale-95"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-800 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 rounded-xl text-sm font-semibold transition-all shadow-sm active:scale-95"
                 >
                   <Plus size={16} /> Add Text Layer
                 </button>

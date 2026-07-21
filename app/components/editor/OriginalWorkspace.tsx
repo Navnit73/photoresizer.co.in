@@ -323,9 +323,9 @@ export default function OriginalWorkspace() {
   )?.value;
 
   return (
-    <div className="flex-1 flex flex-col bg-bg-card/80 backdrop-blur-md shadow-sm border border-border-subtle rounded-xl overflow-hidden min-h-0 transition-colors duration-300">
+    <div className="flex-1 flex flex-col bg-transparent overflow-hidden min-h-0 transition-colors duration-300">
       {/* Toolbar */}
-      <div className="flex items-center gap-1.5 px-3 py-2 border-b border-border-subtle bg-bg-input flex-shrink-0 flex-wrap">
+      <div className="flex items-center gap-1.5 px-3 py-2 border-b border-neutral-200 dark:border-neutral-800 bg-transparent flex-shrink-0 flex-wrap">
         <div
           role="heading"
           aria-level={2}
@@ -336,8 +336,7 @@ export default function OriginalWorkspace() {
 
         {imageFile && !isCropping && (
           <>
-            {/* Zoom controls */}
-            <div className="flex items-center bg-bg-root rounded-lg border border-border-subtle p-0.5">
+            <div className="flex items-center bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800 p-0.5">
               <button
                 onClick={() =>
                   setZoom(Math.max(0.2, parseFloat((zoom - 0.1).toFixed(1))))
@@ -374,7 +373,7 @@ export default function OriginalWorkspace() {
                   });
                 }
               }}
-              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-accent-muted text-accent-main hover:bg-accent-main/20 rounded-lg transition-colors"
+              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-lg transition-colors"
             >
               <CropIcon size={12} />
               <span>Crop</span>
@@ -382,7 +381,7 @@ export default function OriginalWorkspace() {
             <button
               onClick={handleRemoveBg}
               disabled={isBgRemoving}
-              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-bg-root text-text-main hover:bg-border-subtle rounded-lg transition-colors disabled:opacity-50 border border-border-subtle"
+              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition-colors disabled:opacity-50 border border-neutral-200 dark:border-neutral-800"
             >
               <Scissors size={12} />
               <span className="hidden xs:inline">
@@ -397,13 +396,13 @@ export default function OriginalWorkspace() {
           <div className="flex gap-1.5">
             <button
               onClick={handleCancelCrop}
-              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-bg-root text-text-main hover:bg-border-subtle rounded-lg transition-colors border border-border-subtle"
+              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition-colors border border-neutral-200 dark:border-neutral-800"
             >
               <X size={12} /> Cancel
             </button>
             <button
               onClick={handleCropComplete}
-              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-accent-main text-white hover:bg-accent-hover rounded-lg transition-colors"
+              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-lg transition-colors"
             >
               <Check size={12} /> Apply
             </button>
@@ -413,7 +412,7 @@ export default function OriginalWorkspace() {
 
       {/* Aspect ratio toolbar (crop mode) */}
       {isCropping && (
-        <div className="bg-bg-card border-b border-border-subtle px-3 py-2 flex-shrink-0 transition-colors duration-300">
+        <div className="bg-transparent border-b border-neutral-200 dark:border-neutral-800 px-3 py-2 flex-shrink-0 transition-colors duration-300">
           {/* Ratio buttons */}
           <div className="flex flex-wrap gap-1.5 items-center mb-2">
             <span className="text-[10px] font-semibold text-text-muted uppercase tracking-wider">
@@ -433,8 +432,8 @@ export default function OriginalWorkspace() {
                 }}
                 className={`px-2 py-1 text-[10px] font-bold rounded-md transition-colors border ${
                   aspectRatio === ratio.label
-                    ? "bg-accent-main text-white border-accent-main"
-                    : "bg-bg-input text-text-main border-border-subtle hover:border-accent-main/50"
+                    ? "bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 border-neutral-900 dark:border-neutral-100"
+                    : "bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-600"
                 }`}
               >
                 {ratio.label.toUpperCase()}
@@ -447,7 +446,7 @@ export default function OriginalWorkspace() {
       {/* Canvas area */}
       <div
         ref={containerRef}
-        className="flex-1 overflow-auto bg-bg-root relative select-none transition-colors duration-300 min-h-0"
+        className="flex-1 overflow-auto bg-transparent relative select-none transition-colors duration-300 min-h-0"
         onMouseMove={handleContainerMouseMove}
         onMouseUp={handleContainerMouseUp}
         onMouseLeave={handleContainerMouseUp}
@@ -514,13 +513,13 @@ export default function OriginalWorkspace() {
 
           {!imageFile ? (
             isUploading ? (
-              <div className="w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dashed border-border-subtle rounded-2xl flex flex-col items-center justify-center text-center bg-bg-card shadow-sm">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent-muted flex items-center justify-center mb-4">
-                  <UploadCloud size={24} className="text-accent-main animate-pulse" />
+              <div className="w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dashed border-neutral-200 dark:border-neutral-800 rounded-2xl flex flex-col items-center justify-center text-center bg-white dark:bg-neutral-900 shadow-sm">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center mb-4">
+                  <UploadCloud size={24} className="text-neutral-500 animate-pulse" />
                 </div>
-                <div className="w-full max-w-[200px] bg-bg-root rounded-full h-2 mb-4 overflow-hidden border border-border-subtle">
+                <div className="w-full max-w-[200px] bg-neutral-100 dark:bg-neutral-800 rounded-full h-2 mb-4 overflow-hidden border border-neutral-200 dark:border-neutral-800">
                   <div 
-                    className="bg-accent-main h-full rounded-full transition-all duration-75" 
+                    className="bg-neutral-900 dark:bg-neutral-100 h-full rounded-full transition-all duration-75" 
                     style={{ width: `${uploadProgress}%` }}
                   ></div>
                 </div>
@@ -534,17 +533,17 @@ export default function OriginalWorkspace() {
               {...getRootProps()}
               className={`w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dotted rounded-2xl flex flex-col items-center justify-center text-center cursor-pointer transition-all ${
                 isDragActive
-                  ? "border-red-500 bg-accent-muted scale-[1.02]"
-                  : "border-red-500 hover:border-red-600 hover:bg-bg-input"
+                  ? "border-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 scale-[1.02]"
+                  : "border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-neutral-800/50"
               }`}
             >
               <input {...getInputProps()} />
               <div
-                className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center mb-3 transition-colors ${isDragActive ? "bg-accent-main" : "bg-accent-muted"}`}
+                className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center mb-3 transition-colors ${isDragActive ? "bg-neutral-200 dark:bg-neutral-700" : "bg-neutral-100 dark:bg-neutral-800"}`}
               >
                 <UploadCloud
                   size={24}
-                  className={isDragActive ? "text-white" : "text-accent-main"}
+                  className={isDragActive ? "text-neutral-900 dark:text-neutral-100" : "text-neutral-500"}
                 />
               </div>
               <h4 className="text-sm sm:text-base font-bold text-text-main mb-1.5">
@@ -555,7 +554,7 @@ export default function OriginalWorkspace() {
                 {["JPG", "PNG", "WEBP"].map((fmt) => (
                   <span
                     key={fmt}
-                    className="px-2 py-0.5 bg-bg-card border border-border-subtle text-text-muted rounded text-[10px] font-bold shadow-sm"
+                    className="px-2 py-0.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-neutral-500 rounded text-[10px] font-bold shadow-sm"
                   >
                     {fmt}
                   </span>

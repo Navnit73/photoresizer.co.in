@@ -37,7 +37,7 @@
   --color-accent-hover: var(--accent-hover);
   --color-accent-muted: var(--accent-muted);
   
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 

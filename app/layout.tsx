@@ -9,7 +9,7 @@ import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema
 import "./globals.css";
 import Script from "next/script";
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], display: 'swap', variable: '--font-sans' });
+const poppins = Poppins({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], display: 'swap', variable: '--font-poppins' });
 
 export const viewport: Viewport = {
   themeColor: '#ffffff',
