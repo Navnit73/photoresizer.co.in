@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 type AdBannerProps = {
   dataAdSlot?: string;
@@ -15,63 +15,67 @@ export function AdBanner({
   dataFullWidthResponsive = true,
   type = 'responsive'
 }: AdBannerProps) {
-  const isLoaded = useRef(false);
-  const insRef = useRef<HTMLModElement>(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isPushed = useRef(false);
 
   useEffect(() => {
-    if (isLoaded.current) return;
-    
     let observer: IntersectionObserver | null = null;
     
-    if (insRef.current) {
+    if (containerRef.current) {
       observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !isLoaded.current) {
-            // Check if element has width to avoid AdSense TagError: No slot size for availableWidth=0
-            if (insRef.current && insRef.current.offsetWidth > 0) {
-              try {
-                // @ts-ignore
-                (window.adsbygoogle = window.adsbygoogle || []).push({});
-                isLoaded.current = true;
-                if (observer && insRef.current) {
-                  observer.unobserve(insRef.current);
-                }
-              } catch (error) {
-                console.error('AdSense Error:', error);
-              }
+          // Check if element is intersecting AND has an actual width (not display: none)
+          if (entry.isIntersecting && containerRef.current && containerRef.current.offsetWidth > 0) {
+            setShouldLoad(true);
+            if (observer && containerRef.current) {
+              observer.unobserve(containerRef.current);
             }
           }
         });
       }, {
-        rootMargin: '200px', // Load slightly before it comes into view
+        rootMargin: '200px',
         threshold: 0
       });
       
-      observer.observe(insRef.current);
+      observer.observe(containerRef.current);
     }
     
     return () => {
-      if (observer && insRef.current) {
-        observer.unobserve(insRef.current);
+      if (observer) {
+        observer.disconnect();
       }
     };
   }, []);
 
+  useEffect(() => {
+    if (shouldLoad && !isPushed.current) {
+      try {
+        // @ts-ignore
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        isPushed.current = true;
+      } catch (error) {
+        console.error('AdSense Error:', error);
+      }
+    }
+  }, [shouldLoad]);
+
   const slotId = dataAdSlot || (type === 'fixed' ? '9132763063' : '7146625600');
   
   return (
-    <div className="w-full flex justify-center py-4 overflow-hidden min-h-[90px]">
-      <ins
-        ref={insRef}
-        className="adsbygoogle"
-        style={type === 'fixed' ? { display: 'inline-block', width: '728px', height: '90px' } : { display: 'block', width: '100%' }}
-        data-ad-client="ca-pub-2980455227951378"
-        data-ad-slot={slotId}
-        {...(type === 'responsive' ? {
-          'data-ad-format': dataAdFormat,
-          'data-full-width-responsive': dataFullWidthResponsive.toString()
-        } : {})}
-      />
+    <div ref={containerRef} className="w-full flex justify-center py-4 overflow-hidden min-h-[90px]">
+      {shouldLoad && (
+        <ins
+          className="adsbygoogle"
+          style={type === 'fixed' ? { display: 'inline-block', width: '728px', height: '90px' } : { display: 'block', width: '100%' }}
+          data-ad-client="ca-pub-2980455227951378"
+          data-ad-slot={slotId}
+          {...(type === 'responsive' ? {
+            'data-ad-format': dataAdFormat,
+            'data-full-width-responsive': dataFullWidthResponsive.toString()
+          } : {})}
+        />
+      )}
     </div>
   );
 }
