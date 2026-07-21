@@ -63,12 +63,11 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="anonymous" />
-        <Script 
+        <script 
           async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2980455227951378" 
           crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        ></script>
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <Script id="clarity-script" strategy="lazyOnload">
