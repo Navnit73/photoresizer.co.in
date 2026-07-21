@@ -2393,98 +2393,119 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
-  {
-    slug: "resize-photo-driving-license-sarathi",
-    metaTitle:
-      "Resize Photo for Driving License Sarathi 2027 — Free Online Tool",
-    metaDescription:
-      "Resize driving license photo for Sarathi 2027 portal. Set dimensions & file size as per RTO requirements. Free, private, no upload needed.",
-    h1: "Resize Photo for Driving License Sarathi 2027 — Free Online",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle:
-      "Resize photo for driving license application on Sarathi portal 2027. Exact RTO specifications — instant, private, no watermark.",
-    sections: [
-      {
-        heading:
-          "What Are the Driving License Photo Requirements on Sarathi Portal?",
-        content: `
+ {
+  slug: "resize-photo-driving-license-sarathi",
+  metaTitle:
+    "Resize Photo for Driving License Sarathi 2027 — Free Online Tool",
+  metaDescription:
+    "Resize your driving license photo for the Sarathi Parivahan portal to the exact 10-20 KB, 35x45mm spec. Free, private, and browser-based — no upload, no watermark.",
+  h1: "Resize Photo for Driving License Sarathi Portal 2027",
+  showTool: "photo-editor",
+  structuredDataOverrides: { webPageType: "WebApplication" },
+  subtitle:
+    "Resize your photo for the Sarathi Parivahan driving license application in seconds. Matches the exact RTO file size and dimension rules — instant, private, no watermark.",
+  sections: [
+    {
+      heading:
+        "What Are the Driving License Photo Requirements on Sarathi Portal?",
+      content: `
 <div class="space-y-8 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    For applying for a driving license through the Sarathi portal in 2027, you need to upload a passport-size photograph meeting specific RTO requirements. The photo should be a recent color photograph with a white or light background, clear front-facing view with neutral expression. The dimensions typically need to be around 200 x 230 pixels with a maximum file size of 50 KB. The image must be in JPG/JPEG format. The Sarathi portal, managed by the Ministry of Road Transport and Highways (MoRTH), has strict validation for photo uploads. Our tool helps you resize your photo to meet these exact specifications without uploading your image to any server, ensuring your personal data stays private.
+    The Sarathi Parivahan portal, run by the Ministry of Road Transport and Highways (MoRTH), enforces one of the strictest photo upload systems among Indian government portals. Your photograph must be a recent, front-facing color image on a plain white or light background, sized to roughly 35mm x 45mm (about 420 x 525 pixels), and compressed to between 10 KB and 20 KB. A file even 1 KB over this limit is usually rejected outright, and a photo far below the range often looks over-compressed and blurry to the reviewing RTO officer. Our tool resizes and compresses your photo directly in your browser, so it lands inside the correct range on the first try — without ever uploading your image to a server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
     <div class="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-100 dark:border-blue-800">
       <div class="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
         <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
       </div>
-      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">200x230 Pixels</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">Standard driving license photo dimensions for Sarathi portal upload in 2027.</p>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">35 x 45mm (~420 x 525px)</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Standard passport-style dimensions required for driving license photo upload on Sarathi.</p>
     </div>
     <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-2xl border border-emerald-100 dark:border-emerald-800">
       <div class="w-11 h-11 bg-emerald-600 rounded-xl flex items-center justify-center mb-4">
         <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
       </div>
-      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Max 50 KB</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">File size must be under 50 KB for smooth upload to Sarathi portal.</p>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Strictly 10-20 KB</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-400">The file size window is narrow. Too small looks blurry; too large gets auto-rejected.</p>
     </div>
     <div class="p-6 bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 rounded-2xl border border-violet-100 dark:border-violet-800">
       <div class="w-11 h-11 bg-violet-600 rounded-xl flex items-center justify-center mb-4">
         <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
       </div>
-      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">White/Light Background</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">RTO requires plain white or light background for driving license photo.</p>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">White or Light Background</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-400">No shadows, patterns, or colored walls — the RTO requires a plain, evenly lit background.</p>
     </div>
   </div>
   <div>
-    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4">How to Resize Driving License Photo for Sarathi — 3 Steps</h3>
+    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4">How to Resize Your Driving License Photo — 3 Steps</h3>
     <div class="grid md:grid-cols-3 gap-4">
       <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
         <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Upload Photo</h4><p class="text-sm text-slate-600 dark:text-slate-400">Select your passport-size photo from device gallery.</p></div>
+        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Upload Your Photo</h4><p class="text-sm text-slate-600 dark:text-slate-400">Choose a clear, front-facing photo from your gallery or take one on the spot.</p></div>
       </div>
       <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
         <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Set Sarathi Specs</h4><p class="text-sm text-slate-600 dark:text-slate-400">Choose 200x230 pixels, target under 50 KB, adjust quality slider.</p></div>
+        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Set Sarathi Specs</h4><p class="text-sm text-slate-600 dark:text-slate-400">Select 35x45mm, target 10-20 KB, and let the tool crop and compress automatically.</p></div>
       </div>
       <div class="flex gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
         <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Download & Upload</h4><p class="text-sm text-slate-600 dark:text-slate-400">Download resized JPG and upload to Sarathi driving license application.</p></div>
+        <div><h4 class="font-semibold text-slate-900 dark:text-white mb-1">Download and Upload</h4><p class="text-sm text-slate-600 dark:text-slate-400">Save the compliant JPG and upload it directly to your Sarathi application form.</p></div>
       </div>
     </div>
   </div>
+  <div>
+    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4">Why Driving License Photos Get Rejected</h3>
+    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+      Most rejections on the Sarathi portal come down to a small handful of avoidable errors. Knowing them in advance saves you a second trip to the RTO or a resubmission delay:
+    </p>
+    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> File size outside the 10-20 KB range, even by a single KB</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Wrong pixel dimensions or an incorrect aspect ratio</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> A format other than JPG or JPEG</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> A colored, shadowed, or patterned background instead of plain white or light</li>
+      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> An old, blurry, or low-contrast photo where the face is not clearly visible</li>
+    </ul>
+    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mt-4">
+      Specifications can shift slightly between notification cycles and states, so always confirm the current limit on sarathi.parivahan.gov.in before you submit your final application.
+    </p>
+  </div>
 </div>`,
-      },
-    ],
-    faq: [
-      {
-        question:
-          "What are the driving license photo size requirements for Sarathi portal?",
-        answer:
-          "Sarathi portal requires 200x230 pixel photo with max 50 KB file size, JPG format with white or light background.",
-      },
-      {
-        question: "Can I use a selfie for driving license photo?",
-        answer:
-          "Yes, but ensure it's a clear front-facing photo with white background, neutral expression, and proper lighting.",
-      },
-      {
-        question: "Is my photo data safe when resizing?",
-        answer:
-          "Yes, the tool works entirely in your browser. No photo upload to any server, complete privacy maintained.",
-      },
-      {
-        question: "What if my photo file is too large?",
-        answer:
-          "Use the compression slider to reduce file size. The tool shows real-time file size so you can stay under 50 KB.",
-      },
-      {
-        question: "Does this work for both learner and permanent license?",
-        answer:
-          "Yes, the same photo specifications apply for both learner's license and permanent driving license on Sarathi portal.",
-      },
-    ],
-  },
+    },
+  ],
+  faq: [
+    {
+      question:
+        "What are the driving license photo size requirements for Sarathi portal?",
+      answer:
+        "The Sarathi portal requires a photo of about 35mm x 45mm (roughly 420 x 525 pixels), compressed to between 10 KB and 20 KB, in JPG format with a white or light background.",
+    },
+    {
+      question: "Can I use a selfie for my driving license photo?",
+      answer:
+        "Yes, as long as it is a clear, front-facing photo with a plain white or light background, a neutral expression, and even lighting with no shadows.",
+    },
+    {
+      question: "Is my photo data safe when I resize it here?",
+      answer:
+        "Yes. The tool runs entirely in your browser, so your photo is never uploaded to a server. Your image stays private on your own device throughout the process.",
+    },
+    {
+      question: "What if my photo file is still too large after resizing?",
+      answer:
+        "Use the compression slider to reduce the size further. The tool shows the live file size as you adjust it, so you can land precisely inside the 10-20 KB window.",
+    },
+    {
+      question: "Does this work for both learner's and permanent licenses?",
+      answer:
+        "Yes. The same photo specifications apply whether you are applying for a Learner's License (LL) or a Permanent Driving License (DL) through the Sarathi portal.",
+    },
+    {
+      question: "Do I also need to resize my signature for the application?",
+      answer:
+        "Yes, most Sarathi applications also require a scanned signature, typically around 256 x 64 pixels and 10-20 KB, signed in black or blue ink on plain white paper.",
+    },
+  ],
+},
   {
     slug: "afcat-photo-resizer",
     metaTitle: "AFCAT Photo Resizer 2027 — Resize Image Online Free",
