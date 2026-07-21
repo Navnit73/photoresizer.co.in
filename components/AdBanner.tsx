@@ -60,7 +60,7 @@ export function AdBanner({
     }
   }, [shouldLoad]);
 
-  const slotId = dataAdSlot || (type === 'fixed' ? '9132763063' : '7146625600');
+  const slotId = dataAdSlot || (type === 'fixed' ? '9132763063' : '9132763063');
   
   return (
     <div ref={containerRef} className="w-full block text-center py-4 min-h-[90px]">
