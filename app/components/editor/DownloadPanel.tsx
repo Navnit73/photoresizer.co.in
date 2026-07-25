@@ -4,10 +4,12 @@ import React from "react";
 import { useEditor } from "./EditorContext";
 import { useImageProcessor } from "../../hooks/useImageProcessor";
 import { Download } from "lucide-react";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function DownloadPanel() {
   const { imageFile, livePreview, isProcessing, format, fileName, setFileName } =
     useEditor();
+  const { t } = useTranslation();
 
   useImageProcessor();
 
@@ -34,10 +36,10 @@ export default function DownloadPanel() {
       {/* Meta chips (Airbnb pill style) */}
       <div className="flex items-center gap-2 flex-wrap justify-center sm:justify-start w-full sm:w-auto">
         <span className="flex items-center justify-center h-8 px-3 rounded-full border border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-slate-200 text-xs font-semibold">
-          Largura: {livePreview.width}px
+          {t.width}: {livePreview.width}px
         </span>
         <span className="flex items-center justify-center h-8 px-3 rounded-full border border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-slate-200 text-xs font-semibold">
-          Altura: {livePreview.height}px
+          {t.height}: {livePreview.height}px
         </span>
         <span className="flex items-center justify-center h-8 px-3.5 rounded-full border border-[#ff385c]/30 bg-[#ff385c]/10 text-[#ff385c] text-xs font-bold">
           {livePreview.sizeKb} KB
@@ -47,7 +49,7 @@ export default function DownloadPanel() {
         </span>
         {isProcessing && (
           <span className="animate-pulse text-[#ff385c] text-xs font-bold ml-1">
-            Processando...
+            {t.processing}
           </span>
         )}
       </div>
@@ -61,7 +63,7 @@ export default function DownloadPanel() {
             type="text"
             value={fileName}
             onChange={(e) => setFileName(e.target.value)}
-            placeholder="nome-do-arquivo"
+            placeholder={t.fileNamePlaceholder}
             className="flex-1 w-0 bg-transparent text-xs font-semibold focus:outline-none text-[#222222] dark:text-white"
           />
           <span className="text-xs text-[#6a6a6a] dark:text-slate-400 font-mono">
@@ -76,7 +78,7 @@ export default function DownloadPanel() {
           className="flex items-center justify-center gap-2 px-6 py-2.5 text-xs font-bold bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
         >
           <Download size={15} />
-          <span>Baixar Imagem</span>
+          <span>{t.downloadImage}</span>
         </button>
 
       </div>

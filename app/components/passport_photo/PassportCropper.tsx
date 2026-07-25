@@ -62,6 +62,12 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
   const [region, setRegion] = useState<Region>('US');
   const activePreset = PASSPORT_PRESETS[region];
 
+  const BG_COLORS = [
+    { label: t.whiteColor || 'White', value: '#ffffff' },
+    { label: t.lightGrayColor || 'Light Gray', value: '#f1f5f9' },
+    { label: t.slateColor || 'Slate', value: '#cbd5e1' },
+  ];
+
   // Cropper State
   const [crop, setCrop] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
@@ -125,7 +131,9 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
   ): Promise<File | null> {
     const image = new Image();
     image.src = src;
-    await new Promise((resolve) => (image.onload = resolve));
+    if (!image.complete) {
+      await new Promise((resolve) => (image.onload = resolve));
+    }
 
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
@@ -163,21 +171,25 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
             reject(new Error('Canvas is empty'));
             return;
           }
-          try {
-            const file = new File([blob], 'passport_photo.jpg', { type: 'image/jpeg' });
-            const options = {
-              maxSizeMB: MAX_FILE_SIZE_MB,
-              useWebWorker: true,
-              fileType: 'image/jpeg',
-            };
-            const compressedFile = await imageCompression(file, options);
-            resolve(compressedFile);
-          } catch (error) {
-            reject(error);
+          if (blob.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
+            try {
+              const file = new File([blob], 'passport_photo.jpg', { type: 'image/jpeg' });
+              const options = {
+                maxSizeMB: MAX_FILE_SIZE_MB,
+                useWebWorker: true,
+                fileType: 'image/jpeg',
+              };
+              const compressedFile = await imageCompression(file, options);
+              resolve(compressedFile);
+            } catch (error) {
+              resolve(new File([blob], 'passport_photo.jpg', { type: 'image/jpeg' }));
+            }
+          } else {
+            resolve(new File([blob], 'passport_photo.jpg', { type: 'image/jpeg' }));
           }
         },
         'image/jpeg',
-        1.0
+        0.92
       );
     });
   }
@@ -203,7 +215,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
   const activeImageSrc = (useBgRemoved && bgRemovedSrc) ? bgRemovedSrc : imageSrc;
 
   return (
-    <div className="w-full max-w-6xl mx-auto flex flex-col gap-6 p-4">
+    <div className="w-full max-w-6xl mx-auto flex flex-col gap-6 p-4 font-['Airbnb_Cereal_VF',Circular,sans-serif]">
       {/* Inject custom CSS for the guide bars directly inside the crop box */}
       <style dangerouslySetInnerHTML={{__html: `
         .passport-crop-area::before {
@@ -213,7 +225,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
           left: 5%;
           right: 5%;
           height: 1px;
-          background-color: var(--accent-main); /* emerald-500 */
+          background-color: #ff385c;
           pointer-events: none;
           z-index: 50;
         }
@@ -224,7 +236,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
           left: 5%;
           right: 5%;
           height: 1px;
-          background-color: var(--accent-main); /* emerald-500 */
+          background-color: #ff385c;
           pointer-events: none;
           z-index: 50;
         }
@@ -238,23 +250,23 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
             linear-gradient(to bottom, transparent calc(33.33% - 0.5px), rgba(255,255,255,0.4) calc(33.33% - 0.5px), rgba(255,255,255,0.4) calc(33.33% + 0.5px), transparent calc(33.33% + 0.5px)),
             linear-gradient(to bottom, transparent calc(66.66% - 0.5px), rgba(255,255,255,0.4) calc(66.66% - 0.5px), rgba(255,255,255,0.4) calc(66.66% + 0.5px), transparent calc(66.66% + 0.5px)),
             /* Center crosshairs (vertical and horizontal) */
-            linear-gradient(to right, transparent calc(50% - 0.5px), rgba(18, 236, 164, 0.6) calc(50% - 0.5px), rgba(16, 185, 129, 0.6) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-            linear-gradient(to bottom, transparent calc(50% - 0.5px), rgba(7, 80, 57, 0.6) calc(50% - 0.5px), rgba(16, 185, 129, 0.6) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+            linear-gradient(to right, transparent calc(50% - 0.5px), rgba(255, 56, 92, 0.6) calc(50% - 0.5px), rgba(255, 56, 92, 0.6) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+            linear-gradient(to bottom, transparent calc(50% - 0.5px), rgba(255, 56, 92, 0.6) calc(50% - 0.5px), rgba(255, 56, 92, 0.6) calc(50% + 0.5px), transparent calc(50% + 0.5px));
         }
       `}} />
 
       {/* Header & Region Selection */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
         <div className="flex flex-col gap-1 items-start text-left">
-          <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
-            Format Passport Photo
+          <h2 className="text-xl sm:text-2xl font-bold text-slate-800 dark:text-slate-100">
+            {t.formatPassportPhotoTitle}
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 text-sm">
+          <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm">
             {activePreset.description}
           </p>
         </div>
         
-        <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-sm border border-slate-200 dark:border-slate-700">
+        <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-2xl sm:rounded-full border border-slate-200 dark:border-slate-700 overflow-x-auto max-w-full no-scrollbar">
           {(Object.keys(PASSPORT_PRESETS) as Region[]).map((r) => (
             <button
               key={r}
@@ -263,9 +275,9 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
                 setZoom(1);
                 setCrop({ x: 0, y: 0 });
               }}
-              className={`px-4 py-1.5 text-sm font-semibold rounded-sm transition-colors ${
+              className={`px-3.5 sm:px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-full transition-all whitespace-nowrap flex-shrink-0 ${
                 region === r 
-                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 shadow-sm border border-slate-200 dark:border-slate-700' 
+                  ? 'bg-[#ff385c] text-white shadow-sm' 
                   : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 border border-transparent'
               }`}
             >
@@ -275,12 +287,12 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4 sm:gap-6">
         
         {/* Left Column: Cropper Workspace */}
         <div className="flex flex-col gap-4">
           <div 
-            className="relative w-full h-[60vh] lg:h-[70vh] rounded-sm overflow-hidden border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 flex items-center justify-center transition-colors"
+            className="relative w-full min-h-[320px] h-[45vh] sm:h-[480px] lg:h-[600px] rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 flex items-center justify-center transition-colors"
             style={{ 
               backgroundColor: (useBgRemoved && bgColor !== 'transparent') ? bgColor : undefined 
             }}
@@ -307,7 +319,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
               onZoomChange={setZoom}
               classes={{
                 containerClassName: 'bg-transparent z-10',
-                cropAreaClassName: 'passport-crop-area border border-emerald-500 shadow-[0_0_0_9999em_rgba(0,0,0,0.7)] dark:shadow-[0_0_0_9999em_rgba(0,0,0,0.85)] rounded-none overflow-visible',
+                cropAreaClassName: 'passport-crop-area border border-[#ff385c] shadow-[0_0_0_9999em_rgba(0,0,0,0.7)] dark:shadow-[0_0_0_9999em_rgba(0,0,0,0.85)] rounded-none overflow-visible',
               }}
             />
 
@@ -320,35 +332,35 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
             {/* Processing Overlay */}
             {isRemovingBg && (
               <div className="absolute inset-0 z-30 bg-slate-900/80 flex flex-col items-center justify-center text-white">
-                <Loader2 className="w-8 h-8 animate-spin text-emerald-500 mb-3" />
-                <span className="text-sm font-semibold tracking-wide">Removing Background...</span>
+                <Loader2 className="w-8 h-8 animate-spin text-[#ff385c] mb-3" />
+                <span className="text-sm font-semibold tracking-wide">{t.removingBg}</span>
               </div>
             )}
           </div>
         </div>
 
         {/* Right Column: Settings Panel */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4 sm:gap-6">
           
           {/* Instructions Box */}
-          <div className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-sm p-4 flex flex-col gap-2">
+          <div className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 flex flex-col gap-2">
             <div className="flex items-center gap-2 text-slate-800 dark:text-slate-200 font-semibold text-sm">
               <Info size={16} />
-              <h4>Alignment Guide</h4>
+              <h4>{t.alignmentGuideTitle}</h4>
             </div>
             <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">
-              Drag the photo and use the zoom slider to fit the chin and the top of the head within the <span className="font-semibold text-emerald-600 dark:text-emerald-400">green bars</span>.
+              {t.alignmentGuideText}
             </p>
           </div>
 
-          <div className="flex-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-sm p-6 flex flex-col gap-6">
+          <div className="flex-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 sm:p-6 flex flex-col gap-5 sm:gap-6">
             
             {/* Step 1: Zoom & Position */}
             <section className="flex flex-col gap-3">
               <div className="flex items-center justify-between">
                 <h3 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2 text-sm">
-                  <span className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 w-5 h-5 rounded-sm flex items-center justify-center text-[10px] font-bold">1</span>
-                  Adjust Size & Position
+                  <span className="bg-[#ff385c] text-white w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold">1</span>
+                  {t.adjustSizePosition}
                 </h3>
                 <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
                   {Math.round(zoom * 100)}%
@@ -366,7 +378,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
                   step={0.05}
                   aria-label="Zoom"
                   onChange={(e) => setZoom(Number(e.target.value))}
-                  className="flex-1 h-1 bg-slate-200 dark:bg-slate-700 rounded-none appearance-none cursor-grab active:cursor-grabbing accent-slate-900 dark:accent-slate-100"
+                  className="flex-1 h-1 bg-slate-200 dark:bg-slate-700 rounded-none appearance-none cursor-grab active:cursor-grabbing accent-[#ff385c]"
                 />
                 <button onClick={() => setZoom(z => Math.min(z + 0.05, 3))} className="p-1 text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" aria-label="Zoom In">
                   <ZoomIn size={16} />
@@ -376,17 +388,17 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
               <div className="flex justify-center mt-2">
                 <div className="grid grid-cols-3 gap-1">
                   <div />
-                  <button onClick={() => setCrop(c => ({...c, y: c.y - 10}))} aria-label="Move Up" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-sm flex justify-center items-center transition-colors">
+                  <button onClick={() => setCrop(c => ({...c, y: c.y - 10}))} aria-label="Move Up" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-full flex justify-center items-center transition-colors">
                     <ArrowUp size={16} />
                   </button>
                   <div />
-                  <button onClick={() => setCrop(c => ({...c, x: c.x - 10}))} aria-label="Move Left" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-sm flex justify-center items-center transition-colors">
+                  <button onClick={() => setCrop(c => ({...c, x: c.x - 10}))} aria-label="Move Left" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-full flex justify-center items-center transition-colors">
                     <ArrowLeft size={16} />
                   </button>
-                  <button onClick={() => setCrop(c => ({...c, y: c.y + 10}))} aria-label="Move Down" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-sm flex justify-center items-center transition-colors">
+                  <button onClick={() => setCrop(c => ({...c, y: c.y + 10}))} aria-label="Move Down" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-full flex justify-center items-center transition-colors">
                     <ArrowDown size={16} />
                   </button>
-                  <button onClick={() => setCrop(c => ({...c, x: c.x + 10}))} aria-label="Move Right" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-sm flex justify-center items-center transition-colors">
+                  <button onClick={() => setCrop(c => ({...c, x: c.x + 10}))} aria-label="Move Right" className="p-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-full flex justify-center items-center transition-colors">
                     <ArrowRight size={16} />
                   </button>
                 </div>
@@ -398,16 +410,16 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
             {/* Step 2: Background */}
             <section className="flex flex-col gap-3">
               <h3 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2 text-sm">
-                <span className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 w-5 h-5 rounded-sm flex items-center justify-center text-[10px] font-bold">2</span>
+                <span className="bg-[#ff385c] text-white w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold">2</span>
                 {t.passportBg}
               </h3>
 
               <button
                 onClick={handleToggleBgRemoval}
                 disabled={isRemovingBg}
-                className={`w-full py-2.5 px-4 rounded-sm flex items-center justify-center gap-2 text-sm font-semibold transition-colors ${
+                className={`w-full py-2.5 px-4 rounded-full flex items-center justify-center gap-2 text-sm font-semibold transition-all ${
                   useBgRemoved 
-                    ? 'bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-100 dark:hover:bg-slate-200 dark:text-slate-900' 
+                    ? 'bg-[#ff385c] text-white shadow-sm' 
                     : 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700'
                 }`}
               >
@@ -426,20 +438,20 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
 
               {/* Color Picker (Only visible when BG is removed) */}
               <div className={`transition-all overflow-hidden flex flex-col gap-2 ${useBgRemoved ? 'max-h-48 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Select Color</span>
+                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">{t.selectColor}</span>
                 <div className="grid grid-cols-3 gap-2">
                   {BG_COLORS.map((c) => (
                     <button
                       key={c.value}
                       onClick={() => setBgColor(c.value)}
-                      className={`flex flex-col items-center gap-1 py-2 rounded-sm border transition-colors ${
+                      className={`flex flex-col items-center gap-1 py-2 rounded-xl border transition-colors ${
                         bgColor === c.value 
-                          ? 'border-slate-900 bg-slate-50 dark:border-slate-100 dark:bg-slate-800' 
+                          ? 'border-[#ff385c] bg-[#ff385c]/5 dark:border-[#ff385c]' 
                           : 'border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800'
                       }`}
                     >
                       <div 
-                        className={`w-6 h-6 rounded-sm border border-slate-300 dark:border-slate-600 ${bgColor === c.value ? 'ring-2 ring-slate-900/10 dark:ring-slate-100/10 ring-offset-1' : ''}`}
+                        className={`w-6 h-6 rounded-full border border-slate-300 dark:border-slate-600 ${bgColor === c.value ? 'ring-2 ring-[#ff385c] ring-offset-1' : ''}`}
                         style={{ backgroundColor: c.value }}
                       />
                       <span className={`text-[10px] font-semibold ${bgColor === c.value ? 'text-slate-900 dark:text-slate-100' : 'text-slate-500 dark:text-slate-400'}`}>
@@ -452,26 +464,45 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
             </section>
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex gap-3">
+          {/* Action Buttons (Desktop Sidebar) */}
+          <div className="hidden lg:flex gap-3">
             <button
               onClick={onCancel}
               disabled={isProcessing || isRemovingBg}
-              className="flex-1 flex justify-center items-center py-3 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-semibold rounded-sm transition-colors disabled:opacity-50"
+              className="flex-1 flex justify-center items-center py-3 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-semibold rounded-full transition-all disabled:opacity-50 active:scale-95"
             >
-              Cancel
+              {t.cancel}
             </button>
             <button
               onClick={handleNext}
               disabled={!completedCrop || isProcessing || isRemovingBg}
-              className="flex-[2] flex justify-center items-center gap-2 py-3 bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 text-white dark:text-slate-900 text-sm font-semibold rounded-sm transition-colors disabled:opacity-50"
+              className="flex-[2] flex justify-center items-center gap-2 py-3 bg-[#ff385c] hover:bg-[#e00b41] text-white text-sm font-bold rounded-full shadow-sm transition-all disabled:opacity-50 active:scale-95"
             >
-              {isProcessing ? 'Saving...' : 'Export Photo'}
+              {isProcessing ? t.saving : t.exportPhoto}
               {!isProcessing && <ArrowRight size={16} />}
             </button>
           </div>
 
         </div>
+      </div>
+
+      {/* Action Buttons (Mobile Sticky Bar) */}
+      <div className="lg:hidden sticky bottom-3 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-slate-200 dark:border-slate-800 p-3 rounded-2xl flex gap-3 shadow-lg">
+        <button
+          onClick={onCancel}
+          disabled={isProcessing || isRemovingBg}
+          className="flex-1 flex justify-center items-center py-3 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs sm:text-sm font-semibold rounded-full transition-all disabled:opacity-50 active:scale-95"
+        >
+          {t.cancel}
+        </button>
+        <button
+          onClick={handleNext}
+          disabled={!completedCrop || isProcessing || isRemovingBg}
+          className="flex-[2] flex justify-center items-center gap-2 py-3 bg-[#ff385c] hover:bg-[#e00b41] text-white text-xs sm:text-sm font-bold rounded-full shadow-sm transition-all disabled:opacity-50 active:scale-95"
+        >
+          {isProcessing ? t.saving : t.exportPhoto}
+          {!isProcessing && <ArrowRight size={16} />}
+        </button>
       </div>
     </div>
   );

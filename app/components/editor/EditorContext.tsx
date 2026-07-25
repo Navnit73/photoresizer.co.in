@@ -118,14 +118,31 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
       return;
     }
 
+    const hasUndoableChange =
+      prevStateRef.current.imageFile !== state.imageFile ||
+      prevStateRef.current.imageUrl !== state.imageUrl ||
+      prevStateRef.current.width !== state.width ||
+      prevStateRef.current.height !== state.height ||
+      prevStateRef.current.format !== state.format ||
+      prevStateRef.current.quality !== state.quality ||
+      prevStateRef.current.backgroundColor !== state.backgroundColor ||
+      prevStateRef.current.rotation !== state.rotation ||
+      prevStateRef.current.crop !== state.crop ||
+      prevStateRef.current.aspectRatio !== state.aspectRatio ||
+      prevStateRef.current.fileName !== state.fileName ||
+      prevStateRef.current.textOverlays !== state.textOverlays;
+
+    if (!hasUndoableChange) {
+      prevStateRef.current = state;
+      return;
+    }
+
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     
     timeoutRef.current = setTimeout(() => {
-      if (prevStateRef.current !== state) {
-        setPast((p) => [...p, prevStateRef.current]);
-        setFuture([]);
-        prevStateRef.current = state;
-      }
+      setPast((p) => [...p, prevStateRef.current]);
+      setFuture([]);
+      prevStateRef.current = state;
     }, 400);
 
     return () => {
@@ -239,7 +256,7 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
       opacity: 100,
       rotation: 0,
       align: 'center',
-      fontFamily: 'var(--font-geist-sans), sans-serif',
+      fontFamily: 'sans-serif',
     };
     setState((prev) => ({
       ...prev,

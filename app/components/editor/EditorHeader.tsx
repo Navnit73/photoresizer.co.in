@@ -4,10 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { useEditor } from './EditorContext';
 import { RefreshCcw, Sun, Moon, Undo2, Redo2 } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { useTranslation } from '@/app/hooks/useTranslation';
 
 export default function EditorHeader() {
   const { reset, imageFile, undo, redo, canUndo, canRedo, fileName, setFileName } = useEditor();
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -46,7 +48,7 @@ export default function EditorHeader() {
               className="flex items-center gap-1.5 text-xs font-semibold text-[#6a6a6a] dark:text-slate-400 hover:text-[#ff385c] transition-all px-3 py-1.5 rounded-full hover:bg-[#ff385c]/10"
             >
               <RefreshCcw size={13} />
-              <span className="hidden sm:inline">Resetar</span>
+              <span className="hidden sm:inline">{t.reset}</span>
             </button>
           </>
         )}
@@ -60,7 +62,7 @@ export default function EditorHeader() {
             value={fileName}
             onChange={(e) => setFileName(e.target.value)}
             className="bg-transparent hover:bg-[#f7f7f7] dark:hover:bg-slate-800 focus:bg-[#f7f7f7] dark:focus:bg-slate-800 border border-transparent focus:border-[#dddddd] dark:focus:border-slate-700 text-sm font-bold text-[#222222] dark:text-white placeholder-[#6a6a6a] dark:placeholder-slate-500 text-center rounded-full px-4 py-1.5 focus:outline-none transition-all w-28 sm:w-48 xl:w-64 truncate"
-            placeholder="Nome do Arquivo"
+            placeholder={t.fileNamePlaceholder || "PhotoResizer"}
           />
         )}
       </div>

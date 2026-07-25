@@ -84,43 +84,16 @@ export default function OriginalWorkspace() {
         const file = acceptedFiles[0];
         
         setIsUploading(true);
-        setUploadProgress(0);
+        setUploadProgress(10);
         
-        const startTime = Date.now();
-        const minDuration = 5000;
-        
-        let isCompressionDone = false;
-        let compressedFileResult: File | null = null;
-        let compressionError: any = null;
-
-        // Start real compression in the background
         imageCompression(file, {
           maxSizeMB: 5,
           maxWidthOrHeight: 4096,
           useWebWorker: true,
-        }).then(res => {
-          isCompressionDone = true;
-          compressedFileResult = res;
-        }).catch(err => {
-          isCompressionDone = true;
-          compressionError = err;
-        });
-
-        // Run the 5-second progress bar
-        const timer = setInterval(() => {
-          const elapsed = Date.now() - startTime;
-          // Hold at 99% max if it takes longer than 5 seconds
-          const timeProgress = Math.min((elapsed / minDuration) * 100, 99);
-          
-          if (elapsed >= minDuration && isCompressionDone) {
-            clearInterval(timer);
+        })
+          .then((res) => {
             setUploadProgress(100);
-            
-            const finalFile = compressedFileResult || file;
-            if (compressionError) {
-              console.error("Compression error:", compressionError);
-            }
-
+            const finalFile = res || file;
             const url = URL.createObjectURL(finalFile);
             const img = new Image();
             img.onload = () => {
@@ -132,14 +105,31 @@ export default function OriginalWorkspace() {
               setUploadProgress(0);
             };
             img.onerror = () => {
-               setIsUploading(false);
+              setIsUploading(false);
+              setUploadProgress(0);
             };
             img.decoding = "async";
             img.src = url;
-          } else {
-            setUploadProgress(timeProgress);
-          }
-        }, 50);
+          })
+          .catch((err) => {
+            console.error("Compression error:", err);
+            const url = URL.createObjectURL(file);
+            const img = new Image();
+            img.onload = () => {
+              setImageFile(file, url, img.width, img.height);
+              setIsCropping(false);
+              setCropState(undefined);
+              setCompletedCrop(undefined);
+              setIsUploading(false);
+              setUploadProgress(0);
+            };
+            img.onerror = () => {
+              setIsUploading(false);
+              setUploadProgress(0);
+            };
+            img.decoding = "async";
+            img.src = url;
+          });
       }
     },
     [setImageFile],
@@ -187,7 +177,7 @@ export default function OriginalWorkspace() {
       const file = new File([blob], "no-bg.png", { type: "image/png" });
       const img = new Image();
       img.onload = () => {
-        setImageFile(file, url, img.width, img.height);
+        updateBaseImage(file, url, img.width, img.height);
         setBgProgress(100);
         setTimeout(() => setIsBgRemoving(false), 400);
       };
@@ -274,10 +264,11 @@ export default function OriginalWorkspace() {
 
     const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
     const clientY = "touches" in e ? e.touches[0].clientY : e.clientY;
-    const container = containerRef.current;
-    if (!container) return;
+    const imgEl = imageRef.current || (containerRef.current?.querySelector('img') as HTMLImageElement);
+    const targetContainer = imgEl?.parentElement || containerRef.current;
+    if (!targetContainer) return;
 
-    const rect = container.getBoundingClientRect();
+    const rect = targetContainer.getBoundingClientRect();
     const overlay = textOverlays.find((t) => t.id === id);
     if (!overlay) return;
 
@@ -289,12 +280,13 @@ export default function OriginalWorkspace() {
 
   const handleContainerMouseMove = (e: React.MouseEvent | React.TouchEvent) => {
     if (!draggingTextId.current) return;
-    const container = containerRef.current;
-    if (!container) return;
+    const imgEl = imageRef.current || (containerRef.current?.querySelector('img') as HTMLImageElement);
+    const targetContainer = imgEl?.parentElement || containerRef.current;
+    if (!targetContainer) return;
 
     const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
     const clientY = "touches" in e ? e.touches[0].clientY : e.clientY;
-    const rect = container.getBoundingClientRect();
+    const rect = targetContainer.getBoundingClientRect();
 
     const x = Math.max(
       0,
@@ -376,7 +368,7 @@ export default function OriginalWorkspace() {
               className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-lg transition-colors"
             >
               <CropIcon size={12} />
-              <span>Crop</span>
+              <span>{t.crop}</span>
             </button>
             <button
               onClick={handleRemoveBg}
@@ -385,9 +377,9 @@ export default function OriginalWorkspace() {
             >
               <Scissors size={12} />
               <span className="hidden xs:inline">
-                {isBgRemoving ? "Removendo…" : "Remover Fundo IA"}
+                {isBgRemoving ? t.removingBg : t.removeBgAi}
               </span>
-              <span className="xs:hidden">{isBgRemoving ? "…" : "BG IA"}</span>
+              <span className="xs:hidden">{isBgRemoving ? "…" : t.removeBgAi}</span>
             </button>
           </>
         )}
@@ -398,13 +390,13 @@ export default function OriginalWorkspace() {
               onClick={handleCancelCrop}
               className="flex items-center gap-1 px-3 py-1.5 text-xs font-bold bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-white hover:bg-[#dddddd] rounded-full transition-colors border border-[#dddddd] dark:border-slate-700"
             >
-              <X size={12} /> Cancelar
+              <X size={12} /> {t.cancel}
             </button>
             <button
               onClick={handleCropComplete}
               className="flex items-center gap-1 px-4 py-1.5 text-xs font-bold bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full transition-all shadow-sm active:scale-95"
             >
-              <Check size={12} /> Aplicar Corte
+              <Check size={12} /> {t.applyCrop}
             </button>
           </div>
         )}
@@ -415,17 +407,20 @@ export default function OriginalWorkspace() {
         <div className="bg-transparent border-b border-[#dddddd] dark:border-slate-800 px-4 py-2.5 flex-shrink-0 transition-colors duration-300">
           <div className="flex flex-wrap gap-2 items-center">
             <span className="text-[11px] font-bold text-[#6a6a6a] dark:text-slate-400 uppercase tracking-wider">
-              Proporção:
+              {t.aspectRatio}:
             </span>
             {ASPECT_RATIOS.map((ratio) => (
               <button
                 key={ratio.label}
                 onClick={() => {
                   setAspectRatio(ratio.label);
-                  if (cropState && ratio.value) {
+                  if (cropState && ratio.value && imageRef.current) {
+                    const imgW = imageRef.current.naturalWidth || 1;
+                    const imgH = imageRef.current.naturalHeight || 1;
+                    const targetHeightPct = (cropState.width * (imgW / imgH)) / ratio.value;
                     setCropState({
                       ...cropState,
-                      height: cropState.width / ratio.value,
+                      height: Math.min(100, targetHeightPct),
                     });
                   }
                 }}
@@ -502,10 +497,10 @@ export default function OriginalWorkspace() {
                 </span>
               </div>
               <p className="text-sm font-bold text-[#222222] dark:text-white mb-1">
-                Removendo Fundo...
+                {t.removingBg}
               </p>
               <p className="text-xs text-[#6a6a6a] dark:text-slate-400 text-center max-w-[220px]">
-                Processamento por IA no dispositivo com 100% de privacidade.
+                {t.bgRemovalPrivacy}
               </p>
             </div>
           )}
@@ -523,7 +518,7 @@ export default function OriginalWorkspace() {
                   ></div>
                 </div>
                 <h4 className="text-sm sm:text-base font-bold text-[#222222] dark:text-white mb-1.5">
-                  Carregando imagem...
+                  {t.loadingImage}
                 </h4>
                 <p className="text-xs text-[#6a6a6a]">{Math.round(uploadProgress)}%</p>
               </div>
@@ -546,9 +541,9 @@ export default function OriginalWorkspace() {
                 />
               </div>
               <h4 className="text-base font-bold text-[#222222] dark:text-white mb-1.5">
-                {isDragActive ? "Solte a imagem aqui" : "Selecione uma imagem"}
+                {isDragActive ? t.dropImageHere : t.selectImage}
               </h4>
-              <p className="text-xs text-[#6a6a6a] dark:text-slate-400 mb-5">Arraste e solte ou clique para navegar</p>
+              <p className="text-xs text-[#6a6a6a] dark:text-slate-400 mb-5">{t.dragDropOrClick}</p>
               <div className="flex gap-2">
                 {["JPG", "PNG", "WEBP"].map((fmt) => (
                   <span

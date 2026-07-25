@@ -1,10 +1,10 @@
-'use client';
-
 import React, { useState, useRef, useEffect } from 'react';
 import PassportCropper from './PassportCropper';
 import { Upload, Download, RefreshCw, CheckCircle2, Image as ImageIcon } from 'lucide-react';
+import { useTranslation } from '@/app/hooks/useTranslation';
 
 export default function PassportMakerApp() {
+  const { t } = useTranslation();
   const [imageSrc, setImageSrc] = useState<string | null>(null);
   const [resultImage, setResultImage] = useState<string | null>(null);
 
@@ -99,34 +99,34 @@ export default function PassportMakerApp() {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto">
+    <div className="w-full max-w-5xl mx-auto font-['Airbnb_Cereal_VF',Circular,sans-serif] px-2 sm:px-4">
       {!imageSrc && !resultImage && (
-        <div className="flex flex-col items-center justify-center p-8 md:p-16">
+        <div className="flex flex-col items-center justify-center p-4 sm:p-8 md:p-12">
           <div 
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}
             onClick={() => fileInputRef.current?.click()}
-            className={`w-full flex flex-col items-center justify-center p-12 md:p-20 border-2 border-dashed bg-white dark:bg-slate-900 transition-colors cursor-pointer rounded-sm
+            className={`w-full flex flex-col items-center justify-center p-8 sm:p-12 md:p-16 border-2 border-dashed bg-white dark:bg-slate-900 transition-colors cursor-pointer rounded-2xl
               ${isDragging 
-                ? 'border-slate-800 bg-slate-50 dark:border-slate-300 dark:bg-slate-800' 
-                : 'border-slate-300 dark:border-slate-700 hover:border-slate-400 hover:bg-slate-50 dark:hover:border-slate-500 dark:hover:bg-slate-800'
+                ? 'border-[#ff385c] bg-[#ff385c]/5 dark:border-[#ff385c]' 
+                : 'border-slate-300 dark:border-slate-700 hover:border-[#ff385c] hover:bg-slate-50 dark:hover:border-slate-500 dark:hover:bg-slate-800'
               }`}
           >
-            <div className={`p-4 mb-4 transition-colors ${isDragging ? 'text-slate-800 dark:text-slate-200' : 'text-slate-500 dark:text-slate-400'}`}>
+            <div className={`p-3 sm:p-4 mb-2 sm:mb-4 transition-colors ${isDragging ? 'text-[#ff385c]' : 'text-[#ff385c]'}`}>
               <Upload size={32} strokeWidth={1.5} />
             </div>
             
-            <h3 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2 text-center">
-              Upload Your Photo
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2 text-center">
+              {t.uploadYourPhoto}
             </h3>
-            <p className="text-slate-500 dark:text-slate-400 text-center max-w-md text-sm md:text-base mb-6">
-              Drag and drop an image here, or click to browse.
+            <p className="text-slate-500 dark:text-slate-400 text-center max-w-md text-xs sm:text-sm md:text-base mb-6">
+              {t.dragDropBrowse}
             </p>
             
-            <button className="bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 text-white dark:text-slate-900 text-sm font-semibold py-2.5 px-6 rounded-sm transition-colors flex items-center gap-2">
+            <button className="bg-[#ff385c] hover:bg-[#e00b41] text-white text-xs sm:text-sm font-bold py-2.5 px-6 rounded-full shadow-sm transition-all flex items-center gap-2 active:scale-95">
               <ImageIcon size={18} />
-              Browse Files
+              {t.browseFiles}
             </button>
             <input 
               ref={fileInputRef}
@@ -148,50 +148,50 @@ export default function PassportMakerApp() {
       )}
 
       {resultImage && (
-        <div className="flex flex-col items-center justify-center p-4 md:p-8">
-          <div className="w-full max-w-4xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 rounded-sm flex flex-col md:flex-row overflow-hidden shadow-sm">
+        <div className="flex flex-col items-center justify-center p-2 sm:p-4 md:p-8">
+          <div className="w-full max-w-4xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 rounded-2xl flex flex-col md:flex-row overflow-hidden shadow-sm">
             
             {/* Left: Image Preview */}
-            <div className="w-full md:w-1/2 p-8 bg-slate-50 dark:bg-slate-900/50 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800">
-              <div className="bg-white dark:bg-slate-900 p-3 border border-slate-200 dark:border-slate-700 rounded-sm shadow-sm">
+            <div className="w-full md:w-1/2 p-4 sm:p-8 bg-slate-50 dark:bg-slate-900/50 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800">
+              <div className="bg-white dark:bg-slate-900 p-2 sm:p-3 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm">
                 <img 
                   src={resultImage} 
                   alt="Cropped Passport Result" 
-                  className="w-full max-w-[350px] aspect-[35/45] object-cover border border-slate-300 dark:border-slate-700 rounded-sm"
+                  className="w-full max-w-[260px] sm:max-w-[320px] aspect-[35/45] object-cover border border-slate-300 dark:border-slate-700 rounded-lg"
                 />
               </div>
             </div>
 
             {/* Right: Details & Actions */}
-            <div className="w-full md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+            <div className="w-full md:w-1/2 p-5 sm:p-8 md:p-10 flex flex-col justify-center">
               
-              <div className="flex items-center gap-4 mb-8">
-                 <div className="w-12 h-12 rounded-sm bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center border border-emerald-200 dark:border-emerald-800/50 text-emerald-600 dark:text-emerald-500 flex-shrink-0">
-                    <CheckCircle2 size={24} />
+              <div className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center border border-emerald-200 dark:border-emerald-800/50 text-emerald-600 dark:text-emerald-500 flex-shrink-0">
+                    <CheckCircle2 size={22} />
                  </div>
                  <div>
-                   <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Photo is Ready</h2>
-                   <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Successfully formatted for passport</p>
+                   <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">{t.photoIsReady}</h2>
+                   <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">{t.formattedForPassport}</p>
                  </div>
               </div>
 
               {/* File details grid */}
-              <div className="grid grid-cols-2 gap-3 mb-10">
-                 <div className="p-3 border border-slate-200 dark:border-slate-800 rounded-sm bg-slate-50 dark:bg-slate-900/50">
-                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-bold mb-1 uppercase tracking-wider">Format</div>
-                    <div className="text-sm font-semibold text-slate-900 dark:text-white">JPEG</div>
+              <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-6 sm:mb-10">
+                 <div className="p-2.5 sm:p-3 border border-slate-200 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-900/50">
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-bold mb-1 uppercase tracking-wider">{t.formatLabel}</div>
+                    <div className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">JPEG</div>
                  </div>
-                 <div className="p-3 border border-slate-200 dark:border-slate-800 rounded-sm bg-slate-50 dark:bg-slate-900/50">
-                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-bold mb-1 uppercase tracking-wider">Size</div>
-                    <div className="text-sm font-semibold text-slate-900 dark:text-white">&lt; 500KB</div>
+                 <div className="p-2.5 sm:p-3 border border-slate-200 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-900/50">
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-bold mb-1 uppercase tracking-wider">{t.sizeLabel}</div>
+                    <div className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">&lt; 500KB</div>
                  </div>
-                 <div className="p-3 border border-slate-200 dark:border-slate-800 rounded-sm bg-slate-50 dark:bg-slate-900/50">
-                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-bold mb-1 uppercase tracking-wider">Dimensions</div>
-                    <div className="text-sm font-semibold text-slate-900 dark:text-white">826 x 1062 px</div>
+                 <div className="p-2.5 sm:p-3 border border-slate-200 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-900/50">
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-bold mb-1 uppercase tracking-wider">{t.dimensionsLabel}</div>
+                    <div className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">826 x 1062 px</div>
                  </div>
-                 <div className="p-3 border border-slate-200 dark:border-slate-800 rounded-sm bg-slate-50 dark:bg-slate-900/50">
-                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-bold mb-1 uppercase tracking-wider">Aspect Ratio</div>
-                    <div className="text-sm font-semibold text-slate-900 dark:text-white">3.5 x 4.5 cm</div>
+                 <div className="p-2.5 sm:p-3 border border-slate-200 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-900/50">
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-bold mb-1 uppercase tracking-wider">{t.aspectRatio}</div>
+                    <div className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">3.5 x 4.5 cm</div>
                  </div>
               </div>
 
@@ -199,10 +199,10 @@ export default function PassportMakerApp() {
                  <a 
                    href={resultImage} 
                    download="passport_photo.jpg" 
-                   className="w-full flex justify-center items-center gap-2 bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 text-white dark:text-slate-900 py-3.5 px-6 rounded-sm text-sm font-bold transition-colors"
+                   className="w-full flex justify-center items-center gap-2 bg-[#ff385c] hover:bg-[#e00b41] text-white py-3 sm:py-3.5 px-6 rounded-full text-xs sm:text-sm font-bold shadow-sm transition-all active:scale-95"
                  >
                     <Download size={18} />
-                    Download Photo
+                    {t.downloadPhoto}
                  </a>
                  <button 
                    onClick={() => {
@@ -210,10 +210,10 @@ export default function PassportMakerApp() {
                      const event = new CustomEvent("editor-file-loaded", { detail: { loaded: false } });
                      window.dispatchEvent(event);
                    }} 
-                   className="w-full flex justify-center items-center gap-2 bg-white dark:bg-slate-950 hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 py-3.5 px-6 rounded-sm text-sm font-bold transition-colors"
+                   className="w-full flex justify-center items-center gap-2 bg-white dark:bg-slate-950 hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 py-3 sm:py-3.5 px-6 rounded-full text-xs sm:text-sm font-bold transition-all active:scale-95"
                  >
                     <RefreshCw size={18} />
-                    Create Another
+                    {t.createAnother}
                  </button>
               </div>
             </div>

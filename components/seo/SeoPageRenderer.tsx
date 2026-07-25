@@ -9,7 +9,8 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } fr
 import Script from 'next/script';
 import Link from 'next/link';
 import { useDropzone } from "react-dropzone";
-import { UploadCloud, Shield, Image, Layers, Type, ArrowRight } from "lucide-react";
+import { UploadCloud, Shield, ArrowRight } from "lucide-react";
+import { useTranslation } from '../../app/hooks/useTranslation';
 
 import PhotoEditor from '../../app/components/editor/PhotoEditor';
 import PassportMakerApp from '../../app/components/passport_photo/PassportMakerApp';
@@ -28,6 +29,7 @@ interface Props {
 }
 
 export function SeoPageRenderer({ page, lang }: Props) {
+  const { t } = useTranslation();
   const initialTab = page.showTool === 'bg-remover' ? 'bg_remover' : 'editor';
   const [activeTab, setActiveTab] = useState<"editor" | "bg_remover">(initialTab);
   const [hasUploadedImage, setHasUploadedImage] = useState(false);
@@ -139,7 +141,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                   {/* Trust indicator badge */}
                   <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 text-xs font-semibold text-[#222222] dark:text-white">
                     <Shield size={14} className="text-[#ff385c]" />
-                    <span>Processamento 100% privado no navegador</span>
+                    <span>{t.browserPrivacyBadge}</span>
                   </div>
                 </div>
 
@@ -167,16 +169,16 @@ export function SeoPageRenderer({ page, lang }: Props) {
                         </div>
 
                         <h3 className="text-xl font-bold text-[#222222] dark:text-white mb-2">
-                          {isDragActive ? "Solte sua foto aqui!" : "Carregue sua foto"}
+                          {isDragActive ? t.dropPhotoHere : t.uploadYourPhoto}
                         </h3>
                         <p className="text-xs text-[#6a6a6a] dark:text-slate-400 mb-6 max-w-xs leading-[1.5]">
-                          Arraste e solte sua imagem aqui ou clique para selecionar. Edição instantânea no navegador.
+                          {t.heroDragDropSub}
                         </p>
 
                         {/* Signature Rausch Button ({colors.primary} #ff385c) */}
                         <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#ff385c] hover:bg-[#e00b41] text-white text-xs font-bold rounded-full shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.98] mb-5">
                           <UploadCloud size={16} />
-                          <span>Selecionar Imagem</span>
+                          <span>{t.selectImage}</span>
                         </button>
 
                         {/* Format Badges */}
@@ -190,7 +192,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                             </span>
                           ))}
                           <span className="text-[10px] text-[#6a6a6a] dark:text-slate-400 font-medium ml-1">
-                            até 30MB
+                            {t.upTo30MB}
                           </span>
                         </div>
                       </div>
@@ -200,7 +202,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                     <div className="flex items-center justify-center gap-1.5 mt-3 text-center">
                       <Shield size={12} className="text-[#ff385c]" />
                       <span className="text-[11px] text-[#6a6a6a] dark:text-slate-400 font-medium">
-                        Seus arquivos não são enviados para servidores externos.
+                        {t.noServerUploadPrivacy}
                       </span>
                     </div>
                   </div>

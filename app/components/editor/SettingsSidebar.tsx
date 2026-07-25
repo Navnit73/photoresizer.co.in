@@ -17,12 +17,13 @@ import {
 
 const FONTS = ['Arial', 'Georgia', 'Times New Roman', 'Courier New', 'Verdana', 'Impact', 'Comic Sans MS'];
 
-function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: {
+function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect, t }: {
   overlay: TextOverlay;
   onUpdate: (updates: Partial<TextOverlay>) => void;
   onRemove: () => void;
   isSelected: boolean;
   onSelect: () => void;
+  t: Record<string, string>;
 }) {
   return (
     <div className={`rounded-2xl border transition-all duration-200 ${isSelected ? 'border-[#ff385c] bg-[#ff385c]/5 shadow-sm' : 'border-[#dddddd] dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-[#ff385c]/40'}`}>
@@ -36,7 +37,7 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
         <div className="flex items-center gap-2 min-w-0">
           <Type size={14} className={isSelected ? 'text-[#ff385c]' : 'text-[#6a6a6a] dark:text-slate-400'} />
           <span className="text-xs font-bold text-[#222222] dark:text-white truncate max-w-[120px]">
-            {overlay.text || 'Texto vazio'}
+            {overlay.text || t.emptyText}
           </span>
         </div>
         <div className="flex items-center gap-1">
@@ -53,7 +54,7 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
       {isSelected && (
         <div className="px-3.5 pb-4 space-y-3 border-t border-[#dddddd] dark:border-slate-800 pt-3">
           <div>
-            <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Conteúdo do Texto</label>
+            <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.textContent}</label>
             <textarea
               value={overlay.text}
               onChange={(e) => onUpdate({ text: e.target.value })}
@@ -64,7 +65,7 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
 
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Fonte</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.font}</label>
               <select
                 value={overlay.fontFamily}
                 onChange={(e) => onUpdate({ fontFamily: e.target.value })}
@@ -74,7 +75,7 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
               </select>
             </div>
             <div>
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Cor</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.color}</label>
               <div className="flex gap-1.5">
                 <input
                   type="color"
@@ -94,7 +95,7 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
 
           <div>
             <div className="flex justify-between mb-1">
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400">Tamanho</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400">{t.size}</label>
               <span className="text-[10px] font-bold text-[#222222] dark:text-white">{overlay.fontSize}px</span>
             </div>
             <input
@@ -106,7 +107,7 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
 
           <div>
             <div className="flex justify-between mb-1">
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400">Opacidade</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400">{t.opacity}</label>
               <span className="text-[10px] font-bold text-[#222222] dark:text-white">{overlay.opacity}%</span>
             </div>
             <input
@@ -118,18 +119,18 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
 
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Posição X</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.posX}</label>
               <input
                 type="number" min="0" max="100" value={Math.round(overlay.x)}
-                onChange={(e) => onUpdate({ x: Number(e.target.value) })}
+                onChange={(e) => onUpdate({ x: Math.max(0, Math.min(100, Number(e.target.value) || 0)) })}
                 className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs focus:outline-none text-[#222222] dark:text-white"
               />
             </div>
             <div>
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Posição Y</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.posY}</label>
               <input
                 type="number" min="0" max="100" value={Math.round(overlay.y)}
-                onChange={(e) => onUpdate({ y: Number(e.target.value) })}
+                onChange={(e) => onUpdate({ y: Math.max(0, Math.min(100, Number(e.target.value) || 0)) })}
                 className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs focus:outline-none text-[#222222] dark:text-white"
               />
             </div>
@@ -161,8 +162,8 @@ export default function SettingsSidebar() {
   const disabled = !imageFile;
 
   const tabs = [
-    { id: 'export', label: 'Exportar', icon: <SlidersHorizontal size={14} /> },
-    { id: 'text', label: 'Texto', icon: <Type size={14} /> },
+    { id: 'export', label: t.exportTab, icon: <SlidersHorizontal size={14} /> },
+    { id: 'text', label: t.textTab, icon: <Type size={14} /> },
   ] as const;
 
   return (
@@ -199,7 +200,7 @@ export default function SettingsSidebar() {
                   <label className="text-xs font-semibold text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.widthPx}</label>
                   <input
                     type="number" value={width}
-                    onChange={(e) => setWidth(Number(e.target.value))}
+                    onChange={(e) => setWidth(Math.max(1, Number(e.target.value) || 0))}
                     disabled={disabled}
                     className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-3 py-2 text-sm font-semibold text-[#222222] dark:text-white disabled:opacity-40 focus:outline-none focus:border-[#222222] dark:focus:border-white transition-colors"
                   />
@@ -208,7 +209,7 @@ export default function SettingsSidebar() {
                   <label className="text-xs font-semibold text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.heightPx}</label>
                   <input
                     type="number" value={height}
-                    onChange={(e) => setHeight(Number(e.target.value))}
+                    onChange={(e) => setHeight(Math.max(1, Number(e.target.value) || 0))}
                     disabled={disabled}
                     className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-3 py-2 text-sm font-semibold text-[#222222] dark:text-white disabled:opacity-40 focus:outline-none focus:border-[#222222] dark:focus:border-white transition-colors"
                   />
@@ -303,7 +304,7 @@ export default function SettingsSidebar() {
                     key={color}
                     onClick={() => setBackgroundColor(color)}
                     disabled={disabled}
-                    title={color === 'transparent' ? 'Transparente' : color}
+                    title={color === 'transparent' ? t.transparent : color}
                     className={`w-8 h-8 rounded-full border-2 disabled:opacity-40 transition-all ${
                       backgroundColor === color ? 'border-[#ff385c] scale-110 shadow-sm' : 'border-[#dddddd] dark:border-slate-700 hover:scale-105'
                     }`}
@@ -331,12 +332,12 @@ export default function SettingsSidebar() {
                   onClick={addTextOverlay}
                   className="w-full flex items-center justify-center gap-2 py-3 bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full text-xs font-bold transition-all shadow-sm active:scale-95"
                 >
-                  <Plus size={16} /> Adicionar Camada de Texto
+                  <Plus size={16} /> {t.addTextOverlay}
                 </button>
 
                 {(textOverlays || []).length === 0 ? (
                   <div className="text-center py-6">
-                    <p className="text-xs text-[#6a6a6a]">Nenhuma camada de texto. Adicione uma acima.</p>
+                    <p className="text-xs text-[#6a6a6a]">{t.noTextOverlays}</p>
                   </div>
                 ) : (
                   <div className="space-y-2">
@@ -344,6 +345,7 @@ export default function SettingsSidebar() {
                       <TextOverlayItem
                         key={overlay.id}
                         overlay={overlay}
+                        t={t}
                         isSelected={selectedTextId === overlay.id}
                         onSelect={() => setSelectedTextId(selectedTextId === overlay.id ? null : overlay.id)}
                         onUpdate={(updates) => updateTextOverlay(overlay.id, updates)}

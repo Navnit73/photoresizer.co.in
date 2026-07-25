@@ -79,8 +79,8 @@ self.onmessage = async (e) => {
       const y = (overlay.y / 100) * canvasHeight;
       ctx.translate(x, y);
       ctx.rotate((overlay.rotation * Math.PI) / 180);
-      ctx.globalAlpha = overlay.opacity / 100;
-      ctx.font = `${overlay.fontWeight} ${overlay.fontSize}px ${overlay.fontFamily}`;
+      const safeFontFamily = (overlay.fontFamily || 'sans-serif').replace(/var\([^)]+\)/g, 'sans-serif');
+      ctx.font = `${overlay.fontWeight || 'normal'} ${overlay.fontSize}px ${safeFontFamily}`;
       ctx.fillStyle = overlay.color;
       ctx.textAlign = overlay.align;
       ctx.textBaseline = 'middle';
