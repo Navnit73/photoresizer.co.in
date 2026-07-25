@@ -6,6 +6,7 @@ import EditorHeader from './EditorHeader';
 import SettingsSidebar from './SettingsSidebar';
 import OriginalWorkspace from './OriginalWorkspace';
 import DownloadPanel from './DownloadPanel';
+import { AdBanner } from '@/components/AdBanner';
 
 function EditorContent() {
   const { imageFile } = useEditor();
@@ -21,7 +22,7 @@ function EditorContent() {
   }
 
   return (
-    <div className="w-full flex flex-col bg-[#ffffff] dark:bg-[#121212] min-h-[100dvh] sm:min-h-[600px] sm:h-[calc(100vh-64px)] text-[#222222] dark:text-[#f1f1f1] font-['Airbnb_Cereal_VF',Circular,sans-serif]">
+    <div className="w-full flex flex-col bg-[#ffffff] dark:bg-[#121212] min-h-[100dvh] sm:min-h-[600px] text-[#222222] dark:text-[#f1f1f1] font-['Airbnb_Cereal_VF',Circular,sans-serif]">
       
       {/* Integrated Header */}
       <div className="flex-shrink-0 z-10 border-b border-[#dddddd] dark:border-slate-800 sticky top-0 sm:relative bg-white dark:bg-[#121212]">
@@ -29,22 +30,29 @@ function EditorContent() {
       </div>
 
       {/* Editor Body */}
-      <div className="flex flex-col lg:flex-row flex-1 p-2 sm:p-4 gap-3 sm:gap-4 overflow-y-auto lg:overflow-hidden relative z-0">
+      <div className="flex flex-col lg:flex-row flex-1 p-2 sm:p-4 gap-3 sm:gap-4 overflow-y-auto lg:overflow-visible relative z-0">
         
         {/* Left Column: Settings Sidebar */}
-        <div className="w-full lg:w-[320px] flex-shrink-0 flex flex-col order-3 lg:order-1 h-auto lg:h-full lg:overflow-hidden border border-[#dddddd] dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 shadow-sm">
+        <div className="w-full lg:w-[320px] flex-shrink-0 flex flex-col order-3 lg:order-1 h-auto border border-[#dddddd] dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 shadow-sm">
           <SettingsSidebar />
+          {/* Sidebar Ad Unit */}
+          <div className="px-3 pb-3">
+            <AdBanner type="in-tool" />
+          </div>
         </div>
 
         {/* Center/Right Column: Canvas & Preview split */}
-        <div className="flex-none lg:flex-1 flex flex-col gap-3 sm:gap-4 overflow-visible lg:overflow-hidden order-1 lg:order-2">
+        <div className="flex-none lg:flex-1 flex flex-col gap-3 sm:gap-4 overflow-visible order-1 lg:order-2">
            
            {/* Canvas */}
-           <div className="w-full lg:flex-1 min-h-[60vh] sm:min-h-[500px] lg:min-h-0 lg:h-full flex flex-col overflow-hidden relative border border-[#dddddd] dark:border-slate-800 rounded-2xl bg-[#f7f7f7] dark:bg-slate-900/50">
+           <div className="w-full lg:flex-1 min-h-[60vh] sm:min-h-[500px] lg:min-h-0 flex flex-col overflow-hidden relative border border-[#dddddd] dark:border-slate-800 rounded-2xl bg-[#f7f7f7] dark:bg-slate-900/50">
              <OriginalWorkspace />
            </div>
 
            <DownloadPanel />
+
+           {/* Download-adjacent Ad Unit */}
+           <AdBanner type="in-tool" className="my-1" />
            
         </div>
 

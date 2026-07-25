@@ -35,7 +35,7 @@ export default function SpanishLayout({ children }: { children: React.ReactNode 
       </div>
 
       {/* Spanish Specific Footer */}
-      <footer className="w-full p-6 bg-slate-50 text-center text-slate-500 text-sm mt-auto border-t border-slate-200 flex flex-col items-center gap-4">
+      <footer className="w-full p-6 bg-slate-50 text-center text-slate-500 text-sm mt-auto border-t border-slate-200 flex flex-col items-center gap-4 pb-24 sm:pb-28">
         <div className="flex flex-wrap justify-center gap-4">
           <Link href="/es/como-usar" className="hover:text-slate-800 transition-colors">Cómo usar</Link>
           <Link href="/es/contacto" className="hover:text-slate-800 transition-colors">Contacto</Link>
@@ -57,6 +57,10 @@ export default function SpanishLayout({ children }: { children: React.ReactNode 
           <p className="text-xs font-medium mt-1">Designed & Developed with ❤️ by Navnit Rai</p>
         </div>
       </footer>
+
+      {/* Global Sticky Bottom Ad Anchor */}
+      <AdBanner type="sticky-bottom" />
     </div>
   );
 }
+

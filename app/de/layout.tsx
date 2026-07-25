@@ -31,7 +31,7 @@ export default function GermanLayout({ children }: { children: React.ReactNode }
         <AdBanner type="responsive" />
       </div>
 
-      <footer className="w-full bg-slate-50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 mt-auto">
+      <footer className="w-full bg-slate-50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 mt-auto pb-24 sm:pb-28">
         <div className="max-w-[1400px] mx-auto px-4 md:px-6 py-12 md:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {/* Brand */}
@@ -96,6 +96,10 @@ export default function GermanLayout({ children }: { children: React.ReactNode }
           </div>
         </div>
       </footer>
+
+      {/* Global Sticky Bottom Ad Anchor */}
+      <AdBanner type="sticky-bottom" />
     </div>
   );
 }
+
