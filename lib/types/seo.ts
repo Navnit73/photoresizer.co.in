@@ -1,4 +1,4 @@
-export type Language = 'en' | 'de' | 'fr' | 'es';
+export type Language = 'en' | 'de' | 'fr' | 'es' | 'pt';
 
 export interface SeoSection {
   heading: string;

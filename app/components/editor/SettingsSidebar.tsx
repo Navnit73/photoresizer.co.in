@@ -25,68 +25,68 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
   onSelect: () => void;
 }) {
   return (
-    <div className={`rounded-xl border transition-all duration-200 ${isSelected ? 'border-accent-main bg-accent-muted shadow-sm' : 'border-border-subtle bg-bg-card hover:border-accent-main/50'}`}>
+    <div className={`rounded-2xl border transition-all duration-200 ${isSelected ? 'border-[#ff385c] bg-[#ff385c]/5 shadow-sm' : 'border-[#dddddd] dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-[#ff385c]/40'}`}>
       <div
         onClick={onSelect}
         role="button"
         tabIndex={0}
         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect(); }}
-        className="w-full flex items-center justify-between px-3 py-2.5 text-left cursor-pointer select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-main rounded-t-xl"
+        className="w-full flex items-center justify-between px-3.5 py-3 text-left cursor-pointer select-none focus:outline-none rounded-t-2xl"
       >
         <div className="flex items-center gap-2 min-w-0">
-          <Type size={13} className={isSelected ? 'text-accent-main' : 'text-text-muted'} />
-          <span className="text-xs font-medium text-text-main truncate max-w-[120px]">
-            {overlay.text || 'Empty text'}
+          <Type size={14} className={isSelected ? 'text-[#ff385c]' : 'text-[#6a6a6a] dark:text-slate-400'} />
+          <span className="text-xs font-bold text-[#222222] dark:text-white truncate max-w-[120px]">
+            {overlay.text || 'Texto vazio'}
           </span>
         </div>
         <div className="flex items-center gap-1">
           <button
             onClick={(e) => { e.stopPropagation(); onRemove(); }}
-            className="p-1 rounded-md hover:bg-red-100 dark:hover:bg-red-900/30 text-text-muted hover:text-red-500 transition-colors"
+            className="p-1.5 rounded-full hover:bg-red-50 text-[#6a6a6a] hover:text-red-500 transition-colors"
           >
-            <Trash2 size={12} />
+            <Trash2 size={13} />
           </button>
-          {isSelected ? <ChevronUp size={13} className="text-text-muted" /> : <ChevronDown size={13} className="text-text-muted" />}
+          {isSelected ? <ChevronUp size={14} className="text-[#6a6a6a]" /> : <ChevronDown size={14} className="text-[#6a6a6a]" />}
         </div>
       </div>
 
       {isSelected && (
-        <div className="px-3 pb-3 space-y-3 border-t border-accent-main/20 pt-3">
+        <div className="px-3.5 pb-4 space-y-3 border-t border-[#dddddd] dark:border-slate-800 pt-3">
           <div>
-            <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-1 block">Text Content</label>
+            <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Conteúdo do Texto</label>
             <textarea
               value={overlay.text}
               onChange={(e) => onUpdate({ text: e.target.value })}
               rows={2}
-              className="w-full bg-bg-input border border-border-subtle rounded-lg px-2.5 py-2 text-xs resize-none focus:outline-none focus:ring-2 focus:ring-accent-main text-text-main transition-shadow"
+              className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-3 py-2 text-xs resize-none focus:outline-none focus:border-[#222222] dark:focus:border-white text-[#222222] dark:text-white transition-colors"
             />
           </div>
 
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-1 block">Font</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Fonte</label>
               <select
                 value={overlay.fontFamily}
                 onChange={(e) => onUpdate({ fontFamily: e.target.value })}
-                className="w-full bg-bg-input border border-border-subtle rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-accent-main text-text-main transition-shadow"
+                className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-2.5 py-2 text-xs focus:outline-none focus:border-[#222222] text-[#222222] dark:text-white"
               >
                 {FONTS.map((f) => <option key={f} value={f}>{f}</option>)}
               </select>
             </div>
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-1 block">Color</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Cor</label>
               <div className="flex gap-1.5">
                 <input
                   type="color"
                   value={overlay.color}
                   onChange={(e) => onUpdate({ color: e.target.value })}
-                  className="w-8 h-8 rounded-md border border-border-subtle cursor-pointer bg-transparent"
+                  className="w-8 h-8 rounded-full border border-[#dddddd] cursor-pointer bg-transparent"
                 />
                 <input
                   type="text"
                   value={overlay.color}
                   onChange={(e) => onUpdate({ color: e.target.value })}
-                  className="flex-1 min-w-0 bg-bg-input border border-border-subtle rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-accent-main text-text-main transition-shadow"
+                  className="flex-1 min-w-0 bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-2 py-1.5 text-xs focus:outline-none text-[#222222] dark:text-white"
                 />
               </div>
             </div>
@@ -94,87 +94,44 @@ function TextOverlayItem({ overlay, onUpdate, onRemove, isSelected, onSelect }: 
 
           <div>
             <div className="flex justify-between mb-1">
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted">Size</label>
-              <span className="text-[10px] font-bold text-text-main">{overlay.fontSize}px</span>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400">Tamanho</label>
+              <span className="text-[10px] font-bold text-[#222222] dark:text-white">{overlay.fontSize}px</span>
             </div>
             <input
               type="range" min="8" max="200" value={overlay.fontSize}
               onChange={(e) => onUpdate({ fontSize: Number(e.target.value) })}
-              className="w-full accent-accent-main"
+              className="w-full accent-[#ff385c]"
             />
           </div>
 
           <div>
             <div className="flex justify-between mb-1">
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted">Opacity</label>
-              <span className="text-[10px] font-bold text-text-main">{overlay.opacity}%</span>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400">Opacidade</label>
+              <span className="text-[10px] font-bold text-[#222222] dark:text-white">{overlay.opacity}%</span>
             </div>
             <input
               type="range" min="10" max="100" value={overlay.opacity}
               onChange={(e) => onUpdate({ opacity: Number(e.target.value) })}
-              className="w-full accent-accent-main"
-            />
-          </div>
-
-          <div>
-            <div className="flex justify-between mb-1">
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted">Rotation</label>
-              <span className="text-[10px] font-bold text-text-main">{overlay.rotation}°</span>
-            </div>
-            <input
-              type="range" min="-180" max="180" value={overlay.rotation}
-              onChange={(e) => onUpdate({ rotation: Number(e.target.value) })}
-              className="w-full accent-accent-main"
+              className="w-full accent-[#ff385c]"
             />
           </div>
 
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-1 block">Position X</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Posição X</label>
               <input
                 type="number" min="0" max="100" value={Math.round(overlay.x)}
                 onChange={(e) => onUpdate({ x: Number(e.target.value) })}
-                className="w-full bg-bg-input border border-border-subtle rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-accent-main text-text-main transition-shadow"
+                className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs focus:outline-none text-[#222222] dark:text-white"
               />
             </div>
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-1 block">Position Y</label>
+              <label className="text-[10px] font-bold uppercase tracking-wider text-[#6a6a6a] dark:text-slate-400 mb-1 block">Posição Y</label>
               <input
                 type="number" min="0" max="100" value={Math.round(overlay.y)}
                 onChange={(e) => onUpdate({ y: Number(e.target.value) })}
-                className="w-full bg-bg-input border border-border-subtle rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-accent-main text-text-main transition-shadow"
+                className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-2.5 py-1.5 text-xs focus:outline-none text-[#222222] dark:text-white"
               />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-2">
-            <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-1 block">Weight</label>
-              <div className="flex rounded-lg overflow-hidden border border-border-subtle">
-                {(['normal', 'bold'] as const).map((w) => (
-                  <button
-                    key={w}
-                    onClick={() => onUpdate({ fontWeight: w })}
-                    className={`flex-1 py-1.5 text-[10px] font-semibold capitalize transition-colors ${overlay.fontWeight === w ? 'bg-accent-main text-white' : 'bg-bg-card text-text-muted hover:bg-bg-input'}`}
-                  >
-                    {w}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-1 block">Align</label>
-              <div className="flex rounded-lg overflow-hidden border border-border-subtle">
-                {(['left', 'center', 'right'] as const).map((a) => (
-                  <button
-                    key={a}
-                    onClick={() => onUpdate({ align: a })}
-                    className={`flex-1 py-1.5 text-[10px] font-semibold capitalize transition-colors ${overlay.align === a ? 'bg-accent-main text-white' : 'bg-bg-card text-text-muted hover:bg-bg-input'}`}
-                  >
-                    {a[0].toUpperCase()}
-                  </button>
-                ))}
-              </div>
             </div>
           </div>
         </div>
@@ -204,26 +161,29 @@ export default function SettingsSidebar() {
   const disabled = !imageFile;
 
   const tabs = [
-    { id: 'export', label: 'Export', icon: <SlidersHorizontal size={13} /> },
-    { id: 'text', label: 'Text', icon: <Type size={13} /> },
+    { id: 'export', label: 'Exportar', icon: <SlidersHorizontal size={14} /> },
+    { id: 'text', label: 'Texto', icon: <Type size={14} /> },
   ] as const;
 
   return (
-    <aside className="w-full h-full flex-shrink-0 flex flex-col bg-transparent overflow-hidden transition-colors duration-300">
-      {/* Tab bar */}
-      <div className="flex border-b border-neutral-200 dark:border-neutral-800">
+    <aside className="w-full h-full flex-shrink-0 flex flex-col bg-transparent overflow-hidden transition-colors duration-300 font-['Airbnb_Cereal_VF',Circular,sans-serif]">
+      {/* Tab bar (Airbnb product tab style with 2px bottom active underline) */}
+      <div className="flex border-b border-[#dddddd] dark:border-slate-800">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveSection(tab.id)}
-            className={`flex-1 flex items-center justify-center gap-1.5 py-3 text-xs font-semibold transition-colors border-b-2 ${
+            className={`flex-1 flex items-center justify-center gap-2 py-3.5 text-xs font-bold transition-all relative ${
               activeSection === tab.id
-                ? 'border-neutral-900 dark:border-neutral-100 text-neutral-900 dark:text-neutral-100'
-                : 'border-transparent text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800'
+                ? 'text-[#222222] dark:text-white'
+                : 'text-[#6a6a6a] dark:text-slate-400 hover:text-[#222222] dark:hover:text-white hover:bg-[#f7f7f7] dark:hover:bg-slate-800'
             }`}
           >
             {tab.icon}
-            {tab.label}
+            <span>{tab.label}</span>
+            {activeSection === tab.id && (
+              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#ff385c] rounded-full"></span>
+            )}
           </button>
         ))}
       </div>
@@ -233,34 +193,36 @@ export default function SettingsSidebar() {
         {activeSection === 'export' && (
           <>
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-3 block">{t.outputSize}</label>
+              <label className="text-[11px] font-bold uppercase tracking-wider text-[#ff385c] mb-3 block">{t.outputSize}</label>
               <div className="grid grid-cols-2 gap-3 mb-3">
                 <div>
-                  <label className="text-xs text-text-muted mb-1 block">{t.widthPx}</label>
+                  <label className="text-xs font-semibold text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.widthPx}</label>
                   <input
                     type="number" value={width}
                     onChange={(e) => setWidth(Number(e.target.value))}
                     disabled={disabled}
-                    className="w-full bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-lg px-3 py-2 text-sm text-neutral-900 dark:text-neutral-100 disabled:opacity-40 focus:outline-none focus:ring-1 focus:ring-neutral-400 transition-shadow"
+                    className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-3 py-2 text-sm font-semibold text-[#222222] dark:text-white disabled:opacity-40 focus:outline-none focus:border-[#222222] dark:focus:border-white transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="text-xs text-text-muted mb-1 block">{t.heightPx}</label>
+                  <label className="text-xs font-semibold text-[#6a6a6a] dark:text-slate-400 mb-1 block">{t.heightPx}</label>
                   <input
                     type="number" value={height}
                     onChange={(e) => setHeight(Number(e.target.value))}
                     disabled={disabled}
-                    className="w-full bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-lg px-3 py-2 text-sm text-neutral-900 dark:text-neutral-100 disabled:opacity-40 focus:outline-none focus:ring-1 focus:ring-neutral-400 transition-shadow"
+                    className="w-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-xl px-3 py-2 text-sm font-semibold text-[#222222] dark:text-white disabled:opacity-40 focus:outline-none focus:border-[#222222] dark:focus:border-white transition-colors"
                   />
                 </div>
               </div>
+              
+              {/* Percentage Pills (Airbnb rounded-full) */}
               <div className="grid grid-cols-4 gap-1.5">
                 {[25, 50, 75, 100].map((pct) => (
                   <button
                     key={pct}
                     onClick={() => handlePercentageClick(pct)}
                     disabled={disabled}
-                    className="py-2 text-xs font-semibold bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-lg disabled:opacity-40 transition-colors text-neutral-900 dark:text-neutral-100"
+                    className="py-1.5 text-xs font-bold bg-[#f7f7f7] dark:bg-slate-800 hover:bg-[#222222] hover:text-white dark:hover:bg-white dark:hover:text-[#222222] rounded-full border border-[#dddddd] dark:border-slate-700 disabled:opacity-40 transition-all text-[#222222] dark:text-white active:scale-95"
                   >
                     {pct}%
                   </button>
@@ -268,31 +230,33 @@ export default function SettingsSidebar() {
               </div>
             </div>
 
-            <hr className="border-neutral-200 dark:border-neutral-800" />
+            <hr className="border-[#dddddd] dark:border-slate-800" />
 
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-3 block">{t.rotate}</label>
+              <label className="text-[11px] font-bold uppercase tracking-wider text-[#ff385c] mb-3 block">{t.rotate}</label>
               <div className="grid grid-cols-2 gap-2">
                 <button
                   onClick={() => setRotation((rotation - 90 + 360) % 360)}
                   disabled={disabled}
-                  className="flex items-center justify-center gap-2 py-2.5 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 border border-transparent rounded-lg disabled:opacity-40 transition-colors text-xs font-medium text-neutral-900 dark:text-neutral-100"
+                  className="flex items-center justify-center gap-2 py-2.5 bg-[#f7f7f7] dark:bg-slate-800 hover:bg-[#222222] hover:text-white dark:hover:bg-white dark:hover:text-[#222222] border border-[#dddddd] dark:border-slate-700 rounded-full disabled:opacity-40 transition-all text-xs font-bold text-[#222222] dark:text-white active:scale-95"
                 >
                   <RotateCcw size={14} /> −90°
                 </button>
                 <button
                   onClick={() => setRotation((rotation + 90) % 360)}
                   disabled={disabled}
-                  className="flex items-center justify-center gap-2 py-2.5 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 border border-transparent rounded-lg disabled:opacity-40 transition-colors text-xs font-medium text-neutral-900 dark:text-neutral-100"
+                  className="flex items-center justify-center gap-2 py-2.5 bg-[#f7f7f7] dark:bg-slate-800 hover:bg-[#222222] hover:text-white dark:hover:bg-white dark:hover:text-[#222222] border border-[#dddddd] dark:border-slate-700 rounded-full disabled:opacity-40 transition-all text-xs font-bold text-[#222222] dark:text-white active:scale-95"
                 >
                   +90° <RotateCw size={14} />
                 </button>
               </div>
             </div>
-            <hr className="border-neutral-200 dark:border-neutral-800 my-5" />
+
+            <hr className="border-[#dddddd] dark:border-slate-800" />
+
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-2 block">{t.outputFormat}</label>
-              <div className="grid grid-cols-3 gap-1.5">
+              <label className="text-[11px] font-bold uppercase tracking-wider text-[#ff385c] mb-2 block">{t.outputFormat}</label>
+              <div className="grid grid-cols-3 gap-2">
                 {[
                   { label: 'JPG', value: 'image/jpeg' as ImageFormat },
                   { label: 'PNG', value: 'image/png' as ImageFormat },
@@ -302,66 +266,53 @@ export default function SettingsSidebar() {
                     key={f.value}
                     onClick={() => setFormat(f.value)}
                     disabled={disabled}
-                    className={`py-2.5 text-xs font-bold rounded-lg border-2 transition-colors disabled:opacity-40 ${
+                    className={`py-2 text-xs font-bold rounded-full border transition-all disabled:opacity-40 active:scale-95 ${
                       format === f.value
-                        ? 'border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900'
-                        : 'border-neutral-200 dark:border-neutral-800 text-neutral-500 hover:border-neutral-300 dark:hover:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100'
+                        ? 'border-[#ff385c] bg-[#ff385c] text-white shadow-sm'
+                        : 'border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-white hover:border-[#222222]'
                     }`}
                   >
                     {f.label}
                   </button>
                 ))}
               </div>
-              {format === 'image/png' && (
-                <p className="text-[10px] text-text-muted mt-2">PNG is lossless — quality setting is ignored.</p>
-              )}
             </div>
 
-            <hr className="border-neutral-200 dark:border-neutral-800" />
+            <hr className="border-[#dddddd] dark:border-slate-800" />
 
             <div>
               <div className="flex justify-between items-center mb-2">
-                <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted">{t.quality}</label>
-                <span className="text-xs font-bold text-accent-main">{quality}%</span>
+                <label className="text-[11px] font-bold uppercase tracking-wider text-[#ff385c]">{t.quality}</label>
+                <span className="text-xs font-bold text-[#ff385c]">{quality}%</span>
               </div>
               <input
                 type="range" min="1" max="100" value={quality}
                 onChange={(e) => setQuality(Number(e.target.value))}
                 disabled={disabled || format === 'image/png'}
-                className="w-full accent-neutral-900 dark:accent-neutral-100 disabled:opacity-40"
+                className="w-full accent-[#ff385c] disabled:opacity-40 cursor-pointer"
               />
-              <div className="flex justify-between text-[10px] text-text-muted mt-1">
-                <span>{t.smallerFile}</span>
-                <span>{t.bestQuality}</span>
-              </div>
             </div>
 
-            <hr className="border-neutral-200 dark:border-neutral-800" />
+            <hr className="border-[#dddddd] dark:border-slate-800" />
 
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-3 block">{t.bgColor}</label>
-              <div className="flex gap-2 flex-wrap">
-                {['transparent', '#ffffff', '#000000', '#ef4444', '#6366f1', '#f59e0b', '#10b981'].map((color) => (
+              <label className="text-[11px] font-bold uppercase tracking-wider text-[#ff385c] mb-3 block">{t.bgColor}</label>
+              <div className="flex gap-2.5 flex-wrap">
+                {['transparent', '#ffffff', '#000000', '#ff385c', '#6366f1', '#f59e0b', '#10b981'].map((color) => (
                   <button
                     key={color}
                     onClick={() => setBackgroundColor(color)}
                     disabled={disabled}
-                    title={color === 'transparent' ? 'Transparent' : color}
+                    title={color === 'transparent' ? 'Transparente' : color}
                     className={`w-8 h-8 rounded-full border-2 disabled:opacity-40 transition-all ${
-                      backgroundColor === color ? 'border-neutral-900 dark:border-neutral-100 scale-110 shadow-sm' : 'border-neutral-200 dark:border-neutral-800 hover:scale-105'
+                      backgroundColor === color ? 'border-[#ff385c] scale-110 shadow-sm' : 'border-[#dddddd] dark:border-slate-700 hover:scale-105'
                     }`}
                     style={{
-                      backgroundImage: color === 'transparent'
-                        ? 'linear-gradient(45deg, var(--border-subtle) 25%, transparent 25%), linear-gradient(-45deg, var(--border-subtle) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--border-subtle) 75%), linear-gradient(-45deg, transparent 75%, var(--border-subtle) 75%)'
-                        : 'none',
-                      backgroundSize: color === 'transparent' ? '8px 8px' : 'auto',
-                      backgroundPosition: color === 'transparent' ? '0 0, 0 4px, 4px -4px, -4px 0' : 'auto',
                       backgroundColor: color === 'transparent' ? '#ffffff' : color,
                     }}
                   />
                 ))}
               </div>
-              <p className="text-[10px] text-text-muted mt-2">{t.bgColorDesc}</p>
             </div>
           </>
         )}
@@ -371,21 +322,21 @@ export default function SettingsSidebar() {
           <>
             {!imageFile ? (
               <div className="text-center py-8">
-                <Type size={32} className="mx-auto text-text-muted opacity-50 mb-3" />
-                <p className="text-sm text-text-muted">{t.uploadImageFirst}</p>
+                <Type size={32} className="mx-auto text-[#6a6a6a] opacity-50 mb-3" />
+                <p className="text-sm text-[#6a6a6a]">{t.uploadImageFirst}</p>
               </div>
             ) : (
               <>
                 <button
                   onClick={addTextOverlay}
-                  className="w-full flex items-center justify-center gap-2 py-2.5 bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-800 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 rounded-xl text-sm font-semibold transition-all shadow-sm active:scale-95"
+                  className="w-full flex items-center justify-center gap-2 py-3 bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full text-xs font-bold transition-all shadow-sm active:scale-95"
                 >
-                  <Plus size={16} /> Add Text Layer
+                  <Plus size={16} /> Adicionar Camada de Texto
                 </button>
 
                 {(textOverlays || []).length === 0 ? (
                   <div className="text-center py-6">
-                    <p className="text-xs text-text-muted">No text layers yet. Add one above.</p>
+                    <p className="text-xs text-[#6a6a6a]">Nenhuma camada de texto. Adicione uma acima.</p>
                   </div>
                 ) : (
                   <div className="space-y-2">

@@ -4,6 +4,7 @@ import { enPages } from '../content/en-pages';
 import { dePages } from '../content/de-pages';
 import { frPages } from '../content/fr-pages';
 import { esPages } from '../content/es-pages';
+import { ptPages } from '../content/pt-pages';
 import { programmaticPages } from '../content/programmatic-pages';
 import { getHreflangMap } from '../lib/seo';
 import { SeoPage } from '../lib/types/seo';
@@ -45,6 +46,7 @@ const rootHreflangs = {
   de: `${baseUrl}/de`,
   fr: `${baseUrl}/fr`,
   es: `${baseUrl}/es`,
+  pt: `${baseUrl}/pt`,
 };
 
 async function main() {
@@ -106,8 +108,20 @@ async function main() {
   ];
   fs.writeFileSync(path.join(publicDir, 'sitemap_es.xml'), generateXml(esUrls));
 
+  // Generate PT
+  const ptUrls: UrlObj[] = [
+    { url: `${baseUrl}/pt`, changeFrequency: 'weekly', priority: 0.9, hreflangs: rootHreflangs },
+    ...ptPages.map((p) => ({
+      url: `${baseUrl}/pt/${p.slug}`,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      hreflangs: getHreflangMap(p)
+    })),
+  ];
+  fs.writeFileSync(path.join(publicDir, 'sitemap_pt.xml'), generateXml(ptUrls));
+
   // Generate robots.txt
-  const robotsTxt = `User-Agent: *\nAllow: /\nDisallow: /private/\nDisallow: /api/\n\nSitemap: ${baseUrl}/sitemap_main.xml\nSitemap: ${baseUrl}/sitemap_de.xml\nSitemap: ${baseUrl}/sitemap_fr.xml\nSitemap: ${baseUrl}/sitemap_es.xml\n`;
+  const robotsTxt = `User-Agent: *\nAllow: /\nDisallow: /private/\nDisallow: /api/\n\nSitemap: ${baseUrl}/sitemap_main.xml\nSitemap: ${baseUrl}/sitemap_de.xml\nSitemap: ${baseUrl}/sitemap_fr.xml\nSitemap: ${baseUrl}/sitemap_es.xml\nSitemap: ${baseUrl}/sitemap_pt.xml\n`;
   fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt);
 
   console.log('Successfully generated sitemaps and robots.txt in public/');

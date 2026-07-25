@@ -9,7 +9,7 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } fr
 import Script from 'next/script';
 import Link from 'next/link';
 import { useDropzone } from "react-dropzone";
-import { UploadCloud, Shield, Zap, Sparkles, Image, Layers, Type, ArrowRight } from "lucide-react";
+import { UploadCloud, Shield, Image, Layers, Type, ArrowRight } from "lucide-react";
 
 import PhotoEditor from '../../app/components/editor/PhotoEditor';
 import PassportMakerApp from '../../app/components/passport_photo/PassportMakerApp';
@@ -20,23 +20,12 @@ import { enPages } from '../../content/en-pages';
 import { dePages } from '../../content/de-pages';
 import { frPages } from '../../content/fr-pages';
 import { esPages } from '../../content/es-pages';
+import { ptPages } from '../../content/pt-pages';
 
 interface Props {
   page: SeoPage;
   lang: Language;
 }
-
-const TRUST_BADGES = [
-  { icon: Shield, label: "100% Private", desc: "Nothing leaves your browser" },
-  { icon: Zap, label: "Instant Processing", desc: "No server wait times" },
-  { icon: Sparkles, label: "Completely Free", desc: "No watermarks or limits" },
-];
-
-const TOOL_FEATURES = [
-  { icon: Image, label: "Resize & Crop" },
-  { icon: Layers, label: "Remove Background" },
-  { icon: Type, label: "Text & Watermark" },
-];
 
 export function SeoPageRenderer({ page, lang }: Props) {
   const initialTab = page.showTool === 'bg-remover' ? 'bg_remover' : 'editor';
@@ -57,7 +46,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
     };
     window.addEventListener("hero-file-drop", handleHeroDrop);
 
-    // New listener for editor state (so the hero hides/shows automatically)
+    // Listener for editor state
     const handleEditorLoad = (e: Event) => {
       const customEvent = e as CustomEvent<{ loaded: boolean }>;
       setIsTransitioning(true);
@@ -102,6 +91,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
     de: dePages,
     fr: frPages,
     es: esPages,
+    pt: ptPages,
   };
 
   const allPages = pagesMap[lang] || enPages;
@@ -110,7 +100,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
     .slice(0, 8);
 
   return (
-    <main className="w-full pb-8 md:pb-12 bg-bg-root transition-colors duration-300">
+    <main className="w-full pb-8 md:pb-12 bg-white dark:bg-[#121212] text-[#222222] dark:text-[#f1f1f1] font-['Airbnb_Cereal_VF',Circular,sans-serif] transition-colors duration-300">
       {/* JSON-LD Structured Data */}
       <Script id="webpage-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -118,157 +108,150 @@ export function SeoPageRenderer({ page, lang }: Props) {
         <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
 
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
         {/* ══════════════════════════════════════════
-            HERO SECTION — shown before upload
+            HERO SECTION (Airbnb Design Specification)
         ══════════════════════════════════════════ */}
         {showHero && (
           <div className={`transition-all duration-500 ${isTransitioning ? 'opacity-0 scale-[0.98]' : 'opacity-100 scale-100'}`}>
-            <section className="hero-gradient-bg relative overflow-hidden rounded-none md:rounded-3xl md:mx-4 md:mt-4">
-              {/* Dot grid overlay */}
-              <div className="hero-dots absolute inset-0 pointer-events-none opacity-20" />
+            <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-slate-900 border border-[#dddddd] dark:border-slate-800 shadow-sm mt-4 p-6 sm:p-10 lg:p-14">
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
-              <div className="relative z-10 px-6 sm:px-8 lg:px-16 py-14 md:py-20 lg:py-24">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-                  {/* ── LEFT COLUMN: Marketing Copy ── */}
-                  <div className="max-w-xl order-2 lg:order-1">
-                    <div className="hero-fade-in hero-fade-in-delay-1 mb-4">
-                      <Breadcrumb page={page} lang={lang} />
-                    </div>
-
-                    {/* Headline */}
-                    <h1 className="hero-fade-in hero-fade-in-delay-1 text-4xl sm:text-5xl lg:text-[3.0rem] font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white mb-5">
-                      {page.h1}
-                    </h1>
-
-                    {/* Subheadline */}
-                    {page.subtitle && (
-                      <p className="hero-fade-in hero-fade-in-delay-2 text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8 max-w-md">
-                        {page.subtitle}
-                      </p>
-                    )}
-
-                    {/* Trust Badges Removed */}
-
-                    {/* Tool features row Removed */}
+                {/* ── LEFT COLUMN: Marketing Copy ── */}
+                <div className="max-w-xl order-2 lg:order-1">
+                  <div className="mb-4">
+                    <Breadcrumb page={page} lang={lang} />
                   </div>
 
-                  {/* ── RIGHT COLUMN: Upload Zone ── */}
-                  <div className="hero-fade-in hero-fade-in-delay-3 flex justify-center lg:justify-end order-1 lg:order-2">
-                    <div className="w-full max-w-md">
-                      {/* Upload Card */}
-                      <div
-                        {...getRootProps()}
-                        className={`hero-upload-zone relative cursor-pointer rounded-2xl border-2 border-dashed p-8 sm:p-10 transition-all duration-300 backdrop-blur-md ${
+                  {/* Airbnb Display Headline */}
+                  <h1 className="text-3xl sm:text-4xl lg:text-[2.5rem] font-bold tracking-tight leading-[1.2] text-[#222222] dark:text-white mb-4">
+                    {page.h1}
+                  </h1>
+
+                  {/* Subheadline */}
+                  {page.subtitle && (
+                    <p className="text-base text-[#6a6a6a] dark:text-slate-400 leading-[1.5] mb-6 max-w-md">
+                      {page.subtitle}
+                    </p>
+                  )}
+
+                  {/* Trust indicator badge */}
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 text-xs font-semibold text-[#222222] dark:text-white">
+                    <Shield size={14} className="text-[#ff385c]" />
+                    <span>Processamento 100% privado no navegador</span>
+                  </div>
+                </div>
+
+                {/* ── RIGHT COLUMN: Airbnb Style Upload Card ── */}
+                <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+                  <div className="w-full max-w-md">
+                    <div
+                      {...getRootProps()}
+                      className={`relative cursor-pointer rounded-3xl border-2 border-dashed p-8 sm:p-10 transition-all duration-300 ${
+                        isDragActive
+                          ? "border-[#ff385c] bg-[#ff385c]/5 scale-[1.02]"
+                          : "border-[#ff385c] dark:border-[#ff385c]/60 bg-[#f7f7f7] dark:bg-slate-900/60 hover:border-[#e00b41] hover:shadow-md"
+                      }`}
+                    >
+                      <input {...getInputProps()} />
+
+                      <div className="relative flex flex-col items-center text-center">
+                        {/* Rausch Icon Circle */}
+                        <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-300 ${
                           isDragActive
-                            ? "border-pink-600 bg-blue-50/80 dark:bg-blue-500/10 scale-[1.02]"
-                            : "border-pink-600 dark:border-pink-600/60 bg-white/60 dark:bg-white/[0.03] hover:border-pink-500 hover:bg-white/80 dark:hover:bg-white/[0.05]"
-                        }`}
-                      >
-                        <input {...getInputProps()} />
+                            ? "bg-[#ff385c] text-white shadow-lg scale-110"
+                            : "bg-[#ff385c] text-white shadow-sm"
+                        }`}>
+                          <UploadCloud size={30} />
+                        </div>
 
-                        {/* Shimmer strip removed */}
+                        <h3 className="text-xl font-bold text-[#222222] dark:text-white mb-2">
+                          {isDragActive ? "Solte sua foto aqui!" : "Carregue sua foto"}
+                        </h3>
+                        <p className="text-xs text-[#6a6a6a] dark:text-slate-400 mb-6 max-w-xs leading-[1.5]">
+                          Arraste e solte sua imagem aqui ou clique para selecionar. Edição instantânea no navegador.
+                        </p>
 
-                        <div className="relative flex flex-col items-center text-center">
-                          {/* Upload Icon */}
-                          <div className={`w-20 h-20 rounded-2xl flex items-center justify-center mb-5 transition-all duration-300 ${
-                            isDragActive
-                              ? "bg-blue-500 shadow-xl shadow-blue-500/30 scale-110"
-                              : "bg-gradient-to-br from-blue-500 to-sky-600 shadow-lg shadow-blue-500/20"
-                          }`}>
-                            <UploadCloud size={36} className="text-white" />
-                          </div>
+                        {/* Signature Rausch Button ({colors.primary} #ff385c) */}
+                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#ff385c] hover:bg-[#e00b41] text-white text-xs font-bold rounded-full shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.98] mb-5">
+                          <UploadCloud size={16} />
+                          <span>Selecionar Imagem</span>
+                        </button>
 
-                          <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2">
-                            {isDragActive ? "Drop your image here!" : "Upload Your Photo"}
-                          </h3>
-                          <p className="text-sm text-slate-500 dark:text-slate-400 mb-6 max-w-xs">
-                            Drag & drop your image here, or click to browse. Editing starts immediately.
-                          </p>
-
-                          {/* CTA Button */}
-                          <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 text-white text-sm font-bold rounded-xl shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 hover:-translate-y-0.5 transition-all duration-300 active:scale-[0.98] mb-5">
-                            <UploadCloud size={16} />
-                            Choose Image
-                          </button>
-
-                          {/* Format Badges */}
-                          <div className="flex items-center gap-2">
-                            {["JPG", "PNG", "WEBP"].map((fmt) => (
-                              <span
-                                key={fmt}
-                                className="px-2.5 py-1 bg-slate-100/80 dark:bg-slate-800/50 border border-slate-200/50 dark:border-slate-700/50 text-slate-500 dark:text-slate-400 rounded-md text-[10px] font-bold tracking-wide"
-                              >
-                                {fmt}
-                              </span>
-                            ))}
-                            <span className="text-[10px] text-slate-400 dark:text-slate-500 ml-1">
-                              up to 30MB
+                        {/* Format Badges */}
+                        <div className="flex items-center gap-2">
+                          {["JPG", "PNG", "WEBP"].map((fmt) => (
+                            <span
+                              key={fmt}
+                              className="px-2.5 py-1 bg-white dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 text-[#222222] dark:text-white rounded-full text-[10px] font-bold"
+                            >
+                              {fmt}
                             </span>
-                          </div>
+                          ))}
+                          <span className="text-[10px] text-[#6a6a6a] dark:text-slate-400 font-medium ml-1">
+                            até 30MB
+                          </span>
                         </div>
                       </div>
+                    </div>
 
-                      {/* Privacy note */}
-                      <div className="flex items-center justify-center gap-2 mt-4 px-4">
-                        <Shield size={12} className="text-emerald-500 flex-shrink-0" />
-                        <span className="text-[11px] text-slate-400 dark:text-slate-500">
-                          Your images are processed locally. Nothing is uploaded to any server.
-                        </span>
-                      </div>
+                    {/* Privacy Note */}
+                    <div className="flex items-center justify-center gap-1.5 mt-3 text-center">
+                      <Shield size={12} className="text-[#ff385c]" />
+                      <span className="text-[11px] text-[#6a6a6a] dark:text-slate-400 font-medium">
+                        Seus arquivos não são enviados para servidores externos.
+                      </span>
                     </div>
                   </div>
-
                 </div>
+
               </div>
             </section>
           </div>
         )}
 
         {/* ── Mid AdBanner (Below Hero) ── */}
-        <div className="w-full my-8 px-4">
+        <div className="w-full my-8">
           <AdBanner type="responsive" />
         </div>
 
         {/* ══════════════════════════════════════════
-            EDITOR — shown after upload
+            EDITOR CONTAINER — shown after upload
         ══════════════════════════════════════════ */}
-        <div className={`${!showHero ? 'block' : 'hidden'} p-4 md:p-8`}>
+        <div className={`${!showHero ? 'block' : 'hidden'} py-4`}>
           {/* Header area when editor is active */}
           <header className="mb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex flex-col gap-1">
-              <div className="flex items-center gap-3">
-                <h1 className="text-xl font-bold tracking-tight text-text-main">
-                  {page.h1}
-                </h1>
-              </div>
-              <p className="text-sm text-text-muted">
+              <h1 className="text-xl font-bold tracking-tight text-[#222222] dark:text-white">
+                {page.h1}
+              </h1>
+              <p className="text-xs text-[#6a6a6a] dark:text-slate-400">
                 {page.subtitle}
               </p>
             </div>
 
-            {/* Tab Switcher */}
-            <div className="flex p-1 bg-bg-card rounded-xl border border-border-subtle shadow-sm w-full md:w-auto self-start">
+            {/* Tab Switcher (Airbnb Pill Style) */}
+            <div className="flex p-1 bg-[#f7f7f7] dark:bg-slate-800 rounded-full border border-[#dddddd] dark:border-slate-700 w-full md:w-auto self-start">
               <button
                 onClick={() => setActiveTab("editor")}
-                className={`flex-1 md:w-36 py-2 px-4 text-sm font-semibold rounded-lg transition-all ${
+                className={`flex-1 md:w-36 py-2 px-4 text-xs font-bold rounded-full transition-all ${
                   activeTab === "editor"
-                    ? "bg-accent-main text-white shadow-md"
-                    : "text-text-muted hover:text-text-main hover:bg-bg-input"
+                    ? "bg-[#ff385c] text-white shadow-sm"
+                    : "text-[#6a6a6a] dark:text-slate-400 hover:text-[#222222] dark:hover:text-white"
                 }`}
               >
-                Photo Editor
+                Editor de Fotos
               </button>
               <button
                 onClick={() => setActiveTab("bg_remover")}
-                className={`flex-1 md:w-44 py-2 px-4 text-sm font-semibold rounded-lg transition-all ${
+                className={`flex-1 md:w-44 py-2 px-4 text-xs font-bold rounded-full transition-all ${
                   activeTab === "bg_remover"
-                    ? "bg-lime-600 dark:bg-lime-500 text-white shadow-md"
-                    : "text-text-muted hover:text-text-main hover:bg-bg-input block"
+                    ? "bg-[#222222] dark:bg-white text-white dark:text-[#222222] shadow-sm"
+                    : "text-[#6a6a6a] dark:text-slate-400 hover:text-[#222222] dark:hover:text-white"
                 }`}
               >
-                Bulk BG Remover
+                Remover Fundo IA
               </button>
             </div>
           </header>
@@ -276,10 +259,6 @@ export function SeoPageRenderer({ page, lang }: Props) {
           <div className={activeTab === "editor" ? "block min-h-[600px] sm:min-h-[800px]" : "hidden"}>
             {page.showTool === 'photo-editor' && <PhotoEditor />}
             {page.showTool === 'passport-maker' && <PassportMakerApp />}
-            {/* If the tool is normally background remover, but they are in editor tab, show PhotoEditor since BgRemoverApp is separate? 
-                Actually let's just render the tool that is supposed to be here if it's photo-editor or passport-maker.
-                If it's bg-remover, we should probably render BgRemoverApp.
-            */}
             {(page.showTool === 'bg-remover' || !['photo-editor', 'passport-maker', 'bg-remover'].includes(page.showTool as string)) && <PhotoEditor />}
           </div>
           <div className={activeTab === "bg_remover" ? "block min-h-[600px] sm:min-h-[800px]" : "hidden"}>
@@ -288,14 +267,14 @@ export function SeoPageRenderer({ page, lang }: Props) {
         </div>
 
         {/* ── Mid AdBanner (Below Tool) ── */}
-        <div className="w-full my-8 px-4">
+        <div className="w-full my-8">
           <AdBanner type="responsive" />
         </div>
 
       </div>
 
-      {/* Bottom SEO Content - Constrained Width */}
-      <div className="max-w-5xl mx-auto px-4 mt-16">
+      {/* Bottom SEO Content */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 mt-16">
         {page.sections && page.sections.length > 0 && (
           <div className="flex flex-col gap-8 mb-16">
             {page.sections.map((section, idx) => (
@@ -312,25 +291,26 @@ export function SeoPageRenderer({ page, lang }: Props) {
         {/* FAQ */}
         <FAQ faq={page.faq || []} />
 
-        {/* Related Tools Internal Linking */}
+        {/* Related Tools Internal Linking ({component.property-card} photo-first style) */}
         {relatedPages.length > 0 && (
-          <div className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 not-prose mb-12">
-            <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Related Tools</h3>
+          <div className="mt-16 pt-8 border-t border-[#dddddd] dark:border-slate-800 not-prose mb-12">
+            <h3 className="text-xl font-bold mb-6 text-[#222222] dark:text-white">Ferramentas Relacionadas</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {relatedPages.map((relatedPage) => (
                 <Link 
                   key={relatedPage.slug} 
                   href={`/${lang === 'en' ? '' : lang + '/'}${relatedPage.slug}`}
-                  className="group flex flex-col p-5 bg-white dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg hover:shadow-blue-500/5 hover:-translate-y-0.5 transition-all duration-300"
+                  className="group flex flex-col p-5 bg-white dark:bg-slate-900 rounded-2xl border border-[#dddddd] dark:border-slate-800 hover:border-[#ff385c] hover:shadow-md transition-all duration-200"
                 >
-                  <h4 className="font-bold text-slate-800 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+                  <h4 className="font-bold text-xs text-[#222222] dark:text-white group-hover:text-[#ff385c] transition-colors line-clamp-2">
                     {relatedPage.h1}
                   </h4>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-2 line-clamp-2 flex-1">
+                  <p className="text-[11px] text-[#6a6a6a] dark:text-slate-400 mt-2 line-clamp-2 flex-1">
                     {relatedPage.metaDescription}
                   </p>
-                  <div className="mt-3 text-xs font-semibold text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                    Use Tool →
+                  <div className="mt-3 text-xs font-bold text-[#ff385c] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                    <span>Usar ferramenta</span>
+                    <ArrowRight size={12} />
                   </div>
                 </Link>
               ))}

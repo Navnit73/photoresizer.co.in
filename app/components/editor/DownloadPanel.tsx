@@ -29,49 +29,56 @@ export default function DownloadPanel() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-3 px-3 py-2">
+    <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-3 px-4 py-3 bg-white dark:bg-slate-900 border border-[#dddddd] dark:border-slate-800 rounded-2xl shadow-sm font-['Airbnb_Cereal_VF',Circular,sans-serif]">
 
-      {/* Meta chips */}
-      <div className="flex items-center gap-1.5 flex-wrap justify-center sm:justify-start w-full sm:w-auto">
-        <span className="flex items-center justify-center min-w-[72px] h-7 px-2.5 rounded-md border bg-neutral-100 dark:bg-neutral-800 border-transparent text-neutral-700 dark:text-neutral-300 text-[11px] sm:text-xs">
-          Width: {livePreview.width}
+      {/* Meta chips (Airbnb pill style) */}
+      <div className="flex items-center gap-2 flex-wrap justify-center sm:justify-start w-full sm:w-auto">
+        <span className="flex items-center justify-center h-8 px-3 rounded-full border border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-slate-200 text-xs font-semibold">
+          Largura: {livePreview.width}px
         </span>
-        <span className="flex items-center justify-center min-w-[72px] h-7 px-2.5 rounded-md border bg-neutral-100 dark:bg-neutral-800 border-transparent text-neutral-700 dark:text-neutral-300 text-[11px] sm:text-xs">
-          Height: {livePreview.height}
+        <span className="flex items-center justify-center h-8 px-3 rounded-full border border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-slate-200 text-xs font-semibold">
+          Altura: {livePreview.height}px
         </span>
-        <span className="flex items-center justify-center min-w-[64px] h-7 px-2.5 rounded-md border bg-neutral-100 dark:bg-neutral-800 border-transparent text-neutral-700 dark:text-neutral-300 text-[11px] sm:text-xs font-semibold">
+        <span className="flex items-center justify-center h-8 px-3.5 rounded-full border border-[#ff385c]/30 bg-[#ff385c]/10 text-[#ff385c] text-xs font-bold">
           {livePreview.sizeKb} KB
         </span>
-        <span className="flex items-center justify-center min-w-[48px] h-7 px-2.5 rounded-md border bg-neutral-100 dark:bg-neutral-800 border-transparent text-neutral-700 dark:text-neutral-300 uppercase text-[11px] sm:text-xs font-semibold">
+        <span className="flex items-center justify-center h-8 px-3 rounded-full border border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-slate-200 uppercase text-xs font-bold">
           {ext}
         </span>
         {isProcessing && (
-          <span className="animate-pulse text-neutral-500 text-xs font-medium ml-1">
-            Processing…
+          <span className="animate-pulse text-[#ff385c] text-xs font-bold ml-1">
+            Processando...
           </span>
         )}
       </div>
 
-      {/* Filename + Download — inline, compact */}
-      <div className="flex items-center gap-0 rounded-lg border border-neutral-200 dark:border-neutral-800 overflow-hidden w-full sm:w-auto focus-within:ring-1 focus-within:ring-neutral-400 flex-shrink-0 bg-white dark:bg-neutral-900">
-        <input
-          type="text"
-          value={fileName}
-          onChange={(e) => setFileName(e.target.value)}
-          placeholder="filename"
-          className="flex-1 w-0 sm:w-44 bg-transparent px-2.5 py-1.5 text-sm focus:outline-none text-neutral-900 dark:text-neutral-100"
-        />
-        <span className="px-2 py-1.5 text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800 border-l border-neutral-200 dark:border-neutral-800 font-mono whitespace-nowrap">
-          .{ext}
-        </span>
+      {/* Filename + Airbnb Rausch Download Button */}
+      <div className="flex items-center gap-2 w-full sm:w-auto flex-shrink-0">
+        
+        {/* Filename Input Pill */}
+        <div className="flex items-center flex-1 sm:w-48 bg-[#f7f7f7] dark:bg-slate-800 rounded-full border border-[#dddddd] dark:border-slate-700 px-3 py-1.5 focus-within:border-[#222222] dark:focus-within:border-white transition-colors">
+          <input
+            type="text"
+            value={fileName}
+            onChange={(e) => setFileName(e.target.value)}
+            placeholder="nome-do-arquivo"
+            className="flex-1 w-0 bg-transparent text-xs font-semibold focus:outline-none text-[#222222] dark:text-white"
+          />
+          <span className="text-xs text-[#6a6a6a] dark:text-slate-400 font-mono">
+            .{ext}
+          </span>
+        </div>
+
+        {/* Signature Rausch Download Button ({colors.primary} #ff385c) */}
         <button
           onClick={handleDownload}
           disabled={!livePreview.url || isProcessing}
-          className="flex items-center justify-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-800 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 border-l border-neutral-900 dark:border-neutral-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+          className="flex items-center justify-center gap-2 px-6 py-2.5 text-xs font-bold bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
         >
-          <Download size={14} />
-          <span>Download</span>
+          <Download size={15} />
+          <span>Baixar Imagem</span>
         </button>
+
       </div>
 
     </div>

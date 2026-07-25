@@ -381,13 +381,13 @@ export default function OriginalWorkspace() {
             <button
               onClick={handleRemoveBg}
               disabled={isBgRemoving}
-              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition-colors disabled:opacity-50 border border-neutral-200 dark:border-neutral-800"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold bg-[#ff385c]/10 text-[#ff385c] hover:bg-[#ff385c] hover:text-white rounded-full transition-all disabled:opacity-50 border border-[#ff385c]/30"
             >
               <Scissors size={12} />
               <span className="hidden xs:inline">
-                {isBgRemoving ? "Removing…" : "Remove BG"}
+                {isBgRemoving ? "Removendo…" : "Remover Fundo IA"}
               </span>
-              <span className="xs:hidden">{isBgRemoving ? "…" : "BG"}</span>
+              <span className="xs:hidden">{isBgRemoving ? "…" : "BG IA"}</span>
             </button>
           </>
         )}
@@ -396,27 +396,26 @@ export default function OriginalWorkspace() {
           <div className="flex gap-1.5">
             <button
               onClick={handleCancelCrop}
-              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition-colors border border-neutral-200 dark:border-neutral-800"
+              className="flex items-center gap-1 px-3 py-1.5 text-xs font-bold bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-white hover:bg-[#dddddd] rounded-full transition-colors border border-[#dddddd] dark:border-slate-700"
             >
-              <X size={12} /> Cancel
+              <X size={12} /> Cancelar
             </button>
             <button
               onClick={handleCropComplete}
-              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-lg transition-colors"
+              className="flex items-center gap-1 px-4 py-1.5 text-xs font-bold bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full transition-all shadow-sm active:scale-95"
             >
-              <Check size={12} /> Apply
+              <Check size={12} /> Aplicar Corte
             </button>
           </div>
         )}
       </div>
 
-      {/* Aspect ratio toolbar (crop mode) */}
+      {/* Aspect ratio toolbar (crop mode - Airbnb style pill chips) */}
       {isCropping && (
-        <div className="bg-transparent border-b border-neutral-200 dark:border-neutral-800 px-3 py-2 flex-shrink-0 transition-colors duration-300">
-          {/* Ratio buttons */}
-          <div className="flex flex-wrap gap-1.5 items-center mb-2">
-            <span className="text-[10px] font-semibold text-text-muted uppercase tracking-wider">
-              Ratio:
+        <div className="bg-transparent border-b border-[#dddddd] dark:border-slate-800 px-4 py-2.5 flex-shrink-0 transition-colors duration-300">
+          <div className="flex flex-wrap gap-2 items-center">
+            <span className="text-[11px] font-bold text-[#6a6a6a] dark:text-slate-400 uppercase tracking-wider">
+              Proporção:
             </span>
             {ASPECT_RATIOS.map((ratio) => (
               <button
@@ -430,10 +429,10 @@ export default function OriginalWorkspace() {
                     });
                   }
                 }}
-                className={`px-2 py-1 text-[10px] font-bold rounded-md transition-colors border ${
+                className={`px-3 py-1 text-xs font-bold rounded-full transition-all border ${
                   aspectRatio === ratio.label
-                    ? "bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 border-neutral-900 dark:border-neutral-100"
-                    : "bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-600"
+                    ? "bg-[#ff385c] text-white border-[#ff385c] shadow-sm"
+                    : "bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-white border-[#dddddd] dark:border-slate-700 hover:border-[#ff385c]"
                 }`}
               >
                 {ratio.label.toUpperCase()}
@@ -474,7 +473,7 @@ export default function OriginalWorkspace() {
         <div className="min-h-full min-w-full flex items-center justify-center p-4 sm:p-6">
           {/* BG removing overlay */}
           {isBgRemoving && (
-            <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-bg-card/90 backdrop-blur-md transition-colors duration-300">
+            <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-white/90 dark:bg-slate-900/90 backdrop-blur-md transition-colors duration-300">
               <div className="w-14 h-14 mb-4 relative">
                 <svg className="w-full h-full -rotate-90" viewBox="0 0 64 64">
                   <circle
@@ -482,7 +481,7 @@ export default function OriginalWorkspace() {
                     cy="32"
                     r="28"
                     fill="none"
-                    className="stroke-border-subtle"
+                    className="stroke-[#dddddd]"
                     strokeWidth="4"
                   />
                   <circle
@@ -490,7 +489,7 @@ export default function OriginalWorkspace() {
                     cy="32"
                     r="28"
                     fill="none"
-                    className="stroke-accent-main"
+                    className="stroke-[#ff385c]"
                     strokeWidth="4"
                     strokeDasharray={`${2 * Math.PI * 28}`}
                     strokeDashoffset={`${2 * Math.PI * 28 * (1 - bgProgress / 100)}`}
@@ -498,63 +497,63 @@ export default function OriginalWorkspace() {
                     style={{ transition: "stroke-dashoffset 0.5s ease-out" }}
                   />
                 </svg>
-                <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-accent-main">
+                <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-[#ff385c]">
                   {Math.round(bgProgress)}%
                 </span>
               </div>
-              <p className="text-sm font-semibold text-text-main mb-1">
-                Removing Background
+              <p className="text-sm font-bold text-[#222222] dark:text-white mb-1">
+                Removendo Fundo...
               </p>
-              <p className="text-xs text-text-muted text-center max-w-[200px]">
-                Running on-device AI — first run downloads the model (~30MB).
+              <p className="text-xs text-[#6a6a6a] dark:text-slate-400 text-center max-w-[220px]">
+                Processamento por IA no dispositivo com 100% de privacidade.
               </p>
             </div>
           )}
 
           {!imageFile ? (
             isUploading ? (
-              <div className="w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dashed border-neutral-200 dark:border-neutral-800 rounded-2xl flex flex-col items-center justify-center text-center bg-white dark:bg-neutral-900 shadow-sm">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center mb-4">
-                  <UploadCloud size={24} className="text-neutral-500 animate-pulse" />
+              <div className="w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dashed border-[#ff385c]/40 rounded-3xl flex flex-col items-center justify-center text-center bg-white dark:bg-slate-900 shadow-sm">
+                <div className="w-14 h-14 rounded-full bg-[#ff385c]/10 text-[#ff385c] flex items-center justify-center mb-4">
+                  <UploadCloud size={26} className="animate-pulse" />
                 </div>
-                <div className="w-full max-w-[200px] bg-neutral-100 dark:bg-neutral-800 rounded-full h-2 mb-4 overflow-hidden border border-neutral-200 dark:border-neutral-800">
+                <div className="w-full max-w-[200px] bg-[#f7f7f7] dark:bg-slate-800 rounded-full h-2 mb-4 overflow-hidden border border-[#dddddd]">
                   <div 
-                    className="bg-neutral-900 dark:bg-neutral-100 h-full rounded-full transition-all duration-75" 
+                    className="bg-[#ff385c] h-full rounded-full transition-all duration-75" 
                     style={{ width: `${uploadProgress}%` }}
                   ></div>
                 </div>
-                <h4 className="text-sm sm:text-base font-bold text-text-main mb-1.5">
-                  Uploading Image...
+                <h4 className="text-sm sm:text-base font-bold text-[#222222] dark:text-white mb-1.5">
+                  Carregando imagem...
                 </h4>
-                <p className="text-xs text-text-muted">{Math.round(uploadProgress)}%</p>
+                <p className="text-xs text-[#6a6a6a]">{Math.round(uploadProgress)}%</p>
               </div>
             ) : (
             <div
               {...getRootProps()}
-              className={`w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dotted rounded-2xl flex flex-col items-center justify-center text-center cursor-pointer transition-all ${
+              className={`w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dashed rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer transition-all ${
                 isDragActive
-                  ? "border-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 scale-[1.02]"
-                  : "border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-neutral-800/50"
+                  ? "border-[#ff385c] bg-[#ff385c]/5 scale-[1.02]"
+                  : "border-[#dddddd] dark:border-slate-700 hover:border-[#ff385c] bg-white dark:bg-slate-900 shadow-sm hover:shadow-md"
               }`}
             >
               <input {...getInputProps()} />
               <div
-                className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center mb-3 transition-colors ${isDragActive ? "bg-neutral-200 dark:bg-neutral-700" : "bg-neutral-100 dark:bg-neutral-800"}`}
+                className={`w-14 h-14 rounded-full flex items-center justify-center mb-4 transition-colors ${isDragActive ? "bg-[#ff385c] text-white" : "bg-[#ff385c]/10 text-[#ff385c]"}`}
               >
                 <UploadCloud
-                  size={24}
-                  className={isDragActive ? "text-neutral-900 dark:text-neutral-100" : "text-neutral-500"}
+                  size={28}
+                  className={isDragActive ? "text-white" : "text-[#ff385c]"}
                 />
               </div>
-              <h4 className="text-sm sm:text-base font-bold text-text-main mb-1.5">
-                {isDragActive ? t.dropIt : t.uploadImage}
+              <h4 className="text-base font-bold text-[#222222] dark:text-white mb-1.5">
+                {isDragActive ? "Solte a imagem aqui" : "Selecione uma imagem"}
               </h4>
-              <p className="text-xs text-text-muted mb-4">{t.dragDropOrTap}</p>
-              <div className="flex gap-1.5">
+              <p className="text-xs text-[#6a6a6a] dark:text-slate-400 mb-5">Arraste e solte ou clique para navegar</p>
+              <div className="flex gap-2">
                 {["JPG", "PNG", "WEBP"].map((fmt) => (
                   <span
                     key={fmt}
-                    className="px-2 py-0.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-neutral-500 rounded text-[10px] font-bold shadow-sm"
+                    className="px-3 py-1 bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 text-[#222222] dark:text-white rounded-full text-[11px] font-bold"
                   >
                     {fmt}
                   </span>

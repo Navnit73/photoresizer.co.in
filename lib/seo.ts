@@ -4,6 +4,7 @@ import { enPages } from '../content/en-pages';
 import { dePages } from '../content/de-pages';
 import { frPages } from '../content/fr-pages';
 import { esPages } from '../content/es-pages';
+import { ptPages } from '../content/pt-pages';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
 
@@ -15,17 +16,20 @@ export function getHreflangMap(page: SeoPage): HreflangMap {
   const deMatch = key ? dePages.find(p => p.translationKey === key) : null;
   const frMatch = key ? frPages.find(p => p.translationKey === key) : null;
   const esMatch = key ? esPages.find(p => p.translationKey === key) : null;
+  const ptMatch = key ? ptPages.find(p => p.translationKey === key) : null;
 
   const enUrl = enMatch ? `${baseUrl}/${enMatch.slug}` : baseUrl;
   const deUrl = deMatch ? `${baseUrl}/de/${deMatch.slug}` : `${baseUrl}/de`;
   const frUrl = frMatch ? `${baseUrl}/fr/${frMatch.slug}` : `${baseUrl}/fr`;
   const esUrl = esMatch ? `${baseUrl}/es/${esMatch.slug}` : `${baseUrl}/es`;
+  const ptUrl = ptMatch ? `${baseUrl}/pt/${ptMatch.slug}` : `${baseUrl}/pt`;
 
   return {
     'en': enUrl,
     'de': deUrl,
     'fr': frUrl,
     'es': esUrl,
+    'pt': ptUrl,
   };
 }
 

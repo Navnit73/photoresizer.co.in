@@ -15,26 +15,26 @@ export default function EditorHeader() {
   }, []);
 
   return (
-    <header className="flex items-center justify-between w-full px-4 sm:px-6 h-14 transition-colors duration-300">
+    <header className="flex items-center justify-between w-full px-4 sm:px-6 h-14 transition-colors duration-300 font-['Airbnb_Cereal_VF',Circular,sans-serif]">
       
       {/* LEFT: Actions */}
       <div className="flex items-center gap-2 sm:gap-3 w-1/3">
         {imageFile && (
           <>
-            <div className="flex items-center bg-neutral-100 dark:bg-neutral-800 rounded-lg p-1">
+            <div className="flex items-center bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-full p-1 shadow-sm">
               <button
                 onClick={undo}
                 disabled={!canUndo}
-                className="p-1.5 rounded-md text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-white dark:hover:bg-neutral-700 disabled:opacity-30 disabled:hover:bg-transparent transition-all"
+                className="p-1.5 rounded-full text-[#6a6a6a] dark:text-slate-300 hover:text-[#222222] dark:hover:text-white hover:bg-white dark:hover:bg-slate-700 disabled:opacity-30 disabled:hover:bg-transparent transition-all"
                 title="Undo (Ctrl+Z)"
               >
                 <Undo2 size={15} />
               </button>
-              <div className="w-[1px] h-3.5 bg-neutral-300 dark:bg-neutral-600 mx-1" />
+              <div className="w-[1px] h-3.5 bg-[#dddddd] dark:bg-slate-600 mx-1" />
               <button
                 onClick={redo}
                 disabled={!canRedo}
-                className="p-1.5 rounded-md text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-white dark:hover:bg-neutral-700 disabled:opacity-30 disabled:hover:bg-transparent transition-all"
+                className="p-1.5 rounded-full text-[#6a6a6a] dark:text-slate-300 hover:text-[#222222] dark:hover:text-white hover:bg-white dark:hover:bg-slate-700 disabled:opacity-30 disabled:hover:bg-transparent transition-all"
                 title="Redo (Ctrl+Y)"
               >
                 <Redo2 size={15} />
@@ -43,10 +43,10 @@ export default function EditorHeader() {
 
             <button
               onClick={reset}
-              className="flex items-center gap-1.5 text-xs font-semibold text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-all px-3 py-2 rounded-lg"
+              className="flex items-center gap-1.5 text-xs font-semibold text-[#6a6a6a] dark:text-slate-400 hover:text-[#ff385c] transition-all px-3 py-1.5 rounded-full hover:bg-[#ff385c]/10"
             >
               <RefreshCcw size={13} />
-              <span className="hidden sm:inline">Reset</span>
+              <span className="hidden sm:inline">Resetar</span>
             </button>
           </>
         )}
@@ -59,8 +59,8 @@ export default function EditorHeader() {
             type="text"
             value={fileName}
             onChange={(e) => setFileName(e.target.value)}
-            className="bg-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:bg-neutral-100 dark:focus:bg-neutral-800 border border-transparent focus:border-neutral-300 dark:focus:border-neutral-600 text-sm font-bold text-neutral-800 dark:text-neutral-100 placeholder-neutral-400 dark:placeholder-neutral-500 text-center rounded-lg px-3 py-1.5 focus:outline-none transition-all w-24 sm:w-48 xl:w-64 truncate"
-            placeholder="Untitled Image"
+            className="bg-transparent hover:bg-[#f7f7f7] dark:hover:bg-slate-800 focus:bg-[#f7f7f7] dark:focus:bg-slate-800 border border-transparent focus:border-[#dddddd] dark:focus:border-slate-700 text-sm font-bold text-[#222222] dark:text-white placeholder-[#6a6a6a] dark:placeholder-slate-500 text-center rounded-full px-4 py-1.5 focus:outline-none transition-all w-28 sm:w-48 xl:w-64 truncate"
+            placeholder="Nome do Arquivo"
           />
         )}
       </div>
@@ -70,7 +70,7 @@ export default function EditorHeader() {
         {mounted && (
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="p-2 rounded-lg bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-all active:scale-95"
+            className="p-2 rounded-full border border-[#dddddd] dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-[#f7f7f7] dark:hover:bg-slate-700 text-[#222222] dark:text-white transition-all active:scale-95 shadow-sm"
             title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
           >
             {theme === 'dark' ? <Sun size={15} /> : <Moon size={15} />}

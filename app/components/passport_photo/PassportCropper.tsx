@@ -30,6 +30,22 @@ export const PASSPORT_PRESETS = {
     height: 531,
     aspectRatio: 35 / 45,
     description: '3.5 x 4.5 cm (35x45 mm) • 413x531 px • Max 500KB'
+  },
+  BR_PASSPORT: {
+    id: 'BR_PASSPORT',
+    label: 'Brazil Passport (5x7 cm)',
+    width: 591,
+    height: 827,
+    aspectRatio: 5 / 7,
+    description: '5 x 7 cm (50x70 mm) • 591x827 px • Max 500KB'
+  },
+  BR_3X4: {
+    id: 'BR_3X4',
+    label: 'Brazil 3x4 cm (CNH / RG)',
+    width: 354,
+    height: 472,
+    aspectRatio: 3 / 4,
+    description: '3 x 4 cm (30x40 mm) • 354x472 px • Max 500KB'
   }
 } as const;
 
