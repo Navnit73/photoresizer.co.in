@@ -90,6 +90,10 @@ const translations = {
     heroDragDropSub: 'Drag and drop your image here or click to select. Instant browser editing.',
     upTo30MB: 'up to 30MB',
     noServerUploadPrivacy: 'Your files are not sent to external servers.',
+    photoEditorTab: 'Photo Editor',
+    bgRemoverTab: 'AI BG Remover',
+    relatedTools: 'Related Tools',
+    useTool: 'Use tool',
   },
   de: {
     outputSize: 'Ausgabegröße',
@@ -176,6 +180,10 @@ const translations = {
     heroDragDropSub: 'Drag & Drop Ihr Bild hierher oder klicken Sie zum Auswählen. Sofortige Bearbeitung im Browser.',
     upTo30MB: 'bis zu 30MB',
     noServerUploadPrivacy: 'Ihre Dateien werden nicht an externe Server gesendet.',
+    photoEditorTab: 'Foto-Editor',
+    bgRemoverTab: 'KI-Hintergrundentferner',
+    relatedTools: 'Ähnliche Werkzeuge',
+    useTool: 'Werkzeug nutzen',
   },
   fr: {
     outputSize: 'Taille de sortie',
@@ -262,6 +270,10 @@ const translations = {
     heroDragDropSub: 'Glissez-déposez votre image ici ou cliquez pour sélectionner. Édition instantanée dans le navigateur.',
     upTo30MB: 'jusqu\'à 30 Mo',
     noServerUploadPrivacy: 'Vos fichiers ne sont pas envoyés à des serveurs externes.',
+    photoEditorTab: 'Éditeur de photo',
+    bgRemoverTab: 'Supprimer le fond IA',
+    relatedTools: 'Outils associés',
+    useTool: 'Utiliser l\'outil',
   },
   es: {
     outputSize: 'Tamaño de salida',
@@ -348,6 +360,10 @@ const translations = {
     heroDragDropSub: 'Arrastra y suelta tu imagen aquí o haz clic para seleccionar. Edición instantánea en el navegador.',
     upTo30MB: 'hasta 30MB',
     noServerUploadPrivacy: 'Tus archivos no se envían a servidores externos.',
+    photoEditorTab: 'Editor de fotos',
+    bgRemoverTab: 'Eliminar fondo IA',
+    relatedTools: 'Herramientas relacionadas',
+    useTool: 'Usar herramienta',
   },
   pt: {
     outputSize: 'Tamanho de Saída',
@@ -434,6 +450,10 @@ const translations = {
     heroDragDropSub: 'Arraste e solte sua imagem aqui ou clique para selecionar. Edição instantânea no navegador.',
     upTo30MB: 'até 30MB',
     noServerUploadPrivacy: 'Seus arquivos não são enviados para servidores externos.',
+    photoEditorTab: 'Editor de Fotos',
+    bgRemoverTab: 'Remover Fundo IA',
+    relatedTools: 'Ferramentas Relacionadas',
+    useTool: 'Usar ferramenta',
   }
 };
 

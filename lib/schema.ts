@@ -18,6 +18,14 @@ export function generateFAQSchema(page: SeoPage) {
   };
 }
 
+const homeNames: Record<Language, string> = {
+  en: 'Home',
+  de: 'Startseite',
+  fr: 'Accueil',
+  es: 'Inicio',
+  pt: 'Início',
+};
+
 export function generateBreadcrumbSchema(page: SeoPage, lang: Language) {
   const actualPrefix = lang === 'en' ? '' : `/${lang}`;
   
@@ -28,7 +36,7 @@ export function generateBreadcrumbSchema(page: SeoPage, lang: Language) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: 'Home',
+        name: homeNames[lang] || 'Home',
         item: `${baseUrl}${actualPrefix}`
       },
       {

@@ -4,16 +4,22 @@ import HeroUploader from "./components/HeroUploader";
 import { AdBanner } from "../../components/AdBanner";
 import { Metadata } from "next";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
+
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/',
+    canonical: `${baseUrl}/`,
     languages: {
-      en: '/',
-      de: '/de',
-      fr: '/fr',
-      es: '/es',
-      'x-default': '/',
+      en: `${baseUrl}/`,
+      de: `${baseUrl}/de`,
+      fr: `${baseUrl}/fr`,
+      es: `${baseUrl}/es`,
+      pt: `${baseUrl}/pt`,
+      'x-default': `${baseUrl}/`,
     },
+  },
+  openGraph: {
+    locale: 'en_US',
   },
 };
 

@@ -243,7 +243,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                     : "text-[#6a6a6a] dark:text-slate-400 hover:text-[#222222] dark:hover:text-white"
                 }`}
               >
-                Editor de Fotos
+                {t.photoEditorTab}
               </button>
               <button
                 onClick={() => setActiveTab("bg_remover")}
@@ -253,7 +253,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                     : "text-[#6a6a6a] dark:text-slate-400 hover:text-[#222222] dark:hover:text-white"
                 }`}
               >
-                Remover Fundo IA
+                {t.bgRemoverTab}
               </button>
             </div>
           </header>
@@ -296,7 +296,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
         {/* Related Tools Internal Linking ({component.property-card} photo-first style) */}
         {relatedPages.length > 0 && (
           <div className="mt-16 pt-8 border-t border-[#dddddd] dark:border-slate-800 not-prose mb-12">
-            <h3 className="text-xl font-bold mb-6 text-[#222222] dark:text-white">Ferramentas Relacionadas</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#222222] dark:text-white">{t.relatedTools}</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {relatedPages.map((relatedPage) => (
                 <Link 
@@ -311,7 +311,7 @@ export function SeoPageRenderer({ page, lang }: Props) {
                     {relatedPage.metaDescription}
                   </p>
                   <div className="mt-3 text-xs font-bold text-[#ff385c] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
-                    <span>Usar ferramenta</span>
+                    <span>{t.useTool}</span>
                     <ArrowRight size={12} />
                   </div>
                 </Link>

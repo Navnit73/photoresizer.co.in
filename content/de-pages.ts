@@ -11,11 +11,11 @@ export const dePages: SeoPage[] = [
   // ─────────────────────────────────────────────────────
   {
     slug: "foto-verkleinern",
-      translationKey: 'photo-resizer',
+    translationKey: 'photo-resizer',
     metaTitle:
-      "Foto verkleinern – Bilder online verkleinern ohne Qualitätsverlust",
+      "Foto verkleinern – Bilder online verkleinern",
     metaDescription:
-      "Foto verkleinern leicht gemacht: Unser Online-Tool verkleinert Fotos auf Wunschgröße, komprimiert JPEG/PNG und behält dabei die Bildqualität. Kostenlos, ohne Anmeldung.",
+      "Foto verkleinern leicht gemacht: Verkleinere Fotos auf Wunschgröße & komprimiere JPEG/PNG. Kostenlos, ohne Anmeldung, 100% privat im Browser.",
     h1: "Foto verkleinern",
     subtitle:
       "Fotos sekundenschnell verkleinern – mit voller Kontrolle über Abmessungen, Qualität und Dateiformat.",
@@ -384,11 +384,11 @@ export const dePages: SeoPage[] = [
   },
   {
     slug: "passfoto-ersteller",
-      translationKey: 'passport-photo-maker',
+    translationKey: 'passport-photo-maker',
     metaTitle:
-      "Passfoto Ersteller – Biometrische Passbilder online selbst machen",
+      "Passfoto Ersteller – Biometrische Passbilder online",
     metaDescription:
-      "Erstelle mit dem Passfoto Ersteller biometrische Passbilder direkt im Browser. Wähle Land und Dokumenttyp – Hintergrund wird automatisch angepasst, Gesichtsbiometrie geprüft. Kostenlos.",
+      "Erstelle biometrische Passbilder direkt im Browser. Wähle Land und Dokumenttyp mit automatischer Anpassung. Kostenlos & DSGVO-konform.",
     h1: "Passfoto Ersteller",
     subtitle:
       "Schneide, skaliere und formatiere dein Selfie für offizielle Dokumente – ganz ohne Fotostudio.",
@@ -489,10 +489,11 @@ export const dePages: SeoPage[] = [
   },
   {
     slug: "anleitung",
-      translationKey: 'how-to-use',
-    metaTitle: "Anleitung – So nutzt du die Online Bildbearbeitung optimal",
+    translationKey: 'how-to-use',
+    metaTitle:
+      "Anleitung – Bildbearbeitung & Passbilder leicht gemacht",
     metaDescription:
-      "Schritt-für-Schritt-Anleitung für unsere Bild-Tools. Erfahre, wie du Fotos verkleinerst, zuschneidest, den Hintergrund entfernst und Passbilder erstellst. Mit Tipps und Tricks.",
+      "Schritt-für-Schritt-Anleitung für unsere Bild-Tools. Erfahre, wie du Fotos verkleinerst, zuschneidest, Hintergründe entfernst und Passbilder erstellst.",
     h1: "Anleitung",
     subtitle:
       "Vom ersten Upload bis zum perfekten Ergebnis – alle Funktionen einfach erklärt.",
@@ -790,10 +791,10 @@ export const dePages: SeoPage[] = [
   },
   {
     slug: "datenschutz",
-      translationKey: 'privacy',
-    metaTitle: "Datenschutzerklärung – So schützen wir deine Privatsphäre",
+    translationKey: 'privacy',
+    metaTitle: "Datenschutzerklärung – 100% lokale Bildbearbeitung",
     metaDescription:
-      "Unsere Datenschutzerklärung erläutert, dass alle Bildbearbeitungen lokal im Browser stattfinden. Keine Datenerfassung, keine Cookies, keine Server-Uploads. Volle Transparenz.",
+      "Unsere Datenschutzerklärung: Alle Bildbearbeitungen finden 100% lokal im Browser statt. Keine Server-Uploads, keine Speicherung, volle Sicherheit.",
     h1: "Datenschutzerklärung",
     subtitle:
       "Deine Privatsphäre ist das Herzstück unseres Dienstes – lese, wie wir sie gewährleisten.",
@@ -893,8 +894,8 @@ export const dePages: SeoPage[] = [
   },
   {
     slug: "foto-groesse-aendern",
-    translationKey: "resizePhoto",
-    metaTitle: "Foto Größe ändern online – kostenlos, schnell & ohne Anmeldung",
+    translationKey: "photo-resizer",
+    metaTitle: "Foto Größe ändern online – Kostenlos & schnell",
     metaDescription:
       "Foto Größe in Sekunden ändern: Pixel, cm oder KB einstellen – für Bewerbung, Visum, Ausweis oder Social Media. 100 % im Browser, ohne Upload, ohne Anmeldung.",
     h1: "Foto Größe ändern",
@@ -990,7 +991,7 @@ export const dePages: SeoPage[] = [
   // ============================================================
   {
     slug: "bild-verkleinern",
-    translationKey: "shrinkImage",
+    translationKey: "photo-resizer",
     metaTitle: "Bild verkleinern online – kostenlos & ohne Qualitätsverlust",
     metaDescription:
       "Bild verkleinern in Sekunden: Auflösung und Dateigröße reduzieren, ohne sichtbaren Qualitätsverlust. Kostenlos, ohne Anmeldung, komplett im Browser.",
@@ -1088,8 +1089,8 @@ export const dePages: SeoPage[] = [
   // ============================================================
   {
     slug: "bild-zuschneiden",
-    translationKey: "cropImage",
-    metaTitle: "Bild zuschneiden online – präzise, kostenlos & ohne Anmeldung",
+    translationKey: "crop-image",
+    metaTitle: "Bild zuschneiden online – Präzise & kostenlos",
     metaDescription:
       "Bild zuschneiden mit exaktem Seitenverhältnis für Passbilder, Social Media oder Druck. Kostenlos, ohne Anmeldung, komplett im Browser bearbeitet.",
     h1: "Bild zuschneiden",
@@ -1186,7 +1187,7 @@ export const dePages: SeoPage[] = [
   // ============================================================
   {
     slug: "passbild-erstellen",
-    translationKey: "createPassportPhoto",
+    translationKey: "passport-photo-maker",
     metaTitle: "Passbild erstellen online – biometrisch korrekt & kostenlos",
     metaDescription:
       "Passbild erstellen von zu Hause aus: biometrisch korrekte Maße, automatischer Hintergrund und Sofort-Download. Kostenlos, ohne Anmeldung, ohne Fotostudio.",
@@ -1284,8 +1285,8 @@ export const dePages: SeoPage[] = [
   // ============================================================
   {
     slug: "passfoto-generator",
-    translationKey: "passportPhotoGenerator",
-    metaTitle: "Passfoto Generator – biometrisches Foto in Sekunden erstellen",
+    translationKey: "passport-photo-maker",
+    metaTitle: "Passfoto Generator – Biometrisches Foto erstellen",
     metaDescription:
       "Passfoto Generator mit automatischer Größen- und Hintergrundanpassung für Reisepass, Personalausweis und Visum. Kostenlos, schnell und ohne Anmeldung.",
     h1: "Passfoto Generator",

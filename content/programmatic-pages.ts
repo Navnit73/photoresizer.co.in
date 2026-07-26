@@ -1534,7 +1534,7 @@ export const programmaticPages: SeoPage[] = [
   },
   {
     slug: "merge-pdf",
-    metaTitle: "Merge Pdf — Free Online Tool",
+    metaTitle: "Merge PDF Files Free Online — Combine PDFs",
     metaDescription:
       "Free online tool for Merge Pdf. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
     h1: "Merge Pdf",
@@ -1567,7 +1567,7 @@ export const programmaticPages: SeoPage[] = [
   },
   {
     slug: "split-pdf",
-    metaTitle: "Split Pdf — Free Online Tool",
+    metaTitle: "Split PDF Files Free Online — Separate PDF Pages",
     metaDescription:
       "Free online tool for Split Pdf. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
     h1: "Split Pdf",
@@ -1600,7 +1600,7 @@ export const programmaticPages: SeoPage[] = [
   },
   {
     slug: "jpg-to-pdf",
-    metaTitle: "Jpg To Pdf — Free Online Tool",
+    metaTitle: "JPG to PDF Converter Free Online — Image to PDF",
     metaDescription:
       "Free online tool for Jpg To Pdf. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
     h1: "Jpg To Pdf",
@@ -1633,7 +1633,7 @@ export const programmaticPages: SeoPage[] = [
   },
   {
     slug: "pdf-to-jpg",
-    metaTitle: "Pdf To Jpg — Free Online Tool",
+    metaTitle: "PDF to JPG Converter Free Online — Extract Images",
     metaDescription:
       "Free online tool for Pdf To Jpg. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
     h1: "Pdf To Jpg",
@@ -1666,7 +1666,7 @@ export const programmaticPages: SeoPage[] = [
   },
   {
     slug: "pdf-editor",
-    metaTitle: "Pdf Editor — Free Online Tool",
+    metaTitle: "Free Online PDF Editor — Edit PDF Documents",
     metaDescription:
       "Free online tool for Pdf Editor. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
     h1: "Pdf Editor",

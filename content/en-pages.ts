@@ -8,9 +8,9 @@ export const enPages: SeoPage[] = [
   {
     slug: "photo-resizer",
       translationKey: 'photo-resizer',
-    metaTitle: "Free Online Photo Resizer — Resize Images Instantly, No Upload",
+    metaTitle: "Free Online Photo Resizer — Resize Images Instantly",
     metaDescription:
-      "Resize photos online free in seconds. Change dimensions, reduce file size, maintain quality. Browser-based — your images never leave your device. No signup required.",
+      "Resize photos online free in seconds. Change dimensions and maintain sharp quality. 100% private, browser-based, no signup required.",
     h1: "Free Online Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -578,7 +578,7 @@ export const enPages: SeoPage[] = [
   {
     slug: "privacy",
       translationKey: 'privacy',
-    metaTitle: "Privacy Policy — photoresizer",
+    metaTitle: "Privacy Policy — PhotoResizer Online",
     metaDescription:
       "Privacy policy for photoresizer. All image processing is 100% local in your browser. We never upload, store, or share your photos.",
     h1: "Privacy Policy",
@@ -648,10 +648,6 @@ export const enPages: SeoPage[] = [
       <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">We use Google Analytics 4 for anonymous usage statistics. Our site is hosted on Vercel/Netlify, which may log standard server access logs (IP addresses, request timestamps) for security purposes. These logs are not used for advertising or profiling.</p>
     </div>
   </div>
-
-  <div class="p-5 bg-slate-100 dark:bg-slate-700/50 rounded-xl">
-    <p class="text-sm text-slate-600 dark:text-slate-400">Privacy questions? Email <a href="mailto:usvisaphotoai@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">usvisaphotoai@gmail.com</a> — we aim to respond within 5 business days.</p>
-  </div>
 </div>`,
       },
     ],
@@ -659,10 +655,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "ssc-photo-resizer",
-    metaTitle:
-      "SSC Photo Resizer 2027 — Resize Photo & Signature for SSC Forms",
+    metaTitle: "SSC Photo Resizer — Resize Photo & Signature",
     metaDescription:
-      "Resize your photo and signature for SSC CGL, CHSL, MTS, CPO and all SSC exams in 2027. Meet exact KB and pixel requirements instantly. Free, private, no upload.",
+      "Resize your photo and signature for SSC exams. Meet exact KB and pixel requirements instantly. Free, private, no upload.",
     h1: "SSC Photo Resizer 2027",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -789,9 +784,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "upsc-photo-size",
-    metaTitle: "UPSC Photo Size 2027 — Resize Photo & Signature for UPSC Forms",
+    metaTitle: "UPSC Photo Resizer — Resize Photo & Signature",
     metaDescription:
-      "Resize your photo and signature to UPSC's exact 2027 specifications. Free browser-based tool — no upload, no signup. Covers CSE, CDS, NDA, CAPF and all UPSC exams.",
+      "Resize your photo and signature to UPSC requirements. Free, browser-based tool — no upload, no signup. Covers all UPSC exams.",
     h1: "UPSC Photo Size Resizer 2027",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -907,10 +902,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "reduce-photo-size-50kb",
-    metaTitle:
-      "Reduce Photo Size to 50KB Free Online 2027 — No Upload Required",
+    metaTitle: "Reduce Photo Size to 50KB Free Online",
     metaDescription:
-      "Compress any photo to exactly 50KB or under in seconds. Free, browser-based, no server upload. Perfect for government forms, job portals, and exam applications in 2027.",
+      "Compress any photo to exactly 50KB or under in seconds. Free, browser-based, no server upload. Perfect for government forms and portals.",
     h1: "Reduce Photo Size to 50KB — Free Online Tool 2027",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1016,10 +1010,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "signature-resize-ibps",
-    metaTitle:
-      "IBPS Signature Resize 2027 — Resize Signature for IBPS PO, Clerk, SO",
+    metaTitle: "IBPS Signature Resize — IBPS PO & Clerk",
     metaDescription:
-      "Resize your signature image to IBPS 2027 requirements — 10 KB to 20 KB, 140×60 pixels, JPG format. Free, instant, browser-based. No upload to servers.",
+      "Resize your signature image to IBPS requirements — 10 KB to 20 KB, 140×60 pixels, JPG format. Free, instant, browser-based.",
     h1: "IBPS Signature Resizer 2027",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1133,9 +1126,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "jpeg-to-jpg",
-    metaTitle: "JPEG to JPG Converter Free Online 2027 — Instant, No Upload",
+    metaTitle: "JPEG to JPG Converter Free Online",
     metaDescription:
-      "Convert JPEG to JPG online free in 2027. Rename or re-export your image instantly in the browser — no file upload, no account needed. Works on any device.",
+      "Convert JPEG to JPG online free. Rename or re-export your image instantly in the browser — no file upload, no account needed.",
     h1: "JPEG to JPG Converter — Free Online 2027",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1229,10 +1222,9 @@ export const enPages: SeoPage[] = [
   {
     slug: "compress-image",
       translationKey: 'compress-image',
-    metaTitle:
-      "Compress Image Free Online 2027 — Reduce File Size Without Losing Quality",
+    metaTitle: "Compress Image Free Online — Reduce File Size",
     metaDescription:
-      "Compress JPG, PNG, WEBP and GIF images free online in 2027. Reduce file size by up to 90% with no visible quality loss. Browser-based — images never uploaded to servers.",
+      "Compress JPG, PNG, WEBP images free online. Reduce file size by up to 90% without quality loss. Browser-based, 100% private.",
     h1: "Free Image Compressor 2027 — Compress Images Online",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1326,9 +1318,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "jpg-to-png",
-    metaTitle: "JPG to PNG Converter Free Online 2027 — No Upload, Instant",
+    metaTitle: "JPG to PNG Converter Free Online",
     metaDescription:
-      "Convert JPG to PNG online free in 2027. Get transparent-background PNG from any JPG instantly. Browser-based — your images never leave your device. No signup.",
+      "Convert JPG to PNG online free. Get transparent-background PNG from any JPG instantly. Browser-based — no upload, no signup.",
     h1: "JPG to PNG Converter — Free Online 2027",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1413,9 +1405,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "resize-photo-20kb",
-    metaTitle: "Resize Photo to 20KB Free Online 2027 — Compress to Exact Size",
+    metaTitle: "Resize Photo to 20KB Free Online",
     metaDescription:
-      "Reduce any photo to exactly 20KB or under in seconds. Free, browser-based — no upload, no signup. Ideal for SSC signatures, bank exam forms and government portals in 2027.",
+      "Reduce any photo to exactly 20KB or under in seconds. Free, browser-based — no upload, no signup. Ideal for signatures and bank forms.",
     h1: "Resize Photo to 20KB — Free Online Tool 2027",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1502,7 +1494,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "canvas-photo-collage-maker",
-    metaTitle: "Canvas Photo Collage Maker — Free Online Tool | photoresizer",
+    metaTitle: "Canvas Photo Collage Maker — Free Online Tool",
     metaDescription:
       "Turn your photos into a custom canvas print for free. Make a canvas collage or print a large photo on multiple pages. No signup required.",
     h1: "Canvas Photo Collage Maker — Turn Your Photos into a Custom Canvas Print",
@@ -1556,10 +1548,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "passport-photo-maker-2026",
-    metaTitle:
-      "Free Passport Photo Maker 2026 — Make Passport Photos Online Instantly",
+    metaTitle: "Passport Photo Maker — Official Biometric Photos",
     metaDescription:
-      "Create compliant passport photos online free in 2026. Crop to exact dimensions, set white background, download print-ready JPG. No upload to servers. Works on all devices.",
+      "Create official passport photos online for any country. Automatic background removal, accurate head alignment, and print templates.",
     h1: "Free Online Passport Photo Maker 2026",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1641,7 +1632,7 @@ export const enPages: SeoPage[] = [
       {
         question: "How do I print the passport photo?",
         answer:
-          "Download the 4-up print sheet (four photos on a 4×6 inch canvas) and print it at any photo printing shop, pharmacy printer, or your home inkjet printer on glossy photo paper.",
+          "Download the 4-up print sheet (four passport photos arranged on a single page) and print it at any photo printing shop, pharmacy printer, or your home inkjet printer on glossy photo paper.",
       },
       {
         question: "Does it work for visa photos too?",
@@ -1663,9 +1654,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "passport-size-photo-maker",
-    metaTitle: "Passport Size Photo Maker Free 2026 — Online, No Signup",
+    metaTitle: "Passport Size Photo Maker Free Online — Any Country",
     metaDescription:
-      "Make passport size photos free online in 2026. Correct dimensions, white background, print-ready output. Browser-based — no server upload, works on mobile and desktop.",
+      "Create passport size photos online for free. Auto crop, precise dimensions, background changer, and instant download.",
     h1: "Free Passport Size Photo Maker Online (2026) — Any Country, Instant Download",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1852,9 +1843,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "us-passport-photo-maker",
-    metaTitle: "US Passport Photo Maker Free 2026 — 2x2 Inch, White Background",
+    metaTitle: "US Passport Photo Maker 2x2 Inches Online",
     metaDescription:
-      "Create a compliant US passport photo free online in 2026. 2×2 inch (51×51mm), white background, correct face size. No server upload. Instant download.",
+      "Create a compliant US passport photo free online. 2×2 inch (51×51mm), white background, correct face size. Instant download.",
     h1: "US Passport Photo Maker — Free Online 2026",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1863,7 +1854,7 @@ export const enPages: SeoPage[] = [
     sections: [
       {
         heading: "US Passport Photo Requirements 2026",
-        content: `<div class="space-y-8 not-prose"><p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">The US State Department requires all passport photos to be exactly 2×2 inches (51×51 mm) with a white or off-white background. The head must be between 1 inch and 1⅜ inches tall (25–35 mm), centred in the frame. Our free tool enforces all these specifications so your photo will not be rejected at the post office, acceptance facility, or US Embassy.</p><div class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden"><div class="px-6 py-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80"><h3 class="text-base font-bold text-slate-900 dark:text-white">Official US Passport Photo Specs 2026</h3></div><div class="overflow-x-auto p-6"><table class="w-full text-sm"><thead><tr class="border-b border-slate-200 dark:border-slate-700"><th class="text-left py-2 pr-4 font-semibold">Requirement</th><th class="text-left py-2 font-semibold">Specification</th></tr></thead><tbody class="divide-y divide-slate-100 dark:divide-slate-700/50"><tr><td class="py-2 pr-4 font-medium">Photo Size</td><td class="py-2 text-slate-600 dark:text-slate-400">2 × 2 inches (51 × 51 mm)</td></tr><tr><td class="py-2 pr-4 font-medium">Head Size</td><td class="py-2 text-slate-600 dark:text-slate-400">1 – 1⅜ inches from chin to top of head</td></tr><tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-slate-600 dark:text-slate-400">Plain white or off-white</td></tr><tr><td class="py-2 pr-4 font-medium">Expression</td><td class="py-2 text-slate-600 dark:text-slate-400">Neutral, both eyes open and looking at camera</td></tr><tr><td class="py-2 pr-4 font-medium">Recency</td><td class="py-2 text-slate-600 dark:text-slate-400">Taken within the last 6 months</td></tr><tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-slate-600 dark:text-slate-400">Colour JPEG, printed on photo-quality paper</td></tr></tbody></table></div></div></div>`,
+        content: `<div class="space-y-8 not-prose"><p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">The US State Department requires all passport photos to be exactly 2×2 inches (51×51 mm) with a white or off-white background. The head must be between 1 inch and 1⅜ inches tall (25–35 mm), centred in the frame. Our free tool enforces all these specifications so your photo will not be rejected at the post office, acceptance facility, or US Embassy.</p><div class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden"><div class="px-6 py-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80"><h3 class="text-base font-bold text-slate-900 dark:text-white">Official US Passport Photo Specs 2026</h3></div><div class="overflow-x-auto p-6"><table class="w-full text-sm"><thead><tr class="border-b border-slate-200 dark:border-slate-700"><th class="text-left py-2 pr-4 font-semibold">Requirement</th><th class="text-left py-2 font-semibold">Specification</th></tr></thead><tbody class="divide-y divide-slate-100 dark:divide-slate-700/50"><tr><td class="py-2 pr-4 font-medium">Photo Size</td><td class="py-2 text-slate-600 dark:text-slate-400">2 × 2 inches (51 × 51 mm)</td></tr><tr><td class="py-2 pr-4 font-medium">Head Size</td><td class="py-2 text-slate-600 dark:text-slate-400">1 – 1⅜ inches from chin to top of head</td></tr><tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-slate-600 dark:text-slate-400">Plain white or off-white</td></tr><tr><td class="py-2 pr-4 font-medium">Expression</td><td class="py-2 text-slate-600 dark:text-slate-400">Neutral, both eyes open and looking at camera</td></tr><tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-slate-600 dark:text-slate-400">Colour JPEG, printed on photo-quality paper</td></tr></tbody></table></div></div></div>`,
       },
     ],
     faq: [
@@ -1902,9 +1893,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "uk-passport-photo-maker",
-    metaTitle: "UK Passport Photo Maker Free 2026 — 35x45mm, Correct Specs",
+    metaTitle: "UK Passport Photo Maker 35x45mm Online",
     metaDescription:
-      "Make a compliant UK passport photo free online in 2026. 35×45mm, light grey or cream background, correct face height. Browser-based, no upload. Instant download.",
+      "Make official UK passport photos 35x45mm online for free. Automatic background adjustment and compliant sizing.",
     h1: "UK Passport Photo Maker — Free Online 2026",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -1951,10 +1942,9 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "india-passport-photo-maker",
-    metaTitle:
-      "India Passport Photo Maker Free 2026 — 35x45mm White Background",
+    metaTitle: "India Passport Photo Maker 3.5x3.5 cm Online",
     metaDescription:
-      "Create India passport photos free online in 2026. 35×45mm, plain white background, JPG. No upload needed. Download print-ready file instantly. No signup.",
+      "Create India passport photos free online. 35×45mm, plain white background, JPG. No upload needed. Download print-ready file instantly.",
     h1: "India Passport Photo Maker — Free Online 2026",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -2002,10 +1992,9 @@ export const enPages: SeoPage[] = [
   {
     slug: "remove-background",
       translationKey: 'remove-background',
-    metaTitle:
-      "Remove Background Free Online 2026 — Instant AI Background Remover",
+    metaTitle: "Free Background Remover — Remove BG Online",
     metaDescription:
-      "Remove image background free online in 2026. AI-powered, instant results, transparent PNG output. No upload to servers. Works on photos, logos, and product images.",
+      "Remove image background free online. AI-powered, instant results, transparent PNG output. No upload to servers. Works on photos, logos, and product images.",
     h1: "Free Background Remover 2026 — Remove Image Background Online",
     showTool: "bg-remover",
     structuredDataOverrides: { webPageType: "WebApplication" },
