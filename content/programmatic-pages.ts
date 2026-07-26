@@ -6882,20 +6882,20 @@ export const programmaticPages: SeoPage[] = [
       },
     ],
   },
- {
-  slug: "air-force-agniveer-vayu-photo-resizer",
-  metaTitle: "Agniveer Vayu Photo Resizer 2026 — Resize to 10-50KB Free",
-  metaDescription:
-    "Resize your Agniveer Vayu photo to the exact 10KB-50KB limit set by the IAF for 2026. Add the black slate, name, and date. 100% free and private — no upload required.",
-  h1: "Agniveer Vayu Photo Resizer (2026 Guidelines)",
-  showTool: "photo-editor",
-  structuredDataOverrides: { webPageType: "WebApplication" },
-  subtitle:
-    "Prepare your photograph for the agnipathvayu.cdac.in portal in seconds. Get the file size right and avoid rejection — free and fully private.",
-  sections: [
-    {
-      heading: "About the Agniveer Vayu Photo Resizer",
-      content: `<div class="space-y-6 not-prose">
+  {
+    slug: "air-force-agniveer-vayu-photo-resizer",
+    metaTitle: "Agniveer Vayu Photo Resizer 2026 — Resize to 10-50KB Free",
+    metaDescription:
+      "Resize your Agniveer Vayu photo to the exact 10KB-50KB limit set by the IAF for 2026. Add the black slate, name, and date. 100% free and private — no upload required.",
+    h1: "Agniveer Vayu Photo Resizer (2026 Guidelines)",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Prepare your photograph for the agnipathvayu.cdac.in portal in seconds. Get the file size right and avoid rejection — free and fully private.",
+    sections: [
+      {
+        heading: "About the Agniveer Vayu Photo Resizer",
+        content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
     The Indian Air Force rejects thousands of Agniveer Vayu applications every intake because of one avoidable mistake: a photo that doesn't meet the exact file size rule. Our resizer fixes this in your browser, so your photo is ready before you even open the application form.
   </p>
@@ -6925,36 +6925,37 @@ export const programmaticPages: SeoPage[] = [
     </p>
   </div>
 </div>`,
-    },
-  ],
-  faq: [
-    {
-      question: "What is the exact photo file size for Agniveer Vayu in 2026?",
-      answer:
-        "The IAF requires your photograph to be between 10KB and 50KB. Anything smaller or larger is typically rejected by the online portal, so use the sidebar's KB target to land inside this range before you upload.",
-    },
-    {
-      question: "Do I need to hold a black slate in my Agniveer Vayu photo?",
-      answer:
-        "Yes. Unlike most other Agnipath intakes, the Air Force requires you to hold a black slate at chest level with your name and the photo's date written on it in white chalk, in capital letters. Photos without the slate are usually rejected.",
-    },
-    {
-      question: "Can I wear a cap, headphones, or spectacles in the photo?",
-      answer:
-        "No headgear or spectacles are allowed. The only exception is for Sikh candidates, who may retain a turban, beard, and moustache in accordance with their religious practice.",
-    },
-    {
-      question: "How old can my photograph be for the application?",
-      answer:
-        "Your photo must be recent, taken on or after the date specified in your intake's official notification. Always confirm the exact cutoff date on agnipathvayu.cdac.in, since it changes with each new advertisement.",
-    },
-    {
-      question: "Can I change or lighten the background of my photo?",
-      answer:
-        "Yes. The IAF asks for a light, plain background. If your photo has shadows or a busy backdrop, use our background cleanup feature to get a clean, uniform light background before you compress it.",
-    },
-  ],
-},
+      },
+    ],
+    faq: [
+      {
+        question:
+          "What is the exact photo file size for Agniveer Vayu in 2026?",
+        answer:
+          "The IAF requires your photograph to be between 10KB and 50KB. Anything smaller or larger is typically rejected by the online portal, so use the sidebar's KB target to land inside this range before you upload.",
+      },
+      {
+        question: "Do I need to hold a black slate in my Agniveer Vayu photo?",
+        answer:
+          "Yes. Unlike most other Agnipath intakes, the Air Force requires you to hold a black slate at chest level with your name and the photo's date written on it in white chalk, in capital letters. Photos without the slate are usually rejected.",
+      },
+      {
+        question: "Can I wear a cap, headphones, or spectacles in the photo?",
+        answer:
+          "No headgear or spectacles are allowed. The only exception is for Sikh candidates, who may retain a turban, beard, and moustache in accordance with their religious practice.",
+      },
+      {
+        question: "How old can my photograph be for the application?",
+        answer:
+          "Your photo must be recent, taken on or after the date specified in your intake's official notification. Always confirm the exact cutoff date on agnipathvayu.cdac.in, since it changes with each new advertisement.",
+      },
+      {
+        question: "Can I change or lighten the background of my photo?",
+        answer:
+          "Yes. The IAF asks for a light, plain background. If your photo has shadows or a busy backdrop, use our background cleanup feature to get a clean, uniform light background before you compress it.",
+      },
+    ],
+  },
   {
     slug: "air-force-agniveer-vayu-signature-resizer",
     metaTitle: "Air Force Agniveer Vayu Signature Resizer — Exact Size & KB",
@@ -11273,22 +11274,22 @@ export const programmaticPages: SeoPage[] = [
       },
     ],
   },
-{
-  slug: "kerala-psc-kas-photo-resizer",
-  metaTitle:
-    "Kerala PSC KAS Photo Resizer Online Free | Resize & Compress to Required KB",
-  metaDescription:
-    "Resize and compress your Kerala PSC KAS photo online for free. Crop, adjust dimensions, reduce image size to the required KB, and create an application-ready photo securely in your browser.",
-  h1: "Kerala PSC KAS Photo Resizer Online",
-  showTool: "photo-editor",
-  structuredDataOverrides: { webPageType: "WebApplication" },
-  subtitle:
-    "Resize, crop, and compress your Kerala PSC KAS application photo instantly. Free, secure, and processed entirely in your browser.",
+  {
+    slug: "kerala-psc-kas-photo-resizer",
+    metaTitle:
+      "Kerala PSC KAS Photo Resizer Online Free | Resize & Compress to Required KB",
+    metaDescription:
+      "Resize and compress your Kerala PSC KAS photo online for free. Crop, adjust dimensions, reduce image size to the required KB, and create an application-ready photo securely in your browser.",
+    h1: "Kerala PSC KAS Photo Resizer Online",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Resize, crop, and compress your Kerala PSC KAS application photo instantly. Free, secure, and processed entirely in your browser.",
 
-  sections: [
-    {
-      heading: "Kerala PSC KAS Photo Resizer",
-      content: `
+    sections: [
+      {
+        heading: "Kerala PSC KAS Photo Resizer",
+        content: `
 <div class="space-y-6 not-prose">
 
   <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
@@ -11351,37 +11352,38 @@ export const programmaticPages: SeoPage[] = [
   </div>
 
 </div>`,
-    },
-  ],
+      },
+    ],
 
-  faq: [
-    {
-      question: "What is the required photo size for Kerala PSC KAS?",
-      answer:
-        "The required dimensions and maximum file size can vary depending on the Kerala PSC KAS recruitment notification. Always check the latest official notification before submitting your application."
-    },
-    {
-      question: "Can I compress my Kerala PSC KAS photo to a specific KB size?",
-      answer:
-        "Yes. Simply enter your desired file size, such as 20KB, 30KB, or 50KB, and the tool automatically compresses your image while maintaining the best possible quality."
-    },
-    {
-      question: "Is this Kerala PSC KAS photo resizer free?",
-      answer:
-        "Yes. You can resize, crop, and compress your Kerala PSC KAS photo completely free without creating an account."
-    },
-    {
-      question: "Are my images uploaded to a server?",
-      answer:
-        "No. Image processing takes place entirely within your browser. Your photos remain on your device, providing better privacy and faster performance."
-    },
-    {
-      question: "Can I use this tool on my mobile phone?",
-      answer:
-        "Yes. The Kerala PSC KAS Photo Resizer works on Android, iPhone, tablets, Windows PCs, and Mac computers using any modern web browser."
-    }
-  ]
-},
+    faq: [
+      {
+        question: "What is the required photo size for Kerala PSC KAS?",
+        answer:
+          "The required dimensions and maximum file size can vary depending on the Kerala PSC KAS recruitment notification. Always check the latest official notification before submitting your application.",
+      },
+      {
+        question:
+          "Can I compress my Kerala PSC KAS photo to a specific KB size?",
+        answer:
+          "Yes. Simply enter your desired file size, such as 20KB, 30KB, or 50KB, and the tool automatically compresses your image while maintaining the best possible quality.",
+      },
+      {
+        question: "Is this Kerala PSC KAS photo resizer free?",
+        answer:
+          "Yes. You can resize, crop, and compress your Kerala PSC KAS photo completely free without creating an account.",
+      },
+      {
+        question: "Are my images uploaded to a server?",
+        answer:
+          "No. Image processing takes place entirely within your browser. Your photos remain on your device, providing better privacy and faster performance.",
+      },
+      {
+        question: "Can I use this tool on my mobile phone?",
+        answer:
+          "Yes. The Kerala PSC KAS Photo Resizer works on Android, iPhone, tablets, Windows PCs, and Mac computers using any modern web browser.",
+      },
+    ],
+  },
   {
     slug: "kerala-psc-kas-signature-resizer",
     metaTitle: "Kerala Psc Kas Signature Resizer — Exact Size & KB",

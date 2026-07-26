@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import FrSiteHeader from './FrSiteHeader';
 import { AdBanner } from '../../components/AdBanner';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
@@ -38,57 +39,92 @@ export const metadata: Metadata = {
 
 export default function FrenchLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="french-layout">
-      {/* French Specific Navigation */}
-      <nav className="w-full p-4 border-b border-slate-200 text-center font-bold text-slate-800">
-        Navigation (FR)
-      </nav>
+    <div className="french-layout font-sans bg-[#ffffff] dark:bg-[#121212] text-[#222222] dark:text-[#f1f1f1] min-h-screen flex flex-col selection:bg-[#ff385c] selection:text-white font-['Airbnb_Cereal_VF',Circular,sans-serif]">
+      <FrSiteHeader />
       
-      {/* Top Ad */}
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block w-full">
+      {/* Top Ad Banner */}
+      <div className="max-w-[1280px] mx-auto px-4 mt-6 hidden sm:block w-full">
         <AdBanner type="fixed" />
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden w-full">
+      <div className="max-w-[1280px] mx-auto px-4 mt-4 block sm:hidden w-full">
         <AdBanner type="responsive" />
       </div>
 
-      {/* Page Content */}
-      <div className="min-h-screen">
+      {/* Main Page Content */}
+      <main className="flex-1 w-full">
         {children}
-      </div>
+      </main>
 
-      {/* Bottom Ad */}
-      <div className="max-w-[1400px] mx-auto px-4 mb-4 w-full">
+      {/* Bottom Ad Banner */}
+      <div className="max-w-[1280px] mx-auto px-4 my-6 w-full">
         <AdBanner type="responsive" />
       </div>
 
-      {/* French Specific Footer */}
-      <footer className="w-full p-6 bg-slate-50 text-center text-slate-500 text-sm mt-auto border-t border-slate-200 flex flex-col items-center gap-4 pb-24 sm:pb-28">
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link href="/fr/comment-utiliser" className="hover:text-slate-800 transition-colors">Comment utiliser</Link>
-          <Link href="/fr/contact" className="hover:text-slate-800 transition-colors">Contact</Link>
-          <Link href="/fr/conditions" className="hover:text-slate-800 transition-colors">Conditions générales</Link>
-          <Link href="/fr/confidentialite" className="hover:text-slate-800 transition-colors">Confidentialité</Link>
-        </div>
-        
-        <div className="flex flex-col items-center gap-2 mt-4 text-xs">
-          <p className="font-bold text-slate-700">Contact Developer</p>
-          <p>Navnit Rai | <a href="mailto:navnitrai5389@gmail.com" className="hover:text-slate-800">navnitrai5389@gmail.com</a> | +91 7355087072</p>
-        </div>
+      {/* ── Airbnb Footer Light (#f7f7f7) ── */}
+      <footer className="w-full bg-[#f7f7f7] dark:bg-[#0b0b0b] border-t border-[#dddddd] dark:border-slate-800 text-[#222222] dark:text-slate-300 transition-colors mt-auto pb-24 sm:pb-28">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-12">
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-[#dddddd] dark:border-slate-800 text-sm">
+            
+            {/* Column 1 */}
+            <div className="flex flex-col gap-3">
+              <h3 className="font-semibold text-base text-[#222222] dark:text-white">Outils Populaires</h3>
+              <Link href="/fr/redimensionner-photo" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Redimensionner Photo</Link>
+              <Link href="/fr/createur-photo-identite" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Photo d'Identité</Link>
+              <Link href="/fr/comment-utiliser" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Comment Utiliser</Link>
+            </div>
 
-        <div className="flex flex-col items-center gap-2 mt-2">
-          <div className="flex gap-2 font-semibold text-slate-600">
-            <span>100% Private</span><span>•</span><span>Fast Processing</span><span>•</span><span>Offline Capable</span>
+            {/* Column 2 */}
+            <div className="flex flex-col gap-3">
+              <h3 className="font-semibold text-base text-[#222222] dark:text-white">Ressources & Légal</h3>
+              <Link href="/fr/contact" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Contact</Link>
+              <Link href="/fr/conditions" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Conditions générales</Link>
+              <Link href="/fr/confidentialite" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Confidentialité</Link>
+            </div>
+
+            {/* Column 3 */}
+            <div className="flex flex-col gap-3">
+              <h3 className="font-semibold text-base text-[#222222] dark:text-white">Confidentialité & Technologie</h3>
+              <p className="text-xs text-[#6a6a6a] dark:text-slate-400 leading-relaxed">
+                Traitement 100% local dans votre navigateur. Vos images ne quittent jamais votre appareil.
+              </p>
+              <div className="flex flex-col gap-1 text-xs text-[#222222] dark:text-white font-medium mt-2">
+                <span>✓ Technologie HTML5 & WebAssembly</span>
+                <span>✓ Utilisation gratuite et illimitée</span>
+                <span>✓ Conforme RGPD & 100% privé</span>
+              </div>
+            </div>
+
           </div>
-          <p>&copy; 2026 Photo Resizer.</p>
-          <p className="text-xs">As an Amazon Associate, I earn from qualifying purchases.</p>
-          <p className="text-xs font-medium mt-1">Designed & Developed with ❤️ by Navnit Rai</p>
+
+          <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#6a6a6a] dark:text-slate-400">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+              <span>© 2026 photoresizer.co.in</span>
+              <span>·</span>
+              <Link href="/fr/confidentialite" className="hover:underline text-[#222222] dark:text-slate-200">Confidentialité</Link>
+              <span>·</span>
+              <Link href="/fr/conditions" className="hover:underline text-[#222222] dark:text-slate-200">Conditions</Link>
+              <span>·</span>
+              <Link href="/fr" className="hover:underline text-[#222222] dark:text-slate-200">Accueil FR</Link>
+              <span>·</span>
+              <span className="font-medium text-[#222222] dark:text-slate-300">Développé par Navnit Rai</span>
+            </div>
+
+            <div className="flex items-center gap-6 font-semibold text-[#222222] dark:text-white">
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m-9 9a9 9 0 019-9"/>
+                </svg>
+                <span>Français (FR)</span>
+              </span>
+              <span>€ EUR</span>
+            </div>
+          </div>
+
         </div>
       </footer>
 
-      {/* Global Sticky Bottom Ad Anchor */}
-      <AdBanner type="sticky-bottom" />
+
     </div>
   );
 }
-

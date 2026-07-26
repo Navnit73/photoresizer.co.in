@@ -334,138 +334,136 @@ export default function OriginalWorkspace() {
 
   return (
     <div className="flex-1 flex flex-col bg-transparent overflow-hidden min-h-0 transition-colors duration-300">
-      {/* Toolbar */}
-      <div className="flex items-center justify-between gap-1.5 px-3 py-2 border-b border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-xs flex-shrink-0 flex-wrap">
-        
-        {/* Left Controls: Undo, Redo, Reset */}
-        <div className="flex items-center gap-1.5">
-          {imageFile && (
-            <>
-              <div className="flex items-center bg-white dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-full p-0.5 shadow-2xs">
-                <button
-                  onClick={undo}
-                  disabled={!canUndo}
-                  className="p-1 rounded-full text-[#6a6a6a] dark:text-slate-300 hover:text-[#222222] dark:hover:text-white hover:bg-[#f7f7f7] dark:hover:bg-slate-700 disabled:opacity-30 transition-all"
-                  title="Undo (Ctrl+Z)"
-                  aria-label="Undo"
-                >
-                  <Undo2 size={13} />
-                </button>
-                <div className="w-[1px] h-3 bg-[#dddddd] dark:bg-slate-600 mx-0.5" />
-                <button
-                  onClick={redo}
-                  disabled={!canRedo}
-                  className="p-1 rounded-full text-[#6a6a6a] dark:text-slate-300 hover:text-[#222222] dark:hover:text-white hover:bg-[#f7f7f7] dark:hover:bg-slate-700 disabled:opacity-30 transition-all"
-                  title="Redo (Ctrl+Y)"
-                  aria-label="Redo"
-                >
-                  <Redo2 size={13} />
-                </button>
-              </div>
-
+      {/* Toolbar (Only show when an image is loaded) */}
+      {imageFile && (
+        <div className="flex items-center justify-between gap-1.5 px-3 py-2 border-b border-[#dddddd] dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-xs flex-shrink-0 flex-wrap">
+          
+          {/* Left Controls: Undo, Redo, Reset */}
+          <div className="flex items-center gap-1.5">
+            <div className="flex items-center bg-white dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-full p-0.5 shadow-2xs">
               <button
-                onClick={reset}
-                className="flex items-center gap-1 text-[11px] font-semibold text-[#6a6a6a] dark:text-slate-400 hover:text-[#ff385c] transition-all px-2.5 py-1 rounded-full hover:bg-[#ff385c]/10"
-                title="Reset Image"
+                onClick={undo}
+                disabled={!canUndo}
+                className="p-1 rounded-full text-[#6a6a6a] dark:text-slate-300 hover:text-[#222222] dark:hover:text-white hover:bg-[#f7f7f7] dark:hover:bg-slate-700 disabled:opacity-30 transition-all"
+                title="Undo (Ctrl+Z)"
+                aria-label="Undo"
               >
-                <RefreshCcw size={12} />
-                <span className="hidden sm:inline">{t.reset}</span>
+                <Undo2 size={13} />
               </button>
-            </>
-          )}
-        </div>
-
-        {/* Center Controls: Zoom, Crop, Remove BG AI */}
-        {imageFile && !isCropping && (
-          <div className="flex items-center gap-1.5 flex-wrap">
-            <div className="flex items-center bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800 p-0.5">
+              <div className="w-[1px] h-3 bg-[#dddddd] dark:bg-slate-600 mx-0.5" />
               <button
-                onClick={() =>
-                  setZoom(Math.max(0.2, parseFloat((zoom - 0.1).toFixed(1))))
-                }
-                className="p-1 text-text-muted hover:text-text-main hover:bg-bg-card rounded transition-colors"
-                aria-label="Zoom out"
+                onClick={redo}
+                disabled={!canRedo}
+                className="p-1 rounded-full text-[#6a6a6a] dark:text-slate-300 hover:text-[#222222] dark:hover:text-white hover:bg-[#f7f7f7] dark:hover:bg-slate-700 disabled:opacity-30 transition-all"
+                title="Redo (Ctrl+Y)"
+                aria-label="Redo"
               >
-                <ZoomOut size={13} />
-              </button>
-              <span className="text-[10px] font-bold text-text-main w-8 text-center tabular-nums">
-                {Math.round(zoom * 100)}%
-              </span>
-              <button
-                onClick={() =>
-                  setZoom(Math.min(5, parseFloat((zoom + 0.1).toFixed(1))))
-                }
-                className="p-1 text-text-muted hover:text-text-main hover:bg-bg-card rounded transition-colors"
-                aria-label="Zoom in"
-              >
-                <ZoomIn size={13} />
+                <Redo2 size={13} />
               </button>
             </div>
 
             <button
-              onClick={() => {
-                setIsCropping(true);
-                if (!cropState) {
-                  setCropState({
-                    unit: '%',
-                    x: 10,
-                    y: 10,
-                    width: 80,
-                    height: 80,
-                  });
-                }
-              }}
-              className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-lg transition-colors"
+              onClick={reset}
+              className="flex items-center gap-1 text-[11px] font-semibold text-[#6a6a6a] dark:text-slate-400 hover:text-[#ff385c] transition-all px-2.5 py-1 rounded-full hover:bg-[#ff385c]/10"
+              title="Reset Image"
             >
-              <CropIcon size={12} />
-              <span>{t.crop}</span>
-            </button>
-            
-            <button
-              onClick={handleRemoveBg}
-              disabled={isBgRemoving}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold bg-[#ff385c]/10 text-[#ff385c] hover:bg-[#ff385c] hover:text-white rounded-full transition-all disabled:opacity-50 border border-[#ff385c]/30"
-            >
-              <Scissors size={12} />
-              <span className="hidden xs:inline">
-                {isBgRemoving ? t.removingBg : t.removeBgAi}
-              </span>
-              <span className="xs:hidden">{isBgRemoving ? "…" : t.removeBgAi}</span>
+              <RefreshCcw size={12} />
+              <span className="hidden sm:inline">{t.reset}</span>
             </button>
           </div>
-        )}
 
-        {/* Right Controls: Theme Toggle */}
-        <div className="flex items-center gap-1.5 ml-auto sm:ml-0">
-          {mounted && (
-            <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="p-1.5 rounded-full border border-[#dddddd] dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-[#f7f7f7] dark:hover:bg-slate-700 text-[#222222] dark:text-white transition-all active:scale-95 shadow-2xs"
-              title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-              aria-label="Toggle Theme"
-            >
-              {theme === 'dark' ? <Sun size={13} /> : <Moon size={13} />}
-            </button>
+          {/* Center Controls: Zoom, Crop, Remove BG AI */}
+          {!isCropping && (
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <div className="flex items-center bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800 p-0.5">
+                <button
+                  onClick={() =>
+                    setZoom(Math.max(0.2, parseFloat((zoom - 0.1).toFixed(1))))
+                  }
+                  className="p-1 text-text-muted hover:text-text-main hover:bg-bg-card rounded transition-colors"
+                  aria-label="Zoom out"
+                >
+                  <ZoomOut size={13} />
+                </button>
+                <span className="text-[10px] font-bold text-text-main w-8 text-center tabular-nums">
+                  {Math.round(zoom * 100)}%
+                </span>
+                <button
+                  onClick={() =>
+                    setZoom(Math.min(5, parseFloat((zoom + 0.1).toFixed(1))))
+                  }
+                  className="p-1 text-text-muted hover:text-text-main hover:bg-bg-card rounded transition-colors"
+                  aria-label="Zoom in"
+                >
+                  <ZoomIn size={13} />
+                </button>
+              </div>
+
+              <button
+                onClick={() => {
+                  setIsCropping(true);
+                  if (!cropState) {
+                    setCropState({
+                      unit: '%',
+                      x: 10,
+                      y: 10,
+                      width: 80,
+                      height: 80,
+                    });
+                  }
+                }}
+                className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-lg transition-colors"
+              >
+                <CropIcon size={12} />
+                <span>{t.crop}</span>
+              </button>
+              
+              <button
+                onClick={handleRemoveBg}
+                disabled={isBgRemoving}
+                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold bg-[#ff385c]/10 text-[#ff385c] hover:bg-[#ff385c] hover:text-white rounded-full transition-all disabled:opacity-50 border border-[#ff385c]/30"
+              >
+                <Scissors size={12} />
+                <span className="hidden xs:inline">
+                  {isBgRemoving ? t.removingBg : t.removeBgAi}
+                </span>
+                <span className="xs:hidden">{isBgRemoving ? "…" : t.removeBgAi}</span>
+              </button>
+            </div>
+          )}
+
+          {/* Right Controls: Theme Toggle */}
+          <div className="flex items-center gap-1.5 ml-auto sm:ml-0">
+            {mounted && (
+              <button
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                className="p-1.5 rounded-full border border-[#dddddd] dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-[#f7f7f7] dark:hover:bg-slate-700 text-[#222222] dark:text-white transition-all active:scale-95 shadow-2xs"
+                title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+                aria-label="Toggle Theme"
+              >
+                {theme === 'dark' ? <Sun size={13} /> : <Moon size={13} />}
+              </button>
+            )}
+          </div>
+
+          {isCropping && (
+            <div className="flex gap-1.5 ml-auto">
+              <button
+                onClick={handleCancelCrop}
+                className="flex items-center gap-1 px-3 py-1.5 text-xs font-bold bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-white hover:bg-[#dddddd] rounded-full transition-colors border border-[#dddddd] dark:border-slate-700"
+              >
+                <X size={12} /> {t.cancel}
+              </button>
+              <button
+                onClick={handleCropComplete}
+                className="flex items-center gap-1 px-4 py-1.5 text-xs font-bold bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full transition-all shadow-sm active:scale-95"
+              >
+                <Check size={12} /> {t.applyCrop}
+              </button>
+            </div>
           )}
         </div>
-
-        {isCropping && (
-          <div className="flex gap-1.5 ml-auto">
-            <button
-              onClick={handleCancelCrop}
-              className="flex items-center gap-1 px-3 py-1.5 text-xs font-bold bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-white hover:bg-[#dddddd] rounded-full transition-colors border border-[#dddddd] dark:border-slate-700"
-            >
-              <X size={12} /> {t.cancel}
-            </button>
-            <button
-              onClick={handleCropComplete}
-              className="flex items-center gap-1 px-4 py-1.5 text-xs font-bold bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full transition-all shadow-sm active:scale-95"
-            >
-              <Check size={12} /> {t.applyCrop}
-            </button>
-          </div>
-        )}
-      </div>
+      )}
 
 
       {/* Aspect ratio toolbar (crop mode - Airbnb style pill chips) */}

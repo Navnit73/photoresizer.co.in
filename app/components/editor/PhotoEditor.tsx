@@ -11,8 +11,8 @@ function EditorContent() {
 
   if (!imageFile) {
     return (
-      <div className="w-full flex justify-center py-10 px-4 sm:px-0 font-['Airbnb_Cereal_VF',Circular,sans-serif]">
-        <div className="w-full max-w-3xl min-h-[400px] sm:h-[400px] flex flex-col">
+      <div className="w-full flex justify-center py-6 px-4 sm:px-0 font-['Airbnb_Cereal_VF',Circular,sans-serif]">
+        <div className="w-full max-w-3xl min-h-[380px] flex flex-col items-center justify-center border border-[#dddddd] dark:border-slate-800 rounded-3xl bg-white dark:bg-slate-900/50 shadow-sm p-2 sm:p-6 transition-colors">
           <OriginalWorkspace />
         </div>
       </div>
