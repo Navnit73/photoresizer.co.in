@@ -10,45 +10,47 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in'
 
 export function getHreflangMap(page: SeoPage): HreflangMap {
   const key = page.translationKey;
+  const map: HreflangMap = {};
   
-  // Find matching pages by translationKey. If no key or no match, fallback to home URL.
-  const enMatch = key ? enPages.find(p => p.translationKey === key) : null;
-  const deMatch = key ? dePages.find(p => p.translationKey === key) : null;
-  const frMatch = key ? frPages.find(p => p.translationKey === key) : null;
-  const esMatch = key ? esPages.find(p => p.translationKey === key) : null;
-  const ptMatch = key ? ptPages.find(p => p.translationKey === key) : null;
+  if (!key) {
+    return map;
+  }
 
-  const enUrl = enMatch ? `${baseUrl}/${enMatch.slug}` : baseUrl;
-  const deUrl = deMatch ? `${baseUrl}/de/${deMatch.slug}` : `${baseUrl}/de`;
-  const frUrl = frMatch ? `${baseUrl}/fr/${frMatch.slug}` : `${baseUrl}/fr`;
-  const esUrl = esMatch ? `${baseUrl}/es/${esMatch.slug}` : `${baseUrl}/es`;
-  const ptUrl = ptMatch ? `${baseUrl}/pt/${ptMatch.slug}` : `${baseUrl}/pt`;
+  const enMatch = enPages.find(p => p.translationKey === key);
+  const deMatch = dePages.find(p => p.translationKey === key);
+  const frMatch = frPages.find(p => p.translationKey === key);
+  const esMatch = esPages.find(p => p.translationKey === key);
+  const ptMatch = ptPages.find(p => p.translationKey === key);
 
-  return {
-    'en': enUrl,
-    'de': deUrl,
-    'fr': frUrl,
-    'es': esUrl,
-    'pt': ptUrl,
-  };
+  if (enMatch) map['en'] = `${baseUrl}/${enMatch.slug}`;
+  if (deMatch) map['de'] = `${baseUrl}/de/${deMatch.slug}`;
+  if (frMatch) map['fr'] = `${baseUrl}/fr/${frMatch.slug}`;
+  if (esMatch) map['es'] = `${baseUrl}/es/${esMatch.slug}`;
+  if (ptMatch) map['pt'] = `${baseUrl}/pt/${ptMatch.slug}`;
+
+  return map;
 }
 
 export function generateSeoMetadata(page: SeoPage, lang: Language): Metadata {
   const hreflangs = getHreflangMap(page);
-  const currentUrl = hreflangs[lang];
+  const currentUrl = hreflangs[lang] || (lang === 'en' ? `${baseUrl}/${page.slug}` : `${baseUrl}/${lang}/${page.slug}`);
   
   const languages: Record<string, string> = {};
   for (const [l, url] of Object.entries(hreflangs)) {
     languages[l] = url;
   }
-  languages['x-default'] = hreflangs['en'];
+  if (hreflangs['en']) {
+    languages['x-default'] = hreflangs['en'];
+  } else if (currentUrl) {
+    languages['x-default'] = currentUrl;
+  }
 
   return {
     title: page.metaTitle,
     description: page.metaDescription,
     alternates: {
       canonical: currentUrl,
-      languages: languages,
+      languages: Object.keys(languages).length > 0 ? languages : undefined,
     },
     openGraph: {
       title: page.metaTitle,

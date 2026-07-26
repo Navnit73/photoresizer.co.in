@@ -3,9 +3,37 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { AdBanner } from '../../components/AdBanner';
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "Redimensionner, Compresser, Détourer et Modifier des Photos en Ligne Gratuitement | photoresizer.co.in",
   description: "Redimensionnez des images, compressez des photos, supprimez les arrière-plans, créez des photos de passeport et modifiez des images en ligne gratuitement.",
+  alternates: {
+    canonical: `${baseUrl}/fr`,
+    languages: {
+      en: `${baseUrl}/`,
+      de: `${baseUrl}/de`,
+      fr: `${baseUrl}/fr`,
+      es: `${baseUrl}/es`,
+      pt: `${baseUrl}/pt`,
+      'x-default': `${baseUrl}/`,
+    },
+  },
+  openGraph: {
+    title: "Redimensionner, Compresser, Détourer et Modifier des Photos en Ligne Gratuitement | photoresizer.co.in",
+    description: "Redimensionnez des images, compressez des photos, supprimez les arrière-plans et modifiez des images en ligne gratuitement.",
+    type: "website",
+    url: `${baseUrl}/fr`,
+    locale: "fr_FR",
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'photoresizer fr' }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Redimensionner des Photos en Ligne Gratuitement | photoresizer.co.in",
+    description: "Redimensionnez des images, compressez des photos et supprimez les arrière-plans gratuitement.",
+    images: ['/og-image.png'],
+  },
 };
 
 export default function FrenchLayout({ children }: { children: React.ReactNode }) {

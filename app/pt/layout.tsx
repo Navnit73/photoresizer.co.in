@@ -5,9 +5,37 @@ import { AdBanner } from '../../components/AdBanner';
 import { PtHeader } from './PtHeader';
 import { ptPages } from '../../content/pt-pages';
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "Redimensionar, Comprimir, Remover Fundo e Criar Foto Passaporte Online Grátis | photoresizer.co.in",
   description: "Redimensione fotos online grátis, corte imagens no tamanho 3x4 e 5x7 cm (Passaporte Brasil e CNH), remova fundo com IA e comprima arquivos em KB sem enviar para servidores.",
+  alternates: {
+    canonical: `${baseUrl}/pt`,
+    languages: {
+      en: `${baseUrl}/`,
+      de: `${baseUrl}/de`,
+      fr: `${baseUrl}/fr`,
+      es: `${baseUrl}/es`,
+      pt: `${baseUrl}/pt`,
+      'x-default': `${baseUrl}/`,
+    },
+  },
+  openGraph: {
+    title: "Redimensionar, Comprimir, Remover Fundo e Criar Foto Passaporte Online Grátis | photoresizer.co.in",
+    description: "Redimensione fotos online grátis, corte imagens no tamanho 3x4 e 5x7 cm, remova fundo com IA e comprima arquivos em KB.",
+    type: "website",
+    url: `${baseUrl}/pt`,
+    locale: "pt_BR",
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'photoresizer pt' }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Redimensionar Fotos Online Grátis | photoresizer.co.in",
+    description: "Redimensione fotos online grátis, remova fundo com IA e comprima arquivos.",
+    images: ['/og-image.png'],
+  },
 };
 
 export default function PortugueseLayout({ children }: { children: React.ReactNode }) {

@@ -3,9 +3,37 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { AdBanner } from '../../components/AdBanner';
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "Redimensionar, Comprimir, Eliminar Fondos y Editar Fotos Online Gratis | photoresizer.co.in",
   description: "Redimensiona imágenes, comprime fotos, elimina fondos, crea fotos para pasaporte y edita imágenes online gratis sin necesidad de subir archivos.",
+  alternates: {
+    canonical: `${baseUrl}/es`,
+    languages: {
+      en: `${baseUrl}/`,
+      de: `${baseUrl}/de`,
+      fr: `${baseUrl}/fr`,
+      es: `${baseUrl}/es`,
+      pt: `${baseUrl}/pt`,
+      'x-default': `${baseUrl}/`,
+    },
+  },
+  openGraph: {
+    title: "Redimensionar, Comprimir, Eliminar Fondos y Editar Fotos Online Gratis | photoresizer.co.in",
+    description: "Redimensiona imágenes, comprime fotos, elimina fondos y edita imágenes online gratis.",
+    type: "website",
+    url: `${baseUrl}/es`,
+    locale: "es_ES",
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'photoresizer es' }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Redimensionar Fotos Online Gratis | photoresizer.co.in",
+    description: "Redimensiona imágenes, comprime fotos y elimina fondos gratis.",
+    images: ['/og-image.png'],
+  },
 };
 
 export default function SpanishLayout({ children }: { children: React.ReactNode }) {

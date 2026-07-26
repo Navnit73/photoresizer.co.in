@@ -891,4 +891,488 @@ export const dePages: SeoPage[] = [
       },
     ],
   },
+  {
+    slug: "foto-groesse-aendern",
+    translationKey: "resizePhoto",
+    metaTitle: "Foto Größe ändern online – kostenlos, schnell & ohne Anmeldung",
+    metaDescription:
+      "Foto Größe in Sekunden ändern: Pixel, cm oder KB einstellen – für Bewerbung, Visum, Ausweis oder Social Media. 100 % im Browser, ohne Upload, ohne Anmeldung.",
+    h1: "Foto Größe ändern",
+    subtitle:
+      "Passe Breite, Höhe und Dateigröße deines Fotos exakt an – in wenigen Klicks, direkt im Browser.",
+       showTool: "photo-editor",
+
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    sections: [
+      {
+        heading: "Foto Größe ändern – einfach, präzise und kostenlos",
+        content: `<div class="space-y-12 not-prose">
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <p>Ob für eine Bewerbung, ein Visumsantrag, ein Ausweisdokument oder ein Profilbild bei LinkedIn – fast jede Plattform verlangt ein Foto in einer ganz bestimmten Größe. Mit unserem Tool kannst du die <strong>Foto Größe ändern</strong>, ohne eine Bildbearbeitungssoftware installieren zu müssen. Du lädst dein Bild hoch, gibst die gewünschten Maße in Pixel oder Zentimeter ein und erhältst sofort das Ergebnis zum Download – ganz ohne Wasserzeichen und ohne versteckte Kosten.</p>
+    <p>Viele Online-Dienste zur Größenänderung laden deine Fotos auf einen fremden Server hoch. Bei uns läuft die komplette Berechnung lokal in deinem Browser. Das bedeutet mehr Geschwindigkeit, mehr Privatsphäre und die Möglichkeit, das Tool sogar offline zu nutzen.</p>
+  </div>
+ 
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="p-6 border-l-4 border-green-500 bg-green-50 dark:bg-green-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-green-900 dark:text-green-400 mb-3">Exakte Maße in Pixel, cm oder Zoll</h3>
+      <p class="text-green-800 dark:text-green-300/80">Gib die Zielgröße in der Einheit ein, die du brauchst. Das Tool rechnet automatisch unter Berücksichtigung der DPI-Einstellung um, sodass Druckergebnisse gestochen scharf bleiben.</p>
+    </div>
+    <div class="p-6 border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-blue-900 dark:text-blue-400 mb-3">Dateigröße in KB begrenzen</h3>
+      <p class="text-blue-800 dark:text-blue-300/80">Viele Formulare akzeptieren nur Dateien unter einer bestimmten Grenze, etwa 50 KB oder 200 KB. Unser Tool komprimiert das Bild automatisch, ohne die Bildqualität sichtbar zu verschlechtern.</p>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>So änderst du die Foto Größe in drei Schritten</h3>
+    <div class="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-6">
+      <ol class="list-decimal list-inside space-y-3 text-slate-700 dark:text-slate-300">
+        <li><strong>Bild hochladen:</strong> Ziehe dein Foto per Drag-and-drop in das Tool oder wähle es aus deinem Gerät aus.</li>
+        <li><strong>Zielgröße festlegen:</strong> Trage Breite und Höhe ein oder wähle eine vordefinierte Vorlage, etwa für Bewerbungsfotos, biometrische Passbilder oder Social-Media-Profile.</li>
+        <li><strong>Herunterladen:</strong> Nach der automatischen Berechnung lädst du das fertige Bild direkt in JPG oder PNG herunter.</li>
+      </ol>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>Typische Anwendungsfälle</h3>
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="text-slate-700 dark:text-slate-300"><th class="p-4 text-left">Zweck</th><th class="p-4 text-left">Typische Vorgabe</th></tr>
+      </thead>
+      <tbody class="divide-y text-slate-600 dark:text-slate-400">
+        <tr><td class="p-4">Bewerbungsfoto</td><td class="p-4">ca. 413 × 531 Pixel, unter 200 KB</td></tr>
+        <tr><td class="p-4">Ausweis- oder Visafoto</td><td class="p-4">35 × 45 mm oder 2 × 2 Zoll</td></tr>
+        <tr><td class="p-4">LinkedIn-Profilbild</td><td class="p-4">400 × 400 Pixel</td></tr>
+        <tr><td class="p-4">Online-Formular mit Upload-Limit</td><td class="p-4">unter 100 KB, Format JPG</td></tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <p>Ein häufiger Fehler beim manuellen Ändern der Foto Größe ist die Verzerrung des Bildes, wenn Breite und Höhe unabhängig voneinander verändert werden. Unser Tool bietet eine Option, das Seitenverhältnis automatisch beizubehalten, sodass Gesichter und Motive proportional korrekt bleiben. Zusätzlich kannst du wählen, ob überschüssige Bildbereiche zugeschnitten oder das Bild mit weißem beziehungsweise farbigem Rand ergänzt werden soll, um exakt auf das geforderte Seitenverhältnis zu kommen.</p>
+    <p>Da die gesamte Verarbeitung lokal stattfindet, eignet sich das Tool auch für sensible Dokumente wie Ausweisfotos oder Unterlagen für Behördenanträge. Es entstehen keine Kopien auf fremden Servern, und du behältst die volle Kontrolle über deine Bilddaten.</p>
+  </div>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "Wie kann ich die Foto Größe ändern, ohne die Qualität zu verlieren?",
+        answer:
+          "Unser Tool verwendet eine hochwertige Skalierungsmethode, die Kanten und Details erhält. Solange du das Bild nicht deutlich über seine Originalgröße hinaus vergrößerst, bleibt die Qualität sichtbar hoch.",
+      },
+      {
+        question: "Kann ich Breite und Höhe getrennt eingeben?",
+        answer:
+          "Ja, du kannst Breite und Höhe unabhängig eingeben. Für unverzerrte Ergebnisse empfehlen wir jedoch, das Seitenverhältnis beizubehalten.",
+      },
+      {
+        question: "Unterstützt das Tool auch die Angabe in Zentimetern?",
+        answer:
+          "Ja. Du kannst zwischen Pixel, Zentimetern und Zoll wechseln. Die Umrechnung erfolgt automatisch anhand der eingestellten DPI-Auflösung.",
+      },
+      {
+        question: "Muss ich mich registrieren, um die Foto Größe zu ändern?",
+        answer:
+          "Nein, das Tool ist ohne Anmeldung und ohne Installation sofort nutzbar, direkt im Browser.",
+      },
+      {
+        question: "Werden meine Fotos irgendwo gespeichert?",
+        answer:
+          "Nein, die Verarbeitung findet vollständig lokal auf deinem Gerät statt. Es erfolgt kein Upload und keine Speicherung auf unseren Servern.",
+      },
+    ],
+  },
+ 
+  // ============================================================
+  // 2. bild verkleinern
+  // ============================================================
+  {
+    slug: "bild-verkleinern",
+    translationKey: "shrinkImage",
+    metaTitle: "Bild verkleinern online – kostenlos & ohne Qualitätsverlust",
+    metaDescription:
+      "Bild verkleinern in Sekunden: Auflösung und Dateigröße reduzieren, ohne sichtbaren Qualitätsverlust. Kostenlos, ohne Anmeldung, komplett im Browser.",
+    h1: "Bild verkleinern",
+    subtitle:
+      "Reduziere Auflösung und Dateigröße deiner Bilder – schnell, kostenlos und ohne Qualitätsverlust.",
+       showTool: "photo-editor",
+
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    sections: [
+      {
+        heading: "Bild verkleinern, ohne an Qualität einzubüßen",
+        content: `<div class="space-y-12 not-prose">
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <p>Große Fotos direkt von der Kamera oder dem Smartphone haben oft mehrere Megabyte – viel zu groß für E-Mail-Anhänge, Webformulare oder schnelle Ladezeiten auf einer Website. Mit unserem Werkzeug kannst du ein <strong>Bild verkleinern</strong>, ohne dass die Bildqualität sichtbar leidet. Du bestimmst selbst, ob du die Auflösung in Pixel reduzieren, die Dateigröße in KB begrenzen oder beides kombinieren möchtest.</p>
+    <p>Das Verkleinern erfolgt in Echtzeit direkt im Browser. Es ist kein Hochladen auf einen Server notwendig, wodurch der Vorgang deutlich schneller ist als bei klassischen Online-Convertern und deine Bilder privat bleiben.</p>
+  </div>
+ 
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="p-6 border-l-4 border-green-500 bg-green-50 dark:bg-green-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-green-900 dark:text-green-400 mb-3">Intelligente Komprimierung</h3>
+      <p class="text-green-800 dark:text-green-300/80">Der Algorithmus wählt die optimale Balance zwischen Dateigröße und Bildschärfe, statt einfach die Auflösung pauschal zu halbieren.</p>
+    </div>
+    <div class="p-6 border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-blue-900 dark:text-blue-400 mb-3">Mehrere Bilder gleichzeitig</h3>
+      <p class="text-blue-800 dark:text-blue-300/80">Du kannst mehrere Dateien auf einmal hochladen und alle mit denselben Einstellungen verkleinern – ideal für Fotoalben oder Produktbilder.</p>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>Warum sollte man ein Bild verkleinern?</h3>
+    <div class="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-6">
+      <ul class="list-disc list-inside space-y-3 text-slate-700 dark:text-slate-300">
+        <li><strong>Schnellere Websites:</strong> Kleinere Bilddateien verkürzen Ladezeiten und verbessern das Ranking bei Google spürbar.</li>
+        <li><strong>E-Mail-Anhänge:</strong> Viele Mailserver begrenzen die Anhangsgröße auf wenige Megabyte.</li>
+        <li><strong>Formulare mit Upload-Limit:</strong> Bewerbungsportale, Behördenformulare und Ausweisanträge verlangen oft Dateien unter 100–500 KB.</li>
+        <li><strong>Speicherplatz sparen:</strong> Kleinere Dateien beanspruchen weniger Platz auf dem Gerät oder in der Cloud.</li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>So funktioniert es</h3>
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="text-slate-700 dark:text-slate-300"><th class="p-4 text-left">Schritt</th><th class="p-4 text-left">Beschreibung</th></tr>
+      </thead>
+      <tbody class="divide-y text-slate-600 dark:text-slate-400">
+        <tr><td class="p-4">1. Hochladen</td><td class="p-4">Bild per Drag-and-drop einfügen oder Datei auswählen</td></tr>
+        <tr><td class="p-4">2. Ziel wählen</td><td class="p-4">Zielgröße in KB/MB oder gewünschte Auflösung eingeben</td></tr>
+        <tr><td class="p-4">3. Vorschau prüfen</td><td class="p-4">Ergebnis direkt im Browser ansehen, vor und nach dem Verkleinern vergleichen</td></tr>
+        <tr><td class="p-4">4. Herunterladen</td><td class="p-4">Verkleinertes Bild als JPG, PNG oder WebP speichern</td></tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <p>Ein häufiges Missverständnis ist, dass Bild verkleinern automatisch schlechtere Qualität bedeutet. Tatsächlich hängt der wahrgenommene Qualitätsverlust vor allem vom Komprimierungsgrad und vom gewählten Format ab. JPG eignet sich gut für Fotos mit vielen Farbverläufen, während PNG bei Grafiken mit klaren Kanten und Text bessere Ergebnisse liefert. Unser Tool erkennt den Bildinhalt automatisch und schlägt das passende Format vor.</p>
+    <p>Falls du ein Bild sowohl in der Auflösung als auch in der Dateigröße reduzieren möchtest, empfiehlt es sich, zuerst die Pixelmaße anzupassen und anschließend die Komprimierung zu regeln. So bleibt das Motiv gut erkennbar und die Datei erreicht trotzdem die geforderte Zielgröße, etwa für ein Online-Formular oder einen E-Mail-Versand.</p>
+  </div>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "Verliert mein Bild an Qualität, wenn ich es verkleinere?",
+        answer:
+          "Bei moderater Verkleinerung ist der Qualitätsverlust meist kaum sichtbar. Unser Algorithmus optimiert automatisch die Balance zwischen Dateigröße und Bildschärfe.",
+      },
+      {
+        question: "Welches Format sollte ich beim Verkleinern wählen?",
+        answer:
+          "Für Fotos eignet sich JPG oder WebP, für Grafiken mit Text oder klaren Kanten ist PNG oft besser geeignet. Das Tool schlägt automatisch eine passende Option vor.",
+      },
+      {
+        question: "Kann ich mehrere Bilder gleichzeitig verkleinern?",
+        answer:
+          "Ja, du kannst mehrere Dateien gleichzeitig hochladen und mit denselben Einstellungen in einem Durchgang verkleinern.",
+      },
+      {
+        question: "Auf welche Dateigröße kann ich mein Bild reduzieren?",
+        answer:
+          "Du kannst eine gewünschte Zielgröße in KB oder MB angeben, zum Beispiel unter 100 KB für ein Bewerbungsformular.",
+      },
+      {
+        question: "Ist das Verkleinern von Bildern wirklich kostenlos?",
+        answer:
+          "Ja, das Tool ist vollständig kostenlos nutzbar, ohne versteckte Gebühren, Wasserzeichen oder Anmeldung.",
+      },
+    ],
+  },
+ 
+  // ============================================================
+  // 3. bild zuschneiden
+  // ============================================================
+  {
+    slug: "bild-zuschneiden",
+    translationKey: "cropImage",
+    metaTitle: "Bild zuschneiden online – präzise, kostenlos & ohne Anmeldung",
+    metaDescription:
+      "Bild zuschneiden mit exaktem Seitenverhältnis für Passbilder, Social Media oder Druck. Kostenlos, ohne Anmeldung, komplett im Browser bearbeitet.",
+    h1: "Bild zuschneiden",
+    subtitle:
+      "Wähle exakt den Bildausschnitt, den du brauchst – mit festen Seitenverhältnissen oder frei wählbar.",
+      showTool: "photo-editor",
+
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    sections: [
+      {
+        heading: "Bild zuschneiden für jeden Anlass",
+        content: `<div class="space-y-12 not-prose">
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <p>Manchmal ist nicht die Größe, sondern der Bildausschnitt das Problem: Ein störender Hintergrund, ein zu großer Freiraum um das Motiv oder ein falsches Seitenverhältnis für die Zielplattform. Mit unserem Werkzeug kannst du ein <strong>Bild zuschneiden</strong>, indem du den gewünschten Bereich einfach per Maus oder Touch auswählst. Das Ergebnis lässt sich sofort als neue Datei herunterladen.</p>
+    <p>Der Zuschnitt erfolgt vollständig im Browser, ohne dass dein Bild an einen Server übertragen wird. Das macht das Tool besonders geeignet für persönliche Dokumente wie Passbilder, Ausweisfotos oder private Aufnahmen.</p>
+  </div>
+ 
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="p-6 border-l-4 border-green-500 bg-green-50 dark:bg-green-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-green-900 dark:text-green-400 mb-3">Feste Seitenverhältnisse</h3>
+      <p class="text-green-800 dark:text-green-300/80">Wähle aus vordefinierten Formaten wie 1:1, 4:5, 3:4 oder 16:9 – perfekt für Instagram, Passbilder oder Präsentationen.</p>
+    </div>
+    <div class="p-6 border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-blue-900 dark:text-blue-400 mb-3">Freier Zuschnitt</h3>
+      <p class="text-blue-800 dark:text-blue-300/80">Wenn du kein festes Verhältnis brauchst, kannst du den Auswahlrahmen frei ziehen und exakt den Bereich wählen, der wichtig ist.</p>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>Häufige Zuschnitt-Formate im Überblick</h3>
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="text-slate-700 dark:text-slate-300"><th class="p-4 text-left">Format</th><th class="p-4 text-left">Verwendung</th></tr>
+      </thead>
+      <tbody class="divide-y text-slate-600 dark:text-slate-400">
+        <tr><td class="p-4">1:1 (quadratisch)</td><td class="p-4">Instagram-Beitrag, Profilbild</td></tr>
+        <tr><td class="p-4">4:5</td><td class="p-4">Instagram-Hochformat, Feed-Beitrag</td></tr>
+        <tr><td class="p-4">35 × 45 mm</td><td class="p-4">Passbild, Ausweisfoto, Visum</td></tr>
+        <tr><td class="p-4">16:9</td><td class="p-4">Präsentationen, YouTube-Thumbnail, Titelbild</td></tr>
+        <tr><td class="p-4">3:4</td><td class="p-4">Bewerbungsfoto, klassisches Porträt</td></tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>So schneidest du ein Bild in wenigen Schritten zu</h3>
+    <div class="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-6">
+      <ol class="list-decimal list-inside space-y-3 text-slate-700 dark:text-slate-300">
+        <li><strong>Bild hochladen:</strong> Foto per Drag-and-drop in den Editor ziehen.</li>
+        <li><strong>Auswahlrahmen anpassen:</strong> Rahmen verschieben, vergrößern oder ein festes Seitenverhältnis wählen.</li>
+        <li><strong>Ausrichtung prüfen:</strong> Bei Bedarf das Bild vor dem Zuschnitt drehen oder spiegeln.</li>
+        <li><strong>Herunterladen:</strong> Zugeschnittenes Bild direkt speichern, ohne Umweg über einen Server.</li>
+      </ol>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <p>Ein präziser Zuschnitt ist besonders wichtig bei biometrischen Fotos: Behörden verlangen oft, dass der Kopf einen bestimmten Prozentsatz der Bildhöhe einnimmt und mittig positioniert ist. Unser Zuschnitt-Werkzeug zeigt dir während der Auswahl Hilfslinien an, damit Augen- und Kopfposition den Vorgaben entsprechen. So vermeidest du, dass ein Antrag wegen eines falsch zugeschnittenen Fotos abgelehnt wird.</p>
+    <p>Auch für Social Media lohnt sich ein sorgfältiger Zuschnitt: Plattformen wie Instagram oder LinkedIn schneiden Bilder automatisch zu, wenn das Seitenverhältnis nicht passt – oft an ungünstigen Stellen. Indem du das Bild vorher selbst zuschneidest, behältst du die Kontrolle darüber, welcher Bildausschnitt sichtbar bleibt.</p>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "Kann ich ein Bild auf ein bestimmtes Seitenverhältnis zuschneiden?",
+        answer:
+          "Ja, du kannst zwischen vordefinierten Seitenverhältnissen wie 1:1, 4:5 oder 3:4 wählen oder den Ausschnitt vollkommen frei bestimmen.",
+      },
+      {
+        question: "Eignet sich das Tool auch für Passbilder?",
+        answer:
+          "Ja, es gibt spezielle Vorlagen mit den gängigen Maßen für Passbilder, etwa 35 × 45 mm, inklusive Hilfslinien für die richtige Kopfposition.",
+      },
+      {
+        question: "Verliert das Bild an Qualität, wenn ich es zuschneide?",
+        answer:
+          "Nein, beim Zuschneiden wird lediglich ein Bildbereich ausgewählt, die Auflösung der verbleibenden Fläche bleibt unverändert.",
+      },
+      {
+        question: "Kann ich das Bild vor dem Zuschnitt drehen?",
+        answer:
+          "Ja, du kannst das Bild vor dem Zuschneiden drehen oder spiegeln, um es korrekt auszurichten.",
+      },
+      {
+        question: "Wird mein Bild beim Zuschneiden irgendwohin hochgeladen?",
+        answer:
+          "Nein, der gesamte Zuschnitt erfolgt lokal in deinem Browser, ohne Übertragung an einen Server.",
+      },
+    ],
+  },
+ 
+  // ============================================================
+  // 4. passbild erstellen
+  // ============================================================
+  {
+    slug: "passbild-erstellen",
+    translationKey: "createPassportPhoto",
+    metaTitle: "Passbild erstellen online – biometrisch korrekt & kostenlos",
+    metaDescription:
+      "Passbild erstellen von zu Hause aus: biometrisch korrekte Maße, automatischer Hintergrund und Sofort-Download. Kostenlos, ohne Anmeldung, ohne Fotostudio.",
+    h1: "Passbild erstellen",
+    subtitle:
+      "Erstelle ein biometrisches Passbild bequem von zu Hause – ohne Termin im Fotostudio.",
+      showTool: "passport-maker",
+
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    sections: [
+      {
+        heading: "Passbild erstellen ohne Fotostudio",
+        content: `<div class="space-y-12 not-prose">
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <p>Ein neuer Personalausweis, Reisepass oder Visumsantrag – und plötzlich braucht man wieder ein aktuelles Passbild. Statt einen Termin im Fotostudio zu vereinbaren, kannst du dein <strong>Passbild erstellen</strong> bequem von zu Hause aus, mit einem gewöhnlichen Smartphone- oder Webcam-Foto. Unser Tool prüft automatisch die biometrischen Anforderungen wie Kopfgröße, Position und Hintergrund und liefert ein druckfertiges Ergebnis.</p>
+    <p>Der gesamte Vorgang läuft lokal im Browser ab. Das bedeutet, dein Gesichtsfoto verlässt zu keinem Zeitpunkt dein Gerät – ein wichtiger Aspekt gerade bei einem sensiblen Dokument wie einem Ausweisfoto.</p>
+  </div>
+ 
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="p-6 border-l-4 border-green-500 bg-green-50 dark:bg-green-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-green-900 dark:text-green-400 mb-3">Automatische Hintergrundentfernung</h3>
+      <p class="text-green-800 dark:text-green-300/80">Das Tool erkennt dein Gesicht und ersetzt den Hintergrund automatisch durch den geforderten neutralen Weiß- oder Grauton.</p>
+    </div>
+    <div class="p-6 border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-blue-900 dark:text-blue-400 mb-3">Biometrische Prüfung</h3>
+      <p class="text-blue-800 dark:text-blue-300/80">Kopfgröße, Blickrichtung und Bildausschnitt werden mit den offiziellen Vorgaben abgeglichen, bevor du das Bild herunterlädst.</p>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>So erstellst du dein Passbild in wenigen Minuten</h3>
+    <div class="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-6">
+      <ol class="list-decimal list-inside space-y-3 text-slate-700 dark:text-slate-300">
+        <li><strong>Foto aufnehmen oder hochladen:</strong> Nutze eine gerade Kopfhaltung, neutralen Gesichtsausdruck und gleichmäßiges Licht.</li>
+        <li><strong>Land bzw. Dokumenttyp wählen:</strong> Die Maße unterscheiden sich je nach Land – etwa 35 × 45 mm in Deutschland oder 2 × 2 Zoll in den USA.</li>
+        <li><strong>Automatische Anpassung:</strong> Hintergrund, Zuschnitt und Größe werden automatisch an die Vorgaben angepasst.</li>
+        <li><strong>Herunterladen oder drucken:</strong> Du erhältst eine druckfertige Datei, teils auch als Druckbogen mit mehreren Bildern für den Fotoladen.</li>
+      </ol>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>Worauf es bei einem Passbild ankommt</h3>
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="text-slate-700 dark:text-slate-300"><th class="p-4 text-left">Kriterium</th><th class="p-4 text-left">Anforderung</th></tr>
+      </thead>
+      <tbody class="divide-y text-slate-600 dark:text-slate-400">
+        <tr><td class="p-4">Hintergrund</td><td class="p-4">Einfarbig, meist weiß oder hellgrau, ohne Schatten</td></tr>
+        <tr><td class="p-4">Gesichtsausdruck</td><td class="p-4">Neutral, Mund geschlossen, beide Augen geöffnet</td></tr>
+        <tr><td class="p-4">Kopfhaltung</td><td class="p-4">Gerade in die Kamera blickend, nicht gedreht</td></tr>
+        <tr><td class="p-4">Kopfgröße</td><td class="p-4">Bestimmter Anteil an der Bildhöhe, je nach Land vorgegeben</td></tr>
+        <tr><td class="p-4">Kleidung</td><td class="p-4">Keine Kopfbedeckung, außer aus religiösen Gründen</td></tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <p>Ein häufiger Grund für die Ablehnung eines selbst gemachten Passbilds ist ein unruhiger oder farbiger Hintergrund. Unser Tool löst dieses Problem, indem es dein Gesicht per KI-Modell vom Hintergrund trennt und durch eine gleichmäßige Fläche ersetzt – ganz ohne grünen Bildschirm oder Fotostudio. Auch die Beleuchtung wird analysiert; bei zu dunklen oder überbelichteten Fotos erhältst du einen Hinweis, damit du das Foto bei besserem Licht erneut aufnehmen kannst.</p>
+    <p>Da unterschiedliche Länder unterschiedliche Anforderungen an Passbilder stellen, kannst du vor dem Erstellen dein Zielland auswählen. Das Tool passt Maße, Kopfgröße und Hintergrundfarbe automatisch entsprechend an, sodass dein Passbild den offiziellen Vorgaben für Reisepass, Personalausweis oder Visum entspricht.</p>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "Kann ich ein Passbild wirklich selbst zu Hause erstellen?",
+        answer:
+          "Ja, mit einem normalen Smartphone- oder Webcam-Foto und guter, gleichmäßiger Beleuchtung lässt sich ein biometrisch korrektes Passbild erstellen.",
+      },
+      {
+        question: "Wird der Hintergrund automatisch entfernt?",
+        answer:
+          "Ja, ein KI-Modell erkennt dein Gesicht und ersetzt den Hintergrund automatisch durch die geforderte einfarbige Fläche.",
+      },
+      {
+        question: "Für welche Länder sind Passbilder verfügbar?",
+        answer:
+          "Du kannst dein Zielland auswählen, das Tool passt die Maße, die Kopfgröße und die Hintergrundfarbe an die jeweiligen nationalen Vorgaben an.",
+      },
+      {
+        question: "Wird mein Gesichtsfoto irgendwo gespeichert?",
+        answer:
+          "Nein, die gesamte Bearbeitung erfolgt lokal in deinem Browser, dein Foto wird nicht an einen Server übertragen oder gespeichert.",
+      },
+      {
+        question: "Kann ich das Passbild direkt ausdrucken?",
+        answer:
+          "Ja, du kannst das fertige Bild entweder einzeln herunterladen oder als Druckbogen mit mehreren Passbildern für den Ausdruck beim Fotoladen erhalten.",
+      },
+    ],
+  },
+ 
+  // ============================================================
+  // 5. passfoto generator
+  // ============================================================
+  {
+    slug: "passfoto-generator",
+    translationKey: "passportPhotoGenerator",
+    metaTitle: "Passfoto Generator – biometrisches Foto in Sekunden erstellen",
+    metaDescription:
+      "Passfoto Generator mit automatischer Größen- und Hintergrundanpassung für Reisepass, Personalausweis und Visum. Kostenlos, schnell und ohne Anmeldung.",
+    h1: "Passfoto Generator",
+    subtitle:
+      "Lade ein Foto hoch und erhalte in Sekunden ein biometrisch korrektes Passfoto – automatisch angepasst.",
+     showTool: "passport-maker",
+
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    sections: [
+      {
+        heading: "Passfoto Generator – automatisch, präzise, kostenlos",
+        content: `<div class="space-y-12 not-prose">
+  <div class="prose prose-slate dark:prose-invert max-w-none">
+    <p>Ein <strong>Passfoto Generator</strong> nimmt dir die mühsame Feinarbeit ab, die sonst ein Fotostudio erledigt: Ausrichten, Zuschneiden, Hintergrund vereinheitlichen und die exakten Maße für das jeweilige Dokument einstellen. Statt manuell mit einem Bildbearbeitungsprogramm zu hantieren, lädst du einfach ein Foto hoch, wählst das Zielland und den Dokumenttyp – der Generator erledigt den Rest automatisch.</p>
+    <p>Im Hintergrund arbeitet ein KI-Modell, das dein Gesicht erkennt, korrekt positioniert und den Hintergrund vereinheitlicht. Die gesamte Berechnung läuft direkt im Browser, sodass keine sensiblen Gesichtsdaten an einen Server übertragen werden.</p>
+  </div>
+ 
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="p-6 border-l-4 border-green-500 bg-green-50 dark:bg-green-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-green-900 dark:text-green-400 mb-3">Länderspezifische Vorlagen</h3>
+      <p class="text-green-800 dark:text-green-300/80">Ob Deutschland, Schweiz, USA oder Großbritannien – der Generator kennt die jeweiligen Maße und Anforderungen und wendet sie automatisch an.</p>
+    </div>
+    <div class="p-6 border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/10 rounded-r-xl">
+      <h3 class="text-lg font-bold text-blue-900 dark:text-blue-400 mb-3">KI-gestützte Qualitätsprüfung</h3>
+      <p class="text-blue-800 dark:text-blue-300/80">Der Generator prüft Beleuchtung, Kopfhaltung und Bildschärfe und weist dich auf mögliche Probleme hin, bevor du das Foto einreichst.</p>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>So funktioniert der Passfoto Generator</h3>
+    <div class="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-2xl p-6">
+      <ol class="list-decimal list-inside space-y-3 text-slate-700 dark:text-slate-300">
+        <li><strong>Foto hochladen:</strong> Ein aktuelles Foto von vorne, mit neutralem Gesichtsausdruck und guter Beleuchtung.</li>
+        <li><strong>Dokumenttyp wählen:</strong> Reisepass, Personalausweis, Visum oder Führerschein – jede Kategorie hat eigene Vorgaben.</li>
+        <li><strong>Automatische Verarbeitung:</strong> Der Generator entfernt den Hintergrund, passt die Kopfgröße an und schneidet das Bild passend zu.</li>
+        <li><strong>Ergebnis prüfen und herunterladen:</strong> Eine Vorschau zeigt dir sofort, ob alle biometrischen Kriterien erfüllt sind.</li>
+      </ol>
+    </div>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <h3>Generator vs. klassisches Fotostudio</h3>
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="text-slate-700 dark:text-slate-300"><th class="p-4 text-left">Merkmal</th><th class="p-4 text-left">Passfoto Generator</th><th class="p-4 text-left">Fotostudio</th></tr>
+      </thead>
+      <tbody class="divide-y text-slate-600 dark:text-slate-400">
+        <tr><td class="p-4">Kosten</td><td class="p-4">Kostenlos</td><td class="p-4">Meist 8–20 €</td></tr>
+        <tr><td class="p-4">Zeitaufwand</td><td class="p-4">Wenige Minuten, jederzeit</td><td class="p-4">Termin und Anfahrt nötig</td></tr>
+        <tr><td class="p-4">Wiederholungen</td><td class="p-4">Beliebig oft, ohne Zusatzkosten</td><td class="p-4">Oft nur ein Versuch pro Termin</td></tr>
+        <tr><td class="p-4">Datenschutz</td><td class="p-4">Verarbeitung lokal im Browser</td><td class="p-4">Foto verbleibt beim Studio</td></tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <div class="prose prose-slate dark:prose-invert max-w-none mt-6">
+    <p>Ein Passfoto Generator ist besonders praktisch, wenn ein Antrag kurzfristig eingereicht werden muss oder mehrere Familienmitglieder gleichzeitig neue Ausweisdokumente benötigen. Statt für jede Person einen separaten Termin zu vereinbaren, lässt sich jedes Foto einzeln hochladen und in wenigen Minuten bearbeiten. Da die Vorgaben je nach Land und Dokumenttyp variieren – etwa unterschiedliche Kopfgrößen oder erlaubte Hintergrundfarben – reduziert die automatische Anpassung das Risiko, dass ein Antrag wegen eines formal falschen Fotos abgelehnt wird.</p>
+    <p>Zusätzlich lässt sich das Ergebnis meist direkt als Druckbogen exportieren, auf dem mehrere Passfotos im Standardformat 10 × 15 cm angeordnet sind. So kannst du den Bogen bei einem beliebigen Fotoservice ausdrucken lassen, ohne selbst mit Lineal und Schere hantieren zu müssen.</p>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "Was ist ein Passfoto Generator genau?",
+        answer:
+          "Ein Passfoto Generator ist ein Online-Werkzeug, das aus einem normalen Foto automatisch ein biometrisch korrektes Passfoto erstellt, inklusive Hintergrund- und Größenanpassung.",
+      },
+      {
+        question: "Für welche Dokumente kann ich den Generator nutzen?",
+        answer:
+          "Der Generator unterstützt gängige Dokumente wie Reisepass, Personalausweis, Visum und Führerschein mit den jeweils passenden Maßen.",
+      },
+      {
+        question: "Ist das erzeugte Passfoto rechtlich gültig?",
+        answer:
+          "Das Tool orientiert sich an den offiziellen biometrischen Vorgaben der jeweiligen Länder. Die endgültige Anerkennung liegt jedoch immer bei der zuständigen Behörde.",
+      },
+      {
+        question: "Wie schnell erhalte ich mein Passfoto?",
+        answer:
+          "Die Verarbeitung dauert nur wenige Sekunden, da alles direkt im Browser berechnet wird.",
+      },
+      {
+        question: "Kann ich den Passfoto Generator mehrfach kostenlos nutzen?",
+        answer:
+          "Ja, du kannst beliebig viele Fotos hochladen und bearbeiten, ohne zusätzliche Kosten oder Registrierung.",
+      },
+    ],
+  },
 ];
