@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, startTransition } from 'react';
 import { useEditor } from '../components/editor/EditorContext';
 
 export function useImageProcessor() {
@@ -38,8 +38,8 @@ export function useImageProcessor() {
 
     if (debounceTimer.current) clearTimeout(debounceTimer.current);
 
-    // No debounce on first load — process immediately
-    const delay = isFirstLoad.current ? 0 : 500;
+    // No debounce on first load — process immediately; debounce subsequent changes by 250ms
+    const delay = isFirstLoad.current ? 0 : 250;
     isFirstLoad.current = false;
 
     debounceTimer.current = setTimeout(() => {
@@ -54,7 +54,9 @@ export function useImageProcessor() {
 
   const processImage = () => {
     if (!imageUrl || !workerRef.current) return;
-    setIsProcessing(true);
+    startTransition(() => {
+      setIsProcessing(true);
+    });
 
     workerRef.current.onmessage = (e) => {
       const data = e.data;
@@ -68,11 +70,16 @@ export function useImageProcessor() {
         activeUrlRef.current = url;
 
         const sizeKb = parseFloat((blob.size / 1024).toFixed(1));
-        setLivePreview({ url, sizeKb, width: outWidth, height: outHeight });
+        startTransition(() => {
+          setLivePreview({ url, sizeKb, width: outWidth, height: outHeight });
+          setIsProcessing(false);
+        });
       } else {
         console.error('Image processing worker error:', data.error);
+        startTransition(() => {
+          setIsProcessing(false);
+        });
       }
-      setIsProcessing(false);
     };
 
     workerRef.current.postMessage({

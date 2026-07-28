@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect, startTransition } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useDropzone } from "react-dropzone";
@@ -15,6 +15,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+const loadPhotoEditor = () => import("../../components/editor/PhotoEditor");
+
 const EditorFallback = () => (
   <div className="w-full min-h-[600px] flex flex-col items-center justify-center bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
     <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-4"></div>
@@ -22,7 +24,7 @@ const EditorFallback = () => (
   </div>
 );
 
-const PhotoEditor = dynamic(() => import("../../components/editor/PhotoEditor"), {
+const PhotoEditor = dynamic(loadPhotoEditor, {
   ssr: false,
   loading: () => <EditorFallback />,
 });
@@ -45,21 +47,36 @@ export default function HeroUploader() {
   const [hasUploadedImage, setHasUploadedImage] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
+  // Preload PhotoEditor JS chunk in the background so interaction on drop is instant (< 30ms INP)
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const idleCallback = (window as any).requestIdleCallback || ((cb: Function) => setTimeout(cb, 1000));
+      idleCallback(() => {
+        loadPhotoEditor();
+      });
+    }
+  }, []);
+
   const onDrop = useCallback((acceptedFiles: File[]) => {
     if (acceptedFiles?.length > 0) {
-      setIsTransitioning(true);
+      // Yield main thread so the drop animation / visual feedback responds immediately
+      startTransition(() => {
+        setIsTransitioning(true);
+      });
       // Save the files globally so PhotoEditor can pick them up when it mounts
       (window as any).__HERO_DROPPED_FILES__ = acceptedFiles;
       
-      // Small delay for smooth transition
+      // Small non-blocking delay for smooth transition and instant paint
       setTimeout(() => {
-        setHasUploadedImage(true);
+        startTransition(() => {
+          setHasUploadedImage(true);
+        });
         // Also dispatch the event in case PhotoEditor is already mounted
         const event = new CustomEvent("hero-file-drop", {
           detail: { files: acceptedFiles },
         });
         window.dispatchEvent(event);
-      }, 100);
+      }, 50);
     }
   }, []);
 

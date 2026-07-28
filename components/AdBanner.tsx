@@ -55,12 +55,21 @@ export function AdBanner({
 
   useEffect(() => {
     if (shouldLoad && !isPushed.current && !isDismissed) {
-      try {
-        // @ts-ignore
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-        isPushed.current = true;
-      } catch (error) {
-        console.error('AdSense Error:', error);
+      isPushed.current = true;
+      const pushAd = () => {
+        try {
+          // @ts-ignore
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (error) {
+          console.error('AdSense Error:', error);
+        }
+      };
+
+      if (typeof window !== 'undefined') {
+        const idleCallback = (window as any).requestIdleCallback || ((cb: Function) => setTimeout(cb, 200));
+        idleCallback(pushAd);
+      } else {
+        setTimeout(pushAd, 200);
       }
     }
   }, [shouldLoad, isDismissed]);

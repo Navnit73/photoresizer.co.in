@@ -96,6 +96,8 @@ export default function OriginalWorkspace() {
     return () => clearInterval(interval);
   }, [isBgRemoving]);
 
+  const animFrameRef = useRef<number | null>(null);
+
   const onDrop = useCallback(
     (acceptedFiles: File[]) => {
       if (acceptedFiles?.length > 0) {
@@ -103,51 +105,52 @@ export default function OriginalWorkspace() {
         
         setIsUploading(true);
         setUploadProgress(10);
-        
-        imageCompression(file, {
-          maxSizeMB: 5,
-          maxWidthOrHeight: 4096,
-          useWebWorker: true,
-        })
-          .then((res) => {
-            setUploadProgress(100);
-            const finalFile = res || file;
-            const url = URL.createObjectURL(finalFile);
-            const img = new Image();
-            img.onload = () => {
-              setImageFile(finalFile, url, img.width, img.height);
-              setIsCropping(false);
-              setCropState(undefined);
-              setCompletedCrop(undefined);
-              setIsUploading(false);
-              setUploadProgress(0);
-            };
-            img.onerror = () => {
-              setIsUploading(false);
-              setUploadProgress(0);
-            };
-            img.decoding = "async";
-            img.src = url;
+
+        const processLoadedUrl = (finalFile: File, url: string) => {
+          const img = new Image();
+          img.onload = () => {
+            setImageFile(finalFile, url, img.width, img.height);
+            setIsCropping(false);
+            setCropState(undefined);
+            setCompletedCrop(undefined);
+            setIsUploading(false);
+            setUploadProgress(0);
+          };
+          img.onerror = () => {
+            setIsUploading(false);
+            setUploadProgress(0);
+          };
+          img.decoding = "async";
+          img.src = url;
+        };
+
+        // For files < 2MB, load directly without running browser-image-compression overhead
+        if (file.size < 2 * 1024 * 1024) {
+          setUploadProgress(100);
+          const url = URL.createObjectURL(file);
+          processLoadedUrl(file, url);
+          return;
+        }
+
+        // For larger files, yield main thread before compression
+        setTimeout(() => {
+          imageCompression(file, {
+            maxSizeMB: 5,
+            maxWidthOrHeight: 4096,
+            useWebWorker: true,
           })
-          .catch((err) => {
-            console.error("Compression error:", err);
-            const url = URL.createObjectURL(file);
-            const img = new Image();
-            img.onload = () => {
-              setImageFile(file, url, img.width, img.height);
-              setIsCropping(false);
-              setCropState(undefined);
-              setCompletedCrop(undefined);
-              setIsUploading(false);
-              setUploadProgress(0);
-            };
-            img.onerror = () => {
-              setIsUploading(false);
-              setUploadProgress(0);
-            };
-            img.decoding = "async";
-            img.src = url;
-          });
+            .then((res) => {
+              setUploadProgress(100);
+              const finalFile = res || file;
+              const url = URL.createObjectURL(finalFile);
+              processLoadedUrl(finalFile, url);
+            })
+            .catch((err) => {
+              console.error("Compression error:", err);
+              const url = URL.createObjectURL(file);
+              processLoadedUrl(file, url);
+            });
+        }, 10);
       }
     },
     [setImageFile],
