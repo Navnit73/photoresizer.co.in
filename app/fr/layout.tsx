@@ -55,11 +55,6 @@ export default function FrenchLayout({ children }: { children: React.ReactNode }
         {children}
       </main>
 
-      {/* Bottom Ad Banner */}
-      <div className="max-w-[1280px] mx-auto px-4 my-6 w-full">
-        <AdBanner type="responsive" />
-      </div>
-
       {/* ── Airbnb Footer Light (#f7f7f7) ── */}
       <footer className="w-full bg-[#f7f7f7] dark:bg-[#0b0b0b] border-t border-[#dddddd] dark:border-slate-800 text-[#222222] dark:text-slate-300 transition-colors mt-auto pb-24 sm:pb-28">
         <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-12">

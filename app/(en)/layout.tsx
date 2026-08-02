@@ -22,11 +22,6 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
         {children}
       </div>
 
-      {/* Bottom Ad */}
-      <div className="max-w-[1400px] mx-auto px-4 mb-4">
-        <AdBanner type="responsive" />
-      </div>
-
       {/* English Specific Premium Footer */}
       <footer className="w-full bg-slate-50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 mt-auto pb-24 sm:pb-28">
         <div className="max-w-[1400px] mx-auto px-4 md:px-6 py-12 md:py-16">
@@ -92,8 +87,6 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
         </div>
       </footer>
 
-      {/* Global High Viewability Sticky Bottom Ad Anchor */}
-      <AdBanner type="sticky-bottom" />
     </div>
   );
 }

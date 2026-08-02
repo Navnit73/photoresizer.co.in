@@ -87,11 +87,6 @@ export default function GermanHomePage() {
         <PhotoEditor />
       </section>
 
-      {/* Mid AdBanner */}
-      <div className="max-w-[1280px] mx-auto px-4 my-6">
-        <AdBanner type="responsive" />
-      </div>
-
       {/* ── Dynamic Tools Grid from dePages ── */}
       <section className="max-w-[1280px] mx-auto px-4 md:px-8 py-8 border-t border-[#dddddd] dark:border-slate-800">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
@@ -224,11 +219,6 @@ export default function GermanHomePage() {
           ))}
         </div>
       </section>
-
-      {/* Bottom AdBanner */}
-      <div className="max-w-[1280px] mx-auto px-4 my-6">
-        <AdBanner type="responsive" />
-      </div>
 
     </div>
   );

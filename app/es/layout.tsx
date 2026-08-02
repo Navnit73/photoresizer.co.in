@@ -57,11 +57,6 @@ export default function SpanishLayout({ children }: { children: React.ReactNode 
         {children}
       </div>
 
-      {/* Bottom Ad */}
-      <div className="max-w-[1400px] mx-auto px-4 mb-4 w-full">
-        <AdBanner type="responsive" />
-      </div>
-
       {/* Spanish Specific Footer */}
       <footer className="w-full p-6 bg-slate-50 text-center text-slate-500 text-sm mt-auto border-t border-slate-200 flex flex-col items-center gap-4 pb-24 sm:pb-28">
         <div className="flex flex-wrap justify-center gap-4">
@@ -86,8 +81,6 @@ export default function SpanishLayout({ children }: { children: React.ReactNode 
         </div>
       </footer>
 
-      {/* Global Sticky Bottom Ad Anchor */}
-      <AdBanner type="sticky-bottom" />
     </div>
   );
 }

@@ -213,11 +213,6 @@ export function SeoPageRenderer({ page, lang }: Props) {
           </div>
         )}
 
-        {/* ── Mid AdBanner (Below Hero) ── */}
-        <div className="w-full my-8">
-          <AdBanner type="responsive" />
-        </div>
-
         {/* ══════════════════════════════════════════
             EDITOR CONTAINER — shown after upload
         ══════════════════════════════════════════ */}
@@ -225,9 +220,9 @@ export function SeoPageRenderer({ page, lang }: Props) {
           {/* Header area when editor is active */}
           <header className="mb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex flex-col gap-1">
-              <h1 className="text-xl font-bold tracking-tight text-[#222222] dark:text-white">
+              <h2 className="text-xl font-bold tracking-tight text-[#222222] dark:text-white">
                 {page.h1}
-              </h1>
+              </h2>
               <p className="text-xs text-[#6a6a6a] dark:text-slate-400">
                 {page.subtitle}
               </p>
@@ -268,11 +263,6 @@ export function SeoPageRenderer({ page, lang }: Props) {
           </div>
         </div>
 
-        {/* ── Mid AdBanner (Below Tool) ── */}
-        <div className="w-full my-8">
-          <AdBanner type="responsive" />
-        </div>
-
       </div>
 
       {/* Bottom SEO Content */}
@@ -284,11 +274,6 @@ export function SeoPageRenderer({ page, lang }: Props) {
             ))}
           </div>
         )}
-
-        {/* ── Bottom AdBanner (Before FAQ) ── */}
-        <div className="w-full my-8">
-          <AdBanner type="responsive" />
-        </div>
 
         {/* FAQ */}
         <FAQ faq={page.faq || []} />

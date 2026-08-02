@@ -39,7 +39,7 @@ export default function BgRemoverHeader() {
             <Sparkles size={15} className="text-white" strokeWidth={2.5} />
           </div>
           <div>
-            <h1 className="text-sm font-black text-slate-800 dark:text-slate-100 leading-tight tracking-tight">BG Remover</h1>
+            <h2 className="text-sm font-black text-slate-800 dark:text-slate-100 leading-tight tracking-tight">BG Remover</h2>
             <p className="text-[9px] text-slate-400 dark:text-slate-500 font-semibold leading-tight uppercase tracking-widest">Local · Private · Fast</p>
           </div>
         </div>

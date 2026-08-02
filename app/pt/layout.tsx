@@ -62,11 +62,6 @@ export default function PortugueseLayout({ children }: { children: React.ReactNo
         {children}
       </main>
 
-      {/* Bottom Ad Banner */}
-      <div className="max-w-[1280px] mx-auto px-4 my-6 w-full">
-        <AdBanner type="responsive" />
-      </div>
-
       {/* ── Airbnb Footer Light ({colors.surface-soft} #f7f7f7) ── */}
       <footer className="w-full bg-[#f7f7f7] dark:bg-[#0b0b0b] border-t border-[#dddddd] dark:border-slate-800 text-[#222222] dark:text-slate-300 font-['Airbnb_Cereal_VF',Circular,sans-serif] transition-colors mt-auto pb-24 sm:pb-28">
         <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-12">
@@ -148,8 +143,6 @@ export default function PortugueseLayout({ children }: { children: React.ReactNo
         </div>
       </footer>
 
-      {/* Global Sticky Bottom Ad Anchor */}
-      <AdBanner type="sticky-bottom" />
     </div>
   );
 }

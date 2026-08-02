@@ -234,11 +234,6 @@ export default function PortugueseHomePage() {
         </div>
       </section>
 
-      {/* Mid AdBanner */}
-      <div className="max-w-[1280px] mx-auto px-4 my-8">
-        <AdBanner type="responsive" />
-      </div>
-
     </div>
   );
 }

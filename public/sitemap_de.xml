@@ -19,16 +19,18 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/foto-enem-online-gratis"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/bild-komprimieren</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/compress-image"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/reduce-photo-size-50kb"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/bild-komprimieren"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/compresser-photo"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/compress-image"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/comprimir-foto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/reduce-photo-size-50kb"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/hintergrund-entfernen</loc>
@@ -95,6 +97,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/foto-enem-online-gratis"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
   </url>
   <url>
@@ -105,6 +108,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/foto-enem-online-gratis"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
   </url>
   <url>
@@ -112,6 +116,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/bild-zuschneiden"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/cortar-imagem"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/de/passbild-erstellen</loc>

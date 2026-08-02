@@ -120,8 +120,19 @@ async function main() {
   ];
   fs.writeFileSync(path.join(publicDir, 'sitemap_pt.xml'), generateXml(ptUrls));
 
+  // Generate Master sitemap.xml Index
+  const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    `  <sitemap><loc>${baseUrl}/sitemap_main.xml</loc></sitemap>\n` +
+    `  <sitemap><loc>${baseUrl}/sitemap_de.xml</loc></sitemap>\n` +
+    `  <sitemap><loc>${baseUrl}/sitemap_fr.xml</loc></sitemap>\n` +
+    `  <sitemap><loc>${baseUrl}/sitemap_es.xml</loc></sitemap>\n` +
+    `  <sitemap><loc>${baseUrl}/sitemap_pt.xml</loc></sitemap>\n` +
+    `</sitemapindex>`;
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapIndexXml);
+
   // Generate robots.txt
-  const robotsTxt = `User-Agent: *\nAllow: /\nDisallow: /private/\nDisallow: /api/\n\nSitemap: ${baseUrl}/sitemap_main.xml\nSitemap: ${baseUrl}/sitemap_de.xml\nSitemap: ${baseUrl}/sitemap_fr.xml\nSitemap: ${baseUrl}/sitemap_es.xml\nSitemap: ${baseUrl}/sitemap_pt.xml\n`;
+  const robotsTxt = `User-Agent: *\nAllow: /\nDisallow: /private/\nDisallow: /api/\n\nSitemap: ${baseUrl}/sitemap.xml\nSitemap: ${baseUrl}/sitemap_main.xml\nSitemap: ${baseUrl}/sitemap_de.xml\nSitemap: ${baseUrl}/sitemap_fr.xml\nSitemap: ${baseUrl}/sitemap_es.xml\nSitemap: ${baseUrl}/sitemap_pt.xml\n`;
   fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt);
 
   console.log('Successfully generated sitemaps and robots.txt in public/');

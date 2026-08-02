@@ -5,7 +5,7 @@ import { EditorProvider, useEditor } from "./EditorContext";
 import SettingsSidebar from "./SettingsSidebar";
 import OriginalWorkspace from "./OriginalWorkspace";
 import DownloadPanel from "./DownloadPanel";
-import { AdBanner } from "@/components/AdBanner";
+
 function EditorContent() {
   const { imageFile } = useEditor();
 
@@ -34,7 +34,6 @@ function EditorContent() {
           <div className="w-full lg:flex-1 min-h-[60vh] sm:min-h-[500px] lg:min-h-0 lg:h-full flex flex-col overflow-hidden relative border border-[#dddddd] dark:border-slate-800 rounded-2xl bg-[#f7f7f7] dark:bg-slate-900/50">
             <OriginalWorkspace />
           </div>
-          <AdBanner type="responsive" />
           <DownloadPanel />
         </div>
       </div>
