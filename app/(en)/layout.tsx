@@ -9,11 +9,11 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
       {/* English Specific Navigation */}
       <SiteHeader />
       
-      {/* Top Ad */}
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block">
+      {/* Top Ad — fixed height container prevents CLS */}
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block" style={{ height: '110px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="fixed" />
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden">
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden" style={{ height: '100px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="responsive" />
       </div>
 

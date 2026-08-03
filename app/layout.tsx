@@ -9,7 +9,7 @@ import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema
 import "./globals.css";
 import Script from "next/script";
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], display: 'swap', variable: '--font-poppins' });
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'], display: 'swap', variable: '--font-poppins', adjustFontFallback: true });
 
 export const viewport: Viewport = {
   themeColor: '#ffffff',
@@ -67,7 +67,7 @@ export default function RootLayout({
           async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2980455227951378" 
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>

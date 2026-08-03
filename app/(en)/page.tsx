@@ -276,7 +276,7 @@ export default function Home() {
         {/* ══════════════════════════════════════════
             SEO CONTENT
         ══════════════════════════════════════════ */}
-        <section className="mt-16 max-w-5xl mx-auto px-4 md:px-0 space-y-20">
+        <section className="mt-16 max-w-5xl mx-auto px-4 md:px-0 space-y-20" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 3000px' } as React.CSSProperties}>
           {/* ── Intro ── */}
           <div>
             <h2 className="text-3xl font-bold mb-4 text-slate-900 dark:text-white">
@@ -456,7 +456,7 @@ export default function Home() {
             </div>
           </div>
           {/* ───────────────── SEO CONTENT ───────────────── */}
-          <section className="mt-16 max-w-5xl mx-auto px-4 md:px-0 space-y-16">
+          <section className="mt-16 max-w-5xl mx-auto px-4 md:px-0 space-y-16" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 2000px' } as React.CSSProperties}>
             {/* Intro */}
             <div>
               <h2 className="text-3xl font-bold mb-4 text-slate-900 dark:text-white">

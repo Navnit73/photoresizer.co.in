@@ -81,7 +81,7 @@ export function AdBanner({
   // ── Sticky Bottom Banner Format ──
   if (type === 'sticky-bottom') {
     return (
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_20px_rgba(0,0,0,0.15)] backdrop-blur-md transition-all duration-300">
+      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_20px_rgba(0,0,0,0.15)] backdrop-blur-md" style={{ contain: 'layout style' }}>
         <div className="max-w-[1280px] mx-auto relative px-4 py-2 flex flex-col items-center justify-center min-h-[60px] sm:min-h-[90px]">
           {/* Close Button */}
           <button
@@ -117,7 +117,8 @@ export function AdBanner({
     return (
       <div 
         ref={containerRef} 
-        className={`w-full block text-center my-3 p-3 bg-slate-50/80 dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-800 rounded-xl shadow-xs min-h-[120px] ${className}`}
+        className={`w-full block text-center my-3 p-3 bg-slate-50/80 dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-800 rounded-xl shadow-xs min-h-[120px] overflow-hidden ${className}`}
+        style={{ contain: 'layout style paint' }}
       >
         <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-semibold block mb-1">
           Advertisement
@@ -141,7 +142,8 @@ export function AdBanner({
     return (
       <div 
         ref={containerRef} 
-        className={`w-[300px] min-h-[600px] hidden lg:block sticky top-4 p-2 bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200/60 dark:border-slate-800 rounded-2xl ${className}`}
+        className={`w-[300px] min-h-[600px] hidden lg:block sticky top-4 p-2 bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200/60 dark:border-slate-800 rounded-2xl overflow-hidden ${className}`}
+        style={{ contain: 'layout style paint' }}
       >
         <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-semibold block mb-1 text-center">
           Advertisement
@@ -162,7 +164,8 @@ export function AdBanner({
   return (
     <div 
       ref={containerRef} 
-      className={`w-full block text-center py-4 min-h-[90px] sm:min-h-[110px] ${className}`}
+      className={`w-full block text-center py-4 min-h-[90px] sm:min-h-[110px] overflow-hidden ${className}`}
+      style={{ contain: 'layout style paint' }}
     >
       <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-semibold block mb-1">
         Advertisement
