@@ -45,10 +45,10 @@ export default function SpanishLayout({ children }: { children: React.ReactNode 
       </nav>
       
       {/* Top Ad */}
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block w-full">
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block w-full" style={{ height: '110px', minHeight: '110px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="fixed" />
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden w-full">
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden w-full" style={{ height: '100px', minHeight: '100px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="responsive" />
       </div>
 

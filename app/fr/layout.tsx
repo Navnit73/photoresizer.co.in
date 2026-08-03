@@ -43,10 +43,10 @@ export default function FrenchLayout({ children }: { children: React.ReactNode }
       <FrSiteHeader />
       
       {/* Top Ad Banner */}
-      <div className="max-w-[1280px] mx-auto px-4 mt-6 hidden sm:block w-full">
+      <div className="max-w-[1280px] mx-auto px-4 mt-6 hidden sm:block w-full" style={{ height: '110px', minHeight: '110px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="fixed" />
       </div>
-      <div className="max-w-[1280px] mx-auto px-4 mt-4 block sm:hidden w-full">
+      <div className="max-w-[1280px] mx-auto px-4 mt-4 block sm:hidden w-full" style={{ height: '100px', minHeight: '100px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="responsive" />
       </div>
 
