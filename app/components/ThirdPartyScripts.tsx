@@ -27,10 +27,18 @@ export function ThirdPartyScripts() {
 
       // 2. Inject Clarity
       if (!document.querySelector('script[src*="clarity.ms"]')) {
-        const clarityScript = document.createElement("script");
-        clarityScript.async = true;
-        clarityScript.src = "https://www.clarity.ms/tag/uu67di7l76";
-        document.head.appendChild(clarityScript);
+        (function(c: any, l: Document, a: string, r: string, i: string) {
+          c[a] = c[a] || function() { (c[a].q = c[a].q || []).push(arguments); };
+          const t = l.createElement(r) as HTMLScriptElement;
+          t.async = true;
+          t.src = "https://www.clarity.ms/tag/" + i;
+          const y = l.getElementsByTagName(r)[0];
+          if (y && y.parentNode) {
+            y.parentNode.insertBefore(t, y);
+          } else {
+            document.head.appendChild(t);
+          }
+        })(window, document, "clarity", "script", "uu67di7l76");
       }
     };
 
