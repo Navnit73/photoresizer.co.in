@@ -4,10 +4,10 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ClientErrorSuppressor } from "./components/ClientErrorSuppressor";
 import { LangUpdater } from "./components/LangUpdater";
+import { ThirdPartyScripts } from "./components/ThirdPartyScripts";
 
 import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema";
 import "./globals.css";
-import Script from "next/script";
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'], display: 'optional', variable: '--font-poppins', adjustFontFallback: true });
 
@@ -64,21 +64,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="anonymous" />
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        <Script 
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2980455227951378" 
-          crossOrigin="anonymous"
-          strategy="lazyOnload"
-        />
-        <Script id="clarity-script" strategy="lazyOnload">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "uu67di7l76");
-          `}
-        </Script>
-
+        <ThirdPartyScripts />
         <GoogleAnalytics gaId="G-Y3N6YXK7VE" />
         
         {/* Global Structured Data */}

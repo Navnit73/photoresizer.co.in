@@ -164,21 +164,21 @@ export function AdBanner({
   return (
     <div 
       ref={containerRef} 
-      className={`w-full block text-center py-4 min-h-[90px] sm:min-h-[110px] overflow-hidden ${className}`}
-      style={{ contain: 'layout style paint' }}
+      className={`w-full block text-center py-2 h-[90px] sm:h-[110px] min-h-[90px] sm:min-h-[110px] overflow-hidden ${className}`}
+      style={{ contain: 'strict' }}
     >
-      <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-semibold block mb-1">
+      <span className="text-[9px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-semibold block mb-0.5">
         Advertisement
       </span>
       {shouldLoad && (
         <ins
           className="adsbygoogle"
-          style={type === 'fixed' ? { display: 'inline-block', width: '728px', height: '90px' } : { display: 'block', width: '100%' }}
+          style={type === 'fixed' ? { display: 'inline-block', width: '728px', height: '90px' } : { display: 'block', width: '100%', height: '90px' }}
           data-ad-client="ca-pub-2980455227951378"
           data-ad-slot={slotId}
           {...(type === 'responsive' ? {
-            'data-ad-format': dataAdFormat,
-            'data-full-width-responsive': dataFullWidthResponsive.toString()
+            'data-ad-format': 'horizontal',
+            'data-full-width-responsive': 'false'
           } : {})}
         />
       )}

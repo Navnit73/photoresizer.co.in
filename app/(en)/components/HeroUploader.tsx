@@ -32,18 +32,13 @@ const PhotoEditor = dynamic(loadPhotoEditor, {
 export default function HeroUploader() {
   const [hasUploadedImage, setHasUploadedImage] = useState(false);
 
-  // Preload PhotoEditor JS chunk in the background so interaction on drop is instant (< 30ms INP)
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const idleCallback = (window as any).requestIdleCallback || ((cb: Function) => setTimeout(cb, 1000));
-      idleCallback(() => {
-        loadPhotoEditor();
-      });
-    }
+  const handleUserInteraction = useCallback(() => {
+    loadPhotoEditor();
   }, []);
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     if (acceptedFiles?.length > 0) {
+      loadPhotoEditor();
       (window as any).__HERO_DROPPED_FILES__ = acceptedFiles;
       setHasUploadedImage(true);
       const event = new CustomEvent("hero-file-drop", {
@@ -115,7 +110,10 @@ export default function HeroUploader() {
 
                     {/* Upload Card */}
                     <div
-                      {...getRootProps()}
+                      {...getRootProps({
+                        onMouseEnter: handleUserInteraction,
+                        onTouchStart: handleUserInteraction,
+                      })}
                       className={`hero-upload-zone relative cursor-pointer rounded-2xl border-2 border-dashed p-8 sm:p-10 bg-white dark:bg-slate-900 ${
                         isDragActive
                           ? "border-blue-600 bg-blue-50 dark:bg-blue-950/40"
