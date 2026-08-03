@@ -10,10 +10,10 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
       <SiteHeader />
       
       {/* Top Ad — fixed height container prevents CLS */}
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block" style={{ height: '110px', overflow: 'hidden', contain: 'layout style paint' }}>
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block" style={{ height: '110px', minHeight: '110px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="fixed" />
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden" style={{ height: '100px', overflow: 'hidden', contain: 'layout style paint' }}>
+      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden" style={{ height: '100px', minHeight: '100px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="responsive" />
       </div>
 
@@ -31,11 +31,11 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
               <h3 className="text-xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
                 photoresizer
               </h3>
-              <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
+              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed max-w-sm mb-6">
                 Your ultimate suite of free, private, and secure online image editing tools. Process your photos locally in your browser without any data leaving your device.
               </p>
               
-              <div className="text-sm text-slate-600 dark:text-slate-400">
+              <div className="text-sm text-slate-700 dark:text-slate-300">
                 <p className="font-bold text-slate-900 dark:text-white mb-2">Contact Developer</p>
                 <p className="mb-1">Navnit Rai</p>
                 <p className="mb-1">
@@ -48,7 +48,7 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
             {/* Quick Links */}
             <div className="col-span-1">
               <h4 className="text-slate-900 dark:text-white font-bold mb-4 uppercase tracking-wider text-xs">Popular Tools</h4>
-              <ul className="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+              <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                 <li><Link href="/photo-resizer" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Photo Resizer</Link></li>
                 <li><Link href="/passport-photo-maker" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Passport Photo Maker</Link></li>
                 <li><Link href="/compress-image" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Compress Image</Link></li>
@@ -59,7 +59,7 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
             {/* Legal */}
             <div className="col-span-1">
               <h4 className="text-slate-900 dark:text-white font-bold mb-4 uppercase tracking-wider text-xs">Resources</h4>
-              <ul className="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+              <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                 <li><Link href="/how-to-use" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">How to Use</Link></li>
                 <li><Link href="/contact" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Contact Us</Link></li>
                 <li><Link href="/terms" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Terms & Conditions</Link></li>
@@ -69,7 +69,7 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
           </div>
 
           <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-            <div className="flex flex-col gap-3 text-slate-500 dark:text-slate-400 text-sm">
+            <div className="flex flex-col gap-3 text-slate-600 dark:text-slate-300 text-sm">
               <div className="flex flex-wrap items-center gap-3 md:gap-4 font-semibold text-slate-700 dark:text-slate-300">
                 <span>100% Private</span>
                 <span className="hidden md:inline">•</span>
@@ -80,7 +80,7 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
               <p>&copy; 2026 Photo Resizer.</p>
             
             </div>
-            <div className="flex text-sm text-slate-500 dark:text-slate-400 font-medium">
+            <div className="flex text-sm text-slate-600 dark:text-slate-300 font-medium">
               <span>Designed & Developed with ❤️ by Navnit Rai</span>
             </div>
           </div>

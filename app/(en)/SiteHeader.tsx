@@ -76,34 +76,32 @@ export default function SiteHeader() {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-4">
             <button
-              onClick={() => mounted && setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white active:scale-95"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              className="p-2.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white"
               aria-label="Toggle dark mode"
-              style={{ visibility: mounted ? 'visible' : 'hidden' }}
             >
               {mounted && theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
             <Link 
               href="/"
-              className="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-lime-600 rounded-full shadow-md shadow-lime-500/20 hover:bg-lime-700 hover:shadow-lime-500/40 transition-all active:scale-95"
+              className="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-lime-600 rounded-full shadow-md hover:bg-lime-700"
             >
               Launch Editor
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center gap-4">
+          <div className="md:hidden flex items-center gap-2">
             <button
-              onClick={() => mounted && setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="p-2 text-slate-600 dark:text-slate-400"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              className="p-2.5 text-slate-600 dark:text-slate-400"
               aria-label="Toggle dark mode"
-              style={{ visibility: mounted ? 'visible' : 'hidden' }}
             >
               {mounted && theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+              className="p-2.5 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

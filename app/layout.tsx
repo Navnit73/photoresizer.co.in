@@ -9,7 +9,7 @@ import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema
 import "./globals.css";
 import Script from "next/script";
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'], display: 'swap', variable: '--font-poppins', adjustFontFallback: true });
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'], display: 'optional', variable: '--font-poppins', adjustFontFallback: true });
 
 export const viewport: Viewport = {
   themeColor: '#ffffff',
@@ -49,8 +49,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Default to English, since we can't use headers() without opting into dynamic rendering.
-  // The correct language will be updated by LangUpdater on the client if needed, or just left as en for SSG.
   const orgSchema = generateOrganizationSchema();
   const webSiteSchema = generateWebSiteSchema();
   
@@ -61,16 +59,16 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="anonymous" />
+      </head>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <Script 
-          async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2980455227951378" 
           crossOrigin="anonymous"
           strategy="lazyOnload"
         />
-      </head>
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <Script id="clarity-script" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
@@ -103,3 +101,4 @@ export default function RootLayout({
     </html>
   );
 }
+

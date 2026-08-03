@@ -276,20 +276,20 @@ export default function Home() {
         {/* ══════════════════════════════════════════
             SEO CONTENT
         ══════════════════════════════════════════ */}
-        <section className="mt-16 max-w-5xl mx-auto px-4 md:px-0 space-y-20" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 3000px' } as React.CSSProperties}>
+        <section className="mt-16 max-w-5xl mx-auto px-4 md:px-0 space-y-20">
           {/* ── Intro ── */}
           <div>
             <h2 className="text-3xl font-bold mb-4 text-slate-900 dark:text-white">
               The Best Free Online Photo Editor — No Software, No Sign-Up
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
               photoresizer is a zero-installation, zero-upload photo editor that
               runs entirely inside your browser. Using WebAssembly technology,
               every crop, resize, compression, and AI background removal
               operation happens locally on your device. Your photos never touch
               a server — not even ours.
             </p>
-            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
               Whether you are an e-commerce seller preparing product photos, a
               job seeker making a passport picture, or a social media manager
               resizing banners for five platforms at once, photoresizer gives
@@ -325,13 +325,13 @@ export default function Home() {
                   key={step}
                   className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 relative overflow-hidden"
                 >
-                  <span className="absolute top-4 right-4 text-6xl font-black text-slate-100 dark:text-slate-700 select-none leading-none">
+                  <span className="absolute top-4 right-4 text-6xl font-black text-slate-200 dark:text-slate-700 select-none leading-none">
                     {step}
                   </span>
                   <h3 className="font-bold text-blue-700 dark:text-blue-400 mb-2 relative">
                     {title}
                   </h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-400 relative">
+                  <p className="text-sm text-slate-700 dark:text-slate-300 relative">
                     {body}
                   </p>
                 </div>
@@ -344,7 +344,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-2 text-slate-800 dark:text-slate-100">
               Everything You Need in One Free Tool
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+            <p className="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
               Most free online editors lock key features behind a paywall.
               photoresizer gives you the full toolkit upfront — no tiers, no
               trial limits.
@@ -360,7 +360,7 @@ export default function Home() {
                     <h3 className="font-semibold text-slate-900 dark:text-white mb-1">
                       {title}
                     </h3>
-                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                    <p className="text-sm text-slate-600 dark:text-slate-300">
                       {desc}
                     </p>
                   </div>
@@ -374,7 +374,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-2 text-slate-800 dark:text-slate-100">
               Who Uses photoresizer?
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+            <p className="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
               Our tool is used by over a million people across dozens of
               professions. Here are the most common workflows.
             </p>
@@ -388,7 +388,7 @@ export default function Home() {
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-1">
                     {title}
                   </h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400">
+                  <p className="text-sm text-slate-600 dark:text-slate-300">
                     {desc}
                   </p>
                 </div>
