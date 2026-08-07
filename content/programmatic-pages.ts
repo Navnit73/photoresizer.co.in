@@ -5309,30 +5309,51 @@ export const programmaticPages: SeoPage[] = [
         heading: "About Nicl Ao Photo Resizer",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    The Nicl Ao Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
+    The NICL Administrative Officer application portal enforces strict photograph specifications, and a mismatch in pixel dimensions or file size is one of the most common reasons candidates get stuck at the upload step. Our Nicl Ao Photo Resizer tool lets you crop, resize, and compress your photograph to the exact requirements in seconds, entirely inside your browser.
   </p>
   <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
+    Based on recent NICL AO notifications, the recommended photograph specification is <strong>200 × 230 pixels</strong>, saved as a <strong>JPG/JPEG</strong> file, with a size between <strong>20 KB and 50 KB</strong>. Photographs that exceed 50 KB or fall outside the pixel dimensions are typically rejected automatically by the application form, so it's worth checking your file against these numbers before you submit.
+  </p>
+  <ul class="list-disc pl-6 space-y-2 text-slate-600 dark:text-slate-400 leading-relaxed">
+    <li>Use a recent, colour passport-style photograph taken against a plain, light-coloured or white background.</li>
+    <li>Look directly at the camera with a neutral expression and both eyes clearly visible — no sunglasses, caps, or hats. Religious headwear is generally allowed as long as it does not obscure the face.</li>
+    <li>Avoid harsh shadows or flash glare; natural, even lighting gives the cleanest scan.</li>
+    <li>Save the final file as JPG/JPEG — most portals will reject PNG, BMP, or PDF uploads for the photograph field.</li>
+  </ul>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    To use the tool, upload your existing photo, then set your target dimensions (200 × 230 px) and target file size (between 20–50 KB) in the sidebar. The resizer automatically adjusts JPEG compression quality until your file lands inside that range, so you don't have to guess at settings or run the image through multiple rounds of trial and error. You'll see a live preview and the exact output file size before you download, so there are no surprises when you upload it to the actual application form.
+  </p>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    A few practical tips that help candidates avoid rejection: scan or photograph at a reasonably high resolution first, since starting from a low-quality image and stretching it up to 200 × 230 px will look blurry even after resizing. If your scanner or camera produces a file well above 50 KB, don't just lower the resolution — let the compressor do the work, since aggressive downscaling can distort facial proportions. And always double-check the current notification for the specific recruitment cycle you're applying to, since NICL occasionally updates its exact pixel and KB requirements between AO, Assistant, and Specialist Officer recruitment drives.
+  </p>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    Because everything runs locally using your browser's canvas engine, your photograph is never uploaded to any server — it's processed on your own device and only leaves your browser when you choose to download it. That makes this tool a fast, private way to get an application-ready photograph without installing software or creating an account.
   </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question: "What are the photo dimensions for Nicl Ao Photo Resizer?",
+        question:
+          "What are the correct photo dimensions for the NICL AO application?",
         answer:
-          "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Nicl Ao Photo Resizer notification before uploading.",
-      },
-      {
-        question: "Does this tool reduce file size in KB?",
-        answer:
-          "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly.",
+          "Recent NICL AO notifications specify a photograph of 200 × 230 pixels in JPG/JPEG format, with a file size between 20 KB and 50 KB. Requirements can vary slightly by recruitment cycle, so always confirm the exact figures in the current official notification before uploading.",
       },
       {
         question:
-          "Can I change the background of my Nicl Ao Photo Resizer photo?",
+          "Does this tool reduce file size in KB, not just pixel dimensions?",
         answer:
-          "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white.",
+          "Yes. Enter a target file size (e.g., 20–50 KB) in the sidebar and the tool will automatically adjust JPEG compression to fit your photo within that range, while keeping the required pixel dimensions.",
+      },
+      {
+        question: "Can I change the background of my NICL AO photo?",
+        answer:
+          "It's best to take the original photo against a plain white or light-coloured wall. If that's not possible, you can use our background removal or passport photo maker tool to clean up the background before resizing.",
+      },
+      {
+        question: "Why was my photo rejected even though it looked fine?",
+        answer:
+          "The most common causes are a file size outside the 20–50 KB range, incorrect pixel dimensions, a non-JPEG format, or a non-plain background. Re-check your file against the current notification's exact specifications and re-upload after resizing.",
       },
     ],
   },
@@ -5351,10 +5372,25 @@ export const programmaticPages: SeoPage[] = [
         heading: "About Nicl Ao Signature Resizer",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-    Official applications for Nicl Ao Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
+    Official NICL AO applications require a scanned signature that meets an exact file-size window, and even a well-scanned signature can be bounced by the portal if the KB size is off by a small margin. This tool resizes and compresses your signature scan to fit the required range in your browser, with no upload to any server.
   </p>
   <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-    Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
+    Based on recent NICL AO notifications, the standard signature specification is a file size between <strong>10 KB and 20 KB</strong>, saved as JPG/JPEG, signed in <strong>black ink on plain white paper</strong>. Signatures are typically also required to be handwritten in cursive rather than block/capital letters, since the form is meant to capture your natural signature, not printed text.
+  </p>
+  <ul class="list-disc pl-6 space-y-2 text-slate-600 dark:text-slate-400 leading-relaxed">
+    <li>Sign on plain white paper using black ink for maximum contrast when scanned — some portals accept blue ink, but black is the safest default.</li>
+    <li>Keep the signature reasonably sized on the page and crop tightly around it before uploading, so the resizer doesn't have to shrink a mostly-blank scan.</li>
+    <li>Avoid signing in capital or block letters — most notifications explicitly ask for your normal signature.</li>
+    <li>Save the scanned or photographed image as JPG/JPEG before resizing, since most application portals only accept that format for the signature field.</li>
+  </ul>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    To use the tool, upload a photo or scan of your signature, crop it to just the signature area, then set your target file size to somewhere in the 10–20 KB range using the sidebar control. The compressor will automatically find the JPEG quality level that lands inside that window while keeping the signature legible, and you'll see the resulting file size before you download it — so you can confirm it's within range before submitting your application.
+  </p>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    A common mistake is uploading a signature scanned at very high resolution straight from a scanner or phone camera, which often produces files well over 100 KB — far above the 20 KB ceiling. Rather than repeatedly re-scanning at lower quality, it's easier to scan once at a decent resolution and let the compressor do the fine-tuning. It's also worth noting that NICL recruitment drives sometimes ask for related documents alongside the signature, such as a left thumb impression (around 20–50 KB) or a handwritten declaration (roughly 50–100 KB) — the exact figures depend on the specific notification, so always cross-check against the current one.
+  </p>
+  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+    Everything happens locally using your browser's HTML5 Canvas — your signature image is processed on your own device and is never transmitted to any remote server, so you can prepare application-ready files quickly and privately.
   </p>
 </div>`,
       },
@@ -5362,20 +5398,25 @@ export const programmaticPages: SeoPage[] = [
     faq: [
       {
         question:
-          "What is the standard signature size for Nicl Ao Signature Resizer?",
+          "What is the correct signature file size for the NICL AO application?",
         answer:
-          "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification.",
+          "Recent NICL AO notifications specify a signature file size between 10 KB and 20 KB, saved as JPG/JPEG, signed in black ink on white paper. Always verify the exact figure against the current official notification, since limits can shift between recruitment cycles.",
       },
       {
-        question: "Is it safe to upload my signature?",
+        question: "Is it safe to upload my signature to this tool?",
         answer:
-          "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
+          "Yes. The tool works entirely in your browser using HTML5 Canvas — your signature image is processed locally and is never sent to any remote server.",
+      },
+      {
+        question: "Can I use blue ink for the NICL AO signature?",
+        answer:
+          "Black ink on plain white paper is the standard and safest recommendation for maximum scanner contrast. Some notifications tolerate blue ink, but you should check the current official NICL AO guidelines before deciding.",
       },
       {
         question:
-          "Can I use blue ink for the Nicl Ao Signature Resizer signature?",
+          "Do I need to resize my thumb impression or handwritten declaration too?",
         answer:
-          "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Nicl Ao Signature Resizer guidelines.",
+          "Many NICL AO recruitment drives also require a left thumb impression (around 20–50 KB) and a handwritten declaration (typically 50–100 KB) alongside your photo and signature. You can use this same tool to resize those files — just set the appropriate target KB for each document as listed in the current notification.",
       },
     ],
   },
