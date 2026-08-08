@@ -1,7 +1,30 @@
 import React from 'react';
 import Link from 'next/link';
+import { Metadata } from 'next';
 import { dePages } from '../../../content/de-pages';
 import { Scissors, RefreshCw, Wand2, ArrowRight } from 'lucide-react';
+
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
+
+export const metadata: Metadata = {
+  title: "Alle Kostenlosen Online-Bildwerkzeuge | PhotoResizer.co.in",
+  description: "Entdecken Sie unsere komplette Sammlung sicherer, browserbasierter Bildbearbeitungsprogramme. Reduzieren, komprimieren und bearbeiten Sie Bilder kostenlos.",
+  alternates: {
+    canonical: `${baseUrl}/de/tools`,
+    languages: {
+      en: `${baseUrl}/tools`,
+      de: `${baseUrl}/de/tools`,
+      'x-default': `${baseUrl}/tools`,
+    },
+  },
+  openGraph: {
+    title: "Alle Kostenlosen Online-Bildwerkzeuge | PhotoResizer.co.in",
+    description: "Entdecken Sie unsere komplette Sammlung sicherer, browserbasierter Bildbearbeitungsprogramme.",
+    url: `${baseUrl}/de/tools`,
+    locale: "de_DE",
+    type: "website",
+  },
+};
 
 export default function GermanToolsPage() {
   return (

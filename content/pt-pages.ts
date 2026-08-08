@@ -100,7 +100,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "comprimir-imagem",
-    translationKey: "compress-image",
     metaTitle: "Comprimir Imagem Online Grátis — JPG, PNG e WEBP",
     metaDescription:
       "Comprima imagens JPG, PNG e WEBP online sem perder qualidade. Reduza o tamanho do arquivo em KB ou MB gratuitamente, direto no navegador.",
@@ -196,7 +195,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "compactar-imagem",
-    translationKey: "compress-image",
     metaTitle: "Compactar Imagem Online Grátis — Reduza o Tamanho em Segundos",
     metaDescription:
       "Compacte sua imagem online gratuitamente. Reduza o tamanho do arquivo para caber no limite de KB exigido por sites, formulários e sistemas.",
@@ -292,7 +290,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "compactar-foto",
-    translationKey: "compress-image",
     metaTitle: "Compactar Foto Online Grátis — Deixe o Arquivo Mais Leve",
     metaDescription:
       "Compacte sua foto online e reduza o tamanho do arquivo em KB ou MB. Ferramenta grátis, rápida e sem instalação para deixar a foto mais leve.",
@@ -389,7 +386,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "reduzir-tamanho-da-imagem",
-    translationKey: "compress-image",
     metaTitle: "Reduzir Tamanho da Imagem Online Grátis — KB, MB e Pixels",
     metaDescription:
       "Reduza o tamanho da imagem em KB, MB ou pixels de forma online e gratuita. Ferramenta rápida para ajustar arquivos ao limite exigido por qualquer site.",
@@ -484,7 +480,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "reduzir-tamanho-da-foto",
-    translationKey: "compress-image",
     metaTitle: "Reduzir Tamanho da Foto Online Grátis — Rápido e Sem Perder Qualidade",
     metaDescription:
       "Reduza o tamanho da foto em KB, MB ou pixels de forma online e gratuita. Ideal para e-mail, redes sociais e formulários com limite de tamanho.",
@@ -580,7 +575,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "diminuir-tamanho-da-foto",
-    translationKey: "compress-image",
     metaTitle: "Diminuir Tamanho da Foto Online Grátis — Ajuste em KB e Pixels",
     metaDescription:
       "Diminua o tamanho da foto online e de graça. Ajuste o peso do arquivo em KB ou as dimensões em pixels em poucos segundos, direto no navegador.",
@@ -676,7 +670,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "otimizar-imagem",
-    translationKey: "compress-image",
     metaTitle: "Otimizar Imagem Online Grátis — Melhore Velocidade e Peso do Arquivo",
     metaDescription:
       "Otimize imagens online para sites e lojas virtuais. Reduza o peso do arquivo, melhore o tempo de carregamento e mantenha a qualidade visual.",
@@ -968,7 +961,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "editor-de-imagem",
-    translationKey: "photo-resizer",
     metaTitle: "Editor de Imagem Online Grátis — Edite Fotos no Navegador",
     metaDescription:
       "Use um editor de imagem online e grátis para cortar, redimensionar, comprimir e ajustar fotos. Sem instalar programas, direto no navegador.",
@@ -1065,7 +1057,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "editor-de-fotos",
-    translationKey: "photo-resizer",
     metaTitle: "Editor de Fotos Online Grátis — Corte, Redimensione e Ajuste",
     metaDescription:
       "Edite fotos online de forma grátis e simples. Corte, redimensione, comprima e ajuste o fundo das suas fotos direto no navegador, sem instalar nada.",
@@ -1161,7 +1152,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "cortar-foto",
-    translationKey: "crop-image",
     metaTitle: "Cortar Foto Online Grátis — Recorte Rápido no Navegador",
     metaDescription:
       "Corte sua foto online e de graça. Recorte no formato quadrado, retrato ou personalizado direto no navegador, sem instalar programas.",
@@ -1257,7 +1247,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "recortar-foto",
-    translationKey: "crop-image",
     metaTitle: "Recortar Foto Online Grátis — Ajuste Preciso em Poucos Cliques",
     metaDescription:
       "Recorte sua foto online de forma gratuita e precisa. Escolha a área exata, ajuste a proporção e baixe o resultado direto no navegador.",
@@ -1353,7 +1342,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "editar-foto-online",
-    translationKey: "photo-resizer",
     metaTitle: "Editar Foto Online Grátis — Corte, Comprima e Ajuste na Hora",
     metaDescription:
       "Edite fotos online de graça, direto no navegador. Corte, redimensione, comprima e ajuste o fundo sem instalar nenhum programa.",
@@ -1451,7 +1439,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "editor-foto-online-gratis",
-    translationKey: "photo-resizer",
     metaTitle: "Editor Foto Online Grátis — Ferramenta Completa e Sem Custo",
     metaDescription:
       "Use um editor foto online grátis para cortar, redimensionar e comprimir imagens. Sem cadastro, sem instalação e sem marca d'água no resultado.",
@@ -1549,7 +1536,6 @@ export const ptPages: SeoPage[] = [
  
   {
     slug: "foto-editor-online-gratis",
-    translationKey: "photo-resizer",
     metaTitle: "Foto Editor Online Grátis — Corte, Redimensione e Comprima Fotos",
     metaDescription:
       "Use um foto editor online grátis para cortar, redimensionar e comprimir suas imagens. Ferramenta simples, sem instalação e sem cadastro.",

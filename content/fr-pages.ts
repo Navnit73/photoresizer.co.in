@@ -53,7 +53,6 @@ export const frPages: SeoPage[] = [
   // 2. redimensionner image
   {
     slug: 'redimensionner-image',
-    translationKey: 'photo-resizer',
     metaTitle: "Redimensionner une Image en Ligne | Gratuit & Rapide",
     metaDescription: "Modifiez la taille de vos images en ligne facilement : JPG, PNG, WEBP. Outil gratuit, rapide et 100% sécurisé, sans installation.",
     h1: "Redimensionner une image facilement",
@@ -99,7 +98,6 @@ export const frPages: SeoPage[] = [
   // 3. redimensionner photo en ligne
   {
     slug: 'redimensionner-photo-en-ligne',
-    translationKey: 'photo-resizer',
     metaTitle: "Redimensionner Photo en Ligne Gratuitement | Sans Logiciel",
     metaDescription: "Redimensionnez vos photos directement en ligne, sans télécharger de logiciel. Outil gratuit et sécurisé, compatible mobile et ordinateur.",
     h1: "Redimensionner une photo en ligne, sans logiciel",
@@ -149,7 +147,6 @@ export const frPages: SeoPage[] = [
   // 4. réduire taille photo
   {
     slug: 'reduire-taille-photo',
-    translationKey: 'photo-resizer',
     metaTitle: "Réduire la Taille d'une Photo en Ligne | Gratuit",
     metaDescription: "Réduisez le poids et les dimensions de vos photos en quelques clics. Idéal pour l'envoi par email ou la publication en ligne.",
     h1: "Réduire la taille d'une photo rapidement",
@@ -195,7 +192,6 @@ export const frPages: SeoPage[] = [
   // 5. réduire taille image
   {
     slug: 'reduire-taille-image',
-    translationKey: 'photo-resizer',
     metaTitle: "Réduire la Taille d'une Image en Ligne | Outil Gratuit",
     metaDescription: "Diminuez le poids de vos images (Ko/Mo) sans perdre en qualité visuelle. Traitement local, rapide et gratuit.",
     h1: "Réduire la taille d'une image en quelques secondes",
@@ -287,7 +283,6 @@ export const frPages: SeoPage[] = [
   // 7. compresser image
   {
     slug: 'compresser-image',
-    translationKey: 'compress-image',
     metaTitle: "Compresser une Image en Ligne | Gratuit et Rapide",
     metaDescription: "Réduisez le poids de vos images en quelques secondes. Compression intelligente pour un site web plus rapide.",
     h1: "Compresser une image en ligne",
@@ -337,7 +332,6 @@ export const frPages: SeoPage[] = [
   // 8. optimiser photo
   {
     slug: 'optimiser-photo',
-    translationKey: 'compress-image',
     metaTitle: "Optimiser une Photo pour le Web | Outil Gratuit en Ligne",
     metaDescription: "Optimisez vos photos pour le web : poids réduit, qualité préservée, format adapté. Accélérez votre site en quelques clics.",
     h1: "Optimiser vos photos pour le web",
@@ -428,7 +422,6 @@ export const frPages: SeoPage[] = [
   // 10. photo permis de conduire
   {
     slug: 'photo-permis-de-conduire',
-    translationKey: 'passport-photo-maker',
     metaTitle: "Photo pour Permis de Conduire en Ligne | Format ANTS",
     metaDescription: "Générez une photo conforme pour votre permis de conduire (format ANTS 35x45mm). Simple, rapide et gratuit, depuis votre navigateur.",
     h1: "Photo pour permis de conduire aux normes",
@@ -473,7 +466,6 @@ export const frPages: SeoPage[] = [
   // 11. photo carte d'identité
   {
     slug: 'photo-carte-identite',
-    translationKey: 'passport-photo-maker',
     metaTitle: "Photo pour Carte d'Identité en Ligne | Format Officiel",
     metaDescription: "Réalisez votre photo pour carte nationale d'identité en ligne, conforme aux normes ANTS. Gratuit et prêt en quelques secondes.",
     h1: "Photo pour carte d'identité conforme aux normes",

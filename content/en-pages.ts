@@ -655,7 +655,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "ssc-photo-resizer",
-    translationKey: "photo-resizer",
     metaTitle: "SSC Photo Resizer — Resize Photo & Signature",
     metaDescription:
       "Resize your photo and signature for SSC exams. Meet exact KB and pixel requirements instantly. Free, private, no upload.",
@@ -785,7 +784,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "upsc-photo-size",
-    translationKey: "photo-resizer",
     metaTitle: "UPSC Photo Resizer — Resize Photo & Signature",
     metaDescription:
       "Resize your photo and signature to UPSC requirements. Free, browser-based tool — no upload, no signup. Covers all UPSC exams.",
@@ -904,7 +902,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "reduce-photo-size-50kb",
-    translationKey: "compress-image",
     metaTitle: "Reduce Photo Size to 50KB Free Online",
     metaDescription:
       "Compress any photo to exactly 50KB or under in seconds. Free, browser-based, no server upload. Perfect for government forms and portals.",
@@ -1408,7 +1405,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "resize-photo-20kb",
-    translationKey: "compress-image",
     metaTitle: "Resize Photo to 20KB Free Online",
     metaDescription:
       "Reduce any photo to exactly 20KB or under in seconds. Free, browser-based — no upload, no signup. Ideal for signatures and bank forms.",
@@ -1552,7 +1548,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "passport-photo-maker-2026",
-    translationKey: "passport-photo-maker",
     metaTitle: "Passport Photo Maker — Official Biometric Photos",
     metaDescription:
       "Create official passport photos online for any country. Automatic background removal, accurate head alignment, and print templates.",
@@ -1659,7 +1654,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "passport-size-photo-maker",
-    translationKey: "passport-photo-maker",
     metaTitle: "Passport Size Photo Maker Free Online — Any Country",
     metaDescription:
       "Create passport size photos online for free. Auto crop, precise dimensions, background changer, and instant download.",
@@ -1849,7 +1843,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "us-passport-photo-maker",
-    translationKey: "passport-photo-maker",
     metaTitle: "US Passport Photo Maker 2x2 Inches Online",
     metaDescription:
       "Create a compliant US passport photo free online. 2×2 inch (51×51mm), white background, correct face size. Instant download.",
@@ -1900,7 +1893,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "uk-passport-photo-maker",
-    translationKey: "passport-photo-maker",
     metaTitle: "UK Passport Photo Maker 35x45mm Online",
     metaDescription:
       "Make official UK passport photos 35x45mm online for free. Automatic background adjustment and compliant sizing.",
@@ -1950,7 +1942,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "india-passport-photo-maker",
-    translationKey: "passport-photo-maker",
     metaTitle: "India Passport Photo Maker 3.5x3.5 cm Online",
     metaDescription:
       "Create India passport photos free online. 35×45mm, plain white background, JPG. No upload needed. Download print-ready file instantly.",
@@ -2051,7 +2042,6 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "free-background-remover",
-    translationKey: "remove-background",
     metaTitle:
       "Free Background Remover 2026 — Remove Image Background Instantly",
     metaDescription:

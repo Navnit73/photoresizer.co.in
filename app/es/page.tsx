@@ -60,7 +60,7 @@ export default function SpanishHomePage() {
         id="es-home-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(esHomeFaqSchema, null, 2),
+          __html: JSON.stringify(esHomeFaqSchema),
         }}
       />
 

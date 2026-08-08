@@ -72,7 +72,7 @@ export default function FrenchHomePage() {
         id="fr-home-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(frHomeFaqSchema, null, 2),
+          __html: JSON.stringify(frHomeFaqSchema),
         }}
       />
 

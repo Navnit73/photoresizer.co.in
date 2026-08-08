@@ -71,21 +71,22 @@ export default function HeroUploader() {
                 <div className="max-w-xl order-2 lg:order-1">
                   {/* Headline */}
                   <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white mb-5">
-                    Edit Photos{" "}
+                    Resize & crop your photos{" "}
                     <span className="text-blue-600 dark:text-blue-400">
-                      Instantly
-                    </span>
-                    <br />
-                    <span className="text-slate-800 dark:text-slate-200">
-                      Right in Your Browser
+                      online
                     </span>
                   </h1>
 
                   {/* Subheadline */}
-                  <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-6 max-w-md">
-                    Resize, compress, remove backgrounds, and add text — all
-                    powered by on-device AI. Your photos never leave your
-                    device.
+                  <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
+                    On PhotoResizer.co.in you can resize, shrink, grow and crop
+                    your photos, images and pictures online, for free. Open your
+                    image and crop and resize. You can crop to pre-defined
+                    formats for Facebook, Instagram or Twitter headers or make
+                    custom crops. Save or email the resulting image, or share
+                    it on Facebook, Twitter or Instagram. There are also some
+                    basic editing functions: free draw, add text, rotate, flip
+                    and draw rectangles.
                   </p>
                 </div>
 

@@ -268,7 +268,7 @@ export default function Home() {
         id="home-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(homeFaqSchema, null, 2),
+          __html: JSON.stringify(homeFaqSchema),
         }}
       />
       <main className="max-w-[1400px] mx-auto">

@@ -15,9 +15,9 @@
     <loc>https://photoresizer.co.in/fr/redimensionner-photo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/photo-resizer"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/foto-enem-online-gratis"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
@@ -26,83 +26,61 @@
     <loc>https://photoresizer.co.in/fr/redimensionner-image</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/photo-resizer"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/foto-enem-online-gratis"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-image"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/fr/redimensionner-image"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/redimensionner-photo-en-ligne</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/photo-resizer"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/foto-enem-online-gratis"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo-en-ligne"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/fr/redimensionner-photo-en-ligne"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/reduire-taille-photo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/photo-resizer"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/foto-enem-online-gratis"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/reduire-taille-photo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/fr/reduire-taille-photo"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/reduire-taille-image</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/photo-resizer"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/foto-verkleinern"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/redimensionner-photo"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/redimensionar-foto"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/foto-enem-online-gratis"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/photo-resizer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/reduire-taille-image"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/fr/reduire-taille-image"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/compresser-photo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/reduce-photo-size-50kb"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/bild-komprimieren"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/compresser-photo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/compress-image"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/bild-komprimieren"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/comprimir-foto"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/reduce-photo-size-50kb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/compress-image"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/compresser-image</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/reduce-photo-size-50kb"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/bild-komprimieren"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/compresser-photo"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/comprimir-foto"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/reduce-photo-size-50kb"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/compresser-image"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/fr/compresser-image"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/optimiser-photo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/reduce-photo-size-50kb"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/bild-komprimieren"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/compresser-photo"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://photoresizer.co.in/pt/comprimir-foto"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/reduce-photo-size-50kb"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/optimiser-photo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/fr/optimiser-photo"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/photo-identite-en-ligne</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/photo-identite-en-ligne"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/passport-photo-maker"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/passfoto-ersteller"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/photo-identite-en-ligne"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/creador-foto-pasaporte"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/passport-photo-maker"/>
   </url>
@@ -110,29 +88,23 @@
     <loc>https://photoresizer.co.in/fr/photo-permis-de-conduire</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/passport-photo-maker"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/passfoto-ersteller"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/photo-identite-en-ligne"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/creador-foto-pasaporte"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/passport-photo-maker"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/photo-permis-de-conduire"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/fr/photo-permis-de-conduire"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/photo-carte-identite</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/passport-photo-maker"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/passfoto-ersteller"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/photo-identite-en-ligne"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/creador-foto-pasaporte"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/passport-photo-maker"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/photo-carte-identite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/fr/photo-carte-identite"/>
   </url>
   <url>
     <loc>https://photoresizer.co.in/fr/contact</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/contact"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/contact"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/kontakt"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/contact"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/contacto"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/contact"/>
   </url>
@@ -140,9 +112,9 @@
     <loc>https://photoresizer.co.in/fr/conditions</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/conditions"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/terms"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/agb"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/conditions"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/terminos"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/terms"/>
   </url>
@@ -150,9 +122,9 @@
     <loc>https://photoresizer.co.in/fr/confidentialite</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/confidentialite"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://photoresizer.co.in/privacy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://photoresizer.co.in/de/datenschutz"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://photoresizer.co.in/fr/confidentialite"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://photoresizer.co.in/es/privacidad"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photoresizer.co.in/privacy"/>
   </url>

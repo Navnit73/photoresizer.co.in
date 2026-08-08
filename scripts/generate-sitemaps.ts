@@ -30,10 +30,6 @@ function generateXml(urlObjs: UrlObj[]) {
       for (const [lang, href] of Object.entries(obj.hreflangs)) {
         xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${href}"/>\n`;
       }
-      // Add x-default pointing to English
-      if (obj.hreflangs['en']) {
-         xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${obj.hreflangs['en']}"/>\n`;
-      }
     }
     xml += `  </url>\n`;
   }
@@ -47,6 +43,7 @@ const rootHreflangs = {
   fr: `${baseUrl}/fr`,
   es: `${baseUrl}/es`,
   pt: `${baseUrl}/pt`,
+  'x-default': `${baseUrl}/`,
 };
 
 async function main() {
@@ -58,16 +55,18 @@ async function main() {
   // Generate EN (main)
   const enUrls: UrlObj[] = [
     { url: `${baseUrl}/`, changeFrequency: 'weekly', priority: 1, hreflangs: rootHreflangs },
+    { url: `${baseUrl}/tools`, changeFrequency: 'weekly', priority: 0.9, hreflangs: { en: `${baseUrl}/tools`, de: `${baseUrl}/de/tools`, 'x-default': `${baseUrl}/tools` } },
     ...enPages.map((p) => ({
       url: `${baseUrl}/${p.slug}`,
       changeFrequency: 'weekly',
       priority: 0.8,
-      hreflangs: getHreflangMap(p)
+      hreflangs: getHreflangMap(p, 'en')
     })),
     ...programmaticPages.map((p) => ({
       url: `${baseUrl}/${p.slug}`,
       changeFrequency: 'weekly',
       priority: 0.8,
+      hreflangs: getHreflangMap(p, 'en')
     })),
   ];
   fs.writeFileSync(path.join(publicDir, 'sitemap_main.xml'), generateXml(enUrls));
@@ -75,11 +74,12 @@ async function main() {
   // Generate DE
   const deUrls: UrlObj[] = [
     { url: `${baseUrl}/de`, changeFrequency: 'weekly', priority: 0.9, hreflangs: rootHreflangs },
+    { url: `${baseUrl}/de/tools`, changeFrequency: 'weekly', priority: 0.9, hreflangs: { en: `${baseUrl}/tools`, de: `${baseUrl}/de/tools`, 'x-default': `${baseUrl}/tools` } },
     ...dePages.map((p) => ({
       url: `${baseUrl}/de/${p.slug}`,
       changeFrequency: 'weekly',
       priority: 0.8,
-      hreflangs: getHreflangMap(p)
+      hreflangs: getHreflangMap(p, 'de')
     })),
   ];
   fs.writeFileSync(path.join(publicDir, 'sitemap_de.xml'), generateXml(deUrls));
@@ -91,7 +91,7 @@ async function main() {
       url: `${baseUrl}/fr/${p.slug}`,
       changeFrequency: 'weekly',
       priority: 0.8,
-      hreflangs: getHreflangMap(p)
+      hreflangs: getHreflangMap(p, 'fr')
     })),
   ];
   fs.writeFileSync(path.join(publicDir, 'sitemap_fr.xml'), generateXml(frUrls));
@@ -103,7 +103,7 @@ async function main() {
       url: `${baseUrl}/es/${p.slug}`,
       changeFrequency: 'weekly',
       priority: 0.8,
-      hreflangs: getHreflangMap(p)
+      hreflangs: getHreflangMap(p, 'es')
     })),
   ];
   fs.writeFileSync(path.join(publicDir, 'sitemap_es.xml'), generateXml(esUrls));
@@ -115,7 +115,7 @@ async function main() {
       url: `${baseUrl}/pt/${p.slug}`,
       changeFrequency: 'weekly',
       priority: 0.8,
-      hreflangs: getHreflangMap(p)
+      hreflangs: getHreflangMap(p, 'pt')
     })),
   ];
   fs.writeFileSync(path.join(publicDir, 'sitemap_pt.xml'), generateXml(ptUrls));
@@ -131,8 +131,15 @@ async function main() {
     `</sitemapindex>`;
   fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapIndexXml);
 
-  // Generate robots.txt
-  const robotsTxt = `User-Agent: *\nAllow: /\nDisallow: /private/\nDisallow: /api/\n\nSitemap: ${baseUrl}/sitemap.xml\nSitemap: ${baseUrl}/sitemap_main.xml\nSitemap: ${baseUrl}/sitemap_de.xml\nSitemap: ${baseUrl}/sitemap_fr.xml\nSitemap: ${baseUrl}/sitemap_es.xml\nSitemap: ${baseUrl}/sitemap_pt.xml\n`;
+  // Generate robots.txt (100% RFC 9309 / Google specification compliant)
+  const robotsTxt = `# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /api/
+
+Sitemap: ${baseUrl}/sitemap.xml
+`;
   fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt);
 
   console.log('Successfully generated sitemaps and robots.txt in public/');

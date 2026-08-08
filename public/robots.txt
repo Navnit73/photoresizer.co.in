@@ -1,11 +1,7 @@
-User-Agent: *
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
 Allow: /
 Disallow: /private/
 Disallow: /api/
 
 Sitemap: https://photoresizer.co.in/sitemap.xml
-Sitemap: https://photoresizer.co.in/sitemap_main.xml
-Sitemap: https://photoresizer.co.in/sitemap_de.xml
-Sitemap: https://photoresizer.co.in/sitemap_fr.xml
-Sitemap: https://photoresizer.co.in/sitemap_es.xml
-Sitemap: https://photoresizer.co.in/sitemap_pt.xml

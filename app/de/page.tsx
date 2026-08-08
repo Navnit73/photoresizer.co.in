@@ -62,7 +62,7 @@ export default function GermanHomePage() {
         id="de-home-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(deHomeFaqSchema, null, 2),
+          __html: JSON.stringify(deHomeFaqSchema),
         }}
       />
 

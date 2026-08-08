@@ -1,8 +1,31 @@
 import React from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
+import { Metadata } from 'next';
 import { enPages } from '../../../content/en-pages';
 import { Scissors, RefreshCw, Wand2, ArrowRight, Sparkles } from 'lucide-react';
+
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
+
+export const metadata: Metadata = {
+  title: "All Free Online Photo & Image Editing Tools | PhotoResizer.co.in",
+  description: "Explore our complete suite of free, private, browser-based online photo editing tools. Resize, compress, crop, and edit images instantly.",
+  alternates: {
+    canonical: `${baseUrl}/tools`,
+    languages: {
+      en: `${baseUrl}/tools`,
+      de: `${baseUrl}/de/tools`,
+      'x-default': `${baseUrl}/tools`,
+    },
+  },
+  openGraph: {
+    title: "All Free Online Photo & Image Editing Tools | PhotoResizer.co.in",
+    description: "Explore our complete suite of free, private, browser-based online photo editing tools.",
+    url: `${baseUrl}/tools`,
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function ToolsPage() {
   const validPages = enPages.filter(page => !['how-to-use', 'contact', 'terms', 'privacy'].includes(page.slug));

@@ -1,34 +1,42 @@
 import fs from 'fs';
 import path from 'path';
 
-function updateLang(directory: string, lang: string) {
-  if (!fs.existsSync(directory)) {
-    console.log(`Directory not found: ${directory}, skipping.`);
-    return;
+function minifyHtmlFile(filePath: string, lang?: string) {
+  if (!fs.existsSync(filePath) || !filePath.endsWith('.html')) return;
+
+  const originalContent = fs.readFileSync(filePath, 'utf8');
+  let content = originalContent;
+
+  // 1. Update lang attribute if language specified
+  if (lang && content.includes('lang="en"')) {
+    content = content.replace(/lang="en"/g, `lang="${lang}"`);
   }
 
-  const files = fs.readdirSync(directory, { withFileTypes: true });
-  for (const file of files) {
-    const fullPath = path.join(directory, file.name);
-    if (file.isDirectory()) {
-      updateLang(fullPath, lang);
-    } else if (file.isFile() && fullPath.endsWith('.html')) {
-      let content = fs.readFileSync(fullPath, 'utf8');
-      // Simple string replacement: replace lang="en" with lang="de"
-      if (content.includes('lang="en"')) {
-        content = content.replace(/lang="en"/g, `lang="${lang}"`);
-        fs.writeFileSync(fullPath, content, 'utf8');
-      }
+  // 2. Minify <script type="application/ld+json">...</script> blocks
+  content = content.replace(/<script([^>]*type=[\"']application\/ld\+json[\"'][^>]*)>([\s\S]*?)<\/script>/gi, (match, attrs, innerContent) => {
+    try {
+      const minifiedJson = JSON.stringify(JSON.parse(innerContent.trim()));
+      return `<script${attrs}>${minifiedJson}</script>`;
+    } catch (e) {
+      return match;
     }
+  });
+
+  if (content !== originalContent) {
+    fs.writeFileSync(filePath, content, 'utf8');
   }
 }
 
-function updateLangFile(filePath: string, lang: string) {
-  if (fs.existsSync(filePath) && fs.statSync(filePath).isFile() && filePath.endsWith('.html')) {
-    let content = fs.readFileSync(filePath, 'utf8');
-    if (content.includes('lang="en"')) {
-      content = content.replace(/lang="en"/g, `lang="${lang}"`);
-      fs.writeFileSync(filePath, content, 'utf8');
+function processDirectory(directory: string, lang?: string) {
+  if (!fs.existsSync(directory)) return;
+
+  const entries = fs.readdirSync(directory, { withFileTypes: true });
+  for (const entry of entries) {
+    const fullPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) {
+      processDirectory(fullPath, lang);
+    } else if (entry.isFile() && entry.name.endsWith('.html')) {
+      minifyHtmlFile(fullPath, lang);
     }
   }
 }
@@ -41,21 +49,25 @@ function main() {
     return;
   }
 
-  console.log("Updating lang attributes in generated HTML...");
+  console.log("Minifying inline scripts and updating lang attributes in generated HTML...");
 
-  // Update DE
-  updateLang(path.join(outDir, 'de'), 'de');
-  updateLangFile(path.join(outDir, 'de.html'), 'de');
-  
-  // Update FR
-  updateLang(path.join(outDir, 'fr'), 'fr');
-  updateLangFile(path.join(outDir, 'fr.html'), 'fr');
-  
-  // Update ES
-  updateLang(path.join(outDir, 'es'), 'es');
-  updateLangFile(path.join(outDir, 'es.html'), 'es');
+  // Process all HTML files in root out/
+  processDirectory(outDir);
 
-  console.log("Successfully updated lang attributes.");
+  // Update language attributes for specific localized routes
+  processDirectory(path.join(outDir, 'de'), 'de');
+  minifyHtmlFile(path.join(outDir, 'de.html'), 'de');
+  
+  processDirectory(path.join(outDir, 'fr'), 'fr');
+  minifyHtmlFile(path.join(outDir, 'fr.html'), 'fr');
+  
+  processDirectory(path.join(outDir, 'es'), 'es');
+  minifyHtmlFile(path.join(outDir, 'es.html'), 'es');
+
+  processDirectory(path.join(outDir, 'pt'), 'pt');
+  minifyHtmlFile(path.join(outDir, 'pt.html'), 'pt');
+
+  console.log("Successfully minified HTML scripts and updated lang attributes.");
 }
 
 main();

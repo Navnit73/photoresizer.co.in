@@ -894,7 +894,6 @@ export const dePages: SeoPage[] = [
   },
   {
     slug: "foto-groesse-aendern",
-    translationKey: "photo-resizer",
     metaTitle: "Foto Größe ändern online – Kostenlos & schnell",
     metaDescription:
       "Foto Größe in Sekunden ändern: Pixel, cm oder KB einstellen – für Bewerbung, Visum, Ausweis oder Social Media. 100 % im Browser, ohne Upload, ohne Anmeldung.",
@@ -991,7 +990,6 @@ export const dePages: SeoPage[] = [
   // ============================================================
   {
     slug: "bild-verkleinern",
-    translationKey: "photo-resizer",
     metaTitle: "Bild verkleinern online – kostenlos & ohne Qualitätsverlust",
     metaDescription:
       "Bild verkleinern in Sekunden: Auflösung und Dateigröße reduzieren, ohne sichtbaren Qualitätsverlust. Kostenlos, ohne Anmeldung, komplett im Browser.",
@@ -1187,7 +1185,6 @@ export const dePages: SeoPage[] = [
   // ============================================================
   {
     slug: "passbild-erstellen",
-    translationKey: "passport-photo-maker",
     metaTitle: "Passbild erstellen online – biometrisch korrekt & kostenlos",
     metaDescription:
       "Passbild erstellen von zu Hause aus: biometrisch korrekte Maße, automatischer Hintergrund und Sofort-Download. Kostenlos, ohne Anmeldung, ohne Fotostudio.",
@@ -1285,7 +1282,6 @@ export const dePages: SeoPage[] = [
   // ============================================================
   {
     slug: "passfoto-generator",
-    translationKey: "passport-photo-maker",
     metaTitle: "Passfoto Generator – Biometrisches Foto erstellen",
     metaDescription:
       "Passfoto Generator mit automatischer Größen- und Hintergrundanpassung für Reisepass, Personalausweis und Visum. Kostenlos, schnell und ohne Anmeldung.",
