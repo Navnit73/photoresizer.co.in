@@ -1,6 +1,11 @@
 "use client";
 
-import React, { useState, useCallback, useEffect, startTransition } from "react";
+import React, {
+  useState,
+  useCallback,
+  useEffect,
+  startTransition,
+} from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useDropzone } from "react-dropzone";
@@ -20,7 +25,9 @@ const loadPhotoEditor = () => import("../../components/editor/PhotoEditor");
 const EditorFallback = () => (
   <div className="w-full min-h-[600px] flex flex-col items-center justify-center bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
     <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-4"></div>
-    <p className="text-slate-600 dark:text-slate-300 font-semibold">Loading Editor Workspace...</p>
+    <p className="text-slate-600 dark:text-slate-300 font-semibold">
+      Loading Editor Workspace...
+    </p>
   </div>
 );
 
@@ -71,22 +78,17 @@ export default function HeroUploader() {
                 <div className="max-w-xl order-2 lg:order-1">
                   {/* Headline */}
                   <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white mb-5">
-                    Resize & crop your photos{" "}
+                    Resize, crop and edit your photos{" "}
                     <span className="text-blue-600 dark:text-blue-400">
-                      online
+                      online with photoresizer
                     </span>
                   </h1>
 
                   {/* Subheadline */}
                   <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
-                    On PhotoResizer.co.in you can resize, shrink, grow and crop
-                    your photos, images and pictures online, for free. Open your
-                    image and crop and resize. You can crop to pre-defined
-                    formats for Facebook, Instagram or Twitter headers or make
-                    custom crops. Save or email the resulting image, or share
-                    it on Facebook, Twitter or Instagram. There are also some
-                    basic editing functions: free draw, add text, rotate, flip
-                    and draw rectangles.
+                    Resize, compress, remove backgrounds, and add text — all
+                    powered by photo resizer on-device AI. Your photos never leave your
+                    device.
                   </p>
                 </div>
 
@@ -121,7 +123,10 @@ export default function HeroUploader() {
                           : "border-slate-300 dark:border-slate-700 hover:border-blue-500"
                       }`}
                     >
-                      <input {...getInputProps()} aria-label="File Upload Input" />
+                      <input
+                        {...getInputProps()}
+                        aria-label="File Upload Input"
+                      />
 
                       <div className="relative flex flex-col items-center text-center">
                         {/* Upload Icon */}
@@ -140,7 +145,7 @@ export default function HeroUploader() {
                         </p>
 
                         {/* CTA Button */}
-                        <button 
+                        <button
                           className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl shadow-md mb-5"
                           aria-label="Choose image to upload"
                         >
@@ -197,4 +202,3 @@ export default function HeroUploader() {
     </>
   );
 }
-
