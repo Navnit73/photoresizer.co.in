@@ -17,14 +17,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in'),
-  title: "Free Online Photo Resizer, Image Compressor & Background Remover | PhotoResizer.co.in",
-  description: "Resize images, compress photos, remove backgrounds, create passport photos and edit pictures online for free. No uploads required.",
+  title: "Exam Photo Resizer & Signature Reducer — Resize Photos for SSC, UPSC, IBPS & Govt Exams | PhotoResizer.co.in",
+  description: "Free online exam photo resizer and signature compressor. Resize passport photos, signatures, thumb impressions, and declarations for SSC, UPSC, IBPS, RRB, CTET, NEET, Police & State PSC exams to exact KB and pixel limits. 100% private.",
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: "Free Online Photo Resizer, Image Compressor & Background Remover | photoresizer.co.in",
-    description: "Resize images, compress photos, remove backgrounds, create passport photos and edit pictures online for free. No uploads required.",
+    title: "Exam Photo Resizer & Signature Reducer — SSC, UPSC, IBPS & Govt Exams | photoresizer.co.in",
+    description: "Free online exam photo resizer and signature compressor. Resize passport photos, signatures, and thumb impressions to exact KB and pixel limits. 100% private.",
     type: "website",
     url: '/',
     images: [
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Online Photo Resizer, Image Compressor & Background Remover | photoresizer.co.in",
-    description: "Professional, fast, and fully local photo editing right in your browser. Remove backgrounds, resize images, create passport photos, and more. No uploads, 100% private.",
+    title: "Exam Photo Resizer & Signature Reducer — SSC, UPSC, IBPS & Govt Exams | photoresizer.co.in",
+    description: "Free online exam photo resizer and signature compressor. Resize passport photos, signatures, and thumb impressions to exact KB and pixel limits. 100% private.",
     images: ['/og-image.png'],
   },
 };
