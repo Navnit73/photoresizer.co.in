@@ -20,23 +20,30 @@ function EditorContent() {
   }
 
   return (
-    <div className="w-full pb-16 lg:pb-0">
-      {/* Editor Main Grid */}
-      <div className="flex flex-col lg:flex-row p-1 sm:p-2 gap-4 relative z-0">
+    <div className="w-full pb-20 lg:pb-0">
+      {/* 
+        Responsive Layout System:
+        - xl & 2xl (Wide Desktops & Laptops): 3-column layout
+          [Left: Settings Sidebar] [Center: Canvas Workspace] [Right: Compression & Download]
+        - lg (Medium Laptops & Tablets): 2-column layout
+          [Left: Settings Sidebar] [Right: Canvas Workspace + Download Panel stacked]
+        - Mobile (< lg): Stacked Mobile layout
+          [Top: Canvas Workspace] [Middle: Settings Sidebar] [Bottom: Compression Panel + Sticky Quick Download Bar]
+      */}
+      <div className="flex flex-col lg:grid lg:grid-cols-12 gap-3 lg:gap-4 items-start">
         
-        {/* Left Column (Desktop) / Section 2 (Mobile): Settings Sidebar */}
-        <div className="w-full lg:w-[340px] flex-shrink-0 flex flex-col order-2 lg:order-1 h-auto lg:h-[720px] border border-[#E4E4E7] rounded-2xl bg-[#FFFFFF] shadow-[0_1px_3px_rgba(0,0,0,0.05)] overflow-hidden">
+        {/* Settings Sidebar */}
+        <div className="w-full order-2 lg:order-1 lg:col-span-5 xl:col-span-3 2xl:col-span-3 flex flex-col h-auto lg:h-[calc(100vh-140px)] lg:min-h-[580px] lg:max-h-[820px] border border-[#E4E4E7] rounded-2xl bg-[#FFFFFF] shadow-[0_1px_3px_rgba(0,0,0,0.05)] overflow-hidden">
           <SettingsSidebar />
         </div>
 
-        {/* Center/Right Column: Canvas & Download panel */}
-        <div className="flex-1 flex flex-col gap-4 order-1 lg:order-2 min-w-0">
-          {/* Canvas Workspace */}
-          <div className="w-full min-h-[42vh] sm:min-h-[460px] lg:h-[500px] flex flex-col overflow-hidden relative border border-[#E4E4E7] rounded-2xl bg-[#FAFAFA] shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
-            <OriginalWorkspace />
-          </div>
-          
-          {/* Download & Compression Panel */}
+        {/* Center Canvas Workspace */}
+        <div className="w-full order-1 lg:order-2 lg:col-span-7 xl:col-span-6 2xl:col-span-6 flex flex-col h-[54vh] sm:h-[58vh] min-h-[390px] sm:min-h-[460px] max-h-[580px] lg:h-[500px] xl:h-[calc(100vh-140px)] xl:min-h-[580px] xl:max-h-[820px] overflow-hidden relative border border-[#E4E4E7] rounded-2xl bg-[#FAFAFA] shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+          <OriginalWorkspace />
+        </div>
+
+        {/* Download & Compression Panel */}
+        <div className="w-full order-3 lg:order-3 lg:col-span-7 lg:col-start-6 xl:col-start-auto xl:col-span-3 2xl:col-span-3 flex flex-col lg:h-auto xl:h-[calc(100vh-140px)] xl:min-h-[580px] xl:max-h-[820px] xl:overflow-y-auto">
           <DownloadPanel />
         </div>
 

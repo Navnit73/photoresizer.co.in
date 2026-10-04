@@ -8,6 +8,7 @@ import "react-image-crop/dist/ReactCrop.css";
 import { useEditor, AspectRatio, getStripLines } from "./EditorContext";
 import { prepareImage } from "../../utils/imagePrep";
 import { isLowEndDevice } from "../../utils/device";
+import { triggerHaptic } from "../../utils/haptics";
 import {
   UploadCloud,
   Crop as CropIcon,
@@ -71,6 +72,7 @@ export default function OriginalWorkspace() {
   const [bgProgress, setBgProgress] = useState(0);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
+  const [containerSize, setContainerSize] = useState<{ width: number; height: number }>({ width: 0, height: 0 });
   const imageRef = useRef<HTMLImageElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const draggingTextId = useRef<string | null>(null);
@@ -86,6 +88,23 @@ export default function OriginalWorkspace() {
     return () => {
       if (dragRaf.current !== null) cancelAnimationFrame(dragRaf.current);
     };
+  }, []);
+
+  // Track canvas container pixel dimensions to fit entire image without scrollbars
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const ro = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.contentRect) {
+          setContainerSize({
+            width: Math.floor(entry.contentRect.width),
+            height: Math.floor(entry.contentRect.height),
+          });
+        }
+      }
+    });
+    ro.observe(containerRef.current);
+    return () => ro.disconnect();
   }, []);
 
   // BG removal progress simulation
@@ -220,6 +239,7 @@ export default function OriginalWorkspace() {
   };
 
   const handleCancelCrop = () => {
+    triggerHaptic('light');
     setIsCropping(false);
     setCropState(undefined);
     setCompletedCrop(undefined);
@@ -233,6 +253,7 @@ export default function OriginalWorkspace() {
     // React registers touchstart as passive; only mouse events can be default-prevented safely.
     if (!("touches" in e) && e.cancelable) e.preventDefault();
     e.stopPropagation();
+    triggerHaptic('light');
     draggingTextId.current = id;
     dragPos.current = null;
     setSelectedTextId(id);
@@ -312,8 +333,23 @@ export default function OriginalWorkspace() {
   const isRotated90 = rotation === 90 || rotation === 270;
   const stripLines = strip?.enabled ? getStripLines(strip) : [];
 
+  // Exact available pixel space inside canvas viewport
+  const paddingW = 28;
+  const stripExtraHeight = strip?.enabled ? 56 : 0;
+  const paddingH = 28 + stripExtraHeight;
+
+  const rawW = containerSize.width > 0 ? containerSize.width - paddingW : 600;
+  const rawH = containerSize.height > 0 ? containerSize.height - paddingH : 440;
+
+  const availW = Math.max(100, rawW);
+  const availH = Math.max(100, rawH);
+
+  // When rotated 90 or 270 deg, visual width is natural height and visual height is natural width
+  const maxImgW = isRotated90 ? availH * zoom : availW * zoom;
+  const maxImgH = isRotated90 ? availW * zoom : availH * zoom;
+
   return (
-    <div className="flex-1 flex flex-col bg-[#FAFAFA] overflow-hidden min-h-0">
+    <div className="flex-1 flex flex-col bg-[#FAFAFA] overflow-hidden min-h-0 h-full w-full">
       {/* Top Workspace Toolbar */}
       {imageFile && (
         <div className="flex items-center justify-between gap-2 px-3 sm:px-4 py-2 border-b border-[#E4E4E7] bg-[#FFFFFF] flex-shrink-0 flex-wrap">
@@ -322,7 +358,10 @@ export default function OriginalWorkspace() {
             <div className="flex items-center bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-0.5">
               <button
                 type="button"
-                onClick={undo}
+                onClick={() => {
+                  triggerHaptic('light');
+                  undo();
+                }}
                 disabled={!canUndo}
                 className="p-1.5 rounded-lg text-[#52525B] hover:text-[#18181B] hover:bg-[#FFFFFF] disabled:opacity-30 transition-colors"
                 title="Undo"
@@ -333,7 +372,10 @@ export default function OriginalWorkspace() {
               <div className="w-[1px] h-3.5 bg-[#E4E4E7] mx-0.5" />
               <button
                 type="button"
-                onClick={redo}
+                onClick={() => {
+                  triggerHaptic('light');
+                  redo();
+                }}
                 disabled={!canRedo}
                 className="p-1.5 rounded-lg text-[#52525B] hover:text-[#18181B] hover:bg-[#FFFFFF] disabled:opacity-30 transition-colors"
                 title="Redo"
@@ -345,7 +387,10 @@ export default function OriginalWorkspace() {
 
             <button
               type="button"
-              onClick={reset}
+              onClick={() => {
+                triggerHaptic('heavy');
+                reset();
+              }}
               className="flex items-center gap-1 text-xs font-semibold text-[#52525B] hover:text-[#16A34A] transition-colors px-2.5 py-1.5 rounded-xl hover:bg-[#F0FDF4]"
               title="Reset Image"
             >
@@ -361,9 +406,10 @@ export default function OriginalWorkspace() {
               <div className="flex items-center bg-[#FAFAFA] rounded-xl border border-[#E4E4E7] p-0.5">
                 <button
                   type="button"
-                  onClick={() =>
-                    setZoom(Math.max(0.2, parseFloat((zoom - 0.1).toFixed(1))))
-                  }
+                  onClick={() => {
+                    triggerHaptic('light');
+                    setZoom(Math.max(0.2, parseFloat((zoom - 0.1).toFixed(1))));
+                  }}
                   className="p-1.5 text-[#52525B] hover:text-[#18181B] rounded-lg transition-colors"
                   aria-label="Zoom out"
                 >
@@ -374,9 +420,10 @@ export default function OriginalWorkspace() {
                 </span>
                 <button
                   type="button"
-                  onClick={() =>
-                    setZoom(Math.min(5, parseFloat((zoom + 0.1).toFixed(1))))
-                  }
+                  onClick={() => {
+                    triggerHaptic('light');
+                    setZoom(Math.min(5, parseFloat((zoom + 0.1).toFixed(1))));
+                  }}
                   className="p-1.5 text-[#52525B] hover:text-[#18181B] rounded-lg transition-colors"
                   aria-label="Zoom in"
                 >
@@ -388,7 +435,10 @@ export default function OriginalWorkspace() {
               <div className="flex items-center bg-[#FAFAFA] rounded-xl border border-[#E4E4E7] p-0.5">
                 <button
                   type="button"
-                  onClick={() => setRotation((rotation - 90 + 360) % 360)}
+                  onClick={() => {
+                    triggerHaptic('medium');
+                    setRotation((rotation - 90 + 360) % 360);
+                  }}
                   className="p-1.5 text-[#52525B] hover:text-[#18181B] hover:bg-[#FFFFFF] rounded-lg transition-colors"
                   title="Rotate Left 90°"
                   aria-label="Rotate Left 90°"
@@ -397,7 +447,10 @@ export default function OriginalWorkspace() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setRotation((rotation + 90) % 360)}
+                  onClick={() => {
+                    triggerHaptic('medium');
+                    setRotation((rotation + 90) % 360);
+                  }}
                   className="p-1.5 text-[#52525B] hover:text-[#18181B] hover:bg-[#FFFFFF] rounded-lg transition-colors"
                   title="Rotate Right 90°"
                   aria-label="Rotate Right 90°"
@@ -410,6 +463,7 @@ export default function OriginalWorkspace() {
               <button
                 type="button"
                 onClick={() => {
+                  triggerHaptic('medium');
                   setIsCropping(true);
                   if (!cropState) {
                     setCropState({
@@ -430,7 +484,10 @@ export default function OriginalWorkspace() {
               {/* Remove BG Button */}
               <button
                 type="button"
-                onClick={handleRemoveBg}
+                onClick={() => {
+                  triggerHaptic('medium');
+                  handleRemoveBg();
+                }}
                 disabled={isBgRemoving}
                 className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-[#F0FDF4] text-[#15803D] border border-[#BBF7D0] hover:bg-[#DCFCE7] rounded-xl transition-colors disabled:opacity-50"
               >
@@ -475,6 +532,7 @@ export default function OriginalWorkspace() {
                 key={ratio.label}
                 type="button"
                 onClick={() => {
+                  triggerHaptic('light');
                   setAspectRatio(ratio.label);
                   if (cropState && ratio.value && imageRef.current) {
                     const imgW = imageRef.current.naturalWidth || 1;
@@ -499,10 +557,12 @@ export default function OriginalWorkspace() {
         </div>
       )}
 
-      {/* Canvas workspace area */}
+      {/* Canvas workspace area - Zero-scroll fitted view at 100% zoom */}
       <div
         ref={containerRef}
-        className="flex-1 overflow-auto bg-[#FAFAFA] relative select-none min-h-0"
+        className={`flex-1 w-full bg-[#FAFAFA] relative select-none min-h-0 flex items-center justify-center p-2 sm:p-3.5 ${
+          zoom > 1 ? "overflow-auto" : "overflow-hidden"
+        }`}
         onMouseMove={handleContainerMouseMove}
         onMouseUp={handleContainerMouseUp}
         onMouseLeave={handleContainerMouseUp}
@@ -512,7 +572,7 @@ export default function OriginalWorkspace() {
           if (!draggingTextId.current) setSelectedTextId(null);
         }}
       >
-        <div className="min-h-full min-w-full flex items-center justify-center p-4 sm:p-6">
+        <div className="w-full h-full flex items-center justify-center relative min-h-0 min-w-0">
           {/* BG removing overlay */}
           {isBgRemoving && (
             <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-[#FFFFFF]/90 backdrop-blur-sm">
@@ -586,11 +646,15 @@ export default function OriginalWorkspace() {
               </div>
             )
           ) : (
-            <div className="relative flex flex-col items-center select-none max-w-full">
+            <div className={`relative flex flex-col items-center justify-center select-none ${
+              zoom > 1 ? "w-auto h-auto" : "max-w-full max-h-full"
+            }`}>
               {isCropping ? (
                 <ReactCrop
                   crop={cropState}
-                  onChange={(pixelCrop) => setCropState(pixelCrop)}
+                  onChange={(pixelCrop) => {
+                    setCropState(pixelCrop);
+                  }}
                   onComplete={(c) => {
                     setCompletedCrop(c);
                     if (imageRef.current && c.width > 0 && c.height > 0) {
@@ -614,19 +678,22 @@ export default function OriginalWorkspace() {
                     src={displayUrl!}
                     alt="Crop preview"
                     style={{
-                      maxHeight: `${55 * zoom}vh`,
-                      maxWidth: "100%",
+                      maxHeight: `${availH * zoom}px`,
+                      maxWidth: `${availW * zoom}px`,
+                      width: "auto",
+                      height: "auto",
                       backgroundColor: backgroundColor === 'transparent' ? undefined : backgroundColor,
                     }}
-                    className="w-auto object-contain block"
+                    className="object-contain block select-none"
                   />
                 </ReactCrop>
               ) : (
                 /* Main Image Preview Card with Live Rotation & White Strip */
                 <div
-                  className="relative flex flex-col items-center shadow-md rounded-xl overflow-hidden border border-[#E4E4E7] transition-all duration-200"
+                  className="relative flex flex-col items-center justify-center shadow-md rounded-xl overflow-hidden border border-[#E4E4E7] transition-all duration-200 select-none"
                   style={{
                     backgroundColor: backgroundColor === 'transparent' ? '#FFFFFF' : backgroundColor,
+                    maxWidth: isRotated90 ? `${availH * zoom + 16}px` : `${availW * zoom + 16}px`,
                   }}
                 >
                   {/* Rotatable Image Area */}
@@ -642,10 +709,12 @@ export default function OriginalWorkspace() {
                       alt="Original"
                       decoding="async"
                       style={{
-                        maxHeight: `${(isRotated90 ? 45 : 55) * zoom}vh`,
-                        maxWidth: "100%",
+                        maxHeight: `${maxImgH}px`,
+                        maxWidth: `${maxImgW}px`,
+                        width: "auto",
+                        height: "auto",
                       }}
-                      className="w-auto object-contain block"
+                      className="object-contain block select-none"
                       draggable={false}
                     />
 
@@ -689,7 +758,7 @@ export default function OriginalWorkspace() {
 
                   {/* Candidate Name & DOB White Strip at Bottom (Exam Requirement) */}
                   {strip?.enabled && (
-                    <div className="w-full bg-[#FFFFFF] border-t-2 border-[#D4D4D8] py-2 px-3 text-center flex flex-col items-center justify-center select-none z-10">
+                    <div className="w-full bg-[#FFFFFF] border-t-2 border-[#D4D4D8] py-1.5 sm:py-2 px-3 text-center flex flex-col items-center justify-center select-none z-10 flex-shrink-0">
                       {stripLines.length > 0 ? (
                         stripLines.map((line, i) => (
                           <div

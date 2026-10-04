@@ -226,8 +226,8 @@ export default function HeroUploader({
 
       {/* Editor view after file upload */}
       {!showHero && (
-        <div className="py-6 px-4 sm:px-6 max-w-[1280px] mx-auto">
-          <div className="min-h-[600px]">
+        <div className="py-2 sm:py-4 px-2 sm:px-4 lg:px-6 w-full max-w-[1720px] mx-auto">
+          <div className="min-h-[560px]">
             <PhotoEditor initialFile={uploadedFile} />
           </div>
         </div>

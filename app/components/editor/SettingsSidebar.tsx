@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useEditor, ImageFormat, TextOverlay, DEFAULT_STRIP, getStripLines } from './EditorContext';
 import { useTranslation } from '@/app/hooks/useTranslation';
+import { triggerHaptic } from '../../utils/haptics';
 import {
   SlidersHorizontal,
   RotateCcw,
@@ -293,6 +294,7 @@ export default function SettingsSidebar() {
   const [activeSection, setActiveSection] = useState<'export' | 'strip' | 'text'>('export');
 
   const handlePercentageClick = (percentage: number) => {
+    triggerHaptic('light');
     setWidth(Math.round(originalWidth * (percentage / 100)));
     setHeight(Math.round(originalHeight * (percentage / 100)));
   };
@@ -302,6 +304,7 @@ export default function SettingsSidebar() {
   const stripLines = currentStrip.enabled ? getStripLines(currentStrip) : [];
 
   const handleAddSignature = () => {
+    triggerHaptic('medium');
     const id = `sig-${Date.now()}`;
     const newOverlay: TextOverlay = {
       id,
@@ -327,7 +330,10 @@ export default function SettingsSidebar() {
       <div className="flex border-b border-[#E4E4E7] bg-[#FAFAFA]/50">
         <button
           type="button"
-          onClick={() => setActiveSection('export')}
+          onClick={() => {
+            triggerHaptic('light');
+            setActiveSection('export');
+          }}
           className={`flex-1 flex items-center justify-center gap-1.5 py-3 text-xs font-semibold transition-colors relative ${
             activeSection === 'export'
               ? 'text-[#16A34A] bg-[#FFFFFF]'
@@ -341,7 +347,10 @@ export default function SettingsSidebar() {
 
         <button
           type="button"
-          onClick={() => setActiveSection('strip')}
+          onClick={() => {
+            triggerHaptic('light');
+            setActiveSection('strip');
+          }}
           className={`flex-1 flex items-center justify-center gap-1.5 py-3 text-xs font-semibold transition-colors relative ${
             activeSection === 'strip'
               ? 'text-[#16A34A] bg-[#FFFFFF]'
@@ -358,7 +367,10 @@ export default function SettingsSidebar() {
 
         <button
           type="button"
-          onClick={() => setActiveSection('text')}
+          onClick={() => {
+            triggerHaptic('light');
+            setActiveSection('text');
+          }}
           className={`flex-1 flex items-center justify-center gap-1.5 py-3 text-xs font-semibold transition-colors relative ${
             activeSection === 'text'
               ? 'text-[#16A34A] bg-[#FFFFFF]'
@@ -436,7 +448,10 @@ export default function SettingsSidebar() {
               <div className="grid grid-cols-4 gap-1.5">
                 <button
                   type="button"
-                  onClick={() => setRotation((rotation - 90 + 360) % 360)}
+                  onClick={() => {
+                    triggerHaptic('medium');
+                    setRotation((rotation - 90 + 360) % 360);
+                  }}
                   disabled={disabled}
                   className="flex flex-col items-center justify-center gap-1 py-2 bg-[#FFFFFF] hover:bg-[#F0FDF4] hover:text-[#15803D] hover:border-[#BBF7D0] border border-[#E4E4E7] rounded-xl disabled:opacity-40 text-xs font-medium text-[#18181B] transition-colors"
                   title="Rotate Left 90°"
@@ -446,7 +461,10 @@ export default function SettingsSidebar() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setRotation((rotation + 90) % 360)}
+                  onClick={() => {
+                    triggerHaptic('medium');
+                    setRotation((rotation + 90) % 360);
+                  }}
                   disabled={disabled}
                   className="flex flex-col items-center justify-center gap-1 py-2 bg-[#FFFFFF] hover:bg-[#F0FDF4] hover:text-[#15803D] hover:border-[#BBF7D0] border border-[#E4E4E7] rounded-xl disabled:opacity-40 text-xs font-medium text-[#18181B] transition-colors"
                   title="Rotate Right 90°"
@@ -456,7 +474,10 @@ export default function SettingsSidebar() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setRotation((rotation + 180) % 360)}
+                  onClick={() => {
+                    triggerHaptic('medium');
+                    setRotation((rotation + 180) % 360);
+                  }}
                   disabled={disabled}
                   className="flex flex-col items-center justify-center gap-1 py-2 bg-[#FFFFFF] hover:bg-[#F0FDF4] hover:text-[#15803D] hover:border-[#BBF7D0] border border-[#E4E4E7] rounded-xl disabled:opacity-40 text-xs font-medium text-[#18181B] transition-colors"
                   title="Rotate 180°"
@@ -466,7 +487,10 @@ export default function SettingsSidebar() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setRotation(0)}
+                  onClick={() => {
+                    triggerHaptic('medium');
+                    setRotation(0);
+                  }}
                   disabled={disabled || rotation === 0}
                   className="flex flex-col items-center justify-center gap-1 py-2 bg-[#FAFAFA] hover:bg-[#FFFFFF] border border-[#E4E4E7] rounded-xl disabled:opacity-30 text-xs font-medium text-[#71717A] transition-colors"
                   title="Reset Angle to 0°"
@@ -492,7 +516,10 @@ export default function SettingsSidebar() {
                   <button
                     key={f.value}
                     type="button"
-                    onClick={() => setFormat(f.value)}
+                    onClick={() => {
+                      triggerHaptic('light');
+                      setFormat(f.value);
+                    }}
                     disabled={disabled}
                     className={`py-2 text-xs font-semibold rounded-xl border transition-colors disabled:opacity-40 ${
                       format === f.value
@@ -534,7 +561,10 @@ export default function SettingsSidebar() {
                   <button
                     key={color}
                     type="button"
-                    onClick={() => setBackgroundColor(color)}
+                    onClick={() => {
+                      triggerHaptic('light');
+                      setBackgroundColor(color);
+                    }}
                     disabled={disabled}
                     title={color === 'transparent' ? 'Transparent' : color}
                     className={`w-7 h-7 rounded-lg border-2 disabled:opacity-40 transition-all ${
@@ -572,7 +602,10 @@ export default function SettingsSidebar() {
                 id="strip-toggle"
                 type="checkbox"
                 checked={currentStrip.enabled}
-                onChange={(e) => setStrip({ enabled: e.target.checked })}
+                onChange={(e) => {
+                  triggerHaptic('medium');
+                  setStrip({ enabled: e.target.checked });
+                }}
                 disabled={disabled}
                 className="w-4 h-4 accent-[#16A34A] cursor-pointer"
               />
@@ -589,7 +622,10 @@ export default function SettingsSidebar() {
                     </label>
                     <button
                       type="button"
-                      onClick={() => setStrip({ name: currentStrip.name.toUpperCase() })}
+                      onClick={() => {
+                        triggerHaptic('light');
+                        setStrip({ name: currentStrip.name.toUpperCase() });
+                      }}
                       className="text-[10px] font-semibold text-[#15803D] hover:underline"
                     >
                       UPPERCASE
@@ -614,6 +650,7 @@ export default function SettingsSidebar() {
                     <button
                       type="button"
                       onClick={() => {
+                        triggerHaptic('light');
                         const today = new Date().toISOString().split('T')[0];
                         setStrip({ date: today });
                       }}
@@ -644,7 +681,10 @@ export default function SettingsSidebar() {
                       <button
                         key={opt.value}
                         type="button"
-                        onClick={() => setStrip({ dateLabel: opt.value })}
+                        onClick={() => {
+                          triggerHaptic('light');
+                          setStrip({ dateLabel: opt.value });
+                        }}
                         className={`py-1.5 px-2 text-[11px] font-semibold rounded-lg border transition-colors ${
                           currentStrip.dateLabel === opt.value
                             ? 'border-[#16A34A] bg-[#F0FDF4] text-[#15803D]'
@@ -697,6 +737,7 @@ export default function SettingsSidebar() {
                 <button
                   type="button"
                   onClick={() => {
+                    triggerHaptic('light');
                     const today = new Date().toISOString().split('T')[0];
                     setStrip({ enabled: true, dateLabel: 'DOP', date: today });
                   }}
@@ -711,6 +752,7 @@ export default function SettingsSidebar() {
                 <button
                   type="button"
                   onClick={() => {
+                    triggerHaptic('light');
                     setStrip({ enabled: true, dateLabel: 'DOB' });
                   }}
                   disabled={disabled}
@@ -739,7 +781,10 @@ export default function SettingsSidebar() {
                 <div className="grid grid-cols-2 gap-2">
                   <button
                     type="button"
-                    onClick={addTextOverlay}
+                    onClick={() => {
+                      triggerHaptic('medium');
+                      addTextOverlay();
+                    }}
                     className="flex items-center justify-center gap-1.5 py-2.5 bg-[#16A34A] hover:bg-[#15803D] text-white rounded-xl text-xs font-semibold transition-colors shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
                   >
                     <Plus size={14} /> Add Text Layer
@@ -769,9 +814,15 @@ export default function SettingsSidebar() {
                         overlay={overlay}
                         t={t}
                         isSelected={selectedTextId === overlay.id}
-                        onSelect={() => setSelectedTextId(selectedTextId === overlay.id ? null : overlay.id)}
+                        onSelect={() => {
+                          triggerHaptic('light');
+                          setSelectedTextId(selectedTextId === overlay.id ? null : overlay.id);
+                        }}
                         onUpdate={(updates) => updateTextOverlay(overlay.id, updates)}
-                        onRemove={() => removeTextOverlay(overlay.id)}
+                        onRemove={() => {
+                          triggerHaptic('medium');
+                          removeTextOverlay(overlay.id);
+                        }}
                       />
                     ))}
                   </div>

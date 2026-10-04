@@ -112,7 +112,7 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
 
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
+      <div className={!showHero ? "w-full max-w-[1720px] mx-auto px-2 sm:px-4 lg:px-6" : "max-w-[1200px] mx-auto px-4 sm:px-6"}>
         
         {/* Breadcrumb Navigation */}
         <div className="pt-6 pb-2">

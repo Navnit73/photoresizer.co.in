@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useEditor } from "./EditorContext";
 import { useImageProcessor } from "../../hooks/useImageProcessor";
+import { triggerHaptic } from "../../utils/haptics";
 import {
   Download,
   CircleCheck,
@@ -85,6 +86,7 @@ export default function DownloadPanel() {
 
   const handleDownload = () => {
     if (!livePreview.url) return;
+    triggerHaptic('success');
     const name = fileName.trim() || "photoresizer";
     setFileName(name);
     const a = document.createElement("a");
@@ -135,7 +137,10 @@ export default function DownloadPanel() {
                   role="radio"
                   aria-checked={active}
                   disabled={isPng}
-                  onClick={() => setQuality(p.quality)}
+                  onClick={() => {
+                    triggerHaptic('light');
+                    setQuality(p.quality);
+                  }}
                   className={`min-h-[52px] px-3 py-2 text-left rounded-xl border transition-colors disabled:opacity-40 disabled:cursor-not-allowed ${
                     active
                       ? "border-[#16A34A] bg-[#F0FDF4]"
@@ -155,6 +160,7 @@ export default function DownloadPanel() {
               aria-checked={activePreset === "target"}
               disabled={isPng}
               onClick={() => {
+                triggerHaptic('light');
                 if (targetSizeKb === null) {
                   setTargetText(null);
                   setTargetSizeKb(100);
@@ -182,7 +188,10 @@ export default function DownloadPanel() {
               <span>PNG is lossless, so it can&apos;t be compressed by quality.</span>
               <button
                 type="button"
-                onClick={() => setFormat("image/jpeg")}
+                onClick={() => {
+                  triggerHaptic('light');
+                  setFormat("image/jpeg");
+                }}
                 className="font-semibold text-[#15803D] hover:underline"
               >
                 Switch to JPG
@@ -190,7 +199,10 @@ export default function DownloadPanel() {
               <span aria-hidden="true">or</span>
               <button
                 type="button"
-                onClick={() => setFormat("image/webp")}
+                onClick={() => {
+                  triggerHaptic('light');
+                  setFormat("image/webp");
+                }}
                 className="font-semibold text-[#15803D] hover:underline"
               >
                 WEBP
@@ -224,6 +236,7 @@ export default function DownloadPanel() {
                       key={kb}
                       type="button"
                       onClick={() => {
+                        triggerHaptic('light');
                         setTargetText(null);
                         setTargetSizeKb(kb);
                       }}
@@ -255,7 +268,14 @@ export default function DownloadPanel() {
               <span>
                 Can&apos;t get under {targetSizeKb} KB at {livePreview.width}×{livePreview.height}px.
               </span>
-              <button type="button" onClick={shrinkDimensions} className="font-semibold text-[#B45309] hover:underline">
+              <button
+                type="button"
+                onClick={() => {
+                  triggerHaptic('medium');
+                  shrinkDimensions();
+                }}
+                className="font-semibold text-[#B45309] hover:underline"
+              >
                 Shrink size by 20%
               </button>
             </div>
@@ -356,25 +376,34 @@ export default function DownloadPanel() {
         )}
 
         {/* Filename + desktop download button */}
-        <div className="hidden lg:flex items-center gap-2.5">
-          <div className="flex items-center flex-1 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] px-3 h-11 focus-within:border-[#16A34A] focus-within:ring-2 focus-within:ring-[#DCFCE7] transition-all">
-            <input
-              type="text"
-              value={fileName}
-              onChange={(e) => setFileName(e.target.value)}
-              placeholder="File name"
-              aria-label="File name"
-              className="flex-1 w-0 bg-transparent text-sm font-medium text-[#18181B] focus:outline-none"
-            />
-            <span className="text-xs text-[#71717A] font-mono">.{ext}</span>
+        <div className="hidden lg:flex flex-col gap-3 pt-1">
+          <div>
+            <label htmlFor="filename-input" className="text-xs font-semibold text-[#18181B] mb-1.5 block">
+              File Name
+            </label>
+            <div className="flex items-center w-full bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] px-3.5 h-12 focus-within:border-[#16A34A] focus-within:ring-2 focus-within:ring-[#DCFCE7] transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+              <input
+                id="filename-input"
+                type="text"
+                value={fileName}
+                onChange={(e) => setFileName(e.target.value)}
+                placeholder="photoresizer-output"
+                aria-label="File name"
+                className="flex-1 w-0 bg-transparent text-sm font-semibold text-[#18181B] focus:outline-none placeholder:text-[#A1A1AA] h-full"
+              />
+              <span className="flex-shrink-0 text-xs text-[#52525B] font-mono font-bold bg-[#F4F4F5] px-2.5 py-1 rounded-md border border-[#E4E4E7] ml-2">
+                .{ext}
+              </span>
+            </div>
           </div>
+
           <button
             type="button"
             onClick={handleDownload}
             disabled={downloadDisabled}
-            className="flex items-center justify-center gap-2 px-6 h-11 text-sm font-semibold bg-[#16A34A] hover:bg-[#15803D] text-[#FFFFFF] rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-colors active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap"
+            className="w-full flex items-center justify-center gap-2 px-6 h-12 text-sm font-bold bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-[#FFFFFF] rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] transition-all disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap"
           >
-            <Download size={16} aria-hidden="true" />
+            <Download size={18} aria-hidden="true" />
             <span>Download{hasResult ? ` · ${formatBytes(outBytes)}` : ""}</span>
           </button>
         </div>

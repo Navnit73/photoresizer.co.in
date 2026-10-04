@@ -416,16 +416,17 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main className="max-w-[1200px] mx-auto px-4 sm:px-6">
-        {/* HERO */}
+      <main className="w-full">
+        {/* HERO / EDITOR */}
         <HeroUploader
           title="Photo & Signature Resizer for Indian Exam Forms"
           subtitle="Resize photos, signatures, and thumb impressions for SSC, RRB, IBPS, UPSC & state exams to exact KB limits."
           badgeText="Fast • Simple • 100% Private"
         />
 
-        {/* Intro + trust strip */}
-        <section className="mt-8 sm:mt-10" aria-label="Why use PhotoResizer">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
+          {/* Intro + trust strip */}
+          <section className="mt-8 sm:mt-10" aria-label="Why use PhotoResizer">
           <p className="max-w-3xl mx-auto text-center text-sm sm:text-base text-[#52525B] leading-relaxed">
             PhotoResizer helps Indian aspirants prepare photos and signatures for SSC, RRB,
             banking, police, teaching, and state recruitment forms. Pick your exam, check the
@@ -770,6 +771,7 @@ export default function Home() {
             ))}
           </div>
         </section>
+        </div>
       </main>
     </div>
   );
