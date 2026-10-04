@@ -1,15 +1,19 @@
 import { useEffect, useRef, startTransition, useCallback } from 'react';
-import { useEditor } from '../components/editor/EditorContext';
+import { useEditor, getStripLines } from '../components/editor/EditorContext';
+import { isLowEndDevice } from '../utils/device';
+
+const DEBOUNCE_MS = 200;
+const DEBOUNCE_MS_LOW_END = 450;
 
 export function useImageProcessor() {
   const {
-    imageFile, imageUrl, width, height, format, quality,
-    backgroundColor, rotation, crop, textOverlays,
-    setLivePreview, setIsProcessing,
+    imageFile, imageUrl, width, height, originalWidth, originalHeight,
+    format, quality, targetSizeKb, backgroundColor, rotation, crop, textOverlays,
+    strip, setLivePreview, setIsProcessing,
   } = useEditor();
 
   const workerRef = useRef<Worker | null>(null);
-  const debounceTimer = useRef<NodeJS.Timeout | null>(null);
+  const debounceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isFirstLoad = useRef(true);
   const activeUrlRef = useRef<string | null>(null);
   const requestIdRef = useRef(0);
@@ -22,7 +26,8 @@ export function useImageProcessor() {
     }
   }, []);
 
-  // Initialize web worker once
+  // Initialize web worker once. All dependencies are referentially stable,
+  // so the worker (and its decoded-bitmap cache) lives for the editor's lifetime.
   useEffect(() => {
     const worker = new Worker(new URL('../workers/imageProcessor.worker.ts', import.meta.url));
     workerRef.current = worker;
@@ -33,15 +38,18 @@ export function useImageProcessor() {
       if (data.id !== requestIdRef.current) return;
 
       if (data.success) {
-        const { blob, width: outWidth, height: outHeight } = data;
+        const { blob, width: outWidth, height: outHeight, usedQuality, targetMet } = data;
         const url = URL.createObjectURL(blob);
-        
+
         revokeActiveUrl();
         activeUrlRef.current = url;
 
         const sizeKb = parseFloat((blob.size / 1024).toFixed(1));
         startTransition(() => {
-          setLivePreview({ url, sizeKb, width: outWidth, height: outHeight });
+          setLivePreview({
+            url, sizeKb, width: outWidth, height: outHeight,
+            usedQuality, targetMet, sizeBytes: blob.size,
+          });
           setIsProcessing(false);
         });
       } else {
@@ -71,16 +79,18 @@ export function useImageProcessor() {
     requestIdRef.current += 1;
     const currentId = requestIdRef.current;
 
-    startTransition(() => {
-      setIsProcessing(true);
-    });
+    setIsProcessing(true);
+
+    const stripPayload = strip?.enabled
+      ? { lines: getStripLines(strip), heightPct: strip.heightPct || 16 }
+      : null;
 
     workerRef.current.postMessage({
       id: currentId,
-      imageUrl, width, height, format, quality,
-      backgroundColor, rotation, crop, textOverlays
+      imageUrl, width, height, originalWidth, originalHeight, format, quality, targetSizeKb,
+      backgroundColor, rotation, crop, textOverlays, strip: stripPayload,
     });
-  }, [imageUrl, width, height, format, quality, backgroundColor, rotation, crop, textOverlays, setIsProcessing]);
+  }, [imageUrl, width, height, originalWidth, originalHeight, format, quality, targetSizeKb, backgroundColor, rotation, crop, textOverlays, strip, setIsProcessing]);
 
   useEffect(() => {
     if (!imageFile || !imageUrl) {
@@ -92,8 +102,9 @@ export function useImageProcessor() {
 
     if (debounceTimer.current) clearTimeout(debounceTimer.current);
 
-    // No debounce on first load — process immediately; debounce subsequent changes by 200ms
-    const delay = isFirstLoad.current ? 0 : 200;
+    // No debounce on first load — process immediately; debounce subsequent changes
+    // (longer on low-end devices so slider drags don't queue up heavy re-encodes).
+    const delay = isFirstLoad.current ? 0 : isLowEndDevice() ? DEBOUNCE_MS_LOW_END : DEBOUNCE_MS;
     isFirstLoad.current = false;
 
     debounceTimer.current = setTimeout(() => {

@@ -1,11 +1,13 @@
 "use client";
 
 import React, { useCallback, useState, useRef, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { useDropzone } from "react-dropzone";
-import ReactCrop, { Crop, PixelCrop } from "react-image-crop";
+import type { Crop, PixelCrop } from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
-import { useEditor, AspectRatio } from "./EditorContext";
-import { useTranslation } from "@/app/hooks/useTranslation";
+import { useEditor, AspectRatio, getStripLines } from "./EditorContext";
+import { prepareImage } from "../../utils/imagePrep";
+import { isLowEndDevice } from "../../utils/device";
 import {
   UploadCloud,
   Crop as CropIcon,
@@ -18,7 +20,12 @@ import {
   Undo2,
   Redo2,
   RefreshCcw,
+  RotateCcw,
+  RotateCw,
 } from "lucide-react";
+
+// The crop widget is only needed once the user clicks "Crop" — keep it out of the initial editor bundle.
+const ReactCrop = dynamic(() => import("react-image-crop"), { ssr: false });
 
 const ASPECT_RATIOS: { label: AspectRatio; value: number | undefined }[] = [
   { label: "free", value: undefined },
@@ -33,7 +40,8 @@ export default function OriginalWorkspace() {
   const {
     imageFile,
     imageUrl,
-    setImageFile,
+    previewUrl,
+    loadFile,
     updateBaseImage,
     setCrop,
     aspectRatio,
@@ -45,14 +53,15 @@ export default function OriginalWorkspace() {
     selectedTextId,
     setSelectedTextId,
     backgroundColor,
+    rotation,
+    setRotation,
+    strip,
     undo,
     redo,
     canUndo,
     canRedo,
     reset,
   } = useEditor();
-
-  const { t } = useTranslation();
 
   const [isCropping, setIsCropping] = useState(false);
   const [zoom, setZoom] = useState(1);
@@ -66,6 +75,18 @@ export default function OriginalWorkspace() {
   const containerRef = useRef<HTMLDivElement>(null);
   const draggingTextId = useRef<string | null>(null);
   const dragOffset = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  // Text dragging is applied straight to the DOM (rAF-throttled) and committed to state on release,
+  // so a drag doesn't re-render the editor / reschedule image processing on every pointer move.
+  const overlayEls = useRef<Map<string, HTMLDivElement>>(new Map());
+  const dragPos = useRef<{ x: number; y: number } | null>(null);
+  const dragRaf = useRef<number | null>(null);
+  const displayUrl = previewUrl || imageUrl;
+
+  useEffect(() => {
+    return () => {
+      if (dragRaf.current !== null) cancelAnimationFrame(dragRaf.current);
+    };
+  }, []);
 
   // BG removal progress simulation
   useEffect(() => {
@@ -85,46 +106,29 @@ export default function OriginalWorkspace() {
     };
   }, [isBgRemoving]);
 
+  // Files coming from the hero uploader are handled (once) by EditorProvider; this is for in-editor drops.
   const onDrop = useCallback(
-    (acceptedFiles: File[]) => {
+    async (acceptedFiles: File[]) => {
       if (acceptedFiles?.length > 0) {
         const file = acceptedFiles[0];
         setIsUploading(true);
         setUploadProgress(40);
 
-        const url = URL.createObjectURL(file);
-        const img = new Image();
-        img.onload = () => {
-          setImageFile(file, url, img.naturalWidth || img.width, img.naturalHeight || img.height);
+        const ok = await loadFile(file);
+        if (ok) {
           setIsCropping(false);
           setCropState(undefined);
           setCompletedCrop(undefined);
           setCropPixelDimensions(null);
-          setIsUploading(false);
           setUploadProgress(100);
-        };
-        img.onerror = () => {
-          setIsUploading(false);
+        } else {
           setUploadProgress(0);
-          URL.revokeObjectURL(url);
-        };
-        img.decoding = "async";
-        img.src = url;
+        }
+        setIsUploading(false);
       }
     },
-    [setImageFile],
+    [loadFile],
   );
-
-  useEffect(() => {
-    const handleHeroDrop = (e: Event) => {
-      const customEvent = e as CustomEvent<{ files: File[] }>;
-      if (customEvent.detail?.files) {
-        onDrop(customEvent.detail.files);
-      }
-    };
-    window.addEventListener("hero-file-drop", handleHeroDrop);
-    return () => window.removeEventListener("hero-file-drop", handleHeroDrop);
-  }, [onDrop]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
@@ -136,24 +140,21 @@ export default function OriginalWorkspace() {
     if (!imageUrl || isBgRemoving) return;
     setIsBgRemoving(true);
     try {
+      const lowEnd = isLowEndDevice();
       const { removeBackground } = await import("@imgly/background-removal");
       const config: import("@imgly/background-removal").Config = {
         publicPath:
           "https://staticimgly.com/@imgly/background-removal-data/1.7.0/dist/",
-        model: "isnet_fp16",
+        // Smaller quantized model + screen-sized input keeps weak devices from running out of memory.
+        model: lowEnd ? "isnet_quint8" : "isnet_fp16",
         proxyToWorker: true,
       };
-      const blob = await removeBackground(imageUrl, config);
-      const url = URL.createObjectURL(blob);
+      const blob = await removeBackground(lowEnd ? displayUrl || imageUrl : imageUrl, config);
       const file = new File([blob], "no-bg.png", { type: "image/png" });
-      const img = new Image();
-      img.onload = () => {
-        updateBaseImage(file, url, img.width, img.height);
-        setBgProgress(100);
-        setTimeout(() => setIsBgRemoving(false), 400);
-      };
-      img.decoding = "async";
-      img.src = url;
+      const prepared = await prepareImage(file);
+      updateBaseImage(file, prepared.url, prepared.width, prepared.height, prepared.previewUrl);
+      setBgProgress(100);
+      setTimeout(() => setIsBgRemoving(false), 400);
     } catch (error) {
       console.error("Error removing background:", error);
       alert(
@@ -164,57 +165,58 @@ export default function OriginalWorkspace() {
   };
 
   const handleCropComplete = async () => {
-    if (completedCrop && imageRef.current) {
-      const scaleX = imageRef.current.naturalWidth / imageRef.current.width;
-      const scaleY = imageRef.current.naturalHeight / imageRef.current.height;
+    const imgEl = imageRef.current;
+    if (completedCrop && imgEl && imageFile && imgEl.width > 0 && imgEl.height > 0) {
+      try {
+        // The crop UI works on the (possibly downscaled) display image, but the result must be cut
+        // from the full-resolution original — so map the selection to fractions and re-apply it there.
+        const fx = completedCrop.x / imgEl.width;
+        const fy = completedCrop.y / imgEl.height;
+        const fw = completedCrop.width / imgEl.width;
+        const fh = completedCrop.height / imgEl.height;
 
-      const cropX = completedCrop.x * scaleX;
-      const cropY = completedCrop.y * scaleY;
-      const cropW = completedCrop.width * scaleX;
-      const cropH = completedCrop.height * scaleY;
+        const bitmap = await createImageBitmap(imageFile);
+        const srcX = Math.max(0, Math.round(fx * bitmap.width));
+        const srcY = Math.max(0, Math.round(fy * bitmap.height));
+        const cropW = Math.max(1, Math.min(bitmap.width - srcX, Math.round(fw * bitmap.width)));
+        const cropH = Math.max(1, Math.min(bitmap.height - srcY, Math.round(fh * bitmap.height)));
 
-      const canvas = document.createElement("canvas");
-      canvas.width = cropW;
-      canvas.height = cropH;
-      const ctx = canvas.getContext("2d");
+        const canvas = document.createElement("canvas");
+        canvas.width = cropW;
+        canvas.height = cropH;
+        const ctx = canvas.getContext("2d");
 
-      if (ctx) {
-        ctx.drawImage(
-          imageRef.current,
-          cropX,
-          cropY,
-          cropW,
-          cropH,
-          0,
-          0,
-          cropW,
-          cropH,
-        );
+        if (ctx) {
+          ctx.drawImage(bitmap, srcX, srcY, cropW, cropH, 0, 0, cropW, cropH);
+          bitmap.close();
 
-        await new Promise<void>((resolve) => {
-          canvas.toBlob(
-            (blob) => {
-              if (blob) {
-                const newUrl = URL.createObjectURL(blob);
-                const newFile = new File([blob], "cropped.png", {
-                  type: "image/png",
-                });
-                updateBaseImage(
-                  newFile,
-                  newUrl,
-                  Math.round(cropW),
-                  Math.round(cropH),
-                );
-              }
-              resolve();
-            },
-            "image/png",
-            1,
+          // PNG-encoding a large photo is very slow on weak CPUs; only pay for it when alpha may matter.
+          const keepAlpha = imageFile.type !== "image/jpeg";
+          const mime = keepAlpha ? "image/png" : "image/jpeg";
+          const blob = await new Promise<Blob | null>((resolve) =>
+            canvas.toBlob(resolve, mime, 0.97),
           );
-        });
+          canvas.width = 0;
+          canvas.height = 0;
+
+          if (blob) {
+            const newFile = new File([blob], keepAlpha ? "cropped.png" : "cropped.jpg", {
+              type: mime,
+            });
+            const prepared = await prepareImage(newFile);
+            updateBaseImage(newFile, prepared.url, prepared.width, prepared.height, prepared.previewUrl);
+          }
+        } else {
+          bitmap.close();
+        }
+      } catch (error) {
+        console.error("Crop failed:", error);
       }
     }
     setIsCropping(false);
+    setCropState(undefined);
+    setCompletedCrop(undefined);
+    setCropPixelDimensions(null);
   };
 
   const handleCancelCrop = () => {
@@ -228,9 +230,11 @@ export default function OriginalWorkspace() {
     e: React.MouseEvent | React.TouchEvent,
     id: string,
   ) => {
-    e.preventDefault();
+    // React registers touchstart as passive; only mouse events can be default-prevented safely.
+    if (!("touches" in e) && e.cancelable) e.preventDefault();
     e.stopPropagation();
     draggingTextId.current = id;
+    dragPos.current = null;
     setSelectedTextId(id);
 
     const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
@@ -274,23 +278,45 @@ export default function OriginalWorkspace() {
       ),
     );
 
-    updateTextOverlay(draggingTextId.current, { x, y });
+    dragPos.current = { x, y };
+    if (dragRaf.current === null) {
+      dragRaf.current = requestAnimationFrame(() => {
+        dragRaf.current = null;
+        const id = draggingTextId.current;
+        const pos = dragPos.current;
+        const el = id ? overlayEls.current.get(id) : undefined;
+        if (el && pos) {
+          el.style.left = `${pos.x}%`;
+          el.style.top = `${pos.y}%`;
+        }
+      });
+    }
   };
 
   const handleContainerMouseUp = () => {
+    const id = draggingTextId.current;
+    const pos = dragPos.current;
+    if (dragRaf.current !== null) {
+      cancelAnimationFrame(dragRaf.current);
+      dragRaf.current = null;
+    }
+    if (id && pos) updateTextOverlay(id, pos);
     draggingTextId.current = null;
+    dragPos.current = null;
   };
 
   const currentRatioValue = ASPECT_RATIOS.find(
     (r) => r.label === aspectRatio,
   )?.value;
 
+  const isRotated90 = rotation === 90 || rotation === 270;
+  const stripLines = strip?.enabled ? getStripLines(strip) : [];
+
   return (
     <div className="flex-1 flex flex-col bg-[#FAFAFA] overflow-hidden min-h-0">
       {/* Top Workspace Toolbar */}
       {imageFile && (
         <div className="flex items-center justify-between gap-2 px-3 sm:px-4 py-2 border-b border-[#E4E4E7] bg-[#FFFFFF] flex-shrink-0 flex-wrap">
-          
           {/* Left Controls: Undo, Redo, Reset */}
           <div className="flex items-center gap-1.5">
             <div className="flex items-center bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-0.5">
@@ -302,7 +328,7 @@ export default function OriginalWorkspace() {
                 title="Undo"
                 aria-label="Undo"
               >
-                <Undo2 size={13} />
+                <Undo2 size={14} />
               </button>
               <div className="w-[1px] h-3.5 bg-[#E4E4E7] mx-0.5" />
               <button
@@ -313,7 +339,7 @@ export default function OriginalWorkspace() {
                 title="Redo"
                 aria-label="Redo"
               >
-                <Redo2 size={13} />
+                <Redo2 size={14} />
               </button>
             </div>
 
@@ -328,9 +354,10 @@ export default function OriginalWorkspace() {
             </button>
           </div>
 
-          {/* Center Controls: Zoom, Crop, BG Remover */}
+          {/* Center/Right Controls: Zoom, Rotate, Crop, BG Remover */}
           {!isCropping && (
-            <div className="flex items-center gap-2 flex-wrap">
+            <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+              {/* Zoom In / Out */}
               <div className="flex items-center bg-[#FAFAFA] rounded-xl border border-[#E4E4E7] p-0.5">
                 <button
                   type="button"
@@ -357,6 +384,29 @@ export default function OriginalWorkspace() {
                 </button>
               </div>
 
+              {/* Quick Rotate Buttons */}
+              <div className="flex items-center bg-[#FAFAFA] rounded-xl border border-[#E4E4E7] p-0.5">
+                <button
+                  type="button"
+                  onClick={() => setRotation((rotation - 90 + 360) % 360)}
+                  className="p-1.5 text-[#52525B] hover:text-[#18181B] hover:bg-[#FFFFFF] rounded-lg transition-colors"
+                  title="Rotate Left 90°"
+                  aria-label="Rotate Left 90°"
+                >
+                  <RotateCcw size={13} />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setRotation((rotation + 90) % 360)}
+                  className="p-1.5 text-[#52525B] hover:text-[#18181B] hover:bg-[#FFFFFF] rounded-lg transition-colors"
+                  title="Rotate Right 90°"
+                  aria-label="Rotate Right 90°"
+                >
+                  <RotateCw size={13} />
+                </button>
+              </div>
+
+              {/* Crop Button */}
               <button
                 type="button"
                 onClick={() => {
@@ -376,7 +426,8 @@ export default function OriginalWorkspace() {
                 <CropIcon size={13} />
                 <span>Crop</span>
               </button>
-              
+
+              {/* Remove BG Button */}
               <button
                 type="button"
                 onClick={handleRemoveBg}
@@ -384,7 +435,8 @@ export default function OriginalWorkspace() {
                 className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-[#F0FDF4] text-[#15803D] border border-[#BBF7D0] hover:bg-[#DCFCE7] rounded-xl transition-colors disabled:opacity-50"
               >
                 <Scissors size={13} />
-                <span>{isBgRemoving ? "Removing BG..." : "Remove BG"}</span>
+                <span className="hidden sm:inline">{isBgRemoving ? "Removing BG..." : "Remove BG"}</span>
+                <span className="sm:hidden">{isBgRemoving ? "..." : "BG"}</span>
               </button>
             </div>
           )}
@@ -461,7 +513,6 @@ export default function OriginalWorkspace() {
         }}
       >
         <div className="min-h-full min-w-full flex items-center justify-center p-4 sm:p-6">
-          
           {/* BG removing overlay */}
           {isBgRemoving && (
             <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-[#FFFFFF]/90 backdrop-blur-sm">
@@ -469,7 +520,12 @@ export default function OriginalWorkspace() {
                 <svg className="w-full h-full -rotate-90" viewBox="0 0 64 64">
                   <circle cx="32" cy="32" r="28" fill="none" className="stroke-[#E4E4E7]" strokeWidth="4" />
                   <circle
-                    cx="32" cy="32" r="28" fill="none" className="stroke-[#16A34A]" strokeWidth="4"
+                    cx="32"
+                    cy="32"
+                    r="28"
+                    fill="none"
+                    className="stroke-[#16A34A]"
+                    strokeWidth="4"
                     strokeDasharray={`${2 * Math.PI * 28}`}
                     strokeDashoffset={`${2 * Math.PI * 28 * (1 - bgProgress / 100)}`}
                     strokeLinecap="round"
@@ -530,7 +586,7 @@ export default function OriginalWorkspace() {
               </div>
             )
           ) : (
-            <div className="relative">
+            <div className="relative flex flex-col items-center select-none max-w-full">
               {isCropping ? (
                 <ReactCrop
                   crop={cropState}
@@ -555,64 +611,104 @@ export default function OriginalWorkspace() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     ref={imageRef}
-                    src={imageUrl!}
+                    src={displayUrl!}
                     alt="Crop preview"
                     style={{
                       maxHeight: `${55 * zoom}vh`,
                       maxWidth: "100%",
                       backgroundColor: backgroundColor === 'transparent' ? undefined : backgroundColor,
                     }}
-                    className="w-auto object-contain"
+                    className="w-auto object-contain block"
                   />
                 </ReactCrop>
               ) : (
-                <div className="relative">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={imageUrl!}
-                    alt="Original"
+                /* Main Image Preview Card with Live Rotation & White Strip */
+                <div
+                  className="relative flex flex-col items-center shadow-md rounded-xl overflow-hidden border border-[#E4E4E7] transition-all duration-200"
+                  style={{
+                    backgroundColor: backgroundColor === 'transparent' ? '#FFFFFF' : backgroundColor,
+                  }}
+                >
+                  {/* Rotatable Image Area */}
+                  <div
+                    className="relative flex items-center justify-center transition-transform duration-200"
                     style={{
-                      maxHeight: `${55 * zoom}vh`,
-                      maxWidth: "100%",
-                      backgroundColor: backgroundColor === 'transparent' ? undefined : backgroundColor,
+                      transform: `rotate(${rotation}deg)`,
                     }}
-                    className="w-auto object-contain shadow-sm rounded-lg border border-[#E4E4E7]"
-                    draggable={false}
-                  />
-
-                  {/* Text overlays */}
-                  {(textOverlays || []).map((overlay) => (
-                    <div
-                      key={overlay.id}
-                      onMouseDown={(e) => handleTextMouseDown(e, overlay.id)}
-                      onTouchStart={(e) => handleTextMouseDown(e, overlay.id)}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedTextId(overlay.id);
-                      }}
-                      className={`absolute cursor-move touch-none ${selectedTextId === overlay.id ? "outline outline-2 outline-[#16A34A] rounded" : ""}`}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={displayUrl!}
+                      alt="Original"
+                      decoding="async"
                       style={{
-                        left: `${overlay.x}%`,
-                        top: `${overlay.y}%`,
-                        transform: `translate(-50%, -50%) rotate(${overlay.rotation}deg)`,
-                        fontSize: `${overlay.fontSize * zoom}px`,
-                        color: overlay.color,
-                        fontWeight: overlay.fontWeight,
-                        opacity: overlay.opacity / 100,
-                        textAlign: overlay.align,
-                        fontFamily: overlay.fontFamily,
-                        userSelect: "none",
-                        zIndex: 10,
-                        whiteSpace: "nowrap",
-                        textShadow: "0 1px 2px rgba(0,0,0,0.3)",
+                        maxHeight: `${(isRotated90 ? 45 : 55) * zoom}vh`,
+                        maxWidth: "100%",
                       }}
-                    >
-                      {overlay.text}
+                      className="w-auto object-contain block"
+                      draggable={false}
+                    />
+
+                    {/* Text overlays placed relative to the photo */}
+                    {(textOverlays || []).map((overlay) => (
+                      <div
+                        key={overlay.id}
+                        ref={(el) => {
+                          if (el) overlayEls.current.set(overlay.id, el);
+                          else overlayEls.current.delete(overlay.id);
+                        }}
+                        onMouseDown={(e) => handleTextMouseDown(e, overlay.id)}
+                        onTouchStart={(e) => handleTextMouseDown(e, overlay.id)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedTextId(overlay.id);
+                        }}
+                        className={`absolute cursor-move touch-none ${
+                          selectedTextId === overlay.id ? "outline outline-2 outline-[#16A34A] rounded" : ""
+                        }`}
+                        style={{
+                          left: `${overlay.x}%`,
+                          top: `${overlay.y}%`,
+                          transform: `translate(-50%, -50%) rotate(${overlay.rotation}deg)`,
+                          fontSize: `${overlay.fontSize * zoom}px`,
+                          color: overlay.color,
+                          fontWeight: overlay.fontWeight,
+                          opacity: overlay.opacity / 100,
+                          textAlign: overlay.align,
+                          fontFamily: overlay.fontFamily,
+                          userSelect: "none",
+                          zIndex: 10,
+                          whiteSpace: "nowrap",
+                          textShadow: "0 1px 2px rgba(0,0,0,0.3)",
+                        }}
+                      >
+                        {overlay.text}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Candidate Name & DOB White Strip at Bottom (Exam Requirement) */}
+                  {strip?.enabled && (
+                    <div className="w-full bg-[#FFFFFF] border-t-2 border-[#D4D4D8] py-2 px-3 text-center flex flex-col items-center justify-center select-none z-10">
+                      {stripLines.length > 0 ? (
+                        stripLines.map((line, i) => (
+                          <div
+                            key={i}
+                            className="text-xs sm:text-sm font-bold text-[#000000] tracking-wider uppercase leading-tight font-sans"
+                          >
+                            {line}
+                          </div>
+                        ))
+                      ) : (
+                        <div className="text-[11px] text-[#A1A1AA] italic">
+                          Candidate Name &amp; Date will appear here
+                        </div>
+                      )}
                     </div>
-                  ))}
+                  )}
 
                   {selectedTextId && (
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-[#18181B]/80 text-white text-[11px] font-medium rounded-lg pointer-events-none whitespace-nowrap">
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-[#18181B]/80 text-white text-[11px] font-medium rounded-lg pointer-events-none whitespace-nowrap z-20">
                       <Type size={11} className="inline mr-1" />
                       Drag text to position
                     </div>

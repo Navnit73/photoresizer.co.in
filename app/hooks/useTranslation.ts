@@ -1,5 +1,4 @@
 'use client';
-import { usePathname } from 'next/navigation';
 
 const translations = {
   en: {
@@ -34,8 +33,12 @@ const translations = {
     dragDropOrTap: 'Drag & drop or tap to browse',
     dropIt: 'Drop it!',
     // Editor UI keys
-    exportTab: 'Export',
-    textTab: 'Text',
+    exportTab: 'Resize & Format',
+    stripTab: 'Name & DOB Strip',
+    textTab: 'Text & Signature',
+    candidateName: 'Candidate Name',
+    dateLabelType: 'Date Prefix',
+    stripHeight: 'Strip Height',
     width: 'Width',
     height: 'Height',
     downloadImage: 'Download Image',
