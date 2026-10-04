@@ -4,9 +4,9 @@ import React, { useCallback, useState, useRef, useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import ReactCrop, { Crop, PixelCrop } from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
-import imageCompression from "browser-image-compression";
 import { useEditor, AspectRatio } from "./EditorContext";
 import { useTranslation } from "@/app/hooks/useTranslation";
+import { useIsMounted } from "@/app/hooks/useIsMounted";
 import { useTheme } from "next-themes";
 import {
   UploadCloud,
@@ -58,17 +58,13 @@ export default function OriginalWorkspace() {
 
   const { t } = useTranslation();
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
+  const mounted = useIsMounted();
 
   const [isCropping, setIsCropping] = useState(false);
   const [zoom, setZoom] = useState(1);
   const [cropState, setCropState] = useState<Crop>();
   const [completedCrop, setCompletedCrop] = useState<PixelCrop>();
+  const [cropPixelDimensions, setCropPixelDimensions] = useState<{ width: number; height: number } | null>(null);
   const [bgProgress, setBgProgress] = useState(0);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
@@ -77,13 +73,9 @@ export default function OriginalWorkspace() {
   const draggingTextId = useRef<string | null>(null);
   const dragOffset = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
-  // BG removal fake progress
+  // BG removal progress simulation
   useEffect(() => {
-    if (!isBgRemoving) {
-      setBgProgress(0);
-      return;
-    }
-    setBgProgress(5);
+    if (!isBgRemoving) return;
     const interval = setInterval(() => {
       setBgProgress((prev) => {
         if (prev >= 90) {
@@ -93,77 +85,41 @@ export default function OriginalWorkspace() {
         return prev + Math.random() * 8;
       });
     }, 600);
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      setBgProgress(0);
+    };
   }, [isBgRemoving]);
-
-  const animFrameRef = useRef<number | null>(null);
 
   const onDrop = useCallback(
     (acceptedFiles: File[]) => {
       if (acceptedFiles?.length > 0) {
         const file = acceptedFiles[0];
-        
         setIsUploading(true);
-        setUploadProgress(10);
+        setUploadProgress(40);
 
-        const processLoadedUrl = (finalFile: File, url: string) => {
-          const img = new Image();
-          img.onload = () => {
-            setImageFile(finalFile, url, img.width, img.height);
-            setIsCropping(false);
-            setCropState(undefined);
-            setCompletedCrop(undefined);
-            setIsUploading(false);
-            setUploadProgress(0);
-          };
-          img.onerror = () => {
-            setIsUploading(false);
-            setUploadProgress(0);
-          };
-          img.decoding = "async";
-          img.src = url;
-        };
-
-        // For files < 2MB, load directly without running browser-image-compression overhead
-        if (file.size < 2 * 1024 * 1024) {
+        const url = URL.createObjectURL(file);
+        const img = new Image();
+        img.onload = () => {
+          setImageFile(file, url, img.naturalWidth || img.width, img.naturalHeight || img.height);
+          setIsCropping(false);
+          setCropState(undefined);
+          setCompletedCrop(undefined);
+          setCropPixelDimensions(null);
+          setIsUploading(false);
           setUploadProgress(100);
-          const url = URL.createObjectURL(file);
-          processLoadedUrl(file, url);
-          return;
-        }
-
-        // For larger files, yield main thread before compression
-        setTimeout(() => {
-          imageCompression(file, {
-            maxSizeMB: 5,
-            maxWidthOrHeight: 4096,
-            useWebWorker: true,
-          })
-            .then((res) => {
-              setUploadProgress(100);
-              const finalFile = res || file;
-              const url = URL.createObjectURL(finalFile);
-              processLoadedUrl(finalFile, url);
-            })
-            .catch((err) => {
-              console.error("Compression error:", err);
-              const url = URL.createObjectURL(file);
-              processLoadedUrl(file, url);
-            });
-        }, 10);
+        };
+        img.onerror = () => {
+          setIsUploading(false);
+          setUploadProgress(0);
+          URL.revokeObjectURL(url);
+        };
+        img.decoding = "async";
+        img.src = url;
       }
     },
     [setImageFile],
   );
-
-  useEffect(() => {
-    // Check if there are any files dropped from HeroUploader before we mounted
-    const w = window as any;
-    if (w.__HERO_DROPPED_FILES__) {
-      onDrop(w.__HERO_DROPPED_FILES__);
-      delete w.__HERO_DROPPED_FILES__;
-    }
-  }, [onDrop]);
 
   useEffect(() => {
     const handleHeroDrop = (e: Event) => {
@@ -629,7 +585,19 @@ export default function OriginalWorkspace() {
                 <ReactCrop
                   crop={cropState}
                   onChange={(pixelCrop) => setCropState(pixelCrop)}
-                  onComplete={(c) => setCompletedCrop(c)}
+                  onComplete={(c) => {
+                    setCompletedCrop(c);
+                    if (imageRef.current && c.width > 0 && c.height > 0) {
+                      const scaleX = imageRef.current.naturalWidth / imageRef.current.width;
+                      const scaleY = imageRef.current.naturalHeight / imageRef.current.height;
+                      setCropPixelDimensions({
+                        width: Math.round(c.width * scaleX),
+                        height: Math.round(c.height * scaleY),
+                      });
+                    } else {
+                      setCropPixelDimensions(null);
+                    }
+                  }}
                   aspect={currentRatioValue}
                   ruleOfThirds={true}
                   className="transition-all duration-200"
@@ -704,23 +672,11 @@ export default function OriginalWorkspace() {
 
               {/* Live crop dimensions */}
               {isCropping &&
-                completedCrop &&
-                completedCrop.width > 0 &&
-                completedCrop.height > 0 &&
-                imageRef.current && (
+                cropPixelDimensions &&
+                cropPixelDimensions.width > 0 &&
+                cropPixelDimensions.height > 0 && (
                   <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-black/70 text-white text-xs font-bold rounded-full pointer-events-none backdrop-blur-sm">
-                    {Math.round(
-                      completedCrop.width *
-                        (imageRef.current.naturalWidth /
-                          imageRef.current.width),
-                    )}{" "}
-                    ×{" "}
-                    {Math.round(
-                      completedCrop.height *
-                        (imageRef.current.naturalHeight /
-                          imageRef.current.height),
-                    )}{" "}
-                    px
+                    {cropPixelDimensions.width} × {cropPixelDimensions.height} px
                   </div>
                 )}
             </div>

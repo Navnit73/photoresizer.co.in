@@ -34,5 +34,14 @@ export default function EnglishSeoPage({ params }: { params: Params }) {
     notFound();
   }
 
-  return <SeoPageRenderer page={page} lang="en" />;
+  const relatedPages = enPages
+    .filter(p => p.showTool === page.showTool && p.slug !== page.slug)
+    .slice(0, 8)
+    .map(p => ({
+      slug: p.slug,
+      h1: p.h1,
+      metaDescription: p.metaDescription,
+    }));
+
+  return <SeoPageRenderer page={page} lang="en" relatedPages={relatedPages} />;
 }

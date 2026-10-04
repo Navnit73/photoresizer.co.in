@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error', 'warn'] } : false,
   },
+  turbopack: {
+    root: __dirname,
+  },
   // Optimize bundle size by modularizing heavy dependencies
   modularizeImports: {
     'lucide-react': {

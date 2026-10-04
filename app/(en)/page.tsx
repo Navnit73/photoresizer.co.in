@@ -3,22 +3,16 @@ import Link from "next/link";
 import HeroUploader from "./components/HeroUploader";
 import { Metadata } from "next";
 import {
-  FileCheck,
   ShieldCheck,
-  Zap,
   Sliders,
   Maximize,
-  Type,
   Sparkles,
   ArrowRight,
   CheckCircle,
   AlertTriangle,
   FileSignature,
-  Fingerprint,
   Calendar,
-  Layers,
   Award,
-  HelpCircle,
 } from "lucide-react";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';

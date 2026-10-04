@@ -3,6 +3,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { X } from 'lucide-react';
 
+declare global {
+  interface Window {
+    adsbygoogle?: unknown[];
+  }
+}
+
 type AdBannerProps = {
   dataAdSlot?: string;
   dataAdFormat?: string;
@@ -58,7 +64,6 @@ export function AdBanner({
       isPushed.current = true;
       const pushAd = () => {
         try {
-          // @ts-ignore
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         } catch (error) {
           console.error('AdSense Error:', error);
@@ -66,8 +71,11 @@ export function AdBanner({
       };
 
       if (typeof window !== 'undefined') {
-        const idleCallback = (window as any).requestIdleCallback || ((cb: Function) => setTimeout(cb, 200));
-        idleCallback(pushAd);
+        if (typeof window.requestIdleCallback === 'function') {
+          window.requestIdleCallback(pushAd);
+        } else {
+          setTimeout(pushAd, 200);
+        }
       } else {
         setTimeout(pushAd, 200);
       }
@@ -129,8 +137,8 @@ export function AdBanner({
             style={{ display: 'block', width: '100%' }}
             data-ad-client="ca-pub-2980455227951378"
             data-ad-slot={slotId}
-            data-ad-format="auto"
-            data-full-width-responsive="true"
+            data-ad-format={dataAdFormat}
+            data-full-width-responsive={dataFullWidthResponsive ? "true" : "false"}
           />
         )}
       </div>
@@ -176,10 +184,8 @@ export function AdBanner({
           style={type === 'fixed' ? { display: 'inline-block', width: '728px', height: '90px' } : { display: 'block', width: '100%', height: '90px' }}
           data-ad-client="ca-pub-2980455227951378"
           data-ad-slot={slotId}
-          {...(type === 'responsive' ? {
-            'data-ad-format': 'horizontal',
-            'data-full-width-responsive': 'false'
-          } : {})}
+          data-ad-format={dataAdFormat}
+          data-full-width-responsive={dataFullWidthResponsive ? "true" : "false"}
         />
       )}
     </div>

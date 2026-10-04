@@ -6,6 +6,22 @@ import { useBgRemoval } from './BgRemovalContext';
 import { downloadProcessedImage } from './utils/bgRemovalUtils';
 import { UploadCloud, CheckCircle, XCircle, Download, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 
+const CircularProgress = ({ progress }: { progress: number }) => {
+  const r = 18;
+  const circ = 2 * Math.PI * r;
+  const offset = circ - (progress / 100) * circ;
+  return (
+    <div className="flex flex-col items-center justify-center gap-1">
+      <svg className="w-10 h-10 -rotate-90" viewBox="0 0 44 44">
+        <circle cx="22" cy="22" r={r} fill="transparent" stroke="rgba(255,255,255,0.2)" strokeWidth="3.5" />
+        <circle cx="22" cy="22" r={r} fill="transparent" stroke="#65a30d" strokeWidth="3.5"
+          strokeDasharray={circ} strokeDashoffset={offset} strokeLinecap="round" className="transition-all duration-200" />
+      </svg>
+      <span className="text-[9px] font-black text-white tracking-wider">{Math.round(progress)}%</span>
+    </div>
+  );
+};
+
 export default function BgRemoverWorkspace() {
   const { jobs, addJobs, selectedJobId, setSelectedJobId, backgroundColor, exportFormat } = useBgRemoval();
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -46,22 +62,6 @@ export default function BgRemoverWorkspace() {
   const selectedIndex = jobs.findIndex(j => j.id === selectedJobId);
   const goPrev = () => { if (selectedIndex > 0) setSelectedJobId(jobs[selectedIndex - 1].id); };
   const goNext = () => { if (selectedIndex < jobs.length - 1) setSelectedJobId(jobs[selectedIndex + 1].id); };
-
-  const CircularProgress = ({ progress }: { progress: number }) => {
-    const r = 18;
-    const circ = 2 * Math.PI * r;
-    const offset = circ - (progress / 100) * circ;
-    return (
-      <div className="flex flex-col items-center justify-center gap-1">
-        <svg className="w-10 h-10 -rotate-90" viewBox="0 0 44 44">
-          <circle cx="22" cy="22" r={r} fill="transparent" stroke="rgba(255,255,255,0.2)" strokeWidth="3.5" />
-          <circle cx="22" cy="22" r={r} fill="transparent" stroke="#65a30d" strokeWidth="3.5"
-            strokeDasharray={circ} strokeDashoffset={offset} strokeLinecap="round" className="transition-all duration-200" />
-        </svg>
-        <span className="text-[9px] font-black text-white tracking-wider">{Math.round(progress)}%</span>
-      </div>
-    );
-  };
 
   const getBgStyle = (): React.CSSProperties => {
     if (backgroundColor !== 'transparent') return { backgroundColor };

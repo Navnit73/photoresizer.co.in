@@ -3,9 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { AdBanner } from "../../components/AdBanner";
-import { Shield, Sparkles, RefreshCw, Wand2, Scissors, Image as ImageIcon, ArrowRight } from "lucide-react";
-import { dePages } from "../../content/de-pages";
+import { Shield, Sparkles, RefreshCw, Wand2, Scissors, ArrowRight } from "lucide-react";
+import { deNavPages as dePages } from "../../lib/navigation-data";
 
 const PhotoEditor = dynamic(() => import("../components/editor/PhotoEditor"), {
   ssr: false,

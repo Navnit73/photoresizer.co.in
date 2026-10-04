@@ -11,23 +11,10 @@ import { BgJob } from '../types';
  *   'isnet'        — full precision, largest, rarely needed
  *
  * We use 'isnet_fp16' (the library default) for best quality.
- * Users who want speed-over-quality can be offered 'isnet_quint8'.
  */
 const BG_REMOVAL_MODEL: Config['model'] = 'isnet_fp16';
 
-/**
- * We serialize processing (CONCURRENCY = 1) because the ONNX runtime
- * loads one WASM/GPU context and running two removeBackground() calls
- * concurrently on the same context causes them to block each other anyway,
- * producing no real speed gain while doubling memory pressure and often
- * crashing on low-RAM mobile devices. True parallelism would require
- * spawning separate Web Workers, which is outside this hook's scope.
- */
 const CONCURRENCY = 1;
-
-// Tracks jobs that have been claimed by a worker to prevent double-processing
-// across async gaps (Set is mutation-safe for a ref).
-const claimedIds = new Set<string>();
 
 export function useBgRemovalManager() {
   const [jobs, setJobs] = useState<BgJob[]>([]);
@@ -40,6 +27,7 @@ export function useBgRemovalManager() {
 
   const processingRef = useRef(false);
   const cancelRef = useRef(false);
+  const claimedIdsRef = useRef<Set<string>>(new Set());
 
   // Keep ref in sync so async callbacks always read the latest jobs
   useEffect(() => {
@@ -74,10 +62,10 @@ export function useBgRemovalManager() {
       }
       return updated;
     });
-  }, []); // no deps — intentionally stable
+  }, []);
 
   const removeJob = useCallback((id: string) => {
-    claimedIds.delete(id);
+    claimedIdsRef.current.delete(id);
     setJobs(prev => {
       const job = prev.find(j => j.id === id);
       if (job) {
@@ -92,7 +80,7 @@ export function useBgRemovalManager() {
   const clearAll = useCallback(() => {
     cancelRef.current = true;
     processingRef.current = false;
-    claimedIds.clear();
+    claimedIdsRef.current.clear();
     setJobs(prev => {
       prev.forEach(job => {
         URL.revokeObjectURL(job.originalUrl);
@@ -106,7 +94,7 @@ export function useBgRemovalManager() {
 
   const cancelQueue = useCallback(() => {
     cancelRef.current = true;
-    claimedIds.clear();
+    claimedIdsRef.current.clear();
     setJobs(prev =>
       prev.map(j =>
         j.status === 'processing' || j.status === 'queued'
@@ -125,10 +113,8 @@ export function useBgRemovalManager() {
 
     patchJob(jobId, { status: 'processing', progress: 5 });
 
-    // Smooth fake-progress animation while ONNX inference runs
     let fakeProgress = 5;
     const progressTimer = setInterval(() => {
-      // Slow down as we approach 90 to avoid "stuck at 90%" feeling
       const step = fakeProgress < 60 ? 4 + Math.random() * 5 : 1 + Math.random() * 2;
       fakeProgress = Math.min(fakeProgress + step, 90);
       setJobs(prev =>
@@ -141,35 +127,11 @@ export function useBgRemovalManager() {
     }, 300);
 
     try {
-      /**
-       * Config reference (from @imgly/background-removal):
-       *
-       *   model:  'isnet' | 'isnet_fp16' | 'isnet_quint8'
-       *           Default = 'isnet_fp16'. Do NOT pass 'small' or 'medium' —
-       *           those are alias strings from the node package only and will
-       *           silently fall back or error in the browser package.
-       *
-       *   device: 'cpu' | 'gpu'
-       *           'gpu' uses WebGPU when available (much faster on supported
-       *           browsers); falls back to CPU automatically.
-       *
-       *   output.format: must be 'image/png' for transparency support.
-       *                  We always export PNG here; the final format conversion
-       *                  (webp etc.) is handled in bgRemovalUtils at download time.
-       *
-       *   output.quality: 0–1, applies to lossy formats only (jpeg/webp).
-       *                   For PNG (lossless) this has no effect.
-       *
-       *   output.type: 'foreground' keeps the subject, removes bg.
-       *
-       *   proxyToWorker: true  — runs inference in a Web Worker so the main
-       *                          thread (and UI) stays responsive.
-       */
       const config: Config = {
         publicPath: 'https://staticimgly.com/@imgly/background-removal-data/1.7.0/dist/',
         model: BG_REMOVAL_MODEL,
         output: {
-          format: 'image/png', // always PNG internally; conversion at download time
+          format: 'image/png',
           quality: 1.0,
         },
         proxyToWorker: true,
@@ -180,7 +142,6 @@ export function useBgRemovalManager() {
       clearInterval(progressTimer);
 
       if (cancelRef.current) {
-        URL.revokeObjectURL(URL.createObjectURL(blob)); // cleanup unused blob
         return;
       }
 
@@ -192,8 +153,6 @@ export function useBgRemovalManager() {
         )
       );
 
-      // Auto-advance preview to the just-completed image if the currently
-      // selected image is still queued/processing (i.e. not yet interesting)
       setSelectedJobId(prev => {
         const sel = jobsRef.current.find(j => j.id === prev);
         if (!sel || sel.status === 'queued' || sel.status === 'processing') {
@@ -213,7 +172,7 @@ export function useBgRemovalManager() {
         )
       );
     } finally {
-      claimedIds.delete(jobId);
+      claimedIdsRef.current.delete(jobId);
     }
   }, []);
 
@@ -222,27 +181,14 @@ export function useBgRemovalManager() {
     processingRef.current = true;
     setIsProcessingQueue(true);
 
-    /**
-     * Single worker loop. We intentionally keep CONCURRENCY = 1 because:
-     * 1. The ONNX/WASM runtime is single-context — two concurrent calls
-     *    serialize internally anyway, wasting memory.
-     * 2. On mobile, running two large WASM heap allocations simultaneously
-     *    frequently triggers OOM crashes.
-     *
-     * To add real concurrency in the future, spawn N Web Workers each with
-     * their own removeBackground import (separate WASM context).
-     */
     const runWorker = async () => {
       while (!cancelRef.current) {
-        // Atomically claim the next unclaimed queued job
         const nextJob = jobsRef.current.find(
-          j => j.status === 'queued' && !claimedIds.has(j.id)
+          j => j.status === 'queued' && !claimedIdsRef.current.has(j.id)
         );
         if (!nextJob) break;
 
-        // Claim before any await to prevent double-pickup
-        claimedIds.add(nextJob.id);
-
+        claimedIdsRef.current.add(nextJob.id);
         await processJob(nextJob.id, nextJob.originalUrl);
       }
     };
@@ -258,14 +204,12 @@ export function useBgRemovalManager() {
 
   useEffect(() => {
     const hasUnclaimed = jobs.some(
-      j => j.status === 'queued' && !claimedIds.has(j.id)
+      j => j.status === 'queued' && !claimedIdsRef.current.has(j.id)
     );
     if (hasUnclaimed && !processingRef.current && !cancelRef.current) {
       processQueue();
     }
-  // Re-check whenever the job list changes (add, status flip, cancel)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [jobs]);
+  }, [jobs, processQueue]);
 
   // ─── Unmount Cleanup ────────────────────────────────────────────────────────
 
@@ -277,8 +221,6 @@ export function useBgRemovalManager() {
       });
     };
   }, []);
-
-  // ─── Return ─────────────────────────────────────────────────────────────────
 
   return {
     jobs,

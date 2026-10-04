@@ -65,7 +65,7 @@ export default function FrenchLayout({ children }: { children: React.ReactNode }
             <div className="flex flex-col gap-3">
               <h3 className="font-semibold text-base text-[#222222] dark:text-white">Outils Populaires</h3>
               <Link href="/fr/redimensionner-photo" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Redimensionner Photo</Link>
-              <Link href="/fr/createur-photo-identite" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Photo d'Identité</Link>
+              <Link href="/fr/createur-photo-identite" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Photo d&apos;Identité</Link>
               <Link href="/fr/comment-utiliser" className="text-[#222222] dark:text-slate-300 hover:underline transition-all">Comment Utiliser</Link>
             </div>
 

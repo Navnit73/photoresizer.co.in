@@ -27,8 +27,18 @@ export function ThirdPartyScripts() {
 
       // 2. Inject Clarity
       if (!document.querySelector('script[src*="clarity.ms"]')) {
-        (function(c: any, l: Document, a: string, r: string, i: string) {
-          c[a] = c[a] || function() { (c[a].q = c[a].q || []).push(arguments); };
+        (function(c: Window & { [key: string]: unknown }, l: Document, a: string, r: string, i: string) {
+          const clarityQueue = c[a] as { q?: unknown[] } | undefined;
+          const fn = (...args: unknown[]) => {
+            const current = (c[a] as { q?: unknown[] });
+            if (current) {
+              current.q = current.q || [];
+              current.q.push(args);
+            }
+          };
+          if (!clarityQueue) {
+            (c as Record<string, unknown>)[a] = fn;
+          }
           const t = l.createElement(r) as HTMLScriptElement;
           t.async = true;
           t.src = "https://www.clarity.ms/tag/" + i;
@@ -38,7 +48,7 @@ export function ThirdPartyScripts() {
           } else {
             document.head.appendChild(t);
           }
-        })(window, document, "clarity", "script", "uu67di7l76");
+        })(window as unknown as Window & { [key: string]: unknown }, document, "clarity", "script", "uu67di7l76");
       }
     };
 

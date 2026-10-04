@@ -3,9 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { AdBanner } from "../../components/AdBanner";
-import { Shield, Sparkles, RefreshCw, Wand2, Scissors, Image as ImageIcon, ArrowRight } from "lucide-react";
-import { frPages } from "../../content/fr-pages";
+import { Shield, Sparkles, RefreshCw, Wand2, Scissors, ArrowRight } from "lucide-react";
+import { frNavPages as frPages } from "../../lib/navigation-data";
 
 const PhotoEditor = dynamic(() => import("../components/editor/PhotoEditor"), {
   ssr: false,
@@ -18,7 +17,7 @@ const toolPages = frPages.filter(
 
 // Maps each tool's slug to the icon that best represents its function.
 function getToolIcon(slug?: string) {
-  if (!slug) return ImageIcon;
+  if (!slug) return RefreshCw;
   if (slug.includes("identite") || slug.includes("permis") || slug.includes("passeport")) {
     return Scissors;
   }
@@ -31,7 +30,7 @@ function getToolIcon(slug?: string) {
   if (slug.includes("redimensionner")) {
     return RefreshCw;
   }
-  return ImageIcon;
+  return RefreshCw;
 }
 
 const FAQS = [
@@ -136,7 +135,7 @@ export default function FrenchHomePage() {
                   </p>
                 </div>
                 <div className="mt-4 text-xs font-bold text-[#ff385c] flex items-center gap-1.5">
-                  <span>Ouvrir l'outil</span>
+                  <span>Ouvrir l&apos;outil</span>
                   <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
@@ -150,18 +149,18 @@ export default function FrenchHomePage() {
         <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h2:text-xl prose-h3:text-base prose-p:text-sm prose-p:leading-relaxed prose-p:text-[#484848] dark:prose-p:text-slate-400 prose-li:text-sm prose-li:text-[#484848] dark:prose-li:text-slate-400">
           <h2 className="text-[#222222] dark:text-white">Votre éditeur de photos en ligne gratuit et privé</h2>
           <p>
-            Que vous souhaitiez <strong>redimensionner une photo</strong>, créer une <strong>photo d'identité</strong> conforme pour un passeport ou un visa, ou réduire la taille d'un fichier image avant de l'envoyer par e-mail, notre éditeur de photos rassemble toutes les fonctionnalités essentielles dans un outil simple, rapide et entièrement gratuit.
+            Que vous souhaitiez <strong>redimensionner une photo</strong>, créer une <strong>photo d&apos;identité</strong> conforme pour un passeport ou un visa, ou réduire la taille d&apos;un fichier image avant de l&apos;envoyer par e-mail, notre éditeur de photos rassemble toutes les fonctionnalités essentielles dans un outil simple, rapide et entièrement gratuit.
           </p>
 
           <h3 className="text-[#222222] dark:text-white">Pourquoi privilégier le traitement local dans le navigateur ?</h3>
           <p>
-            Contrairement aux convertisseurs d'images traditionnels qui envoient vos fichiers sur des serveurs distants, notre application effectue 100% des calculs localement sur votre ordinateur ou votre smartphone. Grâce aux technologies HTML5 et WebAssembly, vos clichés personnels restent strictly privés et conformes aux exigences du RGPD.
+            Contrairement aux convertisseurs d&apos;images traditionnels qui envoient vos fichiers sur des serveurs distants, notre application effectue 100% des calculs localement sur votre ordinateur ou votre smartphone. Grâce aux technologies HTML5 et WebAssembly, vos clichés personnels restent strictly privés et conformes aux exigences du RGPD.
           </p>
 
           <h3 className="text-[#222222] dark:text-white">Nos fonctionnalités principales</h3>
           <ul>
-            <li><strong>Redimensionnement d'image :</strong> Ajustez les dimensions en pixels avec maintien du ratio d'aspect.</li>
-            <li><strong>Photos d'identité :</strong> Recadrez vos photos aux formats officiels 35x45 mm.</li>
+            <li><strong>Redimensionnement d&apos;image :</strong> Ajustez les dimensions en pixels avec maintien du ratio d&apos;aspect.</li>
+            <li><strong>Photos d&apos;identité :</strong> Recadrez vos photos aux formats officiels 35x45 mm.</li>
             <li><strong>Conversion de format :</strong> Basculez instantanément entre les formats JPG, PNG et WebP.</li>
           </ul>
         </div>

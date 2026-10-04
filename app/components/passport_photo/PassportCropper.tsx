@@ -1,10 +1,9 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Cropper from 'react-easy-crop';
-import { ArrowLeft, ArrowRight, ArrowUp, ArrowDown, Check, Image as ImageIcon, Info, Loader2, Wand2, ZoomIn, ZoomOut, Eraser } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUp, ArrowDown, Check, Info, Loader2, ZoomIn, ZoomOut, Eraser } from 'lucide-react';
 import { useTranslation } from '@/app/hooks/useTranslation';
-import imageCompression from 'browser-image-compression';
 
 interface PassportCropperProps {
   imageSrc: string;
@@ -50,12 +49,6 @@ export const PASSPORT_PRESETS = {
 } as const;
 
 export type Region = keyof typeof PASSPORT_PRESETS;
-
-const BG_COLORS = [
-  { label: 'White', value: '#ffffff' },
-  { label: 'Light Gray', value: '#f1f5f9' },
-  { label: 'Slate', value: '#cbd5e1' },
-];
 
 export default function PassportCropper({ imageSrc, onComplete, onCancel }: PassportCropperProps) {
   const { t } = useTranslation();
@@ -173,6 +166,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
           }
           if (blob.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
             try {
+              const imageCompression = (await import('browser-image-compression')).default;
               const file = new File([blob], 'passport_photo.jpg', { type: 'image/jpeg' });
               const options = {
                 maxSizeMB: MAX_FILE_SIZE_MB,
@@ -181,7 +175,7 @@ export default function PassportCropper({ imageSrc, onComplete, onCancel }: Pass
               };
               const compressedFile = await imageCompression(file, options);
               resolve(compressedFile);
-            } catch (error) {
+            } catch {
               resolve(new File([blob], 'passport_photo.jpg', { type: 'image/jpeg' }));
             }
           } else {

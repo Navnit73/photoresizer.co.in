@@ -1,20 +1,17 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useEditor } from './EditorContext';
 import { RefreshCcw, Sun, Moon, Undo2, Redo2 } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useTranslation } from '@/app/hooks/useTranslation';
+import { useIsMounted } from '@/app/hooks/useIsMounted';
 
 export default function EditorHeader() {
   const { reset, imageFile, undo, redo, canUndo, canRedo, fileName, setFileName } = useEditor();
   const { theme, setTheme } = useTheme();
   const { t } = useTranslation();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useIsMounted();
 
   return (
     <header className="flex items-center justify-between w-full px-4 sm:px-6 h-14 transition-colors duration-300 font-['Airbnb_Cereal_VF',Circular,sans-serif]">

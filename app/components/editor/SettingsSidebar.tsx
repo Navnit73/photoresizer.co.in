@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { useEditor, ImageFormat, TextOverlay } from './EditorContext';
 import { useTranslation } from '@/app/hooks/useTranslation';
 import {
-  Maximize2,
   SlidersHorizontal,
   RotateCcw,
   RotateCw,

@@ -1,10 +1,5 @@
 import { Metadata } from 'next';
 import { SeoPage, Language, HreflangMap } from './types/seo';
-import { enPages } from '../content/en-pages';
-import { dePages } from '../content/de-pages';
-import { frPages } from '../content/fr-pages';
-import { esPages } from '../content/es-pages';
-import { ptPages } from '../content/pt-pages';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
 

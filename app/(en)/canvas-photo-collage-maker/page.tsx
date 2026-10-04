@@ -35,8 +35,6 @@ export function generateMetadata(): Metadata {
 }
 
 export default function CanvasPhotoCollageMakerPage() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
-  
   // Custom schema generation for the tools
   const toolsSchema = [
     {

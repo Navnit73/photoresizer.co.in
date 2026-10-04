@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { ptPages } from '../../content/pt-pages';
+import { ptNavPages as ptPages } from '../../lib/navigation-data';
 
 export function PtHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

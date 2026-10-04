@@ -9,12 +9,10 @@ import dynamic from "next/dynamic";
 import { useDropzone } from "react-dropzone";
 import {
   UploadCloud,
-  Shield,
   Zap,
   Sparkles,
   CheckCircle2,
   Lock,
-  ArrowRight,
   FileCheck2,
 } from "lucide-react";
 
@@ -55,7 +53,6 @@ export default function HeroUploader() {
   const onDrop = useCallback((acceptedFiles: File[]) => {
     if (acceptedFiles?.length > 0) {
       loadPhotoEditor();
-      (window as any).__HERO_DROPPED_FILES__ = acceptedFiles;
       setHasUploadedImage(true);
       const event = new CustomEvent("hero-file-drop", {
         detail: { files: acceptedFiles },

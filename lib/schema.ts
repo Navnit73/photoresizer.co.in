@@ -58,6 +58,7 @@ export function generateWebPageSchema(page: SeoPage, lang: Language) {
     '@type': type,
     name: page.metaTitle,
     description: page.metaDescription,
+    inLanguage: lang,
     publisher: {
       '@type': 'Organization',
       name: orgName,

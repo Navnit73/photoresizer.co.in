@@ -8,12 +8,16 @@ export function ClientErrorSuppressor() {
       // 1. Safely wrap window.performance.measure to swallow negative timestamp errors
       if (window.performance && typeof window.performance.measure === "function") {
         const originalMeasure = window.performance.measure.bind(window.performance);
-        window.performance.measure = function (measureName: string, startOrMeasureOptions?: any, endMark?: string) {
+        window.performance.measure = function (
+          measureName: string,
+          startOrMeasureOptions?: string | PerformanceMeasureOptions,
+          endMark?: string
+        ): PerformanceMeasure {
           try {
-            return originalMeasure(measureName, startOrMeasureOptions, endMark);
+            return originalMeasure(measureName, startOrMeasureOptions as string, endMark);
           } catch {
-            // Suppress Performance.measure negative timestamp / NotFound DOMExceptions
-            return null as any;
+            // Safe fallback for Performance.measure negative timestamp / NotFound DOMExceptions
+            return null as unknown as PerformanceMeasure;
           }
         };
       }

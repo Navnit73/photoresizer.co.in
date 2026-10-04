@@ -2,8 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { AdBanner } from '../../components/AdBanner';
-import { ptPages } from '../../content/pt-pages';
+import { ptNavPages as ptPages } from '../../lib/navigation-data';
 
 export default function PortugueseHomePage() {
   // Wishlist state for interactive heart buttons

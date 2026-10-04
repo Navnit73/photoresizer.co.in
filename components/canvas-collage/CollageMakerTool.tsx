@@ -180,21 +180,21 @@ export default function CollageMakerTool() {
   async function getFilesFromDataTransfer(dt: DataTransfer): Promise<File[]> {
     const items = dt.items;
     if (!items || items.length === 0) return Array.from(dt.files || []);
-    const entries: any[] = [];
+    const entries: FileSystemEntry[] = [];
     for (let i = 0; i < items.length; i++) {
-      const entry = (items[i] as any).webkitGetAsEntry?.();
+      const entry = (items[i] as DataTransferItem & { webkitGetAsEntry?: () => FileSystemEntry | null }).webkitGetAsEntry?.();
       if (entry) entries.push(entry);
     }
     if (entries.length === 0) return Array.from(dt.files || []);
     const files: File[] = [];
-    async function traverse(entry: any): Promise<void> {
+    async function traverse(entry: FileSystemEntry): Promise<void> {
       if (entry.isFile) {
         await new Promise<void>((resolve) =>
-          entry.file((file: File) => { files.push(file); resolve(); })
+          (entry as FileSystemFileEntry).file((file: File) => { files.push(file); resolve(); })
         );
       } else if (entry.isDirectory) {
-        const reader = entry.createReader();
-        const readBatch = (): Promise<any[]> => new Promise((res) => reader.readEntries(res));
+        const reader = (entry as FileSystemDirectoryEntry).createReader();
+        const readBatch = (): Promise<FileSystemEntry[]> => new Promise((res) => reader.readEntries(res));
         let batch = await readBatch();
         while (batch.length > 0) {
           for (const e of batch) await traverse(e);
@@ -431,36 +431,42 @@ export default function CollageMakerTool() {
     if (!d) return;
     setLayers((prev) => prev.map((l) => l.id === d.id ? { ...l, x: d.origX + (e.clientX - d.startX), y: d.origY + (e.clientY - d.startY) } : l));
   }, []);
-  const handleLayerPointerUp = useCallback(() => {
-    dragLayerState.current = null;
-    window.removeEventListener('pointermove', handleLayerPointerMove);
-    window.removeEventListener('pointerup', handleLayerPointerUp);
-  }, [handleLayerPointerMove]);
-  const handleLayerPointerDown = (e: React.PointerEvent, layer: Layer) => {
-    e.stopPropagation();
-    setSelectedLayerId(layer.id);
-    setSelectedSlot(null);
-    dragLayerState.current = { id: layer.id, startX: e.clientX, startY: e.clientY, origX: layer.x, origY: layer.y };
-    window.addEventListener('pointermove', handleLayerPointerMove);
-    window.addEventListener('pointerup', handleLayerPointerUp);
-  };
 
-  // ---------- Layer resize (mouse + touch via Pointer Events) ----------
   const handleResizePointerMove = useCallback((e: PointerEvent) => {
     const r = resizeLayerState.current;
     if (!r) return;
     setLayers((prev) => prev.map((l) => l.id === r.id ? { ...l, width: Math.max(30, r.origW + (e.clientX - r.startX)), height: Math.max(30, r.origH + (e.clientY - r.startY)) } : l));
   }, []);
-  const handleResizePointerUp = useCallback(() => {
-    resizeLayerState.current = null;
-    window.removeEventListener('pointermove', handleResizePointerMove);
-    window.removeEventListener('pointerup', handleResizePointerUp);
-  }, [handleResizePointerMove]);
+
+  useEffect(() => {
+    const handleGlobalPointerMove = (e: PointerEvent) => {
+      if (dragLayerState.current) handleLayerPointerMove(e);
+      if (resizeLayerState.current) handleResizePointerMove(e);
+    };
+
+    const handleGlobalPointerUp = () => {
+      dragLayerState.current = null;
+      resizeLayerState.current = null;
+    };
+
+    window.addEventListener('pointermove', handleGlobalPointerMove);
+    window.addEventListener('pointerup', handleGlobalPointerUp);
+    return () => {
+      window.removeEventListener('pointermove', handleGlobalPointerMove);
+      window.removeEventListener('pointerup', handleGlobalPointerUp);
+    };
+  }, [handleLayerPointerMove, handleResizePointerMove]);
+
+  const handleLayerPointerDown = (e: React.PointerEvent, layer: Layer) => {
+    e.stopPropagation();
+    setSelectedLayerId(layer.id);
+    setSelectedSlot(null);
+    dragLayerState.current = { id: layer.id, startX: e.clientX, startY: e.clientY, origX: layer.x, origY: layer.y };
+  };
+
   const handleResizePointerDown = (e: React.PointerEvent, layer: Layer) => {
     e.stopPropagation();
     resizeLayerState.current = { id: layer.id, startX: e.clientX, startY: e.clientY, origW: layer.width, origH: layer.height };
-    window.addEventListener('pointermove', handleResizePointerMove);
-    window.addEventListener('pointerup', handleResizePointerUp);
   };
 
   // ---------- CANVAS-BASED EXPORT (fixes blurry/garbage downloads) ----------

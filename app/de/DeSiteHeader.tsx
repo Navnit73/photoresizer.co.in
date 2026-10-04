@@ -3,19 +3,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import { Sun, Moon, Menu, X, ChevronDown, RefreshCw, Wand2, Scissors, Sparkles, Image as ImageIcon, ShieldCheck } from 'lucide-react';
-import { dePages } from '../../content/de-pages';
+import { Sun, Moon, Menu, X, ChevronDown, RefreshCw, Wand2, Scissors, Sparkles } from 'lucide-react';
+import { deNavPages as dePages } from '../../lib/navigation-data';
+import { useIsMounted } from '../hooks/useIsMounted';
 
 export default function DeSiteHeader() {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const mounted = useIsMounted();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   // Close dropdown on click outside
   useEffect(() => {

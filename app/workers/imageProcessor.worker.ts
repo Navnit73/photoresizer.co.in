@@ -2,15 +2,16 @@ let cachedImageUrl: string | null = null;
 let cachedImageBitmap: ImageBitmap | null = null;
 let cachedCanvas: OffscreenCanvas | null = null;
 let cachedCtx: OffscreenCanvasRenderingContext2D | null = null;
-let cleanupTimer: any = null;
+let cleanupTimer: ReturnType<typeof setTimeout> | null = null;
 
-self.onmessage = async (e) => {
+self.onmessage = async (e: MessageEvent) => {
   if (cleanupTimer) {
     clearTimeout(cleanupTimer);
     cleanupTimer = null;
   }
 
   const {
+    id,
     imageUrl, width, height, format, quality,
     backgroundColor, rotation, crop, textOverlays
   } = e.data;
@@ -73,32 +74,34 @@ self.onmessage = async (e) => {
     ctx.restore();
 
     // Text overlays
-    for (const overlay of textOverlays) {
-      ctx.save();
-      const x = (overlay.x / 100) * canvasWidth;
-      const y = (overlay.y / 100) * canvasHeight;
-      ctx.translate(x, y);
-      ctx.rotate((overlay.rotation * Math.PI) / 180);
-      const safeFontFamily = (overlay.fontFamily || 'sans-serif').replace(/var\([^)]+\)/g, 'sans-serif');
-      ctx.font = `${overlay.fontWeight || 'normal'} ${overlay.fontSize}px ${safeFontFamily}`;
-      ctx.fillStyle = overlay.color;
-      ctx.textAlign = overlay.align;
-      ctx.textBaseline = 'middle';
-      ctx.shadowColor = 'rgba(0,0,0,0.4)';
-      ctx.shadowBlur = 4;
-      ctx.shadowOffsetX = 0;
-      ctx.shadowOffsetY = 1;
-      const lines = overlay.text.split('\n');
-      const lineHeight = overlay.fontSize * 1.25;
-      const totalHeight = lines.length * lineHeight;
-      lines.forEach((line: string, i: number) => {
-        ctx.fillText(line, 0, (i * lineHeight) - (totalHeight / 2) + lineHeight / 2);
-      });
-      ctx.restore();
+    if (Array.isArray(textOverlays)) {
+      for (const overlay of textOverlays) {
+        ctx.save();
+        const x = (overlay.x / 100) * canvasWidth;
+        const y = (overlay.y / 100) * canvasHeight;
+        ctx.translate(x, y);
+        ctx.rotate((overlay.rotation * Math.PI) / 180);
+        const safeFontFamily = (overlay.fontFamily || 'sans-serif').replace(/var\([^)]+\)/g, 'sans-serif');
+        ctx.font = `${overlay.fontWeight || 'normal'} ${overlay.fontSize}px ${safeFontFamily}`;
+        ctx.fillStyle = overlay.color;
+        ctx.textAlign = overlay.align;
+        ctx.textBaseline = 'middle';
+        ctx.shadowColor = 'rgba(0,0,0,0.4)';
+        ctx.shadowBlur = 4;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 1;
+        const lines = overlay.text.split('\n');
+        const lineHeight = overlay.fontSize * 1.25;
+        const totalHeight = lines.length * lineHeight;
+        lines.forEach((line: string, i: number) => {
+          ctx.fillText(line, 0, (i * lineHeight) - (totalHeight / 2) + lineHeight / 2);
+        });
+        ctx.restore();
+      }
     }
 
-    const outBlob = await cachedCanvas!.convertToBlob({ type: format, quality: quality / 100 });
-    self.postMessage({ success: true, blob: outBlob, width: canvasWidth, height: canvasHeight });
+    const outBlob = await cachedCanvas.convertToBlob({ type: format, quality: quality / 100 });
+    self.postMessage({ id, success: true, blob: outBlob, width: canvasWidth, height: canvasHeight });
 
     // Free pixel buffer memory if inactive for 3 seconds
     cleanupTimer = setTimeout(() => {
@@ -109,7 +112,7 @@ self.onmessage = async (e) => {
     }, 3000);
   } catch (error) {
     console.error('Worker error:', error);
-    self.postMessage({ success: false, error: error instanceof Error ? error.message : String(error) });
+    self.postMessage({ id, success: false, error: error instanceof Error ? error.message : String(error) });
   }
 };
 

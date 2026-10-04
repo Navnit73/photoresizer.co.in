@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { frPages } from '../../content/fr-pages';
+import { frNavPages as frPages } from '../../lib/navigation-data';
 
 export default function FrSiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -1,34 +1,45 @@
 'use client';
 
 import React, { useState, useCallback, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import { useDropzone } from "react-dropzone";
+import { UploadCloud, Shield, ArrowRight } from "lucide-react";
+import { useTranslation } from '../../app/hooks/useTranslation';
 import { SeoPage, Language } from '../../lib/types/seo';
 import { Breadcrumb } from './Breadcrumb';
 import { SeoSection } from './SeoSection';
 import { FAQ } from './FAQ';
 import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from '../../lib/schema';
-import Script from 'next/script';
-import Link from 'next/link';
-import { useDropzone } from "react-dropzone";
-import { UploadCloud, Shield, ArrowRight } from "lucide-react";
-import { useTranslation } from '../../app/hooks/useTranslation';
 
-import PhotoEditor from '../../app/components/editor/PhotoEditor';
-import PassportMakerApp from '../../app/components/passport_photo/PassportMakerApp';
-import BgRemoverApp from '../../app/components/bg_removal/BgRemoverApp';
-import { AdBanner } from '../AdBanner';
+const PhotoEditor = dynamic(() => import('../../app/components/editor/PhotoEditor'), {
+  ssr: false,
+  loading: () => <div className="min-h-[400px] flex items-center justify-center text-sm text-slate-400">Loading editor...</div>,
+});
 
-import { enPages } from '../../content/en-pages';
-import { dePages } from '../../content/de-pages';
-import { frPages } from '../../content/fr-pages';
-import { esPages } from '../../content/es-pages';
-import { ptPages } from '../../content/pt-pages';
+const PassportMakerApp = dynamic(() => import('../../app/components/passport_photo/PassportMakerApp'), {
+  ssr: false,
+  loading: () => <div className="min-h-[400px] flex items-center justify-center text-sm text-slate-400">Loading passport maker...</div>,
+});
+
+const BgRemoverApp = dynamic(() => import('../../app/components/bg_removal/BgRemoverApp'), {
+  ssr: false,
+  loading: () => <div className="min-h-[400px] flex items-center justify-center text-sm text-slate-400">Loading background remover...</div>,
+});
+
+export interface RelatedPageLink {
+  slug: string;
+  h1: string;
+  metaDescription: string;
+}
 
 interface Props {
   page: SeoPage;
   lang: Language;
+  relatedPages?: RelatedPageLink[];
 }
 
-export function SeoPageRenderer({ page, lang }: Props) {
+export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
   const { t } = useTranslation();
   const initialTab = page.showTool === 'bg-remover' ? 'bg_remover' : 'editor';
   const [activeTab, setActiveTab] = useState<"editor" | "bg_remover">(initialTab);
@@ -88,26 +99,13 @@ export function SeoPageRenderer({ page, lang }: Props) {
   const breadcrumbSchema = generateBreadcrumbSchema(page, lang);
   const webPageSchema = generateWebPageSchema(page, lang);
 
-  const pagesMap = {
-    en: enPages,
-    de: dePages,
-    fr: frPages,
-    es: esPages,
-    pt: ptPages,
-  };
-
-  const allPages = pagesMap[lang] || enPages;
-  const relatedPages = allPages
-    .filter(p => p.showTool === page.showTool && p.slug !== page.slug)
-    .slice(0, 8);
-
   return (
     <main className="w-full pb-8 md:pb-12 bg-white dark:bg-[#121212] text-[#222222] dark:text-[#f1f1f1] font-['Airbnb_Cereal_VF',Circular,sans-serif] transition-colors duration-300">
       {/* JSON-LD Structured Data */}
-      <Script id="webpage-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && (
-        <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
