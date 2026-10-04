@@ -7,23 +7,23 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "photo-resizer",
-      translationKey: 'photo-resizer',
-    metaTitle: "Free Online Photo Resizer — Resize Images Instantly",
+    translationKey: "photo-resizer",
+    metaTitle: "Resize Image Online – Free Photo Resizer & Image Resizer",
     metaDescription:
-      "Resize photos online free in seconds. Change dimensions and maintain sharp quality. 100% private, browser-based, no signup required.",
-    h1: "Free Online Photo Resizer",
+      "Resize image online with our free photo resizer. Use this image resizer JPEG tool and image converter into KB to hit exact sizes. No signup, 100% private.",
+    h1: "Resize Image Online With a Free Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize any photo instantly — change dimensions, reduce file size, and keep quality sharp. 100% free, 100% private.",
+      "Resize any image online in seconds. Change dimensions, convert to an exact KB size, and keep every photo sharp. 100% free and 100% private.",
     sections: [
       {
-        heading: "Why Our Photo Resizer Stands Apart",
+        heading: "Resize Image Online in Seconds",
         content: `
 <div class="space-y-8 not-prose">
 
   <p class="text-lg text-[#52525B] leading-relaxed">
-    Whether you need to shrink a photo for a job application portal, resize a picture for social media, or reduce file size before emailing — our free online photo resizer handles it all in seconds. No account. No watermark. No server upload. Just fast, private, browser-based image resizing that works on any device.
+    Need to resize an image online without installing software? This photo resizer changes dimensions, file size, and format right inside your browser. You create no account, you see no watermark, and you upload nothing to a server. Open the tool, choose your size, and download your file instantly.
   </p>
 
   <div class="grid md:grid-cols-3 gap-5">
@@ -32,87 +32,178 @@ export const enPages: SeoPage[] = [
         <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
       </div>
       <h3 class="text-base font-bold text-[#18181B] mb-2">100% Private</h3>
-      <p class="text-sm text-[#52525B]">All processing happens inside your browser. Your photos never touch our servers — not even for a millisecond.</p>
+      <p class="text-sm text-[#52525B]">Your browser processes every photo. Your files never touch our servers, so nobody else can see them.</p>
     </div>
     <div class="p-6 rounded-xl border border-[#BBF7D0]">
       <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
         <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
       </div>
       <h3 class="text-base font-bold text-[#18181B] mb-2">Instant Results</h3>
-      <p class="text-sm text-[#52525B]">Resize in under a second. No waiting for uploads, no queues, no slow server-side processing.</p>
+      <p class="text-sm text-[#52525B]">Resize in under a second. You skip upload queues and slow server processing.</p>
     </div>
     <div class="p-6 rounded-xl border border-[#BBF7D0]">
       <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
         <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
       </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">All Formats</h3>
-      <p class="text-sm text-[#52525B]">Supports JPG, JPEG, PNG, GIF, WEBP, AVIF — resize and convert between formats in one step.</p>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">All Major Formats</h3>
+      <p class="text-sm text-[#52525B]">Resize and convert JPG, JPEG, PNG, GIF, WEBP, and AVIF in a single step.</p>
     </div>
   </div>
+</div>`,
+      },
+      {
+        heading: "How to Use This Image Resizer",
+        content: `
+<div class="space-y-6 not-prose">
+
+  <h3 class="text-xl font-bold text-[#18181B]">Resize a Photo in 3 Simple Steps</h3>
+
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+      <div>
+        <h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4>
+        <p class="text-sm text-[#52525B]">Drag and drop your file or click to browse. The tool accepts JPG, PNG, GIF, and WEBP files up to 50MB.</p>
+      </div>
+    </div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+      <div>
+        <h4 class="font-semibold text-[#18181B] mb-1">Set Your Options</h4>
+        <p class="text-sm text-[#52525B]">Enter exact dimensions, pick a preset, or type a target size in KB. Then choose your output format.</p>
+      </div>
+    </div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+      <div>
+        <h4 class="font-semibold text-[#18181B] mb-1">Download Instantly</h4>
+        <p class="text-sm text-[#52525B]">Preview the result, then click Download. Your resized photo saves straight to your device.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="text-xl font-bold text-[#18181B]">What This Photo Resizer Can Do</h3>
 
   <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
-    <div class="px-6 py-4 border-b border-[#E4E4E7] bg-[#FAFAFA]">
-      <h3 class="text-base font-bold text-[#18181B]">What You Can Do With Our Photo Resizer</h3>
-    </div>
     <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#E4E4E7]">
       <ul class="p-6 space-y-3">
-        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Resize photo to exact pixel dimensions (width × height)</li>
+        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Resize to exact pixel dimensions (width × height)</li>
         <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Reduce file size to a target KB or MB</li>
-        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Resize image in centimeters with DPI control</li>
-        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Lock aspect ratio to avoid distortion</li>
-        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Convert between JPG, PNG, WEBP, GIF formats</li>
+        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Resize in centimeters with DPI control</li>
+        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Lock the aspect ratio to avoid distortion</li>
+        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Convert between JPG, PNG, WEBP, and GIF</li>
       </ul>
       <ul class="p-6 space-y-3">
-        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Resize for Instagram, Twitter, Facebook in one click</li>
-        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Make passport and ID photos with correct dimensions</li>
+        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Resize for Instagram, Twitter, and Facebook in one click</li>
+        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Create passport and ID photos at the correct size</li>
         <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Rotate, flip, and apply basic filters</li>
-        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Adjust quality slider for fine-tuned compression</li>
-        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Preview before/after — download with zero watermark</li>
+        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Fine-tune compression with a quality slider</li>
+        <li class="flex items-start gap-3 text-sm text-[#52525B]"><span class="text-[#16A34A] mt-0.5 flex-shrink-0">✓</span> Compare before and after, then download with no watermark</li>
       </ul>
     </div>
   </div>
+</div>`,
+      },
+      {
+        heading: "Image Resizer JPEG: Shrink Photos Without Losing Quality",
+        content: `
+<div class="space-y-6 not-prose">
 
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize a Photo — 3 Simple Steps</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div>
-          <h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4>
-          <p class="text-sm text-[#52525B]">Drag and drop or click to select. Supports JPG, PNG, GIF, WEBP up to 50MB.</p>
-        </div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div>
-          <h4 class="font-semibold text-[#18181B] mb-1">Set Your Options</h4>
-          <p class="text-sm text-[#52525B]">Enter target dimensions, pick a preset, or set a KB target. Choose output format.</p>
-        </div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div>
-          <h4 class="font-semibold text-[#18181B] mb-1">Download Instantly</h4>
-          <p class="text-sm text-[#52525B]">Click Download. Your resized photo saves directly to your device — no signup needed.</p>
-        </div>
-      </div>
+  <p class="text-base text-[#52525B] leading-relaxed">
+    JPEG remains the most common photo format, so most people need an image resizer JPEG tool more than any other. This tool resizes JPG and JPEG files while it protects sharpness, color, and detail.
+  </p>
+
+  <h3 class="text-xl font-bold text-[#18181B]">Best Settings for JPEG Resizing</h3>
+
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="p-5 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <h4 class="font-semibold text-[#18181B] mb-1">Keep Quality at 85–95</h4>
+      <p class="text-sm text-[#52525B]">This range cuts file size sharply while the human eye notices almost no difference.</p>
+    </div>
+    <div class="p-5 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <h4 class="font-semibold text-[#18181B] mb-1">Never Enlarge Beyond the Original</h4>
+      <p class="text-sm text-[#52525B]">Upscaling stretches pixels and blurs detail. Always shrink, never stretch.</p>
+    </div>
+    <div class="p-5 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <h4 class="font-semibold text-[#18181B] mb-1">Lock the Aspect Ratio</h4>
+      <p class="text-sm text-[#52525B]">Locking the ratio keeps faces and objects in proportion after you resize.</p>
+    </div>
+    <div class="p-5 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <h4 class="font-semibold text-[#18181B] mb-1">Resize Once From the Original</h4>
+      <p class="text-sm text-[#52525B]">Each JPEG save adds compression. Start from your original file every time.</p>
     </div>
   </div>
+</div>`,
+      },
+      {
+        heading: "Image Converter Into KB: Hit Any File Size Target",
+        content: `
+<div class="space-y-6 not-prose">
 
-  <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6">
-    <h3 class="text-lg font-bold text-[#18181B] mb-3">Common Photo Resizing Use Cases</h3>
-    <div class="grid sm:grid-cols-2 gap-3">
-      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📋</span><span><strong>Government Forms:</strong> UPSC, SSC, bank applications require photos under 50KB or 100KB</span></div>
-      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📱</span><span><strong>Social Media:</strong> Instagram, Twitter, Facebook each have specific dimension requirements</span></div>
-      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🛂</span><span><strong>Passport & Visa:</strong> Official documents need exact pixel dimensions and file size</span></div>
-      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">💼</span><span><strong>Job Applications:</strong> Most HR portals cap profile photos at 100KB–200KB</span></div>
-      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🌐</span><span><strong>Web & Blogs:</strong> Optimized images load faster and improve Core Web Vitals scores</span></div>
-      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📧</span><span><strong>Email Attachments:</strong> Reduce large photos before sending to avoid bounced emails</span></div>
-    </div>
-  </div>
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Many portals reject photos that exceed a strict limit. Our image converter into KB solves this problem. You type the size you need, and the tool compresses your photo to meet it.
+  </p>
+
+  <h3 class="text-xl font-bold text-[#18181B]">Convert Your Image to 20KB, 50KB, 100KB, or 200KB</h3>
+
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Set your target in KB, and the tool adjusts quality and dimensions automatically. Check the preview, then download the file that fits.
+  </p>
 
   <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-6">
-    <h3 class="text-lg font-bold text-[#18181B] mb-4">Supported File Formats</h3>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-[#E4E4E7]">
+            <th class="text-left py-2 pr-4 font-semibold text-[#52525B]">Target Size</th>
+            <th class="text-left py-2 font-semibold text-[#52525B]">Typical Use</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">20KB–50KB</td><td class="py-2 text-[#71717A]">Exam forms, signatures, small ID uploads</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">100KB</td><td class="py-2 text-[#71717A]">Job portals, bank applications</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">200KB–500KB</td><td class="py-2 text-[#71717A]">Profile photos, email attachments</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">1MB+</td><td class="py-2 text-[#71717A]">Blogs, web pages, high-quality sharing</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h4 class="font-semibold text-[#18181B]">Pro Tip for Very Small Targets</h4>
+  <p class="text-sm text-[#52525B]">For targets under 50KB, reduce the pixel dimensions first. Smaller dimensions let the tool keep higher quality at the same file size.</p>
+</div>`,
+      },
+      {
+        heading: "Common Photo Resizing Use Cases",
+        content: `
+<div class="space-y-6 not-prose">
+
+  <p class="text-base text-[#52525B] leading-relaxed">
+    People use this free image resizer for school, work, and social media every day. Pick your goal below.
+  </p>
+
+  <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6">
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📋</span><span><strong>Government Forms:</strong> UPSC, SSC, and bank applications often require photos under 50KB or 100KB.</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📱</span><span><strong>Social Media:</strong> Instagram, Twitter, and Facebook each demand specific dimensions.</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🛂</span><span><strong>Passport and Visa:</strong> Official documents need exact pixel dimensions and file size.</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">💼</span><span><strong>Job Applications:</strong> Most HR portals cap profile photos at 100KB–200KB.</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🌐</span><span><strong>Web and Blogs:</strong> Lighter images load faster and improve Core Web Vitals.</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📧</span><span><strong>Email Attachments:</strong> Shrink large photos to avoid bounced messages.</span></div>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Supported Image Formats",
+        content: `
+<div class="space-y-6 not-prose">
+
+  <p class="text-base text-[#52525B] leading-relaxed">
+    This photo resizer reads and writes the formats below, so you can resize and convert at the same time.
+  </p>
+
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-6">
     <div class="overflow-x-auto">
       <table class="w-full text-sm">
         <thead>
@@ -126,8 +217,8 @@ export const enPages: SeoPage[] = [
         <tbody class="divide-y divide-[#F4F4F5]">
           <tr><td class="py-2 pr-4 font-medium text-[#18181B]">JPG / JPEG</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 text-[#71717A]">Photos, small file size</td></tr>
           <tr><td class="py-2 pr-4 font-medium text-[#18181B]">PNG</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 text-[#71717A]">Graphics, transparency</td></tr>
-          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">WEBP</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 text-[#71717A]">Web images, best compression</td></tr>
-          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">GIF</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 text-[#71717A]">Animations, simple graphics</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">WEBP</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 text-[#71717A]">Web images, strong compression</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">GIF</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 text-[#71717A]">Simple graphics</td></tr>
           <tr><td class="py-2 pr-4 font-medium text-[#18181B]">AVIF</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 pr-4 text-[#16A34A]">✓</td><td class="py-2 text-[#71717A]">Modern browsers, smallest size</td></tr>
         </tbody>
       </table>
@@ -140,40 +231,44 @@ export const enPages: SeoPage[] = [
       {
         question: "Is this photo resizer really free?",
         answer:
-          "Yes, 100% free with no hidden charges, no watermarks, and no signup. You can resize unlimited photos without creating an account.",
+          "Yes. The tool costs nothing, adds no watermarks, and needs no signup. You can resize unlimited images without creating an account.",
       },
       {
-        question: "Do my photos get uploaded to a server?",
+        question: "Do you upload my photos to a server?",
         answer:
-          "Never. All image processing happens entirely inside your web browser using the HTML5 Canvas API. Your photos never leave your device, which means complete privacy and instant processing.",
+          "No. Your browser processes every image locally with the HTML5 Canvas API. Your photos never leave your device, which protects your privacy and speeds up the result.",
       },
       {
-        question: "What is the maximum photo size I can resize?",
+        question: "How do I resize an image online without losing quality?",
         answer:
-          "You can upload images up to 50MB. For very large files, processing may take a couple of seconds but everything still runs locally in your browser.",
+          "Set the quality slider between 85 and 95, lock the aspect ratio, and avoid enlarging the photo beyond its original resolution. Reducing dimensions while you keep quality high gives the sharpest result.",
       },
       {
-        question: "Can I resize photos on my phone?",
+        question: "Can this image converter into KB hit an exact file size?",
         answer:
-          "Yes. Our photo resizer is fully mobile-responsive and works on iOS Safari, Android Chrome, and all modern mobile browsers — no app download needed.",
+          "Yes. Enter your target in KB, and the tool adjusts quality and dimensions to match it. For very small targets such as 20KB, lower the pixel dimensions first.",
       },
       {
-        question: "How do I resize a photo without losing quality?",
+        question: "What is the maximum file size I can resize?",
         answer:
-          "Use the quality slider (set to 85–95 for minimal loss) and avoid enlarging photos beyond their original resolution. Reducing dimensions while keeping quality high is the best approach.",
+          "You can upload images up to 50MB. Very large files may need a few extra seconds, but everything still runs on your device.",
       },
       {
-        question:
-          "Can I convert my photo to a different format while resizing?",
+        question: "Can I use this image resizer JPEG tool on my phone?",
         answer:
-          "Yes. You can change from JPG to PNG, PNG to WEBP, or any supported format combination in the same step as resizing.",
+          "Yes. The tool works on iOS Safari, Android Chrome, and every modern mobile browser. You download no app.",
+      },
+      {
+        question: "Can I convert formats while I resize?",
+        answer:
+          "Yes. Switch from JPG to PNG, PNG to WEBP, or any supported pair in the same step as resizing.",
       },
     ],
   },
 
   {
     slug: "passport-photo-maker",
-      translationKey: 'passport-photo-maker',
+    translationKey: "passport-photo-maker",
     metaTitle: "Free Passport Photo Maker — Correct Size for Any Country",
     metaDescription:
       "Create passport photos online free. Auto-correct dimensions for US, UK, India, EU, China and 20+ countries. White background, JPEG output, instant download.",
@@ -371,7 +466,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "how-to-use",
-      translationKey: 'how-to-use',
+    translationKey: "how-to-use",
     metaTitle: "How to Use — photoresizer Guide",
     metaDescription:
       "Step-by-step guide to using photoresizer. Learn to resize images, reduce file size, create passport photos, and more — all for free in your browser.",
@@ -483,7 +578,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "contact",
-      translationKey: 'contact',
+    translationKey: "contact",
     metaTitle: "Contact Us — photoresizer Support",
     metaDescription:
       "Get in touch with the photoresizer team. Report bugs, request features, or ask questions about our free online image tools.",
@@ -570,7 +665,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "terms",
-      translationKey: 'terms',
+    translationKey: "terms",
     metaTitle: "Terms & Conditions — photoresizer",
     metaDescription:
       "Terms and conditions for using photoresizer. Read our usage policy, limitations, and user responsibilities.",
@@ -653,7 +748,7 @@ export const enPages: SeoPage[] = [
   // ─────────────────────────────────────────────
   {
     slug: "privacy",
-      translationKey: 'privacy',
+    translationKey: "privacy",
     metaTitle: "Privacy Policy — PhotoResizer Online",
     metaDescription:
       "Privacy policy for photoresizer. All image processing is 100% local in your browser. We never upload, store, or share your photos.",
@@ -1297,7 +1392,7 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "compress-image",
-      translationKey: 'compress-image',
+    translationKey: "compress-image",
     metaTitle: "Compress Image Free Online — Reduce File Size",
     metaDescription:
       "Compress JPG, PNG, WEBP images free online. Reduce file size by up to 90% without quality loss. Browser-based, 100% private.",
@@ -1730,38 +1825,40 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "passport-size-photo-maker",
-    metaTitle: "Passport Size Photo Maker Free Online — Any Country",
+    metaTitle: "Free Passport Photo Maker Online – Passport Size Photo",
     metaDescription:
-      "Create passport size photos online for free. Auto crop, precise dimensions, background changer, and instant download.",
-    h1: "Free Passport Size Photo Maker Online (2026) — Any Country, Instant Download",
+      "Make a passport size photo online. Our passport photo maker online free tool crops, resizes, and prints for any country. No signup, no watermark.",
+    h1: "Free Passport Photo Maker Online (2026): Passport Size Photo in Seconds",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Create passport size photos online in seconds — correct crop, white background, right file size. 100% free. No signup. No watermark.",
+      "Make a passport size photo in seconds. Get the correct crop, white background, and file size. 100% free, no signup, no watermark.",
     sections: [
       {
         heading: "What Is a Passport Size Photo?",
         content: `
 <div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    A <strong>passport size photo</strong> is a standardised small portrait photograph required for identity documents, visa applications, government exam forms, job applications, and institutional ID cards. Every country defines its own exact dimensions, background colour, and resolution — our free online tool applies all of these automatically, right inside your browser. No file is ever uploaded to a server.
+    A <strong>passport size photo</strong> is a standard small portrait that you submit for passports, visas, exam forms, job applications, and ID cards. Every country sets its own dimensions, background colour, and resolution. Our photo maker passport tool applies those rules for you, right inside your browser. You upload nothing to a server.
   </p>
   <p class="text-[#52525B] leading-relaxed">
-    The most widely required passport photo size in India and across South Asia is <strong>35 × 45 mm</strong> — roughly 413 × 531 pixels at 300 DPI — with a plain white background. For US passports, the required size is a 2 × 2 inch (51 × 51 mm) square. Our maker supports all major country formats in a single click.
+    Need a quick passport size pic for an online form? Want a pass size photo maker that works on your phone? This passport photo maker online free tool handles both. Upload one image, pick your country, and download a print-ready passport size picture in under two minutes.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Size of Indian Passport Size Photo</h3>
+  <p class="text-[#52525B] leading-relaxed">
+    The size of Indian passport size photo is <strong>35 × 45 mm</strong>, which equals 413 × 531 pixels at 300 DPI. The background must be plain white. For US passports, the passport image size is a <strong>2 × 2 inch</strong> square (51 × 51 mm).
   </p>
 </div>`,
       },
       {
-        heading: "Passport Size Photo Dimensions by Country (2026)",
+        heading: "Passport Image Size by Country (2026)",
         content: `
 <div class="space-y-4 not-prose">
   <p class="text-[#52525B] leading-relaxed">
-    Use the table below to confirm the correct size before you download. Our tool presets all of these — just select your country from the dropdown.
+    Check your passport size size before you download. Our photo passport size converter presets every format below. Select your country from the dropdown, and the tool sets the dimensions for you.
   </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Passport Size Size Chart: Quick Reference</h3>
   <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
-    <div class="px-6 py-4 border-b border-[#E4E4E7] bg-[#FAFAFA]">
-      <h3 class="text-base font-bold text-[#18181B]">Standard Passport Photo Sizes — Quick Reference</h3>
-    </div>
     <div class="overflow-x-auto p-6">
       <table class="w-full text-sm">
         <thead>
@@ -1773,98 +1870,129 @@ export const enPages: SeoPage[] = [
           </tr>
         </thead>
         <tbody class="divide-y divide-[#F4F4F5]">
-          <tr><td class="py-2 pr-4 font-medium">India — Passport / Visa</td><td class="py-2 pr-4 text-[#52525B]">35 × 45</td><td class="py-2 pr-4 text-[#52525B]">413 × 531</td><td class="py-2 text-[#52525B]">White</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">USA — Passport / Green Card</td><td class="py-2 pr-4 text-[#52525B]">51 × 51</td><td class="py-2 pr-4 text-[#52525B]">600 × 600</td><td class="py-2 text-[#52525B]">White / off-white</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">UK — Passport</td><td class="py-2 pr-4 text-[#52525B]">35 × 45</td><td class="py-2 pr-4 text-[#52525B]">413 × 531</td><td class="py-2 text-[#52525B]">Light grey / cream</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">India – Passport / Visa</td><td class="py-2 pr-4 text-[#52525B]">35 × 45</td><td class="py-2 pr-4 text-[#52525B]">413 × 531</td><td class="py-2 text-[#52525B]">White</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">USA – Passport / Green Card</td><td class="py-2 pr-4 text-[#52525B]">51 × 51</td><td class="py-2 pr-4 text-[#52525B]">600 × 600</td><td class="py-2 text-[#52525B]">White / off-white</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">UK – Passport</td><td class="py-2 pr-4 text-[#52525B]">35 × 45</td><td class="py-2 pr-4 text-[#52525B]">413 × 531</td><td class="py-2 text-[#52525B]">Light grey / cream</td></tr>
           <tr><td class="py-2 pr-4 font-medium">Schengen Visa (EU)</td><td class="py-2 pr-4 text-[#52525B]">35 × 45</td><td class="py-2 pr-4 text-[#52525B]">413 × 531</td><td class="py-2 text-[#52525B]">White</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">Canada — Passport</td><td class="py-2 pr-4 text-[#52525B]">50 × 70</td><td class="py-2 pr-4 text-[#52525B]">590 × 826</td><td class="py-2 text-[#52525B]">White</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">Australia — Passport</td><td class="py-2 pr-4 text-[#52525B]">35 × 45</td><td class="py-2 pr-4 text-[#52525B]">413 × 531</td><td class="py-2 text-[#52525B]">White / light grey</td></tr>
-          <tr><td class="py-2 pr-4 font-medium">India — Govt Exam / NID</td><td class="py-2 pr-4 text-[#52525B]">25 × 35</td><td class="py-2 pr-4 text-[#52525B]">295 × 413</td><td class="py-2 text-[#52525B]">White</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Canada – Passport</td><td class="py-2 pr-4 text-[#52525B]">50 × 70</td><td class="py-2 pr-4 text-[#52525B]">590 × 826</td><td class="py-2 text-[#52525B]">White</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Australia – Passport</td><td class="py-2 pr-4 text-[#52525B]">35 × 45</td><td class="py-2 pr-4 text-[#52525B]">413 × 531</td><td class="py-2 text-[#52525B]">White / light grey</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">India – Govt Exam / NID</td><td class="py-2 pr-4 text-[#52525B]">25 × 35</td><td class="py-2 pr-4 text-[#52525B]">295 × 413</td><td class="py-2 text-[#52525B]">White</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">India – Stamp Size Photo</td><td class="py-2 pr-4 text-[#52525B]">20 × 25</td><td class="py-2 pr-4 text-[#52525B]">236 × 295</td><td class="py-2 text-[#52525B]">White</td></tr>
         </tbody>
       </table>
     </div>
   </div>
   <p class="text-sm text-[#71717A]">
-    ℹ️ Always cross-check with the official application instructions for your specific document — requirements can change without notice.
+    ℹ️ Always confirm the size with the official instructions for your document. Requirements can change without notice.
   </p>
 </div>`,
       },
       {
-        heading: "How to Make a Passport Size Photo Online — Step by Step",
+        heading: "How to Make a Passport Size Photo Online",
         content: `
 <div class="space-y-4 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Photo Conversion to Passport Size in 6 Steps</h3>
   <p class="text-[#52525B] leading-relaxed">
-    Creating a passport photo takes under two minutes. Follow these six steps:
+    You can finish the whole process in under two minutes. Follow these steps:
   </p>
-  <ol class="space-y-3 text-[#52525B] list-none pl-0">
+  <ol class="space-y-4 text-[#52525B] list-none pl-0">
     <li class="flex gap-3 items-start">
       <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">1</span>
-      <div><strong>Upload your photo</strong> — tap "Upload Photo" or drag and drop any JPEG, PNG, or HEIC image taken on your phone or camera. No account or login is needed.</div>
+      <div><h4 class="font-semibold text-[#18181B]">Upload Your Photo</h4><p class="text-sm">Tap "Upload Photo" or drag in a JPEG, PNG, or HEIC image from your phone or camera. You need no account.</p></div>
     </li>
     <li class="flex gap-3 items-start">
       <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">2</span>
-      <div><strong>Select your country or document type</strong> — choose from the preset list (India Passport, US Passport, Schengen Visa, etc.) or enter custom dimensions in mm or pixels.</div>
+      <div><h4 class="font-semibold text-[#18181B]">Select Your Country or Document</h4><p class="text-sm">Choose a preset such as India Passport, US Passport, or Schengen Visa. You can also enter custom dimensions in mm or pixels.</p></div>
     </li>
     <li class="flex gap-3 items-start">
       <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">3</span>
-      <div><strong>Crop and position your face</strong> — use the crop handles so your face fills 70–80% of the frame. Eyes should be level with the upper third of the image.</div>
+      <div><h4 class="font-semibold text-[#18181B]">Crop and Position Your Face</h4><p class="text-sm">Drag the crop handles until your face fills 70–80% of the frame. Place your eyes in the upper third of the image.</p></div>
     </li>
     <li class="flex gap-3 items-start">
       <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">4</span>
-      <div><strong>Clean up the background</strong> — toggle "White Background" to automatically brighten and neutralise imperfect backgrounds. For a full AI background removal, use our dedicated background remover first.</div>
+      <div><h4 class="font-semibold text-[#18181B]">Clean Up the Background</h4><p class="text-sm">Switch on "White Background" to brighten and neutralise uneven walls. For a busy background, run our background remover first.</p></div>
     </li>
     <li class="flex gap-3 items-start">
       <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">5</span>
-      <div><strong>Preview and adjust</strong> — review the live preview at 100% zoom. Adjust brightness or contrast if needed to meet the "clear and natural skin tone" requirement.</div>
+      <div><h4 class="font-semibold text-[#18181B]">Preview and Adjust</h4><p class="text-sm">Review the live preview at 100% zoom. Adjust brightness or contrast so your skin tone looks clear and natural.</p></div>
     </li>
     <li class="flex gap-3 items-start">
       <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">6</span>
-      <div><strong>Download your photo</strong> — choose a single image or the ready-to-print 4×6 inch sheet (4 photos arranged for home or shop printing). Both are watermark-free.</div>
+      <div><h4 class="font-semibold text-[#18181B]">Download Your Photo</h4><p class="text-sm">Save a single image or a 4×6 inch print sheet with four photos. Both files carry no watermark.</p></div>
     </li>
   </ol>
 </div>`,
       },
       {
-        heading: "Tips for Taking the Perfect Passport Photo at Home",
+        heading: "Stamp Size Photo: Size and How to Make One",
         content: `
 <div class="space-y-4 not-prose">
   <p class="text-[#52525B] leading-relaxed">
-    A good source photo makes cropping and background removal much easier. Follow these tips before you upload:
+    A <strong>stamp size photo</strong> is smaller than a passport photo. Schools, colleges, and exam portals often ask for it on application forms and ID cards.
   </p>
+  <h3 class="text-xl font-bold text-[#18181B]">What Is the Size of Stamp Size Photo?</h3>
+  <p class="text-[#52525B] leading-relaxed">
+    The size of stamp size photo is usually <strong>20 × 25 mm</strong> (2 × 2.5 cm). That equals 236 × 295 pixels at 300 DPI. Some forms use a different size, so read the instructions first. To make one, upload your photo and enter the custom dimensions in the tool. Then crop, preview, and download.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Print Passport Photo Online or at Home",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    You can print passport photo online through a printing service, or you can print at home. Our 4-up sheet works for both options.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">How to Print Passport Size Photo Sheets</h3>
   <ul class="space-y-2 text-[#52525B]">
-    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Use a plain white or light-coloured wall</strong> as your backdrop. Avoid patterned wallpaper, doors, or outdoor backgrounds.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Shoot in natural daylight</strong> — face a window but don't let sunlight fall directly on your face. Avoid harsh shadows or flash.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Look directly at the camera</strong> with a neutral expression and mouth closed. Both eyes must be open and clearly visible.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Remove glasses</strong> — most countries now prohibit tinted or clear glasses in passport photos.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Keep hair away from your face</strong> — the full face, forehead, and chin must be visible.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Use portrait mode or a standard camera</strong> — avoid ultra-wide lenses that distort facial proportions.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Wear everyday clothing</strong> in a colour that contrasts with the white background. Avoid white or very light tops.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Download the 4×6 inch sheet.</strong> The tool arranges four photos on one page.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Choose glossy photo paper.</strong> Any inkjet or laser printer gives sharp results.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Print at 100% scale.</strong> Turn off "fit to page" so the size stays exact.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Use a local print shop if you prefer.</strong> Email or carry the file on a phone or USB drive.</span></li>
   </ul>
 </div>`,
       },
       {
-        heading: "Why Use Our Passport Photo Maker?",
+        heading: "Tips for the Perfect Passport Photo at Home",
         content: `
 <div class="space-y-4 not-prose">
   <p class="text-[#52525B] leading-relaxed">
-    Compared to going to a photo studio or paying for app subscriptions, our tool is faster, cheaper, and just as accurate:
+    A good source photo makes every later step easier. Follow these tips before you upload.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Lighting, Pose, and Background</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Stand against a plain white or light wall.</strong> Avoid patterns, doors, and outdoor scenes.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Use natural daylight.</strong> Face a window, but keep direct sun off your face. Skip the flash.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Look straight at the camera.</strong> Keep a neutral expression, a closed mouth, and both eyes open.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Remove your glasses.</strong> Most countries now prohibit them in passport photos.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Keep hair off your face.</strong> Show your full forehead, face, and chin.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Wear a dark or mid-tone top.</strong> White clothing blends into a white background.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why Use Our Free Passport Photo Maker?",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Our tool beats a studio visit and paid apps on speed, cost, and accuracy.
   </p>
   <div class="grid sm:grid-cols-2 gap-4">
     <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
-      <div class="font-semibold text-[#18181B] mb-1">🆓 Completely Free</div>
-      <div class="text-sm text-[#52525B]">No payment, no subscription, no hidden upsells. Download unlimited photos at no cost.</div>
+      <h3 class="font-semibold text-[#18181B] mb-1">🆓 Completely Free</h3>
+      <p class="text-sm text-[#52525B]">You pay nothing and see no upsells. Download unlimited photos.</p>
     </div>
     <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
-      <div class="font-semibold text-[#18181B] mb-1">🔒 Private & Secure</div>
-      <div class="text-sm text-[#52525B]">All processing happens locally in your browser. Your photo never leaves your device.</div>
+      <h3 class="font-semibold text-[#18181B] mb-1">🔒 Private and Secure</h3>
+      <p class="text-sm text-[#52525B]">Your browser processes everything. Your photo never leaves your device.</p>
     </div>
     <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
-      <div class="font-semibold text-[#18181B] mb-1">📐 Pixel-Perfect Dimensions</div>
-      <div class="text-sm text-[#52525B]">Presets for 50+ countries. Output at exactly the required pixel size and DPI — no guessing.</div>
+      <h3 class="font-semibold text-[#18181B] mb-1">📐 Pixel-Perfect Sizes</h3>
+      <p class="text-sm text-[#52525B]">Presets cover 50+ countries. The tool outputs the exact pixel size and DPI.</p>
     </div>
     <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
-      <div class="font-semibold text-[#18181B] mb-1">🖨️ Print-Ready Output</div>
-      <div class="text-sm text-[#52525B]">Download a 4-up layout on a standard 4×6 inch sheet — ready to print at home or any shop.</div>
+      <h3 class="font-semibold text-[#18181B] mb-1">🖨️ Print-Ready Output</h3>
+      <p class="text-sm text-[#52525B]">Download a 4-up layout on a standard 4×6 inch sheet.</p>
     </div>
   </div>
 </div>`,
@@ -1872,47 +2000,44 @@ export const enPages: SeoPage[] = [
     ],
     faq: [
       {
-        question: "What is the passport size photo size in India?",
+        question: "What is the size of passport size photo in India?",
         answer:
-          "In India, a passport size photo must be 35 mm wide × 45 mm tall. At 300 DPI, this equals 413 × 531 pixels. The background must be plain white, the face should be clearly visible, and the head (top of hair to chin) should occupy 70–80% of the frame height. These specifications apply to Indian passport, visa, and most government exam applications.",
+          "An Indian passport size photo measures 35 × 45 mm, or 413 × 531 pixels at 300 DPI. The background must be plain white. Your head, from hair top to chin, should fill 70–80% of the frame height.",
       },
       {
-        question: "Is this passport photo maker really free?",
+        question: "Can I get a passport photo online free?",
         answer:
-          "Yes — 100% free with no watermark, no signup, and no usage limits. You can create and download as many passport photos as you need at no cost.",
+          "Yes. This tool creates passport photos for free, with no watermark, no signup, and no usage limit. Make and download as many as you need.",
       },
       {
-        question: "Can I use my smartphone camera to take the photo?",
+        question: "Is pas photo size the same as passport size?",
         answer:
-          "Absolutely. A modern smartphone camera produces more than enough resolution. Stand against a plain white or light wall in good natural lighting, look straight at the camera with a neutral expression, and take the shot in portrait orientation. Then upload it here for precise cropping and resizing.",
+          "Yes. People often search for pas photo size when they mean passport size. The standard is 35 × 45 mm for India, the UK, Schengen countries, and Australia. The US uses 51 × 51 mm.",
       },
       {
-        question: "How do I print the passport photo at home?",
+        question: "Can I use my smartphone to take the photo?",
         answer:
-          "Download the 4-up print sheet (four passport photos arranged on a single page) and print it on 4×6 inch glossy photo paper using any inkjet or laser printer. You can also email the file to an online printing service or take it to a local print shop.",
+          "Yes. A modern phone camera gives enough resolution. Stand against a plain light wall in natural light, look straight ahead, and shoot in portrait mode. Then upload the image for precise cropping.",
       },
       {
-        question:
-          "Will the photo be accepted for Indian government exams like UPSC, SSC, or bank PO?",
+        question: "Will the photo work for UPSC, SSC, or bank exam forms?",
         answer:
-          "Our maker outputs photos that meet the stated dimension requirements published by major Indian government exam portals (413×531 px, white background, JPEG format). Always verify the exact pixel count and maximum file size in KB from the specific exam notification, as individual portals occasionally specify stricter limits.",
+          "The tool outputs photos that match the dimensions most Indian exam portals publish: 413 × 531 px, white background, JPEG format. Always check the exact pixel count and maximum KB limit in your exam notification.",
       },
       {
-        question:
-          "Does this tool remove or change the background automatically?",
+        question: "Does the tool change the background automatically?",
         answer:
-          "Yes. The built-in background clean-up feature lightens and whitens imperfect backgrounds to meet the white background requirement for most countries. If your background is heavily patterned or coloured, use our dedicated AI Background Remover tool first, then return here to crop to passport size.",
+          "Yes. The background clean-up feature lightens and whitens uneven backgrounds. If your wall has a strong pattern or colour, use our AI background remover first. Then return here to crop.",
       },
       {
-        question: "Is my photo uploaded to any server?",
+        question: "Does this tool upload my photo to a server?",
         answer:
-          "No. All processing — cropping, resizing, background cleanup — runs entirely in your browser using client-side JavaScript. Your photo is never sent to any server, which means complete privacy and instant results even on a slow connection.",
+          "No. Cropping, resizing, and background cleanup all run in your browser with client-side JavaScript. Your photo never leaves your device.",
       },
       {
-        question:
-          "Can I create passport photos for countries other than India?",
+        question: "Can I make passport photos for countries other than India?",
         answer:
-          "Yes. The tool includes presets for over 50 countries, including the USA (2×2 inch), UK (35×45 mm), Canada (50×70 mm), Australia (35×45 mm), and all Schengen visa countries. Simply select the destination country from the dropdown before downloading.",
+          "Yes. The presets cover over 50 countries, including the USA (2 × 2 inch), UK (35 × 45 mm), Canada (50 × 70 mm), Australia (35 × 45 mm), and all Schengen countries. Select your destination before you download.",
       },
     ],
   },
@@ -2018,56 +2143,210 @@ export const enPages: SeoPage[] = [
 
   {
     slug: "india-passport-photo-maker",
-    metaTitle: "India Passport Photo Maker 3.5x3.5 cm Online",
+    metaTitle: "India Passport Photo Maker – Free 35×45 mm Photo Online",
     metaDescription:
-      "Create India passport photos free online. 35×45mm, plain white background, JPG. No upload needed. Download print-ready file instantly.",
-    h1: "India Passport Photo Maker — Free Online 2026",
+      "Use this Indian passport photo maker to create 35×45 mm photos online free. White background, JPG, no upload. Also works for e-Visa and OCI photos.",
+    h1: "India Passport Photo Maker: Free Online Tool (2026)",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Make MEA-compliant Indian passport photos instantly — 35×45 mm, white background, print-ready. Free and private.",
+      "Create passport size photo online India in seconds. Get an MEA-compliant 35×45 mm photo with a white background. Free, private, and print-ready.",
     sections: [
       {
         heading: "Indian Passport Photo Requirements 2026",
-        content: `<div class="space-y-8 not-prose"><p class="text-lg text-[#52525B] leading-relaxed">The Ministry of External Affairs (MEA) and Passport Seva Kendra require passport photographs to be 35×45 mm with a plain white background, sharp focus, and the face occupying 70–80% of the frame. Photos must be recent (within the last 6 months), in colour, and submitted as a high-resolution JPEG. Our tool makes it easy to create, crop, and download compliant photos without visiting a studio.</p><div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6"><h3 class="text-lg font-bold text-[#18181B] mb-3">Indian Passport Photo Checklist 2026</h3><div class="grid sm:grid-cols-2 gap-3"><div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Size: 35mm × 45mm (width × height)</span></div><div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Background: Plain white only</span></div><div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Face: 70–80% of frame, centred, front-facing</span></div><div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Expression: Neutral, eyes fully open</span></div><div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Recency: Taken within last 6 months</span></div><div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>No spectacles, no coloured contact lenses</span></div></div></div></div>`,
+        content: `<div class="space-y-8 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    Need an Indian passport photo maker that follows the rules? This tool lets you create an India passport photo online in under two minutes. You upload nothing to a server, and you pay nothing. The Ministry of External Affairs (MEA) and Passport Seva Kendra (PSK) require a <strong>35×45 mm</strong> photo with a plain white background, sharp focus, and a face that fills 70–80% of the frame.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Your photo must also be in colour, taken within the last 6 months, and saved as a high-resolution JPEG. At 300 DPI, the required size equals <strong>413 × 531 pixels</strong>.
+  </p>
+  <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6">
+    <h3 class="text-lg font-bold text-[#18181B] mb-3">Indian Passport Photo Checklist 2026</h3>
+    <div class="grid sm:grid-cols-2 gap-3">
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Size: 35 mm × 45 mm (width × height)</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Background: plain white only</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Face: 70–80% of the frame, centred, front-facing</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Expression: neutral, with eyes fully open</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>Recency: taken within the last 6 months</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>No spectacles and no coloured contact lenses</span></div>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Make Your India Passport Size Photo Online",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    This passport size photo maker India applicants rely on works on any phone or laptop. You can make an India passport size photo online free, with no account and no watermark.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Create Passport Size Photo Online India in 5 Steps</h3>
+  <ol class="space-y-4 text-[#52525B] list-none pl-0">
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">1</span>
+      <div><h4 class="font-semibold text-[#18181B]">Upload Your Photo</h4><p class="text-sm">Tap "Upload Photo" or drag in a JPEG, PNG, or HEIC image. A clear selfie against a plain wall works well.</p></div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">2</span>
+      <div><h4 class="font-semibold text-[#18181B]">Choose the India Passport Size</h4><p class="text-sm">Select the India Passport preset (35×45 mm) from the list. The tool sets the correct pixel size and DPI.</p></div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">3</span>
+      <div><h4 class="font-semibold text-[#18181B]">Crop and Centre Your Face</h4><p class="text-sm">Drag the handles until your face fills 70–80% of the frame. Keep your head straight and your eyes level.</p></div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">4</span>
+      <div><h4 class="font-semibold text-[#18181B]">Clean Up the Background</h4><p class="text-sm">Switch on "White Background" to brighten and even out your wall. For a busy background, run our background remover first.</p></div>
+    </li>
+    <li class="flex gap-3 items-start">
+      <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#16A34A] text-[#FFFFFF] text-sm font-bold flex items-center justify-center">5</span>
+      <div><h4 class="font-semibold text-[#18181B]">Preview and Download</h4><p class="text-sm">Check the preview at 100% zoom, then download a single JPG or a print sheet. Neither file carries a watermark.</p></div>
+    </li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Indian Visa Photo Online: e-Visa, Sticker Visa, and OCI",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Visa photos follow different rules from passport photos. Use this tool to make an Indian visa photo online free, in the right size and format. Whether you search for an India visa online photo or an Indian visa photo online, the process stays the same: pick the size, crop, and download.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Indian Visa Photo Size Online Free: Quick Table</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-[#E4E4E7]">
+            <th class="text-left py-2 pr-4 font-semibold">Document</th>
+            <th class="text-left py-2 pr-4 font-semibold">Size</th>
+            <th class="text-left py-2 pr-4 font-semibold">Pixels @ 300 DPI</th>
+            <th class="text-left py-2 font-semibold">Format</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Indian Passport (PSK)</td><td class="py-2 pr-4 text-[#52525B]">35 × 45 mm</td><td class="py-2 pr-4 text-[#52525B]">413 × 531</td><td class="py-2 text-[#52525B]">JPEG, white background</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">India e-Visa</td><td class="py-2 pr-4 text-[#52525B]">51 × 51 mm (2 × 2 in)</td><td class="py-2 pr-4 text-[#52525B]">600 × 600</td><td class="py-2 text-[#52525B]">JPEG, square, white background</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">India OCI</td><td class="py-2 pr-4 text-[#52525B]">51 × 51 mm (2 × 2 in)</td><td class="py-2 pr-4 text-[#52525B]">600 × 600</td><td class="py-2 text-[#52525B]">JPEG, square, white background</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="text-sm text-[#71717A]">
+    ℹ️ File-size limits differ by portal. Check the official instructions before you upload.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Evisa India Photo: Size and Format</h3>
+  <p class="text-[#52525B] leading-relaxed">
+    The Indian e-Visa portal asks for a square photo with a plain white background in JPEG format. Many applicants search for an India e visa passport photo and use the 35×45 mm size by mistake. The e-Visa photo must be square, so choose the 51 × 51 mm size or enter it as a custom size.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">India OCI Photo Online</h3>
+  <p class="text-[#52525B] leading-relaxed">
+    OCI applicants also upload a square photo with a white background. Create your India OCI photo online with the same 51 × 51 mm size. Then confirm the current pixel and file-size limits on the official OCI portal.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Planning to apply for an India visa online? Create your India visa photo online here, and download a file that fits the form.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Free Passport Photo Maker India: Why Use This Tool?",
+        content: `<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Applicants who want a free passport size photo online India wide choose this tool for its speed and accuracy. You skip the studio queue and the extra fees.
+  </p>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
+      <h3 class="font-semibold text-[#18181B] mb-1">🆓 Completely Free</h3>
+      <p class="text-sm text-[#52525B]">You pay nothing and see no upsells. Make unlimited photos.</p>
+    </div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
+      <h3 class="font-semibold text-[#18181B] mb-1">🔒 Private and Secure</h3>
+      <p class="text-sm text-[#52525B]">Your browser processes every photo. Your image never leaves your device.</p>
+    </div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
+      <h3 class="font-semibold text-[#18181B] mb-1">✅ Rule-Based Sizes</h3>
+      <p class="text-sm text-[#52525B]">Presets follow Indian passport and visa dimensions, so you avoid guesswork.</p>
+    </div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
+      <h3 class="font-semibold text-[#18181B] mb-1">🖨️ Print-Ready Output</h3>
+      <p class="text-sm text-[#52525B]">Download a print sheet for any photo studio or home printer.</p>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Common Photo Mistakes That Cause Rejection",
+        content: `<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Officers reject photos for small, avoidable errors. Fix these issues before you submit your application.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Avoid These Six Errors</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Shadows on the face or wall.</strong> Face a window and keep the light even.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Spectacles or glare.</strong> Remove your glasses before you shoot.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Off-white or patterned backgrounds.</strong> Use a plain white wall or the background clean-up option.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>A face that is too small or too large.</strong> Keep it within 70–80% of the frame.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>An old photo.</strong> Use a picture taken within the last 6 months.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>The wrong shape for visas.</strong> Use a square photo for e-Visa and OCI forms.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "How to Print Your Indian Passport Photo",
+        content: `<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Download the print sheet and take it to any photo studio, or order online print delivery. For home printing, use glossy photo paper and print at 100% scale. Turn off "fit to page" so the size stays exact. Then cut each photo to 35×45 mm.
+  </p>
+</div>`,
       },
     ],
     faq: [
       {
         question: "What is the size of an Indian passport photo in 2026?",
         answer:
-          "An Indian passport photo must be 35 mm wide and 45 mm tall. At 300 DPI, this equals approximately 413×531 pixels.",
+          "An Indian passport photo must be 35 mm wide and 45 mm tall. At 300 DPI, this equals about 413 × 531 pixels.",
       },
       {
         question: "Can I wear glasses in an Indian passport photo?",
         answer:
-          "No. As per MEA guidelines, spectacles are not allowed in Indian passport photos.",
+          "No. MEA guidelines do not allow spectacles in Indian passport photos.",
       },
       {
-        question: "Can I use this for Passport Seva Kendra (PSK) applications?",
+        question:
+          "Can I use this tool for Passport Seva Kendra (PSK) applications?",
         answer:
-          "Yes. The tool produces photos meeting PSK digital submission requirements. Always verify the latest requirements on passportindia.gov.in before submitting.",
+          "Yes. The tool produces photos that meet PSK digital submission requirements. Always check the latest rules on passportindia.gov.in before you submit.",
       },
       {
-        question: "Can I also use the photo for Indian visa applications?",
+        question: "What size is the photo for an India e-Visa?",
         answer:
-          "Yes. Most Indian visa forms — including e-Visa and sticker visa applications — accept the same 35×45 mm white-background photo.",
+          "The e-Visa photo must be square, usually 51 × 51 mm (2 × 2 inches), with a plain white background in JPEG format. It differs from the 35×45 mm passport photo, so check the e-Visa portal for current file-size limits.",
       },
       {
-        question: "Is it free?",
-        answer: "Completely free — no account, no watermark, no photo limit.",
+        question: "Can I make an India OCI photo online with this tool?",
+        answer:
+          "Yes. Choose the square 51 × 51 mm size, keep the white background, and download a JPEG. Then confirm the current limits on the official OCI portal.",
+      },
+      {
+        question: "Can I make an India passport photo online free?",
+        answer:
+          "Yes. The tool is completely free, with no account, no watermark, and no photo limit.",
+      },
+      {
+        question: "Does the tool upload my photo to a server?",
+        answer:
+          "No. Your browser handles the cropping, resizing, and background clean-up. Your photo never leaves your device.",
       },
       {
         question: "How do I print the photo?",
         answer:
-          "Download the print sheet and print at any photo studio, or order online print delivery. Print on glossy photo paper and cut to 35×45 mm.",
+          "Download the print sheet and print it at any photo studio, or order online print delivery. For home printing, use glossy photo paper and cut each photo to 35×45 mm.",
       },
     ],
   },
 
   {
     slug: "remove-background",
-      translationKey: 'remove-background',
+    translationKey: "remove-background",
     metaTitle: "Free Background Remover — Remove BG Online",
     metaDescription:
       "Remove image background free online. AI-powered, instant results, transparent PNG output. No upload to servers. Works on photos, logos, and product images.",
@@ -2115,7 +2394,196 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
-
+  {
+    slug: "resize-photo-driving-license-sarathi",
+    metaTitle: "Resize Photo Driving License Sarathi – Free DL Photo Resizer",
+    metaDescription:
+      "Use this DL photo resizer to meet Sarathi's 10–20 KB, 35×45 mm photo rules. A free driving license photo editor. Private, no upload, no watermark.",
+    h1: "Resize Photo Driving License Sarathi: Free DL Photo Resizer (2027)",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Use this DL photo resizer to prepare your driving license Sarathi photo in seconds. Hit the exact RTO size and dimension rules. Instant, private, and watermark-free.",
+    sections: [
+      {
+        heading: "Driving License Sarathi Photo Requirements",
+        content: `
+<div class="space-y-8 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    The Sarathi Parivahan portal, run by the Ministry of Road Transport and Highways (MoRTH), enforces strict photo upload rules. Your driving license Sarathi photo must be a recent, front-facing colour image on a plain white or light background. It must measure about <strong>35 × 45 mm</strong> (roughly 420 × 525 pixels) and weigh between <strong>10 KB and 20 KB</strong>.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    A file even 1 KB over the limit usually gets rejected. A file far below the range often looks blurry to the RTO officer. Our DL photo resizer crops and compresses your image in your browser, so it lands inside the correct range on the first try. You upload nothing to a server.
+  </p>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">35 × 45 mm (~420 × 525 px)</h3>
+      <p class="text-sm text-[#52525B]">Passport-style dimensions for the Sarathi photo upload.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">Strictly 10–20 KB</h3>
+      <p class="text-sm text-[#52525B]">The size window is narrow. Small files look blurry, and large files fail the upload.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">White or Light Background</h3>
+      <p class="text-sm text-[#52525B]">The RTO wants a plain, evenly lit background with no shadows or patterns.</p>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Photo Driving License Sarathi in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    You can resize photo driving license Sarathi applicants need in under a minute. Follow these steps.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Use the DL Photo Resizer Step by Step</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+      <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Pick a clear, front-facing photo from your gallery, or take a new one.</p></div>
+    </div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+      <div><h4 class="font-semibold text-[#18181B] mb-1">Set the Sarathi Specs</h4><p class="text-sm text-[#52525B]">Enter 35 × 45 mm and a 10–20 KB target. The tool crops and compresses for you.</p></div>
+    </div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+      <div><h4 class="font-semibold text-[#18181B] mb-1">Download and Upload</h4><p class="text-sm text-[#52525B]">Save the JPG, then upload it to your Sarathi application form.</p></div>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "A Driving License Photo Editor Built for Sarathi",
+        content: `
+<div class="space-y-6 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Generic apps ignore the RTO rules. This driving license photo editor gives you every control that Sarathi checks. You see the live file size as you work, so you never guess.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">What This DL Photo Resizer Does</h3>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
+      <h4 class="font-semibold text-[#18181B] mb-1">✂️ Exact Cropping</h4>
+      <p class="text-sm text-[#52525B]">Crop to the 35 × 45 mm ratio and keep your face centred.</p>
+    </div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
+      <h4 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h4>
+      <p class="text-sm text-[#52525B]">Drag the compression slider and watch the KB value update instantly.</p>
+    </div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
+      <h4 class="font-semibold text-[#18181B] mb-1">🔒 Private Processing</h4>
+      <p class="text-sm text-[#52525B]">Your browser handles every edit. Your photo never leaves your device.</p>
+    </div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5">
+      <h4 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h4>
+      <p class="text-sm text-[#52525B]">You pay nothing and create no account. Edit as many photos as you need.</p>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Photo Tips Before You Upload",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    A good source photo makes compression easier and keeps your face sharp at 10–20 KB. Follow these tips.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Lighting, Pose, and Background</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Stand against a plain white or light wall.</strong> Avoid doors, patterns, and outdoor scenes.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Face a window.</strong> Even daylight removes harsh shadows. Skip the flash.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Look straight at the camera.</strong> Keep a neutral expression and your eyes open.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Fill the frame.</strong> A tight crop keeps facial detail when the file shrinks.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use a recent photo.</strong> Old pictures can trigger a rejection at the RTO.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why Driving License Photos Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    A handful of avoidable errors cause most rejections on the Sarathi portal. Fix them now to save a second RTO visit or a resubmission delay.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">Five Common Errors</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file size outside the 10–20 KB range, even by 1 KB</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Wrong pixel dimensions or an incorrect aspect ratio</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A format other than JPG or JPEG</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A coloured, shadowed, or patterned background</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>An old, blurry, or low-contrast photo with an unclear face</span></li>
+  </ul>
+  <p class="text-[#52525B] leading-relaxed">
+    Specifications can shift between notification cycles and states. Always confirm the current limits on sarathi.parivahan.gov.in before you submit.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Resize Your Signature for the Same Application",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Most Sarathi applications also ask for a scanned signature. Sign in black or blue ink on plain white paper, then photograph or scan it. The signature usually measures about 256 × 64 pixels and weighs 10–20 KB. Upload it to the same tool, set the size, and download the result.
+  </p>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question:
+          "What are the driving license photo size requirements on Sarathi?",
+        answer:
+          "The Sarathi portal asks for a photo of about 35 × 45 mm (roughly 420 × 525 pixels), compressed to 10–20 KB, in JPG format with a white or light background.",
+      },
+      {
+        question: "How do I resize photo driving license Sarathi needs?",
+        answer:
+          "Upload your photo to the DL photo resizer, enter 35 × 45 mm, and set a 10–20 KB target. Then download the JPG and upload it to the Sarathi form.",
+      },
+      {
+        question: "Can I use a selfie for my driving license photo?",
+        answer:
+          "Yes. The selfie must be clear and front-facing, with a plain white or light background, a neutral expression, and even lighting.",
+      },
+      {
+        question:
+          "Is my photo safe when I use this driving license photo editor?",
+        answer:
+          "Yes. The tool runs entirely in your browser. Your photo never reaches a server and stays on your device.",
+      },
+      {
+        question: "What if my file is still too large after resizing?",
+        answer:
+          "Drag the compression slider lower. The tool shows the live file size, so you can land inside the 10–20 KB window.",
+      },
+      {
+        question: "Does this work for both learner's and permanent licenses?",
+        answer:
+          "Yes. The same photo rules apply to a Learner's License (LL) and a Permanent Driving License (DL) on Sarathi.",
+      },
+      {
+        question: "Do I need to resize my signature too?",
+        answer:
+          "Yes. Most applications need a scanned signature of about 256 × 64 pixels and 10–20 KB, signed in black or blue ink on white paper.",
+      },
+      {
+        question: "Is this DL photo resizer free?",
+        answer:
+          "Yes. The tool is free, with no account, no watermark, and no photo limit.",
+      },
+    ],
+  },
   {
     slug: "free-background-remover",
     metaTitle:
@@ -2257,20 +2725,20 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
- {
-  slug: "voter-id-photo-size-reducer",
-  metaTitle: "Voter ID Photo Size Reducer 2027 — Compress Photo Online Free",
-  metaDescription:
-    "Reduce your voter ID photo size online in 2027. Compress to under 50 KB, resize to ECI specifications, and download instantly. 100% free, private, and browser-based.",
-  h1: "Voter ID Photo Size Reducer 2027 — Free Online Tool",
-  showTool: "photo-editor",
-  structuredDataOverrides: { webPageType: "WebApplication" },
-  subtitle:
-    "Compress your voter ID photo to meet 2027 ECI guidelines in seconds. No uploads, no sign-up — everything happens privately in your browser.",
-  sections: [
-    {
-      heading: "What Are the Voter ID Photo Size Requirements for 2027?",
-      content: `
+  {
+    slug: "voter-id-photo-size-reducer",
+    metaTitle: "Voter ID Photo Size Reducer 2027 — Compress Photo Online Free",
+    metaDescription:
+      "Reduce your voter ID photo size online in 2027. Compress to under 50 KB, resize to ECI specifications, and download instantly. 100% free, private, and browser-based.",
+    h1: "Voter ID Photo Size Reducer 2027 — Free Online Tool",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Compress your voter ID photo to meet 2027 ECI guidelines in seconds. No uploads, no sign-up — everything happens privately in your browser.",
+    sections: [
+      {
+        heading: "What Are the Voter ID Photo Size Requirements for 2027?",
+        content: `
 <div class="space-y-8 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
     Every voter ID application or correction request submitted through the Election Commission of India's NVSP and Voter Helpline platforms requires a photo that meets strict technical specifications. Your photograph must be a recent, color, passport-style image with a plain white or light-colored background. The file size should stay under 50 KB, and the recommended dimensions are 200 x 230 pixels in JPEG format. Your face should be clearly visible, front-facing, with a neutral expression and no shadows, sunglasses, or caps. Photos that exceed the size limit or use the wrong dimensions are among the most common reasons voter ID applications get rejected or delayed. This tool compresses and resizes your photo to match these exact requirements, and because everything runs locally on your device, your photo is never uploaded to a server.
@@ -2299,10 +2767,10 @@ export const enPages: SeoPage[] = [
     </div>
   </div>
 </div>`,
-    },
-    {
-      heading: "How to Reduce Your Voter ID Photo Size in 3 Steps",
-      content: `
+      },
+      {
+        heading: "How to Reduce Your Voter ID Photo Size in 3 Steps",
+        content: `
 <div class="space-y-6 not-prose">
   <p class="text-[#52525B] leading-relaxed">
     You do not need any design experience to prepare a compliant voter ID photo. Follow these three steps, and the tool handles the resizing, compression, and quality balancing for you.
@@ -2322,10 +2790,11 @@ export const enPages: SeoPage[] = [
     </div>
   </div>
 </div>`,
-    },
-    {
-      heading: "Why Use an Online Voter ID Photo Size Reducer Instead of Other Apps",
-      content: `
+      },
+      {
+        heading:
+          "Why Use an Online Voter ID Photo Size Reducer Instead of Other Apps",
+        content: `
 <div class="space-y-5 not-prose">
   <p class="text-[#52525B] leading-relaxed">
     Many people try to resize their voter ID photo using WhatsApp compression, screenshot tricks, or third-party mobile apps that demand storage permissions and account sign-ups. These methods often distort the aspect ratio, blur facial features, or strip image quality below acceptable levels. This tool avoids all of that by processing your image directly in your browser using client-side compression, so nothing is ever sent to a remote server.
@@ -2334,41 +2803,43 @@ export const enPages: SeoPage[] = [
     You get precise control over output size and dimensions, instant before-and-after previews, and no installation or registration. The result is a clean, ECI-compliant photo that uploads correctly the first time, saving you from repeated rejections during the application or correction process.
   </p>
 </div>`,
-    },
-  ],
-  faq: [
-    {
-      question: "What is the maximum voter ID photo file size for 2027?",
-      answer:
-        "The ECI requires voter ID photos to stay under 50 KB for smooth upload on the NVSP and Voter Helpline portals. Keeping the file well below this limit reduces the chance of upload errors.",
-    },
-    {
-      question: "Can I reduce the size of an existing photo for my voter ID application?",
-      answer:
-        "Yes. You can compress any existing JPEG or PNG photo to meet voter ID requirements. The tool automatically resizes and compresses it to fit the 200 x 230 pixel and 50 KB limits.",
-    },
-    {
-      question: "Is my photo safe during compression?",
-      answer:
-        "Yes. The tool runs entirely in your browser, so your photo never leaves your device or gets uploaded to any server, keeping your personal data completely private.",
-    },
-    {
-      question: "What dimensions should my voter ID photo be?",
-      answer:
-        "The recommended dimensions are 200 x 230 pixels. This size ensures your photo appears correctly on the ECI portal and prints clearly on the physical voter ID card.",
-    },
-    {
-      question: "Does the tool work on mobile phones?",
-      answer:
-        "Yes. The voter ID photo size reducer is fully responsive and works smoothly on Android, iOS, and all modern mobile browsers without needing an app download.",
-    },
-    {
-      question: "Will compressing my photo reduce its quality too much for approval?",
-      answer:
-        "No. The tool balances file size and visual clarity using smart compression, so your face remains clearly visible and recognizable even after reducing the file to under 50 KB.",
-    },
-  ],
-},
+      },
+    ],
+    faq: [
+      {
+        question: "What is the maximum voter ID photo file size for 2027?",
+        answer:
+          "The ECI requires voter ID photos to stay under 50 KB for smooth upload on the NVSP and Voter Helpline portals. Keeping the file well below this limit reduces the chance of upload errors.",
+      },
+      {
+        question:
+          "Can I reduce the size of an existing photo for my voter ID application?",
+        answer:
+          "Yes. You can compress any existing JPEG or PNG photo to meet voter ID requirements. The tool automatically resizes and compresses it to fit the 200 x 230 pixel and 50 KB limits.",
+      },
+      {
+        question: "Is my photo safe during compression?",
+        answer:
+          "Yes. The tool runs entirely in your browser, so your photo never leaves your device or gets uploaded to any server, keeping your personal data completely private.",
+      },
+      {
+        question: "What dimensions should my voter ID photo be?",
+        answer:
+          "The recommended dimensions are 200 x 230 pixels. This size ensures your photo appears correctly on the ECI portal and prints clearly on the physical voter ID card.",
+      },
+      {
+        question: "Does the tool work on mobile phones?",
+        answer:
+          "Yes. The voter ID photo size reducer is fully responsive and works smoothly on Android, iOS, and all modern mobile browsers without needing an app download.",
+      },
+      {
+        question:
+          "Will compressing my photo reduce its quality too much for approval?",
+        answer:
+          "No. The tool balances file size and visual clarity using smart compression, so your face remains clearly visible and recognizable even after reducing the file to under 50 KB.",
+      },
+    ],
+  },
   {
     slug: "rrb-alp-photo-resizer",
     metaTitle: "RRB ALP Photo Resizer 2027 — Resize Image Online Free",
@@ -2458,177 +2929,117 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
- {
-  slug: "resize-photo-driving-license-sarathi",
-  metaTitle:
-    "Resize Photo for Driving License Sarathi 2027 — Free Online Tool",
-  metaDescription:
-    "Resize your driving license photo for the Sarathi Parivahan portal to the exact 10-20 KB, 35x45mm spec. Free, private, and browser-based — no upload, no watermark.",
-  h1: "Resize Photo for Driving License Sarathi Portal 2027",
-  showTool: "photo-editor",
-  structuredDataOverrides: { webPageType: "WebApplication" },
-  subtitle:
-    "Resize your photo for the Sarathi Parivahan driving license application in seconds. Matches the exact RTO file size and dimension rules — instant, private, no watermark.",
-  sections: [
-    {
-      heading:
-        "What Are the Driving License Photo Requirements on Sarathi Portal?",
-      content: `
-<div class="space-y-8 not-prose">
-  <p class="text-lg text-[#52525B] leading-relaxed">
-    The Sarathi Parivahan portal, run by the Ministry of Road Transport and Highways (MoRTH), enforces one of the strictest photo upload systems among Indian government portals. Your photograph must be a recent, front-facing color image on a plain white or light background, sized to roughly 35mm x 45mm (about 420 x 525 pixels), and compressed to between 10 KB and 20 KB. A file even 1 KB over this limit is usually rejected outright, and a photo far below the range often looks over-compressed and blurry to the reviewing RTO officer. Our tool resizes and compresses your photo directly in your browser, so it lands inside the correct range on the first try — without ever uploading your image to a server.
-  </p>
-  <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">35 x 45mm (~420 x 525px)</h3>
-      <p class="text-sm text-[#52525B]">Standard passport-style dimensions required for driving license photo upload on Sarathi.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Strictly 10-20 KB</h3>
-      <p class="text-sm text-[#52525B]">The file size window is narrow. Too small looks blurry; too large gets auto-rejected.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">White or Light Background</h3>
-      <p class="text-sm text-[#52525B]">No shadows, patterns, or colored walls — the RTO requires a plain, evenly lit background.</p>
-    </div>
-  </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize Your Driving License Photo — 3 Steps</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Choose a clear, front-facing photo from your gallery or take one on the spot.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Set Sarathi Specs</h4><p class="text-sm text-[#52525B]">Select 35x45mm, target 10-20 KB, and let the tool crop and compress automatically.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download and Upload</h4><p class="text-sm text-[#52525B]">Save the compliant JPG and upload it directly to your Sarathi application form.</p></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">Why Driving License Photos Get Rejected</h3>
-    <p class="text-[#52525B] leading-relaxed mb-4">
-      Most rejections on the Sarathi portal come down to a small handful of avoidable errors. Knowing them in advance saves you a second trip to the RTO or a resubmission delay:
-    </p>
-    <ul class="space-y-2 text-[#52525B]">
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> File size outside the 10-20 KB range, even by a single KB</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Wrong pixel dimensions or an incorrect aspect ratio</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> A format other than JPG or JPEG</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> A colored, shadowed, or patterned background instead of plain white or light</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> An old, blurry, or low-contrast photo where the face is not clearly visible</li>
-    </ul>
-    <p class="text-[#52525B] leading-relaxed mt-4">
-      Specifications can shift slightly between notification cycles and states, so always confirm the current limit on sarathi.parivahan.gov.in before you submit your final application.
-    </p>
-  </div>
-</div>`,
-    },
-  ],
-  faq: [
-    {
-      question:
-        "What are the driving license photo size requirements for Sarathi portal?",
-      answer:
-        "The Sarathi portal requires a photo of about 35mm x 45mm (roughly 420 x 525 pixels), compressed to between 10 KB and 20 KB, in JPG format with a white or light background.",
-    },
-    {
-      question: "Can I use a selfie for my driving license photo?",
-      answer:
-        "Yes, as long as it is a clear, front-facing photo with a plain white or light background, a neutral expression, and even lighting with no shadows.",
-    },
-    {
-      question: "Is my photo data safe when I resize it here?",
-      answer:
-        "Yes. The tool runs entirely in your browser, so your photo is never uploaded to a server. Your image stays private on your own device throughout the process.",
-    },
-    {
-      question: "What if my photo file is still too large after resizing?",
-      answer:
-        "Use the compression slider to reduce the size further. The tool shows the live file size as you adjust it, so you can land precisely inside the 10-20 KB window.",
-    },
-    {
-      question: "Does this work for both learner's and permanent licenses?",
-      answer:
-        "Yes. The same photo specifications apply whether you are applying for a Learner's License (LL) or a Permanent Driving License (DL) through the Sarathi portal.",
-    },
-    {
-      question: "Do I also need to resize my signature for the application?",
-      answer:
-        "Yes, most Sarathi applications also require a scanned signature, typically around 256 x 64 pixels and 10-20 KB, signed in black or blue ink on plain white paper.",
-    },
-  ],
-},
-  {
+{
     slug: "afcat-photo-resizer",
-    metaTitle: "AFCAT Photo Resizer 2027 — Resize Image Online Free",
+    metaTitle: "AFCAT Photo Resizer 2027 – Resize Image Online Free",
     metaDescription:
-      "Resize AFCAT 2027 exam photo online free. Set dimensions & file size as per IAF requirements. No upload, private, instant download.",
-    h1: "AFCAT Photo Resizer 2027 — Free Online Tool",
+      "Use this AFCAT photo resizer to meet IAF size rules: 200×230 px, under 50 KB, JPG. Resize image online free. Private, no upload, instant download.",
+    h1: "AFCAT Photo Resizer 2027: Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize photo for AFCAT 2027 as per Indian Air Force specifications. Instant browser-based tool — free, private, no upload.",
+      "Resize your photo for AFCAT 2027 to Indian Air Force specifications. This browser-based tool is free, private, and needs no upload.",
     sections: [
       {
-        heading: "What Are the AFCAT 2027 Photo Requirements?",
+        heading: "AFCAT 2027 Photo Requirements",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    For AFCAT 2027 (Air Force Common Admission Test), candidates must upload a photograph adhering to Indian Air Force specifications. The photo should be a recent passport-size color photograph with a plain white background. The recommended dimensions are approximately 200 x 230 pixels with a maximum file size of 50 KB. The image format must be JPG/JPEG. The photo should clearly show your face with a neutral expression, and you should not be wearing any headgear except for religious reasons. The AFCAT photo resizer helps you instantly resize your photo to meet all these requirements with no server upload, keeping your data completely private.
+    Applying for the Air Force Common Admission Test? This AFCAT photo resizer turns any picture into a compliant upload in seconds. The Indian Air Force (IAF) asks for a recent, colour, passport-size photograph on a plain white background. Your file must measure about <strong>200 × 230 pixels</strong>, weigh no more than <strong>50 KB</strong>, and use the <strong>JPG or JPEG</strong> format.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Look straight at the camera with a neutral expression. Skip headgear unless your religion requires it. The tool processes everything in your browser, so you upload nothing to a server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">200x230 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Standard AFCAT photo dimensions for 2027 cycle. Tool auto-adjusts to match.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Max 50 KB File Size</h3>
-      <p class="text-sm text-[#52525B]">Compress photo to under 50 KB while maintaining clear facial features.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">White Background</h3>
-      <p class="text-sm text-[#52525B]">IAF requires plain white background with clear front-facing view.</p>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📐 200 × 230 Pixels</h3><p class="text-sm text-[#52525B]">The standard AFCAT photo size. The tool adjusts your image to match it.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📉 Maximum 50 KB</h3><p class="text-sm text-[#52525B]">Compress your photo under the limit and keep your face clear.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">⬜ White Background</h3><p class="text-sm text-[#52525B]">The IAF expects a plain white backdrop and a front-facing view.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">AFCAT Photo Size at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Specification</th><th class="text-left py-2 font-semibold">Requirement</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Dimensions</td><td class="py-2 text-[#52525B]">About 200 × 230 pixels</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">File size</td><td class="py-2 text-[#52525B]">Maximum 50 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">JPG / JPEG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain white</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Photo age</td><td class="py-2 text-[#52525B]">Recent, ideally within 30 days</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize AFCAT Photo — Quick 3-Step Process</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Photo</h4><p class="text-sm text-[#52525B]">Select your passport-size photo from device gallery.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Set AFCAT Specs</h4><p class="text-sm text-[#52525B]">Choose 200x230 pixels, target under 50 KB, adjust quality.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download & Apply</h4><p class="text-sm text-[#52525B]">Download resized JPG and upload to AFCAT 2027 application portal.</p></div>
-      </div>
-    </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your AFCAT Photo in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Image Online for AFCAT in Under a Minute</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Select a passport-size photo from your gallery or camera roll.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Set the AFCAT Specs</h4><p class="text-sm text-[#52525B]">Enter 200 × 230 pixels, set a 50 KB limit, and adjust the quality slider.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Apply</h4><p class="text-sm text-[#52525B]">Save the JPG and upload it to the AFCAT 2027 application portal.</p></div></div>
   </div>
+</div>`,
+      },
+      {
+        heading: "Tips for a Clear AFCAT Photo",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A sharp source photo survives compression far better than a blurry one. Prepare your picture with these tips before you resize.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Before You Take the Photo</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use a plain white wall.</strong> Avoid doors, posters, and outdoor scenes.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Face a window.</strong> Soft daylight removes harsh shadows. Skip the flash.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Look straight ahead.</strong> Keep your head level and your eyes open.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Remove headgear.</strong> Keep only religious headwear, and keep your face fully visible.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Take a fresh picture.</strong> Recruiters expect a recent photograph.</span></li>
+  </ul>
+  <h3 class="text-xl font-bold text-[#18181B]">While You Resize</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop tight.</strong> A closer crop keeps facial detail at 50 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Lower quality in small steps.</strong> Stop as soon as the file drops under 50 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Preview at full size.</strong> Check that your eyes and mouth look sharp.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why AFCAT Photos Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Small errors cause most rejections. Fix them now and avoid a rushed correction near the deadline.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Six Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file larger than 50 KB</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>The wrong pixel dimensions or a stretched face</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A format other than JPG or JPEG</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A coloured, shadowed, or cluttered background</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Headgear or dark glasses that hide your face</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>An old or blurry photograph</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Specifications can change between notifications. Confirm the latest rules on the official AFCAT portal before you submit.</p>
+</div>`,
+      },
+      {
+        heading: "Why Use This AFCAT Photo Resizer?",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Generic apps ignore exam rules. This tool gives you exact control over size, dimensions, and quality.</p>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser handles every edit. Your photo never leaves your device.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">⚡ Instant Results</h3><p class="text-sm text-[#52525B]">Resize and compress in a second, with no upload queue.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h3><p class="text-sm text-[#52525B]">Watch the KB value update as you move the quality slider.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h3><p class="text-sm text-[#52525B]">You create no account and pay nothing. Resize as many photos as you need.</p></div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Resize Your AFCAT Signature Too",
+        content: `
+<div class="space-y-3 not-prose">
+  <p class="text-[#52525B] leading-relaxed">The AFCAT application also asks for a signature upload. Sign in black or blue ink on plain white paper, then photograph or scan it. Upload the image to this tool, apply the size shown in the official notification, and download the result. Keep the signature consistent with the one on your other documents.</p>
 </div>`,
       },
     ],
@@ -2636,88 +3047,158 @@ export const enPages: SeoPage[] = [
       {
         question: "What are the AFCAT 2027 photo specifications?",
         answer:
-          "AFCAT 2027 requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear face view.",
+          "AFCAT 2027 asks for a recent colour photo of about 200 × 230 pixels, with a maximum size of 50 KB, in JPG format, on a plain white background.",
+      },
+      {
+        question: "How do I resize my photo for AFCAT?",
+        answer:
+          "Upload your photo, enter 200 × 230 pixels, set a 50 KB limit, and download the JPG. Then upload it to the AFCAT application form.",
       },
       {
         question: "Can I wear glasses in my AFCAT photo?",
         answer:
-          "It's recommended to remove glasses for the photo unless medically required, as clear facial features are important for identification.",
+          "Remove your glasses unless you need them for medical reasons. Clear facial features matter for identification.",
       },
       {
         question: "Is my AFCAT photo data secure?",
         answer:
-          "Yes, the tool processes your image entirely in your browser. No photo upload to any server ensures complete privacy.",
+          "Yes. The tool processes your image in your browser. Your photo never reaches a server.",
       },
       {
-        question: "What if my photo is from an older application?",
+        question: "Can I use an older photo from a previous application?",
         answer:
-          "AFCAT requires a recent photo. You should take a fresh photo not older than 30 days for the application.",
+          "No. AFCAT requires a recent photo. Use a fresh picture taken within the last 30 days.",
       },
       {
         question: "Does AFCAT require a signature too?",
         answer:
-          "Yes, AFCAT also requires a signature upload. You can use our signature resizer tool for that requirement.",
+          "Yes. You must upload a signature as well. Use this tool to resize it to the size in the official notification.",
+      },
+      {
+        question: "What if my file is still above 50 KB?",
+        answer:
+          "Lower the quality slider a little or crop closer to your face. The tool shows the live file size, so you can stop right below 50 KB.",
+      },
+      {
+        question: "Does this AFCAT photo resizer work on mobile?",
+        answer:
+          "Yes. It works on Android, iOS, and desktop browsers. You install no app.",
       },
     ],
   },
   {
     slug: "ssc-photo-resizer-2027",
-    metaTitle: "SSC Photo Resizer 2027 — Resize Image Online Free",
+    metaTitle: "SSC Photo Resizer 2027 – Resize Image Online Free",
     metaDescription:
-      "Resize SSC 2027 exam photo online free. Set dimensions & file size as per Staff Selection Commission guidelines. No upload, private.",
-    h1: "SSC Photo Resizer 2027 — Free Online Tool",
+      "Use this SSC photo resizer to meet Staff Selection Commission rules: 200×230 px, under 50 KB, JPG. Resize image online free. Private, no upload.",
+    h1: "SSC Photo Resizer 2027: Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize photo for SSC exams 2027 as per SSC guidelines. Instant browser-based tool — free, private, no watermark.",
+      "Resize your photo for SSC exams in 2027 to match Staff Selection Commission guidelines. This browser-based tool is free, private, and watermark-free.",
     sections: [
       {
-        heading: "What Are the SSC 2027 Photo Requirements?",
+        heading: "SSC 2027 Photo Requirements",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    For all SSC (Staff Selection Commission) exams in 2027, candidates must upload a photograph meeting specific requirements. The photo should be a recent passport-size color photograph with a white background. The dimensions must be approximately 200 x 230 pixels with a maximum file size of 50 KB. The image format should be JPG/JPEG. The photo should clearly show your face with a neutral expression, and you should not be wearing any cap or dark glasses. The SSC photo resizer helps you instantly resize your photo to meet these requirements, with all processing done in your browser for complete privacy.
+    Every SSC exam application, from CGL and CHSL to MTS and GD, asks for a photo that meets strict rules. This SSC photo resizer fits your picture to those rules in seconds. The Staff Selection Commission wants a recent, colour, passport-size photograph on a white background. Your file must measure about <strong>200 × 230 pixels</strong>, stay under <strong>50 KB</strong>, and use the <strong>JPG or JPEG</strong> format.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Show your full face with a neutral expression. Do not wear a cap or dark glasses. The tool works inside your browser, so your photo never reaches a server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">200x230 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Standard SSC photo dimensions applicable for all SSC exams in 2027.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Max 50 KB File Size</h3>
-      <p class="text-sm text-[#52525B]">SSC requires photo under 50 KB. Tool helps compress while maintaining quality.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">White Background</h3>
-      <p class="text-sm text-[#52525B]">SSC requires plain white background with clear front-facing view.</p>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📐 200 × 230 Pixels</h3><p class="text-sm text-[#52525B]">The standard SSC photo size for 2027 applications.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📉 Maximum 50 KB</h3><p class="text-sm text-[#52525B]">Compress below the limit while your face stays sharp.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">⬜ White Background</h3><p class="text-sm text-[#52525B]">SSC expects a plain white backdrop and a front-facing view.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">SSC Photo Size at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Specification</th><th class="text-left py-2 font-semibold">Requirement</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Dimensions</td><td class="py-2 text-[#52525B]">About 200 × 230 pixels</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">File size</td><td class="py-2 text-[#52525B]">Maximum 50 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">JPG / JPEG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain white</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Colour</td><td class="py-2 text-[#52525B]">Recent colour photograph</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize SSC Photo — Quick 3-Step Process</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Select your passport-size color photo from device.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Set SSC Specs</h4><p class="text-sm text-[#52525B]">Choose 200x230 pixels, target under 50 KB, adjust quality slider.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download & Apply</h4><p class="text-sm text-[#52525B]">Download resized JPG and upload to SSC exam application portal.</p></div>
-      </div>
-    </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your SSC Photo in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Image Online for SSC in Under a Minute</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Choose a passport-size colour photo from your device.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Set the SSC Specs</h4><p class="text-sm text-[#52525B]">Enter 200 × 230 pixels, set a 50 KB limit, and tune the quality slider.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Apply</h4><p class="text-sm text-[#52525B]">Save the JPG and upload it to the SSC application portal.</p></div></div>
   </div>
+</div>`,
+      },
+      {
+        heading: "SSC Exams That Use These Photo Rules",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">The same photo workflow applies across the main SSC recruitment exams. Always check each notification, because individual exams can change the limits.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Popular SSC Exams</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>SSC CGL:</strong> Combined Graduate Level for Group B and C posts</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>SSC CHSL:</strong> Combined Higher Secondary Level for clerical posts</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>SSC MTS:</strong> Multi-Tasking Staff recruitment</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>SSC GD Constable:</strong> Central armed police force recruitment</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>SSC Stenographer:</strong> Grades C and D</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Tips for a Clear SSC Photo",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A sharp source photo survives compression far better than a blurry one. Follow these tips.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Lighting, Pose, and Framing</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Stand against a white wall.</strong> Avoid patterns and clutter.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use natural daylight.</strong> Face a window and skip the flash.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Look at the camera.</strong> Keep a neutral expression and your eyes open.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Remove caps and dark glasses.</strong> Keep your forehead and eyes visible.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop tight.</strong> A closer crop preserves detail at 50 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Match your other documents.</strong> Use a photo that looks like your ID proof.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why SSC Photos Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Most rejections come from avoidable mistakes. Check this list before you upload.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Common Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file above 50 KB</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>The wrong dimensions or a stretched face</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A PNG or HEIC file instead of JPG</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A shadowed or coloured background</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A blurry or over-compressed image</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Rules can change between notifications. Confirm the latest limits on the official SSC portal.</p>
+</div>`,
+      },
+      {
+        heading: "Why Use This SSC Photo Resizer?",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser handles every edit. Your photo stays on your device.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">⚡ Instant Results</h3><p class="text-sm text-[#52525B]">Resize and compress in a second. You wait for no upload.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h3><p class="text-sm text-[#52525B]">See the KB value change as you drag the quality slider.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h3><p class="text-sm text-[#52525B]">You need no account and pay nothing.</p></div>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">SSC applications also need a signature. Sign on plain white paper in black or blue ink, upload the scan here, and apply the size from the official notification.</p>
 </div>`,
       },
     ],
@@ -2725,88 +3206,148 @@ export const enPages: SeoPage[] = [
       {
         question: "What are the SSC 2027 photo specifications?",
         answer:
-          "SSC requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear facial features.",
+          "SSC asks for a recent colour photo of about 200 × 230 pixels, under 50 KB, in JPG format, on a plain white background.",
       },
       {
-        question: "Can I use a mobile photo for SSC application?",
+        question: "How do I resize my photo for an SSC application?",
         answer:
-          "Yes, you can take a photo with your mobile and resize it using this tool to meet SSC specifications.",
+          "Upload your photo, enter 200 × 230 pixels, set a 50 KB limit, and download the JPG. Then upload it to the SSC form.",
+      },
+      {
+        question: "Can I use a mobile photo for the SSC application?",
+        answer:
+          "Yes. Take a clear photo with your phone, then resize it here to meet the SSC rules.",
       },
       {
         question: "Is my SSC photo data secure?",
         answer:
-          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+          "Yes. All processing happens in your browser. Your photo never leaves your device.",
       },
       {
         question: "What if my photo is already resized?",
         answer:
-          "You can still use the tool to verify and adjust the dimensions and file size to exactly match SSC requirements.",
+          "Upload it anyway. The tool lets you verify and adjust the dimensions and file size to match the SSC rules exactly.",
       },
       {
-        question: "Does SSC require a signature as well?",
+        question: "Does SSC require a signature too?",
         answer:
-          "Yes, SSC applications also require a signature in specified dimensions. We have a separate signature resizer tool available.",
+          "Yes. SSC applications also ask for a signature. Resize it with this tool using the size from the official notification.",
+      },
+      {
+        question: "Can I wear glasses or a cap in the SSC photo?",
+        answer:
+          "Do not wear a cap or dark glasses. Your full face must stay visible.",
+      },
+      {
+        question: "Does this SSC photo resizer work on mobile?",
+        answer:
+          "Yes. It runs on Android, iOS, and desktop browsers. You install nothing.",
       },
     ],
   },
   {
     slug: "csir-net-signature-resizer",
-    metaTitle: "CSIR NET Signature Resizer 2027 — Resize Signature Online Free",
+    metaTitle: "CSIR NET Signature Resizer 2027 – Resize Signature Online",
     metaDescription:
-      "Resize CSIR NET 2027 signature online free. Set dimensions & file size as per CSIR guidelines. No upload, private, instant download.",
-    h1: "CSIR NET Signature Resizer 2027 — Free Online Tool",
+      "Use this CSIR NET signature resizer to meet size rules: 200×50 px, under 30 KB, JPG or PNG. Resize signature online free. Private, no upload.",
+    h1: "CSIR NET Signature Resizer 2027: Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize signature for CSIR NET 2027 exactly as per CSIR specifications. Browser-based, free, no upload needed.",
+      "Resize your signature for CSIR NET 2027 to the official specifications. This browser-based tool is free, private, and needs no upload.",
     sections: [
       {
-        heading: "What Are the CSIR NET 2027 Signature Requirements?",
+        heading: "CSIR NET 2027 Signature Requirements",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    For CSIR NET (Council of Scientific & Industrial Research National Eligibility Test) 2027, candidates must upload a scanned signature meeting specific requirements. The signature should be in black or blue ink on white paper, scanned at proper resolution. The dimensions should be approximately 200 x 50 pixels with a maximum file size of 30 KB. The format must be JPG/JPEG or PNG. The signature should be clear and match the candidate's usual signature. The CSIR NET signature resizer helps you instantly resize your signature to meet these requirements with no server upload, ensuring complete privacy and security.
+    The CSIR NET application asks for a clean, scanned signature. This CSIR NET signature resizer fits your scan to the rules in seconds. Sign in black or blue ink on plain white paper. Your file should measure about <strong>200 × 50 pixels</strong>, stay under <strong>30 KB</strong>, and use the <strong>JPG, JPEG, or PNG</strong> format.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    The signature must be clear and match your usual handwriting. The tool runs in your browser, so you upload nothing to a server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">200x50 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Standard CSIR NET signature dimensions for 2027. Tool auto-adjusts to match.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Max 30 KB File Size</h3>
-      <p class="text-sm text-[#52525B]">Compress signature to under 30 KB while maintaining clarity.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Black or Blue Ink</h3>
-      <p class="text-sm text-[#52525B]">Signature should be in black or blue ink on white paper for best scanning results.</p>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">✍️ 200 × 50 Pixels</h3><p class="text-sm text-[#52525B]">The standard CSIR NET signature size. The tool adjusts your scan to match.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📉 Maximum 30 KB</h3><p class="text-sm text-[#52525B]">Compress below the limit and keep every stroke readable.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">🖊️ Black or Blue Ink</h3><p class="text-sm text-[#52525B]">Dark ink on white paper gives the cleanest scan.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">CSIR NET Signature Size at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Specification</th><th class="text-left py-2 font-semibold">Requirement</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Dimensions</td><td class="py-2 text-[#52525B]">About 200 × 50 pixels</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">File size</td><td class="py-2 text-[#52525B]">Maximum 30 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">JPG / JPEG or PNG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Ink</td><td class="py-2 text-[#52525B]">Black or blue</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Paper</td><td class="py-2 text-[#52525B]">Plain white</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize CSIR NET Signature — Quick 3-Step Process</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Signature</h4><p class="text-sm text-[#52525B]">Select your scanned signature image from device.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Set CSIR Specs</h4><p class="text-sm text-[#52525B]">Choose 200x50 pixels, target under 30 KB, adjust quality.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download & Upload</h4><p class="text-sm text-[#52525B]">Download resized signature and upload to CSIR NET application.</p></div>
-      </div>
-    </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your CSIR NET Signature in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Signature Online in Under a Minute</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Signature</h4><p class="text-sm text-[#52525B]">Select the scanned or photographed signature from your device.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Set the CSIR Specs</h4><p class="text-sm text-[#52525B]">Enter 200 × 50 pixels, set a 30 KB limit, and adjust the quality slider.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Upload</h4><p class="text-sm text-[#52525B]">Save the file and upload it to the CSIR NET application.</p></div></div>
   </div>
+</div>`,
+      },
+      {
+        heading: "How to Create a Clean Signature Scan",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A clean scan resizes better than a shadowy phone photo. Prepare your signature with these steps.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Before You Scan</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use plain white paper.</strong> Avoid lined or textured sheets.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Sign with a black or blue pen.</strong> A fine tip gives crisp lines.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Sign inside a box.</strong> Draw a wide rectangle and fill it, so you crop easily.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Light the page evenly.</strong> Photograph in daylight and avoid shadows.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Hold the camera straight.</strong> Shoot from directly above the paper.</span></li>
+  </ul>
+  <h3 class="text-xl font-bold text-[#18181B]">While You Resize</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop close to the ink.</strong> Remove empty margins so the strokes stay large.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Keep the 4:1 ratio.</strong> A 200 × 50 box needs a wide crop.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Preview the result.</strong> Make sure thin strokes remain visible.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why CSIR NET Signatures Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Most problems come from the scan, not the form. Avoid these errors.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Common Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file larger than 30 KB</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A stretched signature caused by the wrong aspect ratio</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A typed or digital signature instead of a handwritten one</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Pale ink or a grey, shadowed background</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A signature that differs from your usual one</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Specifications can change. Confirm the latest limits on the official CSIR NET portal before you submit.</p>
+</div>`,
+      },
+      {
+        heading: "Why Use This CSIR NET Signature Resizer?",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser handles the edit. Your signature never leaves your device.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">⚡ Instant Results</h3><p class="text-sm text-[#52525B]">Resize and compress in a second, with no upload wait.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h3><p class="text-sm text-[#52525B]">Watch the KB value change as you move the quality slider.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h3><p class="text-sm text-[#52525B]">You need no account and pay nothing.</p></div>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">CSIR NET also needs a photograph. Use the photo resizer on this site to match the size in the official notification.</p>
 </div>`,
       },
     ],
@@ -2814,88 +3355,148 @@ export const enPages: SeoPage[] = [
       {
         question: "What are the CSIR NET 2027 signature specifications?",
         answer:
-          "CSIR NET requires 200x50 pixel signature, max 30 KB file size, JPG/PNG format in black or blue ink on white paper.",
+          "CSIR NET asks for a signature of about 200 × 50 pixels, under 30 KB, in JPG or PNG format, signed in black or blue ink on white paper.",
+      },
+      {
+        question: "How do I resize my signature for CSIR NET?",
+        answer:
+          "Upload your scanned signature, enter 200 × 50 pixels, set a 30 KB limit, and download the file. Then upload it to the application form.",
       },
       {
         question: "Can I use a digital signature for CSIR NET?",
         answer:
-          "No, CSIR NET requires a handwritten signature that is scanned and uploaded. Digital signatures are not accepted.",
+          "No. CSIR NET needs a handwritten signature that you scan and upload. Digital signatures do not qualify.",
       },
       {
         question: "Is my signature data secure?",
         answer:
-          "Yes, the tool works entirely in your browser. Your signature never leaves your device, ensuring complete privacy.",
+          "Yes. The tool runs in your browser. Your signature never leaves your device.",
       },
       {
         question: "What if my signature file is too large?",
         answer:
-          "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
+          "Lower the quality slider or crop closer to the ink. The tool shows the live file size, so you can stop below 30 KB.",
+      },
+      {
+        question: "Which ink colour works best for a CSIR NET signature?",
+        answer:
+          "Use black or blue ink. Both give strong contrast against white paper and scan clearly.",
       },
       {
         question: "Does CSIR NET require a photo too?",
         answer:
-          "Yes, CSIR NET also requires a photo in specified dimensions. Use our photo resizer tool for that requirement.",
+          "Yes. The application also asks for a photograph. Resize it with the photo resizer on this site.",
+      },
+      {
+        question: "Does this tool work on mobile?",
+        answer:
+          "Yes. It works on Android, iOS, and desktop browsers. You install no app.",
       },
     ],
   },
   {
     slug: "army-agniveer-photo-resizer",
-    metaTitle: "Army Agniveer Photo Resizer 2027 — Resize Image Online Free",
+    metaTitle: "Army Agniveer Photo Resizer 2027 – Resize Image Online",
     metaDescription:
-      "Resize Army Agniveer 2027 photo online free. Set dimensions & file size as per Indian Army requirements. No upload, private.",
-    h1: "Army Agniveer Photo Resizer 2027 — Free Online Tool",
+      "Use this Army Agniveer photo resizer to meet Indian Army rules: 200×230 px, under 50 KB, JPG. Resize image online free. Private, no upload.",
+    h1: "Army Agniveer Photo Resizer 2027: Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize photo for Army Agniveer 2027 as per Indian Army specifications. Instant tool — free, private, no upload.",
+      "Resize your photo for Army Agniveer 2027 to Indian Army specifications. This tool is free, private, and needs no upload.",
     sections: [
       {
-        heading: "What Are the Army Agniveer 2027 Photo Requirements?",
+        heading: "Army Agniveer 2027 Photo Requirements",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    For Army Agniveer 2027 recruitment, candidates must upload a photograph meeting Indian Army specifications. The photo should be a recent passport-size color photograph with a plain white background. The dimensions should be approximately 200 x 230 pixels with a maximum file size of 50 KB. The image format must be JPG/JPEG. The photo should clearly show your face with a neutral expression. You should not be wearing any cap, dark glasses, or uniform. The Army Agniveer photo resizer helps you instantly resize your photo to meet all these requirements, with all processing done in your browser for complete privacy.
+    Applying for the Agnipath scheme? This Army Agniveer photo resizer fits your picture to the Indian Army rules in seconds. The Army asks for a recent, colour, passport-size photograph on a plain white background. Your file must measure about <strong>200 × 230 pixels</strong>, stay under <strong>50 KB</strong>, and use the <strong>JPG or JPEG</strong> format.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Show your face clearly with a neutral expression. Do not wear a cap, dark glasses, or a uniform. The tool processes your image in your browser, so you upload nothing to a server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">200x230 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Standard Army Agniveer photo dimensions for 2027 recruitment cycle.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Max 50 KB File Size</h3>
-      <p class="text-sm text-[#52525B]">Compress photo to under 50 KB while maintaining clear facial features.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">White Background</h3>
-      <p class="text-sm text-[#52525B]">Indian Army requires plain white background with clear front-facing view.</p>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📐 200 × 230 Pixels</h3><p class="text-sm text-[#52525B]">The standard Agniveer photo size for the 2027 cycle.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📉 Maximum 50 KB</h3><p class="text-sm text-[#52525B]">Compress below the limit while your face stays clear.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">⬜ White Background</h3><p class="text-sm text-[#52525B]">The Army expects a plain white backdrop and a front-facing view.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">Agniveer Photo Size at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Specification</th><th class="text-left py-2 font-semibold">Requirement</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Dimensions</td><td class="py-2 text-[#52525B]">About 200 × 230 pixels</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">File size</td><td class="py-2 text-[#52525B]">Maximum 50 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">JPG / JPEG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain white</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Clothing</td><td class="py-2 text-[#52525B]">Civilian clothes, no uniform or cap</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize Army Agniveer Photo — Quick 3-Step Process</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Photo</h4><p class="text-sm text-[#52525B]">Select your passport-size photo from device gallery.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Set Agniveer Specs</h4><p class="text-sm text-[#52525B]">Choose 200x230 pixels, target under 50 KB, adjust quality.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download & Apply</h4><p class="text-sm text-[#52525B]">Download resized JPG and upload to Army Agniveer application portal.</p></div>
-      </div>
-    </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your Agniveer Photo in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Image Online for Agniveer in Under a Minute</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Select a passport-size photo from your gallery.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Set the Agniveer Specs</h4><p class="text-sm text-[#52525B]">Enter 200 × 230 pixels, set a 50 KB limit, and adjust quality.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Apply</h4><p class="text-sm text-[#52525B]">Save the JPG and upload it to the Army Agniveer portal.</p></div></div>
   </div>
+</div>`,
+      },
+      {
+        heading: "Tips for a Clear Agniveer Photo",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Recruitment portals check photos closely, so a sharp, honest picture helps. Follow these tips.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Before You Take the Photo</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Wear a plain civilian shirt.</strong> Avoid uniforms, badges, and printed slogans.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Stand against a white wall.</strong> Keep shadows off the backdrop.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Face a window.</strong> Even daylight gives a natural skin tone.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Look straight ahead.</strong> Keep your head level and your mouth closed.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Take a new photo.</strong> The application needs a recent picture.</span></li>
+  </ul>
+  <h3 class="text-xl font-bold text-[#18181B]">While You Resize</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop tight.</strong> A closer crop keeps your features sharp at 50 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Reduce quality in small steps.</strong> Stop when the file drops below 50 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Preview at full size.</strong> Check your eyes before you download.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why Agniveer Photos Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A rejected photo can delay your registration. Avoid these errors.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Common Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file larger than 50 KB</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Wrong dimensions or a stretched face</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A uniform, cap, or dark glasses</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A coloured or cluttered background</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>An old or blurry photograph</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Rules can change between rallies and notifications. Confirm the latest limits on the official Indian Army recruitment portal.</p>
+</div>`,
+      },
+      {
+        heading: "Why Use This Agniveer Photo Resizer?",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser handles every edit. Your photo never leaves your device.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">⚡ Instant Results</h3><p class="text-sm text-[#52525B]">Resize and compress in a second, with no upload queue.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h3><p class="text-sm text-[#52525B]">Watch the KB value change as you drag the quality slider.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h3><p class="text-sm text-[#52525B]">You need no account and pay nothing.</p></div>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">The application also asks for a signature. Sign on plain white paper, upload the scan here, and apply the size from the official notification.</p>
 </div>`,
       },
     ],
@@ -2903,89 +3504,153 @@ export const enPages: SeoPage[] = [
       {
         question: "What are the Army Agniveer 2027 photo specifications?",
         answer:
-          "Army Agniveer requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear face view.",
+          "Army Agniveer asks for a recent colour photo of about 200 × 230 pixels, under 50 KB, in JPG format, on a plain white background.",
       },
       {
-        question: "Can I wear uniform in my Agniveer photo?",
+        question: "How do I resize my photo for Agniveer?",
         answer:
-          "No, you should wear civilian clothes for the photo. Wearing uniform or cap is not allowed for the photograph.",
+          "Upload your photo, enter 200 × 230 pixels, set a 50 KB limit, and download the JPG. Then upload it to the application portal.",
+      },
+      {
+        question: "Can I wear a uniform in my Agniveer photo?",
+        answer:
+          "No. Wear civilian clothes. The photograph must not show a uniform or cap.",
       },
       {
         question: "Is my photo data secure?",
         answer:
-          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+          "Yes. All processing happens in your browser. Your photo never leaves your device.",
       },
       {
-        question: "What if my photo is from an older application?",
+        question: "Can I reuse a photo from an older application?",
         answer:
-          "You should take a fresh photo for Army Agniveer 2027 application as it requires a recent photograph.",
+          "No. Take a fresh photo for the 2027 application, because the Army requires a recent photograph.",
       },
       {
         question: "Does Army Agniveer require a signature?",
         answer:
-          "Yes, the application also requires a signature. Use our signature resizer tool for that requirement.",
+          "Yes. The application also asks for a signature. Resize it with this tool using the size in the official notification.",
+      },
+      {
+        question: "What if my file stays above 50 KB?",
+        answer:
+          "Lower the quality slider a little or crop closer to your face. The live file size shows you when to stop.",
+      },
+      {
+        question: "Does this tool work on a phone?",
+        answer:
+          "Yes. It works on Android, iOS, and desktop browsers. You install no app.",
       },
     ],
   },
   {
     slug: "ibps-handwritten-declaration-resizer",
-    metaTitle: "IBPS Handwritten Declaration Resizer 2027 — Resize Online Free",
+    metaTitle: "IBPS Handwritten Declaration Resizer 2027 – Resize Online",
     metaDescription:
-      "Resize IBPS handwritten declaration 2027 online free. Set dimensions & file size as per IBPS guidelines. No upload, private.",
-    h1: "IBPS Handwritten Declaration Resizer 2027 — Free Online Tool",
+      "Use this IBPS handwritten declaration resizer to meet IBPS rules: 800×400 px, 50–100 KB, JPG. Resize declaration online free. Private, no upload.",
+    h1: "IBPS Handwritten Declaration Resizer 2027: Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize handwritten declaration for IBPS 2027 as per IBPS specifications. Instant browser-based tool — free, private.",
+      "Resize your handwritten declaration for IBPS 2027 to the official specifications. This browser-based tool is free, private, and needs no upload.",
     sections: [
       {
-        heading:
-          "What Are the IBPS Handwritten Declaration Requirements for 2027?",
+        heading: "IBPS Handwritten Declaration Requirements for 2027",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    For IBPS (Institute of Banking Personnel Selection) exams in 2027, candidates must upload a handwritten declaration meeting specific requirements. The declaration should be written in the candidate's own handwriting in English or Hindi on a white paper. The text is: \"I, [Candidate Name], hereby declare that all the information submitted by me in the application form is correct, true, and valid. I will present the supporting documents as and when required.\" The dimensions should be approximately 200 x 50 pixels with a maximum file size of 30 KB. The format must be JPG/JPEG. The IBPS handwritten declaration resizer helps you instantly resize your declaration to meet these requirements with no server upload.
+    IBPS asks every candidate to upload a handwritten declaration along with the photo, signature, and left thumb impression. This IBPS handwritten declaration resizer fits your scan to the rules in seconds. Write the text in English, in your own running handwriting, with a black pen on white paper. Your file should measure <strong>800 × 400 pixels</strong>, weigh between <strong>50 KB and 100 KB</strong>, and use the <strong>JPG or JPEG</strong> format.
   </p>
+  <p class="text-[#52525B] leading-relaxed">
+    The tool runs in your browser, so you upload nothing to a server.
+  </p>
+  <h3 class="text-xl font-bold text-[#18181B]">The Declaration Text</h3>
+  <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6 text-[#52525B] leading-relaxed">
+    “I, [Candidate Name], hereby declare that all the information submitted by me in the application form is correct, true and valid. I will present the supporting documents as and when required.”
+  </div>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">200x50 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Standard IBPS handwritten declaration dimensions for 2027 applications.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Max 30 KB File Size</h3>
-      <p class="text-sm text-[#52525B]">Compress declaration to under 30 KB while maintaining readability.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Handwritten on White Paper</h3>
-      <p class="text-sm text-[#52525B]">Declaration must be handwritten in English or Hindi on white paper.</p>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📐 800 × 400 Pixels</h3><p class="text-sm text-[#52525B]">The preferred IBPS declaration size.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📉 50–100 KB</h3><p class="text-sm text-[#52525B]">Keep the file inside this window and keep every word readable.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">🖊️ Black Pen, White Paper</h3><p class="text-sm text-[#52525B]">Write in English, in running handwriting, and avoid capital letters.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">Declaration Size at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Specification</th><th class="text-left py-2 font-semibold">Requirement</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Dimensions</td><td class="py-2 text-[#52525B]">800 × 400 pixels</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">File size</td><td class="py-2 text-[#52525B]">50 KB to 100 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">JPG / JPEG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Language</td><td class="py-2 text-[#52525B]">English, running handwriting</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Ink and paper</td><td class="py-2 text-[#52525B]">Black pen on white paper</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize IBPS Handwritten Declaration — Quick 3-Step Process</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Write Declaration</h4><p class="text-sm text-[#52525B]">Write the declaration in your own handwriting on white paper.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload & Set Specs</h4><p class="text-sm text-[#52525B]">Upload scanned declaration, choose 200x50 pixels, target under 30 KB.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download & Upload</h4><p class="text-sm text-[#52525B]">Download resized declaration and upload to IBPS application portal.</p></div>
-      </div>
-    </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your IBPS Declaration in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Declaration Online in Under a Minute</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Write and Scan</h4><p class="text-sm text-[#52525B]">Write the declaration on white paper, then scan or photograph it.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Set the IBPS Specs</h4><p class="text-sm text-[#52525B]">Upload the image, enter 800 × 400 pixels, and target 50–100 KB.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Upload</h4><p class="text-sm text-[#52525B]">Save the JPG and upload it to the IBPS application portal.</p></div></div>
   </div>
+</div>`,
+      },
+      {
+        heading: "How to Write a Clean Declaration",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A neat page scans better and survives compression. Prepare it with these steps.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Before You Scan</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use plain white paper.</strong> Avoid lined sheets.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Write with a black pen.</strong> Press evenly for dark, clear strokes.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use running handwriting.</strong> Do not write in capital letters.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Write your own name.</strong> Replace the placeholder with your full name.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Fill the 2:1 frame.</strong> Write in two or three lines so the text fills a wide crop.</span></li>
+  </ul>
+  <h3 class="text-xl font-bold text-[#18181B]">While You Resize</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop to a 2:1 ratio.</strong> That matches 800 × 400 pixels.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Stay above 50 KB.</strong> Over-compression blurs thin letters.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Preview at full size.</strong> Check every word before you download.</span></li>
+  </ul>
+  <p class="text-[#52525B] leading-relaxed"><strong>Cannot write?</strong> IBPS allows candidates who cannot write to type the declaration and add a left thumb impression below it. Then scan and upload it using the same specifications.</p>
+</div>`,
+      },
+      {
+        heading: "Why IBPS Declarations Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Most rejections come from small, avoidable errors. Check this list first.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Common Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file outside the 50–100 KB range</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Text written in capital letters</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A typed declaration from a candidate who can write</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Text in a language other than English</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Faint ink, shadows, or cropped words</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Each IBPS notification can change the details. Confirm the latest rules on the official IBPS portal before you submit.</p>
+</div>`,
+      },
+      {
+        heading: "Why Use This IBPS Declaration Resizer?",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser handles the edit. Your declaration never leaves your device.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">⚡ Instant Results</h3><p class="text-sm text-[#52525B]">Resize and compress in a second, with no upload wait.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h3><p class="text-sm text-[#52525B]">Watch the KB value change as you move the quality slider.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h3><p class="text-sm text-[#52525B]">You need no account and pay nothing.</p></div>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">You also need a photo, signature, and left thumb impression. Resize them with the other IBPS tools on this site.</p>
 </div>`,
       },
     ],
@@ -2993,178 +3658,293 @@ export const enPages: SeoPage[] = [
       {
         question: "What is the IBPS handwritten declaration text?",
         answer:
-          "The text is: 'I, [Candidate Name], hereby declare that all the information submitted by me in the application form is correct, true, and valid. I will present the supporting documents as and when required.'",
+          "The text reads: “I, [Candidate Name], hereby declare that all the information submitted by me in the application form is correct, true and valid. I will present the supporting documents as and when required.”",
       },
       {
         question: "What are the IBPS declaration specifications?",
         answer:
-          "IBPS requires 200x50 pixel handwritten declaration, max 30 KB file size, JPG format in English or Hindi.",
+          "IBPS asks for a handwritten declaration of 800 × 400 pixels, between 50 KB and 100 KB, in JPG format.",
+      },
+      {
+        question: "Can I write the declaration in Hindi?",
+        answer:
+          "No. IBPS asks for the declaration in English. Write it in running handwriting with a black pen.",
+      },
+      {
+        question: "Can I type the declaration instead of writing it?",
+        answer:
+          "Only candidates who cannot write may type it, and they must add a left thumb impression below the text. Everyone else must write it by hand.",
+      },
+      {
+        question: "Can I use capital letters?",
+        answer:
+          "No. Write in running handwriting. Capital letters can lead to rejection.",
       },
       {
         question: "Is my declaration data secure?",
         answer:
-          "Yes, the tool works entirely in your browser. Your declaration never leaves your device, ensuring complete privacy.",
+          "Yes. The tool runs in your browser. Your declaration never leaves your device.",
       },
       {
-        question: "Can I type the declaration instead of handwriting?",
+        question: "What if my file is too large or too small?",
         answer:
-          "No, IBPS specifically requires a handwritten declaration. Typed declarations will be rejected during verification.",
+          "Adjust the quality slider. The live file size shows you when the image lands between 50 KB and 100 KB.",
       },
       {
-        question: "What if my declaration file is too large?",
+        question: "Does this tool work on mobile?",
         answer:
-          "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
+          "Yes. It works on Android, iOS, and desktop browsers. You install no app.",
       },
     ],
   },
   {
     slug: "resize-left-thumb-impression-ibps",
-    metaTitle: "Resize Left Thumb Impression IBPS 2027 — Online Free Tool",
+    metaTitle: "Resize Left Thumb Impression IBPS 2027 – Free Online Tool",
     metaDescription:
-      "Resize left thumb impression for IBPS 2027 online free. Set dimensions & file size as per IBPS guidelines. No upload, private.",
-    h1: "Resize Left Thumb Impression IBPS 2027 — Free Online Tool",
+      "Resize left thumb impression for IBPS 2027: 240×240 px, 20–50 KB, JPG. Free, private tool with no upload. Download your compliant image instantly.",
+    h1: "Resize Left Thumb Impression IBPS 2027: Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize left thumb impression for IBPS 2027 as per IBPS specifications. Instant tool — free, private, no upload.",
+      "Resize your left thumb impression for IBPS 2027 to the official specifications. This tool is free, private, and needs no upload.",
     sections: [
       {
-        heading:
-          "What Are the IBPS Left Thumb Impression Requirements for 2027?",
+        heading: "IBPS Left Thumb Impression Requirements for 2027",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    For IBPS (Institute of Banking Personnel Selection) exams in 2027, candidates must upload a left thumb impression meeting specific requirements. The left thumb impression should be taken on a white paper using black or blue ink pad. The dimensions should be approximately 200 x 200 pixels with a maximum file size of 30 KB. The format must be JPG/JPEG. The impression should be clear with proper visibility of the thumb print patterns. The left thumb impression is used for identity verification during the examination process. Our tool helps you resize your thumb impression to meet these requirements with no server upload.
+    IBPS uses your left thumb impression to verify your identity. Use this tool to resize left thumb impression files for IBPS in seconds. Press your left thumb on a pad with black or blue ink, then stamp it on white paper. Your scan should measure <strong>240 × 240 pixels</strong>, weigh between <strong>20 KB and 50 KB</strong>, and use the <strong>JPG or JPEG</strong> format.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    The print must be clear and unsmudged. The tool runs in your browser, so you upload nothing to a server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">200x200 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Standard IBPS left thumb impression dimensions for 2027 applications.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Max 30 KB File Size</h3>
-      <p class="text-sm text-[#52525B]">Compress thumb impression to under 30 KB while maintaining clarity.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Left Thumb Only</h3>
-      <p class="text-sm text-[#52525B]">Only left thumb impression is accepted. Right thumb or other fingers will be rejected.</p>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📐 240 × 240 Pixels</h3><p class="text-sm text-[#52525B]">The preferred IBPS thumb impression size.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📉 20–50 KB</h3><p class="text-sm text-[#52525B]">Keep the file inside this window and keep the ridges visible.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">👍 Left Thumb</h3><p class="text-sm text-[#52525B]">Use your left thumb. Use the right only if you have no left thumb.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">Thumb Impression Size at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Specification</th><th class="text-left py-2 font-semibold">Requirement</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Dimensions</td><td class="py-2 text-[#52525B]">240 × 240 pixels</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">File size</td><td class="py-2 text-[#52525B]">20 KB to 50 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">JPG / JPEG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Ink</td><td class="py-2 text-[#52525B]">Black or blue ink pad</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Paper</td><td class="py-2 text-[#52525B]">Plain white</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize Left Thumb Impression — Quick 3-Step Process</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Take Thumb Impression</h4><p class="text-sm text-[#52525B]">Take left thumb impression on white paper using black/blue ink.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload & Set Specs</h4><p class="text-sm text-[#52525B]">Upload scanned impression, choose 200x200 pixels, target under 30 KB.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download & Upload</h4><p class="text-sm text-[#52525B]">Download resized image and upload to IBPS application portal.</p></div>
-      </div>
-    </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your Thumb Impression in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Thumb Impression Online in Under a Minute</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Stamp and Scan</h4><p class="text-sm text-[#52525B]">Press your left thumb on white paper, then scan or photograph it.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Set the IBPS Specs</h4><p class="text-sm text-[#52525B]">Upload the image, enter 240 × 240 pixels, and target 20–50 KB.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Upload</h4><p class="text-sm text-[#52525B]">Save the JPG and upload it to the IBPS application portal.</p></div></div>
   </div>
+</div>`,
+      },
+      {
+        heading: "How to Take a Clear Thumb Impression",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A clean print resizes well. A smudged one fails verification. Follow these tips.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Before You Scan</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Clean your thumb.</strong> Wipe off oil and dirt first.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use a fresh ink pad.</strong> Black or blue ink gives the best contrast.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Press once.</strong> Roll gently from edge to edge and avoid sliding.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Leave a margin.</strong> Stamp in the middle of a white square.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Let the ink dry.</strong> Wait before you touch or scan the page.</span></li>
+  </ul>
+  <h3 class="text-xl font-bold text-[#18181B]">While You Resize</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop to a square.</strong> A 1:1 ratio matches 240 × 240 pixels.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Centre the print.</strong> Leave a small border around the ridges.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Stay above 20 KB.</strong> Heavy compression erases fine ridge detail.</span></li>
+  </ul>
+  <p class="text-[#52525B] leading-relaxed"><strong>No left thumb?</strong> IBPS lets you use your right thumb. State this in your handwritten declaration.</p>
+</div>`,
+      },
+      {
+        heading: "Why Thumb Impressions Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Most rejections trace back to the scan. Avoid these errors.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Common Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file outside the 20–50 KB range</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A smudged or faint print</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>The wrong finger, or the wrong hand without an explanation</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Coloured ink other than black or blue</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A stretched image caused by a non-square crop</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Each IBPS notification can change the details. Confirm the latest rules on the official IBPS portal.</p>
+</div>`,
+      },
+      {
+        heading: "Why Use This IBPS Thumb Impression Resizer?",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser handles the edit. Your fingerprint never leaves your device.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">⚡ Instant Results</h3><p class="text-sm text-[#52525B]">Resize and compress in a second, with no upload wait.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h3><p class="text-sm text-[#52525B]">Watch the KB value change as you move the quality slider.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h3><p class="text-sm text-[#52525B]">You need no account and pay nothing.</p></div>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">You also need a photo, signature, and handwritten declaration. Resize them with the other IBPS tools on this site.</p>
 </div>`,
       },
     ],
     faq: [
       {
-        question: "Which thumb impression is required for IBPS?",
+        question: "Which thumb impression does IBPS require?",
         answer:
-          "IBPS requires the left thumb impression only. Make sure you use the left thumb for the impression.",
+          "IBPS requires your left thumb impression. If you have no left thumb, you may use your right thumb and state this in your declaration.",
       },
       {
         question: "What are the IBPS left thumb impression specifications?",
         answer:
-          "IBPS requires 200x200 pixel left thumb impression, max 30 KB file size, JPG format with black or blue ink on white paper.",
+          "IBPS asks for a thumb impression of 240 × 240 pixels, between 20 KB and 50 KB, in JPG format, on white paper with black or blue ink.",
+      },
+      {
+        question: "How do I resize my left thumb impression for IBPS?",
+        answer:
+          "Upload your scan, enter 240 × 240 pixels, target 20–50 KB, and download the JPG. Then upload it to the IBPS form.",
       },
       {
         question: "Is my thumb impression data secure?",
         answer:
-          "Yes, the tool works entirely in your browser. Your thumb impression never leaves your device, ensuring complete privacy.",
+          "Yes. The tool runs in your browser. Your thumb impression never leaves your device.",
       },
       {
-        question: "Can I use color ink for thumb impression?",
+        question: "Can I use coloured ink for the impression?",
         answer:
-          "Use black or blue ink pad only. Color inks may not be accepted by the IBPS system.",
+          "Use a black or blue ink pad only. Other colours may fail verification.",
       },
       {
         question: "What if my thumb impression file is too large?",
         answer:
-          "Use the compression slider to reduce file size. The tool shows real-time file size to stay under 30 KB.",
+          "Lower the quality slider a little. The live file size shows you when the image falls below 50 KB.",
+      },
+      {
+        question: "What if the print looks smudged after resizing?",
+        answer:
+          "Retake the impression on a clean thumb and a fresh pad. A smudged original cannot be fixed by resizing.",
+      },
+      {
+        question: "Does this tool work on mobile?",
+        answer:
+          "Yes. It works on Android, iOS, and desktop browsers. You install no app.",
       },
     ],
   },
   {
     slug: "uksssc-photo-resizer",
-    metaTitle: "UKSSSC Photo Resizer 2027 — Resize Image Online Free",
+    metaTitle: "UKSSSC Photo Resizer 2027 – Resize Image Online Free",
     metaDescription:
-      "Resize UKSSSC 2027 exam photo online free. Set dimensions & file size as per Uttarakhand Subordinate Service Selection Commission guidelines. No upload.",
-    h1: "UKSSSC Photo Resizer 2027 — Free Online Tool",
+      "Use this UKSSSC photo resizer to meet Uttarakhand SSSC rules: 200×230 px, under 50 KB, JPG. Resize image online free. Private, no upload.",
+    h1: "UKSSSC Photo Resizer 2027: Free Online Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize photo for UKSSSC 2027 as per UKSSSC specifications. Instant browser-based tool — free, private, no upload.",
+      "Resize your photo for UKSSSC 2027 to the commission's specifications. This browser-based tool is free, private, and needs no upload.",
     sections: [
       {
-        heading: "What Are the UKSSSC 2027 Photo Requirements?",
+        heading: "UKSSSC 2027 Photo Requirements",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    For UKSSSC (Uttarakhand Subordinate Service Selection Commission) exams in 2027, candidates must upload a photograph meeting specific requirements. The photo should be a recent passport-size color photograph with a plain white background. The dimensions should be approximately 200 x 230 pixels with a maximum file size of 50 KB. The image format must be JPG/JPEG. The photo should clearly show your face with a neutral expression. You should not be wearing any cap or dark glasses. The UKSSSC photo resizer helps you instantly resize your photo to meet these requirements with no server upload.
+    The Uttarakhand Subordinate Service Selection Commission (UKSSSC) checks every uploaded photo against fixed rules. This UKSSSC photo resizer fits your picture to those rules in seconds. The commission wants a recent, colour, passport-size photograph on a plain white background. Your file must measure about <strong>200 × 230 pixels</strong>, stay under <strong>50 KB</strong>, and use the <strong>JPG or JPEG</strong> format.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Show your face clearly with a neutral expression. Do not wear a cap or dark glasses. The tool runs in your browser, so you upload nothing to a server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">200x230 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Standard UKSSSC photo dimensions for 2027 exams. Tool auto-adjusts to match.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Max 50 KB File Size</h3>
-      <p class="text-sm text-[#52525B]">Compress photo to under 50 KB while maintaining clear facial features.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">White Background</h3>
-      <p class="text-sm text-[#52525B]">UKSSSC requires plain white background with clear front-facing view.</p>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📐 200 × 230 Pixels</h3><p class="text-sm text-[#52525B]">The standard UKSSSC photo size for 2027 exams.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📉 Maximum 50 KB</h3><p class="text-sm text-[#52525B]">Compress below the limit while your face stays sharp.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">⬜ White Background</h3><p class="text-sm text-[#52525B]">UKSSSC expects a plain white backdrop and a front-facing view.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">UKSSSC Photo Size at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Specification</th><th class="text-left py-2 font-semibold">Requirement</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Dimensions</td><td class="py-2 text-[#52525B]">About 200 × 230 pixels</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">File size</td><td class="py-2 text-[#52525B]">Maximum 50 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">JPG / JPEG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain white</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Colour</td><td class="py-2 text-[#52525B]">Recent colour photograph</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize UKSSSC Photo — Quick 3-Step Process</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Select your passport-size color photo from device.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Set UKSSSC Specs</h4><p class="text-sm text-[#52525B]">Choose 200x230 pixels, target under 50 KB, adjust quality slider.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download & Apply</h4><p class="text-sm text-[#52525B]">Download resized JPG and upload to UKSSSC exam application portal.</p></div>
-      </div>
-    </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your UKSSSC Photo in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Image Online for UKSSSC in Under a Minute</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Choose a passport-size colour photo from your device.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Set the UKSSSC Specs</h4><p class="text-sm text-[#52525B]">Enter 200 × 230 pixels, set a 50 KB limit, and tune the quality slider.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Apply</h4><p class="text-sm text-[#52525B]">Save the JPG and upload it to the UKSSSC application portal.</p></div></div>
   </div>
+</div>`,
+      },
+      {
+        heading: "Tips for a Clear UKSSSC Photo",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A sharp source photo survives compression far better than a blurry one. Follow these tips.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Lighting, Pose, and Framing</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Stand against a white wall.</strong> Avoid patterns and clutter.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use natural daylight.</strong> Face a window and skip the flash.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Look at the camera.</strong> Keep a neutral expression and your eyes open.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Remove caps and dark glasses.</strong> Keep your forehead and eyes visible.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop tight.</strong> A closer crop preserves detail at 50 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Keep the photo recent.</strong> Use a picture that looks like you today.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why UKSSSC Photos Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Most rejections come from avoidable mistakes. Check this list before you upload.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Common Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file above 50 KB</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>The wrong dimensions or a stretched face</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A PNG or HEIC file instead of JPG</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A shadowed or coloured background</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A blurry or over-compressed image</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Rules can change between notifications. Confirm the latest limits on the official UKSSSC portal.</p>
+</div>`,
+      },
+      {
+        heading: "Why Use This UKSSSC Photo Resizer?",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser handles every edit. Your photo stays on your device.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">⚡ Instant Results</h3><p class="text-sm text-[#52525B]">Resize and compress in a second, with no upload queue.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h3><p class="text-sm text-[#52525B]">See the KB value change as you drag the quality slider.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h3><p class="text-sm text-[#52525B]">You need no account and pay nothing.</p></div>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">UKSSSC applications also need a signature. Sign on plain white paper in black or blue ink, upload the scan here, and apply the size from the official notification.</p>
 </div>`,
       },
     ],
@@ -3172,200 +3952,296 @@ export const enPages: SeoPage[] = [
       {
         question: "What are the UKSSSC 2027 photo specifications?",
         answer:
-          "UKSSSC requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white background and clear facial features.",
+          "UKSSSC asks for a recent colour photo of about 200 × 230 pixels, under 50 KB, in JPG format, on a plain white background.",
       },
       {
-        question: "Can I use a mobile photo for UKSSSC application?",
+        question: "How do I resize my photo for UKSSSC?",
         answer:
-          "Yes, you can take a photo with your mobile and resize it using this tool to meet UKSSSC specifications.",
+          "Upload your photo, enter 200 × 230 pixels, set a 50 KB limit, and download the JPG. Then upload it to the UKSSSC form.",
+      },
+      {
+        question: "Can I use a mobile photo for the UKSSSC application?",
+        answer:
+          "Yes. Take a clear photo with your phone, then resize it here to meet the UKSSSC rules.",
       },
       {
         question: "Is my photo data secure?",
         answer:
-          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+          "Yes. All processing happens in your browser. Your photo never leaves your device.",
       },
       {
         question: "What if my photo is already resized?",
         answer:
-          "You can still use the tool to verify and adjust the dimensions and file size to exactly match UKSSSC requirements.",
+          "Upload it anyway. The tool lets you verify and adjust the dimensions and file size to match the rules exactly.",
       },
       {
-        question: "Does UKSSSC require a signature as well?",
+        question: "Does UKSSSC require a signature too?",
         answer:
-          "Yes, UKSSSC applications also require a signature in specified dimensions. Use our signature resizer tool for that.",
+          "Yes. UKSSSC applications also ask for a signature. Resize it with this tool using the size from the official notification.",
+      },
+      {
+        question: "Can I wear glasses or a cap in the photo?",
+        answer:
+          "Do not wear a cap or dark glasses. Your full face must stay visible.",
+      },
+      {
+        question: "Does this tool work on a phone?",
+        answer:
+          "Yes. It runs on Android, iOS, and desktop browsers. You install nothing.",
       },
     ],
   },
   {
-  slug: "rrb-technician-exam-photo-resizer",
-  metaTitle: "RRB Technician Photo Resizer 2027 — Resize Photo & Signature Online",
-  metaDescription:
-    "Resize your RRB Technician exam photo and signature online for 2027. Compress to RRB's exact KB and pixel requirements instantly. Free, secure, browser-based tool.",
-  h1: "RRB Technician Exam Photo Resizer 2027 — Free Online Tool",
-  showTool: "photo-editor",
-  structuredDataOverrides: { webPageType: "WebApplication" },
-  subtitle:
-    "Resize your RRB Technician photo and signature to match the official 2027 application format. No uploads, no installation — everything processes privately in your browser.",
-  sections: [
-    {
-      heading: "What Are the RRB Technician Photo and Signature Requirements for 2027?",
-      content: `
-<div class="space-y-8 not-prose">
-  <p class="text-lg text-[#52525B] leading-relaxed">
-    The Railway Recruitment Board (RRB) sets strict photo and signature specifications for the Technician exam application form, and even a small mismatch can block your submission. Your photograph must be a recent, color, passport-style image with a plain light background, sized between 20 KB and 50 KB, with dimensions typically around 200 x 230 pixels in JPEG format. Your signature must be scanned separately, signed in black or dark blue ink on white paper, and sized between 10 KB and 20 KB. RRB application portals usually reject files that fall outside these limits, which forces candidates to start the form again. This tool resizes both your photo and signature to the exact RRB specifications in one place, and because all processing happens locally on your device, your personal documents never leave your browser.
-  </p>
-  <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Photo Size: 20–50 KB</h3>
-      <p class="text-sm text-[#52525B]">Compress your photo into the RRB-approved range without losing facial clarity or detail.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Dimensions: 200 x 230 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Resize to the exact pixel ratio RRB application portals expect, without manual cropping.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Signature: 10–20 KB</h3>
-      <p class="text-sm text-[#52525B]">Resize your scanned signature separately to meet RRB's smaller file size requirement.</p>
-    </div>
-  </div>
-</div>`,
-    },
-    {
-      heading: "How to Resize Your RRB Technician Photo in 3 Steps",
-      content: `
-<div class="space-y-6 not-prose">
-  <p class="text-[#52525B] leading-relaxed">
-    You do not need design software or technical skills to prepare RRB-compliant images. Follow these three steps, and the tool handles resizing, compression, and format conversion automatically.
-  </p>
-  <div class="grid md:grid-cols-3 gap-4">
-    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-      <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Photo or Signature</h4><p class="text-sm text-[#52525B]">Select your passport-style photo or scanned signature from your device.</p></div>
-    </div>
-    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-      <div><h4 class="font-semibold text-[#18181B] mb-1">Apply RRB Settings</h4><p class="text-sm text-[#52525B]">Choose the RRB Technician preset for photo (200 x 230 px, 20–50 KB) or signature (10–20 KB), and adjust the quality slider if needed.</p></div>
-    </div>
-    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-      <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-      <div><h4 class="font-semibold text-[#18181B] mb-1">Download and Upload</h4><p class="text-sm text-[#52525B]">Download the resized file and upload it directly to the RRB application form.</p></div>
-    </div>
-  </div>
-</div>`,
-    },
-    {
-      heading: "Why Candidates Prefer This Tool Over Other Photo Resizers",
-      content: `
-<div class="space-y-5 not-prose">
-  <p class="text-[#52525B] leading-relaxed">
-    Many candidates try resizing their RRB photo using basic mobile gallery editors or generic compression apps that do not match the exact pixel and KB combination RRB demands. These tools often distort the image, blur facial features, or leave the file too large for upload, which leads to repeated form rejections close to the deadline.
-  </p>
-  <p class="text-[#52525B] leading-relaxed">
-    This resizer is built specifically around RRB Technician specifications. It runs entirely in your browser using client-side processing, so your photo and signature never get uploaded to a server. You get instant before-and-after previews, precise control over output size, and a result that meets the RRB format on the first attempt, saving you time during the high-traffic application window.
-  </p>
-</div>`,
-    },
-  ],
-  faq: [
-    {
-      question: "What is the required photo size for the RRB Technician application?",
-      answer:
-        "RRB Technician applications generally require a photo between 20 KB and 50 KB, with dimensions around 200 x 230 pixels. Always check the latest official notification before submitting.",
-    },
-    {
-      question: "What is the required signature size for RRB Technician forms?",
-      answer:
-        "The scanned signature should typically be between 10 KB and 20 KB, signed in black or dark blue ink on plain white paper before scanning.",
-    },
-    {
-      question: "Can I resize both my photo and signature using this tool?",
-      answer:
-        "Yes. The tool supports separate presets for photo and signature, so you can resize each file to its correct RRB-specified dimensions and file size.",
-    },
-    {
-      question: "Is my photo or signature uploaded to a server during resizing?",
-      answer:
-        "No. The tool processes everything directly in your browser, so your files stay on your device and are never sent anywhere, keeping your data private.",
-    },
-    {
-      question: "Does the tool work on mobile phones for last-minute applications?",
-      answer:
-        "Yes. The RRB Technician photo resizer works smoothly on Android, iOS, and desktop browsers, so you can complete your resizing even close to the application deadline.",
-    },
-    {
-      question: "Will compressing my photo affect its approval chances?",
-      answer:
-        "No. The tool uses smart compression to balance file size and clarity, keeping your face clearly visible while meeting the exact KB limit RRB requires.",
-    },
-  ],
-},
-  {
-    slug: "karnataka-police-photo-resizer",
-    metaTitle: "Karnataka Police Photo Resizer 2027 — Resize Image Online Free",
+    slug: "rrb-technician-exam-photo-resizer",
+    metaTitle: "RRB Technician Photo Resizer 2027 – Photo & Signature",
     metaDescription:
-      "Resize Karnataka Police 2027 recruitment photo online free. Set dimensions & file size as per KSP guidelines. No upload, private.",
-    h1: "Karnataka Police Photo Resizer 2027 — Free Online Tool",
+      "Use this RRB Technician photo resizer to meet 2027 rules: 200×230 px photo, 20–50 KB, plus a 10–20 KB signature. Free, private, no upload.",
+    h1: "RRB Technician Photo Resizer 2027: Photo and Signature Tool",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Resize photo for Karnataka Police 2027 as per KSP specifications. Instant tool — free, private, no upload.",
+      "Resize your RRB Technician photo and signature to the 2027 application format. Everything runs privately in your browser, with no upload and no installation.",
     sections: [
       {
-        heading: "What Are the Karnataka Police 2027 Photo Requirements?",
+        heading: "RRB Technician Photo and Signature Requirements for 2027",
         content: `
-<div class="space-y-8 not-prose">
+<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    For Karnataka Police (KSP) recruitment in 2027, candidates must upload a photograph meeting specific requirements. The photo should be a recent passport-size color photograph with a plain white or light background. The dimensions should be approximately 200 x 230 pixels with a maximum file size of 50 KB. The image format must be JPG/JPEG. The photo should clearly show your face with a neutral expression. You should not be wearing any cap, dark glasses, or uniform. The Karnataka Police photo resizer helps you instantly resize your photo to meet these requirements with no server upload.
+    The Railway Recruitment Board (RRB) sets strict photo and signature rules for the Technician application, and a small mismatch can block your submission. This RRB Technician photo resizer fits both files to the rules in one place. Your photo must be a recent colour, passport-style image on a plain light background. It should measure about <strong>200 × 230 pixels</strong>, weigh <strong>20 KB to 50 KB</strong>, and use the <strong>JPEG</strong> format.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Your signature needs a separate scan. Sign in black or dark blue ink on white paper, and keep the file between <strong>10 KB and 20 KB</strong>. The tool runs locally, so your documents never leave your browser.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">200x230 Pixels</h3>
-      <p class="text-sm text-[#52525B]">Standard Karnataka Police photo dimensions for 2027 recruitment.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">Max 50 KB File Size</h3>
-      <p class="text-sm text-[#52525B]">Compress photo to under 50 KB while maintaining clear facial features.</p>
-    </div>
-    <div class="p-6 rounded-xl border border-[#BBF7D0]">
-      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      </div>
-      <h3 class="text-base font-bold text-[#18181B] mb-2">White/Light Background</h3>
-      <p class="text-sm text-[#52525B]">KSP requires plain white or light background with clear front-facing view.</p>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📷 Photo: 20–50 KB</h3><p class="text-sm text-[#52525B]">Compress your photo into the approved range and keep your face clear.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📐 200 × 230 Pixels</h3><p class="text-sm text-[#52525B]">Match the pixel ratio the application portal expects.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">✍️ Signature: 10–20 KB</h3><p class="text-sm text-[#52525B]">Resize your scanned signature to the smaller file limit.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">RRB Technician Sizes at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Item</th><th class="text-left py-2 pr-4 font-semibold">Dimensions</th><th class="text-left py-2 pr-4 font-semibold">File Size</th><th class="text-left py-2 font-semibold">Format</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Photograph</td><td class="py-2 pr-4 text-[#52525B]">About 200 × 230 px</td><td class="py-2 pr-4 text-[#52525B]">20–50 KB</td><td class="py-2 text-[#52525B]">JPEG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Signature</td><td class="py-2 pr-4 text-[#52525B]">As per notification</td><td class="py-2 pr-4 text-[#52525B]">10–20 KB</td><td class="py-2 text-[#52525B]">JPEG</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">How to Resize Karnataka Police Photo — Quick 3-Step Process</h3>
-    <div class="grid md:grid-cols-3 gap-4">
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Photo</h4><p class="text-sm text-[#52525B]">Select your passport-size photo from device gallery.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Set KSP Specs</h4><p class="text-sm text-[#52525B]">Choose 200x230 pixels, target under 50 KB, adjust quality.</p></div>
-      </div>
-      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
-        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-        <div><h4 class="font-semibold text-[#18181B] mb-1">Download & Apply</h4><p class="text-sm text-[#52525B]">Download resized JPG and upload to Karnataka Police recruitment portal.</p></div>
-      </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your RRB Technician Photo in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Photo and Signature Online in Minutes</h3>
+  <p class="text-[#52525B] leading-relaxed">You need no design software. The tool handles resizing, compression, and format conversion for you.</p>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Upload Photo or Signature</h4><p class="text-sm text-[#52525B]">Select your passport-style photo or scanned signature.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Apply the RRB Settings</h4><p class="text-sm text-[#52525B]">Use 200 × 230 px and 20–50 KB for the photo, or 10–20 KB for the signature. Adjust the quality slider if needed.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Upload</h4><p class="text-sm text-[#52525B]">Save each file and upload it to the RRB application form.</p></div></div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Tips for a Clear Photo and Signature",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Good source files compress better. Prepare both images with these tips.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">For Your Photograph</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Use a plain light wall.</strong> Avoid shadows, patterns, and clutter.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Face a window.</strong> Even daylight gives a natural look. Skip the flash.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Look straight ahead.</strong> Keep a neutral expression and your eyes open.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop tight.</strong> A closer crop keeps detail inside the KB limit.</span></li>
+  </ul>
+  <h3 class="text-xl font-bold text-[#18181B]">For Your Signature</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Sign on plain white paper.</strong> Use a black or dark blue pen.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Photograph in even light.</strong> Shoot from directly above to avoid shadows.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop close to the ink.</strong> Remove empty margins so the strokes stay large.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why RRB Technician Uploads Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">Application portals reject files that fall outside the limits, and that can force you to restart the form. Avoid these errors.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Common Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A photo outside 20–50 KB, or a signature outside 10–20 KB</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Stretched images caused by the wrong aspect ratio</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A format other than JPEG</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A dark, shadowed, or cluttered photo background</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A faint, smudged, or typed signature</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Always check the latest official notification before you submit.</p>
+</div>`,
+      },
+      {
+        heading: "Why Candidates Prefer This RRB Photo Resizer",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Many candidates try basic gallery editors or generic compression apps that miss the exact pixel and KB combination. Those tools often distort the face, blur the features, or leave the file too large. This resizer works around the RRB Technician rules instead.
+  </p>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser processes every file. Nothing reaches a server.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">👁️ Before and After Preview</h3><p class="text-sm text-[#52525B]">Compare the original and the result before you download.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Precise Size Control</h3><p class="text-sm text-[#52525B]">Watch the live KB value as you adjust quality.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📱 Mobile Friendly</h3><p class="text-sm text-[#52525B]">Work on Android, iOS, or desktop, even close to the deadline.</p></div>
+  </div>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "What photo size does the RRB Technician application require?",
+        answer:
+          "RRB Technician applications generally ask for a photo between 20 KB and 50 KB, with dimensions around 200 × 230 pixels, in JPEG format. Check the latest official notification before you submit.",
+      },
+      {
+        question: "What signature size does the RRB Technician form require?",
+        answer:
+          "The scanned signature should typically weigh between 10 KB and 20 KB. Sign in black or dark blue ink on plain white paper before you scan.",
+      },
+      {
+        question: "Can I resize both my photo and signature here?",
+        answer:
+          "Yes. Use the tool once for the photo and once for the signature, and apply the matching size to each.",
+      },
+      {
+        question: "Does the tool upload my files to a server?",
+        answer:
+          "No. Your browser processes everything. Your files stay on your device.",
+      },
+      {
+        question: "Does the tool work on mobile phones?",
+        answer:
+          "Yes. It works on Android, iOS, and desktop browsers, so you can finish even close to the deadline.",
+      },
+      {
+        question: "Will compression hurt my chances of approval?",
+        answer:
+          "Not if you compress carefully. Lower the quality in small steps and keep your face clearly visible while you meet the KB limit.",
+      },
+      {
+        question: "What if my photo stays above 50 KB?",
+        answer:
+          "Crop closer to your face or lower the quality slightly. The live file size shows you when to stop.",
+      },
+      {
+        question: "Is this RRB Technician photo resizer free?",
+        answer:
+          "Yes. It is free, with no account, no watermark, and no photo limit.",
+      },
+    ],
+  },
+  {
+    slug: "karnataka-police-photo-resizer",
+    metaTitle: "Karnataka Police Photo Resizer 2027 – Resize Image Online",
+    metaDescription:
+      "Use this Karnataka Police photo resizer to meet KSP rules: 200×230 px, under 50 KB, JPG. Resize image online free. Private, no upload.",
+    h1: "Karnataka Police Photo Resizer 2027: Free Online Tool",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Resize your photo for Karnataka Police 2027 to KSP specifications. This tool is free, private, and needs no upload.",
+    sections: [
+      {
+        heading: "Karnataka Police 2027 Photo Requirements",
+        content: `
+<div class="space-y-6 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    Applying for Karnataka State Police (KSP) recruitment? This Karnataka Police photo resizer fits your picture to the portal rules in seconds. KSP asks for a recent, colour, passport-size photograph on a plain white or light background. Your file must measure about <strong>200 × 230 pixels</strong>, stay under <strong>50 KB</strong>, and use the <strong>JPG or JPEG</strong> format.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Show your face clearly with a neutral expression. Do not wear a cap, dark glasses, or a uniform. The tool processes your image in your browser, so you upload nothing to a server.
+  </p>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📐 200 × 230 Pixels</h3><p class="text-sm text-[#52525B]">The standard KSP photo size for 2027 recruitment.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">📉 Maximum 50 KB</h3><p class="text-sm text-[#52525B]">Compress below the limit while your face stays clear.</p></div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]"><h3 class="text-base font-bold text-[#18181B] mb-2">⬜ White or Light Background</h3><p class="text-sm text-[#52525B]">KSP expects a plain backdrop and a front-facing view.</p></div>
+  </div>
+  <h3 class="text-xl font-bold text-[#18181B]">Karnataka Police Photo Size at a Glance</h3>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="overflow-x-auto p-6">
+      <table class="w-full text-sm">
+        <thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Specification</th><th class="text-left py-2 font-semibold">Requirement</th></tr></thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium">Dimensions</td><td class="py-2 text-[#52525B]">About 200 × 230 pixels</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">File size</td><td class="py-2 text-[#52525B]">Maximum 50 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">JPG / JPEG</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain white or light</td></tr>
+          <tr><td class="py-2 pr-4 font-medium">Clothing</td><td class="py-2 text-[#52525B]">Civilian clothes, no uniform or cap</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your Karnataka Police Photo in 3 Steps",
+        content: `
+<div class="space-y-6 not-prose">
+  <h3 class="text-xl font-bold text-[#18181B]">Resize Image Online for KSP in Under a Minute</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div><div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photo</h4><p class="text-sm text-[#52525B]">Select a passport-size photo from your gallery.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div><div><h4 class="font-semibold text-[#18181B] mb-1">Set the KSP Specs</h4><p class="text-sm text-[#52525B]">Enter 200 × 230 pixels, set a 50 KB limit, and adjust quality.</p></div></div>
+    <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]"><div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div><div><h4 class="font-semibold text-[#18181B] mb-1">Download and Apply</h4><p class="text-sm text-[#52525B]">Save the JPG and upload it to the Karnataka Police recruitment portal.</p></div></div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Tips for a Clear Karnataka Police Photo",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A sharp, honest picture helps your application move smoothly. Follow these tips.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Before You Take the Photo</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Wear a plain civilian shirt.</strong> Avoid uniforms, badges, and printed slogans.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Stand against a white or light wall.</strong> Keep shadows off the backdrop.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Face a window.</strong> Even daylight gives a natural skin tone.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Look straight ahead.</strong> Keep your head level and your mouth closed.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Take a new photo.</strong> The application needs a recent picture.</span></li>
+  </ul>
+  <h3 class="text-xl font-bold text-[#18181B]">While You Resize</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Crop tight.</strong> A closer crop keeps your features sharp at 50 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Reduce quality in small steps.</strong> Stop when the file drops below 50 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span><strong>Preview at full size.</strong> Check your eyes before you download.</span></li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Why Karnataka Police Photos Get Rejected",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">A rejected photo can delay your registration. Avoid these errors.</p>
+  <h3 class="text-xl font-bold text-[#18181B]">Common Errors to Avoid</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A file larger than 50 KB</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>Wrong dimensions or a stretched face</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A uniform, cap, or dark glasses</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>A coloured or cluttered background</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span><span>An old or blurry photograph</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">ℹ️ Rules can change between notifications. Confirm the latest limits on the official KSP recruitment portal.</p>
+</div>`,
+      },
+      {
+        heading: "Why Use This Karnataka Police Photo Resizer?",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🔒 Private by Design</h3><p class="text-sm text-[#52525B]">Your browser handles every edit. Your photo never leaves your device.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">⚡ Instant Results</h3><p class="text-sm text-[#52525B]">Resize and compress in a second, with no upload queue.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">📉 Live File Size</h3><p class="text-sm text-[#52525B]">Watch the KB value change as you drag the quality slider.</p></div>
+    <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] p-5"><h3 class="font-semibold text-[#18181B] mb-1">🆓 Free, No Watermark</h3><p class="text-sm text-[#52525B]">You need no account and pay nothing.</p></div>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">The application also asks for a signature. Sign on plain white paper, upload the scan here, and apply the size from the official notification.</p>
 </div>`,
       },
     ],
@@ -3373,27 +4249,42 @@ export const enPages: SeoPage[] = [
       {
         question: "What are the Karnataka Police 2027 photo specifications?",
         answer:
-          "Karnataka Police requires 200x230 pixel photo, max 50 KB file size, JPG format with plain white/light background and clear face view.",
+          "Karnataka Police asks for a recent colour photo of about 200 × 230 pixels, under 50 KB, in JPG format, on a plain white or light background.",
       },
       {
-        question: "Can I wear uniform in my KSP photo?",
+        question: "How do I resize my photo for KSP?",
         answer:
-          "No, you should wear civilian clothes for the photo. Wearing uniform or cap is not allowed for the photograph.",
+          "Upload your photo, enter 200 × 230 pixels, set a 50 KB limit, and download the JPG. Then upload it to the recruitment portal.",
+      },
+      {
+        question: "Can I wear a uniform in my KSP photo?",
+        answer:
+          "No. Wear civilian clothes. The photograph must not show a uniform or cap.",
       },
       {
         question: "Is my photo data secure?",
         answer:
-          "Yes, all processing happens in your browser. Your photo never leaves your device, ensuring complete privacy.",
+          "Yes. All processing happens in your browser. Your photo never leaves your device.",
       },
       {
-        question: "What if my photo is from an older application?",
+        question: "Can I reuse a photo from an older application?",
         answer:
-          "You should take a fresh photo for Karnataka Police recruitment as it requires a recent photograph.",
+          "No. Take a fresh photo for the 2027 recruitment, because KSP requires a recent photograph.",
       },
       {
         question: "Does KSP require a signature?",
         answer:
-          "Yes, the application also requires a signature. Use our signature resizer tool for that requirement.",
+          "Yes. The application also asks for a signature. Resize it with this tool using the size in the official notification.",
+      },
+      {
+        question: "What if my file stays above 50 KB?",
+        answer:
+          "Lower the quality slider a little or crop closer to your face. The live file size shows you when to stop.",
+      },
+      {
+        question: "Does this tool work on a phone?",
+        answer:
+          "Yes. It works on Android, iOS, and desktop browsers. You install no app.",
       },
     ],
   },

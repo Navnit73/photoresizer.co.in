@@ -9,14 +9,8 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
-  // Optimize bundle size by modularizing heavy dependencies
-  modularizeImports: {
-    'lucide-react': {
-      transform: 'lucide-react/dist/esm/icons/{{kebabCase member}}',
-    },
-    'lodash': {
-      transform: 'lodash/{{member}}',
-    }
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
   },
 };
 

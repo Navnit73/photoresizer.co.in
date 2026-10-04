@@ -120,7 +120,7 @@ const jsonLd = {
       operatingSystem: "Any (web browser)",
       inLanguage: "en-IN",
       description:
-        "Free online photo resizer, signature resizer, and photo size reducer for Indian government exam forms.",
+        "Free online exam photo resizer, signature resizer, and photo size reducer for Indian government exam forms.",
       offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
       dateModified: LAST_REVIEWED_ISO,
       publisher: { "@type": "Organization", name: "PhotoResizer", url: BASE_URL },

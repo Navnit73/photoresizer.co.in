@@ -1,17 +1,13 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { useDropzone } from "react-dropzone";
 import {
   UploadCloud,
   ShieldCheck,
   Zap,
   Lock,
-  ArrowRight,
-  SlidersHorizontal,
-  Scissors,
   Sparkles
 } from "lucide-react";
 
@@ -53,6 +49,8 @@ export default function HeroUploader({
 }: HeroUploaderProps) {
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [hasUploadedImage, setHasUploadedImage] = useState(false);
+  const [isDragActive, setIsDragActive] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   React.useEffect(() => {
     const handleEditorLoad = (e: Event) => {
@@ -72,18 +70,19 @@ export default function HeroUploader({
     loadPhotoEditor();
   }, []);
 
-  const onDrop = useCallback((acceptedFiles: File[]) => {
-    if (acceptedFiles?.length > 0) {
-      const file = acceptedFiles[0];
+  const handleFiles = useCallback((files: FileList | File[]) => {
+    const fileList = Array.from(files);
+    if (fileList.length > 0) {
+      const file = fileList[0];
       if (typeof window !== "undefined") {
-        (window as any).__PENDING_HERO_FILES__ = acceptedFiles;
+        (window as any).__PENDING_HERO_FILES__ = fileList;
       }
       setUploadedFile(file);
       setHasUploadedImage(true);
       loadPhotoEditor();
 
       const event = new CustomEvent("hero-file-drop", {
-        detail: { files: acceptedFiles },
+        detail: { files: fileList },
       });
       window.dispatchEvent(event);
       setTimeout(() => {
@@ -95,12 +94,32 @@ export default function HeroUploader({
     }
   }, []);
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
-    onDrop,
-    accept: { "image/*": [".jpeg", ".jpg", ".png", ".webp"] },
-    multiple: false,
-    noClick: false,
-  });
+  const handleDragOver = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(true);
+  }, []);
+
+  const handleDragLeave = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(false);
+  }, []);
+
+  const handleDrop = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(false);
+    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      handleFiles(e.dataTransfer.files);
+    }
+  }, [handleFiles]);
+
+  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files.length > 0) {
+      handleFiles(e.target.files);
+    }
+  }, [handleFiles]);
 
   const showHero = !hasUploadedImage;
 
@@ -132,10 +151,20 @@ export default function HeroUploader({
             {/* Main Upload Box */}
             <div className="max-w-2xl mx-auto">
               <div
-                {...getRootProps({
-                  onMouseEnter: handleUserInteraction,
-                  onTouchStart: handleUserInteraction,
-                })}
+                onClick={() => fileInputRef.current?.click()}
+                onMouseEnter={handleUserInteraction}
+                onTouchStart={handleUserInteraction}
+                onDragOver={handleDragOver}
+                onDragLeave={handleDragLeave}
+                onDrop={handleDrop}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    fileInputRef.current?.click();
+                  }
+                }}
                 className={`cursor-pointer p-8 sm:p-12 text-center rounded-xl transition-all duration-150 border-2 border-dashed ${
                   isDragActive
                     ? "border-[#16A34A] bg-[#DCFCE7] scale-[1.01]"
@@ -143,7 +172,11 @@ export default function HeroUploader({
                 }`}
               >
                 <input
-                  {...getInputProps()}
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp"
+                  onChange={handleInputChange}
+                  className="hidden"
                   aria-label="Upload Photo"
                 />
 
@@ -157,12 +190,11 @@ export default function HeroUploader({
                   </p>
 
                   {/* Primary Upload CTA Button */}
-                  <button
-                    type="button"
+                  <span
                     className="inline-flex items-center justify-center px-6 py-2.5 bg-[#16A34A] hover:bg-[#15803D] text-[#FFFFFF] text-sm font-semibold rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.04)] my-3 transition-colors active:scale-[0.98]"
                   >
                     Upload Photo
-                  </button>
+                  </span>
 
                   <p className="text-xs sm:text-sm text-[#52525B] mb-4">
                     or drag &amp; drop your image here

@@ -1,9 +1,8 @@
 'use client';
 
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { useDropzone } from "react-dropzone";
 import { UploadCloud, ShieldCheck, ArrowRight, Zap, Sparkles } from "lucide-react";
 import { SeoPage, Language } from '../../lib/types/seo';
 import { Breadcrumb } from './Breadcrumb';
@@ -43,6 +42,8 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
   const [activeTab, setActiveTab] = useState<"editor" | "bg_remover">(initialTab);
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [hasUploadedImage, setHasUploadedImage] = useState(false);
+  const [isDragActive, setIsDragActive] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const handleHeroDrop = (e: Event) => {
@@ -71,15 +72,16 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
     };
   }, []);
 
-  const onDrop = useCallback((acceptedFiles: File[]) => {
-    if (acceptedFiles?.length > 0) {
-      const file = acceptedFiles[0];
+  const handleFiles = useCallback((files: FileList | File[]) => {
+    const fileList = Array.from(files);
+    if (fileList.length > 0) {
+      const file = fileList[0];
       if (typeof window !== "undefined") {
-        (window as any).__PENDING_HERO_FILES__ = acceptedFiles;
+        (window as any).__PENDING_HERO_FILES__ = fileList;
       }
       setUploadedFile(file);
       setHasUploadedImage(true);
-      const event = new CustomEvent("hero-file-drop", { detail: { files: acceptedFiles } });
+      const event = new CustomEvent("hero-file-drop", { detail: { files: fileList } });
       window.dispatchEvent(event);
       setTimeout(() => {
         window.dispatchEvent(event);
@@ -90,12 +92,32 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
     }
   }, []);
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
-    onDrop,
-    accept: { "image/*": [".jpeg", ".jpg", ".png", ".webp"] },
-    multiple: false,
-    noClick: false,
-  });
+  const handleDragOver = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(true);
+  }, []);
+
+  const handleDragLeave = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(false);
+  }, []);
+
+  const handleDrop = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragActive(false);
+    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      handleFiles(e.dataTransfer.files);
+    }
+  }, [handleFiles]);
+
+  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files.length > 0) {
+      handleFiles(e.target.files);
+    }
+  }, [handleFiles]);
 
   const showHero = !hasUploadedImage;
 
@@ -147,14 +169,32 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
             {/* Standard Upload Box */}
             <div className="max-w-2xl mx-auto">
               <div
-                {...getRootProps()}
+                onClick={() => fileInputRef.current?.click()}
+                onDragOver={handleDragOver}
+                onDragLeave={handleDragLeave}
+                onDrop={handleDrop}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    fileInputRef.current?.click();
+                  }
+                }}
                 className={`cursor-pointer p-8 sm:p-12 text-center rounded-xl transition-all duration-150 border-2 border-dashed ${
                   isDragActive
                     ? "border-[#16A34A] bg-[#DCFCE7] scale-[1.01]"
                     : "border-[#BBF7D0] bg-[#F0FDF4] hover:border-[#16A34A] hover:bg-[#DCFCE7]"
                 }`}
               >
-                <input {...getInputProps()} aria-label="Upload Photo" />
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp"
+                  onChange={handleInputChange}
+                  className="hidden"
+                  aria-label="Upload Photo"
+                />
 
                 <div className="flex flex-col items-center">
                   <div className="w-12 h-12 rounded-xl bg-[#FFFFFF] border border-[#BBF7D0] flex items-center justify-center text-[#16A34A] shadow-[0_1px_2px_rgba(0,0,0,0.04)] mb-3.5">
@@ -165,12 +205,11 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
                     {isDragActive ? "Drop your image here" : "Upload your photo"}
                   </p>
 
-                  <button
-                    type="button"
+                  <span
                     className="inline-flex items-center justify-center px-6 py-2.5 bg-[#16A34A] hover:bg-[#15803D] text-[#FFFFFF] text-sm font-semibold rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.04)] my-3 transition-colors active:scale-[0.98]"
                   >
                     Upload Photo
-                  </button>
+                  </span>
 
                   <p className="text-xs sm:text-sm text-[#52525B] mb-4">
                     or drag &amp; drop your image here
@@ -200,60 +239,62 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
         )}
 
         {/* ══════════════════════════════════════════
-            EDITOR CONTAINER — shown after upload
+            EDITOR CONTAINER — rendered strictly only after user upload
         ══════════════════════════════════════════ */}
-        <div className={`${!showHero ? 'block' : 'hidden'} py-4`}>
-          <header className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#E4E4E7]">
-            <div>
-              <h2 className="text-lg font-bold text-[#18181B]">
-                {page.h1}
-              </h2>
-              {page.subtitle && (
-                <p className="text-xs text-[#71717A]">
-                  {page.subtitle}
-                </p>
+        {!showHero && (
+          <div className="py-4">
+            <header className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#E4E4E7]">
+              <div>
+                <h2 className="text-lg font-bold text-[#18181B]">
+                  {page.h1}
+                </h2>
+                {page.subtitle && (
+                  <p className="text-xs text-[#71717A]">
+                    {page.subtitle}
+                  </p>
+                )}
+              </div>
+
+              {/* Mode Switcher */}
+              <div className="flex p-1 bg-[#FAFAFA] rounded-xl border border-[#E4E4E7] self-start">
+                <button
+                  onClick={() => setActiveTab("editor")}
+                  className={`py-1.5 px-3 text-xs font-semibold rounded-lg transition-colors ${
+                    activeTab === "editor"
+                      ? "bg-[#16A34A] text-[#FFFFFF]"
+                      : "text-[#52525B] hover:text-[#18181B]"
+                  }`}
+                >
+                  Editor
+                </button>
+                <button
+                  onClick={() => setActiveTab("bg_remover")}
+                  className={`py-1.5 px-3 text-xs font-semibold rounded-lg transition-colors ${
+                    activeTab === "bg_remover"
+                      ? "bg-[#16A34A] text-[#FFFFFF]"
+                      : "text-[#52525B] hover:text-[#18181B]"
+                  }`}
+                >
+                  BG Remover
+                </button>
+              </div>
+            </header>
+
+            <div className="min-h-[600px]">
+              {activeTab === "editor" ? (
+                page.showTool === 'passport-maker' ? (
+                  <PassportMakerApp initialFile={uploadedFile} />
+                ) : page.showTool === 'bg-remover' ? (
+                  <BgRemoverApp />
+                ) : (
+                  <PhotoEditor initialFile={uploadedFile} />
+                )
+              ) : (
+                <BgRemoverApp />
               )}
             </div>
-
-            {/* Mode Switcher */}
-            <div className="flex p-1 bg-[#FAFAFA] rounded-xl border border-[#E4E4E7] self-start">
-              <button
-                onClick={() => setActiveTab("editor")}
-                className={`py-1.5 px-3 text-xs font-semibold rounded-lg transition-colors ${
-                  activeTab === "editor"
-                    ? "bg-[#16A34A] text-[#FFFFFF]"
-                    : "text-[#52525B] hover:text-[#18181B]"
-                }`}
-              >
-                Editor
-              </button>
-              <button
-                onClick={() => setActiveTab("bg_remover")}
-                className={`py-1.5 px-3 text-xs font-semibold rounded-lg transition-colors ${
-                  activeTab === "bg_remover"
-                    ? "bg-[#16A34A] text-[#FFFFFF]"
-                    : "text-[#52525B] hover:text-[#18181B]"
-                }`}
-              >
-                BG Remover
-              </button>
-            </div>
-          </header>
-
-          <div className={activeTab === "editor" ? "block min-h-[600px]" : "hidden"}>
-            {page.showTool === 'passport-maker' ? (
-              <PassportMakerApp initialFile={uploadedFile} />
-            ) : page.showTool === 'bg-remover' ? (
-              <BgRemoverApp />
-            ) : (
-              <PhotoEditor initialFile={uploadedFile} />
-            )}
           </div>
-          
-          <div className={activeTab === "bg_remover" ? "block min-h-[600px]" : "hidden"}>
-            <BgRemoverApp />
-          </div>
-        </div>
+        )}
 
       </div>
 

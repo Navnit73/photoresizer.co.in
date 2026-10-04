@@ -104,7 +104,7 @@ export function AdBanner({
             Advertisement
           </span>
           
-          <div ref={containerRef} className="w-full flex justify-center items-center overflow-hidden">
+          <div ref={containerRef} className="w-full flex justify-center items-center overflow-hidden min-h-[50px] sm:min-h-[70px]">
             <ins
               className="adsbygoogle"
               style={{ display: 'block', width: '100%', maxWidth: '970px', maxHeight: '90px' }}
@@ -125,7 +125,7 @@ export function AdBanner({
       <div 
         ref={containerRef} 
         className={`w-full block text-center my-3 p-3 bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl min-h-[120px] overflow-hidden ${className}`}
-        style={{ contain: 'layout style paint' }}
+        style={{ contain: 'layout style' }}
       >
         <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-1">
           Advertisement
@@ -148,7 +148,7 @@ export function AdBanner({
       <div 
         ref={containerRef} 
         className={`w-[300px] min-h-[600px] hidden lg:block sticky top-4 p-2 bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl overflow-hidden ${className}`}
-        style={{ contain: 'layout style paint' }}
+        style={{ contain: 'layout style' }}
       >
         <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-1 text-center">
           Advertisement
@@ -167,13 +167,13 @@ export function AdBanner({
   return (
     <div 
       ref={containerRef} 
-      className={`w-full block text-center py-1.5 sm:py-2 min-h-[65px] sm:min-h-[105px] overflow-hidden ${className}`}
-      style={{ contain: 'layout style paint' }}
+      className={`w-full block text-center py-1.5 sm:py-2 min-h-[75px] sm:min-h-[105px] overflow-hidden ${className}`}
+      style={{ contain: 'layout style' }}
     >
       <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-1">
         Advertisement
       </span>
-      <div className="w-full flex justify-center items-center overflow-hidden">
+      <div className="w-full flex justify-center items-center overflow-hidden min-h-[50px] sm:min-h-[80px]">
         <ins
           className="adsbygoogle"
           style={{ display: 'block', width: '100%', minHeight: '50px', maxHeight: '100px' }}

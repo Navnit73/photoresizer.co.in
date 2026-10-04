@@ -1,19 +1,23 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from 'next/font/google';
-import { GoogleAnalytics } from '@next/third-parties/google';
-import { ThemeProvider } from "./components/ThemeProvider";
-import { ClientErrorSuppressor } from "./components/ClientErrorSuppressor";
-import { LangUpdater } from "./components/LangUpdater";
 import { ThirdPartyScripts } from "./components/ThirdPartyScripts";
-
 import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema";
 import "./globals.css";
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'], display: 'optional', variable: '--font-poppins', adjustFontFallback: true });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  display: 'optional',
+  variable: '--font-poppins',
+  adjustFontFallback: true,
+  preload: true,
+});
 
 export const viewport: Viewport = {
   themeColor: '#ffffff',
-}
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in'),
@@ -58,14 +62,8 @@ export default function RootLayout({
       className={`${poppins.variable} font-sans h-full antialiased`}
       suppressHydrationWarning
     >
-      <head>
-        <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="anonymous" />
-      </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <ThirdPartyScripts />
-        <GoogleAnalytics gaId="G-Y3N6YXK7VE" />
         
         {/* Global Structured Data */}
         <script
@@ -77,14 +75,15 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
         />
         
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-          <LangUpdater />
-          <ClientErrorSuppressor />
-        
-          {children}
-        </ThemeProvider>
+        {/* Analytics Event Queuing */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y3N6YXK7VE');`
+          }}
+        />
+
+        {children}
       </body>
     </html>
   );
 }
-

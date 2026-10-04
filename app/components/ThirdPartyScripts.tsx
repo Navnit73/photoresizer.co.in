@@ -15,8 +15,17 @@ export function ThirdPartyScripts() {
       window.removeEventListener("mousemove", onTrigger, { capture: true });
       window.removeEventListener("touchstart", onTrigger, { capture: true });
       window.removeEventListener("keydown", onTrigger, { capture: true });
+      window.removeEventListener("click", onTrigger, { capture: true });
 
-      // 1. Inject AdSense
+      // 1. Google Analytics (gtag.js)
+      if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+        const gaScript = document.createElement("script");
+        gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-Y3N6YXK7VE";
+        gaScript.async = true;
+        document.head.appendChild(gaScript);
+      }
+
+      // 2. Google AdSense
       if (!document.querySelector('script[src*="adsbygoogle.js"]')) {
         const adScript = document.createElement("script");
         adScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2980455227951378";
@@ -25,7 +34,7 @@ export function ThirdPartyScripts() {
         document.head.appendChild(adScript);
       }
 
-      // 2. Inject Clarity
+      // 3. Microsoft Clarity
       if (!document.querySelector('script[src*="clarity.ms"]')) {
         (function(c: Window & { [key: string]: unknown }, l: Document, a: string, r: string, i: string) {
           const clarityQueue = c[a] as { q?: unknown[] } | undefined;
@@ -56,21 +65,32 @@ export function ThirdPartyScripts() {
       loadScripts();
     };
 
-    // Listen for any user interaction
+    // Trigger on first user interaction
     window.addEventListener("scroll", onTrigger, { capture: true, passive: true });
     window.addEventListener("mousemove", onTrigger, { capture: true, passive: true });
     window.addEventListener("touchstart", onTrigger, { capture: true, passive: true });
     window.addEventListener("keydown", onTrigger, { capture: true, passive: true });
+    window.addEventListener("click", onTrigger, { capture: true, passive: true });
 
-    // Fallback: load after 3.5s delay if user doesn't interact
-    const timer = setTimeout(loadScripts, 3500);
+    // Idle or timeout fallback: loads non-blockingly after page finishes initial render
+    let timer: NodeJS.Timeout | number;
+    if (typeof window !== "undefined") {
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(() => {
+          timer = setTimeout(loadScripts, 2500);
+        });
+      } else {
+        timer = setTimeout(loadScripts, 3000);
+      }
+    }
 
     return () => {
-      clearTimeout(timer);
+      if (timer) clearTimeout(timer);
       window.removeEventListener("scroll", onTrigger, { capture: true });
       window.removeEventListener("mousemove", onTrigger, { capture: true });
       window.removeEventListener("touchstart", onTrigger, { capture: true });
       window.removeEventListener("keydown", onTrigger, { capture: true });
+      window.removeEventListener("click", onTrigger, { capture: true });
     };
   }, []);
 

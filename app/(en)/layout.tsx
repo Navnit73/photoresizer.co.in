@@ -11,7 +11,7 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
       <SiteHeader />
       
       {/* Top Ad Container */}
-      <div className="max-w-[1200px] w-full mx-auto px-4 mt-3 sm:mt-4">
+      <div className="max-w-[1200px] w-full mx-auto px-4 mt-2 sm:mt-4 min-h-[75px] sm:min-h-[105px]">
         <AdBanner type="responsive" className="max-w-[970px] mx-auto" />
       </div>
 

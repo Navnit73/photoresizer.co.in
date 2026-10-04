@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback, useRef, useEffect } from 'react';
-import { removeBackground, Config } from '@imgly/background-removal';
+import type { Config } from '@imgly/background-removal';
 import { BgJob } from '../types';
 
 /**
@@ -137,6 +137,7 @@ export function useBgRemovalManager() {
         proxyToWorker: true,
       };
 
+      const { removeBackground } = await import('@imgly/background-removal');
       const blob = await removeBackground(originalUrl, config);
 
       clearInterval(progressTimer);
