@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode, useRef, useEffect } from 'react';
+import React, { createContext, useContext, useState, ReactNode, useRef, useEffect, useCallback } from 'react';
 
 export type ImageFormat = 'image/jpeg' | 'image/png' | 'image/webp';
 export type AspectRatio = 'free' | '1:1' | '16:9' | '4:3' | '3:2' | '9:16';
@@ -103,13 +103,88 @@ const defaultState: EditorState = {
 
 const EditorContext = createContext<EditorContextType | undefined>(undefined);
 
-export const EditorProvider = ({ children }: { children: ReactNode }) => {
+export const EditorProvider = ({ children, initialFile }: { children: ReactNode; initialFile?: File | null }) => {
   const [state, setState] = useState<EditorState>(defaultState);
   const [past, setPast] = useState<EditorState[]>([]);
   const [future, setFuture] = useState<EditorState[]>([]);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const isUndoRedo = useRef(false);
   const prevStateRef = useRef<EditorState>(defaultState);
+
+  const setImageFile = useCallback((file: File | null, url: string | null, width: number, height: number) => {
+    const allStates = [...past, state, ...future];
+    const urlsToRevoke = new Set<string>();
+    allStates.forEach(s => {
+      if (s.imageUrl && s.imageUrl.startsWith('blob:') && s.imageUrl !== url) {
+        urlsToRevoke.add(s.imageUrl);
+      }
+    });
+    urlsToRevoke.forEach(u => URL.revokeObjectURL(u));
+
+    const baseName = file?.name?.replace(/\.[^/.]+$/, '') ?? 'PhotoResizer';
+    setState((prev) => {
+      const newState = {
+        ...prev,
+        imageFile: file,
+        imageUrl: url,
+        width,
+        height,
+        originalWidth: width,
+        originalHeight: height,
+        crop: null,
+        aspectRatio: 'free' as AspectRatio,
+        rotation: 0,
+        backgroundColor: 'transparent',
+        fileName: baseName,
+        textOverlays: [],
+        selectedTextId: null,
+      };
+      isUndoRedo.current = true;
+      setPast([]);
+      setFuture([]);
+      prevStateRef.current = newState;
+      return newState;
+    });
+    
+    // Notify the parent renderer that a file is loaded
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('editor-file-loaded', { detail: { loaded: !!file } }));
+    }
+  }, [past, state, future]);
+
+  // Helper to load and set a file
+  const loadIncomingFile = useCallback((file: File) => {
+    if (!file || !file.type?.startsWith('image/')) return;
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      setImageFile(file, url, img.naturalWidth || img.width, img.naturalHeight || img.height);
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+    };
+    img.src = url;
+  }, [setImageFile]);
+
+  useEffect(() => {
+    const fileToLoad = initialFile || (typeof window !== 'undefined' && (window as any).__PENDING_HERO_FILES__?.[0]);
+    if (fileToLoad && fileToLoad instanceof File) {
+      if (typeof window !== 'undefined' && (window as any).__PENDING_HERO_FILES__) {
+        delete (window as any).__PENDING_HERO_FILES__;
+      }
+      loadIncomingFile(fileToLoad);
+    }
+
+    const handleHeroDrop = (e: Event) => {
+      const customEvent = e as CustomEvent<{ files: File[] }>;
+      if (customEvent.detail?.files?.[0]) {
+        loadIncomingFile(customEvent.detail.files[0]);
+      }
+    };
+
+    window.addEventListener('hero-file-drop', handleHeroDrop);
+    return () => window.removeEventListener('hero-file-drop', handleHeroDrop);
+  }, [initialFile, loadIncomingFile]);
 
   useEffect(() => {
     if (isUndoRedo.current) {
@@ -168,45 +243,6 @@ export const EditorProvider = ({ children }: { children: ReactNode }) => {
     setPast((p) => [...p, state]);
     setState(next);
     prevStateRef.current = next;
-  };
-
-  const setImageFile = (file: File | null, url: string | null, width: number, height: number) => {
-    const allStates = [...past, state, ...future];
-    const urlsToRevoke = new Set<string>();
-    allStates.forEach(s => {
-      if (s.imageUrl && s.imageUrl.startsWith('blob:') && s.imageUrl !== url) {
-        urlsToRevoke.add(s.imageUrl);
-      }
-    });
-    urlsToRevoke.forEach(u => URL.revokeObjectURL(u));
-
-    const baseName = file?.name?.replace(/\.[^/.]+$/, '') ?? 'PhotoResizer';
-    setState((prev) => {
-      const newState = {
-        ...prev,
-        imageFile: file,
-        imageUrl: url,
-        width,
-        height,
-        originalWidth: width,
-        originalHeight: height,
-        crop: null,
-        aspectRatio: 'free' as AspectRatio,
-        rotation: 0,
-        backgroundColor: 'transparent',
-        fileName: baseName,
-        textOverlays: [],
-        selectedTextId: null,
-      };
-      isUndoRedo.current = true;
-      setPast([]);
-      setFuture([]);
-      prevStateRef.current = newState;
-      return newState;
-    });
-    
-    // Notify the parent renderer that a file is loaded
-    window.dispatchEvent(new CustomEvent('editor-file-loaded', { detail: { loaded: !!file } }));
   };
 
   const updateBaseImage = (file: File, url: string, width: number, height: number) => {

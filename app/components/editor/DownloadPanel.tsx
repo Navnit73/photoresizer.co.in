@@ -3,7 +3,7 @@
 import React from "react";
 import { useEditor } from "./EditorContext";
 import { useImageProcessor } from "../../hooks/useImageProcessor";
-import { Download } from "lucide-react";
+import { Download, Check } from "lucide-react";
 import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function DownloadPanel() {
@@ -20,7 +20,7 @@ export default function DownloadPanel() {
 
   const handleDownload = () => {
     if (!livePreview.url) return;
-    const name = fileName.trim() || "PhotoResizer";
+    const name = fileName.trim() || "photoresizer";
     setFileName(name);
     const a = document.createElement("a");
     a.href = livePreview.url;
@@ -31,54 +31,55 @@ export default function DownloadPanel() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-3 px-4 py-3 bg-white dark:bg-slate-900 border border-[#dddddd] dark:border-slate-800 rounded-2xl shadow-sm font-['Airbnb_Cereal_VF',Circular,sans-serif]">
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-4 py-3 bg-[#FFFFFF] border border-[#E4E4E7] rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
 
-      {/* Meta chips (Airbnb pill style) */}
+      {/* Meta Chips */}
       <div className="flex items-center gap-2 flex-wrap justify-center sm:justify-start w-full sm:w-auto">
-        <span className="flex items-center justify-center h-8 px-3 rounded-full border border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-slate-200 text-xs font-semibold">
-          {t.width}: {livePreview.width}px
+        <span className="flex items-center justify-center h-8 px-3 rounded-lg border border-[#E4E4E7] bg-[#FAFAFA] text-[#52525B] text-xs font-medium">
+          Width: <strong className="ml-1 text-[#18181B]">{livePreview.width}px</strong>
         </span>
-        <span className="flex items-center justify-center h-8 px-3 rounded-full border border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-slate-200 text-xs font-semibold">
-          {t.height}: {livePreview.height}px
+        <span className="flex items-center justify-center h-8 px-3 rounded-lg border border-[#E4E4E7] bg-[#FAFAFA] text-[#52525B] text-xs font-medium">
+          Height: <strong className="ml-1 text-[#18181B]">{livePreview.height}px</strong>
         </span>
-        <span className="flex items-center justify-center h-8 px-3.5 rounded-full border border-[#ff385c]/30 bg-[#ff385c]/10 text-[#ff385c] text-xs font-bold">
+        <span className="flex items-center justify-center h-8 px-3 rounded-lg border border-[#BBF7D0] bg-[#F0FDF4] text-[#15803D] text-xs font-bold">
           {livePreview.sizeKb} KB
         </span>
-        <span className="flex items-center justify-center h-8 px-3 rounded-full border border-[#dddddd] dark:border-slate-700 bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-slate-200 uppercase text-xs font-bold">
+        <span className="flex items-center justify-center h-8 px-2.5 rounded-lg border border-[#E4E4E7] bg-[#FAFAFA] text-[#71717A] uppercase text-xs font-semibold">
           {ext}
         </span>
         {isProcessing && (
-          <span className="animate-pulse text-[#ff385c] text-xs font-bold ml-1">
-            {t.processing}
+          <span className="animate-pulse text-[#16A34A] text-xs font-semibold ml-1">
+            Processing...
           </span>
         )}
       </div>
 
-      {/* Filename + Airbnb Rausch Download Button */}
-      <div className="flex items-center gap-2 w-full sm:w-auto flex-shrink-0">
+      {/* Filename + Primary Download Button */}
+      <div className="flex items-center gap-2.5 w-full sm:w-auto flex-shrink-0">
         
-        {/* Filename Input Pill */}
-        <div className="flex items-center flex-1 sm:w-48 bg-[#f7f7f7] dark:bg-slate-800 rounded-full border border-[#dddddd] dark:border-slate-700 px-3 py-1.5 focus-within:border-[#222222] dark:focus-within:border-white transition-colors">
+        {/* Filename Input */}
+        <div className="flex items-center flex-1 sm:w-44 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] px-3 py-2 focus-within:border-[#16A34A] focus-within:ring-2 focus-within:ring-[#DCFCE7] transition-all">
           <input
             type="text"
             value={fileName}
             onChange={(e) => setFileName(e.target.value)}
-            placeholder={t.fileNamePlaceholder}
-            className="flex-1 w-0 bg-transparent text-xs font-semibold focus:outline-none text-[#222222] dark:text-white"
+            placeholder="File name"
+            className="flex-1 w-0 bg-transparent text-xs font-medium text-[#18181B] focus:outline-none"
           />
-          <span className="text-xs text-[#6a6a6a] dark:text-slate-400 font-mono">
+          <span className="text-xs text-[#71717A] font-mono">
             .{ext}
           </span>
         </div>
 
-        {/* Signature Rausch Download Button ({colors.primary} #ff385c) */}
+        {/* Primary Download Button */}
         <button
+          type="button"
           onClick={handleDownload}
           disabled={!livePreview.url || isProcessing}
-          className="flex items-center justify-center gap-2 px-6 py-2.5 text-xs font-bold bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full shadow-sm hover:shadow-md transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+          className="flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-semibold bg-[#16A34A] hover:bg-[#15803D] text-[#FFFFFF] rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-colors active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap"
         >
-          <Download size={15} />
-          <span>{t.downloadImage}</span>
+          <Download size={14} />
+          <span>Download Image</span>
         </button>
 
       </div>

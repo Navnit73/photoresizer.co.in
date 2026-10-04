@@ -5,9 +5,11 @@ import { SeoPageRenderer } from '../../../components/seo/SeoPageRenderer';
 import { generateSeoMetadata } from '../../../lib/seo';
 
 export async function generateStaticParams() {
-  return enPages.map((page) => ({
-    slug: [page.slug],
-  }));
+  return enPages
+    .filter((page) => page.slug !== 'canvas-photo-collage-maker')
+    .map((page) => ({
+      slug: [page.slug],
+    }));
 }
 
 type Params = Promise<{ slug: string[] }>;

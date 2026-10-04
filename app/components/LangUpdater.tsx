@@ -9,14 +9,12 @@ export function LangUpdater() {
   useEffect(() => {
     if (!pathname) return;
     
-    let lang = 'en';
-    if (pathname.startsWith('/fr')) lang = 'fr';
-    else if (pathname.startsWith('/de')) lang = 'de';
-    else if (pathname.startsWith('/es')) lang = 'es';
-    else if (pathname.startsWith('/pt')) lang = 'pt';
+    let lang = 'en-IN';
+    if (pathname.startsWith('/hi')) lang = 'hi';
     
     document.documentElement.lang = lang;
   }, [pathname]);
 
   return null;
 }
+

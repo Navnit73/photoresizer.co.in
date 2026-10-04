@@ -1,20 +1,15 @@
 import fs from 'fs';
 import path from 'path';
 import { enPages } from '../content/en-pages';
-import { dePages } from '../content/de-pages';
-import { frPages } from '../content/fr-pages';
-import { esPages } from '../content/es-pages';
-import { ptPages } from '../content/pt-pages';
-import { programmaticPages } from '../content/programmatic-pages';
-import { getHreflangMap } from '../lib/seo';
-import { SeoPage } from '../lib/types/seo';
+import { getRegionalHreflangMap, ROOT_HREFLANGS, BASE_URL } from '../lib/seo';
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
+const todayIso = new Date().toISOString().split('T')[0];
 
 type UrlObj = {
   url: string;
   changeFrequency: string;
   priority: number;
+  lastmod?: string;
   hreflangs?: Record<string, string>;
 };
 
@@ -24,8 +19,9 @@ function generateXml(urlObjs: UrlObj[]) {
   for (const obj of urlObjs) {
     xml += `  <url>\n`;
     xml += `    <loc>${obj.url}</loc>\n`;
+    xml += `    <lastmod>${obj.lastmod || todayIso}</lastmod>\n`;
     xml += `    <changefreq>${obj.changeFrequency}</changefreq>\n`;
-    xml += `    <priority>${obj.priority}</priority>\n`;
+    xml += `    <priority>${obj.priority.toFixed(1)}</priority>\n`;
     if (obj.hreflangs) {
       for (const [lang, href] of Object.entries(obj.hreflangs)) {
         xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${href}"/>\n`;
@@ -37,112 +33,89 @@ function generateXml(urlObjs: UrlObj[]) {
   return xml;
 }
 
-const rootHreflangs = {
-  en: `${baseUrl}/`,
-  de: `${baseUrl}/de`,
-  fr: `${baseUrl}/fr`,
-  es: `${baseUrl}/es`,
-  pt: `${baseUrl}/pt`,
-  'x-default': `${baseUrl}/`,
-};
-
 async function main() {
   const publicDir = path.join(__dirname, '../public');
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
   }
 
-  // Generate EN (main)
-  const enUrls: UrlObj[] = [
-    { url: `${baseUrl}/`, changeFrequency: 'weekly', priority: 1, hreflangs: rootHreflangs },
-    { url: `${baseUrl}/tools`, changeFrequency: 'weekly', priority: 0.9, hreflangs: { en: `${baseUrl}/tools`, de: `${baseUrl}/de/tools`, 'x-default': `${baseUrl}/tools` } },
-    ...enPages.map((p) => ({
-      url: `${baseUrl}/${p.slug}`,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      hreflangs: getHreflangMap(p, 'en')
-    })),
-    ...programmaticPages.map((p) => ({
-      url: `${baseUrl}/${p.slug}`,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      hreflangs: getHreflangMap(p, 'en')
-    })),
-  ];
-  fs.writeFileSync(path.join(publicDir, 'sitemap_main.xml'), generateXml(enUrls));
+  // Remove obsolete dead sitemaps if present
+  const obsoleteSitemaps = ['sitemap_es.xml', 'sitemap_fr.xml', 'sitemap_de.xml', 'sitemap_pt.xml'];
+  for (const oldFile of obsoleteSitemaps) {
+    const fullOldPath = path.join(publicDir, oldFile);
+    if (fs.existsSync(fullOldPath)) {
+      fs.unlinkSync(fullOldPath);
+      console.log(`Removed obsolete sitemap: ${oldFile}`);
+    }
+  }
 
-  // Generate DE
-  const deUrls: UrlObj[] = [
-    { url: `${baseUrl}/de`, changeFrequency: 'weekly', priority: 0.9, hreflangs: rootHreflangs },
-    { url: `${baseUrl}/de/tools`, changeFrequency: 'weekly', priority: 0.9, hreflangs: { en: `${baseUrl}/tools`, de: `${baseUrl}/de/tools`, 'x-default': `${baseUrl}/tools` } },
-    ...dePages.map((p) => ({
-      url: `${baseUrl}/de/${p.slug}`,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      hreflangs: getHreflangMap(p, 'de')
-    })),
-  ];
-  fs.writeFileSync(path.join(publicDir, 'sitemap_de.xml'), generateXml(deUrls));
+  // Deduplicate all URLs by clean canonical URL
+  const seenUrls = new Set<string>();
+  const allUrls: UrlObj[] = [];
 
-  // Generate FR
-  const frUrls: UrlObj[] = [
-    { url: `${baseUrl}/fr`, changeFrequency: 'weekly', priority: 0.9, hreflangs: rootHreflangs },
-    ...frPages.map((p) => ({
-      url: `${baseUrl}/fr/${p.slug}`,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      hreflangs: getHreflangMap(p, 'fr')
-    })),
-  ];
-  fs.writeFileSync(path.join(publicDir, 'sitemap_fr.xml'), generateXml(frUrls));
+  const addUrl = (entry: UrlObj) => {
+    if (!seenUrls.has(entry.url)) {
+      seenUrls.add(entry.url);
+      allUrls.push(entry);
+    }
+  };
 
-  // Generate ES
-  const esUrls: UrlObj[] = [
-    { url: `${baseUrl}/es`, changeFrequency: 'weekly', priority: 0.9, hreflangs: rootHreflangs },
-    ...esPages.map((p) => ({
-      url: `${baseUrl}/es/${p.slug}`,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      hreflangs: getHreflangMap(p, 'es')
-    })),
-  ];
-  fs.writeFileSync(path.join(publicDir, 'sitemap_es.xml'), generateXml(esUrls));
+  // 1. Root Homepage
+  addUrl({ url: `${BASE_URL}/`, changeFrequency: 'daily', priority: 1.0, hreflangs: ROOT_HREFLANGS });
 
-  // Generate PT
-  const ptUrls: UrlObj[] = [
-    { url: `${baseUrl}/pt`, changeFrequency: 'weekly', priority: 0.9, hreflangs: rootHreflangs },
-    ...ptPages.map((p) => ({
-      url: `${baseUrl}/pt/${p.slug}`,
+  // 2. Main Tools Listing Page
+  addUrl({
+    url: `${BASE_URL}/tools`,
+    changeFrequency: 'weekly',
+    priority: 0.9,
+    hreflangs: getRegionalHreflangMap('tools'),
+  });
+
+  // 3. All Tool / Exam / Utility Pages from enPages (which includes all content + programmatic pages)
+  for (const p of enPages) {
+    const cleanSlug = p.slug.trim().replace(/^\/+|\/+$/g, '');
+    if (!cleanSlug) continue;
+
+    const pageUrl = `${BASE_URL}/${cleanSlug}`;
+    addUrl({
+      url: pageUrl,
       changeFrequency: 'weekly',
       priority: 0.8,
-      hreflangs: getHreflangMap(p, 'pt')
-    })),
-  ];
-  fs.writeFileSync(path.join(publicDir, 'sitemap_pt.xml'), generateXml(ptUrls));
+      hreflangs: getRegionalHreflangMap(cleanSlug, 'en'),
+    });
+  }
+
+  // Generate sitemap_main.xml with all canonical URLs
+  fs.writeFileSync(path.join(publicDir, 'sitemap_main.xml'), generateXml(allUrls));
 
   // Generate Master sitemap.xml Index
   const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
     `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-    `  <sitemap><loc>${baseUrl}/sitemap_main.xml</loc></sitemap>\n` +
-    `  <sitemap><loc>${baseUrl}/sitemap_de.xml</loc></sitemap>\n` +
-    `  <sitemap><loc>${baseUrl}/sitemap_fr.xml</loc></sitemap>\n` +
-    `  <sitemap><loc>${baseUrl}/sitemap_es.xml</loc></sitemap>\n` +
-    `  <sitemap><loc>${baseUrl}/sitemap_pt.xml</loc></sitemap>\n` +
-    `</sitemapindex>`;
+    `  <sitemap>\n` +
+    `    <loc>${BASE_URL}/sitemap_main.xml</loc>\n` +
+    `    <lastmod>${todayIso}</lastmod>\n` +
+    `  </sitemap>\n` +
+    `</sitemapindex>\n`;
   fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapIndexXml);
 
-  // Generate robots.txt (100% RFC 9309 / Google specification compliant)
+  // Generate robots.txt
   const robotsTxt = `# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Disallow: /private/
 Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
 
-Sitemap: ${baseUrl}/sitemap.xml
+# Host
+Host: photoresizer.co.in
+
+# Sitemaps
+Sitemap: ${BASE_URL}/sitemap.xml
 `;
   fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt);
 
-  console.log('Successfully generated sitemaps and robots.txt in public/');
+  console.log(`Successfully generated clean sitemaps (${allUrls.length} URLs) and robots.txt in public/`);
 }
 
 main();
+

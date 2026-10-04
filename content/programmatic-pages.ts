@@ -15,8 +15,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Passport Photo Editor",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Passport Photo Editor Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Passport Photo Editor Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Passport Photo Editor photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -55,15 +55,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Passport Photo App",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Passport Photo App? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -101,15 +101,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Passport Photo Print Template Generator",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Passport Photo Print Template Generator? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -149,8 +149,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ielts Photo Size",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Ielts Photo Size Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Ielts Photo Size Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Ielts Photo Size photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -188,15 +188,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Toefl Photo Size",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Toefl Photo Size? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -234,8 +234,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sat Photo Size",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Sat Photo Size Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Sat Photo Size Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Sat Photo Size photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -273,15 +273,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Pte Photo Size",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Pte Photo Size? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -319,15 +319,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gre Photo Size",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Gre Photo Size? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -365,10 +365,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gmat Photo Size",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Gmat Photo Size application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -406,15 +406,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Canada Passport Photo Maker",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Canada Passport Photo Maker? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -454,10 +454,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Schengen Visa Photo Maker",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Schengen Visa Photo Maker application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -497,8 +497,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Australia Passport Photo Maker",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Australia Passport Photo Maker Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Australia Passport Photo Maker Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Australia Passport Photo Maker photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -538,10 +538,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nepal Passport Photo Maker",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Nepal Passport Photo Maker application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -581,22 +581,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bg Removal",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Bg removal used to mean opening a heavy desktop editor, carefully tracing around a subject with a lasso tool, and spending twenty minutes on a job that should take twenty seconds. This tool changes that. Drop a photo into the browser and an AI model isolates the subject, deletes the background, and hands you back a clean, transparent PNG — all before you've had time to reach for a coffee.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The entire process runs client-side. That single design choice matters more than it might seem: your photo is never transmitted to a remote server, never stored in a database, and never seen by anyone else. Everything happens locally, inside your own browser tab, which means the tool works just as well for a private family photo as it does for a product shot destined for an online store.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Under the hood, a lightweight machine learning model has been trained to recognize the boundary between foreground subjects — people, animals, objects, logos — and everything behind them. It handles fine detail surprisingly well: strands of hair, the edge of a coffee cup, the gap between an arm and a torso. You won't get a jagged, obviously-automated cutout; you'll get an edge that looks like it was done by hand.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Use cases stack up quickly once you start looking. E-commerce sellers use bg removal to put every product photo on a uniform white background. Designers use it to pull a subject out of a stock photo and drop it into a new composition. Marketers use it to build clean headshots for a team page. Students and hobbyists use it for presentations, memes, and collages. Because the output is a transparent PNG, it drops straight into any design tool — Canva, Photoshop, Figma, PowerPoint — without any extra conversion step.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     There's no account to create and no watermark stamped across your download. You upload an image, you get a result, and you're free to use it however you like — commercially or personally. If you process ten images or ten thousand, the experience stays exactly the same: fast, private, and free.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     If your image doesn't come out perfectly on the first try — busy backgrounds, low contrast between subject and background, or motion blur can occasionally trip up any AI model — try a higher-resolution source image. The model has more visual information to work with, and results improve noticeably. For most everyday photos, though, one pass is all it takes.
   </p>
 </div>`,
@@ -644,22 +644,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Remove Background From Image Free",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Searching for a way to remove background from image free of charge usually leads to one of two disappointments: tools that are free for exactly one image and then demand a subscription, or tools that quietly slap a watermark across your download. This one does neither. It's free for the first image and free for the thousandth, with a full-resolution, watermark-free result every time.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The tool runs entirely inside your browser using an on-device AI model. That means no upload queue, no server processing time, and no waiting for a file to travel across the internet and back. You'll typically see a finished, transparent-background image within a couple of seconds of dropping your photo in — even on a modest laptop or a mid-range phone.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Because nothing leaves your device, privacy is built in rather than bolted on. This matters for obvious things like passport photos or personal pictures, but it also matters for business use — product mockups, unreleased packaging designs, or client photos that shouldn't be sitting on a third-party server anywhere.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The AI model has been trained on a wide variety of subjects, so it isn't limited to portraits. It handles pets, food, furniture, vehicles, and flat-lay product shots with equally solid accuracy. Edges around hair, fur, and fine textures are refined automatically, which is usually the hardest part to get right with manual selection tools.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     People reach for a free background remover for all kinds of reasons: swapping a messy home background for a plain one before a video call screenshot, prepping a headshot for LinkedIn, isolating a product for a marketplace listing, or building a sticker pack from a photo of a pet. Whatever the reason, the workflow is identical — upload, wait a moment, download.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     If you want to go a step further, the transparent PNG you download can be layered onto a new background of your choice in any basic photo or design app, giving you full creative control without ever touching a paid subscription. For best results, use a well-lit original photo where the subject is clearly distinguishable from what's behind it — the sharper that contrast, the cleaner the automatic cutout will be.
   </p>
 </div>`,
@@ -707,22 +707,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Background Eraser",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     A background eraser tool traditionally meant grabbing an actual eraser brush and carefully painting away pixels around the edges of a subject — a slow, fiddly process that punished anyone without a steady hand. This tool automates that entire job. An AI model scans your image, identifies the subject, and erases everything else in one pass.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Speed is the headline feature, but accuracy is what makes it genuinely useful. The underlying model has been trained specifically to handle the trickiest parts of background erasing: loose hair strands, semi-transparent objects like glassware, soft shadows, and subjects that share similar colors with what's behind them. Instead of a rough, obviously-automated cutout, you get an edge that holds up under close inspection.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Everything runs locally in your browser rather than on a remote server. That's a meaningful distinction if you're erasing backgrounds from anything sensitive — a prototype product, an internal presentation image, or simply a photo you'd rather not upload anywhere. Your file stays on your device from start to finish, and nothing is cached, logged, or stored after you close the tab.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The tool is equally at home with casual and professional use. Someone building a meme or a sticker pack can erase a background in seconds and move straight to editing. A small business owner can batch through product photography to get a consistent, distraction-free catalog. A designer can pull an isolated element out of a stock photo to composite into a larger scene. In every case, the output is the same: a transparent PNG that drops cleanly into whatever you're building next.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     There's no artificial ceiling on usage. You won't hit a paywall after your third or fourth image, and there's no watermark stamped across the result to nudge you toward a paid tier. The tool is simply free, for as many images as you want to run through it.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     If an erase comes out slightly imperfect — which can happen with very low-contrast or heavily cluttered photos — try cropping tighter around your subject before uploading, or use a higher-resolution source file. Giving the AI a clearer, larger view of the subject almost always produces a noticeably cleaner erase.
   </p>
 </div>`,
@@ -770,22 +770,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Photo Background Remover",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     A good photo background remover has to solve two problems at once: it needs to be fast enough to fit into a real workflow, and accurate enough that you're not stuck manually touching up edges afterward. This tool was built around those two priorities. Upload a photo, and an AI model isolates the subject and strips away everything else in a matter of seconds.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     It works entirely in your browser, with no file ever leaving your device. That local-processing approach isn't just a privacy nicety — it's also why the tool feels instant. There's no upload progress bar, no server queue, and no round trip across the internet. The heavy lifting happens on your own hardware, using a model that's been optimized to run efficiently without needing a powerful machine.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Photo subjects vary wildly — a person against a busy street, a pet on a patterned couch, a product on a cluttered desk — and the model has been trained across a broad range of scenarios to handle that variety. It pays particular attention to soft, difficult edges: hair, fur, fabric with texture, and the gap between overlapping objects. These are exactly the areas where manual selection tools and older automated tools tend to fall short.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The result is exported as a transparent PNG at the same resolution as your original photo, so there's no quality loss and no need to re-upscale afterward. From there, you can drop the cutout onto a new background, place it into a design template, or simply keep the transparency for use in a document or presentation.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     This tool is popular for practical, everyday reasons: cleaning up a profile photo, preparing headshots for a team directory, isolating a product for an online listing, or creating consistent images for a catalog. It's just as useful for personal projects — building a collage, editing a screenshot, or putting together a scrapbook page.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     There's no account requirement, no watermark, and no cap on the number of photos you can process. If a particular image gives an imperfect result, try re-uploading a higher-resolution version — extra pixel detail generally translates directly into a cleaner, more precise cutout.
   </p>
 </div>`,
@@ -833,22 +833,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Remove Background From Logo",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Logos are one of the most common reasons people search for a background remover, and also one of the most common places where automated tools stumble. A logo often has sharp geometric edges, thin lines, small text, and flat colors that sit close to the background color — all things that are easy for a human eye to separate but surprisingly hard for software to get exactly right. This tool has been tuned to handle that kind of precision.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Instead of blurring edges or softening corners the way some general-purpose photo tools do, the AI model preserves the crisp lines that a logo depends on. Straight edges stay straight, curves stay smooth, and small typographic details aren't lost in the process. The result is a logo file that looks exactly like the original, just without the white or colored box it used to be trapped inside.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     This matters enormously for practical use. A transparent logo can be dropped onto a colored letterhead, a dark-mode website, a merchandise mockup, a slide deck, or a social media banner without ever showing an ugly rectangle around it. Design and marketing teams often need the same logo on dozens of different backgrounds throughout a single brand campaign, and having a transparent master version saves that repeated editing work entirely.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The whole process runs locally in your browser, so a logo you haven't publicly launched yet, or a client's unreleased brand mark, never has to be uploaded to an external server. That's an important consideration for agencies and freelancers handling confidential branding work.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     You don't need design software, a Photoshop subscription, or any prior editing experience to use it. Drag your logo file in, wait a moment, and download a transparent PNG that's ready to use anywhere. The tool works whether your source logo is a photograph of a printed logo, a screenshot, or an exported image file.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     For the sharpest possible result, start with the highest-resolution version of the logo you have access to. Because logos rely so heavily on crisp lines, a low-resolution or compressed source image is the most common reason for a slightly soft or imprecise edge in the final export.
   </p>
 </div>`,
@@ -896,22 +896,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Picture Background Remover",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Not every picture that needs its background removed is a polished, professional photograph. Sometimes it's a quick phone snapshot, a screenshot, an old scanned print, or a picture pulled from a group chat. This tool is built to handle that real-world variety, not just studio-quality images, so whatever picture you have on hand is likely to work well.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     An AI model examines the picture, identifies the main subject, and removes everything surrounding it — replacing the background with transparency rather than a flat color, so the result can be placed onto literally anything afterward. The model has been trained on a wide range of picture types and lighting conditions, which is why it holds up reasonably well even on pictures that aren't perfectly lit or perfectly framed.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Everything happens inside your browser. There's no upload to a remote server, no processing queue, and no waiting on a slow connection — the picture stays on your device the entire time, and the output appears in seconds rather than minutes. This local-first approach also means the tool keeps working even if your internet connection is a little unreliable, since there's no large file transfer involved.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     People use a picture background remover for a huge range of everyday tasks: cutting a person out of a family photo to use in a collage, isolating a pet picture to turn into a sticker, pulling an object out of a cluttered picture for a marketplace listing, or cleaning up an old scanned picture that has a discolored or damaged background. The common thread is simple — you want the subject, and you don't want what's behind it.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Downloads come as transparent PNG files, which open correctly in virtually every photo editor, design tool, and document editor without any conversion step. There's no watermark added, no login required, and no limit on how many pictures you can process in a session.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     If a particular picture comes out with a rough edge, it's usually because the subject and background share very similar colors or lighting. In those cases, try a picture with a bit more contrast, or a slightly higher resolution, and the model will typically produce a much cleaner cutout.
   </p>
 </div>`,
@@ -959,22 +959,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Delete Background",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Deleting a background sounds like it should be a one-click action, and with this tool, it basically is. Upload your image, and an AI model automatically identifies the subject and deletes everything behind it — no manual selection, no lasso tool, no layer masks to fuss with.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The model driving this process has been trained specifically to distinguish foreground subjects from their surroundings, even in situations that are notoriously difficult: overlapping objects, low-contrast scenes, and fine, wispy detail like hair or fur. Rather than deleting a rough rectangular chunk around your subject, it traces the actual contour, so the deleted area follows the real shape of what's behind your subject.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     One of the biggest advantages of this tool is where the processing actually happens: entirely within your own browser. Your image is never sent to a remote server, which means there's no upload wait, no risk of your file sitting on someone else's storage, and no dependency on server capacity or uptime. It's as fast on a quiet Tuesday afternoon as it is during a traffic spike.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Deleting a background is useful in more situations than people initially expect. It's the standard first step for product photography, since a plain or transparent background lets a product look the same across every listing and marketing channel. It's equally handy for personal use — removing a distracting background from a photo before posting it, or isolating a subject to place into a different scene entirely. Designers frequently use it to pull elements out of stock photography for use in composite artwork.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Once the background is deleted, your image is exported as a transparent PNG, which is the standard format for layering images in almost any editing or design software. There's no watermark added to mark the file as processed by a free tool, and there's no limit that kicks in after a handful of uses — you can delete backgrounds from as many images as your project requires.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     If an image comes back with an edge that isn't quite as clean as expected, the most common fix is simply using a sharper or higher-resolution source photo. More visual detail gives the AI model more information to work with, which almost always translates into a more precise deletion.
   </p>
 </div>`,
@@ -1022,22 +1022,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Background Remover Png",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     PNG is the format of choice for transparency, which is exactly why it's the output this tool produces. Unlike JPEG, which can't represent transparent pixels at all, PNG supports a proper alpha channel — meaning the area where your background used to be isn't filled with white or black, it's genuinely see-through, ready to sit on top of anything.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Getting from a regular photo to a transparent PNG here takes just two steps: upload your image, and let the AI model do the rest. It analyzes the picture, separates the subject from its surroundings, and exports a PNG file where only the subject remains opaque. There's no format conversion to think about afterward — what you download is already in the exact file type most design and editing tools expect for layered work.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The underlying model pays close attention to edge quality, since a transparent PNG with a rough or jagged outline defeats the purpose of removing the background in the first place. Hair, fur, semi-transparent materials, and soft shadows are all handled with extra care, so the final PNG looks natural whether you're viewing it against a white page or a colorful new background.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Because everything runs locally in your browser, there's no upload to an external server and no wait for a processing queue. Your original photo and the resulting PNG both stay on your own device throughout, which is particularly useful if you're working with sensitive images — client photos, unreleased product shots, or anything you'd rather keep off third-party servers entirely.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     A transparent PNG is genuinely versatile once you have it. Designers layer it into composite artwork. Marketers drop it onto branded templates. Online sellers place it over a plain white background for a consistent product catalog. Students and casual users use it for presentations, printables, and social media graphics. Whatever the destination, the transparent PNG format means it will fit without an awkward rectangular border around it.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     There's no limit on how many PNGs you can generate, no watermark added to the export, and no account needed to get started. If an export doesn't come out as clean as you'd like, try a higher-resolution or better-lit source photo — the model performs best when it has clear visual contrast to work from.
   </p>
 </div>`,
@@ -1085,22 +1085,22 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Change Picture Background",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Changing a picture's background is really a two-part job: removing the old one, and putting something new in its place. This tool handles the first half instantly and sets you up perfectly for the second. Upload your picture, and an AI model strips away the existing background, leaving your subject on a transparent canvas that's ready for whatever comes next.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     That transparent result is the key to a smooth background swap. Once your subject is isolated, you can layer it onto a solid color, a scenic photo, a branded template, or a plain white backdrop — all without needing to redraw or re-select anything. Most design tools, from Canva to Photoshop to Figma, accept a transparent PNG and let you place a new background behind it in just a couple of clicks.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     The model behind the removal step is trained to handle a wide range of picture types — portraits, group shots, pets, products, and everyday snapshots — and it pays particular attention to the edges that are hardest to get right, like loose hair, soft shadows, and semi-transparent materials. That attention to edge quality is what makes the final swapped-background picture look natural rather than obviously edited.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Everything runs locally in your browser, so your original picture is never uploaded to a server. This is especially useful for anyone changing backgrounds on personal or sensitive photos — a picture for a visa or ID application, a professional headshot before it's officially released, or a family photo you'd simply rather not send anywhere else.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     People change picture backgrounds for a wide variety of reasons: swapping a messy real-world background for a plain studio-style one, giving a product photo a consistent brand color, placing a subject into a more visually interesting scene, or simply cleaning up a picture that has clutter behind the main subject. Whatever the goal, removing the old background cleanly is always the essential first step, and that's exactly what this tool is built to do well.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     There's no cost, no account requirement, and no cap on how many pictures you can process. If your first result isn't as crisp as you'd like, try a higher-resolution picture with good lighting — the AI model produces its best results when the subject is clearly distinguishable from the original background.
   </p>
 </div>`,
@@ -1148,10 +1148,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Photo Background Changer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Instantly Photo Background Changer using our advanced browser-based AI tool. Get crisp, clean cutouts in seconds without paying for premium software.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Our AI automatically detects the main subject and removes the background cleanly.
   </p>
 </div>`,
@@ -1184,7 +1184,7 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Clear Background",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The fastest way to Clear Background. Professional quality results in your browser — simply drag and drop your photo to get started.
   </p>
 </div>`,
@@ -1217,30 +1217,30 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "Why HD Quality Matters",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     A blurry cutout ruins an otherwise great photo. When you zoom in, jagged edges and soft halos around hair, fur, or fine details give away a low-effort background removal instantly. This tool solves that problem by preserving every pixel of detail from your original image, so the final result holds up even at full resolution or in print.
   </p>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Most free background removers compress your image before processing, which quietly destroys quality. This one doesn't. Your photo is analyzed at its native resolution, edge by edge, so you get a transparent PNG that looks just as sharp as the original.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">How It Works</h3>
-  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">How It Works</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-[#52525B]">
     <li>Drag your photo into the upload box, or click to browse your files.</li>
     <li>The tool detects the subject automatically — no manual selection needed.</li>
     <li>Fine edges like hair strands and soft shadows are refined in real time.</li>
     <li>Download your transparent PNG in full HD, ready to use anywhere.</li>
   </ol>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Built for Detail-Sensitive Work</h3>
-  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Built for Detail-Sensitive Work</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-[#52525B]">
     <li><strong>Product photography:</strong> Clean, edge-perfect cutouts for e-commerce listings.</li>
     <li><strong>Portraits:</strong> Natural-looking edges around hair and clothing.</li>
     <li><strong>Print materials:</strong> High-resolution output that doesn't pixelate when enlarged.</li>
     <li><strong>Design projects:</strong> Layer-ready assets for posters, banners, and mockups.</li>
   </ul>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Because everything runs locally in your browser, there's no waiting for a server, no queue, and no risk of your photos sitting on someone else's storage. You get studio-grade results with none of the usual trade-offs between speed, privacy, and quality.
   </p>
 </div>`,
@@ -1284,28 +1284,28 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "The Old Way vs. This Tool",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Most background removers ask you to upload your photo to a remote server, wait in a queue, and hope the result doesn't come back with a watermark stamped across it. That process is slow, uncertain, and puts your images in someone else's hands. This tool takes a different approach entirely.
   </p>
 
   <div class="overflow-x-auto mt-6">
     <table class="w-full text-left border-collapse">
       <thead>
-        <tr class="border-b border-slate-300 dark:border-slate-700">
-          <th class="py-3 pr-4 text-slate-900 dark:text-slate-100 font-semibold">Typical Tool</th>
-          <th class="py-3 text-slate-900 dark:text-slate-100 font-semibold">This Tool</th>
+        <tr class="border-b border-[#E4E4E7]">
+          <th class="py-3 pr-4 text-[#18181B] font-semibold">Typical Tool</th>
+          <th class="py-3 text-[#18181B] font-semibold">This Tool</th>
         </tr>
       </thead>
-      <tbody class="text-lg text-slate-600 dark:text-slate-400">
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+      <tbody class="text-lg text-[#52525B]">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">Uploads your photo to a server</td>
           <td class="py-3">Runs entirely in your browser</td>
         </tr>
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">Limited free exports per day</td>
           <td class="py-3">Unlimited processing, no daily cap</td>
         </tr>
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">Watermarks on free downloads</td>
           <td class="py-3">Clean exports, no watermark</td>
         </tr>
@@ -1317,20 +1317,20 @@ export const programmaticPages: SeoPage[] = [
     </table>
   </div>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">What Makes the Quality Different</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">What Makes the Quality Different</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The tool uses an on-device machine learning model trained to distinguish subjects from backgrounds with precision, even in tricky cases like transparent objects, wispy hair, or low-contrast edges. Because processing happens instantly on your device, there's no compression step that would otherwise soften edges or shift colors.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Where It Fits Into Your Workflow</h3>
-  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Where It Fits Into Your Workflow</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-[#52525B]">
     <li>Batch-process multiple product photos without hitting a usage limit.</li>
     <li>Prepare headshots and portraits for websites or resumes.</li>
     <li>Create transparent assets for presentations and marketing materials.</li>
     <li>Clean up social media graphics in seconds, right before posting.</li>
   </ul>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     You keep full control of your files at every step. Nothing is stored, nothing is queued, and nothing is held back behind a paywall. It's simply a faster, more private, and more accurate way to get a clean cutout.
   </p>
 </div>`,
@@ -1373,32 +1373,32 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "A Common Problem, Solved Simply",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     You've got a photo with a great subject and a distracting or messy background. Maybe it's a cluttered room behind a product shot, a busy street behind a portrait, or a plain wall you'd rather swap for something else entirely. Deleting the background is usually the first step, and it's often the most tedious part of editing a photo by hand.
   </p>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     This tool removes that step entirely. Upload your photo, and the background disappears automatically, leaving a clean, transparent layer around your subject that you can drop onto any new background, document, or design.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Common Situations This Solves</h3>
-  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Common Situations This Solves</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-[#52525B]">
     <li><strong>Online selling:</strong> Give every product listing a consistent, professional white or transparent background.</li>
     <li><strong>ID and passport photos:</strong> Meet strict background requirements without a photo studio.</li>
     <li><strong>Social media content:</strong> Place yourself or your product against any backdrop you want.</li>
     <li><strong>Presentations and reports:</strong> Drop clean subject cutouts into slides without a distracting frame around them.</li>
   </ul>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Three Steps, No Learning Curve</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Three Steps, No Learning Curve</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     There's no toolbar full of brushes, no lasso tool to fight with, and no tutorial required. Upload your photo, let the tool detect and remove the background automatically, then download the result. If an edge needs a touch-up, a simple refine option is available, but most photos need no adjustment at all.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Your Photos Stay on Your Device</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Your Photos Stay on Your Device</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Because the entire process runs inside your browser, your photo is never transmitted to a server or stored anywhere outside your own device. That matters for personal photos, and it matters even more for business use, where client images or product photography may carry confidentiality requirements.
   </p>
 
-  <blockquote class="border-l-4 border-slate-300 dark:border-slate-700 pl-4 italic text-lg text-slate-600 dark:text-slate-400">
+  <blockquote class="border-l-4 border-[#E4E4E7] pl-4 italic text-lg text-[#52525B]">
     A clean cutout used to mean a trip to Photoshop and a steep learning curve. Now it takes one drag-and-drop.
   </blockquote>
 </div>`,
@@ -1441,36 +1441,36 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "Quick Start",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Drop your picture into the box above, and the background is removed automatically. That's the entire process. No sign-up form, no email confirmation, and no software download standing between you and a finished, transparent image.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">What You Get</h3>
-  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">What You Get</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-[#52525B]">
     <li>A transparent PNG file with the background fully removed.</li>
     <li>Clean, natural-looking edges around your subject.</li>
     <li>No watermark or branding added to your download.</li>
     <li>Full privacy, since your picture never leaves your device.</li>
   </ul>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Supported Picture Types</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Supported Picture Types</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Whether it's a phone photo, a scanned image, a screenshot, or a graphic saved from another app, the tool accepts common formats like JPG, PNG, and WebP. It handles portraits, objects, animals, logos, and text-based graphics equally well.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Why People Choose This Over an App</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Why People Choose This Over an App</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Mobile apps that remove backgrounds often come with intrusive permissions, ads, or subscription paywalls hiding behind a "free trial." Since this tool works entirely inside a browser tab, there's nothing to install, nothing tracking your photo library, and nothing asking for a credit card after your third free use.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">A Few Tips for Best Results</h3>
-  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">A Few Tips for Best Results</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-[#52525B]">
     <li>Use pictures with clear lighting for the sharpest edge detection.</li>
     <li>If your subject has fine details like hair or fur, allow a moment for edge refinement to complete.</li>
     <li>For pictures with more than one subject, results work best when each subject is clearly separated from the background.</li>
   </ol>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Once the background is gone, your picture is ready to drop into a document, a slide, a new scene, or a design project, without carrying over anything from the original background.
   </p>
 </div>`,
@@ -1513,7 +1513,7 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Pdf Size Reducer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Looking to Pdf Size Reducer? You're in the right place. Our browser-based editor handles it all offline, keeping your files safe and private.
   </p>
 </div>`,
@@ -1546,7 +1546,7 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Merge Pdf",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Looking to Merge Pdf? You're in the right place. Our browser-based editor handles it all offline, keeping your files safe and private.
   </p>
 </div>`,
@@ -1579,7 +1579,7 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Split Pdf",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Looking to Split Pdf? You're in the right place. Our browser-based editor handles it all offline, keeping your files safe and private.
   </p>
 </div>`,
@@ -1612,7 +1612,7 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jpg To Pdf",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Use our free online tool to Jpg To Pdf. Fast, easy, and completely secure processing directly in your web browser.
   </p>
 </div>`,
@@ -1645,7 +1645,7 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Pdf To Jpg",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Use our free online tool to Pdf To Jpg. Fast, easy, and completely secure processing directly in your web browser.
   </p>
 </div>`,
@@ -1678,7 +1678,7 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Pdf Editor",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Use our free online tool to Pdf Editor. Fast, easy, and completely secure processing directly in your web browser.
   </p>
 </div>`,
@@ -1711,7 +1711,7 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Terms Of Service",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Looking to Terms Of Service? You're in the right place. Our browser-based editor handles it all offline, keeping your files safe and private.
   </p>
 </div>`,
@@ -1744,8 +1744,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cse Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Upsc Cse Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Upsc Cse Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Upsc Cse Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -1784,8 +1784,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cse Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Upsc Cse Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Upsc Cse Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Upsc Cse Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -1825,15 +1825,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Capf Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Upsc Capf Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -1872,8 +1872,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Capf Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Upsc Capf Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Upsc Capf Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Upsc Capf Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -1913,8 +1913,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Nda Na Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Upsc Nda Na Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Upsc Nda Na Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Upsc Nda Na Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -1954,15 +1954,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Nda Na Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Upsc Nda Na Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -2002,10 +2002,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cds Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Upsc Cds Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -2044,10 +2044,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cds Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Upsc Cds Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -2087,15 +2087,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cms Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Upsc Cms Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -2134,15 +2134,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cms Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Upsc Cms Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -2182,15 +2182,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Ies Iss Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Upsc Ies Iss Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -2230,8 +2230,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Ies Iss Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Upsc Ies Iss Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Upsc Ies Iss Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Upsc Ies Iss Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -2271,10 +2271,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Ese Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Upsc Ese Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -2313,10 +2313,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Ese Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Upsc Ese Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -2356,10 +2356,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cgge Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Upsc Cgge Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -2398,10 +2398,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cgge Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Upsc Cgge Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -2441,15 +2441,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cisf Ac Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Upsc Cisf Ac Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -2489,10 +2489,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc Cisf Ac Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Upsc Cisf Ac Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -2532,8 +2532,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc So Steno Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Upsc So Steno Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Upsc So Steno Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Upsc So Steno Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -2573,10 +2573,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsc So Steno Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Upsc So Steno Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -2616,10 +2616,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Cgl Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ssc Cgl Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -2658,10 +2658,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Cgl Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ssc Cgl Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -2701,10 +2701,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Chsl Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ssc Chsl Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -2743,15 +2743,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Chsl Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ssc Chsl Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -2791,15 +2791,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Mts Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ssc Mts Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -2838,8 +2838,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Mts Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ssc Mts Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ssc Mts Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ssc Mts Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -2879,10 +2879,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Cpo Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ssc Cpo Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -2921,10 +2921,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Cpo Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ssc Cpo Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -2964,8 +2964,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Je Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Ssc Je Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Ssc Je Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Ssc Je Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -3004,10 +3004,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Je Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ssc Je Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -3047,15 +3047,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Jht Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ssc Jht Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -3094,8 +3094,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Jht Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ssc Jht Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ssc Jht Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ssc Jht Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -3135,15 +3135,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Stenographer Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ssc Stenographer Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -3183,8 +3183,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Stenographer Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ssc Stenographer Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ssc Stenographer Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ssc Stenographer Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -3224,8 +3224,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Gd Constable Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Ssc Gd Constable Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Ssc Gd Constable Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Ssc Gd Constable Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -3265,10 +3265,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Gd Constable Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ssc Gd Constable Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -3308,10 +3308,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Selection Post Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ssc Selection Post Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -3351,15 +3351,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ssc Selection Post Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ssc Selection Post Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -3399,15 +3399,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps Po Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ibps Po Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -3446,8 +3446,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps Po Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ibps Po Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ibps Po Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ibps Po Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -3487,8 +3487,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps Clerk Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Ibps Clerk Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Ibps Clerk Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Ibps Clerk Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -3527,8 +3527,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps Clerk Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ibps Clerk Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ibps Clerk Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ibps Clerk Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -3568,15 +3568,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps So Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ibps So Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -3615,15 +3615,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps So Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ibps So Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -3663,10 +3663,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps Rrb Po Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ibps Rrb Po Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -3706,15 +3706,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps Rrb Po Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ibps Rrb Po Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -3754,10 +3754,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps Rrb Clerk Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ibps Rrb Clerk Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -3797,8 +3797,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ibps Rrb Clerk Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ibps Rrb Clerk Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ibps Rrb Clerk Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ibps Rrb Clerk Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -3838,8 +3838,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sbi Po Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Sbi Po Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Sbi Po Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Sbi Po Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -3878,8 +3878,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sbi Po Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Sbi Po Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Sbi Po Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Sbi Po Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -3919,15 +3919,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sbi Clerk Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Sbi Clerk Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -3966,10 +3966,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sbi Clerk Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Sbi Clerk Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -4009,15 +4009,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sbi So Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Sbi So Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -4056,8 +4056,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sbi So Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Sbi So Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Sbi So Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Sbi So Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -4097,10 +4097,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rbi Grade B Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Rbi Grade B Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -4140,10 +4140,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rbi Grade B Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Rbi Grade B Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -4183,15 +4183,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rbi Assistant Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Rbi Assistant Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -4231,10 +4231,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rbi Assistant Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Rbi Assistant Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -4274,10 +4274,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rbi Office Attendant Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Rbi Office Attendant Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -4317,15 +4317,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rbi Office Attendant Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Rbi Office Attendant Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -4365,8 +4365,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nabard Grade A Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Nabard Grade A Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Nabard Grade A Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Nabard Grade A Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -4406,8 +4406,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nabard Grade A Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Nabard Grade A Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Nabard Grade A Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Nabard Grade A Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -4447,8 +4447,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nabard Grade B Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Nabard Grade B Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Nabard Grade B Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Nabard Grade B Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -4488,10 +4488,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nabard Grade B Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Nabard Grade B Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -4531,15 +4531,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nabard Development Assistant Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Nabard Development Assistant Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -4580,8 +4580,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nabard Development Assistant Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Nabard Development Assistant Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Nabard Development Assistant Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Nabard Development Assistant Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -4621,15 +4621,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Lic Aao Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Lic Aao Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -4668,8 +4668,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Lic Aao Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Lic Aao Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Lic Aao Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Lic Aao Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -4709,10 +4709,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Lic Ado Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Lic Ado Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -4751,8 +4751,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Lic Ado Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Lic Ado Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Lic Ado Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Lic Ado Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -4792,8 +4792,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Lic Assistant Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Lic Assistant Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Lic Assistant Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Lic Assistant Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -4833,10 +4833,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Lic Assistant Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Lic Assistant Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -4876,15 +4876,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Niacl Ao Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Niacl Ao Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -4923,10 +4923,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Niacl Ao Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Niacl Ao Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -4966,8 +4966,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Niacl Assistant Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Niacl Assistant Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Niacl Assistant Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Niacl Assistant Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -5007,8 +5007,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Niacl Assistant Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Niacl Assistant Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Niacl Assistant Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Niacl Assistant Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -5048,15 +5048,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uiic Ao Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Uiic Ao Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -5095,8 +5095,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uiic Ao Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Uiic Ao Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Uiic Ao Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Uiic Ao Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -5136,10 +5136,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uiic Assistant Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Uiic Assistant Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -5179,8 +5179,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uiic Assistant Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Uiic Assistant Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Uiic Assistant Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Uiic Assistant Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -5220,8 +5220,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Oicl Ao Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Oicl Ao Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Oicl Ao Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Oicl Ao Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -5260,15 +5260,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Oicl Ao Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Oicl Ao Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -5308,25 +5308,25 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nicl Ao Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The NICL Administrative Officer application portal enforces strict photograph specifications, and a mismatch in pixel dimensions or file size is one of the most common reasons candidates get stuck at the upload step. Our Nicl Ao Photo Resizer tool lets you crop, resize, and compress your photograph to the exact requirements in seconds, entirely inside your browser.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Based on recent NICL AO notifications, the recommended photograph specification is <strong>200 × 230 pixels</strong>, saved as a <strong>JPG/JPEG</strong> file, with a size between <strong>20 KB and 50 KB</strong>. Photographs that exceed 50 KB or fall outside the pixel dimensions are typically rejected automatically by the application form, so it's worth checking your file against these numbers before you submit.
   </p>
-  <ul class="list-disc pl-6 space-y-2 text-slate-600 dark:text-slate-400 leading-relaxed">
+  <ul class="list-disc pl-6 space-y-2 text-[#52525B] leading-relaxed">
     <li>Use a recent, colour passport-style photograph taken against a plain, light-coloured or white background.</li>
     <li>Look directly at the camera with a neutral expression and both eyes clearly visible — no sunglasses, caps, or hats. Religious headwear is generally allowed as long as it does not obscure the face.</li>
     <li>Avoid harsh shadows or flash glare; natural, even lighting gives the cleanest scan.</li>
     <li>Save the final file as JPG/JPEG — most portals will reject PNG, BMP, or PDF uploads for the photograph field.</li>
   </ul>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     To use the tool, upload your existing photo, then set your target dimensions (200 × 230 px) and target file size (between 20–50 KB) in the sidebar. The resizer automatically adjusts JPEG compression quality until your file lands inside that range, so you don't have to guess at settings or run the image through multiple rounds of trial and error. You'll see a live preview and the exact output file size before you download, so there are no surprises when you upload it to the actual application form.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     A few practical tips that help candidates avoid rejection: scan or photograph at a reasonably high resolution first, since starting from a low-quality image and stretching it up to 200 × 230 px will look blurry even after resizing. If your scanner or camera produces a file well above 50 KB, don't just lower the resolution — let the compressor do the work, since aggressive downscaling can distort facial proportions. And always double-check the current notification for the specific recruitment cycle you're applying to, since NICL occasionally updates its exact pixel and KB requirements between AO, Assistant, and Specialist Officer recruitment drives.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Because everything runs locally using your browser's canvas engine, your photograph is never uploaded to any server — it's processed on your own device and only leaves your browser when you choose to download it. That makes this tool a fast, private way to get an application-ready photograph without installing software or creating an account.
   </p>
 </div>`,
@@ -5371,25 +5371,25 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nicl Ao Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official NICL AO applications require a scanned signature that meets an exact file-size window, and even a well-scanned signature can be bounced by the portal if the KB size is off by a small margin. This tool resizes and compresses your signature scan to fit the required range in your browser, with no upload to any server.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Based on recent NICL AO notifications, the standard signature specification is a file size between <strong>10 KB and 20 KB</strong>, saved as JPG/JPEG, signed in <strong>black ink on plain white paper</strong>. Signatures are typically also required to be handwritten in cursive rather than block/capital letters, since the form is meant to capture your natural signature, not printed text.
   </p>
-  <ul class="list-disc pl-6 space-y-2 text-slate-600 dark:text-slate-400 leading-relaxed">
+  <ul class="list-disc pl-6 space-y-2 text-[#52525B] leading-relaxed">
     <li>Sign on plain white paper using black ink for maximum contrast when scanned — some portals accept blue ink, but black is the safest default.</li>
     <li>Keep the signature reasonably sized on the page and crop tightly around it before uploading, so the resizer doesn't have to shrink a mostly-blank scan.</li>
     <li>Avoid signing in capital or block letters — most notifications explicitly ask for your normal signature.</li>
     <li>Save the scanned or photographed image as JPG/JPEG before resizing, since most application portals only accept that format for the signature field.</li>
   </ul>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     To use the tool, upload a photo or scan of your signature, crop it to just the signature area, then set your target file size to somewhere in the 10–20 KB range using the sidebar control. The compressor will automatically find the JPEG quality level that lands inside that window while keeping the signature legible, and you'll see the resulting file size before you download it — so you can confirm it's within range before submitting your application.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     A common mistake is uploading a signature scanned at very high resolution straight from a scanner or phone camera, which often produces files well over 100 KB — far above the 20 KB ceiling. Rather than repeatedly re-scanning at lower quality, it's easier to scan once at a decent resolution and let the compressor do the fine-tuning. It's also worth noting that NICL recruitment drives sometimes ask for related documents alongside the signature, such as a left thumb impression (around 20–50 KB) or a handwritten declaration (roughly 50–100 KB) — the exact figures depend on the specific notification, so always cross-check against the current one.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Everything happens locally using your browser's HTML5 Canvas — your signature image is processed on your own device and is never transmitted to any remote server, so you can prepare application-ready files quickly and privately.
   </p>
 </div>`,
@@ -5434,10 +5434,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sebi Grade A Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Sebi Grade A Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -5477,10 +5477,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sebi Grade A Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Sebi Grade A Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -5520,10 +5520,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sidbi Grade A Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Sidbi Grade A Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -5563,10 +5563,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Sidbi Grade A Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Sidbi Grade A Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -5606,15 +5606,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Exim Bank Mt Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Exim Bank Mt Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -5654,10 +5654,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Exim Bank Mt Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Exim Bank Mt Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -5697,10 +5697,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Ntpc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Rrb Ntpc Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -5739,10 +5739,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Ntpc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Rrb Ntpc Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -5782,15 +5782,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Group D Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Rrb Group D Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -5830,10 +5830,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Group D Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Rrb Group D Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -5873,15 +5873,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Alp Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Rrb Alp Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -5921,10 +5921,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Technician Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Rrb Technician Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -5964,10 +5964,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Technician Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Rrb Technician Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6007,10 +6007,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Je Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Rrb Je Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -6018,53 +6018,53 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "RRB Junior Engineer (JE) Recruitment 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Railway Recruitment Board (Ministry of Railways) has released a short notice under CEN-05/2026, announcing recruitment for 4,098 Junior Engineer (JE) posts. The board will open applications in July 2026 and will accept them until August 2026. Candidates must fall between 18 and 33 years of age as on 01 July 2026. Before applicants upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
   </p>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Application Start Date: Available soon</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Last Date to Apply Online: Available soon</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Last Date for Fee Payment: Available soon</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: To be notified</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: Issued before the exam</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Application Start Date: Available soon</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Last Date to Apply Online: Available soon</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Last Date for Fee Payment: Available soon</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Date: To be notified</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Admit Card: Issued before the exam</li>
     </ul>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee (Tentative)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General / OBC / EWS: ₹500</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC / ST / EBC: ₹250</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> All-category female candidates: ₹250</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee (Tentative)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General / OBC / EWS: ₹500</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC / ST / EBC: ₹250</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> All-category female candidates: ₹250</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">RRB will refund ₹400 to General/OBC candidates and ₹250 to other candidates after they appear for the Stage I exam. Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+    <p class="text-[#52525B] mt-2">RRB will refund ₹400 to General/OBC candidates and ₹250 to other candidates after they appear for the Stage I exam. Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 January 2026, Tentative)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Minimum age: 18 years</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 33 years</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit (as on 01 January 2026, Tentative)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Minimum age: 18 years</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maximum age: 33 years</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">RRB also grants age relaxation for the JE position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
+    <p class="text-[#52525B] mt-2">RRB also grants age relaxation for the JE position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates holding an Engineering Diploma or Degree, or the specific qualifications required for JE (IT) and Chemical & Metallurgical Assistant posts, qualify for this recruitment. RRB advises every candidate to read the official notification fully before applying.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Eligibility Criteria</h3>
+    <p class="text-[#52525B]">Candidates holding an Engineering Diploma or Degree, or the specific qualifications required for JE (IT) and Chemical & Metallurgical Assistant posts, qualify for this recruitment. RRB advises every candidate to read the official notification fully before applying.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the August 2026 deadline through the official RRB website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">How to Apply</h3>
+    <p class="text-[#52525B]">Candidates can complete the application online before the August 2026 deadline through the official RRB website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
-    <p class="text-slate-700 dark:text-slate-300">RRB selects candidates through four stages: CBT 1, CBT 2, document verification, and a medical examination.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Selection Process</h3>
+    <p class="text-[#52525B]">RRB selects candidates through four stages: CBT 1, CBT 2, document verification, and a medical examination.</p>
   </div>
 </div>`,
       },
@@ -6107,10 +6107,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Je Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Rrb Je Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6150,15 +6150,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Paramedical Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Rrb Paramedical Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -6198,8 +6198,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Paramedical Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Rrb Paramedical Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Rrb Paramedical Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Rrb Paramedical Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -6239,15 +6239,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Ministerial Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Rrb Ministerial Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -6287,10 +6287,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rrb Ministerial Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Rrb Ministerial Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6330,10 +6330,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rpf Si Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Rpf Si Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -6372,15 +6372,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rpf Si Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Rpf Si Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -6420,10 +6420,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rpf Constable Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Rpf Constable Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -6463,8 +6463,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rpf Constable Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Rpf Constable Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Rpf Constable Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Rpf Constable Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -6504,10 +6504,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Afcat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Afcat Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6547,8 +6547,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Inet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Inet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Inet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Inet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -6586,10 +6586,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Inet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Inet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6629,15 +6629,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Icg Navik Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Icg Navik Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -6676,10 +6676,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Icg Navik Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Icg Navik Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6719,15 +6719,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Icg Yantrik Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Icg Yantrik Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -6767,10 +6767,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Icg Yantrik Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Icg Yantrik Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6810,10 +6810,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Army Agniveer Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Army Agniveer Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6853,8 +6853,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Navy Agniveer Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Navy Agniveer Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Navy Agniveer Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Navy Agniveer Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -6894,10 +6894,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Navy Agniveer Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Navy Agniveer Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -6937,31 +6937,31 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About the Agniveer Vayu Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Indian Air Force rejects thousands of Agniveer Vayu applications every intake because of one avoidable mistake: a photo that doesn't meet the exact file size rule. Our resizer fixes this in your browser, so your photo is ready before you even open the application form.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">What Makes This Tool Different</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Compress to the exact IAF range: 10KB to 50KB</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Crop to a clean, front-facing passport format</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Lighten or clean up your background before upload</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Nothing leaves your device — all processing happens locally</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">What Makes This Tool Different</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Compress to the exact IAF range: 10KB to 50KB</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Crop to a clean, front-facing passport format</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Lighten or clean up your background before upload</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Nothing leaves your device — all processing happens locally</li>
     </ul>
   </div>
   <div>
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Official Photo Requirements for Agniveer Vayu 2026</h3>
-    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+    <h3 class="font-bold text-[#18181B] mb-3">Official Photo Requirements for Agniveer Vayu 2026</h3>
+    <p class="text-[#52525B] leading-relaxed mb-4">
       Per the IAF's Agniveer Vayu notification on agnipathvayu.cdac.in, your photograph must meet these rules:
     </p>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> File size between 10KB and 50KB</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> A recent color photo, not older than the date specified in your intake notification</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Front-facing portrait against a light background</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> No headgear, except for Sikh candidates permitted to retain a turban, beard, and moustache</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> You must hold a black slate at chest height, with your name and the photo date written on it in white chalk, in capital letters</li>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> File size between 10KB and 50KB</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> A recent color photo, not older than the date specified in your intake notification</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Front-facing portrait against a light background</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No headgear, except for Sikh candidates permitted to retain a turban, beard, and moustache</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> You must hold a black slate at chest height, with your name and the photo date written on it in white chalk, in capital letters</li>
     </ul>
-    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mt-4">
+    <p class="text-[#52525B] leading-relaxed mt-4">
       The black slate rule is unique to the Air Force intake and trips up many first-time applicants who reuse a standard passport photo. Always check the specific advertisement number and dates on agnipathvayu.cdac.in before you submit, since exact instructions can vary slightly between intakes.
     </p>
   </div>
@@ -7011,10 +7011,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Air Force Agniveer Vayu Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Air Force Agniveer Vayu Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -7054,8 +7054,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cisf Constable Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Cisf Constable Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Cisf Constable Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Cisf Constable Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -7095,8 +7095,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cisf Constable Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Cisf Constable Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Cisf Constable Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Cisf Constable Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -7136,15 +7136,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Crpf Head Constable Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Crpf Head Constable Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -7184,15 +7184,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Crpf Head Constable Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Crpf Head Constable Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -7232,15 +7232,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bsf Tradesman Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Bsf Tradesman Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -7280,15 +7280,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bsf Tradesman Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Bsf Tradesman Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -7328,10 +7328,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Itbp Constable Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Itbp Constable Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -7371,8 +7371,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Itbp Constable Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Itbp Constable Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Itbp Constable Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Itbp Constable Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -7412,10 +7412,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ugc Net Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ugc Net Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -7454,10 +7454,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ugc Net Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ugc Net Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -7497,10 +7497,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Csir Net Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Csir Net Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -7539,8 +7539,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ctet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ctet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ctet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ctet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -7580,15 +7580,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kvs Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Kvs Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -7626,8 +7626,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kvs Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Kvs Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Kvs Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Kvs Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -7666,15 +7666,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nvs Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Nvs Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -7712,15 +7712,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nvs Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Nvs Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -7759,8 +7759,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Dsssb Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Dsssb Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Dsssb Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Dsssb Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -7799,10 +7799,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Dsssb Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Dsssb Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -7842,10 +7842,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Emrs Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Emrs Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -7883,10 +7883,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Emrs Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Emrs Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -7926,15 +7926,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jee Main Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Jee Main Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -7973,10 +7973,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jee Main Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Jee Main Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -8016,10 +8016,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jee Advanced Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Jee Advanced Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -8059,10 +8059,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jee Advanced Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Jee Advanced Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -8102,15 +8102,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Neet Ug Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Neet Ug Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -8149,10 +8149,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Neet Ug Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Neet Ug Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -8192,15 +8192,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Neet Pg Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Neet Pg Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -8208,49 +8208,49 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "NEET PG Online Form 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The National Board of Examinations in Medical Sciences (NBE) has released a notification announcing admissions for the National Eligibility cum Entrance Test (NEET PG) 2026. The board opened the application form on 01 July 2026 and will accept entries until 21 July 2026. Before candidates upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
   </p>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Apply Online Start Date: 01 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Apply Online Last Date: 21 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Fee Payment Last Date: 21 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam City Details: 11 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: 30 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: Issued before the exam</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Apply Online Start Date: 01 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Apply Online Last Date: 21 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Fee Payment Last Date: 21 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam City Details: 11 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Date: 30 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Admit Card: Issued before the exam</li>
     </ul>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General, OBC, EWS: ₹3,500</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC / ST / PH: ₹2,500</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General, OBC, EWS: ₹3,500</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC / ST / PH: ₹2,500</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+    <p class="text-[#52525B] mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit</h3>
-    <p class="text-slate-700 dark:text-slate-300">NBE determines the age limit for NEET PG 2026 as per its own rules. Candidates should visit the official NBE website to check the exact age criteria that apply to their category.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit</h3>
+    <p class="text-[#52525B]">NBE determines the age limit for NEET PG 2026 as per its own rules. Candidates should visit the official NBE website to check the exact age criteria that apply to their category.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Course & Eligibility</h3>
-    <p class="text-slate-700 dark:text-slate-300">NEET PG serves as the National Eligibility cum Entrance Test for admission to MD, MS, and PG Diploma programs. Candidates who hold an MBBS degree from any recognized college or university qualify to appear for this test. NBE advises candidates to check the official notification for further details.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Course & Eligibility</h3>
+    <p class="text-[#52525B]">NEET PG serves as the National Eligibility cum Entrance Test for admission to MD, MS, and PG Diploma programs. Candidates who hold an MBBS degree from any recognized college or university qualify to appear for this test. NBE advises candidates to check the official notification for further details.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 21 July 2026 deadline through the official NEET website. They should read the official notification thoroughly and confirm their eligibility and educational qualifications before they submit the form, since NBE will not entertain corrections after submission.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">How to Apply</h3>
+    <p class="text-[#52525B]">Candidates can complete the application online before the 21 July 2026 deadline through the official NEET website. They should read the official notification thoroughly and confirm their eligibility and educational qualifications before they submit the form, since NBE will not entertain corrections after submission.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
-    <p class="text-slate-700 dark:text-slate-300">NBE selects candidates purely on the basis of their performance in the entrance test.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Selection Process</h3>
+    <p class="text-[#52525B]">NBE selects candidates purely on the basis of their performance in the entrance test.</p>
   </div>
 </div>`,
       },
@@ -8293,10 +8293,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Neet Pg Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Neet Pg Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -8304,49 +8304,49 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "NEET PG Online Form 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The National Board of Examinations in Medical Sciences (NBE) has released a notification announcing admissions for the National Eligibility cum Entrance Test (NEET PG) 2026. The board opened the application form on 01 July 2026 and will accept entries until 21 July 2026. Before candidates upload their signature, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
   </p>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Apply Online Start Date: 01 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Apply Online Last Date: 21 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exam Fee Payment Last Date: 21 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exam City Details: 11 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exam Date: 30 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Admit Card: Issued before the exam</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Apply Online Start Date: 01 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Apply Online Last Date: 21 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Fee Payment Last Date: 21 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam City Details: 11 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Date: 30 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Admit Card: Issued before the exam</li>
     </ul>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> General, OBC, EWS: ₹3,500</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> SC / ST / PH: ₹2,500</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General, OBC, EWS: ₹3,500</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC / ST / PH: ₹2,500</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+    <p class="text-[#52525B] mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit</h3>
-    <p class="text-slate-700 dark:text-slate-300">NBE determines the age limit for NEET PG 2026 as per its own rules. Candidates should visit the official NBE website to check the exact age criteria that apply to their category.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit</h3>
+    <p class="text-[#52525B]">NBE determines the age limit for NEET PG 2026 as per its own rules. Candidates should visit the official NBE website to check the exact age criteria that apply to their category.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Course & Eligibility</h3>
-    <p class="text-slate-700 dark:text-slate-300">NEET PG serves as the National Eligibility cum Entrance Test for admission to MD, MS, and PG Diploma programs. Candidates who hold an MBBS degree from any recognized college or university qualify to appear for this test. NBE advises candidates to check the official notification for further details.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Course & Eligibility</h3>
+    <p class="text-[#52525B]">NEET PG serves as the National Eligibility cum Entrance Test for admission to MD, MS, and PG Diploma programs. Candidates who hold an MBBS degree from any recognized college or university qualify to appear for this test. NBE advises candidates to check the official notification for further details.</p>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 21 July 2026 deadline through the official NEET website. They should read the official notification thoroughly and confirm their eligibility and educational qualifications before they submit the form, since NBE will not entertain corrections after submission.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">How to Apply</h3>
+    <p class="text-[#52525B]">Candidates can complete the application online before the 21 July 2026 deadline through the official NEET website. They should read the official notification thoroughly and confirm their eligibility and educational qualifications before they submit the form, since NBE will not entertain corrections after submission.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
-    <p class="text-slate-700 dark:text-slate-300">NBE selects candidates purely on the basis of their performance in the entrance test.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Selection Process</h3>
+    <p class="text-[#52525B]">NBE selects candidates purely on the basis of their performance in the entrance test.</p>
   </div>
 </div>`,
       },
@@ -8390,15 +8390,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Neet Mds Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Neet Mds Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -8437,15 +8437,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Neet Mds Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Neet Mds Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -8485,8 +8485,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Neet Ss Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Neet Ss Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Neet Ss Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Neet Ss Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -8525,8 +8525,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Neet Ss Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Neet Ss Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Neet Ss Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Neet Ss Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -8566,10 +8566,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ini Cet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ini Cet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -8608,8 +8608,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ini Cet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ini Cet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ini Cet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ini Cet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -8649,8 +8649,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gate Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Gate Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Gate Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Gate Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -8688,15 +8688,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gate Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Gate Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -8736,15 +8736,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Cat Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -8782,8 +8782,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Cat Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Cat Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Cat Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -8822,15 +8822,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Xat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Xat Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -8868,10 +8868,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Xat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Xat Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -8910,15 +8910,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Mat Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -8956,10 +8956,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Mat Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -8998,15 +8998,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cmat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Cmat Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -9044,8 +9044,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cmat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Cmat Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Cmat Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Cmat Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -9085,10 +9085,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Atma Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Atma Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -9126,15 +9126,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Atma Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Atma Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -9174,10 +9174,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Snap Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Snap Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -9215,15 +9215,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Snap Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Snap Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -9263,8 +9263,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nmat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Nmat Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Nmat Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Nmat Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -9302,8 +9302,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nmat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Nmat Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Nmat Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Nmat Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -9343,8 +9343,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Iift Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Iift Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Iift Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Iift Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -9382,15 +9382,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Iift Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Iift Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -9430,8 +9430,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cuet Ug Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Cuet Ug Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Cuet Ug Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Cuet Ug Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -9470,10 +9470,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cuet Ug Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Cuet Ug Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -9513,10 +9513,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cuet Pg Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Cuet Pg Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -9555,8 +9555,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cuet Pg Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Cuet Pg Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Cuet Pg Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Cuet Pg Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -9596,8 +9596,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Clat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Clat Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Clat Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Clat Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -9635,10 +9635,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Clat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Clat Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -9678,10 +9678,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ailet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ailet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -9720,8 +9720,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ailet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ailet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ailet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ailet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -9761,15 +9761,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Lsat India Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Lsat India Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -9808,15 +9808,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Lsat India Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Lsat India Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -9856,10 +9856,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nift Entrance Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Nift Entrance Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -9899,10 +9899,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nift Entrance Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Nift Entrance Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -9942,8 +9942,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nid Dat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Nid Dat Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Nid Dat Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Nid Dat Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -9982,10 +9982,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nid Dat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Nid Dat Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -10025,15 +10025,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uceed Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Uceed Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -10072,10 +10072,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uceed Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Uceed Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -10115,15 +10115,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ceed Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ceed Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -10161,10 +10161,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ceed Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ceed Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -10204,10 +10204,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Icar Aieea Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Icar Aieea Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -10246,10 +10246,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Icar Aieea Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Icar Aieea Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -10289,10 +10289,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gpat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Gpat Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -10330,10 +10330,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gpat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Gpat Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -10373,10 +10373,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nchmct Jee Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Nchmct Jee Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -10415,10 +10415,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Nchmct Jee Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Nchmct Jee Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -10458,8 +10458,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Appsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Appsc Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Appsc Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Appsc Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -10498,8 +10498,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Appsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Appsc Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Appsc Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Appsc Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -10539,8 +10539,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Apsc Cce Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Apsc Cce Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Apsc Cce Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Apsc Cce Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -10579,15 +10579,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Apsc Cce Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Apsc Cce Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -10627,10 +10627,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bpsc Cce Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Bpsc Cce Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -10669,15 +10669,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bpsc Cce Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Bpsc Cce Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -10717,8 +10717,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cgpsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Cgpsc Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Cgpsc Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Cgpsc Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -10757,8 +10757,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cgpsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Cgpsc Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Cgpsc Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Cgpsc Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -10798,15 +10798,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gpsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Gpsc Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -10844,8 +10844,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gpsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Gpsc Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Gpsc Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Gpsc Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -10885,8 +10885,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hpsc Hcs Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Hpsc Hcs Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Hpsc Hcs Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Hpsc Hcs Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -10925,15 +10925,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hpsc Hcs Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Hpsc Hcs Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -10973,8 +10973,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hppsc Has Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Hppsc Has Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Hppsc Has Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Hppsc Has Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -11013,15 +11013,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hppsc Has Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Hppsc Has Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -11061,15 +11061,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jkpsc Kas Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Jkpsc Kas Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -11108,15 +11108,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jkpsc Kas Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Jkpsc Kas Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -11156,15 +11156,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jpsc Cse Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Jpsc Cse Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -11203,10 +11203,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jpsc Cse Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Jpsc Cse Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -11246,10 +11246,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kpsc Kas Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Kpsc Kas Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -11288,8 +11288,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kpsc Kas Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Kpsc Kas Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Kpsc Kas Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Kpsc Kas Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -11318,9 +11318,9 @@ export const programmaticPages: SeoPage[] = [
   {
     slug: "kerala-psc-kas-photo-resizer",
     metaTitle:
-      "Kerala PSC KAS Photo Resizer Online Free | Resize & Compress to Required KB",
+      "Kerala PSC KAS Photo Resizer Online | Resize to Exact KB",
     metaDescription:
-      "Resize and compress your Kerala PSC KAS photo online for free. Crop, adjust dimensions, reduce image size to the required KB, and create an application-ready photo securely in your browser.",
+      "Resize and compress your Kerala PSC KAS exam photo to exact dimensions and under 30 KB. 100% free and private in your browser.",
     h1: "Kerala PSC KAS Photo Resizer Online",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
@@ -11333,23 +11333,23 @@ export const programmaticPages: SeoPage[] = [
         content: `
 <div class="space-y-6 not-prose">
 
-  <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
+  <h2 class="text-2xl font-bold text-[#18181B]">
     Resize Your Kerala PSC KAS Photo Online in Seconds
   </h2>
 
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Preparing your Kerala Public Service Commission (Kerala PSC) KAS application requires uploading a photograph that meets the specifications mentioned in the official notification. If your image is too large, has the wrong dimensions, or exceeds the allowed file size, your application may not be accepted. Our <strong>Kerala PSC KAS Photo Resizer</strong> helps you resize, crop, and compress your image within minutes without installing any software.
   </p>
 
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Everything runs directly inside your browser, meaning your photo is processed locally on your device. Your images are never uploaded to our servers, making the tool fast, secure, and privacy-friendly. Whether you're using a desktop, laptop, tablet, or mobile phone, you can prepare your application photo anytime.
   </p>
 
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+  <h3 class="text-xl font-bold text-[#18181B]">
     Features
   </h3>
 
-  <ul class="list-disc pl-6 space-y-2 text-slate-600 dark:text-slate-400">
+  <ul class="list-disc pl-6 space-y-2 text-[#52525B]">
     <li>Resize images to the required width and height.</li>
     <li>Compress photos to meet KB limits such as 20KB, 30KB, 50KB, or custom sizes.</li>
     <li>Crop your image while maintaining the correct aspect ratio.</li>
@@ -11359,11 +11359,11 @@ export const programmaticPages: SeoPage[] = [
     <li>100% browser-based processing for maximum privacy.</li>
   </ul>
 
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+  <h3 class="text-xl font-bold text-[#18181B]">
     How to Use the Kerala PSC KAS Photo Resizer
   </h3>
 
-  <ol class="list-decimal pl-6 space-y-2 text-slate-600 dark:text-slate-400">
+  <ol class="list-decimal pl-6 space-y-2 text-[#52525B]">
     <li>Upload your passport-style photograph.</li>
     <li>Choose the required dimensions if specified in the notification.</li>
     <li>Enter the target file size in KB if required.</li>
@@ -11371,23 +11371,23 @@ export const programmaticPages: SeoPage[] = [
     <li>Download the resized photo instantly.</li>
   </ol>
 
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+  <h3 class="text-xl font-bold text-[#18181B]">
     Why Use This Tool?
   </h3>
 
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Many applicants struggle to reduce their image size without affecting quality. Traditional photo editing software can be complicated and time-consuming. Our online Kerala PSC KAS photo resizer automatically optimizes your image while preserving clarity, helping you create an application-ready photograph in just a few clicks.
   </p>
 
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Besides resizing, you can also crop, rotate, compress, and optimize your image for faster uploads. The downloaded file is ready for submission on the Kerala PSC recruitment portal after verifying it matches the latest official photo requirements.
   </p>
 
-  <div class="rounded-xl bg-blue-50 dark:bg-slate-800 p-5 border border-blue-100 dark:border-slate-700">
-    <h3 class="font-semibold text-slate-900 dark:text-white">
+  <div class="rounded-xl bg-[#F0FDF4] p-5 border border-[#BBF7D0]">
+    <h3 class="font-semibold text-[#18181B]">
       Important
     </h3>
-    <p class="mt-2 text-slate-600 dark:text-slate-400">
+    <p class="mt-2 text-[#52525B]">
       Kerala PSC photo specifications may change for different recruitment notifications. Always verify the latest requirements—including image dimensions, background color, file format, and maximum file size—from the official Kerala PSC KAS notification before uploading your application photo.
     </p>
   </div>
@@ -11439,10 +11439,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kerala Psc Kas Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Kerala Psc Kas Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -11482,10 +11482,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mppsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Mppsc Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -11493,68 +11493,68 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "MPPSC Assistant Town Planner Recruitment 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Madhya Pradesh Public Service Commission (MPPSC) has released Advertisement No. 02/2026, announcing recruitment for 39 Assistant Town Planner (ATP) posts. The commission will open applications on 01 July 2026 and will accept them until 31 July 2026. Candidates must fall between 21 and 40 years of age as on 01 January 2027. Before applicants upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
   </p>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Start: 01 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Last Date: 31 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Fee Payment Last Date: 31 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Correction Window: 05 July – 02 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Late Fee (₹3,000): 01 – 07 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Late Fee (₹25,000): 08 – 26 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: 10 September 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: 20 September 2026</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Start: 01 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Last Date: 31 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Fee Payment Last Date: 31 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Correction Window: 05 July – 02 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Late Fee (₹3,000): 01 – 07 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Late Fee (₹25,000): 08 – 26 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Admit Card: 10 September 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Date: 20 September 2026</li>
     </ul>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General / Other State: ₹500</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> MP Reserved Category: ₹250</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Portal Charge: ₹40 extra</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Correction Charge: ₹50</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General / Other State: ₹500</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> MP Reserved Category: ₹250</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Portal Charge: ₹40 extra</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Correction Charge: ₹50</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+    <p class="text-[#52525B] mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 January 2027)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Minimum age: 21 years</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 40 years</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit (as on 01 January 2027)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Minimum age: 21 years</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maximum age: 40 years</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">MPPSC also grants age relaxation for the Assistant Town Planner position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
+    <p class="text-[#52525B] mt-2">MPPSC also grants age relaxation for the Assistant Town Planner position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Vacancy Breakdown (39 Posts)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> UR: 10</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> OBC: 11</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> EWS: 4</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC: 6</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> ST: 8</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Vacancy Breakdown (39 Posts)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> UR: 10</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> OBC: 11</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> EWS: 4</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC: 6</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> ST: 8</li>
     </ul>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates must hold either a 4-year Bachelor's Degree in Planning or a postgraduate degree in Town, Urban, Regional, Housing, Rural, Infrastructure, Transport, or Environment Planning, Landscape Architecture, or Urban Design, from any recognized university in India. Candidates must also have passed the AITP (Associate of the Institute of Town Planners, India) exam to qualify for this recruitment.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Eligibility Criteria</h3>
+    <p class="text-[#52525B]">Candidates must hold either a 4-year Bachelor's Degree in Planning or a postgraduate degree in Town, Urban, Regional, Housing, Rural, Infrastructure, Transport, or Environment Planning, Landscape Architecture, or Urban Design, from any recognized university in India. Candidates must also have passed the AITP (Associate of the Institute of Town Planners, India) exam to qualify for this recruitment.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 31 July 2026 deadline through the official MPPSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form. MPPSC will open a correction window from 05 July to 02 August 2026 for candidates who need to fix errors after submission.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">How to Apply</h3>
+    <p class="text-[#52525B]">Candidates can complete the application online before the 31 July 2026 deadline through the official MPPSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form. MPPSC will open a correction window from 05 July to 02 August 2026 for candidates who need to fix errors after submission.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
-    <p class="text-slate-700 dark:text-slate-300">MPPSC selects candidates through four stages: a written examination, a personal interview, document verification, and a medical examination.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Selection Process</h3>
+    <p class="text-[#52525B]">MPPSC selects candidates through four stages: a written examination, a personal interview, document verification, and a medical examination.</p>
   </div>
 </div>`,
       },
@@ -11598,10 +11598,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mppsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Mppsc Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -11609,68 +11609,68 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "MPPSC Assistant Town Planner Recruitment 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Madhya Pradesh Public Service Commission (MPPSC) has released Advertisement No. 02/2026, announcing recruitment for 39 Assistant Town Planner (ATP) posts. The commission will open applications on 01 July 2026 and will accept them until 31 July 2026. Candidates must fall between 21 and 40 years of age as on 01 January 2027. Before applicants upload their signature, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
   </p>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Start: 01 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Last Date: 31 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Fee Payment Last Date: 31 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Correction Window: 05 July – 02 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Late Fee (₹3,000): 01 – 07 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Late Fee (₹25,000): 08 – 26 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Admit Card: 10 September 2026</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exam Date: 20 September 2026</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Start: 01 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Last Date: 31 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Fee Payment Last Date: 31 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Correction Window: 05 July – 02 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Late Fee (₹3,000): 01 – 07 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Late Fee (₹25,000): 08 – 26 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Admit Card: 10 September 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Date: 20 September 2026</li>
     </ul>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> General / Other State: ₹500</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> MP Reserved Category: ₹250</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Portal Charge: ₹40 extra</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Correction Charge: ₹50</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General / Other State: ₹500</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> MP Reserved Category: ₹250</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Portal Charge: ₹40 extra</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Correction Charge: ₹50</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+    <p class="text-[#52525B] mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 January 2027)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Minimum age: 21 years</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maximum age: 40 years</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit (as on 01 January 2027)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Minimum age: 21 years</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maximum age: 40 years</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">MPPSC also grants age relaxation for the Assistant Town Planner position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
+    <p class="text-[#52525B] mt-2">MPPSC also grants age relaxation for the Assistant Town Planner position under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Vacancy Breakdown (39 Posts)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> UR: 10</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> OBC: 11</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> EWS: 4</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> SC: 6</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> ST: 8</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Vacancy Breakdown (39 Posts)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> UR: 10</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> OBC: 11</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> EWS: 4</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC: 6</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> ST: 8</li>
     </ul>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates must hold either a 4-year Bachelor's Degree in Planning or a postgraduate degree in Town, Urban, Regional, Housing, Rural, Infrastructure, Transport, or Environment Planning, Landscape Architecture, or Urban Design, from any recognized university in India. Candidates must also have passed the AITP (Associate of the Institute of Town Planners, India) exam to qualify for this recruitment.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Eligibility Criteria</h3>
+    <p class="text-[#52525B]">Candidates must hold either a 4-year Bachelor's Degree in Planning or a postgraduate degree in Town, Urban, Regional, Housing, Rural, Infrastructure, Transport, or Environment Planning, Landscape Architecture, or Urban Design, from any recognized university in India. Candidates must also have passed the AITP (Associate of the Institute of Town Planners, India) exam to qualify for this recruitment.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 31 July 2026 deadline through the official MPPSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form. MPPSC will open a correction window from 05 July to 02 August 2026 for candidates who need to fix errors after submission.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">How to Apply</h3>
+    <p class="text-[#52525B]">Candidates can complete the application online before the 31 July 2026 deadline through the official MPPSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form. MPPSC will open a correction window from 05 July to 02 August 2026 for candidates who need to fix errors after submission.</p>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
-    <p class="text-slate-700 dark:text-slate-300">MPPSC selects candidates through four stages: a written examination, a personal interview, document verification, and a medical examination.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Selection Process</h3>
+    <p class="text-[#52525B]">MPPSC selects candidates through four stages: a written examination, a personal interview, document verification, and a medical examination.</p>
   </div>
 </div>`,
       },
@@ -11715,8 +11715,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mpsc Maharashtra Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Mpsc Maharashtra Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Mpsc Maharashtra Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Mpsc Maharashtra Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -11756,10 +11756,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mpsc Maharashtra Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Mpsc Maharashtra Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -11799,15 +11799,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mpsc Meghalaya Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Mpsc Meghalaya Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -11847,15 +11847,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mpsc Meghalaya Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Mpsc Meghalaya Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -11895,15 +11895,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mpsc Mizoram Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Mpsc Mizoram Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -11943,10 +11943,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mpsc Mizoram Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Mpsc Mizoram Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -11986,8 +11986,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Npsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Npsc Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Npsc Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Npsc Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -12025,10 +12025,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Npsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Npsc Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -12068,10 +12068,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Opsc Oas Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Opsc Oas Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -12110,15 +12110,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Opsc Oas Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Opsc Oas Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -12158,15 +12158,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ppsc Pcs Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ppsc Pcs Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -12205,10 +12205,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ppsc Pcs Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ppsc Pcs Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -12248,15 +12248,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rpsc Ras Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Rpsc Ras Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -12295,15 +12295,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rpsc Ras Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Rpsc Ras Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -12343,10 +12343,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Spsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Spsc Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -12384,15 +12384,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Spsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Spsc Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -12432,15 +12432,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tnpsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Tnpsc Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -12479,8 +12479,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tnpsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Tnpsc Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Tnpsc Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Tnpsc Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -12520,10 +12520,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tspsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Tspsc Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -12562,8 +12562,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tspsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Tspsc Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Tspsc Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Tspsc Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -12603,15 +12603,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tpsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Tpsc Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -12649,10 +12649,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tpsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Tpsc Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -12692,15 +12692,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uppsc Pcs Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Uppsc Pcs Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -12739,15 +12739,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uppsc Pcs Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Uppsc Pcs Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -12787,15 +12787,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uppsc Ro Aro Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Uppsc Ro Aro Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -12835,10 +12835,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uppsc Ro Aro Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Uppsc Ro Aro Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -12878,15 +12878,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ukpsc Pcs Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ukpsc Pcs Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -12925,10 +12925,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ukpsc Pcs Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ukpsc Pcs Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -12968,10 +12968,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Wbcs Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Wbcs Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -13009,10 +13009,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Wbcs Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Wbcs Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -13052,15 +13052,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Dsc Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ap Dsc Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -13099,15 +13099,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Dsc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ap Dsc Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -13147,15 +13147,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bssc Cgl Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Bssc Cgl Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -13194,15 +13194,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bssc Cgl Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Bssc Cgl Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -13242,10 +13242,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Vyapam Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Cg Vyapam Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -13284,10 +13284,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Vyapam Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Cg Vyapam Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -13327,8 +13327,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gsssb Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Gsssb Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Gsssb Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Gsssb Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -13367,10 +13367,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gsssb Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Gsssb Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -13410,15 +13410,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hssc Cet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Hssc Cet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -13457,8 +13457,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hssc Cet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Hssc Cet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Hssc Cet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Hssc Cet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -13498,8 +13498,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hpsssb Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Hpsssb Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Hpsssb Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Hpsssb Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -13538,8 +13538,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hpsssb Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Hpsssb Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Hpsssb Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Hpsssb Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -13579,8 +13579,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jssc Cgl Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Jssc Cgl Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Jssc Cgl Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Jssc Cgl Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -13619,8 +13619,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jssc Cgl Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Jssc Cgl Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Jssc Cgl Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Jssc Cgl Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -13660,8 +13660,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kea Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Kea Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Kea Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Kea Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -13699,10 +13699,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kea Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Kea Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -13741,10 +13741,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Peb Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Mp Peb Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -13783,15 +13783,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Peb Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Mp Peb Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -13831,15 +13831,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rsmssb Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Rsmssb Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -13878,15 +13878,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rsmssb Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Rsmssb Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -13926,15 +13926,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tnusrb Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Tnusrb Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -13973,10 +13973,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tnusrb Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Tnusrb Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -14016,15 +14016,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsssc Pet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Upsssc Pet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -14063,15 +14063,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsssc Pet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Upsssc Pet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -14111,10 +14111,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsssc Vdo Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Upsssc Vdo Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -14153,15 +14153,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsssc Vdo Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Upsssc Vdo Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -14201,15 +14201,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsssc Lekhpal Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Upsssc Lekhpal Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -14249,15 +14249,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Upsssc Lekhpal Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Upsssc Lekhpal Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -14297,10 +14297,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uksssc Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Uksssc Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -14340,15 +14340,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ap Police Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -14387,10 +14387,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ap Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -14430,8 +14430,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Assam Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Assam Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Assam Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Assam Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -14471,10 +14471,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Assam Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Assam Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -14514,15 +14514,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About RSSB CET Graduate Level Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for RSSB CET Graduate Level Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -14530,53 +14530,53 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "RSSB CET Graduate Level Online Form 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Rajasthan Staff Selection Board (RSSB-Jaipur) has released Advertisement No. 09/2026, announcing the Common Eligibility Test (Graduate Level) Examination 2026. The board opened applications on 04 July 2026 and will accept them until 02 August 2026. Candidates must fall between 18 and 40 years of age as on 01 January 2027. Before applicants upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
   </p>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Start: 04 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Last Date: 02 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Fee Payment Last Date: 02 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: 01–03 December 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: Issued before the exam</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Start: 04 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Last Date: 02 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Fee Payment Last Date: 02 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Date: 01–03 December 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Admit Card: Issued before the exam</li>
     </ul>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General, OBC (Other State): ₹600</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> OBC (Non-Creamy Layer) / MBC Rajasthan: ₹400</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC, ST, PH: ₹400</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General, OBC (Other State): ₹600</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> OBC (Non-Creamy Layer) / MBC Rajasthan: ₹400</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC, ST, PH: ₹400</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+    <p class="text-[#52525B] mt-2">Candidates can pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 January 2027)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Minimum age: 18 years</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 40 years</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit (as on 01 January 2027)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Minimum age: 18 years</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maximum age: 40 years</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">Rajasthan RSSB also grants age relaxation under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
+    <p class="text-[#52525B] mt-2">Rajasthan RSSB also grants age relaxation under its standard regulations, so candidates should verify their exact entitlement in the official notification.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates must hold a bachelor's degree in any stream from a recognized university in India. RSSB advises candidates to read the official notification carefully for subject-wise eligibility and other detailed requirements.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Eligibility Criteria</h3>
+    <p class="text-[#52525B]">Candidates must hold a bachelor's degree in any stream from a recognized university in India. RSSB advises candidates to read the official notification carefully for subject-wise eligibility and other detailed requirements.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 02 August 2026 deadline through the official Rajasthan RSSB website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">How to Apply</h3>
+    <p class="text-[#52525B]">Candidates can complete the application online before the 02 August 2026 deadline through the official Rajasthan RSSB website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
-    <p class="text-slate-700 dark:text-slate-300">RSSB selects candidates through a two-stage written examination: Paper-I and Paper-II.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Selection Process</h3>
+    <p class="text-[#52525B]">RSSB selects candidates through a two-stage written examination: Paper-I and Paper-II.</p>
   </div>
 </div>`,
       },
@@ -14621,15 +14621,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bihar Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Bihar Police Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -14637,75 +14637,75 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "BPSSC Bihar Police Sub Inspector (SI) Recruitment 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Bihar Police Subordinate Services Commission (BPSSC) has released Advertisement No. 09/2026, announcing a fresh recruitment drive for Sub Inspector (SI) posts. The commission has opened 150 vacancies and will accept applications from 09 July 2026 through 09 August 2026. Candidates must fall between 20 and 42 years of age, depending on category and post, calculated as on 01 August 2025. Before applicants upload their photo, they should confirm the exact specifications in the official notification, then use this tool to resize and compress the image correctly.
   </p>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Start: 09 July 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Online Apply Last Date: 09 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Fee Payment Last Date: 09 August 2026</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Exam Date: To be notified</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Admit Card: Issued before the exam</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Start: 09 July 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Last Date: 09 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Fee Payment Last Date: 09 August 2026</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exam Date: To be notified</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Admit Card: Issued before the exam</li>
     </ul>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
-    <p class="text-slate-700 dark:text-slate-300">BPSSC charges all candidates a fee of ₹100, payable online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee</h3>
+    <p class="text-[#52525B]">BPSSC charges all candidates a fee of ₹100, payable online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit (as on 01 August 2025)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Minimum age: 20 years</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 37 years (UR Male)</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 40 years (UR Female, BC/EBC Male & Female)</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Maximum age: 42 years (SC/ST Male & Female)</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit (as on 01 August 2025)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Minimum age: 20 years</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maximum age: 37 years (UR Male)</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maximum age: 40 years (UR Female, BC/EBC Male & Female)</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maximum age: 42 years (SC/ST Male & Female)</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">BPSSC also grants additional age relaxation under its standard rules, so candidates should verify their exact entitlement in the official notification.</p>
+    <p class="text-[#52525B] mt-2">BPSSC also grants additional age relaxation under its standard rules, so candidates should verify their exact entitlement in the official notification.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Vacancy Breakdown (150 Posts)</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> General: 60</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> SC: 24</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> ST: 2</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> EBC: 27</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> BC: 18</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> BC Female: 4</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> EWS: 15</li>
-    </ul>
-  </div>
-
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Eligibility Criteria</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates must hold a bachelor's degree in any discipline from a recognized university. BPSSC will not accept candidates awaiting final-year or final-semester results unless they can produce proof of graduation at the time of document verification.</p>
-  </div>
-
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Physical Standards</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Height: 165 cm (General/OBC Male), 160 cm (Other Male), 155 cm (Female, all categories)</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Chest: 81–86 cm (General/OBC Male), 79–84 cm (Other Male); not applicable for females</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Running: 1.6 km in 6 min 30 sec (Male), 1 km in 6 min (Female)</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> High Jump: 4 feet (Male), 3 feet (Female)</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Long Jump: 12 feet (Male), 9 feet (Female)</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Shot Put: 16 lb through 16 feet (Male), 12 lb through 10 feet (Female)</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Vacancy Breakdown (150 Posts)</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General: 60</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC: 24</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> ST: 2</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> EBC: 27</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> BC: 18</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> BC Female: 4</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> EWS: 15</li>
     </ul>
   </div>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">How to Apply</h3>
-    <p class="text-slate-700 dark:text-slate-300">Candidates can complete the application online before the 09 August 2026 deadline through the official BPSSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form, since BPSSC will not entertain corrections after submission.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Eligibility Criteria</h3>
+    <p class="text-[#52525B]">Candidates must hold a bachelor's degree in any discipline from a recognized university. BPSSC will not accept candidates awaiting final-year or final-semester results unless they can produce proof of graduation at the time of document verification.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Selection Process</h3>
-    <p class="text-slate-700 dark:text-slate-300">BPSSC selects candidates through five stages: a preliminary written examination, a mains written examination, a Physical Efficiency Test (PET) combined with a Physical Standard Test (PST), document verification, and a final medical examination.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Physical Standards</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Height: 165 cm (General/OBC Male), 160 cm (Other Male), 155 cm (Female, all categories)</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Chest: 81–86 cm (General/OBC Male), 79–84 cm (Other Male); not applicable for females</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Running: 1.6 km in 6 min 30 sec (Male), 1 km in 6 min (Female)</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> High Jump: 4 feet (Male), 3 feet (Female)</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Long Jump: 12 feet (Male), 9 feet (Female)</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Shot Put: 16 lb through 16 feet (Male), 12 lb through 10 feet (Female)</li>
+    </ul>
+  </div>
+
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">How to Apply</h3>
+    <p class="text-[#52525B]">Candidates can complete the application online before the 09 August 2026 deadline through the official BPSSC website. They should read the official notification thoroughly and confirm their eligibility, age, and educational qualifications before they submit the form, since BPSSC will not entertain corrections after submission.</p>
+  </div>
+
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Selection Process</h3>
+    <p class="text-[#52525B]">BPSSC selects candidates through five stages: a preliminary written examination, a mains written examination, a Physical Efficiency Test (PET) combined with a Physical Standard Test (PST), document verification, and a final medical examination.</p>
   </div>
 </div>`,
       },
@@ -14750,8 +14750,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bihar Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Bihar Police Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Bihar Police Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Bihar Police Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -14791,10 +14791,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Cg Police Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -14833,10 +14833,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Cg Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -14876,10 +14876,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Delhi Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Delhi Police Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -14919,15 +14919,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Delhi Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Delhi Police Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -14967,15 +14967,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gujarat Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Gujarat Police Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -15015,15 +15015,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gujarat Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Gujarat Police Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -15063,10 +15063,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Haryana Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Haryana Police Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -15106,10 +15106,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Haryana Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Haryana Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -15149,8 +15149,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hp Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Hp Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Hp Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Hp Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -15189,10 +15189,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hp Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Hp Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -15232,8 +15232,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jk Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Jk Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Jk Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Jk Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -15272,15 +15272,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jk Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Jk Police Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -15320,15 +15320,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jharkhand Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Jharkhand Police Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -15368,10 +15368,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jharkhand Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Jharkhand Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -15411,10 +15411,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Karnataka Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Karnataka Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -15454,8 +15454,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kerala Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Kerala Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Kerala Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Kerala Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -15495,15 +15495,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kerala Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Kerala Police Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -15543,8 +15543,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Mp Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Mp Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Mp Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -15583,10 +15583,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Mp Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -15626,8 +15626,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Maharashtra Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Maharashtra Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Maharashtra Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Maharashtra Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -15667,8 +15667,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Maharashtra Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Maharashtra Police Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Maharashtra Police Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Maharashtra Police Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -15708,8 +15708,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Odisha Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Odisha Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Odisha Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Odisha Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -15749,8 +15749,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Odisha Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Odisha Police Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Odisha Police Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Odisha Police Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -15790,15 +15790,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Punjab Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Punjab Police Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -15838,8 +15838,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Punjab Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Punjab Police Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Punjab Police Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Punjab Police Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -15879,8 +15879,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rajasthan Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Rajasthan Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Rajasthan Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Rajasthan Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -15920,15 +15920,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Rajasthan Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Rajasthan Police Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -15968,8 +15968,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tn Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Tn Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Tn Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Tn Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -16008,15 +16008,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tn Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Tn Police Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -16056,10 +16056,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ts Police Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -16098,10 +16098,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ts Police Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -16141,10 +16141,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Up Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Up Police Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -16152,40 +16152,40 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "UP Police 1,00,000 New Bharti 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Chief Minister Yogi Adityanath has announced that the Uttar Pradesh Police Recruitment and Promotion Board plans to fill nearly 1,00,000 new posts across the UP Police department this year. He made the announcement during a program that distributed appointment letters to 936 selected personnel in the Police Telecommunication wing. Candidates preparing for UP Police and other government job exams should keep an eye on this page and revisit it once the board issues the detailed notification.
   </p>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Start Date: To be updated soon</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Last Date: To be updated soon</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Start Date: To be updated soon</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Last Date: To be updated soon</li>
     </ul>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> General / EWS / OBC: To be updated soon</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> SC / ST: To be updated soon</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General / EWS / OBC: To be updated soon</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC / ST: To be updated soon</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates will be able to pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+    <p class="text-[#52525B] mt-2">Candidates will be able to pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit</h3>
-    <p class="text-slate-700 dark:text-slate-300">UP Police has not yet announced the minimum or maximum age for this recruitment. The board will provide age relaxation for the Constable position under its standard regulations once it releases the official notification.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit</h3>
+    <p class="text-[#52525B]">UP Police has not yet announced the minimum or maximum age for this recruitment. The board will provide age relaxation for the Constable position under its standard regulations once it releases the official notification.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Background</h3>
-    <p class="text-slate-700 dark:text-slate-300">The Chief Minister highlighted that the state government has recruited over 2.2 lakh police personnel over the past nine years, and it recently completed recruitment for 60,244 Constable posts for both men and women, followed by training at UP's own training centers and postings across the state. The government also completed recruitment for 41,000 Home Guard posts, holding the corresponding exams on 25, 26, and 27 April. Building on this momentum, the board now plans to recruit close to 1,00,000 personnel across civil police, other units, and the Home Guard, though it will release the detailed process, post-wise breakdown, and application dates in a separate notification soon.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Background</h3>
+    <p class="text-[#52525B]">The Chief Minister highlighted that the state government has recruited over 2.2 lakh police personnel over the past nine years, and it recently completed recruitment for 60,244 Constable posts for both men and women, followed by training at UP's own training centers and postings across the state. The government also completed recruitment for 41,000 Home Guard posts, holding the corresponding exams on 25, 26, and 27 April. Building on this momentum, the board now plans to recruit close to 1,00,000 personnel across civil police, other units, and the Home Guard, though it will release the detailed process, post-wise breakdown, and application dates in a separate notification soon.</p>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Total Posts</h3>
-    <p class="text-slate-700 dark:text-slate-300">1,00,000</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Total Posts</h3>
+    <p class="text-[#52525B]">1,00,000</p>
   </div>
 </div>`,
       },
@@ -16229,15 +16229,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Up Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Up Police Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -16245,40 +16245,40 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "UP Police 1,00,000 New Bharti 2026",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Chief Minister Yogi Adityanath has announced that the Uttar Pradesh Police Recruitment and Promotion Board plans to fill nearly 1,00,000 new posts across the UP Police department this year. He made the announcement during a program that distributed appointment letters to 936 selected personnel in the Police Telecommunication wing. Candidates preparing their application documents, including their signature, should keep an eye on this page and revisit it once the board issues the detailed notification.
   </p>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Important Dates</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Start Date: To be updated soon</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Online Apply Last Date: To be updated soon</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Important Dates</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Start Date: To be updated soon</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Online Apply Last Date: To be updated soon</li>
     </ul>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Application Fee</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> General / EWS / OBC: To be updated soon</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> SC / ST: To be updated soon</li>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Application Fee</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> General / EWS / OBC: To be updated soon</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> SC / ST: To be updated soon</li>
     </ul>
-    <p class="text-slate-700 dark:text-slate-300 mt-2">Candidates will be able to pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
+    <p class="text-[#52525B] mt-2">Candidates will be able to pay the fee online via debit card, credit card, internet banking, IMPS, or a cash card/mobile wallet.</p>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Age Limit</h3>
-    <p class="text-slate-700 dark:text-slate-300">UP Police has not yet announced the minimum or maximum age for this recruitment. The board will provide age relaxation for the Constable position under its standard regulations once it releases the official notification.</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Age Limit</h3>
+    <p class="text-[#52525B]">UP Police has not yet announced the minimum or maximum age for this recruitment. The board will provide age relaxation for the Constable position under its standard regulations once it releases the official notification.</p>
   </div>
 
-  <div class="bg-slate-50 dark:bg-slate-900/20 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Background</h3>
-    <p class="text-slate-700 dark:text-slate-300">The Chief Minister highlighted that the state government has recruited over 2.2 lakh police personnel over the past nine years, and it recently completed recruitment for 60,244 Constable posts for both men and women, followed by training at UP's own training centers and postings across the state. The government also completed recruitment for 41,000 Home Guard posts, holding the corresponding exams on 25, 26, and 27 April. Building on this momentum, the board now plans to recruit close to 1,00,000 personnel across civil police, other units, and the Home Guard, though it will release the detailed process, post-wise breakdown, and application dates in a separate notification soon.</p>
+  <div class="bg-[#FAFAFA] p-6 rounded-xl border border-[#F4F4F5]">
+    <h3 class="font-bold text-[#18181B] mb-3">Background</h3>
+    <p class="text-[#52525B]">The Chief Minister highlighted that the state government has recruited over 2.2 lakh police personnel over the past nine years, and it recently completed recruitment for 60,244 Constable posts for both men and women, followed by training at UP's own training centers and postings across the state. The government also completed recruitment for 41,000 Home Guard posts, holding the corresponding exams on 25, 26, and 27 April. Building on this momentum, the board now plans to recruit close to 1,00,000 personnel across civil police, other units, and the Home Guard, though it will release the detailed process, post-wise breakdown, and application dates in a separate notification soon.</p>
   </div>
 
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Total Posts</h3>
-    <p class="text-slate-700 dark:text-slate-300">1,00,000</p>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Total Posts</h3>
+    <p class="text-[#52525B]">1,00,000</p>
   </div>
 </div>`,
       },
@@ -16323,10 +16323,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uttarakhand Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Uttarakhand Police Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -16366,8 +16366,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uttarakhand Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Uttarakhand Police Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Uttarakhand Police Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Uttarakhand Police Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -16407,8 +16407,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Wb Police Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Wb Police Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Wb Police Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Wb Police Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -16447,15 +16447,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Wb Police Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Wb Police Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -16495,10 +16495,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Aptet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Aptet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -16537,15 +16537,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Aptet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Aptet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -16585,15 +16585,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Assam Tet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Assam Tet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -16632,10 +16632,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Assam Tet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Assam Tet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -16675,8 +16675,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Btet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Btet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Btet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Btet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -16714,15 +16714,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Btet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Btet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -16762,8 +16762,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Tet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Cg Tet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Cg Tet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Cg Tet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -16802,10 +16802,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Tet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Cg Tet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -16845,10 +16845,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gtet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Gtet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -16886,8 +16886,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gtet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Gtet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Gtet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Gtet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -16927,10 +16927,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Htet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Htet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -16968,10 +16968,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Htet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Htet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -17011,10 +17011,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hp Tet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Hp Tet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -17053,8 +17053,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hp Tet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Hp Tet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Hp Tet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Hp Tet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -17094,10 +17094,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jtet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Jtet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -17135,10 +17135,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jtet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Jtet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -17178,8 +17178,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kartet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Kartet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Kartet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Kartet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -17218,15 +17218,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kartet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Kartet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -17266,10 +17266,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ktet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ktet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -17307,15 +17307,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ktet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ktet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -17355,15 +17355,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Tet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Mp Tet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -17402,8 +17402,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Tet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Mp Tet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Mp Tet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Mp Tet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -17443,8 +17443,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Maha Tet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Maha Tet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Maha Tet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Maha Tet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -17483,15 +17483,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Maha Tet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Maha Tet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -17531,8 +17531,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Otet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Otet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Otet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Otet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -17570,10 +17570,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Otet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Otet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -17613,15 +17613,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Pstet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Pstet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -17660,15 +17660,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Pstet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Pstet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -17708,10 +17708,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Reet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Reet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -17749,15 +17749,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Reet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Reet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -17797,8 +17797,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tntet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Tntet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Tntet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Tntet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -17837,8 +17837,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tntet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Tntet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Tntet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Tntet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -17878,10 +17878,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tstet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Tstet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -17920,8 +17920,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tstet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Tstet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Tstet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Tstet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -17961,15 +17961,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uptet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Uptet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -18008,15 +18008,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uptet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Uptet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -18056,15 +18056,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Utet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Utet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -18102,15 +18102,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Utet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Utet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -18150,10 +18150,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Wbtet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Wbtet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -18192,15 +18192,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Wbtet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Wbtet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -18240,8 +18240,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Eapcet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Ap Eapcet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Ap Eapcet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Ap Eapcet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -18280,8 +18280,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Eapcet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ap Eapcet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ap Eapcet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ap Eapcet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -18321,10 +18321,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Icet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ap Icet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -18363,15 +18363,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Icet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ap Icet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -18411,8 +18411,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Lawcet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Ap Lawcet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Ap Lawcet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Ap Lawcet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -18451,10 +18451,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Lawcet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ap Lawcet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -18494,15 +18494,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Pgecet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ap Pgecet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -18541,8 +18541,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ap Pgecet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ap Pgecet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ap Pgecet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ap Pgecet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -18582,10 +18582,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Assam Cee Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Assam Cee Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -18624,8 +18624,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Assam Cee Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Assam Cee Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Assam Cee Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Assam Cee Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -18665,10 +18665,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bcece Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Bcece Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -18707,8 +18707,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Bcece Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Bcece Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Bcece Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Bcece Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -18748,8 +18748,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Pet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Cg Pet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Cg Pet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Cg Pet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -18788,8 +18788,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Pet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Cg Pet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Cg Pet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Cg Pet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -18829,15 +18829,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Pmt Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Cg Pmt Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -18876,8 +18876,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Cg Pmt Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Cg Pmt Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Cg Pmt Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Cg Pmt Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -18917,15 +18917,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gcet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Gcet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -18963,10 +18963,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gcet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Gcet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -19006,8 +19006,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gujcet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Gujcet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Gujcet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Gujcet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -19046,8 +19046,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Gujcet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Gujcet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Gujcet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Gujcet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -19087,15 +19087,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Haryana Det Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Haryana Det Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -19135,8 +19135,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Haryana Det Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Haryana Det Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Haryana Det Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Haryana Det Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -19176,10 +19176,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hp Cet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Hp Cet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -19218,10 +19218,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Hp Cet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Hp Cet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -19261,8 +19261,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jkcet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Jkcet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Jkcet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Jkcet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -19301,8 +19301,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jkcet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Jkcet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Jkcet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Jkcet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -19342,8 +19342,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jcece Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Jcece Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Jcece Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Jcece Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -19382,10 +19382,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jcece Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Jcece Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -19425,28 +19425,28 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "Why Your KCET Photo Gets Rejected",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Karnataka Examinations Authority (KEA) checks every photo uploaded to the KCET application portal against strict byte-level rules. A file that is even a few kilobytes too large, saved in the wrong format, or missing a plain background gets flagged during verification. Fixing this manually in a general photo editor usually takes several tries. This tool does it in one pass.
   </p>
 
   <div class="overflow-x-auto mt-6">
     <table class="w-full text-left border-collapse">
       <thead>
-        <tr class="border-b border-slate-300 dark:border-slate-700">
-          <th class="py-3 pr-4 text-slate-900 dark:text-slate-100 font-semibold">Requirement</th>
-          <th class="py-3 text-slate-900 dark:text-slate-100 font-semibold">KCET Photo Specification</th>
+        <tr class="border-b border-[#E4E4E7]">
+          <th class="py-3 pr-4 text-[#18181B] font-semibold">Requirement</th>
+          <th class="py-3 text-[#18181B] font-semibold">KCET Photo Specification</th>
         </tr>
       </thead>
-      <tbody class="text-lg text-slate-600 dark:text-slate-400">
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+      <tbody class="text-lg text-[#52525B]">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">Format</td>
           <td class="py-3">JPG / JPEG only</td>
         </tr>
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">File size</td>
           <td class="py-3">Under 50 KB (KEA notification)</td>
         </tr>
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">Style</td>
           <td class="py-3">Recent passport-style photo, plain background</td>
         </tr>
@@ -19457,21 +19457,21 @@ export const programmaticPages: SeoPage[] = [
       </tbody>
     </table>
   </div>
-  <p class="text-sm text-slate-500 dark:text-slate-500">Always cross-check against the current year's KCET information bulletin at cetonline.karnataka.gov.in, since KEA can revise limits each cycle.</p>
+  <p class="text-sm text-[#71717A]">Always cross-check against the current year's KCET information bulletin at cetonline.karnataka.gov.in, since KEA can revise limits each cycle.</p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Three Steps to a Compliant Photo</h3>
-  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Three Steps to a Compliant Photo</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-[#52525B]">
     <li>Upload a recent photo taken against a plain, light-colored wall.</li>
     <li>Crop to the passport-style frame the tool suggests automatically.</li>
     <li>Enter your target file size, and the compressor fits it under the KEA limit without visible quality loss.</li>
   </ol>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Built for Accuracy, Not Guesswork</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Built for Accuracy, Not Guesswork</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Instead of dragging a quality slider and hoping the export lands under the limit, this tool targets an exact kilobyte figure and adjusts compression automatically. That removes the trial-and-error most candidates go through with generic photo editors, and it keeps the photo looking sharp rather than pixelated.
   </p>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Because the entire process runs inside your browser using your device's own processing power, your photo is never transmitted to a remote server. That matters for an identity document that will sit on a government portal for months during counselling and admission.
   </p>
 </div>`,
@@ -19514,32 +19514,32 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "Getting Your Signature Right the First Time",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     A signature seems like the smallest part of the KCET application, but it trips up more candidates than expected. KEA asks for a scanned image in JPG format, under 50 KB, and clearly legible against a plain white background. A signature that's too dark, cropped unevenly, or oversized in file size will bounce back during upload.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Do This</h3>
-  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Do This</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-[#52525B]">
     <li>Sign clearly on plain white paper using black or blue ink.</li>
     <li>Scan or photograph the signature in good, even lighting.</li>
     <li>Crop tightly around the signature, leaving a small white margin.</li>
     <li>Save the final file in JPG format, sized under 50 KB.</li>
   </ul>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Avoid This</h3>
-  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Avoid This</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-[#52525B]">
     <li>Signing in all capital letters or block print, which some portals reject.</li>
     <li>Uploading a photo of the entire sheet of paper instead of a tight crop.</li>
     <li>Using a heavily compressed file that makes the signature blurry.</li>
     <li>Submitting a PNG or screenshot instead of a proper JPG scan.</li>
   </ul>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">How the Tool Handles It</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">How the Tool Handles It</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Upload your scanned or photographed signature, and the tool automatically detects the edges, trims the excess white space, and compresses the file to sit within the KEA size limit. You can preview the exact byte size before downloading, so there's no guessing whether the file will pass the portal's validation check.
   </p>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Everything runs locally through your browser's own image-processing engine. Your signature, one of the more sensitive pieces of personal data in the application, is never sent to a server or stored anywhere outside your device.
   </p>
 </div>`,
@@ -19581,34 +19581,34 @@ export const programmaticPages: SeoPage[] = [
     sections: [
       {
         heading: "The Spec Candidates Miss",
-        content: `<div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800 not-prose">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Karnataka PGCET Photo Checklist</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Format: JPG or JPEG only</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> File size: typically 5 KB to 40 KB</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Dimensions: 3.5 cm × 4.5 cm, passport style</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Background: plain, light-colored</li>
+        content: `<div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0] not-prose">
+    <h3 class="font-bold text-[#18181B] mb-3">Karnataka PGCET Photo Checklist</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Format: JPG or JPEG only</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> File size: typically 5 KB to 40 KB</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Dimensions: 3.5 cm × 4.5 cm, passport style</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Background: plain, light-colored</li>
     </ul>
   </div>
   <div class="space-y-6 not-prose mt-6">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     KEA's PGCET portal has rejected thousands of applications over the years for the same reason: a photo that looks fine on screen but fails a strict byte-size check the moment it's uploaded. Because the exam covers MBA, MCA, M.Tech, M.E., and M.Arch admissions, a rejected photo can delay an entire postgraduate application at a stage when correction windows are short.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Why a General Editor Falls Short</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Why a General Editor Falls Short</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Most photo apps let you crop to a size or reduce quality, but rarely both at once with a specific KB target in mind. You end up exporting, checking the file size, and re-exporting several times. This tool asks for your target size once, then handles cropping and compression together so the output matches the PGCET requirement on the first try.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Step-by-Step</h3>
-  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Step-by-Step</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-[#52525B]">
     <li>Upload a recent, well-lit photo against a plain background.</li>
     <li>Let the tool crop it to the 3.5 cm × 4.5 cm passport frame.</li>
     <li>Set your target file size within the 5 KB to 40 KB range.</li>
     <li>Download the finished JPG and upload it directly to the KEA portal.</li>
   </ol>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Since PGCET application windows for MBA, MCA, and engineering postgraduate courses can differ slightly in their specifications by cycle, it's worth double-checking the current information bulletin before your final submission. This tool exists to save you the manual editing work, not to replace that final check.
   </p>
 </div>`,
@@ -19652,28 +19652,28 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "Preparing Your Signature",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Karnataka PGCET applications require a scanned signature alongside your photograph and left thumb impression. KEA's specification typically calls for a JPG file between 5 KB and 40 KB, cropped to roughly 3.5 cm × 1.5 cm. It sounds like a small detail, but the portal checks it just as strictly as the photograph.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Preparing the Original Signature</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Preparing the Original Signature</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Sign your name on plain white paper using a dark pen, ideally black. Keep it steady and legible rather than rushed, since this same signature style should match what you'll use on printed confirmation pages and at the exam center. Photograph or scan it in good, even lighting so no shadows fall across the ink.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Resizing in Three Moves</h3>
-  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Resizing in Three Moves</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-[#52525B]">
     <li>Upload the photographed or scanned signature.</li>
     <li>Crop tightly to the signature itself, removing excess white space around it.</li>
     <li>Compress to your target KB, and download the finished JPG.</li>
   </ol>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Why File Size Matters More Than It Seems</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Why File Size Matters More Than It Seems</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     KEA's application system performs an automatic check on every uploaded file. A signature that's 1 KB over the limit gets silently rejected rather than flagged with a clear error, which is why many candidates assume their upload succeeded until they reach the final review screen. Targeting a size safely within the 5 KB to 40 KB range, rather than right at the edge, avoids that risk entirely.
   </p>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Because this tool runs entirely in your browser, your signature never travels to a server for processing. That keeps one of your most personally identifying pieces of data fully in your own hands throughout the process.
   </p>
 </div>`,
@@ -19717,28 +19717,28 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "CEE Kerala's Photo Rules Are Unusually Specific",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Unlike many state entrance exams that only enforce a file size range, the Commissioner for Entrance Examinations (CEE) Kerala asks for an exact pixel dimension for KEAM: 150 pixels wide by 200 pixels tall. On top of that, the file must sit between 15 KB and 30 KB, and many cycles also require your name and the date the photo was taken printed at the bottom of the image itself.
   </p>
 
   <div class="overflow-x-auto mt-6">
     <table class="w-full text-left border-collapse">
       <thead>
-        <tr class="border-b border-slate-300 dark:border-slate-700">
-          <th class="py-3 pr-4 text-slate-900 dark:text-slate-100 font-semibold">Field</th>
-          <th class="py-3 text-slate-900 dark:text-slate-100 font-semibold">KEAM Photo Requirement</th>
+        <tr class="border-b border-[#E4E4E7]">
+          <th class="py-3 pr-4 text-[#18181B] font-semibold">Field</th>
+          <th class="py-3 text-[#18181B] font-semibold">KEAM Photo Requirement</th>
         </tr>
       </thead>
-      <tbody class="text-lg text-slate-600 dark:text-slate-400">
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+      <tbody class="text-lg text-[#52525B]">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">Dimensions</td>
           <td class="py-3">150 px width × 200 px height</td>
         </tr>
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">File size</td>
           <td class="py-3">15 KB to 30 KB</td>
         </tr>
-        <tr class="border-b border-slate-200 dark:border-slate-800">
+        <tr class="border-b border-[#E4E4E7]">
           <td class="py-3 pr-4">Format</td>
           <td class="py-3">JPG / JPEG</td>
         </tr>
@@ -19749,15 +19749,15 @@ export const programmaticPages: SeoPage[] = [
       </tbody>
     </table>
   </div>
-  <p class="text-sm text-slate-500 dark:text-slate-500">Confirm the name-and-date requirement in the current KEAM prospectus at cee.kerala.gov.in, as this detail has varied slightly between cycles.</p>
+  <p class="text-sm text-[#71717A]">Confirm the name-and-date requirement in the current KEAM prospectus at cee.kerala.gov.in, as this detail has varied slightly between cycles.</p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">How This Tool Handles Pixel-Exact Sizing</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">How This Tool Handles Pixel-Exact Sizing</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     A generic resizer that lets you type in "small," "medium," or a percentage won't land on exactly 150×200 pixels. This tool locks the output to that exact frame, then compresses within the 15 KB to 30 KB window, so you're not stuck calculating pixel ratios by hand.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Quick Steps</h3>
-  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Quick Steps</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-[#52525B]">
     <li>Upload a recent photo with a light or white background.</li>
     <li>Crop to the fixed 150×200 pixel frame.</li>
     <li>Compress to sit within 15 KB and 30 KB.</li>
@@ -19803,28 +19803,28 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "A Precise Format, Made Simple",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     KEAM's application, run through CEE Kerala, asks for the signature image at 150 pixels wide by 100 pixels tall, saved in JPG format and sized roughly between 10 KB and 30 KB. Like the photo requirement, this is a fixed pixel dimension rather than a loose size range, which trips up candidates who try to resize by percentage in a phone gallery app.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Before You Scan</h3>
-  <ul class="list-disc list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Before You Scan</h3>
+  <ul class="list-disc list-inside space-y-2 text-lg text-[#52525B]">
     <li>Write your signature on plain white paper with black or blue ink.</li>
     <li>Keep the paper flat and well-lit, avoiding shadows across the ink.</li>
     <li>Sign at a natural size rather than unusually large or small.</li>
   </ul>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">What the Tool Does</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">What the Tool Does</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Upload your photographed or scanned signature, and the tool crops it tightly to the signature area before resizing to the exact 150×100 pixel frame KEAM expects. From there, it compresses to a file size inside the 10 KB to 30 KB range, giving you a clean download ready for the CEE Kerala portal.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Common Rejection Reasons</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Common Rejection Reasons</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Most rejected KEAM signature uploads fail for one of three reasons: the file isn't in JPG format, the pixel dimensions don't match exactly, or the signature is too faint to read after compression. This tool addresses all three by fixing the format, locking the dimensions, and compressing only as much as needed to hit the size target without losing legibility.
   </p>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Since the whole process runs on your own device, your signature never passes through a remote server, keeping this sensitive piece of your identity fully private from upload to download.
   </p>
 </div>`,
@@ -19867,34 +19867,34 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "What CEE Kerala Actually Checks",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Kerala Management Aptitude Test, conducted by CEE Kerala for MBA admissions, follows an application flow similar to KEAM. Rather than uploading a pre-taken photograph in every case, many candidates capture a live photo directly through the application portal, while the signature is uploaded separately as a scanned image.
   </p>
 
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Signature Specification for KMAT Kerala</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Format: JPG / JPEG</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Dimensions: 150 px width × 100 px height</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> File size: roughly 4 KB to 100 KB</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Background: plain white paper, dark ink</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Signature Specification for KMAT Kerala</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Format: JPG / JPEG</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Dimensions: 150 px width × 100 px height</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> File size: roughly 4 KB to 100 KB</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Background: plain white paper, dark ink</li>
     </ul>
   </div>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Where This Tool Fits In</h3>
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Where This Tool Fits In</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Since the photograph is often captured live during registration, this tool is most useful for preparing your scanned signature, and for resizing a backup passport-style photo in case the portal asks for an uploaded image instead of a live capture during a particular application cycle. Upload either file, and the tool crops and compresses it to CEE Kerala's stated dimensions automatically.
   </p>
 
-  <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mt-8">Getting the Signature Right</h3>
-  <ol class="list-decimal list-inside space-y-2 text-lg text-slate-600 dark:text-slate-400">
+  <h3 class="text-xl font-semibold text-[#18181B] mt-8">Getting the Signature Right</h3>
+  <ol class="list-decimal list-inside space-y-2 text-lg text-[#52525B]">
     <li>Sign on plain white paper with dark ink, and keep the sheet flat.</li>
     <li>Scan or photograph it in even lighting, without shadows across the signature.</li>
     <li>Upload it here, crop tightly, and compress to fit within the required KB range.</li>
     <li>Download the finished JPG and keep it ready for the upload step in your application.</li>
   </ol>
 
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     As with the other CEE Kerala exams, all processing happens locally in your browser. Nothing you upload here is stored or sent anywhere else, which matters for a signature that will remain tied to your academic record for years.
   </p>
 </div>`,
@@ -19938,15 +19938,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Kmat Kerala Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Kmat Kerala Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -19986,8 +19986,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Pat Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Mp Pat Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Mp Pat Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Mp Pat Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -20026,10 +20026,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Pat Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Mp Pat Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -20069,15 +20069,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Be Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Mp Be Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -20116,15 +20116,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mp Be Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Mp Be Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -20164,10 +20164,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mht Cet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Mht Cet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -20206,15 +20206,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mht Cet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Mht Cet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -20254,15 +20254,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mah Mba Cet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Mah Mba Cet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -20302,8 +20302,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mah Mba Cet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Mah Mba Cet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Mah Mba Cet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Mah Mba Cet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -20343,15 +20343,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mah Mca Cet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Mah Mca Cet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -20391,15 +20391,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mah Mca Cet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Mah Mca Cet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -20439,15 +20439,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mah Llb Cet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Mah Llb Cet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -20487,10 +20487,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Mah Llb Cet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Mah Llb Cet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -20530,15 +20530,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ojee Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Ojee Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -20576,8 +20576,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ojee Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Ojee Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ojee Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Ojee Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -20617,10 +20617,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Pu Cet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Pu Cet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -20659,8 +20659,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Pu Cet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Pu Cet Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Pu Cet Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Pu Cet Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,
@@ -20700,10 +20700,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Eamcet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ts Eamcet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -20742,15 +20742,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Eamcet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ts Eamcet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -20790,10 +20790,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Icet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ts Icet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -20832,15 +20832,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Icet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ts Icet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -20880,8 +20880,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Lawcet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Ts Lawcet Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Ts Lawcet Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Ts Lawcet Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -20920,15 +20920,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Lawcet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Ts Lawcet Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -20968,10 +20968,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Pgecet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     The Ts Pgecet Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
 </div>`,
@@ -21010,10 +21010,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Ts Pgecet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Ts Pgecet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -21053,15 +21053,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tancet Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Tancet Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -21100,10 +21100,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Tancet Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Tancet Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -21143,15 +21143,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uksee Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Preparing your photograph for Uksee Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
   </p>
-  <div class="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-xl border border-emerald-100 dark:border-emerald-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Why Use Our Resizer?</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 100% Free and Private browser processing</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
 </div>`,
@@ -21190,10 +21190,10 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Uksee Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Official applications for Uksee Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
   </p>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-[#52525B] leading-relaxed">
     Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
   </p>
 </div>`,
@@ -21233,8 +21233,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Wbjee Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Wbjee Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Wbjee Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Wbjee Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -21273,15 +21273,15 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Wbjee Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-lg text-[#52525B] leading-relaxed">
     Need to resize your signature for Wbjee Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
   </p>
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border border-blue-100 dark:border-blue-800">
-    <h3 class="font-bold text-slate-900 dark:text-white mb-3">Key Features</h3>
-    <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-blue-500">✓</span> No data leaves your device</li>
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
     </ul>
   </div>
 </div>`,
@@ -21321,8 +21321,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jexpo Photo Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Your Jexpo Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Your Jexpo Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Jexpo Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
 </div>`,
@@ -21361,8 +21361,8 @@ export const programmaticPages: SeoPage[] = [
       {
         heading: "About Jexpo Signature Resizer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Fast & Free Signature Resizing for Jexpo Signature Resizer</h3>
-  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Jexpo Signature Resizer</h3>
+  <p class="text-[#52525B] leading-relaxed">
     Your Jexpo Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
   </p>
 </div>`,

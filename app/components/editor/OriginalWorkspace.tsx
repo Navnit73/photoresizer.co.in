@@ -6,8 +6,6 @@ import ReactCrop, { Crop, PixelCrop } from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 import { useEditor, AspectRatio } from "./EditorContext";
 import { useTranslation } from "@/app/hooks/useTranslation";
-import { useIsMounted } from "@/app/hooks/useIsMounted";
-import { useTheme } from "next-themes";
 import {
   UploadCloud,
   Crop as CropIcon,
@@ -20,8 +18,6 @@ import {
   Undo2,
   Redo2,
   RefreshCcw,
-  Sun,
-  Moon,
 } from "lucide-react";
 
 const ASPECT_RATIOS: { label: AspectRatio; value: number | undefined }[] = [
@@ -57,8 +53,6 @@ export default function OriginalWorkspace() {
   } = useEditor();
 
   const { t } = useTranslation();
-  const { theme, setTheme } = useTheme();
-  const mounted = useIsMounted();
 
   const [isCropping, setIsCropping] = useState(false);
   const [zoom, setZoom] = useState(1);
@@ -292,29 +286,31 @@ export default function OriginalWorkspace() {
   )?.value;
 
   return (
-    <div className="flex-1 flex flex-col bg-transparent overflow-hidden min-h-0 transition-colors duration-300">
-      {/* Toolbar (Only show when an image is loaded) */}
+    <div className="flex-1 flex flex-col bg-[#FAFAFA] overflow-hidden min-h-0">
+      {/* Top Workspace Toolbar */}
       {imageFile && (
-        <div className="flex items-center justify-between gap-1.5 px-3 py-2 border-b border-[#dddddd] dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-xs flex-shrink-0 flex-wrap">
+        <div className="flex items-center justify-between gap-2 px-3 sm:px-4 py-2 border-b border-[#E4E4E7] bg-[#FFFFFF] flex-shrink-0 flex-wrap">
           
           {/* Left Controls: Undo, Redo, Reset */}
           <div className="flex items-center gap-1.5">
-            <div className="flex items-center bg-white dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 rounded-full p-0.5 shadow-2xs">
+            <div className="flex items-center bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-0.5">
               <button
+                type="button"
                 onClick={undo}
                 disabled={!canUndo}
-                className="p-1 rounded-full text-[#6a6a6a] dark:text-slate-300 hover:text-[#222222] dark:hover:text-white hover:bg-[#f7f7f7] dark:hover:bg-slate-700 disabled:opacity-30 transition-all"
-                title="Undo (Ctrl+Z)"
+                className="p-1.5 rounded-lg text-[#52525B] hover:text-[#18181B] hover:bg-[#FFFFFF] disabled:opacity-30 transition-colors"
+                title="Undo"
                 aria-label="Undo"
               >
                 <Undo2 size={13} />
               </button>
-              <div className="w-[1px] h-3 bg-[#dddddd] dark:bg-slate-600 mx-0.5" />
+              <div className="w-[1px] h-3.5 bg-[#E4E4E7] mx-0.5" />
               <button
+                type="button"
                 onClick={redo}
                 disabled={!canRedo}
-                className="p-1 rounded-full text-[#6a6a6a] dark:text-slate-300 hover:text-[#222222] dark:hover:text-white hover:bg-[#f7f7f7] dark:hover:bg-slate-700 disabled:opacity-30 transition-all"
-                title="Redo (Ctrl+Y)"
+                className="p-1.5 rounded-lg text-[#52525B] hover:text-[#18181B] hover:bg-[#FFFFFF] disabled:opacity-30 transition-colors"
+                title="Redo"
                 aria-label="Redo"
               >
                 <Redo2 size={13} />
@@ -322,36 +318,39 @@ export default function OriginalWorkspace() {
             </div>
 
             <button
+              type="button"
               onClick={reset}
-              className="flex items-center gap-1 text-[11px] font-semibold text-[#6a6a6a] dark:text-slate-400 hover:text-[#ff385c] transition-all px-2.5 py-1 rounded-full hover:bg-[#ff385c]/10"
+              className="flex items-center gap-1 text-xs font-semibold text-[#52525B] hover:text-[#16A34A] transition-colors px-2.5 py-1.5 rounded-xl hover:bg-[#F0FDF4]"
               title="Reset Image"
             >
               <RefreshCcw size={12} />
-              <span className="hidden sm:inline">{t.reset}</span>
+              <span className="hidden sm:inline">Reset</span>
             </button>
           </div>
 
-          {/* Center Controls: Zoom, Crop, Remove BG AI */}
+          {/* Center Controls: Zoom, Crop, BG Remover */}
           {!isCropping && (
-            <div className="flex items-center gap-1.5 flex-wrap">
-              <div className="flex items-center bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800 p-0.5">
+            <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex items-center bg-[#FAFAFA] rounded-xl border border-[#E4E4E7] p-0.5">
                 <button
+                  type="button"
                   onClick={() =>
                     setZoom(Math.max(0.2, parseFloat((zoom - 0.1).toFixed(1))))
                   }
-                  className="p-1 text-text-muted hover:text-text-main hover:bg-bg-card rounded transition-colors"
+                  className="p-1.5 text-[#52525B] hover:text-[#18181B] rounded-lg transition-colors"
                   aria-label="Zoom out"
                 >
                   <ZoomOut size={13} />
                 </button>
-                <span className="text-[10px] font-bold text-text-main w-8 text-center tabular-nums">
+                <span className="text-[11px] font-semibold text-[#18181B] w-9 text-center tabular-nums">
                   {Math.round(zoom * 100)}%
                 </span>
                 <button
+                  type="button"
                   onClick={() =>
                     setZoom(Math.min(5, parseFloat((zoom + 0.1).toFixed(1))))
                   }
-                  className="p-1 text-text-muted hover:text-text-main hover:bg-bg-card rounded transition-colors"
+                  className="p-1.5 text-[#52525B] hover:text-[#18181B] rounded-lg transition-colors"
                   aria-label="Zoom in"
                 >
                   <ZoomIn size={13} />
@@ -359,6 +358,7 @@ export default function OriginalWorkspace() {
               </div>
 
               <button
+                type="button"
                 onClick={() => {
                   setIsCropping(true);
                   if (!cropState) {
@@ -371,70 +371,57 @@ export default function OriginalWorkspace() {
                     });
                   }
                 }}
-                className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 rounded-lg transition-colors"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-[#FFFFFF] text-[#18181B] border border-[#E4E4E7] hover:border-[#BBF7D0] hover:bg-[#F0FDF4] hover:text-[#15803D] rounded-xl transition-colors shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
               >
-                <CropIcon size={12} />
-                <span>{t.crop}</span>
+                <CropIcon size={13} />
+                <span>Crop</span>
               </button>
               
               <button
+                type="button"
                 onClick={handleRemoveBg}
                 disabled={isBgRemoving}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold bg-[#ff385c]/10 text-[#ff385c] hover:bg-[#ff385c] hover:text-white rounded-full transition-all disabled:opacity-50 border border-[#ff385c]/30"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-[#F0FDF4] text-[#15803D] border border-[#BBF7D0] hover:bg-[#DCFCE7] rounded-xl transition-colors disabled:opacity-50"
               >
-                <Scissors size={12} />
-                <span className="hidden xs:inline">
-                  {isBgRemoving ? t.removingBg : t.removeBgAi}
-                </span>
-                <span className="xs:hidden">{isBgRemoving ? "…" : t.removeBgAi}</span>
+                <Scissors size={13} />
+                <span>{isBgRemoving ? "Removing BG..." : "Remove BG"}</span>
               </button>
             </div>
           )}
 
-          {/* Right Controls: Theme Toggle */}
-          <div className="flex items-center gap-1.5 ml-auto sm:ml-0">
-            {mounted && (
-              <button
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-1.5 rounded-full border border-[#dddddd] dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-[#f7f7f7] dark:hover:bg-slate-700 text-[#222222] dark:text-white transition-all active:scale-95 shadow-2xs"
-                title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-                aria-label="Toggle Theme"
-              >
-                {theme === 'dark' ? <Sun size={13} /> : <Moon size={13} />}
-              </button>
-            )}
-          </div>
-
+          {/* Crop Mode Actions */}
           {isCropping && (
-            <div className="flex gap-1.5 ml-auto">
+            <div className="flex gap-2 ml-auto">
               <button
+                type="button"
                 onClick={handleCancelCrop}
-                className="flex items-center gap-1 px-3 py-1.5 text-xs font-bold bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-white hover:bg-[#dddddd] rounded-full transition-colors border border-[#dddddd] dark:border-slate-700"
+                className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold bg-[#FFFFFF] text-[#52525B] hover:bg-[#FAFAFA] rounded-xl transition-colors border border-[#E4E4E7]"
               >
-                <X size={12} /> {t.cancel}
+                <X size={13} /> Cancel
               </button>
               <button
+                type="button"
                 onClick={handleCropComplete}
-                className="flex items-center gap-1 px-4 py-1.5 text-xs font-bold bg-[#ff385c] hover:bg-[#e00b41] text-white rounded-full transition-all shadow-sm active:scale-95"
+                className="flex items-center gap-1 px-4 py-1.5 text-xs font-semibold bg-[#16A34A] hover:bg-[#15803D] text-white rounded-xl transition-colors shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
               >
-                <Check size={12} /> {t.applyCrop}
+                <Check size={13} /> Apply Crop
               </button>
             </div>
           )}
         </div>
       )}
 
-
-      {/* Aspect ratio toolbar (crop mode - Airbnb style pill chips) */}
+      {/* Aspect ratio selector when cropping */}
       {isCropping && (
-        <div className="bg-transparent border-b border-[#dddddd] dark:border-slate-800 px-4 py-2.5 flex-shrink-0 transition-colors duration-300">
+        <div className="bg-[#FFFFFF] border-b border-[#E4E4E7] px-4 py-2 flex-shrink-0">
           <div className="flex flex-wrap gap-2 items-center">
-            <span className="text-[11px] font-bold text-[#6a6a6a] dark:text-slate-400 uppercase tracking-wider">
-              {t.aspectRatio}:
+            <span className="text-[11px] font-semibold text-[#71717A] uppercase tracking-wider">
+              Ratio:
             </span>
             {ASPECT_RATIOS.map((ratio) => (
               <button
                 key={ratio.label}
+                type="button"
                 onClick={() => {
                   setAspectRatio(ratio.label);
                   if (cropState && ratio.value && imageRef.current) {
@@ -447,10 +434,10 @@ export default function OriginalWorkspace() {
                     });
                   }
                 }}
-                className={`px-3 py-1 text-xs font-bold rounded-full transition-all border ${
+                className={`px-3 py-1 text-xs font-semibold rounded-lg transition-colors border ${
                   aspectRatio === ratio.label
-                    ? "bg-[#ff385c] text-white border-[#ff385c] shadow-sm"
-                    : "bg-[#f7f7f7] dark:bg-slate-800 text-[#222222] dark:text-white border-[#dddddd] dark:border-slate-700 hover:border-[#ff385c]"
+                    ? "bg-[#F0FDF4] text-[#15803D] border-[#16A34A]"
+                    : "bg-[#FAFAFA] text-[#52525B] border-[#E4E4E7] hover:border-[#BBF7D0]"
                 }`}
               >
                 {ratio.label.toUpperCase()}
@@ -460,10 +447,10 @@ export default function OriginalWorkspace() {
         </div>
       )}
 
-      {/* Canvas area */}
+      {/* Canvas workspace area */}
       <div
         ref={containerRef}
-        className="flex-1 overflow-auto bg-transparent relative select-none transition-colors duration-300 min-h-0"
+        className="flex-1 overflow-auto bg-[#FAFAFA] relative select-none min-h-0"
         onMouseMove={handleContainerMouseMove}
         onMouseUp={handleContainerMouseUp}
         onMouseLeave={handleContainerMouseUp}
@@ -473,111 +460,74 @@ export default function OriginalWorkspace() {
           if (!draggingTextId.current) setSelectedTextId(null);
         }}
       >
-        <style>{`
-          .ReactCrop__crop-selection::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 14px;
-            height: 14px;
-            transform: translate(-50%, -50%);
-            background: linear-gradient(to right, transparent 6px, rgba(255,255,255,0.9) 6px, rgba(255,255,255,0.9) 8px, transparent 8px),
-                        linear-gradient(to bottom, transparent 6px, rgba(255,255,255,0.9) 6px, rgba(255,255,255,0.9) 8px, transparent 8px);
-            pointer-events: none;
-          }
-        `}</style>
-
         <div className="min-h-full min-w-full flex items-center justify-center p-4 sm:p-6">
+          
           {/* BG removing overlay */}
           {isBgRemoving && (
-            <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-white/90 dark:bg-slate-900/90 backdrop-blur-md transition-colors duration-300">
-              <div className="w-14 h-14 mb-4 relative">
+            <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-[#FFFFFF]/90 backdrop-blur-sm">
+              <div className="w-12 h-12 mb-3 relative">
                 <svg className="w-full h-full -rotate-90" viewBox="0 0 64 64">
+                  <circle cx="32" cy="32" r="28" fill="none" className="stroke-[#E4E4E7]" strokeWidth="4" />
                   <circle
-                    cx="32"
-                    cy="32"
-                    r="28"
-                    fill="none"
-                    className="stroke-[#dddddd]"
-                    strokeWidth="4"
-                  />
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="28"
-                    fill="none"
-                    className="stroke-[#ff385c]"
-                    strokeWidth="4"
+                    cx="32" cy="32" r="28" fill="none" className="stroke-[#16A34A]" strokeWidth="4"
                     strokeDasharray={`${2 * Math.PI * 28}`}
                     strokeDashoffset={`${2 * Math.PI * 28 * (1 - bgProgress / 100)}`}
                     strokeLinecap="round"
                     style={{ transition: "stroke-dashoffset 0.5s ease-out" }}
                   />
                 </svg>
-                <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-[#ff385c]">
+                <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-[#16A34A]">
                   {Math.round(bgProgress)}%
                 </span>
               </div>
-              <p className="text-sm font-bold text-[#222222] dark:text-white mb-1">
-                {t.removingBg}
+              <p className="text-sm font-semibold text-[#18181B] mb-1">
+                Removing Background...
               </p>
-              <p className="text-xs text-[#6a6a6a] dark:text-slate-400 text-center max-w-[220px]">
-                {t.bgRemovalPrivacy}
+              <p className="text-xs text-[#71717A] text-center max-w-[220px]">
+                Processed locally in browser
               </p>
             </div>
           )}
 
           {!imageFile ? (
             isUploading ? (
-              <div className="w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dashed border-[#ff385c]/40 rounded-3xl flex flex-col items-center justify-center text-center bg-white dark:bg-slate-900 shadow-sm">
-                <div className="w-14 h-14 rounded-full bg-[#ff385c]/10 text-[#ff385c] flex items-center justify-center mb-4">
-                  <UploadCloud size={26} className="animate-pulse" />
+              <div className="w-full max-w-sm p-8 sm:p-10 border-2 border-dashed border-[#BBF7D0] rounded-2xl flex flex-col items-center justify-center text-center bg-[#F0FDF4]">
+                <div className="w-12 h-12 rounded-xl bg-[#FFFFFF] text-[#16A34A] flex items-center justify-center mb-3">
+                  <UploadCloud size={24} className="animate-pulse" />
                 </div>
-                <div className="w-full max-w-[200px] bg-[#f7f7f7] dark:bg-slate-800 rounded-full h-2 mb-4 overflow-hidden border border-[#dddddd]">
-                  <div 
-                    className="bg-[#ff385c] h-full rounded-full transition-all duration-75" 
-                    style={{ width: `${uploadProgress}%` }}
-                  ></div>
-                </div>
-                <h4 className="text-sm sm:text-base font-bold text-[#222222] dark:text-white mb-1.5">
-                  {t.loadingImage}
+                <h4 className="text-sm font-semibold text-[#18181B] mb-1">
+                  Loading Image...
                 </h4>
-                <p className="text-xs text-[#6a6a6a]">{Math.round(uploadProgress)}%</p>
+                <p className="text-xs text-[#71717A]">{Math.round(uploadProgress)}%</p>
               </div>
             ) : (
-            <div
-              {...getRootProps()}
-              className={`w-full max-w-xs sm:max-w-sm p-8 sm:p-12 border-2 border-dashed rounded-3xl flex flex-col items-center justify-center text-center cursor-pointer transition-all ${
-                isDragActive
-                  ? "border-[#ff385c] bg-[#ff385c]/5 scale-[1.02]"
-                  : "border-[#dddddd] dark:border-slate-700 hover:border-[#ff385c] bg-white dark:bg-slate-900 shadow-sm hover:shadow-md"
-              }`}
-            >
-              <input {...getInputProps()} />
               <div
-                className={`w-14 h-14 rounded-full flex items-center justify-center mb-4 transition-colors ${isDragActive ? "bg-[#ff385c] text-white" : "bg-[#ff385c]/10 text-[#ff385c]"}`}
+                {...getRootProps()}
+                className={`w-full max-w-sm p-8 sm:p-10 border-2 border-dashed rounded-2xl flex flex-col items-center justify-center text-center cursor-pointer transition-colors ${
+                  isDragActive
+                    ? "border-[#16A34A] bg-[#DCFCE7]"
+                    : "border-[#BBF7D0] bg-[#F0FDF4] hover:border-[#16A34A] hover:bg-[#DCFCE7]"
+                }`}
               >
-                <UploadCloud
-                  size={28}
-                  className={isDragActive ? "text-white" : "text-[#ff385c]"}
-                />
+                <input {...getInputProps()} />
+                <div className="w-12 h-12 rounded-xl bg-[#FFFFFF] text-[#16A34A] flex items-center justify-center mb-3 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+                  <UploadCloud size={24} />
+                </div>
+                <h4 className="text-base font-semibold text-[#18181B] mb-1">
+                  {isDragActive ? "Drop image here" : "Upload an image"}
+                </h4>
+                <p className="text-xs text-[#52525B] mb-4">Click to browse or drag and drop</p>
+                <div className="flex gap-1.5">
+                  {["JPG", "PNG", "WEBP"].map((fmt) => (
+                    <span
+                      key={fmt}
+                      className="px-2.5 py-0.5 bg-[#FFFFFF] border border-[#BBF7D0] text-[#15803D] rounded-md text-[10px] font-semibold"
+                    >
+                      {fmt}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <h4 className="text-base font-bold text-[#222222] dark:text-white mb-1.5">
-                {isDragActive ? t.dropImageHere : t.selectImage}
-              </h4>
-              <p className="text-xs text-[#6a6a6a] dark:text-slate-400 mb-5">{t.dragDropOrClick}</p>
-              <div className="flex gap-2">
-                {["JPG", "PNG", "WEBP"].map((fmt) => (
-                  <span
-                    key={fmt}
-                    className="px-3 py-1 bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 text-[#222222] dark:text-white rounded-full text-[11px] font-bold"
-                  >
-                    {fmt}
-                  </span>
-                ))}
-              </div>
-            </div>
             )
           ) : (
             <div className="relative">
@@ -600,7 +550,7 @@ export default function OriginalWorkspace() {
                   }}
                   aspect={currentRatioValue}
                   ruleOfThirds={true}
-                  className="transition-all duration-200"
+                  className="transition-all duration-150"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -626,7 +576,7 @@ export default function OriginalWorkspace() {
                       maxWidth: "100%",
                       backgroundColor: backgroundColor === 'transparent' ? undefined : backgroundColor,
                     }}
-                    className="w-auto object-contain shadow-2xl shadow-black/10 rounded-sm ring-1 ring-border-subtle"
+                    className="w-auto object-contain shadow-sm rounded-lg border border-[#E4E4E7]"
                     draggable={false}
                   />
 
@@ -640,7 +590,7 @@ export default function OriginalWorkspace() {
                         e.stopPropagation();
                         setSelectedTextId(overlay.id);
                       }}
-                      className={`absolute cursor-move touch-none ${selectedTextId === overlay.id ? "outline outline-2 outline-offset-2 outline-accent-main rounded" : ""}`}
+                      className={`absolute cursor-move touch-none ${selectedTextId === overlay.id ? "outline outline-2 outline-[#16A34A] rounded" : ""}`}
                       style={{
                         left: `${overlay.x}%`,
                         top: `${overlay.y}%`,
@@ -654,7 +604,7 @@ export default function OriginalWorkspace() {
                         userSelect: "none",
                         zIndex: 10,
                         whiteSpace: "nowrap",
-                        textShadow: "0 1px 3px rgba(0,0,0,0.4)",
+                        textShadow: "0 1px 2px rgba(0,0,0,0.3)",
                       }}
                     >
                       {overlay.text}
@@ -662,20 +612,20 @@ export default function OriginalWorkspace() {
                   ))}
 
                   {selectedTextId && (
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/60 text-white text-[10px] rounded-full pointer-events-none backdrop-blur-sm whitespace-nowrap">
-                      <Type size={10} className="inline mr-1" />
-                      Drag to reposition
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-[#18181B]/80 text-white text-[11px] font-medium rounded-lg pointer-events-none whitespace-nowrap">
+                      <Type size={11} className="inline mr-1" />
+                      Drag text to position
                     </div>
                   )}
                 </div>
               )}
 
-              {/* Live crop dimensions */}
+              {/* Crop dimensions badge */}
               {isCropping &&
                 cropPixelDimensions &&
                 cropPixelDimensions.width > 0 &&
                 cropPixelDimensions.height > 0 && (
-                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-black/70 text-white text-xs font-bold rounded-full pointer-events-none backdrop-blur-sm">
+                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-[#18181B]/80 text-white text-xs font-semibold rounded-lg pointer-events-none">
                     {cropPixelDimensions.width} × {cropPixelDimensions.height} px
                   </div>
                 )}

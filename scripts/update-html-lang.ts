@@ -17,7 +17,7 @@ function minifyHtmlFile(filePath: string, lang?: string) {
     try {
       const minifiedJson = JSON.stringify(JSON.parse(innerContent.trim()));
       return `<script${attrs}>${minifiedJson}</script>`;
-    } catch (e) {
+    } catch {
       return match;
     }
   });
@@ -49,25 +49,12 @@ function main() {
     return;
   }
 
-  console.log("Minifying inline scripts and updating lang attributes in generated HTML...");
+  console.log("Minifying inline JSON-LD scripts and ensuring lang='en-IN' across generated HTML...");
 
-  // Process all HTML files in root out/
-  processDirectory(outDir);
+  // Process all HTML files across out/
+  processDirectory(outDir, 'en-IN');
 
-  // Update language attributes for specific localized routes
-  processDirectory(path.join(outDir, 'de'), 'de');
-  minifyHtmlFile(path.join(outDir, 'de.html'), 'de');
-  
-  processDirectory(path.join(outDir, 'fr'), 'fr');
-  minifyHtmlFile(path.join(outDir, 'fr.html'), 'fr');
-  
-  processDirectory(path.join(outDir, 'es'), 'es');
-  minifyHtmlFile(path.join(outDir, 'es.html'), 'es');
-
-  processDirectory(path.join(outDir, 'pt'), 'pt');
-  minifyHtmlFile(path.join(outDir, 'pt.html'), 'pt');
-
-  console.log("Successfully minified HTML scripts and updated lang attributes.");
+  console.log("Successfully minified HTML scripts and ensured lang='en-IN'.");
 }
 
 main();

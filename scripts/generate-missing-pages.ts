@@ -63,21 +63,21 @@ const newPagesString = newPagesData.map(page => `
         heading: "How to ${page.h1}",
         content: \`
 <div class="space-y-8 not-prose">
-  <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+  <p class="text-base text-[#52525B] leading-relaxed">
     Welcome to our free online tool to <strong>\${"${page.h1.toLowerCase()}"}</strong>. You can process your images instantly, directly in your web browser. This means unparalleled speed and complete privacy—your files are never uploaded to any remote server.
   </p>
   <div class="grid md:grid-cols-3 gap-5">
-    <div class="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-100 dark:border-blue-800">
-      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">100% Private</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">All processing happens inside your browser. Your photos never touch our servers.</p>
+    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+      <h3 class="text-base font-bold text-[#18181B] mb-2">100% Private</h3>
+      <p class="text-sm text-[#52525B]">All processing happens inside your browser. Your photos never touch our servers.</p>
     </div>
-    <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-2xl border border-emerald-100 dark:border-emerald-800">
-      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Instant Results</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">Process images in under a second. No waiting for uploads or server queues.</p>
+    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+      <h3 class="text-base font-bold text-[#18181B] mb-2">Instant Results</h3>
+      <p class="text-sm text-[#52525B]">Process images in under a second. No waiting for uploads or server queues.</p>
     </div>
-    <div class="p-6 bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 rounded-2xl border border-violet-100 dark:border-violet-800">
-      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">High Quality</h3>
-      <p class="text-sm text-slate-600 dark:text-slate-400">Export crystal clear images without any watermarks or hidden fees.</p>
+    <div class="p-6 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+      <h3 class="text-base font-bold text-[#18181B] mb-2">High Quality</h3>
+      <p class="text-sm text-[#52525B]">Export crystal clear images without any watermarks or hidden fees.</p>
     </div>
   </div>
 </div>\`

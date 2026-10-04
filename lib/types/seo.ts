@@ -1,4 +1,4 @@
-export type Language = 'en' | 'de' | 'fr' | 'es' | 'pt';
+export type Language = 'en' | 'en-in' | 'hi';
 
 export interface SeoSection {
   heading: string;
@@ -17,8 +17,8 @@ export interface FAQItem {
 }
 
 export interface SeoPage {
-  slug: string;           // E.g., 'photo-resizer' or 'foto-groesse-aendern'
-  translationKey?: string; // Links equivalent pages across languages
+  slug: string;           // E.g., 'photo-resizer' or 'ssc-photo-resizer'
+  translationKey?: string; // Links equivalent pages across regions
   metaTitle: string;
   metaDescription: string;
   h1: string;
@@ -32,7 +32,6 @@ export interface SeoPage {
   faq?: FAQItem[];
   
   // Advanced Structured Data overrides
-  // Allows per-page overrides for specific schema configurations
   structuredDataOverrides?: {
     webPageType?: 'WebPage' | 'AboutPage' | 'ContactPage' | 'FAQPage' | 'WebApplication';
     organizationName?: string;
@@ -40,5 +39,5 @@ export interface SeoPage {
 }
 
 export interface HreflangMap {
-  [lang: string]: string; // E.g., { 'en': 'https://domain.com/photo-resizer', 'de': 'https://domain.com/de/foto-groesse-aendern' }
+  [lang: string]: string; // E.g., { 'en-IN': 'https://photoresizer.co.in/', 'x-default': 'https://photoresizer.co.in/' }
 }

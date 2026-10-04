@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 export default function StickyToolNav() {
-  const [activeId, setActiveId] = useState('');
+  const [activeId, setActiveId] = useState('collage-maker');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +13,6 @@ export default function StickyToolNav() {
         const el = document.getElementById(id);
         if (el) {
           const rect = el.getBoundingClientRect();
-          // Adjust threshold based on nav height and visual preference
           if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
             setActiveId(id);
             break;
@@ -29,7 +28,7 @@ export default function StickyToolNav() {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
-      const offset = 80; // height of sticky nav or header offset
+      const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = el.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -43,28 +42,29 @@ export default function StickyToolNav() {
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm py-3 mb-8 px-4 flex justify-center gap-2 sm:gap-6 overflow-x-auto">
+    <div className="sticky top-16 z-40 bg-[#FFFFFF] border-b border-[#E4E4E7] py-2.5 mb-6 px-4 flex justify-center gap-2 sm:gap-4">
       <button
+        type="button"
         onClick={() => scrollTo('collage-maker')}
-        className={`whitespace-nowrap px-4 py-2 text-sm font-medium rounded-full transition-colors ${
+        className={`whitespace-nowrap px-4 py-1.5 text-xs font-semibold rounded-xl transition-colors ${
           activeId === 'collage-maker'
-            ? 'bg-accent-main text-white'
-            : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+            ? 'bg-[#16A34A] text-white'
+            : 'text-[#52525B] hover:text-[#18181B] hover:bg-[#FAFAFA]'
         }`}
       >
         Collage Maker
       </button>
       <button
+        type="button"
         onClick={() => scrollTo('poster-splitter')}
-        className={`whitespace-nowrap px-4 py-2 text-sm font-medium rounded-full transition-colors ${
+        className={`whitespace-nowrap px-4 py-1.5 text-xs font-semibold rounded-xl transition-colors ${
           activeId === 'poster-splitter'
-            ? 'bg-accent-main text-white'
-            : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+            ? 'bg-[#16A34A] text-white'
+            : 'text-[#52525B] hover:text-[#18181B] hover:bg-[#FAFAFA]'
         }`}
       >
-        Print on Multiple Pages
+        Poster Splitter
       </button>
-
     </div>
   );
 }

@@ -11,447 +11,511 @@ import {
   CheckCircle,
   AlertTriangle,
   FileSignature,
-  Calendar,
-  Award,
+  Image as ImageIcon,
+  Minimize2,
+  BadgeCheck,
+  RefreshCw,
+  Lock,
+  Smartphone,
+  Gift,
 } from "lucide-react";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://photoresizer.co.in';
+import { ROOT_HREFLANGS, BASE_URL } from "@/lib/seo";
+
+const LAST_REVIEWED = "October 2026";
+const LAST_REVIEWED_ISO = "2026-10-04";
+
+/* ───────────────────────── SEO ───────────────────────── */
 
 export const metadata: Metadata = {
+  title: "Photo & Signature Resizer for SSC, RRB, IBPS Exams | PhotoResizer",
+  description:
+    "Resize photos and signatures for SSC CGL, CHSL, MTS, GD, RRB NTPC, Group D, SBI & IBPS Clerk, UP Police, CTET and more. Free, private, exact KB limits.",
   alternates: {
-    canonical: `${baseUrl}/`,
-    languages: {
-      en: `${baseUrl}/`,
-      de: `${baseUrl}/de`,
-      fr: `${baseUrl}/fr`,
-      es: `${baseUrl}/es`,
-      pt: `${baseUrl}/pt`,
-      'x-default': `${baseUrl}/`,
+    canonical: `${BASE_URL}/`,
+    languages: ROOT_HREFLANGS,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
   openGraph: {
-    locale: 'en_US',
+    locale: "en_IN",
+    type: "website",
+    siteName: "PhotoResizer",
+    title: "PhotoResizer — Photo & Signature Resizer for Indian Exams",
+    description:
+      "Prepare your exam photo and signature in seconds. Exact KB and pixel presets for SSC, RRB, banking, police and teaching exams.",
+    url: `${BASE_URL}/`,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "PhotoResizer Indian Exam Photo and Signature Resizer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PhotoResizer — Photo & Signature Resizer for Indian Exams",
+    description:
+      "Prepare your exam photo and signature in seconds. Exact KB and pixel presets for SSC, RRB, banking, police and teaching exams.",
+    images: ["/og-image.png"],
   },
 };
 
-const homeFaqSchema = {
+/* ───────────────────────── DATA ───────────────────────── */
+
+const FAQS = [
+  {
+    q: "How do I resize my photo and signature for an exam form?",
+    a: "Upload your image, pick your exam preset, and download the JPG. The tool sets the pixel size and compresses the file below the KB limit. You can also enter a custom width, height, and target size.",
+  },
+  {
+    q: "What is the photo size for SSC CGL, CHSL, MTS, and GD Constable?",
+    a: "SSC asks for a JPG photo between 20 KB and 50 KB at 200×230 pixels on a plain light background. The signature must stay between 10 KB and 20 KB at 140×60 pixels. Always confirm the numbers in your own notification.",
+  },
+  {
+    q: "What are the photo rules for RRB NTPC and RRB Group D?",
+    a: "RRB notices usually set the photo between 30 KB and 70 KB at 35×45 mm, with a plain white or off-white background. The signature follows a similar range. Load the RRB preset, then compare it with your CEN notice.",
+  },
+  {
+    q: "What are the SBI Clerk, IBPS Clerk, and IBPS RRB photo limits?",
+    a: "Banking exams commonly ask for a 20–50 KB photo at 200×230 pixels and a 10–20 KB signature at 140×60 pixels. Some forms also need a left thumb impression and a handwritten declaration. We offer a tool for each.",
+  },
+  {
+    q: "Which size do UP Police, Bihar Police, UPSSSC PET, REET, and UPPSC need?",
+    a: "Each board sets its own limits, and they change between cycles. Open your official notice, copy the KB and pixel values, and enter them in the custom fields. The tool then matches them exactly.",
+  },
+  {
+    q: "How can I reduce a photo to under 50 KB without losing clarity?",
+    a: "Our compressor lowers the pixel size and JPEG quality in small steps. It stops as soon as the file fits under your limit, so your face and signature stay sharp.",
+  },
+  {
+    q: "Are my photos and signatures safe?",
+    a: "Yes. Cropping, resizing, background clean-up, and compression all run inside your browser. Your files never reach our servers, and we store nothing.",
+  },
+  {
+    q: "Is PhotoResizer free to use?",
+    a: "Yes. PhotoResizer is free. It needs no registration, adds no watermark, and sets no limit on how many photos or signatures you process.",
+  },
+];
+
+const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
+  "@graph": [
     {
-      "@type": "Question",
-      name: "How do I resize a photo and signature for government exams?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Upload your photo or signature image into our free editor. Select the exam preset (such as SSC, UPSC, IBPS, or RRB) or enter the required width and height in pixels and adjust the target file size (e.g., 20KB or 50KB). The tool automatically resizes and compresses your file to meet official portal guidelines.",
-      },
+      "@type": "WebApplication",
+      name: "PhotoResizer",
+      url: `${BASE_URL}/`,
+      applicationCategory: "MultimediaApplication",
+      operatingSystem: "Any (web browser)",
+      inLanguage: "en-IN",
+      description:
+        "Free online photo resizer, signature resizer, and photo size reducer for Indian government exam forms.",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      dateModified: LAST_REVIEWED_ISO,
+      publisher: { "@type": "Organization", name: "PhotoResizer", url: BASE_URL },
     },
     {
-      "@type": "Question",
-      name: "What are the standard photo and signature size requirements for SSC exams in 2026–2027?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "For SSC exams (CGL, CHSL, MTS, CPO, GD, JE), the photograph must be in JPEG/JPG format between 20 KB and 50 KB with dimensions of 200×230 pixels (approx. 3.5 cm width × 4.5 cm height) on a plain white or light background. The signature must be between 10 KB and 20 KB with dimensions of 140×60 pixels.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What are the photo and signature upload rules for UPSC CSE and NDA/CDS?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "For UPSC One Time Registration (OTR) and exams like CSE, CDS, NDA, and CAPF, the photograph must be in JPG format between 20 KB and 300 KB with minimum dimensions of 350×350 pixels (or 300×400 pixels). The signature must also be in JPG format between 20 KB and 300 KB with minimum dimensions of 350×350 pixels.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How can I reduce my photo size to exactly 20KB or 50KB without losing clarity?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our intelligent compression algorithm uses WebAssembly to balance resolution and JPEG quality. It reduces file size to below the specified 20 KB or 50 KB threshold while keeping facial features, signatures, and stamps sharp and legible.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do I resize handwritten declarations and left thumb impressions for IBPS and SBI banking exams?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "For IBPS and SBI exams, the handwritten declaration must be 200×50 pixels (between 20 KB and 50 KB) and the left thumb impression must be 200×200 pixels (between 20 KB and 50 KB). You can use our specialized IBPS declaration and thumb impression presets to prepare them in seconds.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I add Name and Date of Photo (DOP) on my exam photograph?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Switch to the 'Text' tab in our editor to add your candidate name and the date of the photograph taken at the bottom of the portrait, as required by SSC, State PSC, and military recruitment notifications.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Why do government exam application portals reject uploaded photos?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "The most common rejection reasons are: (1) file size exceeding maximum limits (e.g., 50.1 KB for a 50 KB limit), (2) incorrect aspect ratio causing image distortion, (3) dark or patterned background, (4) blurry or inverted signature, and (5) wrong file format (.png or .jpeg when only .jpg is allowed). Our tool ensures all these parameters are strictly compliant.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are my confidential documents and admit card photos safe and private?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, 100%. All image cropping, resizing, background removal, and compression happen entirely inside your local web browser. Your photos, signatures, and ID cards are never uploaded to any remote server or stored in any database.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is this exam photo resizer tool completely free?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our exam photo and signature resizer is 100% free with no registration, no watermarks, and no limits on the number of photos or signatures you can process.",
-      },
+      "@type": "FAQPage",
+      mainEntity: FAQS.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
   ],
 };
 
+const TRUST = [
+  { icon: Gift, label: "Free, no sign-up" },
+  { icon: Lock, label: "Files stay on your device" },
+  { icon: Sliders, label: "Exact KB targets" },
+  { icon: Smartphone, label: "Works on any phone" },
+];
+
+const TOOLS = [
+  {
+    icon: ImageIcon,
+    title: "Photo Resizer",
+    desc: "Set exact pixels and aspect ratio for your passport-style exam photo. Add name and date strips when the notice asks for them.",
+    href: "/photo-resizer",
+    cta: "Resize photo",
+  },
+  {
+    icon: FileSignature,
+    title: "Signature Resizer",
+    desc: "Turn a phone picture of your signature into a crisp, high-contrast JPG. Thumb impressions and declarations work too.",
+    href: "/signature-resize-ibps",
+    cta: "Resize signature",
+  },
+  {
+    icon: Minimize2,
+    title: "Photo Size Reducer",
+    desc: "Shrink any image to under 20 KB, 50 KB, 100 KB, or 300 KB. The tool keeps faces and handwriting sharp.",
+    href: "/compress-image",
+    cta: "Reduce size",
+  },
+];
+
 const EXAM_CATEGORIES = [
   {
-    title: "SSC Examinations",
+    title: "SSC Exams",
     icon: "🏛️",
-    badge: "Most Popular",
-    desc: "CGL, CHSL, MTS, GD Constable, CPO, JE & Stenographer exams.",
-    specs: "Photo: 20–50 KB (200×230 px) • Sign: 10–20 KB (140×60 px)",
+    badge: "20–50 KB",
+    desc: "SSC CGL, CHSL, MTS, GD Constable, CPO, and JE.",
+    specs: "Photo 20–50 KB, 200×230 px • Sign 10–20 KB, 140×60 px",
     links: [
       { name: "SSC Photo Resizer", href: "/ssc-photo-resizer" },
-      { name: "SSC 2027 Guidelines", href: "/ssc-photo-resizer-2027" },
+      { name: "SSC GD Constable", href: "/ssc-gd-constable-photo-resizer" },
+      { name: "SSC MTS", href: "/ssc-mts-photo-resizer" },
+      { name: "SSC CHSL", href: "/ssc-chsl-photo-resizer" },
+      { name: "SSC CGL", href: "/ssc-cgl-photo-resizer" },
     ],
   },
   {
-    title: "UPSC & Civil Services",
-    icon: "⚖️",
-    badge: "Official OTR",
-    desc: "CSE Prelims/Mains, NDA, CDS, CAPF, CMS, IES & OTR portal.",
-    specs: "Photo: 20–300 KB (350×350 px min) • Sign: 20–300 KB",
+    title: "Railway (RRB)",
+    icon: "🚆",
+    badge: "30–70 KB",
+    desc: "RRB NTPC, Group D, ALP, Technician, and RPF.",
+    specs: "Photo 30–70 KB, 35×45 mm • Sign 30–70 KB",
     links: [
-      { name: "UPSC Photo & Sign Resizer", href: "/upsc-photo-size" },
+      { name: "RRB NTPC", href: "/rrb-ntpc-photo-resizer" },
+      { name: "RRB Group D", href: "/rrb-group-d-photo-resizer" },
+      { name: "RRB ALP", href: "/rrb-alp-photo-resizer" },
+      { name: "RRB Technician", href: "/rrb-technician-exam-photo-resizer" },
     ],
   },
   {
-    title: "Banking & Insurance",
+    title: "Banking",
     icon: "🏦",
-    badge: "IBPS / SBI",
-    desc: "IBPS PO, Clerk, SO, RRB, SBI PO/Clerk, RBI Grade B & NICL AO.",
-    specs: "Photo: 20–50 KB • Sign: 10–20 KB • Thumb & Declaration: 20–50 KB",
+    badge: "20–50 KB",
+    desc: "SBI Clerk, IBPS Clerk, IBPS RRB, and IBPS PO.",
+    specs: "Photo 20–50 KB • Sign 10–20 KB • Thumb and declaration",
     links: [
-      { name: "IBPS Signature Resize", href: "/signature-resize-ibps" },
-      { name: "IBPS Declaration Resizer", href: "/ibps-handwritten-declaration-resizer" },
+      { name: "SBI Clerk", href: "/sbi-clerk-photo-resizer" },
+      { name: "IBPS Clerk", href: "/ibps-clerk-photo-resizer" },
+      { name: "IBPS PO", href: "/ibps-po-photo-resizer" },
+      { name: "IBPS Signature", href: "/signature-resize-ibps" },
       { name: "Left Thumb Impression", href: "/resize-left-thumb-impression-ibps" },
     ],
   },
   {
-    title: "Railways Recruitment (RRB)",
-    icon: "🚆",
-    badge: "RRB NTPC & ALP",
-    desc: "RRB ALP, Technician, NTPC, Group D & RPF Constable/SI.",
-    specs: "Photo: 30–70 KB (35×45 mm) • Sign: 30–70 KB (JPG)",
+    title: "UP Exams",
+    icon: "📋",
+    badge: "UP Police",
+    desc: "UP Police Constable, UPSSSC PET, and UPPSC / PCS.",
+    specs: "JPG photo and signature • Limits follow your notice",
     links: [
-      { name: "RRB ALP Photo Resizer", href: "/rrb-alp-photo-resizer" },
-      { name: "RRB Technician Resizer", href: "/rrb-technician-exam-photo-resizer" },
+      { name: "UP Police Constable", href: "/up-police-photo-resizer" },
+      { name: "UPSSSC PET", href: "/upsssc-pet-photo-resizer" },
+      { name: "UPPSC / PCS", href: "/uppsc-pcs-photo-resizer" },
     ],
   },
   {
-    title: "Teaching & Entrance Exams",
+    title: "Bihar Police",
+    icon: "👮",
+    badge: "Constable",
+    desc: "Bihar Police Constable, SI, and other CSBC posts.",
+    specs: "JPG photo and signature • Limits follow your notice",
+    links: [{ name: "Bihar Police", href: "/bihar-police-photo-resizer" }],
+  },
+  {
+    title: "Teaching Exams",
     icon: "🎓",
-    badge: "NTA / CBSE",
-    desc: "CTET, CSIR NET, UGC NET, NEET UG, JEE Main, CUET & GATE.",
-    specs: "Photo: 10–200 KB • Signature: 4–30 KB • White Background",
+    badge: "CTET / REET",
+    desc: "CTET, REET, and CSIR NET applications.",
+    specs: "Photo 10–100 KB • Sign 4–30 KB • Plain background",
     links: [
       { name: "CTET Photo Resizer", href: "/ctet-photo-resizer" },
-      { name: "CSIR NET Signature Resizer", href: "/csir-net-signature-resizer" },
+      { name: "REET Photo Resizer", href: "/reet-photo-resizer" },
+      { name: "CSIR NET Signature", href: "/csir-net-signature-resizer" },
     ],
   },
   {
-    title: "Police & Defence Recruitment",
-    icon: "👮",
-    badge: "Army & Police",
-    desc: "Indian Army Agniveer, AFCAT, Delhi Police, Karnataka Police & CAPF.",
-    specs: "Photo: 20–50 KB • Sign: 10–20 KB • Clear Headshot",
-    links: [
-      { name: "Army Agniveer Resizer", href: "/army-agniveer-photo-resizer" },
-      { name: "AFCAT Photo Resizer", href: "/afcat-photo-resizer" },
-      { name: "Karnataka Police Resizer", href: "/karnataka-police-photo-resizer" },
-    ],
+    title: "UPSC",
+    icon: "⚖️",
+    badge: "20–300 KB",
+    desc: "UPSC CSE, NDA, CDS, CAPF, and OTR.",
+    specs: "Photo 20–300 KB, 350×350 px minimum • Sign 20–300 KB",
+    links: [{ name: "UPSC Photo & Sign", href: "/upsc-photo-size" }],
   },
   {
-    title: "State PSC & Subordinate Boards",
-    icon: "📄",
-    badge: "State Exams",
-    desc: "UKSSSC, UPPSC, BPSC, MPSC, TNPSC, APPSC, RPSC & HSSC.",
-    specs: "Photo: 20–50 KB (200×230 px) • Sign: 10–20 KB",
+    title: "Defence",
+    icon: "🎖️",
+    badge: "Army / Air Force",
+    desc: "Army Agniveer and AFCAT.",
+    specs: "Photo 20–50 KB • Sign 10–20 KB • Clear headshot",
     links: [
-      { name: "UKSSSC Photo Resizer", href: "/uksssc-photo-resizer" },
-    ],
-  },
-  {
-    title: "Govt ID & License Portals",
-    icon: "🪪",
-    badge: "Sarathi & NVSP",
-    desc: "Voter ID NVSP portal, Driving License Sarathi Parivahan & Passport Size.",
-    specs: "Photo: Under 50 KB • Correct Aspect Ratio & Dimensions",
-    links: [
-      { name: "Voter ID Photo Size Reducer", href: "/voter-id-photo-size-reducer" },
-      { name: "Driving License Sarathi Resizer", href: "/resize-photo-driving-license-sarathi" },
-      { name: "Passport Size Photo Maker", href: "/passport-size-photo-maker" },
+      { name: "Army Agniveer", href: "/army-agniveer-photo-resizer" },
+      { name: "AFCAT", href: "/afcat-photo-resizer" },
     ],
   },
 ];
 
-const EXAM_SPECIFICATIONS_TABLE = [
+const SPEC_TABLE = [
   {
-    exam: "SSC (CGL / CHSL / MTS / GD / CPO)",
-    photoSize: "20 KB – 50 KB",
-    photoDim: "100×120 px / 200×230 px (3.5 × 4.5 cm)",
-    signSize: "10 KB – 20 KB",
-    signDim: "140×60 px",
-    bg: "White / Light Plain",
-    format: "JPG / JPEG",
-    actionLink: "/ssc-photo-resizer",
-  },
-  {
-    exam: "UPSC (CSE / NDA / CDS / CAPF / OTR)",
-    photoSize: "20 KB – 300 KB",
-    photoDim: "350×350 px (min) to 1000×1000 px",
-    signSize: "20 KB – 300 KB",
-    signDim: "350×350 px (min) to 1000×1000 px",
-    bg: "White / Light",
-    format: "JPG / JPEG",
-    actionLink: "/upsc-photo-size",
-  },
-  {
-    exam: "IBPS (PO / Clerk / SO / RRB)",
-    photoSize: "20 KB – 50 KB",
-    photoDim: "200×230 px (4.5 × 3.5 cm)",
-    signSize: "10 KB – 20 KB",
-    signDim: "140×60 px",
-    bg: "White",
-    format: "JPG / JPEG",
-    actionLink: "/signature-resize-ibps",
-  },
-  {
-    exam: "Railway RRB (ALP / Technician / NTPC)",
-    photoSize: "30 KB – 70 KB",
-    photoDim: "35 × 45 mm (300 DPI)",
-    signSize: "30 KB – 70 KB",
-    signDim: "50 × 20 mm",
-    bg: "White / Off-White",
-    format: "JPG / JPEG",
-    actionLink: "/rrb-alp-photo-resizer",
-  },
-  {
-    exam: "CTET (CBSE Teacher Eligibility Test)",
-    photoSize: "10 KB – 100 KB",
-    photoDim: "3.5 × 4.5 cm (width × height)",
-    signSize: "4 KB – 30 KB",
-    signDim: "3.5 × 1.5 cm",
-    bg: "White",
-    format: "JPG / JPEG",
-    actionLink: "/ctet-photo-resizer",
-  },
-  {
-    exam: "NTA NEET UG / JEE Main",
-    photoSize: "10 KB – 200 KB",
-    photoDim: "Passport & Postcard (4×6 in)",
-    signSize: "4 KB – 30 KB",
-    signDim: "140×60 px (Black ink)",
-    bg: "White (80% Face)",
-    format: "JPG / JPEG",
-    actionLink: "/reduce-photo-size-50kb",
-  },
-  {
-    exam: "Indian Army (Agniveer Recruitment)",
-    photoSize: "20 KB – 50 KB",
-    photoDim: "200×230 px (White background)",
-    signSize: "10 KB – 20 KB",
-    signDim: "140×60 px",
-    bg: "White",
-    format: "JPG / JPEG",
-    actionLink: "/army-agniveer-photo-resizer",
-  },
-  {
-    exam: "UKSSSC / State PSC Forms",
-    photoSize: "20 KB – 50 KB",
+    exam: "SSC (CGL, CHSL, MTS, GD)",
+    photoSize: "20–50 KB",
     photoDim: "200×230 px",
-    signSize: "10 KB – 20 KB",
+    signSize: "10–20 KB",
     signDim: "140×60 px",
-    bg: "White / Light",
-    format: "JPG / JPEG",
-    actionLink: "/uksssc-photo-resizer",
+    bg: "White / light",
+    href: "/ssc-photo-resizer",
+  },
+  {
+    exam: "RRB (NTPC, Group D, ALP)",
+    photoSize: "30–70 KB",
+    photoDim: "35×45 mm",
+    signSize: "30–70 KB",
+    signDim: "50×20 mm",
+    bg: "White / off-white",
+    href: "/rrb-ntpc-photo-resizer",
+  },
+  {
+    exam: "SBI & IBPS (Clerk, RRB, PO)",
+    photoSize: "20–50 KB",
+    photoDim: "200×230 px",
+    signSize: "10–20 KB",
+    signDim: "140×60 px",
+    bg: "White",
+    href: "/signature-resize-ibps",
+  },
+  {
+    exam: "UPSC (CSE, NDA, CDS, OTR)",
+    photoSize: "20–300 KB",
+    photoDim: "350×350 px min.",
+    signSize: "20–300 KB",
+    signDim: "350×350 px min.",
+    bg: "White / light",
+    href: "/upsc-photo-size",
+  },
+  {
+    exam: "CTET",
+    photoSize: "10–100 KB",
+    photoDim: "3.5×4.5 cm",
+    signSize: "4–30 KB",
+    signDim: "3.5×1.5 cm",
+    bg: "White",
+    href: "/ctet-photo-resizer",
   },
 ];
 
-const EXAM_FEATURES = [
+const FEATURES = [
   {
-    icon: <Sliders className="text-blue-600 dark:text-blue-400" size={24} />,
-    title: "Exact KB Target Compression",
-    desc: "Compress images directly to under 20 KB, 50 KB, 100 KB, or 300 KB limits. Our lossless compression ensures crisp clarity without fuzzy text or blurred face details.",
+    icon: Sliders,
+    title: "Exact KB targets",
+    desc: "Compress to 20, 50, 100, or 300 KB with no visible blur.",
   },
   {
-    icon: <Maximize className="text-indigo-600 dark:text-indigo-400" size={24} />,
-    title: "Official Aspect Ratio & Pixel Lock",
-    desc: "Choose from pre-calibrated exam ratios (3.5×4.5 cm, 200×230 px, 140×60 px, 350×350 px) or enter custom width and height in pixels with 100% precision.",
+    icon: Maximize,
+    title: "Locked pixel sizes",
+    desc: "Load official dimensions for SSC, RRB, banking, and UPSC in one tap.",
   },
   {
-    icon: <FileSignature className="text-emerald-600 dark:text-emerald-400" size={24} />,
-    title: "Signature & Thumb Enhancer",
-    desc: "Enhance faint ink signatures, scanned blue/black ballpoint signatures, and left thumb impressions with high-contrast optimization for clear verification.",
-  },
-  {
-    icon: <Calendar className="text-amber-600 dark:text-amber-400" size={24} />,
-    title: "Name & Date on Photo (DOP)",
-    desc: "Easily overlay the candidate's name and date of photo capture at the bottom of your passport photo to comply with mandatory SSC and State PSC notification rules.",
-  },
-  {
-    icon: <Sparkles className="text-sky-600 dark:text-sky-400" size={24} />,
-    title: "1-Click White Background",
-    desc: "Remove cluttered or uneven backgrounds and replace them with a clean, compliant plain white background using our instant on-device AI background remover.",
-  },
-  {
-    icon: <ShieldCheck className="text-violet-600 dark:text-violet-400" size={24} />,
-    title: "100% Client-Side Privacy",
-    desc: "All image editing runs inside your browser using WebAssembly. No sensitive exam documents, ID cards, or facial photos are ever uploaded to any cloud server.",
+    icon: Sparkles,
+    title: "Plain background in one click",
+    desc: "Replace a cluttered backdrop with white. The AI runs on your device.",
   },
 ];
 
-const COMPARISON = [
+const REJECTIONS = [
   {
-    feature: "100% Free & Unlimited",
-    us: true,
-    photoshop: false,
-    canva: "Partial",
-    removebg: "Partial",
+    title: "The file is slightly too large",
+    desc: "A 50.2 KB photo fails a 50 KB limit. Our compressor always lands below your ceiling.",
   },
   {
-    feature: "Zero Server Uploads (100% Private)",
-    us: true,
-    photoshop: true,
-    canva: false,
-    removebg: false,
+    title: "The face looks stretched",
+    desc: "Forcing a width distorts proportions. The aspect lock keeps your face natural.",
   },
   {
-    feature: "Exact KB Target Compression (20KB / 50KB)",
-    us: true,
-    photoshop: "Manual",
-    canva: false,
-    removebg: false,
+    title: "The signature looks faint",
+    desc: "Phone photos wash out ink. We boost edge contrast before compressing.",
   },
   {
-    feature: "Pre-loaded Govt Exam Presets",
-    us: true,
-    photoshop: false,
-    canva: false,
-    removebg: false,
-  },
-  {
-    feature: "Signature & Thumb Impression Mode",
-    us: true,
-    photoshop: "Manual",
-    canva: false,
-    removebg: false,
-  },
-  {
-    feature: "AI White Background Replacement",
-    us: true,
-    photoshop: true,
-    canva: "Paid",
-    removebg: true,
-  },
-  {
-    feature: "No Sign-Up or App Install Required",
-    us: true,
-    photoshop: false,
-    canva: false,
-    removebg: false,
-  },
-  {
-    feature: "Works on Mobile & Desktop",
-    us: true,
-    photoshop: false,
-    canva: true,
-    removebg: true,
+    title: "The format is wrong",
+    desc: "Most portals accept only JPG. We export clean JPG files every time.",
   },
 ];
 
-function CellIcon({ val }: { val: boolean | string }) {
-  if (val === true)
-    return <span className="text-blue-600 dark:text-blue-400 font-bold text-lg">✓</span>;
-  if (val === false)
-    return <span className="text-red-400 font-bold text-lg">✗</span>;
-  return <span className="text-amber-500 text-xs font-semibold">{val}</span>;
+const EEAT = [
+  {
+    icon: BadgeCheck,
+    title: "Specs checked against notices",
+    desc: "Our editors compare every preset with the latest official recruitment notice.",
+  },
+  {
+    icon: RefreshCw,
+    title: "Updated each recruitment cycle",
+    desc: "When a board changes its limits, we update the preset and the date below.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Private by design",
+    desc: "Your images never leave your browser. We cannot see them, so we cannot leak them.",
+  },
+];
+
+const POPULAR_LINKS: [string, string][] = [
+  ["/photo-resizer", "Photo Resizer"],
+  ["/signature-resize-ibps", "Signature Resizer"],
+  ["/compress-image", "Photo Compressor"],
+  ["/reduce-photo-size-50kb", "Reduce to 50 KB"],
+  ["/resize-photo-20kb", "Resize to 20 KB"],
+  ["/ssc-photo-resizer", "SSC Photo"],
+  ["/rrb-ntpc-photo-resizer", "RRB NTPC Photo"],
+  ["/sbi-clerk-photo-resizer", "SBI Clerk Photo"],
+  ["/up-police-photo-resizer", "UP Police Photo"],
+  ["/ctet-photo-resizer", "CTET Photo"],
+  ["/free-background-remover", "Background Remover"],
+];
+
+/* ───────────────────────── SMALL HELPERS ───────────────────────── */
+
+function SectionHeading({
+  eyebrow,
+  title,
+  sub,
+  center = true,
+}: {
+  eyebrow?: string;
+  title: string;
+  sub?: string;
+  center?: boolean;
+}) {
+  return (
+    <div className={`max-w-2xl mb-8 sm:mb-10 ${center ? "text-center mx-auto" : ""}`}>
+      {eyebrow && (
+        <span className="text-xs font-semibold text-[#16A34A] mb-1.5 block">{eyebrow}</span>
+      )}
+      <h2 className="text-2xl sm:text-3xl font-semibold text-[#18181B] tracking-tight">
+        {title}
+      </h2>
+      {sub && <p className="mt-2 text-sm sm:text-base text-[#52525B]">{sub}</p>}
+    </div>
+  );
 }
+
+/* ───────────────────────── PAGE ───────────────────────── */
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-bg-root font-sans transition-colors duration-300">
+    <div className="min-h-screen bg-[#FFFFFF] text-[#18181B]">
       <script
-        id="home-faq-schema"
+        id="home-json-ld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(homeFaqSchema),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="max-w-[1400px] mx-auto">
-        <HeroUploader />
 
-        {/* ══════════════════════════════════════════
-            EXAM CATEGORY CARDS SECTION
-        ══════════════════════════════════════════ */}
-        <section className="mt-14 max-w-6xl mx-auto px-4 md:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wider mb-3">
-              <Award size={14} /> Exam Presets &amp; Direct Resizers
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Resize Photos &amp; Signatures for Every Major Examination
-            </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-              Select your examination category below to view specific guidelines and access pre-configured dimensions and file size limits.
-            </p>
+      <main className="max-w-[1200px] mx-auto px-4 sm:px-6">
+        {/* HERO */}
+        <HeroUploader
+          title="Photo & Signature Resizer for Indian Exam Forms"
+          subtitle="Resize photos, signatures, and thumb impressions for SSC, RRB, IBPS, UPSC & state exams to exact KB limits."
+          badgeText="Fast • Simple • 100% Private"
+        />
+
+        {/* Intro + trust strip */}
+        <section className="mt-8 sm:mt-10" aria-label="Why use PhotoResizer">
+          <p className="max-w-3xl mx-auto text-center text-sm sm:text-base text-[#52525B] leading-relaxed">
+            PhotoResizer helps Indian aspirants prepare photos and signatures for SSC, RRB,
+            banking, police, teaching, and state recruitment forms. Pick your exam, check the
+            KB limit, and download a JPG that the portal accepts on the first try.
+          </p>
+
+          <ul className="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-3">
+            {TRUST.map(({ icon: Icon, label }) => (
+              <li
+                key={label}
+                className="flex items-center gap-2.5 bg-[#F0FDF4] border border-[#BBF7D0] rounded-xl px-3.5 py-3"
+              >
+                <Icon size={18} className="text-[#16A34A] flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-semibold text-[#15803D]">{label}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Three core tools */}
+        <section className="mt-14 sm:mt-16 pt-8 border-t border-[#E4E4E7]" id="tools">
+          <SectionHeading
+            title="Three tools for every exam form"
+            sub="Start with the tool that matches your upload field."
+          />
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-5">
+            {TOOLS.map(({ icon: Icon, title, desc, href, cta }) => (
+              <Link
+                key={title}
+                href={href}
+                className="group bg-[#FFFFFF] rounded-xl p-6 border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:border-[#BBF7D0] transition-colors flex flex-col"
+              >
+                <div className="w-10 h-10 rounded-xl bg-[#F0FDF4] border border-[#BBF7D0] flex items-center justify-center mb-4">
+                  <Icon size={20} className="text-[#16A34A]" />
+                </div>
+                <h3 className="font-semibold text-base text-[#18181B] mb-2">{title}</h3>
+                <p className="text-sm text-[#52525B] leading-relaxed flex-1">{desc}</p>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#16A34A] group-hover:text-[#15803D]">
+                  {cta}
+                  <ArrowRight
+                    size={14}
+                    className="transform group-hover:translate-x-0.5 transition-transform"
+                  />
+                </span>
+              </Link>
+            ))}
           </div>
+        </section>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {/* Exam finder */}
+        <section className="mt-14 sm:mt-16" id="exams">
+          <SectionHeading
+            title="Find your exam"
+            sub="Each page loads the pixel size and KB limit for that recruitment."
+          />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {EXAM_CATEGORIES.map((cat) => (
               <div
                 key={cat.title}
-                className="bg-white dark:bg-slate-800/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-blue-400 dark:hover:border-blue-500 transition-all flex flex-col justify-between"
+                className="bg-[#FFFFFF] rounded-xl p-5 border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:border-[#BBF7D0] transition-colors flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-3xl">{cat.icon}</span>
-                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
+                    <span className="text-2xl" aria-hidden="true">
+                      {cat.icon}
+                    </span>
+                    <span className="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-[#F0FDF4] text-[#15803D] border border-[#BBF7D0]">
                       {cat.badge}
                     </span>
                   </div>
-                  <h3 className="font-bold text-base text-slate-900 dark:text-white mb-1.5">
-                    {cat.title}
-                  </h3>
-                  <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+                  <h3 className="font-semibold text-base text-[#18181B] mb-1.5">{cat.title}</h3>
+                  <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed mb-3">
                     {cat.desc}
                   </p>
-                  <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 mb-4">
-                    <p className="text-[11px] font-medium text-blue-700 dark:text-blue-300">
-                      {cat.specs}
-                    </p>
+                  <div className="p-2.5 rounded-xl bg-[#FAFAFA] border border-[#F4F4F5] mb-4">
+                    <p className="text-[11px] font-medium text-[#15803D]">{cat.specs}</p>
                   </div>
                 </div>
-
-                <div className="space-y-1.5 pt-2 border-t border-slate-100 dark:border-slate-700/60">
+                <div className="space-y-0.5 pt-2 border-t border-[#F4F4F5]">
                   {cat.links.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="inline-flex items-center justify-between w-full text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 py-1 transition-colors group"
+                      className="inline-flex items-center justify-between w-full text-xs sm:text-sm font-semibold text-[#16A34A] hover:text-[#15803D] py-1.5 transition-colors group"
                     >
                       <span>{link.name}</span>
-                      <ArrowRight size={13} className="transform group-hover:translate-x-0.5 transition-transform" />
+                      <ArrowRight
+                        size={13}
+                        className="transform group-hover:translate-x-0.5 transition-transform"
+                      />
                     </Link>
                   ))}
                 </div>
@@ -460,61 +524,54 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ══════════════════════════════════════════
-            OFFICIAL EXAM SPECIFICATIONS TABLE
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-6xl mx-auto px-4 md:px-6">
-          <div className="bg-white dark:bg-slate-800/80 rounded-3xl p-6 sm:p-8 md:p-10 border border-slate-200 dark:border-slate-700 shadow-sm">
-            <div className="max-w-3xl mb-8">
-              <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2 block">
-                Official Guidelines 2026–2027
+        {/* Spec chart */}
+        <section className="mt-14 sm:mt-16" id="size-chart">
+          <div className="bg-[#FFFFFF] rounded-xl p-5 sm:p-8 border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+            <div className="max-w-2xl mb-6">
+              <span className="text-xs font-semibold text-[#16A34A] mb-1.5 block">
+                Official standards
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">
-                Government Exam Photo &amp; Signature Specification Chart
+              <h2 className="text-2xl sm:text-3xl font-semibold text-[#18181B] tracking-tight">
+                Photo and signature size chart
               </h2>
-              <p className="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-                Official upload requirements published across Staff Selection Commission, UPSC, Banking, Railway, and State Recruitment boards.
+              <p className="mt-1.5 text-sm text-[#52525B]">
+                Compare file sizes, dimensions, and backgrounds across major exams. Last
+                reviewed {LAST_REVIEWED}.
               </p>
             </div>
 
-            <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700">
-              <table className="w-full text-left text-xs sm:text-sm">
+            <div className="overflow-x-auto rounded-xl border border-[#E4E4E7]">
+              <table className="w-full min-w-[640px] text-left text-xs sm:text-sm">
+                <caption className="sr-only">
+                  Photo and signature size requirements for Indian recruitment exams
+                </caption>
                 <thead>
-                  <tr className="bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
-                    <th className="p-3.5 sm:p-4">Examination / Agency</th>
-                    <th className="p-3.5 sm:p-4">Photo File Size</th>
-                    <th className="p-3.5 sm:p-4">Photo Dimensions</th>
-                    <th className="p-3.5 sm:p-4">Signature Specs</th>
-                    <th className="p-3.5 sm:p-4">Background</th>
-                    <th className="p-3.5 sm:p-4 text-center">Action</th>
+                  <tr className="bg-[#FAFAFA] text-[#18181B] font-semibold border-b border-[#E4E4E7]">
+                    <th scope="col" className="p-3.5 sm:p-4">Exam</th>
+                    <th scope="col" className="p-3.5 sm:p-4">Photo size</th>
+                    <th scope="col" className="p-3.5 sm:p-4">Photo dimensions</th>
+                    <th scope="col" className="p-3.5 sm:p-4">Signature</th>
+                    <th scope="col" className="p-3.5 sm:p-4">Background</th>
+                    <th scope="col" className="p-3.5 sm:p-4 text-center">Action</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-100 dark:divide-slate-700/60">
-                  {EXAM_SPECIFICATIONS_TABLE.map((row, idx) => (
-                    <tr
-                      key={row.exam}
-                      className={idx % 2 === 0 ? "bg-white dark:bg-slate-800/40" : "bg-slate-50/50 dark:bg-slate-800/80"}
-                    >
-                      <td className="p-3.5 sm:p-4 font-semibold text-slate-900 dark:text-white">
+                <tbody className="divide-y divide-[#F4F4F5]">
+                  {SPEC_TABLE.map((row, idx) => (
+                    <tr key={row.exam} className={idx % 2 === 0 ? "bg-[#FFFFFF]" : "bg-[#FAFAFA]/50"}>
+                      <th scope="row" className="p-3.5 sm:p-4 font-semibold text-[#18181B]">
                         {row.exam}
+                      </th>
+                      <td className="p-3.5 sm:p-4 text-[#15803D] font-semibold">{row.photoSize}</td>
+                      <td className="p-3.5 sm:p-4 text-[#52525B]">{row.photoDim}</td>
+                      <td className="p-3.5 sm:p-4 text-[#52525B]">
+                        <span className="font-semibold text-[#18181B]">{row.signSize}</span>
+                        <span className="block text-[11px] text-[#71717A]">{row.signDim}</span>
                       </td>
-                      <td className="p-3.5 sm:p-4 text-blue-700 dark:text-blue-300 font-bold">
-                        {row.photoSize}
-                      </td>
-                      <td className="p-3.5 sm:p-4 text-slate-700 dark:text-slate-300">
-                        {row.photoDim}
-                      </td>
-                      <td className="p-3.5 sm:p-4 text-slate-700 dark:text-slate-300">
-                        <span className="font-semibold">{row.signSize}</span>
-                        <span className="block text-[11px] text-slate-500">{row.signDim}</span>
-                      </td>
-                      <td className="p-3.5 sm:p-4 text-slate-600 dark:text-slate-400">
-                        {row.bg}
-                      </td>
+                      <td className="p-3.5 sm:p-4 text-[#52525B]">{row.bg}</td>
                       <td className="p-3.5 sm:p-4 text-center">
                         <Link
-                          href={row.actionLink}
-                          className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 rounded-lg text-xs font-bold transition-all"
+                          href={row.href}
+                          className="inline-flex items-center px-3 py-1.5 bg-[#F0FDF4] hover:bg-[#16A34A] text-[#15803D] hover:text-[#FFFFFF] rounded-xl text-xs font-semibold transition-colors"
                         >
                           Resize
                         </Link>
@@ -525,438 +582,192 @@ export default function Home() {
               </table>
             </div>
 
-            <div className="mt-4 p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 flex items-start gap-2.5 text-xs text-amber-900 dark:text-amber-300">
-              <AlertTriangle size={16} className="text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+            <div className="mt-4 p-3.5 rounded-xl bg-[#FAFAFA] border border-[#E4E4E7] flex items-start gap-2.5 text-xs text-[#52525B]">
+              <AlertTriangle size={15} className="text-[#D97706] flex-shrink-0 mt-0.5" />
               <span>
-                <strong>Important Note:</strong> Always check the specific official exam notification before final submission, as individual recruitment cycles may introduce minor specification updates.
+                <strong>Note:</strong> Boards change limits between cycles. Read your official
+                notification before you submit.
               </span>
             </div>
           </div>
         </section>
 
-        {/* ══════════════════════════════════════════
-            FEATURES BUILT FOR EXAM ASPIRANTS
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-6xl mx-auto px-4 md:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2 block">
-              Why Candidates Trust photoresizer
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Features Engineered for Exam Portal Compliance
-            </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-              Avoid application rejections with tools specifically designed to meet strict government form upload standards.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {EXAM_FEATURES.map((f) => (
+        {/* Features */}
+        <section className="mt-14 sm:mt-16">
+          <SectionHeading
+            title="Built to prevent rejected uploads"
+            sub="Every feature serves one goal: a file that your portal accepts."
+          />
+          <div className="grid sm:grid-cols-3 gap-4 sm:gap-5">
+            {FEATURES.map(({ icon: Icon, title, desc }) => (
               <div
-                key={f.title}
-                className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-blue-300 dark:hover:border-blue-600 transition-colors"
+                key={title}
+                className="bg-[#FFFFFF] p-6 rounded-xl border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
               >
-                <div className="w-12 h-12 rounded-xl bg-slate-50 dark:bg-slate-700/60 border border-slate-100 dark:border-slate-600 flex items-center justify-center mb-4">
-                  {f.icon}
+                <div className="w-10 h-10 rounded-xl bg-[#F0FDF4] border border-[#BBF7D0] flex items-center justify-center mb-4">
+                  <Icon size={20} className="text-[#16A34A]" />
                 </div>
-                <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-2">
-                  {f.title}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  {f.desc}
-                </p>
+                <h3 className="font-semibold text-base text-[#18181B] mb-2">{title}</h3>
+                <p className="text-sm text-[#52525B] leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ══════════════════════════════════════════
-            HOW TO USE IN 3 STEPS
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-6xl mx-auto px-4 md:px-6">
-          <div className="bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 dark:from-slate-800 dark:via-slate-850 dark:to-slate-900 rounded-3xl p-8 md:p-12 border border-slate-200 dark:border-slate-700">
-            <div className="text-center max-w-2xl mx-auto mb-10">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-                How to Resize Your Exam Photo in 3 Simple Steps
-              </h2>
-              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-                Fast, automated, and error-free preparation for all online application forms.
-              </p>
-            </div>
-
-            <div className="grid sm:grid-cols-3 gap-6">
+        {/* How it works */}
+        <section className="mt-14 sm:mt-16" id="how-it-works">
+          <div className="bg-[#FAFAFA] rounded-xl p-6 sm:p-10 border border-[#E4E4E7]">
+            <SectionHeading title="Resize in three steps" sub="It takes under a minute." />
+            <ol className="grid sm:grid-cols-3 gap-4 sm:gap-5">
               {[
                 {
-                  step: "01",
-                  title: "Upload Photo or Signature",
-                  body: "Drag and drop your JPG, PNG, or WEBP image. Works with phone camera photos, scanned signatures, and thumb impressions.",
+                  step: "Step 1",
+                  title: "Upload your image",
+                  body: "Drop a JPG, PNG, or WEBP file. It works on phones, tablets, and computers.",
                 },
                 {
-                  step: "02",
-                  title: "Select Dimensions & KB Limit",
-                  body: "Choose an exam preset (SSC, UPSC, IBPS) or manually set the required pixel dimensions and target file size (e.g. 20KB or 50KB).",
+                  step: "Step 2",
+                  title: "Choose your exam",
+                  body: "Pick a preset, or enter your own pixel size and maximum KB.",
                 },
                 {
-                  step: "03",
-                  title: "Download Form-Ready JPG",
-                  body: "Download your perfectly sized, high-clarity image. Upload directly to the exam portal with zero risk of form rejection.",
+                  step: "Step 3",
+                  title: "Download the JPG",
+                  body: "Save the file and upload it straight to your application portal.",
                 },
               ].map(({ step, title, body }) => (
-                <div
+                <li
                   key={step}
-                  className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 relative overflow-hidden shadow-sm"
+                  className="bg-[#FFFFFF] p-5 sm:p-6 rounded-xl border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
                 >
-                  <span className="text-4xl font-black text-blue-100 dark:text-slate-700 select-none leading-none mb-3 block">
+                  <span className="text-xs font-bold text-[#16A34A] bg-[#F0FDF4] px-2 py-1 rounded-md border border-[#BBF7D0] mb-3 inline-block">
                     {step}
                   </span>
-                  <h3 className="font-bold text-base text-slate-900 dark:text-white mb-2">
-                    {title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    {body}
-                  </p>
-                </div>
+                  <h3 className="font-semibold text-base text-[#18181B] mb-2">{title}</h3>
+                  <p className="text-sm text-[#52525B] leading-relaxed">{body}</p>
+                </li>
               ))}
-            </div>
+            </ol>
           </div>
         </section>
 
-        {/* ══════════════════════════════════════════
-            COMMON REJECTION REASONS GUIDE
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-6xl mx-auto px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-8 items-center bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-10 border border-slate-200 dark:border-slate-700 shadow-sm">
+        {/* Rejection reasons */}
+        <section className="mt-14 sm:mt-16">
+          <div className="grid md:grid-cols-2 gap-8 items-start bg-[#FFFFFF] rounded-xl p-6 sm:p-10 border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-400 mb-2 block">
-                Avoid Application Disqualification
+              <span className="text-xs font-semibold text-[#DC2626] mb-2 block">
+                Avoid disqualification
               </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4 leading-tight">
-                Why Do Exam Portals Reject Uploaded Photos &amp; Signatures?
+              <h2 className="text-2xl sm:text-3xl font-semibold text-[#18181B] mb-3 leading-tight">
+                Why do portals reject exam photos?
               </h2>
-              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
-                Every year, thousands of candidates have their candidature cancelled or admit cards withheld due to improper photograph or signature uploads. Here are the top errors and how our tool eliminates them:
+              <p className="text-sm text-[#52525B] leading-relaxed mb-6">
+                Candidates lose applications to small upload errors every year. These four
+                mistakes cause most rejections, and PhotoResizer fixes each one.
               </p>
-
-              <ul className="space-y-3.5">
-                {[
-                  {
-                    title: "File Size Slightly Over the Limit",
-                    desc: "A 50.2 KB photo will be immediately rejected by an SSC or IBPS form requiring ≤ 50 KB. Our slider accurately caps file sizes below the ceiling.",
-                  },
-                  {
-                    title: "Blurred or Faint Signatures",
-                    desc: "Low-light smartphone pictures of signatures are often unreadable. Our tool maintains sharpness during compression.",
-                  },
-                  {
-                    title: "Distorted Aspect Ratio",
-                    desc: "Stretching or squishing images to match pixel limits distorts facial geometry. Our aspect-ratio lock preserves natural proportions.",
-                  },
-                  {
-                    title: "Wrong File Format (.png or .jpeg)",
-                    desc: "Many portals strictly require .jpg extension. We export standardized JPG files recognized by all government servers.",
-                  },
-                ].map((item) => (
+              <ul className="space-y-4">
+                {REJECTIONS.map((item) => (
                   <li key={item.title} className="flex items-start gap-3">
-                    <CheckCircle className="text-emerald-500 flex-shrink-0 mt-0.5" size={18} />
+                    <CheckCircle className="text-[#16A34A] flex-shrink-0 mt-0.5" size={17} />
                     <div>
-                      <h4 className="text-sm font-bold text-slate-900 dark:text-white">{item.title}</h4>
-                      <p className="text-xs text-slate-600 dark:text-slate-400">{item.desc}</p>
+                      <h3 className="text-sm font-semibold text-[#18181B]">{item.title}</h3>
+                      <p className="text-xs sm:text-sm text-[#52525B]">{item.desc}</p>
                     </div>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-slate-50 dark:bg-slate-900/60 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-700/60">
-              <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-4">
-                Quick Size Reducers:
-              </h3>
+            <div className="bg-[#FAFAFA] p-5 sm:p-8 rounded-xl border border-[#E4E4E7]">
+              <h3 className="font-semibold text-base text-[#18181B] mb-4">Quick size targets</h3>
               <div className="grid grid-cols-2 gap-3">
-                <Link
-                  href="/reduce-photo-size-50kb"
-                  className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 text-center transition-all group"
-                >
-                  <span className="text-2xl font-black text-blue-600 dark:text-blue-400 block mb-1">50 KB</span>
-                  <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">Reduce to 50KB &rarr;</span>
-                </Link>
-                <Link
-                  href="/resize-photo-20kb"
-                  className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 text-center transition-all group"
-                >
-                  <span className="text-2xl font-black text-indigo-600 dark:text-indigo-400 block mb-1">20 KB</span>
-                  <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">Resize to 20KB &rarr;</span>
-                </Link>
-                <Link
-                  href="/signature-resize-ibps"
-                  className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 text-center transition-all group"
-                >
-                  <span className="text-2xl font-black text-emerald-600 dark:text-emerald-400 block mb-1">Sign</span>
-                  <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">IBPS Signature &rarr;</span>
-                </Link>
-                <Link
-                  href="/passport-size-photo-maker"
-                  className="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 text-center transition-all group"
-                >
-                  <span className="text-2xl font-black text-amber-600 dark:text-amber-400 block mb-1">Passport</span>
-                  <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">Passport Maker &rarr;</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ══════════════════════════════════════════
-            COMPARISON TABLE
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-6xl mx-auto px-4 md:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              photoresizer vs. Other Tools
-            </h2>
-            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-              Why candidates prefer our client-side editor over complicated desktop software or ad-heavy uploaders.
-            </p>
-          </div>
-
-          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800">
-            <table className="w-full text-xs sm:text-sm">
-              <thead>
-                <tr className="bg-slate-100 dark:bg-slate-900/80">
-                  <th className="text-left p-4 font-bold text-slate-700 dark:text-slate-300">
-                    Feature
-                  </th>
-                  <th className="p-4 font-bold text-blue-700 dark:text-blue-400 text-center">
-                    photoresizer
-                  </th>
-                  <th className="p-4 font-bold text-slate-600 dark:text-slate-400 text-center">
-                    Photoshop
-                  </th>
-                  <th className="p-4 font-bold text-slate-600 dark:text-slate-400 text-center">
-                    Canva
-                  </th>
-                  <th className="p-4 font-bold text-slate-600 dark:text-slate-400 text-center">
-                    remove.bg
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-700/60">
-                {COMPARISON.map(({ feature, us, photoshop, canva, removebg }) => (
-                  <tr key={feature} className="hover:bg-slate-50/50 dark:hover:bg-slate-800/40">
-                    <td className="p-4 font-medium text-slate-700 dark:text-slate-300">
-                      {feature}
-                    </td>
-                    <td className="p-4 text-center bg-blue-50/30 dark:bg-blue-950/20">
-                      <CellIcon val={us} />
-                    </td>
-                    <td className="p-4 text-center">
-                      <CellIcon val={photoshop} />
-                    </td>
-                    <td className="p-4 text-center">
-                      <CellIcon val={canva} />
-                    </td>
-                    <td className="p-4 text-center">
-                      <CellIcon val={removebg} />
-                    </td>
-                  </tr>
+                {[
+                  { href: "/resize-photo-20kb", big: "20 KB", label: "Resize to 20 KB" },
+                  { href: "/reduce-photo-size-50kb", big: "50 KB", label: "Reduce to 50 KB" },
+                  { href: "/signature-resize-ibps", big: "Sign", label: "Signature Resizer" },
+                  { href: "/compress-image", big: "Compress", label: "Photo Compressor" },
+                ].map((t) => (
+                  <Link
+                    key={t.href}
+                    href={t.href}
+                    className="p-4 rounded-xl bg-[#FFFFFF] border border-[#E4E4E7] hover:border-[#BBF7D0] hover:bg-[#F0FDF4] text-center transition-colors"
+                  >
+                    <span className="text-xl font-bold text-[#16A34A] block mb-1">{t.big}</span>
+                    <span className="text-xs font-medium text-[#18181B]">{t.label}</span>
+                  </Link>
                 ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        {/* ══════════════════════════════════════════
-            PRIVACY ASSURANCE
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-6xl mx-auto px-4 md:px-6">
-          <div className="bg-gradient-to-br from-indigo-50 via-sky-50 to-emerald-50 dark:from-slate-800/90 dark:to-slate-900 rounded-3xl p-8 sm:p-10 border border-blue-100 dark:border-slate-700">
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-              <div className="w-16 h-16 rounded-2xl bg-white dark:bg-slate-800 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-md flex-shrink-0">
-                <ShieldCheck size={36} />
-              </div>
-              <div>
-                <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2">
-                  Zero Data Upload • 100% On-Device Privacy Guaranteed
-                </h2>
-                <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                  Government exam candidates frequently handle confidential personal identifiers, Aadhaar numbers, handwritten signatures, and thumb impressions. <strong>photoresizer never transmits your images to any remote server</strong>. All image decoding, cropping, WebAssembly compression, and background manipulation happen entirely on your computer or smartphone GPU/CPU.
-                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ══════════════════════════════════════════
-            FAQ SECTION
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-5xl mx-auto px-4 md:px-6">
-          <div className="text-center mb-10">
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2 block">
-              Got Questions?
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Frequently Asked Questions (Exam Photo Guidelines)
-            </h2>
-          </div>
-
-          <div className="space-y-3">
-            {homeFaqSchema.mainEntity.map((item, i) => (
-              <details
-                key={i}
-                className="group bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden [&_summary::-webkit-details-marker]:hidden"
+        {/* E-E-A-T */}
+        <section className="mt-14 sm:mt-16" id="trust">
+          <SectionHeading
+            eyebrow={`Last reviewed ${LAST_REVIEWED}`}
+            title="Why aspirants trust our presets"
+            sub="We build for Indian exam forms, and we verify what we publish."
+          />
+          <div className="grid sm:grid-cols-3 gap-4 sm:gap-5">
+            {EEAT.map(({ icon: Icon, title, desc }) => (
+              <div
+                key={title}
+                className="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]"
               >
-                <summary className="w-full flex justify-between items-center p-5 cursor-pointer list-none gap-4">
-                  <span className="font-semibold text-slate-900 dark:text-white text-sm sm:text-base">
-                    {item.name}
-                  </span>
-                  <span className="flex-shrink-0 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-open:rotate-45 font-bold text-lg">
+                <Icon size={22} className="text-[#16A34A] mb-3" />
+                <h3 className="font-semibold text-base text-[#18181B] mb-2">{title}</h3>
+                <p className="text-sm text-[#52525B] leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-5 text-center text-xs sm:text-sm text-[#52525B]">
+            Spot a changed limit? <Link href="/contact" className="font-semibold text-[#16A34A] hover:text-[#15803D]">Tell our team</Link>{" "}
+            and we will update the preset. Read our{" "}
+            <Link href="/about" className="font-semibold text-[#16A34A] hover:text-[#15803D]">editorial process</Link>{" "}
+            and{" "}
+            <Link href="/privacy" className="font-semibold text-[#16A34A] hover:text-[#15803D]">privacy policy</Link>.
+          </p>
+        </section>
+
+        {/* FAQ */}
+        <section className="mt-14 sm:mt-16 max-w-3xl mx-auto" id="faq">
+          <SectionHeading eyebrow="Help and answers" title="Frequently asked questions" />
+          <div className="space-y-3">
+            {FAQS.map((item) => (
+              <details
+                key={item.q}
+                className="group bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden [&_summary::-webkit-details-marker]:hidden"
+              >
+                <summary className="w-full flex justify-between items-center p-4 sm:p-5 cursor-pointer list-none gap-4">
+                  <h3 className="font-medium text-[#18181B] text-sm sm:text-base">{item.q}</h3>
+                  <span
+                    aria-hidden="true"
+                    className="flex-shrink-0 text-[#16A34A] transition-transform duration-150 group-open:rotate-45 font-bold text-lg"
+                  >
                     ＋
                   </span>
                 </summary>
-                <div className="px-5 pb-5 text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-100 dark:border-slate-700/60 pt-3">
-                  {item.acceptedAnswer.text}
+                <div className="px-4 sm:px-5 pb-5 text-[#52525B] text-sm leading-relaxed border-t border-[#F4F4F5] pt-3">
+                  {item.a}
                 </div>
               </details>
             ))}
           </div>
         </section>
 
-        {/* ══════════════════════════════════════════
-            BOTTOM CTA
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-4xl mx-auto px-4 text-center">
-          <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 rounded-3xl p-8 sm:p-12 text-white shadow-xl shadow-blue-500/20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3">
-              Ready to Resize Your Exam Photo?
-            </h2>
-            <p className="text-blue-100 text-sm sm:text-base mb-8 max-w-xl mx-auto">
-              No account. No software installation. 100% form-compliant results in seconds.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-8 py-4 text-sm sm:text-base font-bold text-blue-900 bg-white rounded-xl shadow-lg hover:bg-blue-50 hover:-translate-y-0.5 transition-all duration-200"
-              >
-                Start Resizing Now ↑
-              </a>
+        {/* Internal links */}
+        <section className="mt-14 sm:mt-16 pt-10 border-t border-[#E4E4E7] pb-10">
+          <h2 className="text-sm font-semibold text-[#18181B] mb-3">Popular tools</h2>
+          <div className="flex flex-wrap gap-2">
+            {POPULAR_LINKS.map(([href, label]) => (
               <Link
-                href="/tools"
-                className="inline-flex items-center justify-center px-8 py-4 text-sm sm:text-base font-bold text-white bg-white/20 hover:bg-white/30 border border-white/30 rounded-xl hover:-translate-y-0.5 transition-all duration-200 backdrop-blur-sm"
+                key={href}
+                href={href}
+                className="text-xs px-3 py-1.5 bg-[#FAFAFA] text-[#52525B] hover:text-[#15803D] hover:bg-[#F0FDF4] rounded-xl transition-colors border border-[#E4E4E7]"
               >
-                Browse All 40+ Tools →
+                {label}
               </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* ══════════════════════════════════════════
-            ORGANIZED INTERNAL LINKS
-        ══════════════════════════════════════════ */}
-        <section className="mt-20 max-w-6xl mx-auto px-4 md:px-6 pt-10 border-t border-slate-200 dark:border-slate-800 space-y-10 pb-16">
-          {/* Popular Exam Tools */}
-          <div>
-            <h3 className="text-base font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-              <span>📋</span> Popular Exam Photo Resizers
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {[
-                ["/ssc-photo-resizer", "SSC Photo Resizer"],
-                ["/ssc-photo-resizer-2027", "SSC Photo Resizer 2027"],
-                ["/upsc-photo-size", "UPSC Photo Size"],
-                ["/ctet-photo-resizer", "CTET Photo Resizer"],
-                ["/rrb-alp-photo-resizer", "RRB ALP Photo Resizer"],
-                ["/rrb-technician-exam-photo-resizer", "RRB Technician Resizer"],
-                ["/afcat-photo-resizer", "AFCAT Photo Resizer"],
-                ["/army-agniveer-photo-resizer", "Army Agniveer Resizer"],
-                ["/uksssc-photo-resizer", "UKSSSC Photo Resizer"],
-                ["/karnataka-police-photo-resizer", "Karnataka Police Resizer"],
-              ].map(([href, label]) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors border border-slate-200/60 dark:border-slate-700/60"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Signature, Declaration & Thumb Impression */}
-          <div>
-            <h3 className="text-base font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-              <span>✍️</span> Signature &amp; Declaration Resizers
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {[
-                ["/signature-resize-ibps", "IBPS Signature Resize"],
-                ["/ibps-handwritten-declaration-resizer", "IBPS Declaration Resizer"],
-                ["/resize-left-thumb-impression-ibps", "IBPS Thumb Impression Resizer"],
-                ["/csir-net-signature-resizer", "CSIR NET Signature Resizer"],
-                ["/resize-photo-20kb", "Resize Signature to 20KB"],
-              ].map(([href, label]) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors border border-slate-200/60 dark:border-slate-700/60"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Size Specific & Compression */}
-          <div>
-            <h3 className="text-base font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-              <span>📦</span> Size Specific &amp; Image Compression
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {[
-                ["/reduce-photo-size-50kb", "Reduce Photo Size 50KB"],
-                ["/resize-photo-20kb", "Resize Photo 20KB"],
-                ["/compress-image", "Compress Image"],
-                ["/jpeg-to-jpg", "JPEG to JPG Converter"],
-                ["/jpg-to-png", "JPG to PNG Converter"],
-                ["/photo-resizer", "Online Photo Resizer"],
-                ["/voter-id-photo-size-reducer", "Voter ID Photo Reducer"],
-                ["/resize-photo-driving-license-sarathi", "Driving License Sarathi Resizer"],
-                ["/canvas-photo-collage-maker", "Canvas Collage Maker"],
-              ].map(([href, label]) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors border border-slate-200/60 dark:border-slate-700/60"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Passport & Visa Photos */}
-          <div>
-            <h3 className="text-base font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-              <span>🪪</span> Passport &amp; Visa Photo Makers
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {[
-                ["/passport-photo-maker", "Passport Photo Maker"],
-                ["/passport-size-photo-maker", "Passport Size Photo Maker"],
-                ["/india-passport-photo-maker", "India Passport Photo Maker"],
-                ["/us-passport-photo-maker", "US Passport Photo Maker"],
-                ["/uk-passport-photo-maker", "UK Passport Photo Maker"],
-                ["/remove-background", "Remove Background"],
-                ["/free-background-remover", "Free Background Remover"],
-              ].map(([href, label]) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors border border-slate-200/60 dark:border-slate-700/60"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
+            ))}
           </div>
         </section>
       </main>

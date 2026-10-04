@@ -1,7 +1,12 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Disallow: /private/
 Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
 
+# Host
+Host: photoresizer.co.in
+
+# Sitemaps
 Sitemap: https://photoresizer.co.in/sitemap.xml

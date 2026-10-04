@@ -86,22 +86,21 @@ export function AdBanner({
 
   const slotId = dataAdSlot || '9132763063';
 
-  // ── Sticky Bottom Banner Format ──
+  // Sticky Bottom Banner Format
   if (type === 'sticky-bottom') {
     return (
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_20px_rgba(0,0,0,0.15)] backdrop-blur-md" style={{ contain: 'layout style' }}>
+      <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#FFFFFF] border-t border-[#E4E4E7] shadow-lg" style={{ contain: 'layout style' }}>
         <div className="max-w-[1280px] mx-auto relative px-4 py-2 flex flex-col items-center justify-center min-h-[60px] sm:min-h-[90px]">
-          {/* Close Button */}
           <button
             onClick={() => setIsDismissed(true)}
-            className="absolute -top-3 right-3 bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-white p-1 rounded-full shadow-md text-xs transition-transform active:scale-95 flex items-center justify-center z-10"
+            className="absolute -top-3 right-3 bg-[#18181B] text-white hover:bg-black p-1 rounded-full shadow-md text-xs transition-transform active:scale-95 flex items-center justify-center z-10"
             title="Close Advertisement"
             aria-label="Close Advertisement"
           >
             <X size={14} />
           </button>
           
-          <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-semibold mb-0.5">
+          <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold mb-0.5">
             Advertisement
           </span>
           
@@ -120,15 +119,15 @@ export function AdBanner({
     );
   }
 
-  // ── In-Tool Compact Format ──
+  // In-Tool Compact Format
   if (type === 'in-tool') {
     return (
       <div 
         ref={containerRef} 
-        className={`w-full block text-center my-3 p-3 bg-slate-50/80 dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-800 rounded-xl shadow-xs min-h-[120px] overflow-hidden ${className}`}
+        className={`w-full block text-center my-3 p-3 bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl min-h-[120px] overflow-hidden ${className}`}
         style={{ contain: 'layout style paint' }}
       >
-        <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-semibold block mb-1">
+        <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-1">
           Advertisement
         </span>
         {shouldLoad && (
@@ -145,15 +144,15 @@ export function AdBanner({
     );
   }
 
-  // ── Sidebar Format ──
+  // Sidebar Format
   if (type === 'sidebar') {
     return (
       <div 
         ref={containerRef} 
-        className={`w-[300px] min-h-[600px] hidden lg:block sticky top-4 p-2 bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200/60 dark:border-slate-800 rounded-2xl overflow-hidden ${className}`}
+        className={`w-[300px] min-h-[600px] hidden lg:block sticky top-4 p-2 bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl overflow-hidden ${className}`}
         style={{ contain: 'layout style paint' }}
       >
-        <span className="text-[9px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-semibold block mb-1 text-center">
+        <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-1 text-center">
           Advertisement
         </span>
         {shouldLoad && (
@@ -168,14 +167,14 @@ export function AdBanner({
     );
   }
 
-  // ── Standard Responsive or Fixed Banner ──
+  // Standard Responsive or Fixed Banner
   return (
     <div 
       ref={containerRef} 
       className={`w-full block text-center py-2 h-[90px] sm:h-[110px] min-h-[90px] sm:min-h-[110px] overflow-hidden ${className}`}
       style={{ contain: 'strict' }}
     >
-      <span className="text-[9px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-semibold block mb-0.5">
+      <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-0.5">
         Advertisement
       </span>
       {shouldLoad && (
@@ -191,4 +190,3 @@ export function AdBanner({
     </div>
   );
 }
-

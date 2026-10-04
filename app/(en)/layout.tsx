@@ -2,86 +2,127 @@ import React from 'react';
 import Link from 'next/link';
 import SiteHeader from './SiteHeader';
 import { AdBanner } from '../../components/AdBanner';
+import { examCategories } from '@/lib/navigation-data';
 
 export default function EnglishLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="en-layout">
-      {/* English Specific Navigation */}
+    <div className="min-h-screen flex flex-col bg-[#FFFFFF] text-[#18181B]">
+      {/* Unified Global Header */}
       <SiteHeader />
       
-      {/* Top Ad — fixed height container prevents CLS */}
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 hidden sm:block" style={{ height: '110px', minHeight: '110px', overflow: 'hidden', contain: 'layout style paint' }}>
+      {/* Top Ad Container */}
+      <div className="max-w-[1280px] w-full mx-auto px-4 mt-4 hidden sm:block" style={{ height: '110px', minHeight: '110px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="fixed" />
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 mt-4 block sm:hidden" style={{ height: '100px', minHeight: '100px', overflow: 'hidden', contain: 'layout style paint' }}>
+      <div className="max-w-[1280px] w-full mx-auto px-4 mt-4 block sm:hidden" style={{ height: '100px', minHeight: '100px', overflow: 'hidden', contain: 'layout style paint' }}>
         <AdBanner type="responsive" />
       </div>
 
-      {/* Page Content */}
-      <div className="min-h-screen">
+      {/* Main Page Content */}
+      <div className="flex-1">
         {children}
       </div>
 
-      {/* English Specific Premium Footer */}
-      <footer className="w-full bg-slate-50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 mt-auto pb-24 sm:pb-28">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-6 py-12 md:py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-            {/* Brand */}
-            <div className="col-span-1 sm:col-span-2 md:col-span-2">
-              <h3 className="text-xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
-                photoresizer
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed max-w-sm mb-6">
-                Your ultimate suite of free, private, and secure online image editing tools. Process your photos locally in your browser without any data leaving your device.
+      {/* Unified Footer */}
+      <footer className="w-full bg-[#FFFFFF] border-t border-[#E4E4E7] mt-20">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-12 md:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 md:gap-10">
+            
+            {/* Brand column */}
+            <div className="sm:col-span-2 md:col-span-2">
+              <Link href="/" className="inline-flex items-center gap-2.5 font-bold text-xl tracking-tight text-[#18181B] mb-3 group">
+                <div className="w-8 h-8 rounded-lg bg-[#F0FDF4] border border-[#BBF7D0] flex items-center justify-center group-hover:bg-[#DCFCE7] transition-colors p-1.5">
+                  <img src="/favicon.svg" alt="PhotoResizer Logo" className="w-full h-full object-contain" width={20} height={20} />
+                </div>
+                <span>photoresizer<span className="text-[#16A34A]">.co.in</span></span>
+              </Link>
+              <p className="text-sm text-[#52525B] leading-relaxed max-w-sm mb-4">
+                Fast, simple, and private online image utility platform. Resize, compress, crop, and format your photos locally in your browser.
               </p>
               
-              <div className="text-sm text-slate-700 dark:text-slate-300">
-                <p className="font-bold text-slate-900 dark:text-white mb-2">Contact Developer</p>
-                <p className="mb-1">Navnit Rai</p>
-                <p className="mb-1">
-                  <a href="mailto:navnitrai5389@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">navnitrai5389@gmail.com</a>
+              <div className="flex items-center gap-3 text-xs text-[#71717A] mb-5">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#F0FDF4] text-[#15803D] font-medium border border-[#BBF7D0]">
+                  100% Private
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#FAFAFA] text-[#52525B] font-medium border border-[#E4E4E7]">
+                  No Server Uploads
+                </span>
+              </div>
+
+              {/* Developer Details */}
+              <div className="p-3.5 rounded-xl bg-[#FAFAFA] border border-[#E4E4E7] max-w-sm">
+                <p className="text-xs font-semibold text-[#18181B] mb-1.5">
+                  Developer &amp; Support: <span className="font-medium text-[#16A34A]">Navnit Rai</span>
                 </p>
-                <p>+91 7355087072</p>
+                <div className="space-y-1 text-xs text-[#52525B]">
+                  <p className="flex items-center gap-1.5">
+                    <span className="text-[#71717A]">Phone:</span>
+                    <a href="tel:+917355087072" className="text-[#16A34A] hover:text-[#15803D] font-medium transition-colors">
+                      +91 7355087072
+                    </a>
+                  </p>
+                  <p className="flex items-center gap-1.5">
+                    <span className="text-[#71717A]">Email:</span>
+                    <a href="mailto:navnitrai5389@gmail.com" className="text-[#16A34A] hover:text-[#15803D] font-medium transition-colors">
+                      navnitrai5389@gmail.com
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
             
-            {/* Quick Links */}
-            <div className="col-span-1">
-              <h4 className="text-slate-900 dark:text-white font-bold mb-4 uppercase tracking-wider text-xs">Popular Tools</h4>
-              <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
-                <li><Link href="/photo-resizer" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Photo Resizer</Link></li>
-                <li><Link href="/passport-photo-maker" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Passport Photo Maker</Link></li>
-                <li><Link href="/compress-image" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Compress Image</Link></li>
-                <li><Link href="/tools" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors font-semibold">View All 40+ Tools &rarr;</Link></li>
+            {/* Tools */}
+            <div>
+              <h4 className="text-xs font-semibold text-[#18181B] uppercase tracking-wider mb-4">
+                Popular Tools
+              </h4>
+              <ul className="space-y-2.5 text-sm text-[#52525B]">
+                <li><Link href="/photo-resizer" className="hover:text-[#16A34A] transition-colors">Photo Resizer</Link></li>
+                <li><Link href="/compress-image" className="hover:text-[#16A34A] transition-colors">Photo Compressor</Link></li>
+                <li><Link href="/free-background-remover" className="hover:text-[#16A34A] transition-colors">Background Remover</Link></li>
+                <li><Link href="/passport-photo-maker" className="hover:text-[#16A34A] transition-colors">Passport Photo Maker</Link></li>
+                <li><Link href="/tools" className="font-semibold text-[#16A34A] hover:text-[#15803D] transition-colors">All 40+ Tools &rarr;</Link></li>
               </ul>
             </div>
 
-            {/* Legal */}
-            <div className="col-span-1">
-              <h4 className="text-slate-900 dark:text-white font-bold mb-4 uppercase tracking-wider text-xs">Resources</h4>
-              <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
-                <li><Link href="/how-to-use" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">How to Use</Link></li>
-                <li><Link href="/contact" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Contact Us</Link></li>
-                <li><Link href="/terms" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Terms & Conditions</Link></li>
-                <li><Link href="/privacy" className="hover:text-lime-600 dark:hover:text-lime-400 transition-colors">Privacy Policy</Link></li>
+            {/* Exam Presets */}
+            <div>
+              <h4 className="text-xs font-semibold text-[#18181B] uppercase tracking-wider mb-4">
+                Govt &amp; Exam Presets
+              </h4>
+              <ul className="space-y-2.5 text-sm text-[#52525B]">
+                {examCategories.map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="hover:text-[#16A34A] transition-colors">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
+
+            {/* Legal & Resources */}
+            <div>
+              <h4 className="text-xs font-semibold text-[#18181B] uppercase tracking-wider mb-4">
+                Company &amp; Legal
+              </h4>
+              <ul className="space-y-2.5 text-sm text-[#52525B]">
+                <li><Link href="/about" className="hover:text-[#16A34A] transition-colors">About Us</Link></li>
+                <li><Link href="/how-to-use" className="hover:text-[#16A34A] transition-colors">How to Use</Link></li>
+                <li><Link href="/contact" className="hover:text-[#16A34A] transition-colors">Contact Us</Link></li>
+                <li><Link href="/terms" className="hover:text-[#16A34A] transition-colors">Terms &amp; Conditions</Link></li>
+                <li><Link href="/privacy" className="hover:text-[#16A34A] transition-colors">Privacy Policy</Link></li>
+              </ul>
+            </div>
+
           </div>
 
-          <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-            <div className="flex flex-col gap-3 text-slate-600 dark:text-slate-300 text-sm">
-              <div className="flex flex-wrap items-center gap-3 md:gap-4 font-semibold text-slate-700 dark:text-slate-300">
-                <span>100% Private</span>
-                <span className="hidden md:inline">•</span>
-                <span>Fast Processing</span>
-                <span className="hidden md:inline">•</span>
-                <span>Offline Capable</span>
-              </div>
-              <p>&copy; 2026 Photo Resizer.</p>
-            
-            </div>
-            <div className="flex text-sm text-slate-600 dark:text-slate-300 font-medium">
-              <span>Designed & Developed with ❤️ by Navnit Rai</span>
+          <div className="mt-12 pt-6 border-t border-[#E4E4E7] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#71717A]">
+            <p>&copy; {new Date().getFullYear()} PhotoResizer. All rights reserved. Developed by <span className="font-medium text-[#18181B]">Navnit Rai</span>.</p>
+            <div className="flex items-center gap-3">
+              <a href="tel:+917355087072" className="hover:text-[#16A34A] transition-colors font-medium">+91 7355087072</a>
+              <span>•</span>
+              <a href="mailto:navnitrai5389@gmail.com" className="hover:text-[#16A34A] transition-colors font-medium">navnitrai5389@gmail.com</a>
             </div>
           </div>
         </div>
@@ -90,4 +131,3 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
     </div>
   );
 }
-

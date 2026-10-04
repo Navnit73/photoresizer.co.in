@@ -4,8 +4,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useDropzone } from "react-dropzone";
-import { UploadCloud, Shield, ArrowRight } from "lucide-react";
-import { useTranslation } from '../../app/hooks/useTranslation';
+import { UploadCloud, ShieldCheck, ArrowRight, Zap, Sparkles } from "lucide-react";
 import { SeoPage, Language } from '../../lib/types/seo';
 import { Breadcrumb } from './Breadcrumb';
 import { SeoSection } from './SeoSection';
@@ -14,17 +13,17 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } fr
 
 const PhotoEditor = dynamic(() => import('../../app/components/editor/PhotoEditor'), {
   ssr: false,
-  loading: () => <div className="min-h-[400px] flex items-center justify-center text-sm text-slate-400">Loading editor...</div>,
+  loading: () => <div className="min-h-[450px] flex items-center justify-center text-sm text-[#71717A]">Loading editor...</div>,
 });
 
 const PassportMakerApp = dynamic(() => import('../../app/components/passport_photo/PassportMakerApp'), {
   ssr: false,
-  loading: () => <div className="min-h-[400px] flex items-center justify-center text-sm text-slate-400">Loading passport maker...</div>,
+  loading: () => <div className="min-h-[450px] flex items-center justify-center text-sm text-[#71717A]">Loading passport maker...</div>,
 });
 
 const BgRemoverApp = dynamic(() => import('../../app/components/bg_removal/BgRemoverApp'), {
   ssr: false,
-  loading: () => <div className="min-h-[400px] flex items-center justify-center text-sm text-slate-400">Loading background remover...</div>,
+  loading: () => <div className="min-h-[450px] flex items-center justify-center text-sm text-[#71717A]">Loading background remover...</div>,
 });
 
 export interface RelatedPageLink {
@@ -40,32 +39,29 @@ interface Props {
 }
 
 export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
-  const { t } = useTranslation();
   const initialTab = page.showTool === 'bg-remover' ? 'bg_remover' : 'editor';
   const [activeTab, setActiveTab] = useState<"editor" | "bg_remover">(initialTab);
+  const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [hasUploadedImage, setHasUploadedImage] = useState(false);
-  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
-    // Original listener for hero file drop
     const handleHeroDrop = (e: Event) => {
       const customEvent = e as CustomEvent<{ files: File[] }>;
       if (customEvent.detail?.files?.length > 0) {
-        setIsTransitioning(true);
-        setTimeout(() => {
-          setHasUploadedImage(true);
-        }, 300);
+        setUploadedFile(customEvent.detail.files[0]);
+        setHasUploadedImage(true);
       }
     };
     window.addEventListener("hero-file-drop", handleHeroDrop);
 
-    // Listener for editor state
     const handleEditorLoad = (e: Event) => {
       const customEvent = e as CustomEvent<{ loaded: boolean }>;
-      setIsTransitioning(true);
-      setTimeout(() => {
+      if (customEvent.detail && typeof customEvent.detail.loaded === "boolean") {
         setHasUploadedImage(customEvent.detail.loaded);
-      }, 300);
+        if (!customEvent.detail.loaded) {
+          setUploadedFile(null);
+        }
+      }
     };
     window.addEventListener("editor-file-loaded", handleEditorLoad);
 
@@ -77,12 +73,20 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     if (acceptedFiles?.length > 0) {
-      setIsTransitioning(true);
+      const file = acceptedFiles[0];
+      if (typeof window !== "undefined") {
+        (window as any).__PENDING_HERO_FILES__ = acceptedFiles;
+      }
+      setUploadedFile(file);
+      setHasUploadedImage(true);
+      const event = new CustomEvent("hero-file-drop", { detail: { files: acceptedFiles } });
+      window.dispatchEvent(event);
       setTimeout(() => {
-        setHasUploadedImage(true);
-        const event = new CustomEvent("hero-file-drop", { detail: { files: acceptedFiles } });
         window.dispatchEvent(event);
-      }, 100);
+      }, 60);
+      setTimeout(() => {
+        window.dispatchEvent(event);
+      }, 250);
     }
   }, []);
 
@@ -100,7 +104,7 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
   const webPageSchema = generateWebPageSchema(page, lang);
 
   return (
-    <main className="w-full pb-8 md:pb-12 bg-white dark:bg-[#121212] text-[#222222] dark:text-[#f1f1f1] font-['Airbnb_Cereal_VF',Circular,sans-serif] transition-colors duration-300">
+    <main className="w-full bg-[#FFFFFF] text-[#18181B] pb-12">
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -108,194 +112,188 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
+        
+        {/* Breadcrumb Navigation */}
+        <div className="pt-6 pb-2">
+          <Breadcrumb page={page} lang={lang} />
+        </div>
+
         {/* ══════════════════════════════════════════
-            HERO SECTION (Airbnb Design Specification)
+            HERO / HEADER SECTION (Before Upload)
         ══════════════════════════════════════════ */}
         {showHero && (
-          <div className={`transition-all duration-500 ${isTransitioning ? 'opacity-0 scale-[0.98]' : 'opacity-100 scale-100'}`}>
-            <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-slate-900 border border-[#dddddd] dark:border-slate-800 shadow-sm mt-4 p-6 sm:p-10 lg:p-14">
-              
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-
-                {/* ── LEFT COLUMN: Marketing Copy ── */}
-                <div className="max-w-xl order-2 lg:order-1">
-                  <div className="mb-4">
-                    <Breadcrumb page={page} lang={lang} />
-                  </div>
-
-                  {/* Airbnb Display Headline */}
-                  <h1 className="text-3xl sm:text-4xl lg:text-[2.5rem] font-bold tracking-tight leading-[1.2] text-[#222222] dark:text-white mb-4">
-                    {page.h1}
-                  </h1>
-
-                  {/* Subheadline */}
-                  {page.subtitle && (
-                    <p className="text-base text-[#6a6a6a] dark:text-slate-400 leading-[1.5] mb-6 max-w-md">
-                      {page.subtitle}
-                    </p>
-                  )}
-
-                  {/* Trust indicator badge */}
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f7f7f7] dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 text-xs font-semibold text-[#222222] dark:text-white">
-                    <Shield size={14} className="text-[#ff385c]" />
-                    <span>{t.browserPrivacyBadge}</span>
-                  </div>
-                </div>
-
-                {/* ── RIGHT COLUMN: Airbnb Style Upload Card ── */}
-                <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-                  <div className="w-full max-w-md">
-                    <div
-                      {...getRootProps()}
-                      className={`relative cursor-pointer rounded-3xl border-2 border-dashed p-8 sm:p-10 transition-all duration-300 ${
-                        isDragActive
-                          ? "border-[#ff385c] bg-[#ff385c]/5 scale-[1.02]"
-                          : "border-[#ff385c] dark:border-[#ff385c]/60 bg-[#f7f7f7] dark:bg-slate-900/60 hover:border-[#e00b41] hover:shadow-md"
-                      }`}
-                    >
-                      <input {...getInputProps()} />
-
-                      <div className="relative flex flex-col items-center text-center">
-                        {/* Rausch Icon Circle */}
-                        <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-300 ${
-                          isDragActive
-                            ? "bg-[#ff385c] text-white shadow-lg scale-110"
-                            : "bg-[#ff385c] text-white shadow-sm"
-                        }`}>
-                          <UploadCloud size={30} />
-                        </div>
-
-                        <h3 className="text-xl font-bold text-[#222222] dark:text-white mb-2">
-                          {isDragActive ? t.dropPhotoHere : t.uploadYourPhoto}
-                        </h3>
-                        <p className="text-xs text-[#6a6a6a] dark:text-slate-400 mb-6 max-w-xs leading-[1.5]">
-                          {t.heroDragDropSub}
-                        </p>
-
-                        {/* Signature Rausch Button ({colors.primary} #ff385c) */}
-                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#ff385c] hover:bg-[#e00b41] text-white text-xs font-bold rounded-full shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.98] mb-5">
-                          <UploadCloud size={16} />
-                          <span>{t.selectImage}</span>
-                        </button>
-
-                        {/* Format Badges */}
-                        <div className="flex items-center gap-2">
-                          {["JPG", "PNG", "WEBP"].map((fmt) => (
-                            <span
-                              key={fmt}
-                              className="px-2.5 py-1 bg-white dark:bg-slate-800 border border-[#dddddd] dark:border-slate-700 text-[#222222] dark:text-white rounded-full text-[10px] font-bold"
-                            >
-                              {fmt}
-                            </span>
-                          ))}
-                          <span className="text-[10px] text-[#6a6a6a] dark:text-slate-400 font-medium ml-1">
-                            {t.upTo30MB}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Privacy Note */}
-                    <div className="flex items-center justify-center gap-1.5 mt-3 text-center">
-                      <Shield size={12} className="text-[#ff385c]" />
-                      <span className="text-[11px] text-[#6a6a6a] dark:text-slate-400 font-medium">
-                        {t.noServerUploadPrivacy}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
+          <section className="py-6 md:py-8">
+            <div className="text-center max-w-2xl mx-auto mb-8">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F0FDF4] border border-[#BBF7D0] text-[#15803D] text-xs font-semibold mb-3.5">
+                <Sparkles size={13} className="text-[#16A34A]" />
+                <span>Free Online Utility • 100% Private</span>
               </div>
-            </section>
-          </div>
+
+              {/* H1 Heading */}
+              <h1 className="text-3xl sm:text-4xl md:text-[40px] font-bold tracking-tight text-[#18181B] leading-[1.15] mb-3">
+                {page.h1}
+              </h1>
+
+              {/* Subtitle */}
+              {page.subtitle && (
+                <p className="text-base text-[#52525B] leading-[1.6]">
+                  {page.subtitle}
+                </p>
+              )}
+            </div>
+
+            {/* Standard Upload Box */}
+            <div className="max-w-2xl mx-auto">
+              <div
+                {...getRootProps()}
+                className={`cursor-pointer p-8 sm:p-12 text-center rounded-xl transition-all duration-150 border-2 border-dashed ${
+                  isDragActive
+                    ? "border-[#16A34A] bg-[#DCFCE7] scale-[1.01]"
+                    : "border-[#BBF7D0] bg-[#F0FDF4] hover:border-[#16A34A] hover:bg-[#DCFCE7]"
+                }`}
+              >
+                <input {...getInputProps()} aria-label="Upload Photo" />
+
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-xl bg-[#FFFFFF] border border-[#BBF7D0] flex items-center justify-center text-[#16A34A] shadow-[0_1px_2px_rgba(0,0,0,0.04)] mb-3.5">
+                    <UploadCloud size={24} />
+                  </div>
+
+                  <p className="text-lg sm:text-xl font-semibold text-[#18181B] mb-2">
+                    {isDragActive ? "Drop your image here" : "Upload your photo"}
+                  </p>
+
+                  <button
+                    type="button"
+                    className="inline-flex items-center justify-center px-6 py-2.5 bg-[#16A34A] hover:bg-[#15803D] text-[#FFFFFF] text-sm font-semibold rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.04)] my-3 transition-colors active:scale-[0.98]"
+                  >
+                    Upload Photo
+                  </button>
+
+                  <p className="text-xs sm:text-sm text-[#52525B] mb-4">
+                    or drag &amp; drop your image here
+                  </p>
+
+                  <div className="flex items-center gap-2 text-xs text-[#71717A]">
+                    <span className="font-semibold text-[#52525B]">JPG • PNG • WEBP</span>
+                    <span>•</span>
+                    <span>Max 30MB</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Trust Indicators */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs text-[#52525B]">
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck size={13} className="text-[#16A34A]" />
+                  <span>100% Client-Side Private</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Zap size={13} className="text-[#16A34A]" />
+                  <span>Instant Local Processing</span>
+                </div>
+              </div>
+            </div>
+          </section>
         )}
 
         {/* ══════════════════════════════════════════
             EDITOR CONTAINER — shown after upload
         ══════════════════════════════════════════ */}
         <div className={`${!showHero ? 'block' : 'hidden'} py-4`}>
-          {/* Header area when editor is active */}
-          <header className="mb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="flex flex-col gap-1">
-              <h2 className="text-xl font-bold tracking-tight text-[#222222] dark:text-white">
+          <header className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#E4E4E7]">
+            <div>
+              <h2 className="text-lg font-bold text-[#18181B]">
                 {page.h1}
               </h2>
-              <p className="text-xs text-[#6a6a6a] dark:text-slate-400">
-                {page.subtitle}
-              </p>
+              {page.subtitle && (
+                <p className="text-xs text-[#71717A]">
+                  {page.subtitle}
+                </p>
+              )}
             </div>
 
-            {/* Tab Switcher (Airbnb Pill Style) */}
-            <div className="flex p-1 bg-[#f7f7f7] dark:bg-slate-800 rounded-full border border-[#dddddd] dark:border-slate-700 w-full md:w-auto self-start">
+            {/* Mode Switcher */}
+            <div className="flex p-1 bg-[#FAFAFA] rounded-xl border border-[#E4E4E7] self-start">
               <button
                 onClick={() => setActiveTab("editor")}
-                className={`flex-1 md:w-36 py-2 px-4 text-xs font-bold rounded-full transition-all ${
+                className={`py-1.5 px-3 text-xs font-semibold rounded-lg transition-colors ${
                   activeTab === "editor"
-                    ? "bg-[#ff385c] text-white shadow-sm"
-                    : "text-[#6a6a6a] dark:text-slate-400 hover:text-[#222222] dark:hover:text-white"
+                    ? "bg-[#16A34A] text-[#FFFFFF]"
+                    : "text-[#52525B] hover:text-[#18181B]"
                 }`}
               >
-                {t.photoEditorTab}
+                Editor
               </button>
               <button
                 onClick={() => setActiveTab("bg_remover")}
-                className={`flex-1 md:w-44 py-2 px-4 text-xs font-bold rounded-full transition-all ${
+                className={`py-1.5 px-3 text-xs font-semibold rounded-lg transition-colors ${
                   activeTab === "bg_remover"
-                    ? "bg-[#222222] dark:bg-white text-white dark:text-[#222222] shadow-sm"
-                    : "text-[#6a6a6a] dark:text-slate-400 hover:text-[#222222] dark:hover:text-white"
+                    ? "bg-[#16A34A] text-[#FFFFFF]"
+                    : "text-[#52525B] hover:text-[#18181B]"
                 }`}
               >
-                {t.bgRemoverTab}
+                BG Remover
               </button>
             </div>
           </header>
 
-          <div className={activeTab === "editor" ? "block min-h-[600px] sm:min-h-[800px]" : "hidden"}>
-            {page.showTool === 'photo-editor' && <PhotoEditor />}
-            {page.showTool === 'passport-maker' && <PassportMakerApp />}
-            {(page.showTool === 'bg-remover' || !['photo-editor', 'passport-maker', 'bg-remover'].includes(page.showTool as string)) && <PhotoEditor />}
+          <div className={activeTab === "editor" ? "block min-h-[600px]" : "hidden"}>
+            {page.showTool === 'passport-maker' ? (
+              <PassportMakerApp initialFile={uploadedFile} />
+            ) : page.showTool === 'bg-remover' ? (
+              <BgRemoverApp />
+            ) : (
+              <PhotoEditor initialFile={uploadedFile} />
+            )}
           </div>
-          <div className={activeTab === "bg_remover" ? "block min-h-[600px] sm:min-h-[800px]" : "hidden"}>
+          
+          <div className={activeTab === "bg_remover" ? "block min-h-[600px]" : "hidden"}>
             <BgRemoverApp />
           </div>
         </div>
 
       </div>
 
-      {/* Bottom SEO Content */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 mt-16">
+      {/* Bottom SEO Content Sections */}
+      <div className="max-w-[860px] mx-auto px-4 sm:px-6 mt-16">
         {page.sections && page.sections.length > 0 && (
-          <div className="flex flex-col gap-8 mb-16">
+          <div className="flex flex-col gap-6 mb-14">
             {page.sections.map((section, idx) => (
               <SeoSection key={idx} section={section} />
             ))}
           </div>
         )}
 
-        {/* FAQ */}
+        {/* FAQ Section */}
         <FAQ faq={page.faq || []} />
 
-        {/* Related Tools Internal Linking ({component.property-card} photo-first style) */}
+        {/* Related Tools */}
         {relatedPages.length > 0 && (
-          <div className="mt-16 pt-8 border-t border-[#dddddd] dark:border-slate-800 not-prose mb-12">
-            <h3 className="text-xl font-bold mb-6 text-[#222222] dark:text-white">{t.relatedTools}</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="mt-16 pt-8 border-t border-[#E4E4E7]">
+            <h3 className="text-lg font-semibold mb-5 text-[#18181B]">
+              Related Tools
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {relatedPages.map((relatedPage) => (
                 <Link 
                   key={relatedPage.slug} 
-                  href={`/${lang === 'en' ? '' : lang + '/'}${relatedPage.slug}`}
-                  className="group flex flex-col p-5 bg-white dark:bg-slate-900 rounded-2xl border border-[#dddddd] dark:border-slate-800 hover:border-[#ff385c] hover:shadow-md transition-all duration-200"
+                  href={`/${relatedPage.slug}`}
+                  className="p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] hover:border-[#BBF7D0] hover:bg-[#F0FDF4] shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all flex flex-col justify-between group"
                 >
-                  <h4 className="font-bold text-xs text-[#222222] dark:text-white group-hover:text-[#ff385c] transition-colors line-clamp-2">
-                    {relatedPage.h1}
-                  </h4>
-                  <p className="text-[11px] text-[#6a6a6a] dark:text-slate-400 mt-2 line-clamp-2 flex-1">
-                    {relatedPage.metaDescription}
-                  </p>
-                  <div className="mt-3 text-xs font-bold text-[#ff385c] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
-                    <span>{t.useTool}</span>
-                    <ArrowRight size={12} />
+                  <div>
+                    <h4 className="font-semibold text-sm text-[#18181B] group-hover:text-[#15803D] transition-colors line-clamp-2">
+                      {relatedPage.h1}
+                    </h4>
+                    <p className="text-xs text-[#52525B] mt-2 line-clamp-2">
+                      {relatedPage.metaDescription}
+                    </p>
+                  </div>
+                  <div className="mt-4 text-xs font-semibold text-[#16A34A] flex items-center gap-1">
+                    <span>Use Tool</span>
+                    <ArrowRight size={12} className="transform group-hover:translate-x-0.5 transition-transform" />
                   </div>
                 </Link>
               ))}
