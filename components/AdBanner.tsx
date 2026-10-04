@@ -130,16 +130,14 @@ export function AdBanner({
         <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-1">
           Advertisement
         </span>
-        {shouldLoad && (
-          <ins
-            className="adsbygoogle"
-            style={{ display: 'block', width: '100%' }}
-            data-ad-client="ca-pub-2980455227951378"
-            data-ad-slot={slotId}
-            data-ad-format={dataAdFormat}
-            data-full-width-responsive={dataFullWidthResponsive ? "true" : "false"}
-          />
-        )}
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block', width: '100%', minHeight: '90px' }}
+          data-ad-client="ca-pub-2980455227951378"
+          data-ad-slot={slotId}
+          data-ad-format={dataAdFormat}
+          data-full-width-responsive={dataFullWidthResponsive ? "true" : "false"}
+        />
       </div>
     );
   }
@@ -155,38 +153,36 @@ export function AdBanner({
         <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-1 text-center">
           Advertisement
         </span>
-        {shouldLoad && (
-          <ins
-            className="adsbygoogle"
-            style={{ display: 'inline-block', width: '300px', height: '600px' }}
-            data-ad-client="ca-pub-2980455227951378"
-            data-ad-slot={slotId}
-          />
-        )}
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'inline-block', width: '300px', height: '600px' }}
+          data-ad-client="ca-pub-2980455227951378"
+          data-ad-slot={slotId}
+        />
       </div>
     );
   }
 
-  // Standard Responsive or Fixed Banner
+  // Standard Responsive or Fixed Leaderboard Banner
   return (
     <div 
       ref={containerRef} 
-      className={`w-full block text-center py-2 h-[90px] sm:h-[110px] min-h-[90px] sm:min-h-[110px] overflow-hidden ${className}`}
-      style={{ contain: 'strict' }}
+      className={`w-full block text-center py-1.5 sm:py-2 min-h-[65px] sm:min-h-[105px] overflow-hidden ${className}`}
+      style={{ contain: 'layout style paint' }}
     >
-      <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-0.5">
+      <span className="text-[9px] uppercase tracking-widest text-[#71717A] font-semibold block mb-1">
         Advertisement
       </span>
-      {shouldLoad && (
+      <div className="w-full flex justify-center items-center overflow-hidden">
         <ins
           className="adsbygoogle"
-          style={type === 'fixed' ? { display: 'inline-block', width: '728px', height: '90px' } : { display: 'block', width: '100%', height: '90px' }}
+          style={{ display: 'block', width: '100%', minHeight: '50px', maxHeight: '100px' }}
           data-ad-client="ca-pub-2980455227951378"
           data-ad-slot={slotId}
           data-ad-format={dataAdFormat}
           data-full-width-responsive={dataFullWidthResponsive ? "true" : "false"}
         />
-      )}
+      </div>
     </div>
   );
 }

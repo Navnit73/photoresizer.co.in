@@ -11,11 +11,8 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
       <SiteHeader />
       
       {/* Top Ad Container */}
-      <div className="max-w-[1280px] w-full mx-auto px-4 mt-4 hidden sm:block" style={{ height: '110px', minHeight: '110px', overflow: 'hidden', contain: 'layout style paint' }}>
-        <AdBanner type="fixed" />
-      </div>
-      <div className="max-w-[1280px] w-full mx-auto px-4 mt-4 block sm:hidden" style={{ height: '100px', minHeight: '100px', overflow: 'hidden', contain: 'layout style paint' }}>
-        <AdBanner type="responsive" />
+      <div className="max-w-[1200px] w-full mx-auto px-4 mt-3 sm:mt-4">
+        <AdBanner type="responsive" className="max-w-[970px] mx-auto" />
       </div>
 
       {/* Main Page Content */}
