@@ -13,6 +13,29 @@ type UrlObj = {
   hreflangs?: Record<string, string>;
 };
 
+function getExistingLastmodMap(sitemapPath: string): Map<string, string> {
+  const map = new Map<string, string>();
+  if (!fs.existsSync(sitemapPath)) return map;
+
+  try {
+    const content = fs.readFileSync(sitemapPath, 'utf-8');
+    const urlRegex = /<url>([\s\S]*?)<\/url>/g;
+    let match: RegExpExecArray | null;
+    while ((match = urlRegex.exec(content)) !== null) {
+      const block = match[1];
+      const locMatch = block.match(/<loc>(.*?)<\/loc>/);
+      const lastmodMatch = block.match(/<lastmod>(.*?)<\/lastmod>/);
+      if (locMatch && lastmodMatch) {
+        map.set(locMatch[1].trim(), lastmodMatch[1].trim());
+      }
+    }
+  } catch (err) {
+    console.warn('Could not read existing sitemap_main.xml for lastmod preservation:', err);
+  }
+
+  return map;
+}
+
 function generateXml(urlObjs: UrlObj[]) {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n`;
@@ -39,6 +62,9 @@ async function main() {
     fs.mkdirSync(publicDir, { recursive: true });
   }
 
+  const sitemapMainPath = path.join(publicDir, 'sitemap_main.xml');
+  const existingLastmodMap = getExistingLastmodMap(sitemapMainPath);
+
   // Remove obsolete dead sitemaps if present
   const obsoleteSitemaps = ['sitemap_es.xml', 'sitemap_fr.xml', 'sitemap_de.xml', 'sitemap_pt.xml'];
   for (const oldFile of obsoleteSitemaps) {
@@ -61,13 +87,22 @@ async function main() {
   };
 
   // 1. Root Homepage
-  addUrl({ url: `${BASE_URL}/`, changeFrequency: 'daily', priority: 1.0, hreflangs: ROOT_HREFLANGS });
+  const rootUrl = `${BASE_URL}/`;
+  addUrl({
+    url: rootUrl,
+    changeFrequency: 'daily',
+    priority: 1.0,
+    lastmod: existingLastmodMap.get(rootUrl) || todayIso,
+    hreflangs: ROOT_HREFLANGS,
+  });
 
   // 2. Main Tools Listing Page
+  const toolsUrl = `${BASE_URL}/tools`;
   addUrl({
-    url: `${BASE_URL}/tools`,
+    url: toolsUrl,
     changeFrequency: 'weekly',
     priority: 0.9,
+    lastmod: existingLastmodMap.get(toolsUrl) || todayIso,
     hreflangs: getRegionalHreflangMap('tools'),
   });
 
@@ -81,19 +116,28 @@ async function main() {
       url: pageUrl,
       changeFrequency: 'weekly',
       priority: 0.8,
+      lastmod: p.lastmod || existingLastmodMap.get(pageUrl) || todayIso,
       hreflangs: getRegionalHreflangMap(cleanSlug, 'en'),
     });
   }
 
   // Generate sitemap_main.xml with all canonical URLs
-  fs.writeFileSync(path.join(publicDir, 'sitemap_main.xml'), generateXml(allUrls));
+  fs.writeFileSync(sitemapMainPath, generateXml(allUrls));
+
+  // Determine latest lastmod for index sitemap
+  const latestLastmod =
+    allUrls
+      .map((u) => u.lastmod)
+      .filter((d): d is string => Boolean(d))
+      .sort()
+      .pop() || todayIso;
 
   // Generate Master sitemap.xml Index
   const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
     `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
     `  <sitemap>\n` +
     `    <loc>${BASE_URL}/sitemap_main.xml</loc>\n` +
-    `    <lastmod>${todayIso}</lastmod>\n` +
+    `    <lastmod>${latestLastmod}</lastmod>\n` +
     `  </sitemap>\n` +
     `</sitemapindex>\n`;
   fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapIndexXml);
