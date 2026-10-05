@@ -6,6 +6,7 @@ import { enPages } from '../../../content/en-pages';
 import { Scissors, Sliders, Minimize2, Sparkles, ArrowRight } from 'lucide-react';
 
 import { BASE_URL } from '@/lib/seo';
+import { AdBanner } from '@/components/AdBanner';
 
 export const metadata: Metadata = {
   title: "All Free Online Photo & Image Editing Tools | PhotoResizer",
@@ -104,6 +105,7 @@ export default function ToolsPage() {
 
       {/* Tools Grid */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-12">
+        <AdBanner placement="heroBelow" className="max-w-[970px] mx-auto mb-10" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
           {validPages.map((page) => {
             const isPassport = page.showTool === 'passport-maker';
@@ -135,6 +137,8 @@ export default function ToolsPage() {
             );
           })}
         </div>
+
+        <AdBanner placement="contentEnd" className="max-w-[970px] mx-auto mt-12" />
       </div>
     </main>
   );

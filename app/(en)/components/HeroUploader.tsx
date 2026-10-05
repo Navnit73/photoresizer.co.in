@@ -10,6 +10,7 @@ import {
   Lock,
   Sparkles
 } from "lucide-react";
+import { AdBanner } from "../../../components/AdBanner";
 
 const loadPhotoEditor = () => import("../../components/editor/PhotoEditor");
 
@@ -252,6 +253,8 @@ export default function HeroUploader({
 
             </div>
 
+            {/* Below-the-upload ad: never competes with the upload CTA */}
+            <AdBanner placement="heroBelow" className="max-w-[970px] mx-auto mt-8" />
           </div>
         </section>
       )}
@@ -262,6 +265,9 @@ export default function HeroUploader({
           <div className="min-h-[560px]">
             <PhotoEditor initialFile={uploadedFile} />
           </div>
+
+          {/* Below-the-tool ad: well separated from the Download button */}
+          <AdBanner placement="toolBelow" className="max-w-[970px] mx-auto mt-10" />
         </div>
       )}
     </>

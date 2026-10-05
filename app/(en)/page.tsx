@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 
 import { ROOT_HREFLANGS, BASE_URL } from "@/lib/seo";
+import { AdBanner } from "@/components/AdBanner";
 
 const LAST_REVIEWED = "October 2026";
 const LAST_REVIEWED_ISO = "2026-10-04";
@@ -525,6 +526,8 @@ export default function Home() {
           </div>
         </section>
 
+        <AdBanner placement="inContent" className="mt-14 sm:mt-16" />
+
         {/* Spec chart */}
         <section className="mt-14 sm:mt-16" id="size-chart">
           <div className="bg-[#FFFFFF] rounded-xl p-5 sm:p-8 border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
@@ -652,6 +655,8 @@ export default function Home() {
           </div>
         </section>
 
+        <AdBanner placement="inContent" className="mt-14 sm:mt-16" />
+
         {/* Rejection reasons */}
         <section className="mt-14 sm:mt-16">
           <div className="grid md:grid-cols-2 gap-8 items-start bg-[#FFFFFF] rounded-xl p-6 sm:p-10 border border-[#E4E4E7] shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
@@ -755,6 +760,8 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <AdBanner placement="contentEnd" className="mt-14 sm:mt-16" />
 
         {/* Internal links */}
         <section className="mt-14 sm:mt-16 pt-10 border-t border-[#E4E4E7] pb-10">

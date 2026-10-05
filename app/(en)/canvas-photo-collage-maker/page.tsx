@@ -8,6 +8,7 @@ import { generateSeoMetadata } from '@/lib/seo';
 import { generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Link from 'next/link';
 import { Sparkles, ArrowRight } from 'lucide-react';
+import { AdBanner } from '@/components/AdBanner';
 
 const CollageMakerTool = dynamic(() => import('@/components/canvas-collage/CollageMakerTool'), {
   loading: () => (
@@ -99,6 +100,8 @@ export default function CanvasPhotoCollageMakerPage() {
         <div id="collage-maker" className="pt-4">
           <CollageMakerTool />
         </div>
+
+        <AdBanner placement="toolBelow" className="max-w-[970px] mx-auto mt-12" />
         
         <div id="poster-splitter" className="pt-8">
           <PosterPrintTool />
@@ -109,6 +112,8 @@ export default function CanvasPhotoCollageMakerPage() {
             <FAQAccordion faq={pageData.faq} />
           </div>
         )}
+
+        <AdBanner placement="contentEnd" className="max-w-[970px] mx-auto mt-12" />
 
         {/* Related Tools Section */}
         <section className="mt-16 border-t border-[#E4E4E7] pt-12">

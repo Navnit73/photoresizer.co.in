@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import SiteHeader from './SiteHeader';
-import { AdBanner } from '../../components/AdBanner';
 import { examCategories } from '@/lib/navigation-data';
 
 export default function EnglishLayout({ children }: { children: React.ReactNode }) {
@@ -9,11 +8,6 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
     <div className="min-h-screen flex flex-col bg-[#FFFFFF] text-[#18181B]">
       {/* Unified Global Header */}
       <SiteHeader />
-      
-      {/* Top Ad Container */}
-      <div className="max-w-[1200px] w-full mx-auto px-4 mt-2 sm:mt-4 min-h-[75px] sm:min-h-[105px]">
-        <AdBanner type="responsive" className="max-w-[970px] mx-auto" />
-      </div>
 
       {/* Main Page Content */}
       <div className="flex-1">

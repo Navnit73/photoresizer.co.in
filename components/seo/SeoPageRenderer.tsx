@@ -10,6 +10,7 @@ import { SeoSection } from './SeoSection';
 import { FAQ } from './FAQ';
 import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from '../../lib/schema';
 import type { Region } from '../../app/components/passport_photo/PassportCropper';
+import { AdBanner } from '../AdBanner';
 
 const PhotoEditor = dynamic(() => import('../../app/components/editor/PhotoEditor'), {
   ssr: false,
@@ -245,6 +246,9 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
                 </div>
               </div>
             </div>
+
+            {/* Below-the-upload ad: never competes with the upload CTA */}
+            <AdBanner placement="heroBelow" className="max-w-[970px] mx-auto mt-8" />
           </section>
         )}
 
@@ -303,6 +307,9 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
                 <BgRemoverApp />
               )}
             </div>
+
+            {/* Below-the-tool ad: well separated from the Download button */}
+            <AdBanner placement="toolBelow" className="max-w-[970px] mx-auto mt-10" />
           </div>
         )}
 
@@ -313,13 +320,22 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
         {page.sections && page.sections.length > 0 && (
           <div className="flex flex-col gap-6 mb-14">
             {page.sections.map((section, idx) => (
-              <SeoSection key={idx} section={section} />
+              <React.Fragment key={idx}>
+                <SeoSection section={section} />
+                {/* In-content ad after the 2nd section (only on longer pages) */}
+                {idx === 1 && (page.sections?.length ?? 0) > 3 && (
+                  <AdBanner placement="inContent" className="my-2" />
+                )}
+              </React.Fragment>
             ))}
           </div>
         )}
 
         {/* FAQ Section */}
         <FAQ faq={page.faq || []} />
+
+        {/* End-of-content ad, before related links */}
+        <AdBanner placement="contentEnd" className="mt-12" />
 
         {/* Related Tools */}
         {relatedPages.length > 0 && (

@@ -31,6 +31,11 @@ export function ThirdPartyScripts() {
         adScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2980455227951378";
         adScript.async = true;
         adScript.crossOrigin = "anonymous";
+        adScript.onerror = () => {
+          // Ad blocker or network failure: let ad slots collapse instead of showing empty boxes.
+          window.__adsBlocked = true;
+          window.dispatchEvent(new Event("ads-blocked"));
+        };
         document.head.appendChild(adScript);
       }
 
