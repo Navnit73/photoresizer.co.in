@@ -9,6 +9,7 @@ import { Breadcrumb } from './Breadcrumb';
 import { SeoSection } from './SeoSection';
 import { FAQ } from './FAQ';
 import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from '../../lib/schema';
+import type { Region } from '../../app/components/passport_photo/PassportCropper';
 
 const PhotoEditor = dynamic(() => import('../../app/components/editor/PhotoEditor'), {
   ssr: false,
@@ -24,6 +25,15 @@ const BgRemoverApp = dynamic(() => import('../../app/components/bg_removal/BgRem
   ssr: false,
   loading: () => <div className="min-h-[450px] flex items-center justify-center text-sm text-[#71717A]">Loading background remover...</div>,
 });
+
+/** Pre-selects the passport size that matches a country-specific landing page. */
+function passportRegionForSlug(slug: string): Region | undefined {
+  if (slug.startsWith('us-')) return 'US';
+  if (slug.startsWith('uk-')) return 'UK';
+  if (slug.startsWith('india-')) return 'IN_PASSPORT';
+  if (slug.includes('schengen')) return 'EU';
+  return undefined;
+}
 
 export interface RelatedPageLink {
   slug: string;
@@ -283,7 +293,7 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
             <div className="min-h-[600px]">
               {activeTab === "editor" ? (
                 page.showTool === 'passport-maker' ? (
-                  <PassportMakerApp initialFile={uploadedFile} />
+                  <PassportMakerApp initialFile={uploadedFile} defaultRegion={passportRegionForSlug(page.slug)} />
                 ) : page.showTool === 'bg-remover' ? (
                   <BgRemoverApp />
                 ) : (
