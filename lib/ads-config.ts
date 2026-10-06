@@ -15,7 +15,8 @@ export type AdPlacement =
   | 'heroBelow'
   | 'toolBelow'
   | 'inContent'
-  | 'contentEnd';
+  | 'contentEnd'
+  | 'downloadWait';
 
 export interface AdPlacementConfig {
   /** AdSense ad unit slot ID. */
@@ -56,5 +57,13 @@ export const AD_PLACEMENTS: Record<AdPlacement, AdPlacementConfig> = {
     slot: DEFAULT_SLOT,
     format: 'auto',
     minHeightClass: 'min-h-[280px] sm:min-h-[250px]',
+  },
+  // Shown in the download panel once the user clicks Download (during the short
+  // wait), *below* the Download button and kept after the download so the panel
+  // doesn't jump. Requested once per image — never refreshed per click.
+  downloadWait: {
+    slot: DEFAULT_SLOT,
+    format: 'rectangle',
+    minHeightClass: 'min-h-[250px]',
   },
 };

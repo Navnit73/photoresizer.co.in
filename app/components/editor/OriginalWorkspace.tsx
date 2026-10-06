@@ -93,18 +93,27 @@ export default function OriginalWorkspace() {
   // Track canvas container pixel dimensions to fit entire image without scrollbars
   useEffect(() => {
     if (!containerRef.current) return;
+    let raf: number | null = null;
     const ro = new ResizeObserver((entries) => {
-      for (const entry of entries) {
-        if (entry.contentRect) {
-          setContainerSize({
-            width: Math.floor(entry.contentRect.width),
-            height: Math.floor(entry.contentRect.height),
-          });
-        }
-      }
+      const rect = entries[entries.length - 1]?.contentRect;
+      if (!rect) return;
+      const width = Math.floor(rect.width);
+      const height = Math.floor(rect.height);
+      // Apply on the next frame: resizing inside the observer callback triggers
+      // "ResizeObserver loop completed with undelivered notifications".
+      if (raf !== null) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        raf = null;
+        setContainerSize((prev) =>
+          prev.width === width && prev.height === height ? prev : { width, height }
+        );
+      });
     });
     ro.observe(containerRef.current);
-    return () => ro.disconnect();
+    return () => {
+      if (raf !== null) cancelAnimationFrame(raf);
+      ro.disconnect();
+    };
   }, []);
 
   // BG removal progress simulation

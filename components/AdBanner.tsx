@@ -13,6 +13,8 @@ declare global {
 type AdBannerProps = {
   placement: AdPlacement;
   className?: string;
+  /** Called once if the slot collapses (unfilled or blocked). */
+  onUnavailable?: () => void;
 };
 
 /**
@@ -23,7 +25,7 @@ type AdBannerProps = {
  * - Never clips the creative (clipping ads violates AdSense policy and lowers fill).
  * - Collapses itself when unfilled or blocked, so users never see empty boxes.
  */
-export function AdBanner({ placement, className = '' }: AdBannerProps) {
+export function AdBanner({ placement, className = '', onUnavailable }: AdBannerProps) {
   const config = AD_PLACEMENTS[placement];
   const containerRef = useRef<HTMLElement>(null);
   const insRef = useRef<HTMLModElement>(null);
@@ -93,6 +95,14 @@ export function AdBanner({ placement, className = '' }: AdBannerProps) {
       window.removeEventListener('ads-blocked', onBlocked);
     };
   }, []);
+
+  const onUnavailableRef = useRef(onUnavailable);
+  useEffect(() => {
+    onUnavailableRef.current = onUnavailable;
+  });
+  useEffect(() => {
+    if (collapsed) onUnavailableRef.current?.();
+  }, [collapsed]);
 
   if (collapsed) return null;
 

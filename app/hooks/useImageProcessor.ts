@@ -1,6 +1,7 @@
 import { useEffect, useRef, startTransition, useCallback } from 'react';
 import { useEditor, getStripLines } from '../components/editor/EditorContext';
 import { isLowEndDevice } from '../utils/device';
+import { isChunkLoadError, reloadForStaleDeploy } from '../utils/staleDeploy';
 
 const DEBOUNCE_MS = 200;
 const DEBOUNCE_MS_LOW_END = 450;
@@ -58,6 +59,19 @@ export function useImageProcessor() {
           setIsProcessing(false);
         });
       }
+    };
+
+    // Fires when the worker script itself fails to load (usually its chunk is gone after a
+    // redeploy, or the network dropped). Without this the editor spins forever and the
+    // error surfaces as an uncaught NetworkError.
+    worker.onerror = (e: ErrorEvent) => {
+      e.preventDefault();
+      console.error('Image processing worker failed:', e.message);
+      startTransition(() => {
+        setIsProcessing(false);
+      });
+      // A missing bootstrap script yields an event with no message.
+      if (!e.message || isChunkLoadError(e.message)) reloadForStaleDeploy();
     };
 
     return () => {

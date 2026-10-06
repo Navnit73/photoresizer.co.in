@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useEditor } from "./EditorContext";
 import { useImageProcessor } from "../../hooks/useImageProcessor";
 import { triggerHaptic } from "../../utils/haptics";
+import { AdBanner } from "../../../components/AdBanner";
 import {
   Download,
   CircleCheck,
@@ -28,8 +29,13 @@ const PRESETS = [
 ] as const;
 
 const TARGET_CHIPS = [20, 50, 100, 200, 500];
+const DOWNLOAD_DELAY_SECONDS = 10;
 const MIN_TARGET_KB = 5;
 const MAX_TARGET_KB = 20000;
+
+function extForFormat(format: string): string {
+  return format === "image/jpeg" ? "jpg" : format === "image/png" ? "png" : "webp";
+}
 
 interface DownloadSummary {
   name: string;
@@ -61,18 +67,31 @@ export default function DownloadPanel() {
 
   const [downloaded, setDownloaded] = useState<DownloadSummary | null>(null);
   const [targetText, setTargetText] = useState<string | null>(null);
+  const [countdown, setCountdown] = useState<number | null>(null);
+  // The download ad is requested once per image (on its first Download click), never per click.
+  const [adForFile, setAdForFile] = useState<File | null>(null);
+  // If the ad can't be shown (blocked / no fill), there's no reason to make the user wait.
+  const adUnavailable = useRef(false);
+  const countdownRef = useRef<HTMLParagraphElement>(null);
   const bannerTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const countdownTimer = useRef<ReturnType<typeof setInterval> | null>(null);
+  // Settings can change during the countdown, so the download reads the latest output.
+  const latest = useRef({ livePreview, format, fileName, originalFileSize });
+  useEffect(() => {
+    latest.current = { livePreview, format, fileName, originalFileSize };
+  });
 
   useEffect(() => {
     return () => {
       if (bannerTimer.current) clearTimeout(bannerTimer.current);
+      if (countdownTimer.current) clearInterval(countdownTimer.current);
     };
   }, []);
 
   if (!imageFile) return null;
 
   const isPng = format === "image/png";
-  const ext = format === "image/jpeg" ? "jpg" : format === "image/png" ? "png" : "webp";
+  const ext = extForFormat(format);
   const outBytes = livePreview.sizeBytes ?? Math.round(livePreview.sizeKb * 1024);
   const hasResult = !!livePreview.url && outBytes > 0;
 
@@ -84,21 +103,59 @@ export default function DownloadPanel() {
   const activePreset = targetSizeKb !== null ? "target" : PRESETS.find((p) => p.quality === quality)?.id ?? "custom";
   const targetMissed = targetSizeKb !== null && !isProcessing && livePreview.targetMet === false;
 
-  const handleDownload = () => {
-    if (!livePreview.url) return;
+  const saveFile = () => {
+    const { livePreview: preview, format: fmt, fileName: rawName, originalFileSize: fromBytes } = latest.current;
+    if (!preview.url) return;
     triggerHaptic('success');
-    const name = fileName.trim() || "photoresizer";
+    const name = rawName.trim() || "photoresizer";
+    const fileExt = extForFormat(fmt);
     setFileName(name);
     const a = document.createElement("a");
-    a.href = livePreview.url;
-    a.download = `${name}.${ext}`;
+    a.href = preview.url;
+    a.download = `${name}.${fileExt}`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
 
-    setDownloaded({ name: `${name}.${ext}`, from: originalFileSize, to: outBytes });
+    const toBytes = preview.sizeBytes ?? Math.round(preview.sizeKb * 1024);
+    setDownloaded({ name: `${name}.${fileExt}`, from: fromBytes, to: toBytes });
     if (bannerTimer.current) clearTimeout(bannerTimer.current);
     bannerTimer.current = setTimeout(() => setDownloaded(null), 9000);
+  };
+
+  const finishCountdown = () => {
+    if (!countdownTimer.current) return;
+    clearInterval(countdownTimer.current);
+    countdownTimer.current = null;
+    setCountdown(null);
+    saveFile();
+  };
+
+  const handleDownload = () => {
+    if (!livePreview.url || countdownTimer.current) return;
+    setDownloaded(null);
+    if (adUnavailable.current) {
+      saveFile();
+      return;
+    }
+    setAdForFile(imageFile);
+    let remaining = DOWNLOAD_DELAY_SECONDS;
+    setCountdown(remaining);
+    countdownTimer.current = setInterval(() => {
+      remaining -= 1;
+      if (remaining > 0) setCountdown(remaining);
+      else finishCountdown();
+    }, 1000);
+
+    // On mobile the tap came from the sticky bar; bring the countdown (and the ad below it) into view.
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+      requestAnimationFrame(() => countdownRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }));
+    }
+  };
+
+  const handleAdUnavailable = () => {
+    adUnavailable.current = true;
+    finishCountdown();
   };
 
   const commitTarget = (raw: string) => {
@@ -113,7 +170,8 @@ export default function DownloadPanel() {
     setHeight(Math.max(1, Math.round(height * 0.8)));
   };
 
-  const downloadDisabled = !livePreview.url || isProcessing;
+  const isCountingDown = countdown !== null;
+  const downloadDisabled = !livePreview.url || isProcessing || isCountingDown;
 
   return (
     <>
@@ -354,6 +412,28 @@ export default function DownloadPanel() {
           </div>
         </section>
 
+        {isCountingDown && (
+          <div className="px-3.5 py-3 rounded-xl border border-[#E4E4E7] bg-[#FAFAFA]">
+            <p
+              ref={countdownRef}
+              role="status"
+              className="flex items-center gap-2 text-xs font-medium text-[#52525B]"
+            >
+              <LoaderCircle size={16} className="animate-spin flex-shrink-0 text-[#16A34A]" aria-hidden="true" />
+              <span>
+                Preparing your file. Download starts in{" "}
+                <span className="font-bold tabular-nums text-[#18181B]">{countdown}s</span>
+              </span>
+            </p>
+            <div className="mt-2.5 h-1.5 rounded-full bg-[#E4E4E7] overflow-hidden" aria-hidden="true">
+              <div
+                className="h-full rounded-full bg-[#16A34A] transition-[width] duration-1000 ease-linear"
+                style={{ width: `${((DOWNLOAD_DELAY_SECONDS - (countdown ?? 0) + 1) / DOWNLOAD_DELAY_SECONDS) * 100}%` }}
+              />
+            </div>
+          </div>
+        )}
+
         {downloaded && (
           <div
             role="status"
@@ -403,10 +483,29 @@ export default function DownloadPanel() {
             disabled={downloadDisabled}
             className="w-full flex items-center justify-center gap-2 px-6 h-12 text-sm font-bold bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-[#FFFFFF] rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] transition-all disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap"
           >
-            <Download size={18} aria-hidden="true" />
-            <span>Download{hasResult ? ` · ${formatBytes(outBytes)}` : ""}</span>
+            {isCountingDown ? (
+              <>
+                <LoaderCircle size={18} className="animate-spin" aria-hidden="true" />
+                <span className="tabular-nums">Download starts in {countdown}s</span>
+              </>
+            ) : (
+              <>
+                <Download size={18} aria-hidden="true" />
+                <span>Download{hasResult ? ` · ${formatBytes(outBytes)}` : ""}</span>
+              </>
+            )}
           </button>
         </div>
+
+        {/* Below the Download button, never between the user and it. Stays after the
+            download so the panel doesn't jump; a new image gets a new ad request. */}
+        {adForFile === imageFile && (
+          <AdBanner
+            placement="downloadWait"
+            className="pt-3 border-t border-[#F4F4F5]"
+            onUnavailable={handleAdUnavailable}
+          />
+        )}
       </div>
 
       {/* Mobile sticky action bar: the primary action is always one thumb-tap away. */}
@@ -431,8 +530,17 @@ export default function DownloadPanel() {
             disabled={downloadDisabled}
             className="flex items-center justify-center gap-2 px-6 h-12 text-sm font-semibold bg-[#16A34A] active:bg-[#15803D] text-[#FFFFFF] rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.08)] transition-colors active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap"
           >
-            <Download size={18} aria-hidden="true" />
-            <span>Download</span>
+            {isCountingDown ? (
+              <>
+                <LoaderCircle size={18} className="animate-spin" aria-hidden="true" />
+                <span className="tabular-nums">{countdown}s</span>
+              </>
+            ) : (
+              <>
+                <Download size={18} aria-hidden="true" />
+                <span>Download</span>
+              </>
+            )}
           </button>
         </div>
       </div>

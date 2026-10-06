@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from 'next/font/google';
 import { ThirdPartyScripts } from "./components/ThirdPartyScripts";
+import { ClientErrorSuppressor } from "./components/ClientErrorSuppressor";
 import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/schema";
 import "./globals.css";
 
@@ -63,6 +64,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <ClientErrorSuppressor />
         <ThirdPartyScripts />
         
         {/* Global Structured Data */}

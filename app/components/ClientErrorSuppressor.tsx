@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { isChunkLoadError, reloadForStaleDeploy } from "../utils/staleDeploy";
 
 export function ClientErrorSuppressor() {
   useEffect(() => {
@@ -37,34 +38,42 @@ export function ClientErrorSuppressor() {
         originalConsoleError(...args);
       };
 
-      // 3. Prevent unhandled error overlays for performance.measure exceptions
+      // 3. Swallow known-benign errors, and recover from chunks missing after a redeploy.
+      // Listeners are registered in the capture phase on mount, ahead of Clarity/GA
+      // (which load on first interaction), so stopImmediatePropagation keeps noise out of reports.
       const handleGlobalError = (event: ErrorEvent) => {
+        const msg = event.message || "";
         if (
-          event.message?.includes("Failed to execute 'measure' on 'Performance'") ||
-          event.message?.includes("cannot have a negative time stamp")
+          // Benign: the browser deferred resize notifications to the next frame.
+          msg.includes("ResizeObserver loop") ||
+          msg.includes("Failed to execute 'measure' on 'Performance'") ||
+          msg.includes("cannot have a negative time stamp") ||
+          (isChunkLoadError(msg) && reloadForStaleDeploy())
         ) {
           event.preventDefault();
-          event.stopPropagation();
+          event.stopImmediatePropagation();
         }
       };
 
       const handleUnhandledRejection = (event: PromiseRejectionEvent) => {
         const reason = event.reason;
-        const msg = typeof reason === "string" ? reason : reason?.message || "";
+        const msg = typeof reason === "string" ? reason : `${reason?.name || ""} ${reason?.message || ""}`;
         if (
           msg.includes("Failed to execute 'measure' on 'Performance'") ||
-          msg.includes("cannot have a negative time stamp")
+          msg.includes("cannot have a negative time stamp") ||
+          (isChunkLoadError(msg) && reloadForStaleDeploy())
         ) {
           event.preventDefault();
+          event.stopImmediatePropagation();
         }
       };
 
-      window.addEventListener("error", handleGlobalError);
-      window.addEventListener("unhandledrejection", handleUnhandledRejection);
+      window.addEventListener("error", handleGlobalError, true);
+      window.addEventListener("unhandledrejection", handleUnhandledRejection, true);
 
       return () => {
-        window.removeEventListener("error", handleGlobalError);
-        window.removeEventListener("unhandledrejection", handleUnhandledRejection);
+        window.removeEventListener("error", handleGlobalError, true);
+        window.removeEventListener("unhandledrejection", handleUnhandledRejection, true);
       };
     }
   }, []);

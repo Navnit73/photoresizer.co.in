@@ -3011,473 +3011,856 @@ export const programmaticPages: SeoPage[] = [
       },
     ],
   },
-  {
+{
     slug: "ssc-mts-signature-resizer",
-    metaTitle: "Ssc Mts Signature Resizer — Exact Size & KB",
+    metaTitle: "SSC MTS Signature Resizer – Resize to 10–20 KB JPEG",
     metaDescription:
-      "Free online tool for Ssc Mts Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Mts Signature Resizer",
+      "Resize your SSC MTS signature to the 10–20 KB JPEG limit in seconds. Crop, set exact dimensions and compress in your browser. Free, no upload, no signup.",
+    h1: "SSC MTS Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Mts Signature Resizer. 100% free, 100% private.",
+      "Crop, resize and compress your signature for the SSC MTS & Havaldar application form, right in your browser.",
     sections: [
       {
-        heading: "About Ssc Mts Signature Resizer",
+        heading: "Resize Your SSC MTS Signature in Seconds",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ssc Mts Signature Resizer</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    The SSC Multi-Tasking (Non-Technical) Staff and Havaldar exam attracts lakhs of applicants every cycle, and many of them get stuck at one small step: the signature upload. The portal only accepts a JPEG inside a fixed KB window, while a phone photo of your signature is usually several megabytes. This tool shrinks it to the exact range without turning your signature into a blurry smudge.
+  </p>
   <p class="text-[#52525B] leading-relaxed">
-    Your Ssc Mts Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
+    Everything runs inside your browser using HTML5 Canvas. Your signature is never uploaded to our servers, which matters for something as personal as the mark you use on official documents.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Use the SSC MTS Signature Resizer",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Sign on plain white paper</strong> with a black ink pen, in your normal running hand. Make the strokes firm so they survive compression.</li>
+    <li><strong class="text-[#18181B]">Photograph or scan it</strong> in daylight, holding the phone directly above the page so there is no shadow or slant.</li>
+    <li><strong class="text-[#18181B]">Upload and crop.</strong> Drag the crop handles to trim the extra paper, leaving a thin white margin around the signature.</li>
+    <li><strong class="text-[#18181B]">Enter the dimensions</strong> given in your SSC MTS notification in the sidebar.</li>
+    <li><strong class="text-[#18181B]">Set a target size.</strong> A value like 18 KB sits safely inside the 10–20 KB range. The tool automatically finds the highest quality that fits.</li>
+    <li><strong class="text-[#18181B]">Download and check.</strong> Open the JPEG once to confirm it is sharp, then upload it to the SSC portal.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "SSC MTS Signature Requirements",
+        content: `<div class="space-y-6 not-prose">
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm text-left border border-[#E4E4E7] rounded-xl">
+      <tbody class="text-[#52525B]">
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">Format</th><td class="p-3">JPEG / JPG</td></tr>
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">File size</th><td class="p-3">10 KB to 20 KB</td></tr>
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">Dimensions</th><td class="p-3">As printed in the current notice (older notices used 4.0 cm × 3.0 cm)</td></tr>
+        <tr><th class="p-3 font-semibold text-[#18181B]">Style</th><td class="p-3">Running hand on white paper, not in capital letters</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">
+    SSC notifications have stated that signatures written in CAPITAL letters will not be accepted, and blurred or unclear images can lead to rejection. Specifications can change between cycles, so confirm them in the latest SSC MTS notice on ssc.gov.in before you submit.
   </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question:
-          "What is the standard signature size for Ssc Mts Signature Resizer?",
+        question: "What size should my SSC MTS signature be?",
         answer:
-          "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification.",
+          "SSC has typically asked for a JPEG signature between 10 KB and 20 KB. Use the width and height printed in the current notification, since these have changed between exam cycles. Enter both values in the sidebar and the tool will handle the rest.",
       },
       {
-        question: "Is it safe to upload my signature?",
+        question: "My signature file is only 6 KB. Will SSC accept it?",
         answer:
-          "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
+          "Files below the minimum can be rejected by the portal. Re-export with a higher target such as 15–18 KB. If the original scan was very small or low-resolution, take a fresh, closer photo of your signature and try again.",
       },
       {
-        question:
-          "Can I use blue ink for the Ssc Mts Signature Resizer signature?",
+        question: "Can I sign in capital letters?",
         answer:
-          "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Ssc Mts Signature Resizer guidelines.",
+          "No. SSC notifications have specifically said that signatures in capital letters are not accepted. Sign the way you normally do, and use the same signature at the exam centre.",
+      },
+      {
+        question: "Is my signature uploaded anywhere?",
+        answer:
+          "No. All cropping, resizing and compression happen locally in your browser using HTML5 Canvas. The image is never sent to a remote server.",
       },
     ],
   },
   {
     slug: "ssc-cpo-photo-resizer",
-    metaTitle: "Ssc Cpo Photo Resizer — Resize & Compress",
+    metaTitle: "SSC CPO Photo Resizer – 20–50 KB, 3.5 × 4.5 cm",
     metaDescription:
-      "Free online tool for Ssc Cpo Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Cpo Photo Resizer",
+      "Resize your SSC CPO photo to the 20–50 KB JPEG limit and 3.5 × 4.5 cm size. Crop, compress and download instantly. Free, private, no signup.",
+    h1: "SSC CPO Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Cpo Photo Resizer. 100% free, 100% private.",
+      "Get your Sub-Inspector (Delhi Police & CAPF) application photo to the exact size and KB in one go.",
     sections: [
       {
-        heading: "About Ssc Cpo Photo Resizer",
+        heading: "A Photo Resizer Built for SSC CPO Applicants",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    The Ssc Cpo Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
+    The SSC CPO exam recruits Sub-Inspectors for Delhi Police and the Central Armed Police Forces (BSF, CISF, CRPF, ITBP and SSB). Your photograph follows you through the whole process: it appears on your admit card and is checked against your face at the computer-based test, the PET/PST and document verification. A badly cropped or over-compressed photo can create avoidable problems at any of these stages.
   </p>
   <p class="text-[#52525B] leading-relaxed">
-    Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
+    This tool lets you crop to the correct passport-style frame, set the dimensions and compress to a precise KB target, all without uploading your photo anywhere.
+  </p>
+  <div class="bg-[#FFFBEB] p-5 rounded-xl border border-[#FDE68A] text-[#52525B] leading-relaxed">
+    <strong class="text-[#18181B]">Note:</strong> In recent cycles on the new SSC portal, candidates have been asked to capture a live photograph through a webcam or the mySSC app instead of uploading one. Check what your current form asks for. If it requests an uploaded file, use the steps below.
+  </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your SSC CPO Photo",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Start with a recent photo</strong> taken against a plain white or light wall, facing the camera directly, without cap or spectacles.</li>
+    <li><strong class="text-[#18181B]">Upload it to the editor.</strong> Nothing leaves your device.</li>
+    <li><strong class="text-[#18181B]">Crop to passport framing.</strong> Keep your full face, ears and the top of your shoulders in view, with your face filling most of the frame.</li>
+    <li><strong class="text-[#18181B]">Set the dimensions</strong> to 3.5 cm × 4.5 cm (width × height), or the values in your notification.</li>
+    <li><strong class="text-[#18181B]">Enter a target size</strong> such as 40 KB. The compressor automatically picks the best quality within the 20–50 KB window.</li>
+    <li><strong class="text-[#18181B]">Download the JPEG</strong> and zoom in once to make sure your face is clear before uploading.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "SSC CPO Photo Checklist",
+        content: `<div class="space-y-6 not-prose">
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> JPEG format, 20 KB to 50 KB</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Around 3.5 cm wide × 4.5 cm high</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Recent photo, front-facing, eyes open, no cap or spectacles</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Plain light background with no shadows behind the head</li>
+  </ul>
+  <p class="text-[#52525B] leading-relaxed">
+    Requirements can change between notifications, so treat this as a guide and confirm the details in the official SSC CPO notice before submitting.
   </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question: "What are the photo dimensions for Ssc Cpo Photo Resizer?",
+        question: "What are the photo dimensions for SSC CPO?",
         answer:
-          "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Ssc Cpo Photo Resizer notification before uploading.",
+          "SSC has typically asked for a JPEG photo of about 3.5 cm × 4.5 cm (width × height) between 20 KB and 50 KB. Always check the current SSC CPO notification, as specifications can be revised.",
       },
       {
-        question: "Does this tool reduce file size in KB?",
+        question: "Can I wear spectacles in my SSC CPO photo?",
         answer:
-          "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly.",
+          "SSC notices have asked for photos without spectacles or cap. Remove your glasses before taking the photo so your eyes are clearly visible.",
       },
       {
-        question:
-          "Can I change the background of my Ssc Cpo Photo Resizer photo?",
+        question: "My photo comes out blurry after compression. What should I do?",
         answer:
-          "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white.",
+          "Raise the target size closer to 45–50 KB and make sure your original photo is sharp and well lit. Compressing a dark or out-of-focus photo will only make it worse, so retake it if needed.",
+      },
+      {
+        question: "Can I make the background white?",
+        answer:
+          "The best approach is to take the photo against a plain white wall. If your background is cluttered, you can use our background removal or passport maker tool before resizing.",
       },
     ],
   },
   {
     slug: "ssc-cpo-signature-resizer",
-    metaTitle: "Ssc Cpo Signature Resizer — Exact Size & KB",
+    metaTitle: "SSC CPO Signature Resizer – 10–20 KB JPEG Online",
     metaDescription:
-      "Free online tool for Ssc Cpo Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Cpo Signature Resizer",
+      "Resize and compress your SSC CPO signature to 10–20 KB JPEG. Crop, set exact dimensions and download instantly. Works offline in your browser, 100% free.",
+    h1: "SSC CPO Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Cpo Signature Resizer. 100% free, 100% private.",
+      "Prepare a clean, correctly sized signature for your SSC CPO (Sub-Inspector) application in under a minute.",
     sections: [
       {
-        heading: "About Ssc Cpo Signature Resizer",
+        heading: "Why Your SSC CPO Signature Needs Resizing",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    Official applications for Ssc Cpo Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
+    Aspiring Sub-Inspectors for Delhi Police and the CAPFs must upload a scanned signature that matches SSC's file-size and dimension rules exactly. A raw phone photo is often 2–4 MB, includes half a sheet of paper, and has a grey tint from indoor lighting. The SSC portal will either refuse it or accept an image that looks poor on your admit card.
   </p>
   <p class="text-[#52525B] leading-relaxed">
-    Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
+    Our resizer crops out the paper, resizes to the required dimensions and compresses to your chosen KB value. It works entirely in your browser, so your signature never touches a server.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Step-by-Step: SSC CPO Signature Upload",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Sign three or four times</strong> on white paper with a black pen and choose the cleanest one.</li>
+    <li><strong class="text-[#18181B]">Take a straight-on photo</strong> near a window. Avoid flash, which creates glare on the ink.</li>
+    <li><strong class="text-[#18181B]">Upload it here</strong> and crop tightly around the signature.</li>
+    <li><strong class="text-[#18181B]">Type in the width and height</strong> from the SSC CPO notification.</li>
+    <li><strong class="text-[#18181B]">Set your target KB</strong>, for example 15 KB, to land comfortably inside the 10–20 KB range.</li>
+    <li><strong class="text-[#18181B]">Download the JPEG</strong> and upload it in the signature field of your application.</li>
+  </ol>
+  <p class="text-[#52525B] leading-relaxed">
+    Tip: if the paper looks grey, increase the brightness slightly before compressing. A whiter background usually gives a smaller, crisper file.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Mistakes That Get SSC CPO Signatures Rejected",
+        content: `<div class="space-y-6 not-prose">
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#DC2626]">✗</span> Signing in CAPITAL letters, which SSC notices have said is not accepted</li>
+    <li class="flex items-start gap-2"><span class="text-[#DC2626]">✗</span> File size outside the 10–20 KB window</li>
+    <li class="flex items-start gap-2"><span class="text-[#DC2626]">✗</span> Faint, blurred or partly cut-off strokes</li>
+    <li class="flex items-start gap-2"><span class="text-[#DC2626]">✗</span> Uploading a photo of yourself in the signature field, or vice versa</li>
+  </ul>
+  <p class="text-[#52525B] leading-relaxed">
+    Keep the same signature for the exam centre and document verification. Confirm all specifications in the current SSC CPO notification on ssc.gov.in.
   </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question:
-          "What is the standard signature size for Ssc Cpo Signature Resizer?",
+        question: "What is the signature size for SSC CPO?",
         answer:
-          "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification.",
+          "SSC has typically required a JPEG signature between 10 KB and 20 KB. The exact width and height are given in each notification and have changed over the years, so use the values in the current notice.",
       },
       {
-        question: "Is it safe to upload my signature?",
+        question: "Can I use blue ink for my SSC CPO signature?",
         answer:
-          "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
+          "Black ink on white paper gives the clearest result after compression. Dark blue usually scans fine too, but always follow whatever your notification specifies.",
       },
       {
-        question:
-          "Can I use blue ink for the Ssc Cpo Signature Resizer signature?",
+        question: "Why is my signature over 20 KB even after resizing?",
         answer:
-          "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Ssc Cpo Signature Resizer guidelines.",
+          "Large dimensions and a grey or textured background add file size. Crop tightly, brighten the background, and set the target to 15–18 KB so the tool can compress further.",
+      },
+      {
+        question: "Do I need to install anything?",
+        answer:
+          "No. The tool runs in any modern browser on mobile or desktop. There is no signup, no watermark and no file upload to a server.",
       },
     ],
   },
   {
     slug: "ssc-je-photo-resizer",
-    metaTitle: "Ssc Je Photo Resizer — Resize & Compress",
+    metaTitle: "SSC JE Photo Resizer – Resize to 20–50 KB Online",
     metaDescription:
-      "Free online tool for Ssc Je Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Je Photo Resizer",
+      "Resize your SSC JE application photo to 3.5 × 4.5 cm and 20–50 KB JPEG. Crop, compress and download in seconds. Free, private, browser-based tool.",
+    h1: "SSC JE Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Je Photo Resizer. 100% free, 100% private.",
+      "Format your Junior Engineer (Civil, Mechanical, Electrical) application photo to SSC specifications instantly.",
     sections: [
       {
-        heading: "About Ssc Je Photo Resizer",
+        heading: "Your SSC JE Photo, Formatted Correctly",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-[#18181B]">Your Ssc Je Photo Resizer Photo, Formatted Perfectly</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    The SSC Junior Engineer exam fills Civil, Mechanical and Electrical posts across central departments and organisations. As an engineering aspirant you are used to precise specs, and the SSC photo upload is no different: the image must fit a specific format, dimension and KB range, or the form will not go through.
+  </p>
   <p class="text-[#52525B] leading-relaxed">
-    Avoid application delays by ensuring your Ssc Je Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
+    This resizer handles all three in one place. Crop your face into a passport-style frame, set the exact dimensions and let the compressor hit your target KB automatically. No watermark, no account and no server upload.
+  </p>
+  <div class="bg-[#FFFBEB] p-5 rounded-xl border border-[#FDE68A] text-[#52525B] leading-relaxed">
+    <strong class="text-[#18181B]">Heads-up:</strong> Recent SSC applications on the new portal have used live photo capture by webcam or the mySSC app. If your form asks you to upload a file instead, follow the steps below.
+  </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your SSC JE Photo",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Click a fresh photo</strong> against a white wall in even light, looking straight at the camera.</li>
+    <li><strong class="text-[#18181B]">Load it into the editor</strong> above.</li>
+    <li><strong class="text-[#18181B]">Crop</strong> so your face is centred and takes up most of the frame, with a little space above the head.</li>
+    <li><strong class="text-[#18181B]">Enter 3.5 cm × 4.5 cm</strong> (or the notified values) as the output size.</li>
+    <li><strong class="text-[#18181B]">Set a target</strong> of around 35–45 KB to stay safely within 20–50 KB.</li>
+    <li><strong class="text-[#18181B]">Download</strong> the compressed JPEG and upload it to your SSC JE form.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "SSC JE Photo Specifications",
+        content: `<div class="space-y-6 not-prose">
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm text-left border border-[#E4E4E7] rounded-xl">
+      <tbody class="text-[#52525B]">
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">Format</th><td class="p-3">JPEG / JPG</td></tr>
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">File size</th><td class="p-3">20 KB to 50 KB</td></tr>
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">Dimensions</th><td class="p-3">About 3.5 cm (W) × 4.5 cm (H)</td></tr>
+        <tr><th class="p-3 font-semibold text-[#18181B]">Appearance</th><td class="p-3">Recent, frontal, no cap or spectacles, plain light background</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">
+    These are the values SSC has commonly used. Always verify them against the current SSC JE notification, as they can be updated from one cycle to the next.
   </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question: "What are the photo dimensions for Ssc Je Photo Resizer?",
+        question: "What photo size does SSC JE require?",
         answer:
-          "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Ssc Je Photo Resizer notification before uploading.",
+          "SSC has typically asked for a JPEG of about 3.5 cm × 4.5 cm between 20 KB and 50 KB. Check the latest SSC JE notification to confirm before uploading.",
+      },
+      {
+        question: "Can I use a selfie for my SSC JE photo?",
+        answer:
+          "A selfie can work if it is front-facing, well lit and taken against a plain background. Front cameras often distort faces at close range, so ask someone to take it from about an arm and a half away if possible.",
       },
       {
         question: "Does this tool reduce file size in KB?",
         answer:
-          "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly.",
+          "Yes. Enter a target such as 40 KB in the sidebar and the tool automatically adjusts quality to hit that size while keeping your face sharp.",
       },
       {
-        question:
-          "Can I change the background of my Ssc Je Photo Resizer photo?",
+        question: "Is the photo stored anywhere?",
         answer:
-          "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white.",
+          "No. All processing happens on your device in the browser. Close the tab and the image is gone.",
       },
     ],
   },
   {
     slug: "ssc-je-signature-resizer",
-    metaTitle: "Ssc Je Signature Resizer — Exact Size & KB",
+    metaTitle: "SSC JE Signature Resizer – Exact Size & 10–20 KB",
     metaDescription:
-      "Free online tool for Ssc Je Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Je Signature Resizer",
+      "Resize your SSC JE signature to 10–20 KB JPEG with exact dimensions. Crop, clean up and compress in your browser. Free, instant and private.",
+    h1: "SSC JE Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Je Signature Resizer. 100% free, 100% private.",
+      "Turn a phone photo of your signature into an SSC JE-ready JPEG in a few clicks.",
     sections: [
       {
-        heading: "About Ssc Je Signature Resizer",
+        heading: "Get Your SSC JE Signature Right First Time",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    Official applications for Ssc Je Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
+    Filling in the SSC Junior Engineer form is straightforward until you reach the signature upload. The field accepts only a JPEG within a narrow KB window, and the dimensions must match the notification. Too big and the portal blocks you; too compressed and your signature turns into grey pixels.
   </p>
   <p class="text-[#52525B] leading-relaxed">
-    Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
+    This tool gives you direct control over crop, dimensions and target KB, so you get a clean, compliant file on the first attempt. It runs in your browser with HTML5 Canvas, which means your signature stays on your device.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your SSC JE Signature",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Sign on clean white paper</strong> with a black gel or ball pen. Avoid lined or ruled paper.</li>
+    <li><strong class="text-[#18181B]">Capture it</strong> with your phone held flat above the page, or use a scanner.</li>
+    <li><strong class="text-[#18181B]">Upload the image</strong> and crop away the extra paper.</li>
+    <li><strong class="text-[#18181B]">Set the width and height</strong> listed in the SSC JE notification.</li>
+    <li><strong class="text-[#18181B]">Choose a target size</strong> between 12 and 18 KB for a safe margin inside 10–20 KB.</li>
+    <li><strong class="text-[#18181B]">Preview and download.</strong> Your file is ready to upload.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Signature Tips for Engineering Aspirants",
+        content: `<div class="space-y-6 not-prose">
+  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
+    <ul class="space-y-2 text-[#52525B]">
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Sign in your usual running hand. SSC notices have rejected signatures in capital letters.</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Keep a small white margin so no stroke touches the edge.</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Use the same signature on the answer sheet and at document verification.</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Save the final JPEG so you can reuse it for Paper II and later stages if needed.</li>
+    </ul>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">
+    Specifications can be revised each year, so double-check the current SSC JE notification on ssc.gov.in before submitting.
   </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question:
-          "What is the standard signature size for Ssc Je Signature Resizer?",
+        question: "What is the SSC JE signature size in KB?",
         answer:
-          "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification.",
+          "SSC has typically required the signature as a JPEG between 10 KB and 20 KB. Confirm the exact range and dimensions in the current notification.",
       },
       {
-        question: "Is it safe to upload my signature?",
+        question: "Can I draw my signature on a phone screen instead?",
         answer:
-          "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
+          "It is safer to sign on paper with a pen and photograph it. A finger-drawn signature often looks different from your real one, which can cause problems when it is compared at the exam venue.",
       },
       {
-        question:
-          "Can I use blue ink for the Ssc Je Signature Resizer signature?",
+        question: "My signature looks pixelated. How do I fix it?",
         answer:
-          "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Ssc Je Signature Resizer guidelines.",
+          "Use a higher-resolution source photo and set a target near 18–20 KB. Very thin pen strokes also pixelate easily, so a bolder pen helps.",
+      },
+      {
+        question: "Is it safe to use this tool?",
+        answer:
+          "Yes. The tool works entirely in your browser using HTML5 Canvas. Your signature is never sent to a remote server.",
       },
     ],
   },
   {
     slug: "ssc-jht-photo-resizer",
-    metaTitle: "Ssc Jht Photo Resizer — Resize & Compress",
+    metaTitle: "SSC JHT Photo Resizer – 20–50 KB JPEG, 3.5 × 4.5 cm",
     metaDescription:
-      "Free online tool for Ssc Jht Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Jht Photo Resizer",
+      "Resize your SSC JHT (Hindi Translator) application photo to 20–50 KB and 3.5 × 4.5 cm. Crop and compress in your browser. Free, no upload, no watermark.",
+    h1: "SSC JHT Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Jht Photo Resizer. 100% free, 100% private.",
+      "Prepare a compliant photograph for the SSC Combined Hindi Translators Examination in seconds.",
     sections: [
       {
-        heading: "About Ssc Jht Photo Resizer",
+        heading: "Photo Resizing for SSC Hindi Translator Applicants",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    Preparing your photograph for Ssc Jht Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
+    The SSC Combined Hindi Translators Examination (commonly called SSC JHT) recruits Junior Hindi Translators, Junior Translators and Senior Hindi Translators for central government offices. Like every SSC exam, the application has strict rules for the photograph, and an incorrect file is one of the most common reasons candidates get stuck on the form.
   </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Use this resizer to get the dimensions, aspect ratio and KB size right on the first try. Your photo is processed locally in your browser and is never uploaded to our servers.
+  </p>
+  <div class="bg-[#FFFBEB] p-5 rounded-xl border border-[#FDE68A] text-[#52525B] leading-relaxed">
+    <strong class="text-[#18181B]">Note:</strong> Recent SSC application cycles have used live photo capture through a webcam or the mySSC app. If your form asks for an uploaded photo file, this tool will prepare it for you.
+  </div>
+</div>`,
+      },
+      {
+        heading: "Resize Your SSC JHT Photo in 5 Steps",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Upload a recent, front-facing photo</strong> taken against a light, plain background.</li>
+    <li><strong class="text-[#18181B]">Crop to a portrait frame</strong> with your head and the top of your shoulders visible.</li>
+    <li><strong class="text-[#18181B]">Set the output size</strong> to 3.5 cm × 4.5 cm, or as stated in the notification.</li>
+    <li><strong class="text-[#18181B]">Enter a target of 30–45 KB.</strong> The tool finds the best quality that fits inside 20–50 KB.</li>
+    <li><strong class="text-[#18181B]">Download the JPEG</strong> and upload it to the SSC portal.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Why Use Our Resizer?",
+        content: `<div class="space-y-6 not-prose">
   <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
-    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
     <ul class="space-y-2 text-[#52525B]">
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target a specific KB size instead of guessing with quality sliders</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control in cm or pixels</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Works on mobile, so you can finish your form from your phone</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% free and private browser processing</li>
     </ul>
   </div>
+  <p class="text-[#52525B] leading-relaxed">
+    Commonly used SSC specs are a JPEG of about 3.5 × 4.5 cm between 20 KB and 50 KB, front-facing, without cap or spectacles. Always verify against the latest SSC JHT notification, since requirements can change.
+  </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question: "What are the photo dimensions for Ssc Jht Photo Resizer?",
+        question: "What are the photo requirements for SSC JHT?",
         answer:
-          "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Ssc Jht Photo Resizer notification before uploading.",
+          "SSC has typically asked for a recent JPEG photo of about 3.5 cm × 4.5 cm, between 20 KB and 50 KB, without cap or spectacles. Confirm in the current SSC JHT notification.",
       },
       {
-        question: "Does this tool reduce file size in KB?",
+        question: "Can I reuse the photo from another SSC exam?",
         answer:
-          "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly.",
+          "Only if it is still recent and meets the current notification's rules. SSC has asked for photos taken close to the application date, so an old photo may not be acceptable.",
       },
       {
-        question:
-          "Can I change the background of my Ssc Jht Photo Resizer photo?",
+        question: "Does this tool work on mobile?",
         answer:
-          "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white.",
+          "Yes. It runs in any modern mobile browser. Upload from your gallery, crop with your fingers, and download the resized JPEG directly to your phone.",
+      },
+      {
+        question: "How do I get a white background?",
+        answer:
+          "Stand in front of a plain white wall in good light. If that is not possible, use our background removal or passport maker tool before resizing.",
       },
     ],
   },
   {
     slug: "ssc-jht-signature-resizer",
-    metaTitle: "Ssc Jht Signature Resizer — Exact Size & KB",
+    metaTitle: "SSC JHT Signature Resizer – 10–20 KB JPEG Online",
     metaDescription:
-      "Free online tool for Ssc Jht Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Jht Signature Resizer",
+      "Resize your SSC JHT signature to 10–20 KB JPEG with the exact dimensions. Crop and compress in your browser. Free, private, no signup needed.",
+    h1: "SSC JHT Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Jht Signature Resizer. 100% free, 100% private.",
+      "A quick, private way to size your signature for the SSC Combined Hindi Translators application.",
     sections: [
       {
-        heading: "About Ssc Jht Signature Resizer",
+        heading: "Fast & Free Signature Resizing for SSC JHT",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ssc Jht Signature Resizer</h3>
-  <p class="text-[#52525B] leading-relaxed">
-    Your Ssc Jht Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    Your SSC JHT signature has to be crisp, legible and inside the portal's file-size limit. Many candidates photograph their signature on a phone, only to find the file is a hundred times too large or comes out dull and grey. This tool fixes both problems in one pass.
   </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Crop away the paper, set the exact dimensions, choose your KB target and download. Everything happens locally in your browser, so your personal signature remains completely private.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Prepare Your SSC JHT Signature",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Sign on white, unlined paper</strong> with a black pen, the way you normally sign.</li>
+    <li><strong class="text-[#18181B]">Photograph it in daylight</strong> with the phone parallel to the page.</li>
+    <li><strong class="text-[#18181B]">Upload and crop</strong> to remove extra paper, keeping a narrow white border.</li>
+    <li><strong class="text-[#18181B]">Enter the dimensions</strong> listed in the SSC JHT notification.</li>
+    <li><strong class="text-[#18181B]">Set a target of about 15 KB</strong> to stay inside the 10–20 KB range.</li>
+    <li><strong class="text-[#18181B]">Download</strong> and upload to the signature field of your form.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Signing in Hindi or English",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    As a translator aspirant you may sign in Devanagari, Roman script, or both. What matters is consistency: sign in whichever script you use regularly, because the same signature will be compared at the exam venue and during document verification. Whatever the script, SSC notices have said signatures in CAPITAL letters are not accepted.
+  </p>
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm text-left border border-[#E4E4E7] rounded-xl">
+      <tbody class="text-[#52525B]">
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">Format</th><td class="p-3">JPEG / JPG</td></tr>
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">File size</th><td class="p-3">10 KB to 20 KB</td></tr>
+        <tr><th class="p-3 font-semibold text-[#18181B]">Dimensions</th><td class="p-3">As given in the current notification</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">Verify all specifications in the latest SSC JHT notice before uploading.</p>
 </div>`,
       },
     ],
     faq: [
       {
-        question:
-          "What is the standard signature size for Ssc Jht Signature Resizer?",
+        question: "What is the signature size for SSC JHT?",
         answer:
-          "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification.",
+          "SSC has typically asked for a JPEG signature between 10 KB and 20 KB, with dimensions stated in the notification. Check the current notice for exact values.",
       },
       {
-        question: "Is it safe to upload my signature?",
+        question: "Can I sign in Hindi?",
         answer:
-          "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
+          "Sign in the script you normally use. Consistency matters more than script, since your signature will be matched at later stages. Avoid capital letters if you sign in English.",
       },
       {
-        question:
-          "Can I use blue ink for the Ssc Jht Signature Resizer signature?",
+        question: "Can I use blue ink?",
         answer:
-          "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Ssc Jht Signature Resizer guidelines.",
+          "Black ink on white paper gives the best contrast after compression. Some candidates use dark blue successfully, but follow the guidance in your notification.",
+      },
+      {
+        question: "Is my signature sent to a server?",
+        answer:
+          "No. The tool uses HTML5 Canvas in your browser. Your signature never leaves your device.",
       },
     ],
   },
   {
     slug: "ssc-stenographer-photo-resizer",
-    metaTitle: "Ssc Stenographer Photo Resizer — Resize & Compress",
+    metaTitle: "SSC Stenographer Photo Resizer – 20–50 KB Online",
     metaDescription:
-      "Free online tool for Ssc Stenographer Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Stenographer Photo Resizer",
+      "Resize your SSC Stenographer Grade C & D photo to 20–50 KB JPEG and 3.5 × 4.5 cm. Crop, compress and download instantly. Free and private.",
+    h1: "SSC Stenographer Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Stenographer Photo Resizer. 100% free, 100% private.",
+      "Size your photo for the SSC Stenographer Grade C & D application without guesswork.",
     sections: [
       {
-        heading: "About Ssc Stenographer Photo Resizer",
+        heading: "Photo Resizer for SSC Stenographer Grade C & D",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    Preparing your photograph for Ssc Stenographer Photo Resizer? Get the dimensions, aspect ratio, and KB size right on the first try.
+    Preparing your photograph for the SSC Stenographer Grade C & D exam? Your photo appears on the admit card for the computer-based test and again for the stenography skill test, so it needs to be clear, recent and correctly formatted. Getting the dimensions, aspect ratio and KB size right on the first try saves you from last-minute form errors near the deadline.
   </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Our tool crops, resizes and compresses in one workflow. You set the target, and it handles the quality balancing automatically, all without uploading your image anywhere.
+  </p>
+  <div class="bg-[#FFFBEB] p-5 rounded-xl border border-[#FDE68A] text-[#52525B] leading-relaxed">
+    <strong class="text-[#18181B]">Note:</strong> SSC's new portal has used live photo capture in recent cycles. If your application asks for a photo file upload, use the steps below.
+  </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your Stenographer Application Photo",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Choose a recent photo</strong> with a plain light background, facing forward, without spectacles or cap.</li>
+    <li><strong class="text-[#18181B]">Upload it</strong> to the editor.</li>
+    <li><strong class="text-[#18181B]">Crop</strong> so your face is centred and fills most of the frame.</li>
+    <li><strong class="text-[#18181B]">Set 3.5 cm × 4.5 cm</strong> (width × height) or the size in your notification.</li>
+    <li><strong class="text-[#18181B]">Type a target of 40 KB</strong> to stay comfortably inside 20–50 KB.</li>
+    <li><strong class="text-[#18181B]">Download</strong> the JPEG and upload it to the SSC form.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Why Use Our Resizer?",
+        content: `<div class="space-y-6 not-prose">
   <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
-    <h3 class="font-bold text-[#18181B] mb-3">Why Use Our Resizer?</h3>
     <ul class="space-y-2 text-[#52525B]">
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Target specific KB compression</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Precise cropping and dimension control</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Hit an exact KB target, not just "smaller"</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Lock the 3.5 × 4.5 aspect ratio while cropping</li>
+      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No watermark, no signup, no server upload</li>
     </ul>
   </div>
+  <p class="text-[#52525B] leading-relaxed">
+    Common rejection reasons include dark or shadowed faces, side angles, sunglasses, busy backgrounds and files outside the KB range. Confirm all requirements in the latest SSC Stenographer notification.
+  </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question:
-          "What are the photo dimensions for Ssc Stenographer Photo Resizer?",
+        question: "What are the photo dimensions for SSC Stenographer?",
         answer:
-          "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Ssc Stenographer Photo Resizer notification before uploading.",
+          "SSC has typically asked for a JPEG of about 3.5 cm × 4.5 cm, between 20 KB and 50 KB. Check the current SSC Stenographer notification before uploading.",
+      },
+      {
+        question: "Do I need the same photo for the skill test?",
+        answer:
+          "Your admit card for every stage uses the photo you submitted, and your face is checked against it. Use a recent photo that looks like you do now, and keep a printed copy in case the admit card asks for one.",
       },
       {
         question: "Does this tool reduce file size in KB?",
         answer:
-          "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly.",
+          "Yes. Enter a target such as 40 KB in the sidebar and the tool compresses your photo to fit while keeping it sharp.",
       },
       {
-        question:
-          "Can I change the background of my Ssc Stenographer Photo Resizer photo?",
+        question: "Is my photo private?",
         answer:
-          "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white.",
+          "Yes. Processing happens entirely in your browser. Nothing is uploaded or stored.",
       },
     ],
   },
   {
     slug: "ssc-stenographer-signature-resizer",
-    metaTitle: "Ssc Stenographer Signature Resizer — Exact Size & KB",
+    metaTitle: "SSC Stenographer Signature Resizer – 10–20 KB",
     metaDescription:
-      "Free online tool for Ssc Stenographer Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Stenographer Signature Resizer",
+      "Resize your SSC Stenographer signature to 10–20 KB JPEG at the exact dimensions. Crop and compress in your browser. Free, fast and private.",
+    h1: "SSC Stenographer Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Stenographer Signature Resizer. 100% free, 100% private.",
+      "Create a clean, correctly sized signature for your SSC Stenographer Grade C & D form.",
     sections: [
       {
-        heading: "About Ssc Stenographer Signature Resizer",
+        heading: "Fast & Free Signature Resizing for SSC Stenographer",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-[#18181B]">Fast & Free Signature Resizing for Ssc Stenographer Signature Resizer</h3>
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    Stenographers work with precision every day, and the SSC application expects the same from your signature upload. The file must be a JPEG, within a tight KB range, at the dimensions listed in the notification. Our resizer makes that a one-minute job.
+  </p>
   <p class="text-[#52525B] leading-relaxed">
-    Your Ssc Stenographer Signature Resizer signature must be crisp, legible, and strictly under the file size limit. We process everything locally in your browser so your personal signature remains completely private.
+    Upload a photo of your signature, crop it, set the size and download. We process everything locally in your browser, so your personal signature remains completely private.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your SSC Stenographer Signature",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Sign on white paper</strong> using a black pen with a medium or bold tip.</li>
+    <li><strong class="text-[#18181B]">Take a clear photo</strong> in natural light, with no shadow from your hand or phone.</li>
+    <li><strong class="text-[#18181B]">Upload and crop</strong> close to the signature.</li>
+    <li><strong class="text-[#18181B]">Enter the notified width and height</strong> in the sidebar.</li>
+    <li><strong class="text-[#18181B]">Set the target to 15–18 KB</strong> for a safe fit within 10–20 KB.</li>
+    <li><strong class="text-[#18181B]">Download</strong> and upload to your SSC application.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Common Signature Upload Problems (and Fixes)",
+        content: `<div class="space-y-6 not-prose">
+  <div class="space-y-4 text-[#52525B] leading-relaxed">
+    <p><strong class="text-[#18181B]">"File size too large":</strong> lower the target KB or crop more tightly. Extra paper adds bytes.</p>
+    <p><strong class="text-[#18181B]">"File size too small":</strong> raise the target closer to 18–20 KB, or use a higher-resolution photo.</p>
+    <p><strong class="text-[#18181B]">Signature looks faint:</strong> retake the photo with a bolder pen and brighter light.</p>
+    <p><strong class="text-[#18181B]">Wrong format:</strong> our tool exports JPEG, which is what SSC asks for. Don't upload PNG, HEIC or PDF.</p>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">
+    SSC notices have stated that signatures in CAPITAL letters are not accepted. Always confirm the latest requirements in the official SSC Stenographer notification.
   </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question:
-          "What is the standard signature size for Ssc Stenographer Signature Resizer?",
+        question: "What is the SSC Stenographer signature size?",
         answer:
-          "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification.",
+          "SSC has typically asked for a JPEG signature between 10 KB and 20 KB, at the dimensions stated in the notification. Verify against the current notice.",
       },
       {
-        question: "Is it safe to upload my signature?",
+        question: "My phone saves photos as HEIC. Will this work?",
         answer:
-          "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
+          "Most modern browsers can open your phone photos, and the tool exports a standard JPEG. If your browser can't read the file, change your camera setting to 'Most Compatible' (JPEG) and retake the photo.",
       },
       {
-        question:
-          "Can I use blue ink for the Ssc Stenographer Signature Resizer signature?",
+        question: "Can I use blue ink?",
         answer:
-          "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Ssc Stenographer Signature Resizer guidelines.",
+          "Black ink on white paper gives the clearest result. Dark blue usually works, but follow any instruction in your notification.",
+      },
+      {
+        question: "Is it safe to upload my signature here?",
+        answer:
+          "Yes. The tool runs in your browser using HTML5 Canvas, and your signature is never sent to any server.",
       },
     ],
   },
   {
     slug: "ssc-gd-constable-photo-resizer",
-    metaTitle: "Ssc Gd Constable Photo Resizer — Resize & Compress",
+    metaTitle: "SSC GD Constable Photo Resizer – 20–50 KB Online",
     metaDescription:
-      "Free online tool for Ssc Gd Constable Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Gd Constable Photo Resizer",
+      "Resize your SSC GD Constable photo to 20–50 KB JPEG and 3.5 × 4.5 cm. Crop, compress and download on your phone in seconds. Free, private, no signup.",
+    h1: "SSC GD Constable Photo Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Gd Constable Photo Resizer. 100% free, 100% private.",
+      "Get your SSC GD Constable application photo to the right size, straight from your phone.",
     sections: [
       {
-        heading: "About Ssc Gd Constable Photo Resizer",
+        heading: "Your SSC GD Photo, Formatted Perfectly",
         content: `<div class="space-y-6 not-prose">
-  <h3 class="text-xl font-bold text-[#18181B]">Your Ssc Gd Constable Photo Resizer Photo, Formatted Perfectly</h3>
-  <p class="text-[#52525B] leading-relaxed">
-    Avoid application delays by ensuring your Ssc Gd Constable Photo Resizer photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    The SSC GD Constable exam is one of the largest recruitment drives in the country, filling Constable (GD) posts in BSF, CISF, CRPF, ITBP, SSB and SSF, and Rifleman (GD) posts in Assam Rifles. With so many candidates applying from mobile phones and cyber cafés, photo errors are extremely common. Avoid delays by making sure your photo is compliant before you start the form.
   </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Your photo is used on your admit card and checked during the CBT, PET/PST, medical examination and document verification. This tool crops, resizes and compresses it to SSC specifications with no watermark, no signup and no upload to a server.
+  </p>
+  <div class="bg-[#FFFBEB] p-5 rounded-xl border border-[#FDE68A] text-[#52525B] leading-relaxed">
+    <strong class="text-[#18181B]">Note:</strong> Recent SSC application cycles have used live photo capture through a webcam or the mySSC app. If your form asks for an uploaded photo instead, follow the steps below.
+  </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your SSC GD Photo on Mobile",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Ask a friend to take your photo</strong> in daylight against a white wall, facing the camera directly. No cap, no spectacles.</li>
+    <li><strong class="text-[#18181B]">Open this page</strong> in your phone browser and upload the photo from your gallery.</li>
+    <li><strong class="text-[#18181B]">Crop</strong> so your full face and the top of your shoulders are visible.</li>
+    <li><strong class="text-[#18181B]">Set 3.5 cm × 4.5 cm</strong> as the size, or the values in your notification.</li>
+    <li><strong class="text-[#18181B]">Enter a target of 40 KB.</strong> The tool compresses to fit within 20–50 KB automatically.</li>
+    <li><strong class="text-[#18181B]">Download</strong> the JPEG and upload it to the SSC website.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "SSC GD Photo Do's and Don'ts",
+        content: `<div class="space-y-6 not-prose">
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div class="bg-[#F0FDF4] p-5 rounded-xl border border-[#BBF7D0]">
+      <h3 class="font-bold text-[#18181B] mb-3">Do</h3>
+      <ul class="space-y-2 text-[#52525B]">
+        <li>✓ Use a recent photo</li>
+        <li>✓ Keep a plain, light background</li>
+        <li>✓ Look straight at the camera with eyes open</li>
+        <li>✓ Keep the file between 20–50 KB</li>
+      </ul>
+    </div>
+    <div class="bg-[#FEF2F2] p-5 rounded-xl border border-[#FECACA]">
+      <h3 class="font-bold text-[#18181B] mb-3">Don't</h3>
+      <ul class="space-y-2 text-[#52525B]">
+        <li>✗ Wear a cap or spectacles</li>
+        <li>✗ Use a group photo crop or selfie filter</li>
+        <li>✗ Upload a dark or blurry image</li>
+        <li>✗ Use a photo that no longer looks like you</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">Always confirm requirements in the latest SSC GD Constable notification.</p>
 </div>`,
       },
     ],
     faq: [
       {
-        question:
-          "What are the photo dimensions for Ssc Gd Constable Photo Resizer?",
+        question: "What is the photo size for SSC GD Constable?",
         answer:
-          "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Ssc Gd Constable Photo Resizer notification before uploading.",
+          "SSC has typically asked for a JPEG of about 3.5 cm × 4.5 cm, between 20 KB and 50 KB. Check the current SSC GD notification to confirm.",
       },
       {
-        question: "Does this tool reduce file size in KB?",
+        question: "Can I resize my photo on a mobile phone?",
         answer:
-          "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly.",
+          "Yes. The tool works fully in mobile browsers. Upload from your gallery, crop, set your target KB and download the result directly to your phone.",
       },
       {
-        question:
-          "Can I change the background of my Ssc Gd Constable Photo Resizer photo?",
+        question: "Why does my photo need to look like me today?",
         answer:
-          "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white.",
+          "Your face is checked against your photo at several stages, including PET/PST and document verification. An old photo that doesn't match your current appearance can cause problems.",
+      },
+      {
+        question: "How do I make the background white?",
+        answer:
+          "Take the photo against a plain white wall. If needed, use our background removal or passport maker tool before resizing.",
       },
     ],
   },
   {
     slug: "ssc-gd-constable-signature-resizer",
-    metaTitle: "Ssc Gd Constable Signature Resizer — Exact Size & KB",
+    metaTitle: "SSC GD Constable Signature Resizer – 10–20 KB",
     metaDescription:
-      "Free online tool for Ssc Gd Constable Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Ssc Gd Constable Signature Resizer",
+      "Resize your SSC GD Constable signature to 10–20 KB JPEG at the exact dimensions. Works on mobile, in your browser. Free, instant and 100% private.",
+    h1: "SSC GD Constable Signature Resizer",
     showTool: "photo-editor",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Quickly and securely process your files for Ssc Gd Constable Signature Resizer. 100% free, 100% private.",
+      "Resize your signature for the SSC GD Constable form from your phone, with no app and no signup.",
     sections: [
       {
-        heading: "About Ssc Gd Constable Signature Resizer",
+        heading: "Don't Let Your Signature Hold Up Your SSC GD Form",
         content: `<div class="space-y-6 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    Official applications for Ssc Gd Constable Signature Resizer require perfectly sized signatures. Don't let your form get rejected due to incorrect dimensions.
+    Official applications for SSC GD Constable require a correctly sized signature, and an incorrect file is one of the most frequent reasons candidates can't complete the form. Most phone photos are far larger than the portal allows, and online "compressors" often blur the signature until it is unreadable.
   </p>
   <p class="text-[#52525B] leading-relaxed">
-    Just upload a picture of your signature on white paper, set the target dimensions or KB size in the sidebar, and download instantly.
+    Just upload a picture of your signature on white paper, set the target dimensions and KB size in the sidebar, and download instantly. The tool runs in your phone or computer browser, and your signature is never uploaded to a server.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your SSC GD Signature",
+        content: `<div class="space-y-6 not-prose">
+  <ol class="list-decimal pl-5 space-y-3 text-[#52525B] leading-relaxed">
+    <li><strong class="text-[#18181B]">Sign on a clean white sheet</strong> with a black pen. Don't use a notebook page with lines.</li>
+    <li><strong class="text-[#18181B]">Take a photo</strong> in good light, keeping the phone straight above the paper.</li>
+    <li><strong class="text-[#18181B]">Upload</strong> the photo here and crop around your signature.</li>
+    <li><strong class="text-[#18181B]">Enter the width and height</strong> given in the SSC GD notification.</li>
+    <li><strong class="text-[#18181B]">Set the target to about 15 KB</strong> so the file lands inside the 10–20 KB range.</li>
+    <li><strong class="text-[#18181B]">Download</strong> and upload it in the signature section of the form.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "SSC GD Signature Requirements",
+        content: `<div class="space-y-6 not-prose">
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm text-left border border-[#E4E4E7] rounded-xl">
+      <tbody class="text-[#52525B]">
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">Format</th><td class="p-3">JPEG / JPG</td></tr>
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">File size</th><td class="p-3">10 KB to 20 KB</td></tr>
+        <tr class="border-b border-[#E4E4E7]"><th class="p-3 font-semibold text-[#18181B]">Dimensions</th><td class="p-3">As given in the current notification</td></tr>
+        <tr><th class="p-3 font-semibold text-[#18181B]">Style</th><td class="p-3">Your normal signature, not in capital letters</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-[#52525B] leading-relaxed">
+    You will sign again at the exam centre, PET/PST and document verification, so use the same signature everywhere. Specifications can change from year to year; always verify them in the latest SSC GD Constable notice on ssc.gov.in.
   </p>
 </div>`,
       },
     ],
     faq: [
       {
-        question:
-          "What is the standard signature size for Ssc Gd Constable Signature Resizer?",
+        question: "What is the signature size for SSC GD Constable?",
         answer:
-          "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification.",
+          "SSC has typically required a JPEG signature between 10 KB and 20 KB, with dimensions given in the notification. Confirm the exact values in the current notice.",
       },
       {
-        question: "Is it safe to upload my signature?",
+        question: "Can I sign in Hindi or my regional language?",
         answer:
-          "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
+          "Sign in the script you normally use. The key requirement is that your signature is consistent across every stage of the exam. If you sign in English, avoid capital letters.",
       },
       {
-        question:
-          "Can I use blue ink for the Ssc Gd Constable Signature Resizer signature?",
+        question: "My signature is cut off after cropping. What went wrong?",
         answer:
-          "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Ssc Gd Constable Signature Resizer guidelines.",
+          "Leave a small white margin when cropping so no stroke touches the edge. Then set your dimensions again and re-export.",
+      },
+      {
+        question: "Is this tool really free?",
+        answer:
+          "Yes. There's no signup, no watermark and no limit. Everything runs locally in your browser, so your signature stays private.",
       },
     ],
   },
