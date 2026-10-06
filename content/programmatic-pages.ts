@@ -2687,6 +2687,193 @@ export const programmaticPages: SeoPage[] = [
       },
     ],
   },
+    {
+    slug: "bpsc-cce-photo-resizer",
+    metaTitle: "BPSC CCE Photo Resizer — Resize to 50KB Online Free",
+    metaDescription:
+      "Resize and compress your photo for the BPSC teacher recruitment form (Primary, Middle School Teacher & more – 32388 vacancies). Free, instant, private, in your browser.",
+    h1: "BPSC CCE Photo Resizer",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Crop, resize and compress your photo to the exact size the BPSC form asks for. 100% free, 100% private.",
+    sections: [
+      {
+        heading: "Resize Your Photo for the BPSC Teacher Vacancy Form",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    With 32388 vacancies for Primary Teacher, Middle School Teacher and other posts, lakhs of candidates are filling the BPSC online application at the same time. The most common reason a form gets stuck is not the personal details. It is the photograph. The portal rejects files that are too large, too small, the wrong shape or the wrong format, and the error message rarely tells you which one it is.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Our BPSC CCE Photo Resizer fixes this in under a minute. Upload your picture, crop it to a passport-style frame, enter the target file size in KB, and download a file that is ready to upload. Everything runs in your browser, so it works even on a slow mobile connection.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Who Needs This Tool",
+        content: `<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    This tool is built for every candidate applying for the BPSC teacher posts, including:
+  </p>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Primary Teacher (Classes 1 to 5) applicants</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Middle School Teacher (Classes 6 to 8) applicants</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Candidates applying for any of the other posts in the 32388-vacancy notification</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Anyone who took a photo on a phone and found the file is several MB</li>
+  </ul>
+  <p class="text-[#52525B] leading-relaxed">
+    Phone cameras produce large files, often 2MB to 5MB. Government portals usually want only a few dozen KB, so compression is almost always needed.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your BPSC Photo in 4 Steps",
+        content: `<div class="space-y-4 not-prose">
+  <ol class="space-y-3 text-[#52525B] leading-relaxed list-decimal pl-5">
+    <li><strong class="text-[#18181B]">Read the notification.</strong> Note the required dimensions, maximum and minimum file size, and format (usually JPG/JPEG). These can change between notifications, so always use the official numbers.</li>
+    <li><strong class="text-[#18181B]">Upload your photo.</strong> Pick a clear, front-facing picture with your full face visible and no shadows.</li>
+    <li><strong class="text-[#18181B]">Crop and set the size.</strong> Use the crop frame for the right aspect ratio, then type the target size in KB in the sidebar.</li>
+    <li><strong class="text-[#18181B]">Download and upload.</strong> Check the preview, download the JPEG, and attach it to the BPSC application.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Why BPSC Photo Uploads Get Rejected",
+        content: `<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Most rejections come down to a few avoidable problems. The file is above the maximum KB limit, or so heavily compressed it falls below the minimum. The photo has a cluttered or coloured background. The face is cropped too tightly, or the image is tilted. Or the file is a PNG, HEIC or screenshot instead of a JPEG.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Take your picture against a plain light wall in good daylight, keep your head straight, and avoid caps or dark glasses unless the notification allows them. Our tool then handles the technical side: it searches for the highest image quality that still fits under your size limit, so your face stays sharp instead of blurry.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Private by Design",
+        content: `<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Your photo is an identity document. Unlike many online converters, this tool never uploads it to a server. Cropping and compression happen on your own device using your browser, so nothing is stored, shared or seen by anyone else. You can use it with confidence on a shared or public computer, then simply close the tab.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Because the application window for a large recruitment moves quickly, do the photo and signature first, keep both files saved, and then complete the rest of the form without time pressure.
+  </p>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "What are the photo size and dimensions for the BPSC teacher vacancy form?",
+        answer:
+          "Requirements are set in each official notification and can change. Many portals ask for a passport-style photo (often around 3.5cm x 4.5cm) under 50KB in JPG format. Check the official BPSC notification for the exact numbers and enter them in the tool.",
+      },
+      {
+        question: "Does this tool reduce my photo to a specific size in KB?",
+        answer:
+          "Yes. Enter your target size (for example 20KB or 50KB) in the sidebar. The tool compresses the image to fit while keeping the best quality possible.",
+      },
+      {
+        question: "Can I use this for Primary Teacher and Middle School Teacher applications?",
+        answer:
+          "Yes. The tool works for any post in the notification, including Primary Teacher, Middle School Teacher and the other posts. The photo process is the same; only the official size limits matter.",
+      },
+      {
+        question: "Is my photo uploaded to your server?",
+        answer:
+          "No. Everything happens in your browser using HTML5 Canvas. Your photo never leaves your device.",
+      },
+      {
+        question: "Can I change the background of my photo?",
+        answer:
+          "Best practice is to take the photo against a plain white or light wall. If needed, use our background removal or passport maker tool to get a clean background before resizing.",
+      },
+    ],
+  },
+  {
+    slug: "bpsc-cce-signature-resizer",
+    metaTitle: "BPSC CCE Signature Resizer — Exact Size in KB, Free",
+    metaDescription:
+      "Resize your signature to the exact KB and pixel size for the BPSC teacher recruitment form (32388 vacancies). Free, fast and private, no upload to any server.",
+    h1: "BPSC CCE Signature Resizer",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Crop and compress your signature to the exact size the BPSC form requires. 100% free, 100% private.",
+    sections: [
+      {
+        heading: "Resize Your Signature for the BPSC Teacher Vacancy Form",
+        content: `<div class="space-y-6 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    Applying for Primary Teacher, Middle School Teacher or any of the other posts among the 32388 vacancies? Along with your photo, the BPSC application asks for a scanned signature, and it is a frequent cause of upload errors. The file is usually required to be small, in a specific format, and clearly readable.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Our BPSC CCE Signature Resizer takes a phone photo or scan of your signature, crops away the empty paper, and compresses it to the KB limit you enter. The result stays dark and legible instead of turning into a grey smudge.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Prepare and Resize Your Signature",
+        content: `<div class="space-y-4 not-prose">
+  <ol class="space-y-3 text-[#52525B] leading-relaxed list-decimal pl-5">
+    <li><strong class="text-[#18181B]">Sign on plain white paper.</strong> Use a black or dark blue pen, as the notification specifies. A thick-tip pen gives clearer strokes than a thin one.</li>
+    <li><strong class="text-[#18181B]">Take a clear picture.</strong> Place the paper flat in good light, avoid shadows and hold the phone directly above it.</li>
+    <li><strong class="text-[#18181B]">Crop tightly.</strong> Upload it to the tool and crop close to the signature, matching the aspect ratio in the notification. Signature boxes are usually wide and short.</li>
+    <li><strong class="text-[#18181B]">Set the KB size and download.</strong> Enter the maximum size, let the tool compress, check the preview and save the JPEG.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Key Features",
+        content: `<div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0] not-prose">
+  <h3 class="font-bold text-[#18181B] mb-3">What You Get</h3>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Automatic quality search to keep strokes sharp</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> JPEG output accepted by most government portals</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Works on mobile and desktop, no app or sign-up</li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
+  </ul>
+</div>`,
+      },
+      {
+        heading: "Common Signature Upload Mistakes",
+        content: `<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    The usual problems are a file above the size limit, too much blank space around the signature, faint ink, a coloured or lined background, and the wrong format. Another frequent issue is signing differently from the signature you use elsewhere. Candidates should use the same signature on the form, at the exam and in documents, since mismatches can cause trouble during verification.
+  </p>
+  <p class="text-[#52525B] leading-relaxed">
+    Because a signature is a legal identity mark, privacy matters. This tool processes the image inside your browser and never sends it to a server, so it stays on your device. Prepare the signature and photo files before you start the form, and keep copies saved so you can reuse them if the portal logs you out.
+  </p>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "What is the signature size for the BPSC teacher vacancy form?",
+        answer:
+          "It is defined in the official notification and may change. Many portals ask for a JPEG signature between roughly 10KB and 20KB. Always confirm the exact dimensions and KB range in the BPSC notification before uploading.",
+      },
+      {
+        question: "Does this tool work for Primary Teacher and Middle School Teacher applications?",
+        answer:
+          "Yes. It works for any post in the 32388-vacancy recruitment, since the signature requirement is the same process regardless of the post.",
+      },
+      {
+        question: "Is it safe to upload my signature here?",
+        answer:
+          "Yes. The tool runs entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
+      },
+      {
+        question: "Can I use blue ink?",
+        answer:
+          "Black ink on plain white paper gives the best contrast and scan clarity. Some notifications accept blue or dark blue ink, so check the official BPSC guidelines.",
+      },
+      {
+        question: "Why does my signature look blurry after compression?",
+        answer:
+          "Very small size limits can reduce clarity if the original has too much empty space. Crop tightly around the signature first, then compress, and the tool will keep the strokes sharper.",
+      },
+    ],
+  },
   {
     slug: "ssc-chsl-photo-resizer",
     metaTitle: "Ssc Chsl Photo Resizer — Resize & Compress",
@@ -10613,96 +10800,7 @@ export const programmaticPages: SeoPage[] = [
       },
     ],
   },
-  {
-    slug: "bpsc-cce-photo-resizer",
-    metaTitle: "Bpsc Cce Photo Resizer — Resize & Compress",
-    metaDescription:
-      "Free online tool for Bpsc Cce Photo Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Bpsc Cce Photo Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle:
-      "Quickly and securely process your files for Bpsc Cce Photo Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Bpsc Cce Photo Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-[#52525B] leading-relaxed">
-    The Bpsc Cce Photo Resizer application portal has strict photograph requirements. Use our fast online tool to crop, resize, and compress your image instantly.
-  </p>
-  <p class="text-[#52525B] leading-relaxed">
-    Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
-  </p>
-</div>`,
-      },
-    ],
-    faq: [
-      {
-        question: "What are the photo dimensions for Bpsc Cce Photo Resizer?",
-        answer:
-          "While exact dimensions vary, the standard passport-style requirement is usually 3.5cm x 4.5cm or 4.5cm x 3.5cm, with a file size strictly under 50KB. Always consult the official Bpsc Cce Photo Resizer notification before uploading.",
-      },
-      {
-        question: "Does this tool reduce file size in KB?",
-        answer:
-          "Yes. You can enter a specific target file size (e.g., 20KB or 50KB) in the sidebar and our tool will automatically compress the photo to fit perfectly.",
-      },
-      {
-        question:
-          "Can I change the background of my Bpsc Cce Photo Resizer photo?",
-        answer:
-          "We recommend taking your photo against a plain white wall. If needed, you can use our background removal features or passport maker tool to make it pure white.",
-      },
-    ],
-  },
-  {
-    slug: "bpsc-cce-signature-resizer",
-    metaTitle: "Bpsc Cce Signature Resizer — Exact Size & KB",
-    metaDescription:
-      "Free online tool for Bpsc Cce Signature Resizer. Resize, crop, and compress your images instantly in your browser without uploading to any server.",
-    h1: "Bpsc Cce Signature Resizer",
-    showTool: "photo-editor",
-    structuredDataOverrides: { webPageType: "WebApplication" },
-    subtitle:
-      "Quickly and securely process your files for Bpsc Cce Signature Resizer. 100% free, 100% private.",
-    sections: [
-      {
-        heading: "About Bpsc Cce Signature Resizer",
-        content: `<div class="space-y-6 not-prose">
-  <p class="text-lg text-[#52525B] leading-relaxed">
-    Need to resize your signature for Bpsc Cce Signature Resizer? Our tool ensures your signature meets all official guidelines without losing clarity.
-  </p>
-  <div class="bg-[#F0FDF4] p-6 rounded-xl border border-[#BBF7D0]">
-    <h3 class="font-bold text-[#18181B] mb-3">Key Features</h3>
-    <ul class="space-y-2 text-[#52525B]">
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Exact KB and pixel dimensions</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> Maintains stroke clarity and legibility</li>
-      <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> No data leaves your device</li>
-    </ul>
-  </div>
-</div>`,
-      },
-    ],
-    faq: [
-      {
-        question:
-          "What is the standard signature size for Bpsc Cce Signature Resizer?",
-        answer:
-          "Requirements vary, but most official portals require signatures to be between 10KB and 20KB, in JPEG format. Always check the official notification.",
-      },
-      {
-        question: "Is it safe to upload my signature?",
-        answer:
-          "Yes! Our tool works entirely in your browser using HTML5 Canvas. Your signature image is never sent to any remote server.",
-      },
-      {
-        question:
-          "Can I use blue ink for the Bpsc Cce Signature Resizer signature?",
-        answer:
-          "Most authorities strongly recommend using black ink on plain white paper for maximum contrast and scanner legibility, though some accept blue ink. Please consult the official Bpsc Cce Signature Resizer guidelines.",
-      },
-    ],
-  },
+
   {
     slug: "cgpsc-photo-resizer",
     metaTitle: "Cgpsc Photo Resizer — Resize & Compress",
