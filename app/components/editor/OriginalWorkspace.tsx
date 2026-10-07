@@ -9,6 +9,7 @@ import { useEditor, AspectRatio, getStripLines } from "./EditorContext";
 import { prepareImage } from "../../utils/imagePrep";
 import { isLowEndDevice } from "../../utils/device";
 import { triggerHaptic } from "../../utils/haptics";
+import { openFilePicker } from "../../utils/filePicker";
 import {
   UploadCloud,
   Crop as CropIcon,
@@ -158,10 +159,12 @@ export default function OriginalWorkspace() {
     [loadFile],
   );
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+  const { getRootProps, getInputProps, isDragActive, open } = useDropzone({
     onDrop,
     accept: { "image/*": [".jpeg", ".jpg", ".png", ".webp"] },
     multiple: false,
+    // Clicks open the dialog via openFilePicker (keeps INP low); keyboard still opens it directly.
+    noClick: true,
   });
 
   const handleRemoveBg = async () => {
@@ -627,7 +630,7 @@ export default function OriginalWorkspace() {
               </div>
             ) : (
               <div
-                {...getRootProps()}
+                {...getRootProps({ onClick: () => openFilePicker(open) })}
                 className={`w-full max-w-sm p-8 sm:p-10 border-2 border-dashed rounded-2xl flex flex-col items-center justify-center text-center cursor-pointer transition-colors ${
                   isDragActive
                     ? "border-[#16A34A] bg-[#DCFCE7]"

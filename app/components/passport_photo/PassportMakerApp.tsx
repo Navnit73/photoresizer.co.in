@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import PassportCropper, { PASSPORT_PRESETS, type CropperSettings, type Region } from './PassportCropper';
 import { prepareWorkingImage, formatBytes, type WorkingImage } from './imageUtils';
+import { openFilePicker } from '../../utils/filePicker';
 import {
   UploadCloud,
   Download,
@@ -160,7 +161,7 @@ export default function PassportMakerApp({
     }
   };
 
-  const openPicker = () => fileInputRef.current?.click();
+  const openPicker = () => openFilePicker(() => fileInputRef.current?.click());
   const resultPreset = result ? PASSPORT_PRESETS[result.region] : null;
 
   return (

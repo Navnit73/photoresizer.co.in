@@ -5,6 +5,7 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import TemplateGallery, { TEMPLATES, Template } from './TemplateGallery';
 import HowItWorksSteps from './HowItWorksSteps';
+import { openFilePicker } from '../../app/utils/filePicker';
 
 interface SlotData {
   src: string | null;
@@ -233,7 +234,7 @@ export default function CollageMakerTool() {
 
   const openSlotUpload = useCallback((index: number) => {
     activeSlotForUpload.current = index;
-    slotFileInputRef.current?.click();
+    openFilePicker(() => slotFileInputRef.current?.click());
   }, []);
 
   // Mobile FAB: jump straight to the first empty slot (or bulk-fill if all full)
@@ -242,7 +243,7 @@ export default function CollageMakerTool() {
     if (emptyIndex !== -1) {
       openSlotUpload(emptyIndex);
     } else {
-      bulkFileInputRef.current?.click();
+      openFilePicker(() => bulkFileInputRef.current?.click());
     }
   }, [slots, openSlotUpload]);
 
@@ -683,7 +684,7 @@ export default function CollageMakerTool() {
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
           <button
             type="button"
-            onClick={() => bulkFileInputRef.current?.click()}
+            onClick={() => openFilePicker(() => bulkFileInputRef.current?.click())}
             className="bg-accent-muted text-accent-main hover:bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 font-semibold px-4 py-2 rounded-xl transition-colors whitespace-nowrap text-center w-full sm:w-auto"
           >
             Upload Photos

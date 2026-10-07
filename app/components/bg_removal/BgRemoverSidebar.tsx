@@ -5,6 +5,7 @@ import { useBgRemoval } from './BgRemovalContext';
 import { Palette, FileImage, RotateCcw, Plus } from 'lucide-react';
 import { useDropzone } from 'react-dropzone';
 import { useTranslation } from '@/app/hooks/useTranslation';
+import { openFilePicker } from '@/app/utils/filePicker';
 
 const COLORS = [
   { label: 'Clear', value: 'transparent' },
@@ -30,11 +31,12 @@ export default function BgRemoverSidebar() {
   const { backgroundColor, setBackgroundColor, exportFormat, setExportFormat, clearAll, addJobs } = useBgRemoval();
   const { t } = useTranslation();
 
-  const { getRootProps: getAddRootProps, getInputProps: getAddInputProps } = useDropzone({
+  const { getRootProps: getAddRootProps, getInputProps: getAddInputProps, open: openAdd } = useDropzone({
     onDrop: (files) => { if (files?.length) addJobs(files); },
     accept: { 'image/*': ['.jpeg', '.jpg', '.png', '.webp'] },
     multiple: true,
-    noClick: false,
+    // Clicks open the dialog via openFilePicker (keeps INP low).
+    noClick: true,
   });
 
   const isCustomColor = !COLORS.find(c => c.value === backgroundColor);
@@ -45,7 +47,7 @@ export default function BgRemoverSidebar() {
         <div className="p-4 sm:p-5 flex flex-col gap-5">
 
           {/* Add More Images */}
-          <div {...getAddRootProps()} className="cursor-pointer">
+          <div {...getAddRootProps({ onClick: () => openFilePicker(openAdd) })} className="cursor-pointer">
             <input {...getAddInputProps()} />
             <button 
               type="button"

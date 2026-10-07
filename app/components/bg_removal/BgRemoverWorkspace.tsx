@@ -4,6 +4,7 @@ import React, { useCallback, useRef, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { useBgRemoval } from './BgRemovalContext';
 import { downloadProcessedImage } from './utils/bgRemovalUtils';
+import { openFilePicker } from '../../utils/filePicker';
 import { UploadCloud, CheckCircle, XCircle, Download, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 
 const CircularProgress = ({ progress }: { progress: number }) => {
@@ -47,11 +48,12 @@ export default function BgRemoverWorkspace() {
     return () => window.removeEventListener("hero-file-drop", handleHeroDrop);
   }, [addJobs]);
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+  const { getRootProps, getInputProps, isDragActive, open } = useDropzone({
     onDrop,
     accept: { 'image/*': ['.jpeg', '.jpg', '.png', '.webp'] },
     multiple: true,
-    noClick: jobs.length > 0,
+    // Clicks open the dialog via openFilePicker (keeps INP low).
+    noClick: true,
   });
 
   const scrollCarousel = (dir: 'left' | 'right') => {
@@ -74,7 +76,7 @@ export default function BgRemoverWorkspace() {
   };
 
   return (
-    <div className="w-full lg:flex-1 min-h-[55vh] sm:min-h-[400px] lg:min-h-0 lg:h-full flex flex-col overflow-hidden bg-[#FAFAFA] relative" {...getRootProps()}>
+    <div className="w-full lg:flex-1 min-h-[55vh] sm:min-h-[400px] lg:min-h-0 lg:h-full flex flex-col overflow-hidden bg-[#FAFAFA] relative" {...getRootProps({ onClick: jobs.length > 0 ? undefined : () => openFilePicker(open) })}>
       <input {...getInputProps()} />
 
       {jobs.length === 0 ? (

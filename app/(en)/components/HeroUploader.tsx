@@ -11,6 +11,7 @@ import {
   Sparkles
 } from "lucide-react";
 import { AdBanner } from "../../../components/AdBanner";
+import { openFilePicker } from "../../utils/filePicker";
 
 const loadPhotoEditor = () => import("../../components/editor/PhotoEditor");
 
@@ -152,7 +153,7 @@ export default function HeroUploader({
             {/* Main Upload Box */}
             <div className="max-w-2xl mx-auto">
               <div
-                onClick={() => fileInputRef.current?.click()}
+                onClick={() => openFilePicker(() => fileInputRef.current?.click())}
                 onMouseEnter={handleUserInteraction}
                 onTouchStart={handleUserInteraction}
                 onDragOver={handleDragOver}
@@ -163,7 +164,7 @@ export default function HeroUploader({
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    fileInputRef.current?.click();
+                    openFilePicker(() => fileInputRef.current?.click());
                   }
                 }}
                 className={`cursor-pointer p-8 sm:p-12 text-center rounded-xl transition-all duration-150 border-2 border-dashed ${

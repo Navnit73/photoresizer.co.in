@@ -11,6 +11,7 @@ import { FAQ } from './FAQ';
 import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from '../../lib/schema';
 import type { Region } from '../../app/components/passport_photo/PassportCropper';
 import { AdBanner } from '../AdBanner';
+import { openFilePicker } from '../../app/utils/filePicker';
 
 const PhotoEditor = dynamic(() => import('../../app/components/editor/PhotoEditor'), {
   ssr: false,
@@ -189,7 +190,7 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
             {/* Standard Upload Box */}
             <div className="max-w-2xl mx-auto">
               <div
-                onClick={() => fileInputRef.current?.click()}
+                onClick={() => openFilePicker(() => fileInputRef.current?.click())}
                 onDragOver={handleDragOver}
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
@@ -198,7 +199,7 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    fileInputRef.current?.click();
+                    openFilePicker(() => fileInputRef.current?.click());
                   }
                 }}
                 className={`cursor-pointer p-8 sm:p-12 text-center rounded-xl transition-all duration-150 border-2 border-dashed ${
