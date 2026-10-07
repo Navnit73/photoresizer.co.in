@@ -108,7 +108,46 @@ export default function EnglishLayout({ children }: { children: React.ReactNode 
 
           </div>
 
-          <div className="mt-12 pt-6 border-t border-[#E4E4E7] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#71717A]">
+          {/* Recommended Passport Photo Resources */}
+          <div className="mt-10 pt-6 border-t border-[#E4E4E7]">
+            <h4 className="text-xs font-semibold text-[#18181B] uppercase tracking-wider mb-4">
+              Recommended Passport Photo Resources
+            </h4>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 text-sm text-[#52525B]">
+              <li>
+                <a href="https://www.pixpassport.com" target="_blank" rel="noopener" title="PixPassport – online passport photo maker" className="hover:text-[#16A34A] transition-colors">
+                  PixPassport – Online Passport Photo Maker
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pixpassport.com/icao-standard-photograph" target="_blank" rel="noopener" title="ICAO standard passport photograph guide" className="hover:text-[#16A34A] transition-colors">
+                  ICAO Standard Photograph Guide &amp; Requirements
+                </a>
+              </li>
+              <li>
+                <a href="https://pixpassport.uk/" target="_blank" rel="noopener" title="PixPassport UK – passport photo tools" className="hover:text-[#16A34A] transition-colors">
+                  PixPassport UK – Passport Photo Tools
+                </a>
+              </li>
+              <li>
+                <a href="https://pixpassport.uk/tool/uk-passport-photo" target="_blank" rel="noopener" title="Make a UK passport photo online" className="hover:text-[#16A34A] transition-colors">
+                  UK Passport Photo Maker (Free Online)
+                </a>
+              </li>
+              <li>
+                <a href="https://pixpassport.uk/tool/digital-passport-photo" target="_blank" rel="noopener" title="Create a digital passport photo online" className="hover:text-[#16A34A] transition-colors">
+                  Digital Passport Photo Creator
+                </a>
+              </li>
+              <li>
+                <a href="https://pixpassport.uk/tool/take-a-passport-photo-on-iphone" target="_blank" rel="noopener" title="How to take a passport photo on iPhone" className="hover:text-[#16A34A] transition-colors">
+                  How to Take a Passport Photo on iPhone
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-8 pt-6 border-t border-[#E4E4E7] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#71717A]">
             <p>&copy; {new Date().getFullYear()} PhotoResizer. All rights reserved. Developed by <span className="font-medium text-[#18181B]">Navnit Rai</span>.</p>
             <div className="flex items-center gap-3">
               <a href="tel:+917355087072" className="hover:text-[#16A34A] transition-colors font-medium">+91 7355087072</a>

@@ -48,6 +48,15 @@ interface Props {
   relatedPages?: RelatedPageLink[];
 }
 
+const PASSPORT_RESOURCES = [
+  { href: 'https://www.pixpassport.com', label: 'PixPassport – Online Passport Photo Maker', title: 'PixPassport – online passport photo maker' },
+  { href: 'https://www.pixpassport.com/icao-standard-photograph', label: 'ICAO Standard Photograph Guide & Requirements', title: 'ICAO standard passport photograph guide' },
+  { href: 'https://pixpassport.uk/', label: 'PixPassport UK – Passport Photo Tools', title: 'PixPassport UK – passport photo tools' },
+  { href: 'https://pixpassport.uk/tool/uk-passport-photo', label: 'UK Passport Photo Maker (Free Online)', title: 'Make a UK passport photo online' },
+  { href: 'https://pixpassport.uk/tool/digital-passport-photo', label: 'Digital Passport Photo Creator', title: 'Create a digital passport photo online' },
+  { href: 'https://pixpassport.uk/tool/take-a-passport-photo-on-iphone', label: 'How to Take a Passport Photo on iPhone', title: 'How to take a passport photo on iPhone' },
+];
+
 export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
   const initialTab = page.showTool === 'bg-remover' ? 'bg_remover' : 'editor';
   const [activeTab, setActiveTab] = useState<"editor" | "bg_remover">(initialTab);
@@ -333,6 +342,33 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
 
         {/* FAQ Section */}
         <FAQ faq={page.faq || []} />
+
+        {/* Helpful passport photo resources (passport pages only) */}
+        {page.showTool === 'passport-maker' && (
+          <aside className="mt-12 p-6 rounded-xl border border-[#E4E4E7] bg-[#FAFAFA]">
+            <h3 className="text-lg font-semibold mb-2 text-[#18181B]">
+              Helpful Passport Photo Resources
+            </h3>
+            <p className="text-sm text-[#52525B] mb-4">
+              Want to double-check the official rules or try another passport photo tool? These guides are genuinely useful:
+            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 text-sm">
+              {PASSPORT_RESOURCES.map((r) => (
+                <li key={r.href}>
+                  <a
+                    href={r.href}
+                    target="_blank"
+                    rel="noopener"
+                    title={r.title}
+                    className="text-[#16A34A] hover:text-[#15803D] font-medium underline-offset-2 hover:underline transition-colors"
+                  >
+                    {r.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        )}
 
         {/* End-of-content ad, before related links */}
         <AdBanner placement="contentEnd" className="mt-12" />
