@@ -1,6 +1,9 @@
-# Canonicalize host: www was being crawled and ranked as a duplicate site
-# alongside the apex domain, splitting clicks/ranking signal on shared pages.
-https://www.photoresizer.co.in/* https://photoresizer.co.in/:splat 301
+# NOTE: the www -> apex host redirect cannot live here — Cloudflare Workers Assets'
+# _redirects only accepts relative paths (an absolute-URL rule broke the last deploy:
+# "Invalid _redirects configuration: Only relative URLs are allowed"). Set that redirect
+# up instead as a Cloudflare zone-level Redirect Rule (dashboard: Rules > Redirect Rules),
+# matching hostname equals "www.photoresizer.co.in" -> redirect to
+# "https://photoresizer.co.in${uri.path}" with a 301, Preserve query string on.
 
 # /de, /es, /fr, /pt routes were removed on 2026-10-04 with no redirect,
 # leaving previously indexed/backlinked locale URLs as hard 404s.
