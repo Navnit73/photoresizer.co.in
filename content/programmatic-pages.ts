@@ -19,6 +19,9 @@ export const programmaticPages: SeoPage[] = [
   <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Passport Photo Editor photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
   </p>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    After editing, <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">check whether your photo meets ICAO standards</a> to catch problems like shadows or a wrong head size before you submit.
+  </p>
 </div>`,
       },
     ],
@@ -66,6 +69,9 @@ export const programmaticPages: SeoPage[] = [
       <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Passport offices worldwide follow the same ICAO photo rules. This <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">ICAO standard photo resource</a> explains them in simple steps.
+  </p>
 </div>`,
       },
     ],
@@ -112,6 +118,9 @@ export const programmaticPages: SeoPage[] = [
       <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Before you print a full sheet, make sure the single photo is correct. Read the <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">ICAO passport photo specifications</a> and confirm face size, background and lighting.
+  </p>
 </div>`,
       },
     ],
@@ -417,6 +426,9 @@ export const programmaticPages: SeoPage[] = [
       <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> 100% Free and Private browser processing</li>
     </ul>
   </div>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Canada’s photo rules are built on the ICAO standard. Use this <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">ICAO passport photo checker</a> to confirm your photo is compliant before you apply.
+  </p>
 </div>`,
       },
     ],
@@ -460,6 +472,9 @@ export const programmaticPages: SeoPage[] = [
   <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
   </p>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Every Schengen country follows the <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">ICAO photo standard</a> for visa photos. If a consulate or online form rejects your picture, read <a href="https://icao-standard-photo.online/icao-guide/photo-is-not-valid-as-per-icao-standard" target="_blank" rel="noopener">why photos are rejected under ICAO rules</a> and fix the issue before you reapply.
+  </p>
 </div>`,
       },
     ],
@@ -500,6 +515,9 @@ export const programmaticPages: SeoPage[] = [
   <h3 class="text-xl font-bold text-[#18181B]">Your Australia Passport Photo Maker Photo, Formatted Perfectly</h3>
   <p class="text-[#52525B] leading-relaxed">
     Avoid application delays by ensuring your Australia Passport Photo Maker photo is strictly compliant. No watermarks, no account signup, and instant processing directly in your browser.
+  </p>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Australian passport photos must meet ICAO guidelines. Find out <a href="https://icao-standard-photo.online/icao-guide/photo-is-not-valid-as-per-icao-standard" target="_blank" rel="noopener">what makes a photo invalid under the ICAO standard</a>, then <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">test your photo with an ICAO checker</a>.
   </p>
 </div>`,
       },
@@ -543,6 +561,9 @@ export const programmaticPages: SeoPage[] = [
   </p>
   <p class="text-[#52525B] leading-relaxed">
     Never worry about blurry uploads or "file too large" errors again. Set your target size and let our algorithm find the optimal quality automatically.
+  </p>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Nepal’s machine-readable passport follows international ICAO photo rules. Learn the <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">ICAO standard photo guidelines</a> and run your file through a <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">free ICAO photo checker</a> before you submit.
   </p>
 </div>`,
       },

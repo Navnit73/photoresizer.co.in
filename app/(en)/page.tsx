@@ -433,6 +433,27 @@ export default function Home() {
             banking, police, teaching, and state recruitment forms. Pick your exam, check the
             KB limit, and download a JPG that the portal accepts on the first try.
           </p>
+          <p className="max-w-3xl mx-auto mt-3 text-center text-sm text-[#52525B] leading-relaxed">
+            Need printed copies too? Place your photos on a{" "}
+            <a
+              href="https://www.pixpassport.com/passport-photo-template-4x6"
+              target="_blank"
+              rel="noopener"
+              className="font-medium text-[#16A34A] hover:text-[#15803D] underline underline-offset-2"
+            >
+              4×6 passport photo template
+            </a>{" "}
+            for any photo lab, or build a custom sheet with this{" "}
+            <a
+              href="https://www.pixpassport.com/passport-photo-print-template-generator"
+              target="_blank"
+              rel="noopener"
+              className="font-medium text-[#16A34A] hover:text-[#15803D] underline underline-offset-2"
+            >
+              passport photo print template generator
+            </a>
+            .
+          </p>
 
           <ul className="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-3">
             {TRUST.map(({ icon: Icon, label }) => (

@@ -354,6 +354,9 @@ export const enPages: SeoPage[] = [
       </div>
     </div>
   </div>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Almost every country above bases its size, head position and background rules on the international ICAO standard. To understand what each rule means, read this <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">ICAO standard photo guide</a>. Then run your finished file through a <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">free ICAO photo checker</a> before you upload it.
+  </p>
 </div>`,
       },
     ],
@@ -1786,6 +1789,9 @@ export const enPages: SeoPage[] = [
       <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🇦🇺</span><span><strong>Australia:</strong> 35×45 mm, plain light background, neutral expression</span></div>
     </div>
   </div>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Not sure your photo will pass? <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">Check your photo against ICAO rules</a> in a few seconds. If a portal has already rejected it, this guide explains <a href="https://icao-standard-photo.online/icao-guide/photo-is-not-valid-as-per-icao-standard" target="_blank" rel="noopener">why a photo fails the ICAO standard check</a> and how to fix each cause.
+  </p>
 </div>`,
       },
     ],
@@ -1847,6 +1853,9 @@ export const enPages: SeoPage[] = [
   <h3 class="text-xl font-bold text-[#18181B]">Size of Indian Passport Size Photo</h3>
   <p class="text-[#52525B] leading-relaxed">
     The size of Indian passport size photo is <strong>35 × 45 mm</strong>, which equals 413 × 531 pixels at 300 DPI. The background must be plain white. For US passports, the passport image size is a <strong>2 × 2 inch</strong> square (51 × 51 mm).
+  </p>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    These sizes come from ICAO, the UN body that sets passport rules worldwide. Learn the full set of <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">ICAO standard photo requirements</a>, including face height, lighting and expression.
   </p>
 </div>`,
       },
@@ -1968,6 +1977,9 @@ export const enPages: SeoPage[] = [
     <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Keep hair off your face.</strong> Show your full forehead, face, and chin.</span></li>
     <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>Wear a dark or mid-tone top.</strong> White clothing blends into a white background.</span></li>
   </ul>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Once your photo is ready, test it with an <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">online ICAO photo compliance checker</a>. If you ever see the message “<a href="https://icao-standard-photo.online/icao-guide/photo-is-not-valid-as-per-icao-standard" target="_blank" rel="noopener">photo is not valid as per ICAO standard</a>”, the guide lists the usual causes, such as shadows, a tilted head or a cropped chin.
+  </p>
 </div>`,
       },
       {
@@ -2055,7 +2067,10 @@ export const enPages: SeoPage[] = [
     sections: [
       {
         heading: "US Passport Photo Requirements 2026",
-        content: `<div class="space-y-8 not-prose"><p class="text-lg text-[#52525B] leading-relaxed">The US State Department requires all passport photos to be exactly 2×2 inches (51×51 mm) with a white or off-white background. The head must be between 1 inch and 1⅜ inches tall (25–35 mm), centred in the frame. Our free tool enforces all these specifications so your photo will not be rejected at the post office, acceptance facility, or US Embassy.</p><div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden"><div class="px-6 py-4 border-b border-[#E4E4E7] bg-[#FAFAFA]"><h3 class="text-base font-bold text-[#18181B]">Official US Passport Photo Specs 2026</h3></div><div class="overflow-x-auto p-6"><table class="w-full text-sm"><thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Requirement</th><th class="text-left py-2 font-semibold">Specification</th></tr></thead><tbody class="divide-y divide-[#F4F4F5]"><tr><td class="py-2 pr-4 font-medium">Photo Size</td><td class="py-2 text-[#52525B]">2 × 2 inches (51 × 51 mm)</td></tr><tr><td class="py-2 pr-4 font-medium">Head Size</td><td class="py-2 text-[#52525B]">1 – 1⅜ inches from chin to top of head</td></tr><tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain white or off-white</td></tr><tr><td class="py-2 pr-4 font-medium">Expression</td><td class="py-2 text-[#52525B]">Neutral, both eyes open and looking at camera</td></tr><tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">Colour JPEG, printed on photo-quality paper</td></tr></tbody></table></div></div></div>`,
+        content: `<div class="space-y-8 not-prose"><p class="text-lg text-[#52525B] leading-relaxed">The US State Department requires all passport photos to be exactly 2×2 inches (51×51 mm) with a white or off-white background. The head must be between 1 inch and 1⅜ inches tall (25–35 mm), centred in the frame. Our free tool enforces all these specifications so your photo will not be rejected at the post office, acceptance facility, or US Embassy.</p><div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden"><div class="px-6 py-4 border-b border-[#E4E4E7] bg-[#FAFAFA]"><h3 class="text-base font-bold text-[#18181B]">Official US Passport Photo Specs 2026</h3></div><div class="overflow-x-auto p-6"><table class="w-full text-sm"><thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Requirement</th><th class="text-left py-2 font-semibold">Specification</th></tr></thead><tbody class="divide-y divide-[#F4F4F5]"><tr><td class="py-2 pr-4 font-medium">Photo Size</td><td class="py-2 text-[#52525B]">2 × 2 inches (51 × 51 mm)</td></tr><tr><td class="py-2 pr-4 font-medium">Head Size</td><td class="py-2 text-[#52525B]">1 – 1⅜ inches from chin to top of head</td></tr><tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain white or off-white</td></tr><tr><td class="py-2 pr-4 font-medium">Expression</td><td class="py-2 text-[#52525B]">Neutral, both eyes open and looking at camera</td></tr><tr><td class="py-2 pr-4 font-medium">Format</td><td class="py-2 text-[#52525B]">Colour JPEG, printed on photo-quality paper</td></tr></tbody></table></div></div>  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    The US Department of State follows the international ICAO photo standard. Read a plain-English <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">guide to ICAO-compliant passport photos</a>, or upload your file to an <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">ICAO photo checker</a> to confirm it meets the rules.
+  </p>
+</div>`,
       },
     ],
     faq: [
@@ -2105,7 +2120,10 @@ export const enPages: SeoPage[] = [
     sections: [
       {
         heading: "UK Passport Photo Requirements 2026",
-        content: `<div class="space-y-8 not-prose"><p class="text-lg text-[#52525B] leading-relaxed">UK passport photos must meet His Majesty's Passport Office (HMPO) standards. The photo is 35×45 mm with the face taking up 29–34 mm of the height. The background must be plain light grey or cream — not white. Our free tool applies all UK-specific requirements and guides you through correct cropping to avoid rejection.</p><div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden"><div class="px-6 py-4 border-b border-[#E4E4E7] bg-[#FAFAFA]"><h3 class="text-base font-bold text-[#18181B]">HMPO UK Passport Photo Specs 2026</h3></div><div class="overflow-x-auto p-6"><table class="w-full text-sm"><thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Requirement</th><th class="text-left py-2 font-semibold">Specification</th></tr></thead><tbody class="divide-y divide-[#F4F4F5]"><tr><td class="py-2 pr-4 font-medium">Photo Size</td><td class="py-2 text-[#52525B]">35 × 45 mm</td></tr><tr><td class="py-2 pr-4 font-medium">Face Height</td><td class="py-2 text-[#52525B]">29–34 mm (chin to crown)</td></tr><tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain light grey or cream (not white)</td></tr><tr><td class="py-2 pr-4 font-medium">Expression</td><td class="py-2 text-[#52525B]">Neutral, mouth closed, eyes open</td></tr><tr><td class="py-2 pr-4 font-medium">Recency</td><td class="py-2 text-[#52525B]">Taken within the last month</td></tr></tbody></table></div></div></div>`,
+        content: `<div class="space-y-8 not-prose"><p class="text-lg text-[#52525B] leading-relaxed">UK passport photos must meet His Majesty's Passport Office (HMPO) standards. The photo is 35×45 mm with the face taking up 29–34 mm of the height. The background must be plain light grey or cream — not white. Our free tool applies all UK-specific requirements and guides you through correct cropping to avoid rejection.</p><div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden"><div class="px-6 py-4 border-b border-[#E4E4E7] bg-[#FAFAFA]"><h3 class="text-base font-bold text-[#18181B]">HMPO UK Passport Photo Specs 2026</h3></div><div class="overflow-x-auto p-6"><table class="w-full text-sm"><thead><tr class="border-b border-[#E4E4E7]"><th class="text-left py-2 pr-4 font-semibold">Requirement</th><th class="text-left py-2 font-semibold">Specification</th></tr></thead><tbody class="divide-y divide-[#F4F4F5]"><tr><td class="py-2 pr-4 font-medium">Photo Size</td><td class="py-2 text-[#52525B]">35 × 45 mm</td></tr><tr><td class="py-2 pr-4 font-medium">Face Height</td><td class="py-2 text-[#52525B]">29–34 mm (chin to crown)</td></tr><tr><td class="py-2 pr-4 font-medium">Background</td><td class="py-2 text-[#52525B]">Plain light grey or cream (not white)</td></tr><tr><td class="py-2 pr-4 font-medium">Expression</td><td class="py-2 text-[#52525B]">Neutral, mouth closed, eyes open</td></tr><tr><td class="py-2 pr-4 font-medium">Recency</td><td class="py-2 text-[#52525B]">Taken within the last month</td></tr></tbody></table></div></div>  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    HM Passport Office checks digital photos against ICAO rules automatically. If your upload fails, find out <a href="https://icao-standard-photo.online/icao-guide/photo-is-not-valid-as-per-icao-standard" target="_blank" rel="noopener">why a photo is not valid as per the ICAO standard</a>. Then <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">verify your photo with a free ICAO checker</a> before you try again.
+  </p>
+</div>`,
       },
     ],
     faq: [
@@ -2172,6 +2190,9 @@ export const enPages: SeoPage[] = [
       <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">✅</span><span>No spectacles and no coloured contact lenses</span></div>
     </div>
   </div>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Passport Seva and the Indian e-Visa portal follow the <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">ICAO standard for passport photos</a>. Knowing these rules helps you take a photo that passes the first time.
+  </p>
 </div>`,
       },
       {
@@ -2288,6 +2309,9 @@ export const enPages: SeoPage[] = [
     <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>An old photo.</strong> Use a picture taken within the last 6 months.</span></li>
     <li class="flex gap-2 items-start"><span class="text-[#16A34A] font-bold mt-0.5">✓</span><span><strong>The wrong shape for visas.</strong> Use a square photo for e-Visa and OCI forms.</span></li>
   </ul>
+  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+    Did the portal show “Photo is not valid as per ICAO standard”? This step-by-step guide on <a href="https://icao-standard-photo.online/icao-guide/photo-is-not-valid-as-per-icao-standard" target="_blank" rel="noopener">fixing the ICAO photo rejection error</a> covers each cause. Run your new photo through the <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">ICAO photo checker</a> before you upload it again.
+  </p>
 </div>`,
       },
       {
