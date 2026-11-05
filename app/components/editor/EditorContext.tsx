@@ -34,6 +34,8 @@ export interface LivePreviewData {
   targetMet?: boolean;
   /** Exact byte size of the encoded result. */
   sizeBytes?: number;
+  /** In 'min' size mode: whether inert padding bytes were added to reach the target. */
+  padded?: boolean;
 }
 
 export interface TextOverlay {
@@ -102,6 +104,8 @@ interface DocState {
   quality: number;
   /** When set, quality is searched automatically so the export is at most this many KB. */
   targetSizeKb: number | null;
+  /** 'max' shrinks toward targetSizeKb (default); 'min' pads the file up to reach it. */
+  sizeMode: 'max' | 'min';
   /** Byte size of the file the user originally picked (used to show how much was saved). */
   originalFileSize: number;
   backgroundColor: string;
@@ -138,6 +142,7 @@ interface EditorContextType extends DocState {
   setFormat: (format: ImageFormat) => void;
   setQuality: (quality: number) => void;
   setTargetSizeKb: (kb: number | null) => void;
+  setSizeMode: (mode: 'max' | 'min') => void;
   setBackgroundColor: (color: string) => void;
   setRotation: (rotation: number) => void;
   setStrip: (updates: Partial<StripConfig>) => void;
@@ -169,6 +174,7 @@ const defaultDoc: DocState = {
   format: 'image/jpeg',
   quality: 90,
   targetSizeKb: null,
+  sizeMode: 'max',
   originalFileSize: 0,
   backgroundColor: 'transparent',
   rotation: 0,
@@ -197,8 +203,25 @@ function isBlobUrl(url: string | null): url is string {
   return !!url && url.startsWith('blob:');
 }
 
-export const EditorProvider = ({ children, initialFile }: { children: ReactNode; initialFile?: File | null }) => {
-  const [doc, setDoc] = useState<DocState>(defaultDoc);
+export const EditorProvider = ({
+  children,
+  initialFile,
+  defaultTargetSizeKb,
+  defaultSizeMode,
+}: {
+  children: ReactNode;
+  initialFile?: File | null;
+  /** Pre-selects "Target size" mode (e.g. a page built around a 50 KB limit) instead of quality presets. */
+  defaultTargetSizeKb?: number | null;
+  /** 'min' pre-selects "increase to this size" instead of the default "reduce to this size". */
+  defaultSizeMode?: 'max' | 'min';
+}) => {
+  const initialDoc = useRef<DocState>({
+    ...defaultDoc,
+    targetSizeKb: defaultTargetSizeKb ?? null,
+    sizeMode: defaultSizeMode ?? 'max',
+  }).current;
+  const [doc, setDoc] = useState<DocState>(initialDoc);
   const [livePreview, setLivePreview] = useState<LivePreviewData>(defaultLivePreview);
   const [isProcessing, setIsProcessing] = useState(false);
   const [isBgRemoving, setIsBgRemoving] = useState(false);
@@ -207,10 +230,10 @@ export const EditorProvider = ({ children, initialFile }: { children: ReactNode;
 
   // Mutable mirrors so every action below can be referentially stable
   // (a stable context API is what stops the whole editor re-rendering/re-processing in a loop).
-  const docRef = useRef<DocState>(defaultDoc);
+  const docRef = useRef<DocState>(initialDoc);
   const pastRef = useRef<DocState[]>([]);
   const futureRef = useRef<DocState[]>([]);
-  const committedRef = useRef<DocState>(defaultDoc);
+  const committedRef = useRef<DocState>(initialDoc);
   const commitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastLoadedFileRef = useRef<File | null>(null);
   const loadTokenRef = useRef(0);
@@ -460,9 +483,9 @@ export const EditorProvider = ({ children, initialFile }: { children: ReactNode;
     const dropped = [...pastRef.current, ...futureRef.current, docRef.current];
     pastRef.current = [];
     futureRef.current = [];
-    docRef.current = defaultDoc;
-    committedRef.current = defaultDoc;
-    setDoc(defaultDoc);
+    docRef.current = initialDoc;
+    committedRef.current = initialDoc;
+    setDoc(initialDoc);
     setSelectedTextId(null);
     releaseUnused(dropped);
     syncHistoryFlags();
@@ -515,6 +538,7 @@ export const EditorProvider = ({ children, initialFile }: { children: ReactNode;
       setFormat: (format: ImageFormat) => updateDoc({ format }),
       setQuality: (quality: number) => updateDoc({ quality, targetSizeKb: null }),
       setTargetSizeKb: (targetSizeKb: number | null) => updateDoc({ targetSizeKb }),
+      setSizeMode: (sizeMode: 'max' | 'min') => updateDoc({ sizeMode }),
       setBackgroundColor: (backgroundColor: string) => updateDoc({ backgroundColor }),
       setRotation: (rotation: number) => updateDoc({ rotation }),
       setStrip: (updates: Partial<StripConfig>) => updateDoc({ strip: { ...docRef.current.strip, ...updates } }),

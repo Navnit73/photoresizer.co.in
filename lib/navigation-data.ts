@@ -31,6 +31,8 @@ export const examCategories = [
   { name: "Railway (RRB NTPC/ALP)", href: "/rrb-ntpc-photo-resizer", badge: "30-70 KB" },
   { name: "Banking (IBPS/SBI)", href: "/signature-resize-ibps", badge: "10-20 KB" },
   { name: "UPSC CSE & OTR", href: "/upsc-photo-size", badge: "20-300 KB" },
+  { name: "PAN Card Photo & Signature", href: "/pan-card-photo-resizer", badge: "NSDL / UTI" },
+  { name: "Signature Resizer", href: "/signature-resizer", badge: "10-20 KB" },
   { name: "Teaching (CTET/REET)", href: "/ctet-photo-resizer", badge: "10-100 KB" },
   { name: "State Police Recruitment", href: "/up-police-photo-resizer", badge: "Govt Presets" },
 ];

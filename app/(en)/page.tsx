@@ -156,7 +156,7 @@ const TOOLS = [
     icon: FileSignature,
     title: "Signature Resizer",
     desc: "Turn a phone picture of your signature into a crisp, high-contrast JPG. Thumb impressions and declarations work too.",
-    href: "/signature-resize-ibps",
+    href: "/signature-resizer",
     cta: "Resize signature",
   },
   {

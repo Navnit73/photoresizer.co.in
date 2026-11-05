@@ -28,6 +28,11 @@ const BgRemoverApp = dynamic(() => import('../../app/components/bg_removal/BgRem
   loading: () => <div className="min-h-[450px] flex items-center justify-center text-sm text-[#71717A]">Loading background remover...</div>,
 });
 
+const DocResizerTool = dynamic(() => import('../../app/components/doc_resizer/DocResizerTool'), {
+  ssr: false,
+  loading: () => <div className="min-h-[450px] flex items-center justify-center text-sm text-[#71717A]">Loading resizer...</div>,
+});
+
 /** Pre-selects the passport size that matches a country-specific landing page. */
 function passportRegionForSlug(slug: string): Region | undefined {
   if (slug.startsWith('us-')) return 'US';
@@ -35,6 +40,20 @@ function passportRegionForSlug(slug: string): Region | undefined {
   if (slug.startsWith('india-')) return 'IN_PASSPORT';
   if (slug.includes('schengen')) return 'EU';
   return undefined;
+}
+
+/** Pre-selects "Target size" mode with the KB limit a page is built around, e.g. "resize-image-to-100kb" -> 100. */
+function targetKbForSlug(slug: string): number | undefined {
+  const match = /(\d+)\s*-?kb/.exec(slug);
+  if (match) return parseInt(match[1], 10);
+  if (slug === 'reduce-image-size-in-kb' || slug === 'resize-photograph-in-kb') return 50;
+  if (slug === 'increase-image-size-in-kb') return 50;
+  return undefined;
+}
+
+/** "Increase ..." pages pad the file up to the target instead of compressing toward it. */
+function sizeModeForSlug(slug: string): 'max' | 'min' | undefined {
+  return slug.startsWith('increase-') ? 'min' : undefined;
 }
 
 export interface RelatedPageLink {
@@ -310,8 +329,17 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
                   <PassportMakerApp initialFile={uploadedFile} defaultRegion={passportRegionForSlug(page.slug)} />
                 ) : page.showTool === 'bg-remover' ? (
                   <BgRemoverApp />
+                ) : page.showTool === 'pan-resizer' || page.showTool === 'signature-resizer' ? (
+                  <DocResizerTool
+                    mode={page.showTool === 'pan-resizer' ? 'pan' : 'signature'}
+                    initialFile={uploadedFile}
+                  />
                 ) : (
-                  <PhotoEditor initialFile={uploadedFile} />
+                  <PhotoEditor
+                    initialFile={uploadedFile}
+                    defaultTargetSizeKb={targetKbForSlug(page.slug)}
+                    defaultSizeMode={sizeModeForSlug(page.slug)}
+                  />
                 )
               ) : (
                 <BgRemoverApp />

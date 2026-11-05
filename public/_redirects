@@ -1,0 +1,16 @@
+# Canonicalize host: www was being crawled and ranked as a duplicate site
+# alongside the apex domain, splitting clicks/ranking signal on shared pages.
+https://www.photoresizer.co.in/* https://photoresizer.co.in/:splat 301
+
+# /de, /es, /fr, /pt routes were removed on 2026-10-04 with no redirect,
+# leaving previously indexed/backlinked locale URLs as hard 404s.
+/de/* / 301
+/es/* / 301
+/fr/* / 301
+/pt/* / 301
+
+# Near-duplicate / mistyped KB-reduction URLs that were getting impressions with no real
+# page behind them — point them at the closest existing, real content instead of 404ing.
+/resize-image-20kb /resize-photo-20kb 301
+/reduce-photo-size50kb /reduce-photo-size-50kb 301
+/photo-resize-40kb /reduce-image-size-in-kb 301

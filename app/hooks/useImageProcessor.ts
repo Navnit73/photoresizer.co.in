@@ -9,7 +9,7 @@ const DEBOUNCE_MS_LOW_END = 450;
 export function useImageProcessor() {
   const {
     imageFile, imageUrl, width, height, originalWidth, originalHeight,
-    format, quality, targetSizeKb, backgroundColor, rotation, crop, textOverlays,
+    format, quality, targetSizeKb, sizeMode, backgroundColor, rotation, crop, textOverlays,
     strip, setLivePreview, setIsProcessing,
   } = useEditor();
 
@@ -39,7 +39,7 @@ export function useImageProcessor() {
       if (data.id !== requestIdRef.current) return;
 
       if (data.success) {
-        const { blob, width: outWidth, height: outHeight, usedQuality, targetMet } = data;
+        const { blob, width: outWidth, height: outHeight, usedQuality, targetMet, padded } = data;
         const url = URL.createObjectURL(blob);
 
         revokeActiveUrl();
@@ -49,7 +49,7 @@ export function useImageProcessor() {
         startTransition(() => {
           setLivePreview({
             url, sizeKb, width: outWidth, height: outHeight,
-            usedQuality, targetMet, sizeBytes: blob.size,
+            usedQuality, targetMet, sizeBytes: blob.size, padded,
           });
           setIsProcessing(false);
         });
@@ -101,10 +101,10 @@ export function useImageProcessor() {
 
     workerRef.current.postMessage({
       id: currentId,
-      imageUrl, width, height, originalWidth, originalHeight, format, quality, targetSizeKb,
+      imageUrl, width, height, originalWidth, originalHeight, format, quality, targetSizeKb, sizeMode,
       backgroundColor, rotation, crop, textOverlays, strip: stripPayload,
     });
-  }, [imageUrl, width, height, originalWidth, originalHeight, format, quality, targetSizeKb, backgroundColor, rotation, crop, textOverlays, strip, setIsProcessing]);
+  }, [imageUrl, width, height, originalWidth, originalHeight, format, quality, targetSizeKb, sizeMode, backgroundColor, rotation, crop, textOverlays, strip, setIsProcessing]);
 
   useEffect(() => {
     if (!imageFile || !imageUrl) {

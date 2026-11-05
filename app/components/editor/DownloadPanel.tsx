@@ -55,6 +55,8 @@ export default function DownloadPanel() {
     setQuality,
     targetSizeKb,
     setTargetSizeKb,
+    sizeMode,
+    setSizeMode,
     setFormat,
     width,
     height,
@@ -101,7 +103,7 @@ export default function DownloadPanel() {
     originalFileSize > 0 && hasResult ? Math.max(3, Math.min(100, (outBytes / originalFileSize) * 100)) : 100;
 
   const activePreset = targetSizeKb !== null ? "target" : PRESETS.find((p) => p.quality === quality)?.id ?? "custom";
-  const targetMissed = targetSizeKb !== null && !isProcessing && livePreview.targetMet === false;
+  const targetMissed = sizeMode === "max" && targetSizeKb !== null && !isProcessing && livePreview.targetMet === false;
 
   const saveFile = () => {
     const { livePreview: preview, format: fmt, fileName: rawName, originalFileSize: fromBytes } = latest.current;
@@ -216,7 +218,7 @@ export default function DownloadPanel() {
               type="button"
               role="radio"
               aria-checked={activePreset === "target"}
-              disabled={isPng}
+              disabled={isPng && sizeMode === "max"}
               onClick={() => {
                 triggerHaptic('light');
                 if (targetSizeKb === null) {
@@ -241,7 +243,7 @@ export default function DownloadPanel() {
             </button>
           </div>
 
-          {isPng && (
+          {isPng && sizeMode === "max" && (
             <div className="mt-2.5 flex flex-wrap items-center gap-2 text-xs text-[#52525B] bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl px-3 py-2">
               <span>PNG is lossless, so it can&apos;t be compressed by quality.</span>
               <button
@@ -268,12 +270,33 @@ export default function DownloadPanel() {
             </div>
           )}
 
-          {targetSizeKb !== null && !isPng && (
+          {targetSizeKb !== null && (!isPng || sizeMode === "min") && (
             <div className="mt-3 p-3 rounded-xl border border-[#BBF7D0] bg-[#F0FDF4]">
+              <div role="radiogroup" aria-label="Size direction" className="flex gap-1.5 mb-2.5">
+                {([
+                  { id: "max", label: "Reduce to" },
+                  { id: "min", label: "Increase to" },
+                ] as const).map((opt) => (
+                  <button
+                    key={opt.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={sizeMode === opt.id}
+                    onClick={() => {
+                      triggerHaptic("light");
+                      setSizeMode(opt.id);
+                    }}
+                    className={`h-7 px-3 text-xs font-semibold rounded-full border transition-colors ${
+                      sizeMode === opt.id
+                        ? "bg-[#16A34A] border-[#16A34A] text-white"
+                        : "bg-[#FFFFFF] border-[#BBF7D0] text-[#15803D] hover:bg-[#DCFCE7]"
+                    }`}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
               <div className="flex flex-wrap items-center gap-2">
-                <label htmlFor="target-size-input" className="text-xs font-semibold text-[#15803D]">
-                  Make it under
-                </label>
                 <div className="flex items-center bg-[#FFFFFF] border border-[#BBF7D0] rounded-lg px-2.5 h-10 focus-within:ring-2 focus-within:ring-[#DCFCE7]">
                   <input
                     id="target-size-input"
@@ -309,7 +332,14 @@ export default function DownloadPanel() {
                   ))}
                 </div>
               </div>
-              {!targetMissed && livePreview.usedQuality !== undefined && hasResult && (
+              {sizeMode === "min" && hasResult && !isProcessing && (
+                <p className="mt-2 text-[11px] text-[#15803D]">
+                  {livePreview.padded
+                    ? "Added inert padding data to reach your target — the image itself is unchanged."
+                    : "Your image is already at or above this size — nothing was changed."}
+                </p>
+              )}
+              {sizeMode === "max" && !targetMissed && livePreview.usedQuality !== undefined && hasResult && (
                 <p className="mt-2 text-[11px] text-[#15803D]">
                   Auto-picked quality {livePreview.usedQuality}% to fit your limit.
                 </p>

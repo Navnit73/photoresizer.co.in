@@ -4288,5 +4288,950 @@ export const enPages: SeoPage[] = [
       },
     ],
   },
+  {
+    slug: "reduce-image-size-in-kb",
+    metaTitle: "Reduce Image Size in KB – Free Online Tool",
+    metaDescription:
+      "Reduce any photo's size in KB instantly — pick 20, 50, 100 KB or set a custom target. Free, private, browser-based tool built for Indian forms and exams.",
+    h1: "Reduce Image Size in KB — Free Online Tool 2027",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Shrink any photo or scanned document to the exact KB size your form needs — 20 KB, 50 KB, 100 KB, or a custom target. No upload, no signup, instant download.",
+    sections: [
+      {
+        heading: "How to Reduce an Image's Size in KB",
+        content: `
+<div class="space-y-8 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    Most Indian government portals, exam application forms, and job sites don't just limit how big your photo looks — they limit how much space it takes up on disk, measured in kilobytes (KB). A phone camera photo is usually 2–8 MB, which is 40–150 times larger than the 20 KB to 200 KB these forms accept. This free tool reduces an image's file size in KB directly, right inside your browser, so you can hit the exact limit a form asks for without installing anything or emailing the file to yourself first.
+  </p>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">Any KB Target</h3>
+      <p class="text-sm text-[#52525B]">Type the exact KB size your form needs, or tap a quick preset — 20, 50, 100, 200 or 500 KB. The tool finds the right quality to match it.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">100% Private</h3>
+      <p class="text-sm text-[#52525B]">Your photo is processed on your own device using the browser's built-in image engine. It is never uploaded to a server or stored anywhere.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">See It Before You Download</h3>
+      <p class="text-sm text-[#52525B]">The final KB size, dimensions and quality all update live as you adjust the target, so there's no guessing before you save the file.</p>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold text-[#18181B] mb-4">Reduce Your Image's KB Size in 3 Steps</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Image</h4><p class="text-sm text-[#52525B]">Drag in any JPG, PNG or WEBP file — a full-resolution phone photo works fine.</p></div>
+      </div>
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Enter Your Target KB</h4><p class="text-sm text-[#52525B]">Tap 20, 50, 100, 200 or 500 KB, or type a custom number in the box next to it.</p></div>
+      </div>
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Download the Result</h4><p class="text-sm text-[#52525B]">Your file downloads at or under the KB size you asked for, ready to upload to the portal.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6">
+    <h3 class="text-lg font-bold text-[#18181B] mb-3">Common KB Limits on Indian Forms and Portals</h3>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-[#E4E4E7]">
+            <th class="text-left py-2 pr-4 font-semibold text-[#52525B]">Portal type</th>
+            <th class="text-left py-2 font-semibold text-[#52525B]">Typical KB range</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">Signature uploads (SSC, IBPS, bank exams)</td><td class="py-2 text-[#52525B]">10 KB – 20 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">Photo uploads (SSC, railway, state police)</td><td class="py-2 text-[#52525B]">20 KB – 50 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">Entrance exam photo + signature (JEE, NEET, CUET)</td><td class="py-2 text-[#52525B]">50 KB – 100 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">Scanned certificates and ID proofs</td><td class="py-2 text-[#52525B]">100 KB – 500 KB</td></tr>
+          <tr><td class="py-2 pr-4 font-medium text-[#18181B]">E-governance and document portals</td><td class="py-2 text-[#52525B]">50 KB – 200 KB</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-3 text-xs text-[#71717A]">Ranges vary by exam cycle and portal. Always confirm the exact figure in your official notification before uploading.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold text-[#18181B] mb-3">Why Your Image Won't Go Below a Certain KB Size</h3>
+    <p class="text-[#52525B] leading-relaxed mb-3">
+      KB size and pixel dimensions are two different things, and mixing them up is the most common reason a photo "won't compress." Lowering the quality setting removes detail the eye barely notices, but a large, high-resolution image still needs a minimum number of bytes to stay recognisable — pushing quality any lower just makes it blurry without shrinking the file much further. If the tool warns that it can't reach your target KB, shrink the pixel dimensions first (for example, from 1200×1600 down to 200×260), then apply the KB target again. The two settings work together, not against each other.
+    </p>
+    <p class="text-[#52525B] leading-relaxed">
+      Format matters too. PNG is a lossless format, so it has no quality dial to turn down — a PNG screenshot or scanned signature can stay large no matter what KB target you enter. Switch the output format to JPG (or WEBP) first, then set your target KB; JPEG compression is what actually lets the file shrink to 20 KB, 50 KB or 100 KB.
+    </p>
+  </div>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "How do I reduce an image's size in KB?",
+        answer:
+          "Upload the image, then enter your target size — for example 50 — in the KB box, or tap one of the preset chips (20, 50, 100, 200, 500 KB). The tool automatically finds the JPEG quality that lands at or under that size and shows a live preview before you download.",
+      },
+      {
+        question: "What's the difference between resizing and reducing size in KB?",
+        answer:
+          "Resizing changes the pixel dimensions (for example, 1200×1600 to 200×260). Reducing size in KB changes how much the image is compressed, which changes the file size on disk without necessarily changing how big it looks. Most forms check both, so you may need to set the dimensions and the KB target together.",
+      },
+      {
+        question: "Why does my photo still show a bigger KB size after compressing?",
+        answer:
+          "This usually happens with PNG files, which are lossless and can't be compressed by quality the way JPEG can. Switch the output format to JPG or WEBP, then set your target KB again — the file size will drop immediately.",
+      },
+      {
+        question: "Can I reduce a PNG image's size in KB?",
+        answer:
+          "You can upload a PNG, but to hit an exact KB target you'll need to export it as JPG or WEBP, since PNG has no adjustable quality level. The tool shows a one-click option to switch formats when this applies.",
+      },
+      {
+        question: "I need exactly 20 KB or 100 KB instead of 50 KB — can I change it?",
+        answer:
+          "Yes. The target field accepts any number from 5 KB up to 20,000 KB. Type the exact figure from your form's notification, or use the quick preset chips for the most common limits.",
+      },
+      {
+        question: "Is this tool safe to use for Aadhaar, PAN or exam documents?",
+        answer:
+          "Yes. All compression runs locally in your browser using JavaScript — the image is never uploaded to a server or saved outside your device, which makes it safe for identity and exam documents.",
+      },
+      {
+        question: "Does reducing the KB size lower the image quality?",
+        answer:
+          "A small amount, yes — that's how file size comes down. For passport-size photos and signatures, 20–100 KB is normally enough to stay clear. If the result looks too soft, raise the target KB slightly or shrink the pixel dimensions instead of lowering quality further.",
+      },
+    ],
+  },
+  {
+    slug: "resize-image-to-100kb",
+    metaTitle: "Resize Image to 100KB Free Online",
+    metaDescription:
+      "Compress any photo or scanned document to 100KB or under in seconds. Free, browser-based tool for income tax, PAN, UPSC and university uploads in India.",
+    h1: "Resize Image to 100KB — Free Online Tool 2027",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Compress your photo or scanned document to 100 KB or less instantly — no upload, no signup, no watermark.",
+    sections: [
+      {
+        heading: "How to Resize an Image to 100KB",
+        content: `
+<div class="space-y-8 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    A 100 KB file-size limit shows up often on entrance exam portals, income tax and PAN services, and university admission sites, usually for a combined photo-and-signature upload or a scanned document rather than a single passport photo. Our free tool compresses any JPG, PNG or WEBP file down to 100 KB or less directly in your browser, so there's nothing to install and nothing leaves your device.
+  </p>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">100 KB, Auto-Calculated</h3>
+      <p class="text-sm text-[#52525B]">The 100 KB target is already selected when you open this page — upload your file and the quality is set for you.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">100% Private</h3>
+      <p class="text-sm text-[#52525B]">Processing happens on your device using the browser's image engine — no server upload, no storage, no account.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">Works for Photos and Scans</h3>
+      <p class="text-sm text-[#52525B]">Compress a passport photo, a combined photo-signature sheet, or a scanned certificate — all the same way.</p>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold text-[#18181B] mb-4">Resize to 100KB in 3 Steps</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your File</h4><p class="text-sm text-[#52525B]">Drag in your photo, signature sheet or scanned document — JPG, PNG and WEBP are all supported.</p></div>
+      </div>
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Confirm the 100 KB Target</h4><p class="text-sm text-[#52525B]">The target size box already shows 100 — adjust it if your form asks for a different figure.</p></div>
+      </div>
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Download and Upload</h4><p class="text-sm text-[#52525B]">Your file saves at 100 KB or under, ready for the portal.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6">
+    <h3 class="text-lg font-bold text-[#18181B] mb-3">Where a 100 KB Limit Shows Up</h3>
+    <div class="grid sm:grid-cols-2 gap-3">
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🧾</span><span><strong>Income tax &amp; GST portals:</strong> supporting document and proof uploads</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🪪</span><span><strong>PAN &amp; Aadhaar correction forms:</strong> photo and ID-proof scans</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🎓</span><span><strong>University admission portals:</strong> mark sheets and certificate scans</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📝</span><span><strong>Entrance exams:</strong> combined photo-and-signature sheets on some state CET forms</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🏢</span><span><strong>State recruitment boards:</strong> certificate and experience-letter uploads</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🌐</span><span><strong>E-governance services:</strong> DigiLocker-style document uploads</span></div>
+    </div>
+    <p class="mt-3 text-xs text-[#71717A]">Limits vary by portal and exam cycle — check your official notification for the exact figure before uploading.</p>
+  </div>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "How do I resize an image to exactly 100KB?",
+        answer:
+          "Upload your image on this page — the target size is already set to 100 KB. The tool runs a quality search to land at or under that size and shows a live preview before download.",
+      },
+      {
+        question: "Will a photo still look sharp at 100KB?",
+        answer:
+          "For passport-size photos and most scanned documents, 100 KB keeps enough detail to stay clear. Larger, high-resolution images will show more compression at 100 KB, so shrink the pixel dimensions first if the result looks too soft.",
+      },
+      {
+        question: "Can I use this for scanned documents, not just photos?",
+        answer:
+          "Yes. The same target-KB tool works for scanned certificates, mark sheets and combined photo-signature sheets — upload any JPG, PNG or WEBP file.",
+      },
+      {
+        question: "What if my form needs 50KB or 20KB instead of 100KB?",
+        answer:
+          "Change the number in the target size box, or tap the 20 KB or 50 KB preset chip. The tool recalculates instantly for the new limit.",
+      },
+      {
+        question: "Why won't my scanned PDF compress here?",
+        answer:
+          "This tool compresses image files (JPG, PNG, WEBP), not PDFs. If your document is a PDF, export or screenshot the page as an image first, or use a dedicated PDF size reducer.",
+      },
+      {
+        question: "Is it safe to compress income tax or PAN documents with this tool?",
+        answer:
+          "Yes. Compression happens entirely in your browser — the file is never uploaded to a server — so it's safe to use for financial and identity documents.",
+      },
+    ],
+  },
+  {
+    slug: "increase-image-size-in-kb",
+    metaTitle: "Increase Image Size in KB – Free Online Tool",
+    metaDescription:
+      "Increase a photo's file size in KB without changing how it looks — hit a minimum KB limit instantly. Free, private, browser-based tool for Indian forms.",
+    h1: "Increase Image Size in KB — Free Online Tool 2027",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Make a photo or scan bigger in KB — not in pixels — to meet a form's minimum file-size requirement. No upload, no signup, instant download.",
+    sections: [
+      {
+        heading: "How to Increase an Image's Size in KB",
+        content: `
+<div class="space-y-8 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    Most forms set a maximum file size, but some set a minimum too — for example "between 20 KB and 50 KB." If you compressed a photo heavily somewhere else, or your scanner produced an unusually small file, it can fall below that minimum and get rejected for being too small rather than too big. This tool solves that directly: it adds a controlled amount of inert, standards-compliant filler data to the file so it reaches your target KB, without touching a single pixel of the actual photo.
+  </p>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">Exact KB Target</h3>
+      <p class="text-sm text-[#52525B]">Choose "Increase to" and type the minimum KB your form asks for. The file lands at exactly that size.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 12.75l6 6 9-13.5"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">Image Stays Identical</h3>
+      <p class="text-sm text-[#52525B]">The extra bytes are added as standard, ignorable file metadata — not new pixels — so the photo looks exactly the same.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">100% Private</h3>
+      <p class="text-sm text-[#52525B]">Processing happens on your device using the browser's own image engine — nothing is uploaded or stored.</p>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold text-[#18181B] mb-4">Increase Your Image's KB Size in 3 Steps</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Image</h4><p class="text-sm text-[#52525B]">Drag in the file that's getting rejected for being too small — JPG, PNG or WEBP.</p></div>
+      </div>
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Select "Increase To" and Your KB</h4><p class="text-sm text-[#52525B]">The target mode is already set to "Increase to" on this page — adjust the KB number if needed.</p></div>
+      </div>
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Download the Bigger File</h4><p class="text-sm text-[#52525B]">Your file downloads at or above the KB size you set, looking exactly like the original.</p></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold text-[#18181B] mb-3">Two Ways to Make a File Bigger — and Which One You Need</h3>
+    <p class="text-[#52525B] leading-relaxed mb-3">
+      There are two genuinely different ways to increase a file's size, and most tools don't explain the difference. <strong>Padding</strong> (what this tool does) adds inert data to the file so its byte size grows while every pixel stays untouched — the right choice when a portal only checks the file size in KB. <strong>Upscaling</strong> increases the pixel dimensions themselves, which also increases file size but can make a small photo look soft or blurry — only worth doing if the form separately requires a minimum width and height, not just a minimum KB.
+    </p>
+    <p class="text-[#52525B] leading-relaxed">
+      If you're not sure which applies, re-read your form's notification: a minimum like "file size should be between 20 KB and 50 KB" means padding is exactly what you need. A requirement like "minimum 200×230 pixels" is about dimensions, not KB, and needs resizing instead.
+    </p>
+  </div>
+  <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6">
+    <h3 class="text-lg font-bold text-[#18181B] mb-3">Why Portals Set a Minimum KB, Not Just a Maximum</h3>
+    <div class="grid sm:grid-cols-2 gap-3">
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🔍</span><span><strong>Readability checks:</strong> a file that's too small is often too compressed to read clearly once printed or scanned at the other end</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📐</span><span><strong>Range requirements:</strong> many SSC, bank and state portals specify a KB range rather than just a ceiling</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🖨️</span><span><strong>Print quality:</strong> ID cards and admit cards need enough image data to print without pixelating</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">♻️</span><span><strong>Re-compressed uploads:</strong> a photo already shrunk once by WhatsApp or another app can drop below a form's minimum</span></div>
+    </div>
+    <p class="mt-3 text-xs text-[#71717A]">Always confirm the exact minimum and maximum in your official notification before uploading.</p>
+  </div>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "How do I increase an image's KB size without changing how it looks?",
+        answer:
+          "Upload the image, choose \"Increase to\" and set your target KB. The tool adds inert padding data to the file — not new pixels — so the byte size goes up while the photo stays visually identical.",
+      },
+      {
+        question: "Will increasing the KB size make my photo blurry?",
+        answer:
+          "No. Padding adds data the image viewer ignores; it never touches the pixels. If you need a larger photo in both pixels and KB, that's upscaling instead, which this tool's quality and dimension controls can also do — but it's a different requirement from a KB minimum.",
+      },
+      {
+        question: "Is padding a file safe to upload to a government portal?",
+        answer:
+          "Yes. The padding uses standard, spec-defined metadata fields built into the JPEG and PNG formats themselves (the same kind of field cameras use for EXIF data), so the file remains a normal, valid image that opens correctly everywhere.",
+      },
+      {
+        question: "Can I increase a PNG's file size too, not just JPG?",
+        answer:
+          "Yes. Both JPG and PNG are supported. WEBP output uses a simpler fallback method, so JPG or PNG is recommended if your portal is strict about file validation.",
+      },
+      {
+        question: "What if the form needs a bigger image, not just a bigger file?",
+        answer:
+          "If the requirement is about pixel dimensions (for example, a minimum width and height), increase the dimensions in the editor instead of the KB target — padding only changes file size, not resolution.",
+      },
+      {
+        question: "Can I reduce a file's size instead of increasing it here?",
+        answer:
+          "Yes — switch to \"Reduce to\" in the same panel to compress a file that's too large instead of too small. Both directions use the same tool.",
+      },
+    ],
+  },
+  {
+    slug: "resize-photograph-in-kb",
+    metaTitle: "Resize Photograph in KB – Free Online Tool",
+    metaDescription:
+      "Resize a photograph's file size in KB for email, WhatsApp, cloud storage or printing. Free, private, browser-based — pick a KB target and download instantly.",
+    h1: "Resize Photograph in KB — Free Online Tool 2027",
+    showTool: "photo-editor",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Shrink a photograph's file size in KB for email, cloud storage, printing labs or messaging apps — without losing the shot you want to keep.",
+    sections: [
+      {
+        heading: "How to Resize a Photograph's Size in KB",
+        content: `
+<div class="space-y-8 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    A modern phone photograph is usually 2 MB to 8 MB — fine for your gallery, but too large for a lot of everyday uploads: a job application attachment, a cloud backup plan with limited free storage, a photography portfolio site, or a printing lab's online order form. This tool resizes a photograph's file size down to a specific KB target directly in your browser, so you can keep the shot you want while meeting whatever limit the destination sets.
+  </p>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">Any KB Target</h3>
+      <p class="text-sm text-[#52525B]">Tap a preset — 20, 50, 100, 200 or 500 KB — or type the exact number an app or form asks for.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">100% Private</h3>
+      <p class="text-sm text-[#52525B]">Your photograph never leaves your device — it's processed locally in the browser and never uploaded anywhere.</p>
+    </div>
+    <div class="p-6 rounded-xl border border-[#BBF7D0]">
+      <div class="w-11 h-11 bg-[#16A34A] rounded-xl flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-[#FFFFFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-[#18181B] mb-2">Preview Before You Save</h3>
+      <p class="text-sm text-[#52525B]">See the resized photograph and its new KB size before downloading — no surprises after upload.</p>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold text-[#18181B] mb-4">Resize Your Photograph in 3 Steps</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Upload Your Photograph</h4><p class="text-sm text-[#52525B]">Drag in a photo straight from your phone or camera — large originals work fine.</p></div>
+      </div>
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Set Your Target KB</h4><p class="text-sm text-[#52525B]">Pick a preset or type a custom number — 50 KB for a quick email, 500 KB for a print order.</p></div>
+      </div>
+      <div class="flex gap-4 p-5 bg-[#FFFFFF] rounded-xl border border-[#E4E4E7]">
+        <div class="w-10 h-10 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+        <div><h4 class="font-semibold text-[#18181B] mb-1">Download and Share</h4><p class="text-sm text-[#52525B]">Your resized photograph downloads immediately, ready to attach, upload or print.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-xl p-6">
+    <h3 class="text-lg font-bold text-[#18181B] mb-3">A Phone Photo Is Usually MB, Not KB — Here's the Difference</h3>
+    <p class="text-[#52525B] leading-relaxed mb-3">
+      1 MB equals 1,024 KB, so a typical 2 MB to 8 MB phone photograph is roughly 2,000 to 8,000 KB — 40 to 400 times bigger than the 20 KB to 500 KB most upload forms, email attachments and messaging apps actually need. That mismatch is why a photo that looks fine on your phone gets rejected, bounces out of an email, or takes forever to send. Resizing it to the right KB target fixes all three at once.
+    </p>
+    <div class="grid sm:grid-cols-2 gap-3">
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">📧</span><span><strong>Email attachments:</strong> smaller photographs attach faster and are less likely to be flagged by strict mail servers</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">☁️</span><span><strong>Cloud storage:</strong> free-tier plans fill up fast with full-resolution originals</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🖼️</span><span><strong>Portfolio and website uploads:</strong> many platforms cap image uploads at a few hundred KB</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🖨️</span><span><strong>Print labs and online printing:</strong> order forms often specify an exact KB range per photo</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">💬</span><span><strong>Messaging apps:</strong> sending as a document (not auto-compressed media) preserves quality at a smaller size</span></div>
+      <div class="flex items-start gap-2 text-sm text-[#52525B]"><span class="mt-1">🪪</span><span><strong>ID and exam uploads:</strong> government and exam portals specify a KB limit too — see our dedicated tools for those.</span></div>
+    </div>
+  </div>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "How do I resize a photograph's KB size without losing quality?",
+        answer:
+          "Upload the photograph, then set a target KB instead of using the quality slider directly — the tool runs a quality search to land as close to your target as possible while keeping the image as clear as that size allows.",
+      },
+      {
+        question: "What's a good KB size for emailing a photograph?",
+        answer:
+          "100 KB to 300 KB per photo is usually a safe range for email — small enough to attach quickly and avoid server limits, while still looking sharp on screen.",
+      },
+      {
+        question: "Can I resize a photograph for WhatsApp or Instagram with this tool?",
+        answer:
+          "Yes. Both platforms compress images automatically when you share them as photos, so resizing beforehand mainly helps when sending as a file or document, or when you want predictable quality and size before upload.",
+      },
+      {
+        question: "Does resizing in KB also change the pixel dimensions?",
+        answer:
+          "Not unless you change them yourself. The KB target controls compression quality, not the width and height. You can adjust dimensions separately in the same editor if a platform also limits pixel size.",
+      },
+      {
+        question: "Can I resize more than one photograph at a time?",
+        answer:
+          "This tool processes one photograph per session. For several photos, repeat the same steps for each — there's no file-count limit, and nothing is uploaded to a server in between.",
+      },
+      {
+        question: "Is this different from the tools for exam or government form photos?",
+        answer:
+          "It's the same underlying tool, just aimed at everyday photography — email, cloud and printing — rather than exam-specific specs. If you need an exact government or exam KB limit, our dedicated KB pages (20 KB, 50 KB, 100 KB) apply the right preset automatically.",
+      },
+    ],
+  },
+  // ─────────────────────────────────────────────
+  // PAN CARD PHOTO RESIZER
+  // ─────────────────────────────────────────────
+  {
+    slug: "pan-card-photo-resizer",
+    translationKey: "pan-card-photo-resizer",
+    lastmod: "2026-11-05",
+    metaTitle: "PAN Card Photo Resizer – NSDL & UTI Photo, Signature Size",
+    metaDescription:
+      "Free PAN card photo resizer for Protean (NSDL) and UTIITSL. Resize your PAN photo and signature to the exact pixels, cm, DPI and KB in one click. No upload.",
+    h1: "PAN Card Photo Resizer for NSDL and UTIITSL",
+    showTool: "pan-resizer",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Resize your PAN card photo and signature to the exact Protean (NSDL) or UTIITSL size. Pick your portal, frame your picture and download a ready-to-upload JPG.",
+    sections: [
+      {
+        heading: "Resize Your PAN Card Photo and Signature in One Place",
+        content: `
+<div class="space-y-6 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    A PAN application stops when the portal rejects your photo or signature. The reason is almost always the file, not your face: the wrong pixel size, a file above the KB limit, or a phone picture with a grey background. This PAN card photo resizer fixes all three in under a minute.
+  </p>
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Choose <strong>Protean (NSDL)</strong>, <strong>Protean DSC</strong> or <strong>UTIITSL</strong>, and the tool loads the correct pixels, DPI and maximum KB for you. You frame the picture, check the green ticks and download. Your photo never leaves your phone or computer.
+  </p>
+  <div class="grid sm:grid-cols-3 gap-4">
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#FFFFFF]">
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Exact portal presets</h3>
+      <p class="text-sm text-[#52525B]">197 × 276 px for Protean and 213 × 213 px for UTIITSL, loaded with one tap.</p>
+    </div>
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#FFFFFF]">
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Correct DPI inside the file</h3>
+      <p class="text-sm text-[#52525B]">The tool writes 200 or 300 DPI into the JPG, so the photo prints at the right size in cm.</p>
+    </div>
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#FFFFFF]">
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Signature cleanup</h3>
+      <p class="text-sm text-[#52525B]">It crops blank paper, whitens the background and darkens the ink automatically.</p>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "PAN Card Photo and Signature Size (2026)",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Protean (formerly NSDL e-Gov) and UTIITSL both issue the same PAN card, but each portal checks files differently. Use the size for the portal where you fill in Form 49A or 49AA.
+  </p>
+  <div class="overflow-x-auto rounded-xl border border-[#E4E4E7]">
+    <table class="w-full text-sm text-left min-w-[560px]">
+      <thead class="bg-[#FAFAFA] text-[#18181B]">
+        <tr>
+          <th class="py-3 px-4 font-semibold">Portal</th>
+          <th class="py-3 px-4 font-semibold">Photo</th>
+          <th class="py-3 px-4 font-semibold">Signature</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-[#E4E4E7] text-[#52525B]">
+        <tr>
+          <td class="py-3 px-4 font-medium text-[#18181B]">Protean (NSDL), scanned upload / e-Sign</td>
+          <td class="py-3 px-4">3.5 × 2.5 cm, 197 × 276 px, 200 DPI, colour, JPG, max 50 KB</td>
+          <td class="py-3 px-4">2 × 4.5 cm, 354 × 157 px, 200 DPI, JPG, max 50 KB</td>
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-medium text-[#18181B]">Protean (NSDL), DSC route</td>
+          <td class="py-3 px-4">3.5 × 2.5 cm, 200 DPI, JPG, max 20 KB</td>
+          <td class="py-3 px-4">2 × 4.5 cm, 200 DPI, JPG, max 10 KB</td>
+        </tr>
+        <tr>
+          <td class="py-3 px-4 font-medium text-[#18181B]">UTIITSL</td>
+          <td class="py-3 px-4">213 × 213 px, 300 DPI, colour, JPG, max 30 KB</td>
+          <td class="py-3 px-4">400 × 200 px (commonly used), JPG, max 60 KB</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm text-[#71717A]">
+    Pixel sizes follow from the official centimetre size and DPI: 2.5 cm at 200 DPI equals 197 pixels. Portals sometimes update their limits, so compare these numbers with the instructions on your application page before you submit.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Resize a PAN Card Photo Online in 4 Steps",
+        content: `
+<div class="space-y-4 not-prose">
+  <ol class="space-y-3">
+    <li class="flex gap-4 p-4 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="w-8 h-8 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold flex-shrink-0">1</span>
+      <div><h3 class="font-semibold text-[#18181B]">Upload your photo</h3><p class="text-sm text-[#52525B]">Tap <strong>Upload Photo</strong> and pick a recent, front-facing picture. JPG, PNG and WEBP files from any phone work.</p></div>
+    </li>
+    <li class="flex gap-4 p-4 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="w-8 h-8 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold flex-shrink-0">2</span>
+      <div><h3 class="font-semibold text-[#18181B]">Pick PAN Photo and your portal</h3><p class="text-sm text-[#52525B]">Select Protean (NSDL), Protean DSC or UTIITSL. The crop box changes to the right shape instantly.</p></div>
+    </li>
+    <li class="flex gap-4 p-4 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="w-8 h-8 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold flex-shrink-0">3</span>
+      <div><h3 class="font-semibold text-[#18181B]">Frame your face</h3><p class="text-sm text-[#52525B]">Drag and zoom until your full face and the top of your shoulders sit inside the green box. Use the brightness slider if the room was dark.</p></div>
+    </li>
+    <li class="flex gap-4 p-4 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="w-8 h-8 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold flex-shrink-0">4</span>
+      <div><h3 class="font-semibold text-[#18181B]">Check the ticks and download</h3><p class="text-sm text-[#52525B]">The checklist confirms the pixels, KB and DPI. Click <strong>Download JPG</strong>, then switch to <strong>PAN Signature</strong> and repeat for your signature.</p></div>
+    </li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your PAN Card Signature",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Sign on plain white paper with a black ballpoint or gel pen. Take a photo in daylight, holding the phone straight above the page. Then upload it and choose <strong>PAN Signature</strong>.
+  </p>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span><strong class="text-[#18181B]">Auto-crop</strong> finds your signature and removes the empty paper around it.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span><strong class="text-[#18181B]">Clean background</strong> turns grey, shadowed paper pure white.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span><strong class="text-[#18181B]">Black ink</strong> gives the strong black-and-white look Protean asks for.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span><strong class="text-[#18181B]">Exact size</strong>: 354 × 157 px for Protean or 400 × 200 px for UTIITSL, always under the KB limit.</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">
+    Need a signature for an exam form instead? Use our <a href="/signature-resizer">signature resizer</a>, which has presets for SSC, IBPS, UPSC and NEET.
+  </p>
+</div>`,
+      },
+      {
+        heading: "PAN Card Photo Rules That Prevent Rejection",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#F0FDF4]">
+      <h3 class="font-semibold text-[#15803D] mb-2">Do</h3>
+      <ul class="space-y-1.5 text-sm text-[#3F3F46]">
+        <li>✓ Use a recent colour photo</li>
+        <li>✓ Stand against a plain white or light wall</li>
+        <li>✓ Face the camera with a neutral expression</li>
+        <li>✓ Keep both eyes open and your face evenly lit</li>
+        <li>✓ Show your full face, from hair to chin</li>
+      </ul>
+    </div>
+    <div class="p-5 rounded-xl border border-[#FECACA] bg-[#FEF2F2]">
+      <h3 class="font-semibold text-[#B91C1C] mb-2">Don't</h3>
+      <ul class="space-y-1.5 text-sm text-[#3F3F46]">
+        <li>✕ Wear dark glasses or a cap</li>
+        <li>✕ Upload a selfie with a tilted head</li>
+        <li>✕ Use a photo of a printed photo with glare</li>
+        <li>✕ Crop a group photo or an old ID card</li>
+        <li>✕ Apply beauty filters or heavy edits</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-sm text-[#52525B]">
+    Is your background cluttered? Make a clean white-background photo first with our <a href="/passport-size-photo-maker">passport size photo maker</a>, then bring it here to resize it for PAN.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Protean (NSDL) or UTIITSL: Which Size Should You Use?",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Check the website address where you fill in your form. If it is <strong>onlineservices.proteantech.in</strong> or an older NSDL link, choose <strong>Protean (NSDL)</strong>. If it is <strong>pan.utiitsl.com</strong>, choose <strong>UTIITSL</strong>.
+  </p>
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">•</span> <span><strong class="text-[#18181B]">Protean</strong> uses a tall photo (3.5 × 2.5 cm) and a wide signature (2 × 4.5 cm), both at 200 DPI.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">•</span> <span><strong class="text-[#18181B]">UTIITSL</strong> uses a square 213 × 213 px photo at 300 DPI and keeps it under 30 KB.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">•</span> <span><strong class="text-[#18181B]">DSC applicants</strong> on Protean face the tightest caps: 20 KB for the photo and 10 KB for the signature.</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">One upload works for every portal. Switch the preset and download a second copy if you are unsure.</p>
+</div>`,
+      },
+      {
+        heading: "Common PAN Photo Upload Errors and Quick Fixes",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="overflow-x-auto rounded-xl border border-[#E4E4E7]">
+    <table class="w-full text-sm text-left min-w-[520px]">
+      <thead class="bg-[#FAFAFA] text-[#18181B]">
+        <tr><th class="py-3 px-4 font-semibold">Error you see</th><th class="py-3 px-4 font-semibold">Fix in this tool</th></tr>
+      </thead>
+      <tbody class="divide-y divide-[#E4E4E7] text-[#52525B]">
+        <tr><td class="py-3 px-4">File size exceeds the limit</td><td class="py-3 px-4">Pick your portal preset. The tool finds the best quality that stays under the cap.</td></tr>
+        <tr><td class="py-3 px-4">Invalid dimensions or resolution</td><td class="py-3 px-4">Presets output exact pixels and save the DPI inside the JPG.</td></tr>
+        <tr><td class="py-3 px-4">Invalid file type</td><td class="py-3 px-4">Every download is a true JPG, even if you upload a PNG, WEBP or screenshot.</td></tr>
+        <tr><td class="py-3 px-4">Signature not clear</td><td class="py-3 px-4">Raise <strong>Clean background</strong> and choose <strong>Black</strong> ink.</td></tr>
+        <tr><td class="py-3 px-4">Photo looks sideways</td><td class="py-3 px-4">Use the rotate buttons above the crop box.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Your PAN Documents Stay on Your Device",
+        content: `
+<div class="space-y-3 not-prose">
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Your PAN photo and signature are identity documents. Many free resizers upload them to a server first. This tool does the cropping, cleaning and compression inside your browser, so nobody else receives a copy. It works on Android phones, iPhones and computers, needs no login and adds no watermark.
+  </p>
+  <p class="text-sm text-[#71717A]">
+    Need to shrink another document? Try our <a href="/compress-image">image compressor</a> or <a href="/reduce-photo-size-50kb">reduce photo size to 50 KB</a>.
+  </p>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "What is the PAN card photo size in pixels?",
+        answer:
+          "For Protean (NSDL), the photo is 3.5 × 2.5 cm at 200 DPI, which equals 197 × 276 pixels. For UTIITSL, the photo is 213 × 213 pixels at 300 DPI. Pick your portal in the tool and it applies the right size.",
+      },
+      {
+        question: "What is the maximum PAN card photo size in KB?",
+        answer:
+          "Protean allows up to 50 KB for scanned and e-Sign applications and 20 KB on the DSC route. UTIITSL allows up to 30 KB. The tool keeps your file under the limit of the portal you choose.",
+      },
+      {
+        question: "What is the PAN card signature size?",
+        answer:
+          "Protean asks for a 2 × 4.5 cm signature at 200 DPI (354 × 157 pixels) under 50 KB, or under 10 KB on the DSC route. UTIITSL accepts a signature of about 400 × 200 pixels under 60 KB.",
+      },
+      {
+        question: "How do I resize my photo to 213 × 213 pixels for UTI PAN?",
+        answer:
+          "Upload your photo, choose PAN Photo and UTIITSL, and frame your face in the square box. The tool exports exactly 213 × 213 pixels at 300 DPI and keeps the file under 30 KB.",
+      },
+      {
+        question: "Can I resize my PAN card photo on my mobile?",
+        answer:
+          "Yes. The PAN card photo resizer works in Chrome, Safari and other mobile browsers. You need no app. Drag with one finger to move the photo and pinch to zoom.",
+      },
+      {
+        question: "Should my PAN signature be in black and white?",
+        answer:
+          "Protean lists the signature scan as black and white. Choose Black ink in the tool to turn your signature into crisp black on a pure white background.",
+      },
+      {
+        question: "Is the same photo valid for Protean (NSDL) and UTIITSL?",
+        answer:
+          "You can use the same picture, but each portal needs a different file size and shape. Switch the portal preset and download a separate file for each portal.",
+      },
+      {
+        question: "Is it safe to resize my PAN card photo here?",
+        answer:
+          "Yes. Your browser processes everything on your device. The tool never uploads your photo or signature to a server, and nothing is stored after you close the page.",
+      },
+      {
+        question: "Does this tool also work for Aadhaar or Voter ID photos?",
+        answer:
+          "Use Custom size and enter the pixels, cm or KB limit from that form. For Voter ID, our voter ID photo size reducer already has the right preset.",
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // SIGNATURE RESIZER
+  // ─────────────────────────────────────────────
+  {
+    slug: "signature-resizer",
+    translationKey: "signature-resizer",
+    lastmod: "2026-11-05",
+    metaTitle: "Signature Resizer – Resize Signature to 10–20 KB Online Free",
+    metaDescription:
+      "Free online signature resizer. Reduce signature size to 10–20 KB, 140×60 pixels or any size in cm for SSC, IBPS, UPSC, NEET and PAN. Auto-crop, no upload.",
+    h1: "Signature Resizer: Resize Signature in KB, Pixels and CM",
+    showTool: "signature-resizer",
+    structuredDataOverrides: { webPageType: "WebApplication" },
+    subtitle:
+      "Turn a phone photo of your signature into a clean, exam-ready JPG. Pick SSC, IBPS, UPSC, NEET or PAN, or type any KB, pixel or cm size.",
+    sections: [
+      {
+        heading: "An Online Signature Resizer Built for Indian Exam Forms",
+        content: `
+<div class="space-y-6 not-prose">
+  <p class="text-lg text-[#52525B] leading-relaxed">
+    Every government form asks for a signature with its own rules: 10 KB to 20 KB, 140 × 60 pixels, or 2 × 4.5 cm. A normal phone photo is 2–5 MB with grey paper, shadows and lots of empty space. This signature resizer fixes all of it in one screen.
+  </p>
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Upload your signature, choose your exam, and the tool crops the blank paper, whitens the background and resizes the signature to the exact KB and pixels. You see a pass/fail checklist before you download, so you know the file fits before the portal tells you it doesn't.
+  </p>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#FFFFFF]">
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Resize signature in KB</h3>
+      <p class="text-sm text-[#52525B]">Set a minimum and maximum, like 10–20 KB. The tool lands inside the range, not just under it.</p>
+    </div>
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#FFFFFF]">
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Resize signature in pixels</h3>
+      <p class="text-sm text-[#52525B]">Presets like 140 × 60 px export the exact width and height a portal checks.</p>
+    </div>
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#FFFFFF]">
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Resize signature in cm</h3>
+      <p class="text-sm text-[#52525B]">Type the size in centimetres and DPI. The tool converts it to pixels and saves the DPI in the file.</p>
+    </div>
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#FFFFFF]">
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Clean, sharp ink</h3>
+      <p class="text-sm text-[#52525B]">Auto-crop, background cleaning and black or blue ink make even a dim photo look scanned.</p>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Signature Size for Government Exams (2026 Quick Guide)",
+        content: `
+<div class="space-y-5 not-prose">
+  <p class="text-base text-[#52525B] leading-relaxed">
+    These are the sizes most notifications ask for. Each one is a preset in the tool. Recruiting bodies revise them, so always confirm the numbers in your own notice.
+  </p>
+  <div class="overflow-x-auto rounded-xl border border-[#E4E4E7]">
+    <table class="w-full text-sm text-left min-w-[560px]">
+      <thead class="bg-[#FAFAFA] text-[#18181B]">
+        <tr>
+          <th class="py-3 px-4 font-semibold">Exam / form</th>
+          <th class="py-3 px-4 font-semibold">Dimensions</th>
+          <th class="py-3 px-4 font-semibold">File size</th>
+          <th class="py-3 px-4 font-semibold">Format</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-[#E4E4E7] text-[#52525B]">
+        <tr><td class="py-3 px-4 font-medium text-[#18181B]">IBPS PO, Clerk, RRB, SBI, RBI</td><td class="py-3 px-4">140 × 60 px</td><td class="py-3 px-4">10–20 KB</td><td class="py-3 px-4">JPG</td></tr>
+        <tr><td class="py-3 px-4 font-medium text-[#18181B]">SSC CGL, CHSL, MTS, GD</td><td class="py-3 px-4">About 6 × 2 cm</td><td class="py-3 px-4">10–20 KB</td><td class="py-3 px-4">JPG</td></tr>
+        <tr><td class="py-3 px-4 font-medium text-[#18181B]">UPSC (OTR, CSE, CDS, NDA)</td><td class="py-3 px-4">At least 350 px on the shorter side</td><td class="py-3 px-4">20–100 KB</td><td class="py-3 px-4">JPG</td></tr>
+        <tr><td class="py-3 px-4 font-medium text-[#18181B]">NTA: NEET, JEE Main, CUET</td><td class="py-3 px-4">About 3.5 × 1.5 cm</td><td class="py-3 px-4">4–30 KB</td><td class="py-3 px-4">JPG</td></tr>
+        <tr><td class="py-3 px-4 font-medium text-[#18181B]">PAN card (Protean / NSDL)</td><td class="py-3 px-4">2 × 4.5 cm, 200 DPI</td><td class="py-3 px-4">Up to 50 KB</td><td class="py-3 px-4">JPG</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm text-[#52525B]">
+    Need exam-specific help? See the <a href="/ibps-po-signature-resizer">IBPS PO</a>, <a href="/ssc-cgl-signature-resizer">SSC CGL</a>, <a href="/upsc-cse-signature-resizer">UPSC CSE</a>, <a href="/neet-ug-signature-resizer">NEET UG</a>, <a href="/gate-signature-resizer">GATE</a> and <a href="/rrb-ntpc-signature-resizer">RRB NTPC</a> signature pages.
+  </p>
+</div>`,
+      },
+      {
+        heading: "How to Resize Your Signature to 20 KB (Step by Step)",
+        content: `
+<div class="space-y-4 not-prose">
+  <ol class="space-y-3">
+    <li class="flex gap-4 p-4 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="w-8 h-8 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold flex-shrink-0">1</span>
+      <div><h3 class="font-semibold text-[#18181B]">Sign and snap</h3><p class="text-sm text-[#52525B]">Sign on plain white paper with a black pen. Photograph it in daylight from straight above.</p></div>
+    </li>
+    <li class="flex gap-4 p-4 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="w-8 h-8 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold flex-shrink-0">2</span>
+      <div><h3 class="font-semibold text-[#18181B]">Upload and pick your exam</h3><p class="text-sm text-[#52525B]">Choose a preset such as IBPS (140 × 60 px, 10–20 KB) or SSC. The tool crops the empty paper automatically.</p></div>
+    </li>
+    <li class="flex gap-4 p-4 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="w-8 h-8 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold flex-shrink-0">3</span>
+      <div><h3 class="font-semibold text-[#18181B]">Fine-tune the look</h3><p class="text-sm text-[#52525B]">Raise <strong>Clean background</strong> for grey paper and pick <strong>Black</strong> or <strong>Blue</strong> ink.</p></div>
+    </li>
+    <li class="flex gap-4 p-4 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="w-8 h-8 rounded-full bg-[#16A34A] text-[#FFFFFF] flex items-center justify-center font-bold flex-shrink-0">4</span>
+      <div><h3 class="font-semibold text-[#18181B]">Download the JPG</h3><p class="text-sm text-[#52525B]">When every item in the checklist shows a green tick, click <strong>Download JPG</strong> and upload it to your form.</p></div>
+    </li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "10 KB to 20 KB Signature Size in Pixels",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Pixels and KB measure different things. Pixels set the width and height of the picture. KB measures the file size. A 140 × 60 pixel signature on clean white paper usually compresses to only 3–8 KB, which is <strong>below</strong> the 10 KB minimum that IBPS and SSC enforce.
+  </p>
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Most resizers only shrink files, so they leave you stuck under the minimum. This tool first uses the highest JPG quality that fits. If the file still falls short, the <strong>Reach minimum KB</strong> option adds invisible filler data so the file lands inside the 10–20 KB range. The visible signature does not change.
+  </p>
+  <div class="grid sm:grid-cols-3 gap-3">
+    <div class="p-4 rounded-xl border border-[#E4E4E7] bg-[#FAFAFA]"><p class="text-xs text-[#71717A]">20 KB signature size in pixels</p><p class="font-semibold text-[#18181B]">140 × 60 px (bank exams)</p></div>
+    <div class="p-4 rounded-xl border border-[#E4E4E7] bg-[#FAFAFA]"><p class="text-xs text-[#71717A]">Common wider size</p><p class="font-semibold text-[#18181B]">300 × 100 px (6 × 2 cm)</p></div>
+    <div class="p-4 rounded-xl border border-[#E4E4E7] bg-[#FAFAFA]"><p class="text-xs text-[#71717A]">Any size</p><p class="font-semibold text-[#18181B]">Custom: pixels or cm</p></div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "How to Resize a Signature in CM",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Some notices give the signature size in centimetres. Select <strong>Custom size</strong>, switch to <strong>Centimetres</strong> and type the width, height and DPI. The tool uses this formula: <strong>pixels = cm ÷ 2.54 × DPI</strong>.
+  </p>
+  <div class="overflow-x-auto rounded-xl border border-[#E4E4E7]">
+    <table class="w-full text-sm text-left min-w-[420px]">
+      <thead class="bg-[#FAFAFA] text-[#18181B]">
+        <tr><th class="py-3 px-4 font-semibold">Size in cm</th><th class="py-3 px-4 font-semibold">At 200 DPI</th><th class="py-3 px-4 font-semibold">At 300 DPI</th></tr>
+      </thead>
+      <tbody class="divide-y divide-[#E4E4E7] text-[#52525B]">
+        <tr><td class="py-3 px-4">3.5 × 1.5 cm</td><td class="py-3 px-4">276 × 118 px</td><td class="py-3 px-4">413 × 177 px</td></tr>
+        <tr><td class="py-3 px-4">4.5 × 2 cm</td><td class="py-3 px-4">354 × 157 px</td><td class="py-3 px-4">531 × 236 px</td></tr>
+        <tr><td class="py-3 px-4">6 × 2 cm</td><td class="py-3 px-4">472 × 157 px</td><td class="py-3 px-4">709 × 236 px</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Tips for a Clear Signature Photo on Your Phone",
+        content: `
+<div class="space-y-3 not-prose">
+  <ul class="space-y-2 text-[#52525B]">
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span>Use a black or dark blue gel pen. Thin, light pencil strokes vanish when you compress them.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span>Sign larger than usual, around 6–8 cm wide, so the strokes stay sharp after resizing.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span>Shoot near a window and avoid your own shadow on the page.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span>Hold the phone parallel to the paper. Use the rotate buttons if the photo comes out sideways.</span></li>
+    <li class="flex items-start gap-2"><span class="text-[#16A34A]">✓</span> <span>Sign the same way you will sign in the exam hall. Invigilators compare both signatures.</span></li>
+  </ul>
+  <p class="text-sm text-[#71717A]">
+    Never sign in capital letters unless your notice allows it. Most exams reject block-letter signatures.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Why Exam Portals Reject Signatures",
+        content: `
+<div class="space-y-4 not-prose">
+  <div class="overflow-x-auto rounded-xl border border-[#E4E4E7]">
+    <table class="w-full text-sm text-left min-w-[520px]">
+      <thead class="bg-[#FAFAFA] text-[#18181B]">
+        <tr><th class="py-3 px-4 font-semibold">Problem</th><th class="py-3 px-4 font-semibold">How this tool fixes it</th></tr>
+      </thead>
+      <tbody class="divide-y divide-[#E4E4E7] text-[#52525B]">
+        <tr><td class="py-3 px-4">File larger than 20 KB</td><td class="py-3 px-4">It searches for the best JPG quality under your maximum.</td></tr>
+        <tr><td class="py-3 px-4">File smaller than 10 KB</td><td class="py-3 px-4"><strong>Reach minimum KB</strong> tops the file up into the allowed range.</td></tr>
+        <tr><td class="py-3 px-4">Wrong width or height</td><td class="py-3 px-4">Presets export the exact pixel size every time.</td></tr>
+        <tr><td class="py-3 px-4">Grey or shadowed paper</td><td class="py-3 px-4"><strong>Clean background</strong> turns the paper pure white.</td></tr>
+        <tr><td class="py-3 px-4">Tiny signature in a big blank image</td><td class="py-3 px-4"><strong>Auto-crop</strong> trims the paper and centres the ink.</td></tr>
+        <tr><td class="py-3 px-4">PNG, HEIC or screenshot uploaded</td><td class="py-3 px-4">Every download is a real JPG with a white background.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm text-[#52525B]">
+    Banking forms also ask for a <a href="/resize-left-thumb-impression-ibps">left thumb impression</a> and a <a href="/ibps-handwritten-declaration-resizer">handwritten declaration</a>. Your passport-size photo goes through our <a href="/photo-resizer">photo resizer</a>, and PAN applicants can use the <a href="/pan-card-photo-resizer">PAN card photo resizer</a>.
+  </p>
+</div>`,
+      },
+      {
+        heading: "Free, Private and Works on Any Phone",
+        content: `
+<div class="space-y-3 not-prose">
+  <p class="text-base text-[#52525B] leading-relaxed">
+    Your signature can authorise documents, so this tool never uploads it. Your browser crops, cleans and compresses the file on your device. You need no account, the tool adds no watermark, and you can resize as many signatures as you like. It works on Android, iPhone, Windows and Mac.
+  </p>
+</div>`,
+      },
+    ],
+    faq: [
+      {
+        question: "How do I reduce my signature size to 20 KB?",
+        answer:
+          "Upload your signature, choose a preset with a 20 KB limit, such as IBPS or SSC, or set Max size to 20 KB in Custom size. The tool finds the highest quality that stays under 20 KB and shows a green tick when it fits.",
+      },
+      {
+        question: "What is the 10 KB to 20 KB signature size in pixels?",
+        answer:
+          "Bank exams such as IBPS and SBI ask for 140 × 60 pixels at 10–20 KB. SSC uses about 6 × 2 cm, and our SSC preset exports 300 × 100 pixels. Always match the pixel size your notification gives.",
+      },
+      {
+        question: "My signature is only 5 KB, but the form needs at least 10 KB. What do I do?",
+        answer:
+          "Keep Reach minimum KB switched on. The tool adds invisible filler data so the JPG lands between 10 KB and 20 KB without changing how your signature looks.",
+      },
+      {
+        question: "How do I resize a signature to 140 × 60 pixels?",
+        answer:
+          "Select the IBPS / SBI / RBI preset. The crop box switches to the 140 × 60 shape and the download comes out at exactly 140 × 60 pixels, between 10 KB and 20 KB.",
+      },
+      {
+        question: "Can I resize my signature in cm instead of pixels?",
+        answer:
+          "Yes. Choose Custom size, switch to Centimetres, and enter the width, height and DPI from your notice. The tool converts them to pixels and saves the DPI inside the JPG.",
+      },
+      {
+        question: "Should I sign in black or blue ink?",
+        answer:
+          "Most exams accept black or blue ink, and black gives the highest contrast. The tool can turn your ink pure black or a clean blue, whichever your notice prefers.",
+      },
+      {
+        question: "Can I use this signature resizer on mobile?",
+        answer:
+          "Yes. It works in any modern mobile browser. Take a photo of your signature, upload it, and download the resized JPG straight to your phone.",
+      },
+      {
+        question: "Does this tool work for thumb impressions too?",
+        answer:
+          "Yes. Upload the thumb impression, choose Custom size and enter the limits from your notice. For IBPS forms, our left thumb impression tool already has the right preset.",
+      },
+      {
+        question: "Is my signature uploaded to your server?",
+        answer:
+          "No. The signature resizer runs fully inside your browser. Your signature never leaves your device, and nothing is saved after you close the tab.",
+      },
+    ],
+  },
   ...programmaticPages,
 ];

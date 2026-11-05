@@ -26,7 +26,7 @@ export interface SeoPage {
   lastmod?: string; // Explicit ISO lastmod date (e.g., '2026-04-10') if modified
   
   // Tools to render on the page
-  showTool?: 'photo-editor' | 'passport-maker' | 'bg-remover';
+  showTool?: 'photo-editor' | 'passport-maker' | 'bg-remover' | 'pan-resizer' | 'signature-resizer';
 
   // Content blocks
   sections: SeoSection[];

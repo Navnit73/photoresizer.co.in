@@ -8,6 +8,8 @@ interface ProcessRequest {
   format: string;
   quality: number;
   targetSizeKb?: number | null;
+  /** 'max' (default) shrinks toward the target; 'min' pads the file up to reach it. */
+  sizeMode?: 'max' | 'min';
   strip?: { lines: string[]; heightPct: number } | null;
   backgroundColor: string;
   rotation: number;
@@ -38,17 +40,155 @@ const MIN_SEARCH_QUALITY = 0.05;
 const MAX_SEARCH_QUALITY = 0.95;
 const SEARCH_STEPS = 6;
 
+// --- "Increase size" padding: adds inert, spec-valid filler bytes so a small file reaches a
+// minimum KB target without altering a single rendered pixel. Government/exam portals that
+// reject files for being *too small* (a minimum KB alongside the usual maximum) are the reason
+// this exists — see /reduce-image-size-in-kb's "increase" sibling pages.
+
+const CRC_TABLE = (() => {
+  const table = new Uint32Array(256);
+  for (let n = 0; n < 256; n++) {
+    let c = n;
+    for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+    table[n] = c >>> 0;
+  }
+  return table;
+})();
+
+function crc32(bytes: Uint8Array): number {
+  let crc = 0xffffffff;
+  for (let i = 0; i < bytes.length; i++) crc = CRC_TABLE[(crc ^ bytes[i]) & 0xff] ^ (crc >>> 8);
+  return (crc ^ 0xffffffff) >>> 0;
+}
+
+/** One or more JPEG COM (0xFFFE) marker segments — standard, position-free, always skipped by decoders. */
+function buildJpegPadding(paddingNeeded: number): Uint8Array {
+  const SEG_OVERHEAD = 4; // 0xFF 0xFE + 2-byte length field
+  const MAX_PAYLOAD = 65530; // keeps room to fold in a <4-byte remainder below
+  if (paddingNeeded < SEG_OVERHEAD) return new Uint8Array(0);
+
+  const payloadLens: number[] = [];
+  let remaining = paddingNeeded;
+  while (remaining >= SEG_OVERHEAD) {
+    const segTotal = Math.min(remaining, SEG_OVERHEAD + MAX_PAYLOAD);
+    payloadLens.push(segTotal - SEG_OVERHEAD);
+    remaining -= segTotal;
+  }
+  if (remaining > 0 && payloadLens.length > 0) payloadLens[payloadLens.length - 1] += remaining;
+
+  const totalBytes = payloadLens.reduce((s, len) => s + SEG_OVERHEAD + len, 0);
+  const out = new Uint8Array(totalBytes);
+  let offset = 0;
+  for (const len of payloadLens) {
+    out[offset] = 0xff;
+    out[offset + 1] = 0xfe;
+    const lenField = len + 2;
+    out[offset + 2] = (lenField >> 8) & 0xff;
+    out[offset + 3] = lenField & 0xff;
+    offset += SEG_OVERHEAD + len; // payload bytes stay zero-filled
+  }
+  return out;
+}
+
+/** Inserts the padding right after the SOI marker (always the first 2 bytes of a JPEG). */
+function padJpeg(bytes: Uint8Array, paddingNeeded: number): Uint8Array {
+  const padding = buildJpegPadding(paddingNeeded);
+  if (!padding.length) return bytes;
+  const out = new Uint8Array(bytes.length + padding.length);
+  out.set(bytes.subarray(0, 2), 0);
+  out.set(padding, 2);
+  out.set(bytes.subarray(2), 2 + padding.length);
+  return out;
+}
+
+/** A single PNG tEXt chunk — the standard ancillary/public chunk type for arbitrary text metadata. */
+function buildPngTextChunk(paddingNeeded: number): Uint8Array {
+  const CHUNK_OVERHEAD = 12; // 4-byte length + 4-byte type + 4-byte CRC
+  const keyword = new TextEncoder().encode('Comment');
+  const fixedLen = keyword.length + 1; // + null separator
+  if (paddingNeeded < CHUNK_OVERHEAD + fixedLen) return new Uint8Array(0);
+
+  const dataLen = paddingNeeded - CHUNK_OVERHEAD;
+  const data = new Uint8Array(dataLen);
+  data.set(keyword, 0);
+  data[keyword.length] = 0;
+  data.fill(0x20, fixedLen); // space-fill (valid Latin-1 text)
+
+  const typeAndData = new Uint8Array(4 + data.length);
+  typeAndData.set(new TextEncoder().encode('tEXt'), 0);
+  typeAndData.set(data, 4);
+
+  const chunk = new Uint8Array(4 + typeAndData.length + 4);
+  const view = new DataView(chunk.buffer);
+  view.setUint32(0, data.length, false);
+  chunk.set(typeAndData, 4);
+  view.setUint32(4 + typeAndData.length, crc32(typeAndData), false);
+  return chunk;
+}
+
+/** Inserts the chunk right after IHDR (always exactly 8 + 25 = 33 bytes into a valid PNG). */
+function padPng(bytes: Uint8Array, paddingNeeded: number): Uint8Array {
+  const chunk = buildPngTextChunk(paddingNeeded);
+  if (!chunk.length) return bytes;
+  const IHDR_END = 33;
+  const out = new Uint8Array(bytes.length + chunk.length);
+  out.set(bytes.subarray(0, IHDR_END), 0);
+  out.set(chunk, IHDR_END);
+  out.set(bytes.subarray(IHDR_END), IHDR_END + chunk.length);
+  return out;
+}
+
 /**
- * Encodes the canvas. With a size budget (JPEG/WebP only) it finds the highest quality that fits:
- * try the ceiling first (often already small enough), then the floor (to detect an impossible
- * budget), then bisect.
+ * WEBP's RIFF container only allows a declared extra chunk (like XMP) alongside a VP8X header,
+ * which canvas-encoded WebP doesn't emit — so for safety we just append trailing bytes after the
+ * file's own declared length instead of inserting a chunk. Every RIFF reader stops at the
+ * declared size, so this is inert, but it's a weaker guarantee than the JPEG/PNG paths.
+ */
+function padWebp(bytes: Uint8Array, paddingNeeded: number): Uint8Array {
+  if (paddingNeeded <= 0) return bytes;
+  const out = new Uint8Array(bytes.length + paddingNeeded);
+  out.set(bytes, 0);
+  return out;
+}
+
+function padToTarget(blob: Blob, format: string, targetBytes: number): Promise<Blob> {
+  return blob.arrayBuffer().then((buf) => {
+    const bytes = new Uint8Array(buf);
+    const paddingNeeded = targetBytes - bytes.length;
+    if (paddingNeeded <= 0) return blob;
+    const padded =
+      format === 'image/png' ? padPng(bytes, paddingNeeded)
+      : format === 'image/jpeg' ? padJpeg(bytes, paddingNeeded)
+      : padWebp(bytes, paddingNeeded);
+    return new Blob([padded as BlobPart], { type: format });
+  });
+}
+
+/**
+ * Encodes the canvas.
+ * - 'max' budget (JPEG/WebP only): finds the highest quality that fits — ceiling first (often
+ *   already small enough), then the floor (to detect an impossible budget), then bisect.
+ * - 'min' budget: encodes at full quality, then pads the file (not the pixels) up to the target
+ *   with inert, format-valid filler if it's naturally smaller.
  */
 async function encode(
   canvas: OffscreenCanvas,
   format: string,
   quality: number,
   targetBytes: number | null,
-): Promise<{ blob: Blob; usedQuality: number; targetMet: boolean | undefined }> {
+  sizeMode: 'max' | 'min',
+): Promise<{ blob: Blob; usedQuality: number; targetMet: boolean | undefined; padded?: boolean }> {
+  if (sizeMode === 'min' && targetBytes) {
+    const base = await canvas.convertToBlob(
+      format === 'image/png' ? { type: format } : { type: format, quality: MAX_SEARCH_QUALITY },
+    );
+    if (base.size >= targetBytes) {
+      return { blob: base, usedQuality: Math.round(MAX_SEARCH_QUALITY * 100), targetMet: true, padded: false };
+    }
+    const padded = await padToTarget(base, format, targetBytes);
+    return { blob: padded, usedQuality: Math.round(MAX_SEARCH_QUALITY * 100), targetMet: true, padded: true };
+  }
+
   if (!targetBytes || format === 'image/png') {
     const blob = await canvas.convertToBlob({ type: format, quality: quality / 100 });
     return { blob, usedQuality: Math.round(quality), targetMet: undefined };
@@ -123,7 +263,7 @@ async function getBitmap(req: ProcessRequest, targetW: number, targetH: number):
 }
 
 async function processRequest(req: ProcessRequest) {
-  const { id, width, height, format, quality, targetSizeKb, backgroundColor, rotation, crop, textOverlays, strip } = req;
+  const { id, width, height, format, quality, targetSizeKb, sizeMode = 'max', backgroundColor, rotation, crop, textOverlays, strip } = req;
 
   try {
     const naturalW = req.originalWidth || 0;
@@ -251,7 +391,13 @@ async function processRequest(req: ProcessRequest) {
     }
 
     const targetBytes = targetSizeKb && targetSizeKb > 0 ? Math.round(targetSizeKb * 1024) : null;
-    const { blob: outBlob, usedQuality, targetMet } = await encode(cachedCanvas, format, quality, targetBytes);
+    const { blob: outBlob, usedQuality, targetMet, padded } = await encode(
+      cachedCanvas,
+      format,
+      quality,
+      targetBytes,
+      sizeMode,
+    );
     self.postMessage({
       id,
       success: true,
@@ -260,6 +406,7 @@ async function processRequest(req: ProcessRequest) {
       height: canvasHeight,
       usedQuality,
       targetMet,
+      padded,
     });
   } catch (error) {
     console.error('Worker error:', error);

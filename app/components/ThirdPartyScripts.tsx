@@ -77,12 +77,22 @@ export function ThirdPartyScripts() {
     window.addEventListener("keydown", onTrigger, { capture: true, passive: true });
     window.addEventListener("click", onTrigger, { capture: true, passive: true });
 
-    // No timer fallback on purpose: AdSense, Funding Choices, Clarity and GA cost ~1s of main-thread
-    // work and keep repainting the hero (Speed Index). Loading them during the initial render is what
-    // dropped mobile Lighthouse from ~99 to ~60, so they wait for the visitor's first real interaction.
-    // gtag/clarity calls made before then are queued and sent once the scripts arrive.
+    // Idle or timeout fallback: loads non-blockingly after page finishes initial render.
+    // Without this, visitors who never scroll/click/touch before leaving never fire a single
+    // GA/Clarity hit, which silently drops bounce traffic from analytics.
+    let timer: NodeJS.Timeout | number;
+    if (typeof window !== "undefined") {
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(() => {
+          timer = setTimeout(loadScripts, 2500);
+        });
+      } else {
+        timer = setTimeout(loadScripts, 3000);
+      }
+    }
 
     return () => {
+      if (timer) clearTimeout(timer);
       window.removeEventListener("scroll", onTrigger, { capture: true });
       window.removeEventListener("mousemove", onTrigger, { capture: true });
       window.removeEventListener("touchstart", onTrigger, { capture: true });

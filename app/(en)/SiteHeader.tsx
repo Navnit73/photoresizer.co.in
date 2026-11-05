@@ -127,11 +127,11 @@ export default function SiteHeader() {
                               <span className="text-[10px] bg-[#F4F4F5] text-[#71717A] px-2 py-0.5 rounded-md font-medium">OTR</span>
                             </Link>
                             <Link 
-                              href="/signature-resize-ibps" 
+                              href="/signature-resizer" 
                               onClick={() => setIsToolsOpen(false)}
                               className="flex items-center justify-between p-2 rounded-xl text-sm text-[#52525B] hover:bg-[#F0FDF4] hover:text-[#15803D] transition-colors"
                             >
-                              <span>IBPS Signature</span>
+                              <span>Signature Resizer</span>
                               <span className="text-[10px] bg-[#F4F4F5] text-[#71717A] px-2 py-0.5 rounded-md font-medium">10-20KB</span>
                             </Link>
                             <Link 
@@ -141,6 +141,14 @@ export default function SiteHeader() {
                             >
                               <span>Reduce to 50KB</span>
                               <span className="text-[10px] bg-[#F4F4F5] text-[#71717A] px-2 py-0.5 rounded-md font-medium">JPG</span>
+                            </Link>
+                            <Link 
+                              href="/pan-card-photo-resizer" 
+                              onClick={() => setIsToolsOpen(false)}
+                              className="flex items-center justify-between p-2 rounded-xl text-sm text-[#52525B] hover:bg-[#F0FDF4] hover:text-[#15803D] transition-colors"
+                            >
+                              <span>PAN Card Photo &amp; Sign</span>
+                              <span className="text-[10px] bg-[#F4F4F5] text-[#71717A] px-2 py-0.5 rounded-md font-medium">NSDL/UTI</span>
                             </Link>
                           </div>
                         </div>

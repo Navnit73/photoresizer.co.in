@@ -52,9 +52,21 @@ function EditorContent() {
   );
 }
 
-export default function PhotoEditor({ initialFile }: { initialFile?: File | null }) {
+export default function PhotoEditor({
+  initialFile,
+  defaultTargetSizeKb,
+  defaultSizeMode,
+}: {
+  initialFile?: File | null;
+  defaultTargetSizeKb?: number | null;
+  defaultSizeMode?: 'max' | 'min';
+}) {
   return (
-    <EditorProvider initialFile={initialFile}>
+    <EditorProvider
+      initialFile={initialFile}
+      defaultTargetSizeKb={defaultTargetSizeKb}
+      defaultSizeMode={defaultSizeMode}
+    >
       <EditorContent />
     </EditorProvider>
   );
