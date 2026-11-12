@@ -4,7 +4,9 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import PassportCropper, { PASSPORT_PRESETS, type CropperSettings, type Region } from './PassportCropper';
 import { prepareWorkingImage, formatBytes, type WorkingImage } from './imageUtils';
 import { openFilePicker } from '../../utils/filePicker';
+import { formatPrice, getPriceForVisitor, payWithRazorpay, preloadRazorpay } from '../../utils/razorpay';
 import {
+  Lock,
   UploadCloud,
   Download,
   RefreshCw,
@@ -42,10 +44,18 @@ function announceFileLoaded(loaded: boolean) {
 export default function PassportMakerApp({
   initialFile,
   defaultRegion,
+  requirePayment = false,
 }: {
   initialFile?: File | null;
   defaultRegion?: Region;
+  /** Ask for a Razorpay payment before the finished photo can be downloaded or shared. */
+  requirePayment?: boolean;
 }) {
+  // Rendered client-side only (ssr: false), so the visitor's time zone is available here.
+  const [price] = useState(() => (requirePayment ? getPriceForVisitor() : null));
+  // The photo the visitor has paid for. Re-editing the same photo stays unlocked; a new photo needs a new payment.
+  const [paidFor, setPaidFor] = useState<WorkingImage | null>(null);
+  const [isPaying, setIsPaying] = useState(false);
   const [working, setWorking] = useState<WorkingImage | null>(null);
   const [maskSrc, setMaskSrc] = useState<string | null>(null);
   const [settings, setSettings] = useState<CropperSettings | null>(null);
@@ -138,6 +148,8 @@ export default function PassportMakerApp({
 
   const handleComplete = (file: File, nextSettings: CropperSettings) => {
     setSettings(nextSettings);
+    // A message left over from the edit step must not show on the finished photo.
+    setError(null);
     setResult({ url: URL.createObjectURL(file), file, region: nextSettings.region, canShare: canShareFile(file) });
   };
 
@@ -163,6 +175,34 @@ export default function PassportMakerApp({
 
   const openPicker = () => openFilePicker(() => fileInputRef.current?.click());
   const resultPreset = result ? PASSPORT_PRESETS[result.region] : null;
+  const downloadName = result && resultPreset
+    ? `passport_photo_${result.region.toLowerCase()}_${resultPreset.width}x${resultPreset.height}.jpg`
+    : '';
+  const isUnlocked = !price || (paidFor !== null && paidFor === working);
+
+  // Load Razorpay's script while the user is still on the result screen, so the popup opens fast.
+  useEffect(() => {
+    if (price && result) preloadRazorpay();
+  }, [price, result]);
+
+  const handlePayAndDownload = async () => {
+    if (!price || !result || !resultPreset || isPaying) return;
+    setError(null);
+    setIsPaying(true);
+    const outcome = await payWithRazorpay(price, `Passport photo – ${resultPreset.label}`);
+    setIsPaying(false);
+    if (outcome.status === 'paid') {
+      setPaidFor(working);
+      const a = document.createElement('a');
+      a.href = result.url;
+      a.download = downloadName;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    } else if (outcome.status === 'failed') {
+      setError(outcome.message);
+    }
+  };
 
   return (
     <div ref={topRef} className="w-full max-w-5xl mx-auto px-2 sm:px-4 scroll-mt-4">
@@ -288,16 +328,41 @@ export default function PassportMakerApp({
                 <Detail label="Format" value="JPEG (.jpg)" />
               </dl>
 
+              {error && <ErrorBanner message={error} />}
+
               <div className="flex flex-col gap-2.5">
-                <a
-                  href={result.url}
-                  download={`passport_photo_${result.region.toLowerCase()}_${resultPreset.width}x${resultPreset.height}.jpg`}
-                  className="w-full min-h-[48px] flex justify-center items-center gap-2 bg-[#16A34A] hover:bg-[#15803D] text-[#FFFFFF] px-5 rounded-xl text-sm font-semibold transition-colors active:scale-[0.98]"
-                >
-                  <Download size={18} />
-                  Download photo
-                </a>
-                {result.canShare && (
+                {isUnlocked && price && (
+                  // Some phones block a download started after the payment popup; this tells them to tap again.
+                  <p role="status" className="text-xs text-[#15803D] text-center font-medium">
+                    Payment successful. If the download didn&apos;t start, tap Download photo.
+                  </p>
+                )}
+                {isUnlocked ? (
+                  <a
+                    href={result.url}
+                    download={downloadName}
+                    className="w-full min-h-[48px] flex justify-center items-center gap-2 bg-[#16A34A] hover:bg-[#15803D] text-[#FFFFFF] px-5 rounded-xl text-sm font-semibold transition-colors active:scale-[0.98]"
+                  >
+                    <Download size={18} />
+                    Download photo
+                  </a>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      onClick={handlePayAndDownload}
+                      disabled={isPaying}
+                      className="w-full min-h-[48px] flex justify-center items-center gap-2 bg-[#16A34A] hover:bg-[#15803D] disabled:opacity-70 text-[#FFFFFF] px-5 rounded-xl text-sm font-semibold transition-colors active:scale-[0.98]"
+                    >
+                      {isPaying ? <Loader2 size={18} className="animate-spin" /> : <Lock size={17} />}
+                      {isPaying ? 'Opening payment…' : `Pay ${formatPrice(price!)} & download`}
+                    </button>
+                    <p className="text-xs text-[#71717A] text-center">
+                      Secure payment by Razorpay. UPI, cards &amp; wallets accepted.
+                    </p>
+                  </>
+                )}
+                {result.canShare && isUnlocked && (
                   <button
                     type="button"
                     onClick={handleShare}

@@ -326,7 +326,11 @@ export function SeoPageRenderer({ page, lang, relatedPages = [] }: Props) {
             <div className="min-h-[600px]">
               {activeTab === "editor" ? (
                 page.showTool === 'passport-maker' ? (
-                  <PassportMakerApp initialFile={uploadedFile} defaultRegion={passportRegionForSlug(page.slug)} />
+                  <PassportMakerApp
+                    initialFile={uploadedFile}
+                    defaultRegion={passportRegionForSlug(page.slug)}
+                    requirePayment={page.slug === 'passport-photo-maker'}
+                  />
                 ) : page.showTool === 'bg-remover' ? (
                   <BgRemoverApp />
                 ) : page.showTool === 'pan-resizer' || page.showTool === 'signature-resizer' ? (
