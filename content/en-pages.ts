@@ -269,122 +269,311 @@ export const enPages: SeoPage[] = [
   {
     slug: "passport-photo-maker",
     translationKey: "passport-photo-maker",
-    metaTitle: "Free Passport Photo Maker — Correct Size for Any Country",
+    metaTitle: "Free Passport Photo Maker Online – US, UK, India & Schengen Size",
     metaDescription:
-      "Create passport photos online free. Auto-correct dimensions for US, UK, India, EU, China and 20+ countries. White background, JPEG output, instant download.",
-    h1: "Free Passport Photo Maker",
+      "Make a passport photo online free. Pick US 2×2 in, UK, India or Schengen 35×45 mm, make the background white with AI and download a JPEG. No upload, no watermark.",
+    h1: "Free Passport Photo Maker Online",
+    lastmod: "2026-11-12",
     showTool: "passport-maker",
     structuredDataOverrides: { webPageType: "WebApplication" },
     subtitle:
-      "Create perfectly sized passport and ID photos for any country — cropped, formatted, and ready to print or upload.",
+      "Turn a phone selfie into a correctly sized passport or visa photo for India, the US, the UK or the Schengen area. Free, unlimited and private: your photo never leaves your device.",
     sections: [
       {
-        heading: "Official Passport Photo Dimensions by Country",
+        heading: "How to Make a Passport Photo Online in 4 Steps",
         content: `
 <div class="space-y-8 not-prose">
   <p class="text-lg text-[#52525B] leading-relaxed">
-    Getting a passport photo rejected because of the wrong dimensions or background is frustrating — and costly. Our free passport photo maker automatically applies the exact specifications required by each country's government, so your photo is accepted first time.
+    You do not need a studio or an app. Take a photo with your phone against a plain wall, then let this passport photo maker crop it to the official size, clean up the background and save a JPEG that is ready to upload or print.
   </p>
+
+  <ol class="grid sm:grid-cols-2 gap-4">
+    <li class="p-5 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="inline-flex w-8 h-8 rounded-lg bg-[#16A34A] text-[#FFFFFF] text-sm font-bold items-center justify-center mb-3">1</span>
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Upload or take a photo</h3>
+      <p class="text-sm text-[#52525B]">Choose a JPG, PNG, WEBP or HEIC image, or take a selfie on your phone. Face the camera with a neutral expression.</p>
+    </li>
+    <li class="p-5 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="inline-flex w-8 h-8 rounded-lg bg-[#16A34A] text-[#FFFFFF] text-sm font-bold items-center justify-center mb-3">2</span>
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Pick your country</h3>
+      <p class="text-sm text-[#52525B]">Select India, US, UK or EU / Schengen. The crop box switches to that country's exact shape and pixel size.</p>
+    </li>
+    <li class="p-5 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="inline-flex w-8 h-8 rounded-lg bg-[#16A34A] text-[#FFFFFF] text-sm font-bold items-center justify-center mb-3">3</span>
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Fit your face in the oval</h3>
+      <p class="text-sm text-[#52525B]">Zoom and drag until the top of your head touches the top line and your chin sits on the bottom line. This sets the head size that officials check.</p>
+    </li>
+    <li class="p-5 rounded-xl border border-[#E4E4E7] bg-[#FFFFFF]">
+      <span class="inline-flex w-8 h-8 rounded-lg bg-[#16A34A] text-[#FFFFFF] text-sm font-bold items-center justify-center mb-3">4</span>
+      <h3 class="text-base font-bold text-[#18181B] mb-1">Clean the background and download</h3>
+      <p class="text-sm text-[#52525B]">Tap "Make background plain" to replace the room behind you with white, light grey or light blue. Then download your JPEG or share it straight from your phone.</p>
+    </li>
+  </ol>
 
   <div class="p-5 bg-[#F0FDF4] border-l-4 border-[#16A34A] rounded-r-xl">
     <div class="flex items-start gap-3">
       <svg class="w-5 h-5 text-[#16A34A] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-      <p class="text-sm text-[#15803D]"><strong>All processing is local.</strong> Your photo is never uploaded to any server. It is cropped and formatted entirely within your browser for complete privacy.</p>
+      <p class="text-sm text-[#15803D]"><strong>Your photo stays on your device.</strong> Cropping and background removal both run inside your browser. We never upload, store or see your face, which most online passport photo services cannot say.</p>
     </div>
   </div>
+</div>`,
+      },
+      {
+        heading: "Passport Photo Size by Country",
+        content: `
+<div class="space-y-8 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Each preset below is built into the tool. The head height is the distance from your chin to the top of your hair, and the on-screen oval and guide lines are set to match it.
+  </p>
 
   <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
     <div class="px-6 py-4 border-b border-[#E4E4E7] bg-[#FAFAFA]">
-      <h3 class="font-bold text-[#18181B]">Passport Photo Size Requirements by Country</h3>
+      <h3 class="font-bold text-[#18181B]">Built-in Passport Photo Presets</h3>
     </div>
     <div class="overflow-x-auto">
       <table class="w-full text-sm">
         <thead class="bg-[#FAFAFA]">
           <tr>
             <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Country</th>
-            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Size (mm)</th>
-            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Pixels (300dpi)</th>
+            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Photo size</th>
+            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Head height</th>
             <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Background</th>
+            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Our output</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-[#F4F4F5]">
-          <tr class="hover:bg-[#FAFAFA]"><td class="px-4 py-3 font-medium text-[#18181B]">🇺🇸 United States</td><td class="px-4 py-3 text-[#52525B]">51 × 51 mm</td><td class="px-4 py-3 text-[#52525B]">600 × 600 px</td><td class="px-4 py-3 text-[#52525B]">White</td></tr>
-          <tr class="hover:bg-[#FAFAFA]"><td class="px-4 py-3 font-medium text-[#18181B]">🇬🇧 United Kingdom</td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">413 × 531 px</td><td class="px-4 py-3 text-[#52525B]">Light grey / white</td></tr>
-          <tr class="hover:bg-[#FAFAFA]"><td class="px-4 py-3 font-medium text-[#18181B]">🇮🇳 India</td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">413 × 531 px</td><td class="px-4 py-3 text-[#52525B]">White</td></tr>
-          <tr class="hover:bg-[#FAFAFA]"><td class="px-4 py-3 font-medium text-[#18181B]">🇪🇺 European Union</td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">413 × 531 px</td><td class="px-4 py-3 text-[#52525B]">White / off-white</td></tr>
-          <tr class="hover:bg-[#FAFAFA]"><td class="px-4 py-3 font-medium text-[#18181B]">🇨🇳 China</td><td class="px-4 py-3 text-[#52525B]">33 × 48 mm</td><td class="px-4 py-3 text-[#52525B]">390 × 567 px</td><td class="px-4 py-3 text-[#52525B]">White</td></tr>
-          <tr class="hover:bg-[#FAFAFA]"><td class="px-4 py-3 font-medium text-[#18181B]">🇨🇦 Canada</td><td class="px-4 py-3 text-[#52525B]">50 × 70 mm</td><td class="px-4 py-3 text-[#52525B]">590 × 826 px</td><td class="px-4 py-3 text-[#52525B]">White</td></tr>
-          <tr class="hover:bg-[#FAFAFA]"><td class="px-4 py-3 font-medium text-[#18181B]">🇦🇺 Australia</td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">413 × 531 px</td><td class="px-4 py-3 text-[#52525B]">White / light grey</td></tr>
-          <tr class="hover:bg-[#FAFAFA]"><td class="px-4 py-3 font-medium text-[#18181B]">🇩🇪 Germany</td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">413 × 531 px</td><td class="px-4 py-3 text-[#52525B]">Light grey</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-[#18181B]"><a href="/india-passport-photo-maker" class="text-[#15803D] underline">India</a></td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">About 80% of the photo</td><td class="px-4 py-3 text-[#52525B]">Plain white</td><td class="px-4 py-3 text-[#52525B]">826 × 1062 px JPEG</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-[#18181B]"><a href="/us-passport-photo-maker" class="text-[#15803D] underline">United States</a></td><td class="px-4 py-3 text-[#52525B]">2 × 2 in (51 × 51 mm)</td><td class="px-4 py-3 text-[#52525B]">25–35 mm (1–1⅜ in)</td><td class="px-4 py-3 text-[#52525B]">White or off-white</td><td class="px-4 py-3 text-[#52525B]">600 × 600 px JPEG</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-[#18181B]"><a href="/uk-passport-photo-maker" class="text-[#15803D] underline">United Kingdom</a></td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">29–34 mm</td><td class="px-4 py-3 text-[#52525B]">Plain light colour (light grey works best)</td><td class="px-4 py-3 text-[#52525B]">750 × 964 px JPEG</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-[#18181B]"><a href="/schengen-visa-photo-maker" class="text-[#15803D] underline">EU / Schengen visa</a></td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">32–36 mm</td><td class="px-4 py-3 text-[#52525B]">Plain white or light grey</td><td class="px-4 py-3 text-[#52525B]">413 × 531 px JPEG</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  <div>
-    <h3 class="text-xl font-bold text-[#18181B] mb-4">Common Reasons Passport Photos Get Rejected</h3>
-    <div class="grid sm:grid-cols-2 gap-4">
-      <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
-        <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
-        <div>
-          <h4 class="font-semibold text-[#991B1B] text-sm">Wrong dimensions</h4>
-          <p class="text-xs text-[#B91C1C] mt-1">Even 1mm off can cause rejection. Always use the exact country specifications.</p>
-        </div>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-hidden">
+    <div class="px-6 py-4 border-b border-[#E4E4E7] bg-[#FAFAFA]">
+      <h3 class="font-bold text-[#18181B]">Other Countries (No Preset Yet)</h3>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="bg-[#FAFAFA]">
+          <tr>
+            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Country</th>
+            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Photo size</th>
+            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Pixels at 300 DPI</th>
+            <th class="text-left px-4 py-3 font-semibold text-[#52525B]">How to make it here</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-[#F4F4F5]">
+          <tr><td class="px-4 py-3 font-medium text-[#18181B]"><a href="/australia-passport-photo-maker" class="text-[#15803D] underline">Australia</a></td><td class="px-4 py-3 text-[#52525B]">35 × 45 mm</td><td class="px-4 py-3 text-[#52525B]">413 × 531 px</td><td class="px-4 py-3 text-[#52525B]">Use the EU / Schengen preset (same size)</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-[#18181B]"><a href="/canada-passport-photo-maker" class="text-[#15803D] underline">Canada</a></td><td class="px-4 py-3 text-[#52525B]">50 × 70 mm</td><td class="px-4 py-3 text-[#52525B]">591 × 827 px</td><td class="px-4 py-3 text-[#52525B]">Set a custom size in the <a href="/photo-resizer" class="text-[#15803D] underline">Photo Resizer</a></td></tr>
+          <tr><td class="px-4 py-3 font-medium text-[#18181B]">China (visa)</td><td class="px-4 py-3 text-[#52525B]">33 × 48 mm</td><td class="px-4 py-3 text-[#52525B]">390 × 567 px</td><td class="px-4 py-3 text-[#52525B]">Set a custom size in the <a href="/photo-resizer" class="text-[#15803D] underline">Photo Resizer</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="p-5 bg-[#FFFBEB] border-l-4 border-[#D97706] rounded-r-xl">
+    <p class="text-sm text-[#92400E]"><strong>Rules change. Check before you submit.</strong> Germany, for example, has accepted only digital photos from certified studios for domestic passports and ID cards since 2025, so a home-made print will not work there. In India, most Passport Seva Kendras take your photo at the appointment, and some Indian missions abroad and OCI forms ask for a square photo. Always read the current photo rules on your application form or the official website.</p>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Free Passport Photo Maker vs Paid Services",
+        content: `
+<div class="space-y-6 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    Most "free" passport photo websites let you preview for free and then charge to download, add a watermark, or limit you to one or two photos a day. Here is how this tool compares with the usual options.
+  </p>
+  <div class="bg-[#FFFFFF] rounded-xl border border-[#E4E4E7] overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead class="bg-[#FAFAFA]">
+        <tr>
+          <th class="text-left px-4 py-3 font-semibold text-[#52525B]"></th>
+          <th class="text-left px-4 py-3 font-semibold text-[#15803D]">This tool</th>
+          <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Paid online services</th>
+          <th class="text-left px-4 py-3 font-semibold text-[#52525B]">Studio or pharmacy</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-[#F4F4F5]">
+        <tr><td class="px-4 py-3 font-medium text-[#18181B]">Price</td><td class="px-4 py-3 text-[#18181B]">Free, unlimited</td><td class="px-4 py-3 text-[#52525B]">Usually a few dollars per photo after a free preview</td><td class="px-4 py-3 text-[#52525B]">Often $15 or more for two prints in the US</td></tr>
+        <tr><td class="px-4 py-3 font-medium text-[#18181B]">Watermark</td><td class="px-4 py-3 text-[#18181B]">None</td><td class="px-4 py-3 text-[#52525B]">Often on the free version</td><td class="px-4 py-3 text-[#52525B]">None</td></tr>
+        <tr><td class="px-4 py-3 font-medium text-[#18181B]">Your photo uploaded?</td><td class="px-4 py-3 text-[#18181B]">No, it is processed on your device</td><td class="px-4 py-3 text-[#52525B]">Yes, to their servers</td><td class="px-4 py-3 text-[#52525B]">Taken in person</td></tr>
+        <tr><td class="px-4 py-3 font-medium text-[#18181B]">Account needed</td><td class="px-4 py-3 text-[#18181B]">No</td><td class="px-4 py-3 text-[#52525B]">Often, to pay or download</td><td class="px-4 py-3 text-[#52525B]">No</td></tr>
+        <tr><td class="px-4 py-3 font-medium text-[#18181B]">Expert check or guarantee</td><td class="px-4 py-3 text-[#18181B]">No, you check it against the rules yourself</td><td class="px-4 py-3 text-[#52525B]">Sometimes, as a paid add-on</td><td class="px-4 py-3 text-[#52525B]">Usually</td></tr>
+        <tr><td class="px-4 py-3 font-medium text-[#18181B]">Time</td><td class="px-4 py-3 text-[#18181B]">About a minute</td><td class="px-4 py-3 text-[#52525B]">A few minutes</td><td class="px-4 py-3 text-[#52525B]">A trip and a queue</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>`,
+      },
+      {
+        heading: "How to Take a Passport Photo at Home With Your Phone",
+        content: `
+<div class="space-y-6 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    The tool fixes size and background, but it cannot fix blur, shadows or a tilted head. Get these right when you take the photo.
+  </p>
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="p-5 rounded-xl border border-[#BBF7D0] bg-[#F0FDF4]">
+      <h3 class="font-bold text-[#15803D] mb-3">Do</h3>
+      <ul class="space-y-2 text-sm text-[#166534]">
+        <li>✓ Stand about 1 m from a plain, light wall.</li>
+        <li>✓ Face a window so daylight falls evenly on your face.</li>
+        <li>✓ Ask someone else to take it at eye level, or use a timer. Selfies held at arm's length distort your face.</li>
+        <li>✓ Look straight at the camera with your mouth closed and both eyes open.</li>
+        <li>✓ Keep your whole head, hair and shoulders in the frame so there is room to crop.</li>
+        <li>✓ Wear dark or coloured clothes that stand out from a white background.</li>
+      </ul>
+    </div>
+    <div class="p-5 rounded-xl border border-[#FEE2E2] bg-[#FEF2F2]">
+      <h3 class="font-bold text-[#991B1B] mb-3">Avoid</h3>
+      <ul class="space-y-2 text-sm text-[#B91C1C]">
+        <li>✗ Glasses. The US does not allow them, and most other countries prefer you remove them.</li>
+        <li>✗ Hats, headphones or hair covering your eyes (religious head coverings are allowed if your face is fully visible).</li>
+        <li>✗ Shadows on your face or behind your head.</li>
+        <li>✗ Beauty filters, portrait mode or edited skin.</li>
+        <li>✗ Smiling with teeth, raised eyebrows or a tilted head.</li>
+        <li>✗ Old photos. Most countries want one taken in the last 6 months, and the UK asks for the last month.</li>
+      </ul>
+    </div>
+  </div>
+</div>`,
+      },
+      {
+        heading: "Common Reasons Passport Photos Get Rejected",
+        content: `
+<div class="space-y-6 not-prose">
+  <div class="grid sm:grid-cols-2 gap-4">
+    <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
+      <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
+      <div>
+        <h3 class="font-semibold text-[#991B1B] text-sm">Head too big or too small</h3>
+        <p class="text-xs text-[#B91C1C] mt-1">The most common rejection. Line up your crown and chin with the guide lines in the tool.</p>
       </div>
-      <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
-        <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
-        <div>
-          <h4 class="font-semibold text-[#991B1B] text-sm">Non-white background</h4>
-          <p class="text-xs text-[#B91C1C] mt-1">Most countries require a plain white or light grey background. Use our tool to set it correctly.</p>
-        </div>
+    </div>
+    <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
+      <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
+      <div>
+        <h3 class="font-semibold text-[#991B1B] text-sm">Busy or shadowed background</h3>
+        <p class="text-xs text-[#B91C1C] mt-1">Furniture, patterns or a shadow behind your head will fail. Use "Make background plain" to fix it.</p>
       </div>
-      <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
-        <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
-        <div>
-          <h4 class="font-semibold text-[#991B1B] text-sm">File too large or too small</h4>
-          <p class="text-xs text-[#B91C1C] mt-1">Online portals often require files between 20KB and 300KB. Use our KB resizer to hit the target.</p>
-        </div>
+    </div>
+    <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
+      <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
+      <div>
+        <h3 class="font-semibold text-[#991B1B] text-sm">Blurry or grainy photo</h3>
+        <p class="text-xs text-[#B91C1C] mt-1">Use your phone's main rear camera in good light. Do not zoom digitally or use a screenshot.</p>
       </div>
-      <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
-        <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
-        <div>
-          <h4 class="font-semibold text-[#991B1B] text-sm">Wrong JPEG format</h4>
-          <p class="text-xs text-[#B91C1C] mt-1">Most government portals accept only JPEG. Our tool always outputs JPEG for passport photos.</p>
-        </div>
+    </div>
+    <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
+      <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
+      <div>
+        <h3 class="font-semibold text-[#991B1B] text-sm">File too large or too small</h3>
+        <p class="text-xs text-[#B91C1C] mt-1">Online forms often set a KB range. If your portal asks for a smaller file, use our <a href="/reduce-image-size-in-kb" class="underline">KB resizer</a>.</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
+      <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
+      <div>
+        <h3 class="font-semibold text-[#991B1B] text-sm">Glasses, glare or red eye</h3>
+        <p class="text-xs text-[#B91C1C] mt-1">Take glasses off and turn off the flash.</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl border border-[#FEE2E2]">
+      <span class="text-[#DC2626] text-lg flex-shrink-0">✗</span>
+      <div>
+        <h3 class="font-semibold text-[#991B1B] text-sm">Wrong file format</h3>
+        <p class="text-xs text-[#B91C1C] mt-1">Most government portals accept only JPEG. This tool always saves a .jpg file.</p>
       </div>
     </div>
   </div>
-  <p class="text-sm text-[#52525B] leading-relaxed mt-4">
+  <p class="text-sm text-[#52525B] leading-relaxed">
     Almost every country above bases its size, head position and background rules on the international ICAO standard. To understand what each rule means, read this <a href="https://icao-standard-photo.online/" target="_blank" rel="noopener">ICAO standard photo guide</a>. Then run your finished file through a <a href="https://icao-standard-photo.online/icao-photo-checker" target="_blank" rel="noopener">free ICAO photo checker</a> before you upload it.
   </p>
+</div>`,
+      },
+      {
+        heading: "How to Print Your Passport Photo",
+        content: `
+<div class="space-y-4 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    The tool downloads one photo at the correct size. To get prints:
+  </p>
+  <ol class="list-decimal pl-5 space-y-2 text-sm text-[#52525B]">
+    <li>Place the JPEG on a 4 × 6 in (10 × 15 cm) sheet in any print or collage app. One sheet fits several 35 × 45 mm photos or two 2 × 2 in photos.</li>
+    <li>Print on glossy or matte photo paper at <strong>100% / actual size</strong>. "Fit to page" will make the photo the wrong size.</li>
+    <li>Measure one printed photo with a ruler before you cut it out. It should be exactly 35 × 45 mm, or 51 × 51 mm for the US.</li>
+    <li>You can also take the file to a photo kiosk or print shop. A single 4 × 6 print usually costs far less than a studio passport photo.</li>
+  </ol>
+</div>`,
+      },
+      {
+        heading: "Official Passport Photo Rules",
+        content: `
+<div class="space-y-3 not-prose">
+  <p class="text-[#52525B] leading-relaxed">
+    These government pages have the final say. Read the one for your country before you submit.
+  </p>
+  <ul class="space-y-2 text-sm">
+    <li><a href="https://www.passportindia.gov.in/" target="_blank" rel="noopener" class="text-[#15803D] underline">Passport Seva (India)</a></li>
+    <li><a href="https://travel.state.gov/content/travel/en/passports/how-apply/photos.html" target="_blank" rel="noopener" class="text-[#15803D] underline">US Department of State: passport photos</a></li>
+    <li><a href="https://www.gov.uk/photos-for-passports" target="_blank" rel="noopener" class="text-[#15803D] underline">GOV.UK: photos for passports</a></li>
+  </ul>
 </div>`,
       },
     ],
     faq: [
       {
-        question: "What are the standard passport photo dimensions?",
+        question: "Is this passport photo maker really free?",
         answer:
-          "It depends on the country. The most common size is 35×45mm (used by UK, India, EU, Australia). The US requires 51×51mm (2×2 inches). China uses 33×48mm. Always check your country's official requirements.",
+          "Yes. There is no watermark, no daily limit, no credits and no sign-up. You can make and download as many passport photos as you need.",
       },
       {
-        question: "Can I make a passport photo at home?",
+        question: "Is it safe to upload my photo?",
         answer:
-          "Yes. Take a photo against a plain white wall in good natural light, then use our passport photo maker to crop and resize it to the exact dimensions. Save money compared to a photo studio.",
+          "Your photo is not uploaded anywhere. Cropping and AI background removal run inside your browser, so the image never reaches our servers. The background removal model is downloaded once from a CDN, but your photo is not sent with it.",
       },
       {
-        question: "What background color is required for passport photos?",
+        question: "What size is a passport photo?",
         answer:
-          "Most countries require a plain white or very light grey background. The subject's face must be clearly visible against it. Our tool lets you set a white background automatically.",
+          "It depends on the country. India, the UK, the Schengen area and Australia use 35 × 45 mm. The US uses 2 × 2 inches (51 × 51 mm). Canada uses 50 × 70 mm and China uses 33 × 48 mm for visas.",
       },
       {
-        question: "How many passport photos can I make for free?",
+        question: "Can I use a selfie for a passport photo?",
         answer:
-          "Unlimited. There are no daily limits, no credits to buy, and no account required. Make as many passport photos as you need.",
+          "Yes, if it is sharp, evenly lit and taken straight on. Hold the phone at eye level, at least an arm's length away, or ask someone to take it. The tool then crops and resizes it to the official size.",
+      },
+      {
+        question: "How do I change the background of my passport photo to white?",
+        answer:
+          "After you choose your country, tap \"Make background plain\". The tool removes the background with AI and fills it with white. You can also pick light grey, which suits the UK, or light blue.",
+      },
+      {
+        question: "Which countries does the tool support?",
+        answer:
+          "There are built-in presets for India, the United States, the United Kingdom and the EU / Schengen area. The Schengen preset also fits Australia and other 35 × 45 mm countries. For sizes like Canada or China, set a custom size in the Photo Resizer.",
+      },
+      {
+        question: "Can I print passport photos at home?",
+        answer:
+          "Yes. Place the downloaded JPEG on a 4 × 6 in sheet and print it at 100% (actual size) on photo paper, or take the file to a photo kiosk. Measure one photo before you cut it out.",
+      },
+      {
+        question: "Will my passport photo be accepted?",
+        answer:
+          "The tool gives you the correct size, crop and background. Acceptance also depends on lighting, sharpness, expression and the rules of your application. Check your photo against your country's official rules before you submit it. We do not offer an acceptance guarantee.",
+      },
+      {
+        question: "Can I wear glasses in a passport photo?",
+        answer:
+          "Not for US passports, and most other countries ask you to remove them too. If you must wear them for medical reasons, make sure there is no glare and the frames do not cover your eyes.",
       },
       {
         question: "What file format should a passport photo be?",
         answer:
-          "Almost all government portals and embassies require JPEG/JPG format. Our passport photo maker always outputs a JPEG file.",
+          "Almost all government portals and embassies want JPEG. This passport photo maker always saves a .jpg file. If the portal sets a KB limit, compress it with our KB resizer.",
       },
     ],
   },
